@@ -11,19 +11,17 @@ const Header: React.FC = () => {
         <Menu />
         <LanguageSwitcher />
       </div>
-      <div className="absolute w-full flex justify-between items-center p-3 sm:hidden">
+      <div className="absolute w-full flex justify-between p-3 sm:hidden">
         <div>
           <div>
             <HeaderLogo />
           </div>
-          <div className="absolute flex justify-center w-full">
+          <div className="flex justify-center">
             <Menu />
           </div>
         </div>
         <div>
-          <div>
-            <LanguageSwitcher />
-          </div>
+          <LanguageSwitcher />
         </div>
       </div>
     </header>

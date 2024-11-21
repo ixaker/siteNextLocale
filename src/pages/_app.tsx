@@ -20,10 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
   }, [prefersDarkMode]);
 
-  const theme = useMemo(
-    () => (themeMode === 'dark' ? darkTheme : lightTheme),
-    [themeMode]
-  );
+  const theme = useMemo(() => (themeMode === 'dark' ? darkTheme : lightTheme), [themeMode]);
 
   const toggleTheme = () => {
     const newTheme = themeMode === 'light' ? 'dark' : 'light';
@@ -36,7 +33,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <CssBaseline /> {/* Базовые стили MUI */}
       <LanguageProvider>
         <Layout>
-          {/* <button
+          <button
             onClick={toggleTheme}
             style={{
               position: 'fixed',
@@ -51,7 +48,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             }}
           >
             Toggle Theme
-          </button> */}
+          </button>
           <Component {...pageProps} />
         </Layout>
       </LanguageProvider>
