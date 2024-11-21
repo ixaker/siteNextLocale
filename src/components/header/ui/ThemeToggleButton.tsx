@@ -7,10 +7,14 @@ import CustomButton from '@/components/ui/button/CustomButton';
 const ThemeToggleButton: React.FC = () => {
   const { themeMode, toggleTheme } = useTheme();
 
+  const styleIconBtn = {
+    width: '50px',
+  };
+
   return (
     <>
       <CustomButton variant="button-themes" onClick={toggleTheme}>
-        {themeMode === 'light' ? <LightModeIcon /> : <ModeNightIcon />}
+        {themeMode === 'light' ? <LightModeIcon sx={styleIconBtn} /> : <ModeNightIcon />}
       </CustomButton>
     </>
   );

@@ -3,24 +3,14 @@ import React, { FC } from 'react';
 interface PropsCustomButton {
   children: React.ReactNode;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>, title: string) => void;
-  variant?:
-    | 'non-style'
-    | 'menu-btn'
-    | 'leng-btn'
-    | 'button-themes'
-    | 'communication-button';
+  variant?: 'non-style' | 'menu-btn' | 'leng-btn' | 'button-themes' | 'communication-button';
   className?: string;
 }
 
-const CustomButton: FC<PropsCustomButton> = ({
-  children,
-  onClick,
-  variant = 'non-style',
-  className,
-}) => {
+const CustomButton: FC<PropsCustomButton> = ({ children, onClick, variant = 'non-style', className }) => {
   const buttonClass = {
-    'menu-btn': 'font-bold text-xl text-2xl', // Стили для меню
-    'leng-btn': 'font-bold text-xl text-[white]', // Стили для языка
+    'menu-btn': 'font-bold text-xl sm:text-[10px] md:text-[18px] lg:text-[27px] text-[white]',
+    'leng-btn': 'font-bold text-lg sm:text-[10px] md:text-[18px] lg:text-[27px] text-[white]',
     'non-style': '',
     'button-themes': 'rounded-full',
     'communication-button':
@@ -29,9 +19,7 @@ const CustomButton: FC<PropsCustomButton> = ({
 
   return (
     <button
-      onClick={
-        onClick ? (event) => onClick(event, String(children)) : undefined
-      }
+      onClick={onClick ? (event) => onClick(event, String(children)) : undefined}
       className={`cursor-pointer ${buttonClass} ${className}`}
     >
       {children}
