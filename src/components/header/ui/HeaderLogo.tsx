@@ -12,8 +12,8 @@ const HeaderLogo = () => {
           width: {
             xs: '120px',
             sm: '130px',
-            md: '150px',
-            lg: '180px',
+            md: '160px',
+            lg: '200px',
           },
           height: 'auto',
         }}

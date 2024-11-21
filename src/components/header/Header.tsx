@@ -7,12 +7,24 @@ import ThemeToggleButton from './ui/ThemeToggleButton';
 const Header: React.FC = () => {
   return (
     <header className="relative z-20">
-      <div className="hidden sm:flex sm:justify-between sm:items-center sm:flex-wrap sm:p-3 sm:bg-inherit sm:absolute sm:top-0 sm:w-full">
+      {/* Верхняя панель */}
+      <div className="flex justify-between items-center flex-wrap p-3 bg-inherit absolute top-0 w-full">
+        {/* Логотип */}
         <HeaderLogo />
-        <Menu />
+
+        {/* Меню: скрывается на маленьких экранах */}
+        <div className="hidden sm:block">
+          <Menu />
+        </div>
+
+        {/* Переключатели */}
         <div className="flex gap-7 items-center">
           <LanguageSwitcher />
           <ThemeToggleButton />
+        </div>
+
+        <div className="flex justify-center items-center w-full mt-4 sm:hidden ">
+          <Menu />
         </div>
       </div>
     </header>

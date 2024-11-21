@@ -9,10 +9,10 @@ interface PropsCustomButton {
 
 const CustomButton: FC<PropsCustomButton> = ({ children, onClick, variant = 'non-style', className }) => {
   const buttonClass = {
-    'menu-btn': 'font-bold text-xl sm:text-[10px] md:text-[18px] lg:text-[27px] text-[white]',
-    'leng-btn': 'font-bold text-lg sm:text-[10px] md:text-[18px] lg:text-[27px] text-[white]',
+    'menu-btn': 'font-bold text-xl text-[18px] sm:text-[18px] md:text-[20px] lg:text-[27px] text-[white]',
+    'leng-btn': 'font-bold text-lg sm:text-[14px] md:text-[18px] lg:text-[27px] text-[white]',
     'non-style': '',
-    'button-themes': 'rounded-full',
+    'button-themes': 'rounded-full w-10',
     'communication-button':
       'rounded-full p-4 bg-[black] text-[#c43c1e] hover:bg-slate-800 hover:text-white transition-all duration-300 ease-in-out',
   }[variant];

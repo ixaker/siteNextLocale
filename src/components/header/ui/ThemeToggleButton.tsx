@@ -8,13 +8,21 @@ const ThemeToggleButton: React.FC = () => {
   const { themeMode, toggleTheme } = useTheme();
 
   const styleIconBtn = {
-    width: '50px',
+    width: {
+      sm: '20px',
+      md: '30px',
+      lg: '60px',
+    },
   };
 
   return (
     <>
-      <CustomButton variant="button-themes" onClick={toggleTheme}>
-        {themeMode === 'light' ? <LightModeIcon sx={styleIconBtn} /> : <ModeNightIcon />}
+      <CustomButton
+        variant="button-themes"
+        className="flex items-center justify-center"
+        onClick={toggleTheme}
+      >
+        {themeMode === 'light' ? <LightModeIcon sx={styleIconBtn} /> : <ModeNightIcon sx={styleIconBtn} />}
       </CustomButton>
     </>
   );

@@ -89,7 +89,7 @@ const MenuComponent: React.FC = () => {
   }, []);
 
   return (
-    <nav className="flex items-center gap-20" ref={menuRef}>
+    <nav className="flex items-center gap-5  sm:gap-[30px] md:gap-[40px] lg:gap-[80px]" ref={menuRef}>
       {menuItems.map((item) => (
         <Box
           key={item.title}
@@ -97,7 +97,6 @@ const MenuComponent: React.FC = () => {
             position: 'relative',
             display: 'flex',
             alignItems: 'center',
-            gap: '50px',
           }}
         >
           {item.subMenu ? (
