@@ -10,22 +10,9 @@ const Header: React.FC = () => {
       <div className="hidden sm:flex sm:justify-between sm:items-center sm:flex-wrap sm:p-3 sm:bg-inherit sm:absolute sm:top-0 sm:w-full">
         <HeaderLogo />
         <Menu />
-        <LanguageSwitcher />
-        <ThemeToggleButton />
-      </div>
-      <div className="absolute w-full flex justify-between items-center p-3 sm:hidden">
-        <div>
-          <div>
-            <HeaderLogo />
-          </div>
-          <div className="absolute flex justify-center w-full">
-            <Menu />
-          </div>
-        </div>
-        <div>
-          <div>
-            <LanguageSwitcher />
-          </div>
+        <div className="flex gap-7 items-center">
+          <LanguageSwitcher />
+          <ThemeToggleButton />
         </div>
       </div>
     </header>

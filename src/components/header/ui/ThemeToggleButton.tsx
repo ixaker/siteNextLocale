@@ -9,11 +9,7 @@ const ThemeToggleButton: React.FC = () => {
 
   return (
     <>
-      <CustomButton
-        variant="button-themes"
-        className="absolute z-20 right-[100px] top-[30px]"
-        onClick={toggleTheme}
-      >
+      <CustomButton variant="button-themes" onClick={toggleTheme}>
         {themeMode === 'light' ? <LightModeIcon /> : <ModeNightIcon />}
       </CustomButton>
     </>

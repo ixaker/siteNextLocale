@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { MenuItem, Box, Popper, Paper } from '@mui/material';
+import { Box, Popper, Paper } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'; // Стрелка вниз
 import { useRouter } from 'next/router';
 import CustomButton from '@/components/ui/button/CustomButton';
