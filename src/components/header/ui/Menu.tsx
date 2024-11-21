@@ -11,16 +11,16 @@ const menuItems = [
     subMenu: [
       {
         title: 'ТОКАРНІ Токарні роботи ЧПУ',
-        href: '/services/tokarni-roboty-chpu',
+        href: 'services/tokarni-roboty-chpu',
       },
-      { title: 'ТОКАРНІ РОБОТ', href: '/services/tokarni-robot' },
-      { title: 'ФРЕЗЕРНІ РОБОТИ', href: '/services/frezerni-roboty' },
-      { title: 'ТЕРМІЧНА ОБРОБКА', href: '/services/termichna-obrobka' },
-      { title: 'ЛАЗЕРНА РІЗКА', href: '/services/lazerna-rizka' },
-      { title: 'ШЛІФОВКА МЕТАЛУ', href: '/services/shlifovka-metalu' },
+      { title: 'ТОКАРНІ РОБОТ', href: 'services/tokarni-robot' },
+      { title: 'ФРЕЗЕРНІ РОБОТИ', href: 'services/frezerni-roboty' },
+      { title: 'ТЕРМІЧНА ОБРОБКА', href: 'services/termichna-obrobka' },
+      { title: 'ЛАЗЕРНА РІЗКА', href: 'services/lazerna-rizka' },
+      { title: 'ШЛІФОВКА МЕТАЛУ', href: 'services/shlifovka-metalu' },
       {
         title: 'ІНДИВІДУАЛЬНІ ЗАМОВЛЕННЯ',
-        href: '/services/indyvidualni-zamovlennya',
+        href: 'services/indyvidualni-zamovlennya',
       },
     ],
   },
@@ -29,15 +29,15 @@ const menuItems = [
     subMenu: [
       {
         title: 'ЗАЛІЗНИЧНІ ЗАПЧАСТИНИ',
-        href: '/production/zaliznychni-zapchastyny',
+        href: 'production/zaliznychni-zapchastyny',
       },
       {
         title: 'ЗАПЧАСТИНИ ДЛЯ СІЛЬГОСПТЕХНІКИ',
-        href: '/production/zapchastyny-dlya-silhosptekhniky',
+        href: 'production/zapchastyny-dlya-silhosptekhniky',
       },
     ],
   },
-  { title: 'Контакти', href: '/contact' }, // Этот пункт не имеет подменю
+  { title: 'Контакти', href: 'contact' }, // Этот пункт не имеет подменю
 ];
 
 const MenuComponent: React.FC = () => {
