@@ -2,6 +2,7 @@ import React from 'react';
 import Menu from './ui/Menu';
 import LanguageSwitcher from './ui/LanguageSwitcher';
 import HeaderLogo from './ui/HeaderLogo';
+import ThemeToggleButton from './ui/ThemeToggleButton';
 
 const Header: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const Header: React.FC = () => {
         <HeaderLogo />
         <Menu />
         <LanguageSwitcher />
+        <ThemeToggleButton />
       </div>
       <div className="absolute w-full flex justify-between items-center p-3 sm:hidden">
         <div>
