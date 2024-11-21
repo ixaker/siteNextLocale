@@ -9,9 +9,9 @@ const HeaderLogo = () => {
       sx={{
         width: {
           xs: '120px',
-          sm: '150px',
-          md: '200px',
-          lg: '250px',
+          sm: '130px',
+          md: '150px',
+          lg: '180px',
         },
         height: 'auto',
       }}

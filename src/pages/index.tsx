@@ -13,7 +13,9 @@ const RedirectPage = () => {
       const browserLanguage = navigator.language.split('-')[0]; // Например, 'en-US' -> 'en'
 
       // Если язык поддерживается, возвращаем его, иначе — язык по умолчанию
-      return supportedLanguages.includes(browserLanguage) ? browserLanguage : 'en';
+      return supportedLanguages.includes(browserLanguage)
+        ? browserLanguage
+        : 'en';
     };
 
     // Перенаправляем пользователя на предпочитаемый язык

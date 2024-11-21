@@ -1,19 +1,16 @@
-import { useRouter } from 'next/router';
+import { useLanguage } from '../../../context/LanguageContext';
 
 const LanguageSwitcher = () => {
-  const router = useRouter();
-  const { asPath } = router; // Получаем текущий путь
-
-  const switchLanguage = (newLang: string) => {
-    // Обновляем текущий маршрут, заменяя язык
-    const newPath = asPath.replace(/^\/[a-z]{2}/, `/${newLang}`); // Заменяем текущий язык в URL
-    router.push(newPath);
-  };
+  const { lang, setLang } = useLanguage();
 
   return (
     <div>
-      <button onClick={() => switchLanguage('en')}>EN</button>
-      <button onClick={() => switchLanguage('uk')}>UK</button>
+      <button onClick={() => setLang('en')} disabled={lang === 'en'}>
+        EN
+      </button>
+      <button onClick={() => setLang('uk')} disabled={lang === 'uk'}>
+        UK
+      </button>
     </div>
   );
 };

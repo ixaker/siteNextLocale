@@ -1,13 +1,16 @@
 import '../styles/globals.scss'; // Подключение глобальных стилей
 import type { AppProps } from 'next/app';
-import Layout from '../components/Layout'; // Импорт компонента Layout
+import { LanguageProvider } from '../context/LanguageContext';
+import Layout from '../components/Layout';
 
 function MyApp({ Component, pageProps }: AppProps) {
-    return (
-        <Layout>
-            <Component {...pageProps} />
-        </Layout>
-    );
+  return (
+    <LanguageProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </LanguageProvider>
+  );
 }
 
 export default MyApp;
