@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { MenuItem, Button, Box, Popper, Paper } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'; // Стрелка вниз
+import { useRouter } from 'next/router';
 
 const menuItems = [
   {
@@ -49,6 +50,11 @@ const MenuComponent: React.FC = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [openSubMenu, setOpenSubMenu] = useState<null | string>(null);
   const menuRef = useRef<HTMLDivElement | null>(null);
+
+  const router = useRouter();
+  const { asPath } = router;
+  const currentLang = `/${asPath.split('/')[1]}/`;
+  // console.log('asPath', asPath);
 
   const handleMenuOpen = (
     event: React.MouseEvent<HTMLElement>,
@@ -140,7 +146,7 @@ const MenuComponent: React.FC = () => {
                         <MenuItem
                           key={subItem.title}
                           component="a"
-                          href={subItem.href}
+                          href={`${currentLang}${subItem.href}`}
                           onClick={handleMenuClose}
                         >
                           {subItem.title}
@@ -151,7 +157,10 @@ const MenuComponent: React.FC = () => {
               </Popper>
             </>
           ) : (
-            <a href={item.href} style={{ textDecoration: 'none' }}>
+            <a
+              href={`${currentLang}${item.href}`}
+              style={{ textDecoration: 'none' }}
+            >
               <Button sx={buttonStyles}>{item.title}</Button>
             </a>
           )}
