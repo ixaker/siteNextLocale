@@ -2,15 +2,11 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import CustomButton from '@/components/ui/button/CustomButton';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
-import {
-  withStaticProps,
-  withStaticPaths,
-  PageProps,
-} from '../../context/withStaticPathsAndProps';
+import { withStaticProps, withStaticPaths, PageProps } from '../../context/withStaticPathsAndProps';
 
 const Home: React.FC<PageProps> = ({ translations, lang }) => {
   return (
-    <div className="bg-bgImg h-screen w-screen bg-no-repeat bg-cover absolute top-0 pt-40">
+    <div>
       <h1>{translations.welcome}</h1>
       <p>{translations.about}</p>
       <p>Current language: {lang}</p>
