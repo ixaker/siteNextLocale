@@ -3,6 +3,7 @@ import { MenuItem, Box, Popper, Paper } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'; // Стрелка вниз
 import { useRouter } from 'next/router';
 import CustomButton from '@/components/ui/button/CustomButton';
+import Link from 'next/link';
 
 const menuItems = [
   {
@@ -48,10 +49,7 @@ const MenuComponent: React.FC = () => {
   const { asPath } = router;
   const currentLang = `/${asPath.split('/')[1]}/`;
 
-  const handleMenuOpen = (
-    event: React.MouseEvent<HTMLElement>,
-    menuTitle: string
-  ) => {
+  const handleMenuOpen = (event: React.MouseEvent<HTMLElement>, menuTitle: string) => {
     setAnchorEl(event.currentTarget);
 
     setOpenSubMenu(openSubMenu === menuTitle ? null : menuTitle);
@@ -104,10 +102,7 @@ const MenuComponent: React.FC = () => {
         >
           {item.subMenu ? (
             <>
-              <CustomButton
-                variant="menu-btn"
-                onClick={(event) => handleMenuOpen(event, item.title)}
-              >
+              <CustomButton variant="menu-btn" onClick={(event) => handleMenuOpen(event, item.title)}>
                 {item.title}
                 <KeyboardArrowDownIcon />
               </CustomButton>
@@ -123,26 +118,22 @@ const MenuComponent: React.FC = () => {
                 <Paper elevation={3} sx={{ mt: 1 }}>
                   {item.subMenu
                     ? item.subMenu.map((subItem) => (
-                        <MenuItem
+                        <Link
                           key={subItem.title}
-                          component="a"
                           href={`${currentLang}${subItem.href}`}
                           onClick={handleMenuClose}
                         >
                           {subItem.title}
-                        </MenuItem>
+                        </Link>
                       ))
                     : null}
                 </Paper>
               </Popper>
             </>
           ) : (
-            <a
-              href={`${currentLang}${item.href}`}
-              style={{ textDecoration: 'none' }}
-            >
+            <Link href={`${currentLang}${item.href}`} style={{ textDecoration: 'none' }}>
               <CustomButton variant="menu-btn">{item.title}</CustomButton>
-            </a>
+            </Link>
           )}
         </Box>
       ))}
