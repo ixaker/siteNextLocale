@@ -38,12 +38,6 @@ const menuItems = [
 const buttonStyles = {
   textTransform: 'uppercase',
   fontWeight: 'bold',
-  fontSize: {
-    xs: '10px',
-    sm: '15px',
-    md: '18px',
-    lg: '18px',
-  },
 };
 
 const MenuComponent: React.FC = () => {
@@ -107,10 +101,7 @@ const MenuComponent: React.FC = () => {
       }}
     >
       {menuItems.map((item) => (
-        <Box
-          key={item.title}
-          sx={{ position: 'relative', display: 'flex', alignItems: 'center' }}
-        >
+        <Box key={item.title} sx={{ position: 'relative' }}>
           {item.subMenu ? (
             <>
               <Button
@@ -118,18 +109,7 @@ const MenuComponent: React.FC = () => {
                 sx={buttonStyles}
               >
                 {item.title}
-                <Box
-                  sx={{
-                    width: {
-                      xs: '15px',
-                      sm: '20px',
-                      md: '25px',
-                      lg: '25px',
-                    },
-                  }}
-                >
-                  <KeyboardArrowDownIcon />
-                </Box>
+                <KeyboardArrowDownIcon />
               </Button>
 
               {/* Всплывающее меню */}

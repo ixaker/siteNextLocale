@@ -1,6 +1,5 @@
 import '../styles/globals.scss'; // Подключение глобальных стилей
 import type { AppProps } from 'next/app';
-import { LanguageProvider } from '../context/LanguageContext';
 import Layout from '../components/Layout';
 import { ThemeProvider, CssBaseline, useMediaQuery } from '@mui/material';
 import { useState, useEffect, useMemo } from 'react';
@@ -34,27 +33,25 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline /> {/* Базовые стили MUI */}
-      <LanguageProvider>
-        <Layout>
-          {/* <button
-            onClick={toggleTheme}
-            style={{
-              position: 'fixed',
-              top: '10px',
-              right: '10px',
-              padding: '10px 15px',
-              background: theme.palette.primary.main,
-              color: theme.palette.background.paper,
-              border: 'none',
-              borderRadius: '5px',
-              cursor: 'pointer',
-            }}
-          >
-            Toggle Theme
-          </button> */}
-          <Component {...pageProps} />
-        </Layout>
-      </LanguageProvider>
+      <Layout>
+        <button
+          onClick={toggleTheme}
+          style={{
+            position: 'fixed',
+            top: '50px',
+            right: '10px',
+            padding: '10px 15px',
+            background: theme.palette.primary.main,
+            color: theme.palette.background.paper,
+            border: 'none',
+            borderRadius: '5px',
+            cursor: 'pointer',
+          }}
+        >
+          Toggle Theme
+        </button>
+        <Component {...pageProps} />
+      </Layout>
     </ThemeProvider>
   );
 }

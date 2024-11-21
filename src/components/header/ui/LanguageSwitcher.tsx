@@ -1,24 +1,19 @@
-import { useLanguage } from '../../../context/LanguageContext';
+import { useRouter } from 'next/router';
 
 const LanguageSwitcher = () => {
-  const { lang, setLang } = useLanguage();
+  const router = useRouter();
+  const { asPath } = router; // Получаем текущий путь
+
+  const switchLanguage = (newLang: string) => {
+    // Обновляем текущий маршрут, заменяя язык
+    const newPath = asPath.replace(/^\/[a-z]{2}/, `/${newLang}`); // Заменяем текущий язык в URL
+    router.push(newPath);
+  };
 
   return (
-    <div className="flex gap-2">
-      <button
-        className="xs:text-xs sm:text-sm md:text-md lg:text-lg"
-        onClick={() => setLang('en')}
-        disabled={lang === 'en'}
-      >
-        EN
-      </button>
-      <button
-        className="xs:text-xs sm:text-sm md:text-md lg:text-lg"
-        onClick={() => setLang('uk')}
-        disabled={lang === 'uk'}
-      >
-        UK
-      </button>
+    <div>
+      <button onClick={() => switchLanguage('en')}>EN</button>
+      <button onClick={() => switchLanguage('uk')}>UK</button>
     </div>
   );
 };
