@@ -13,7 +13,7 @@ const config: Config = {
         foreground: 'var(--foreground)',
       },
       backgroundImage: {
-        bgImg: "url('/bgImg.jpg')",
+        bgImg: "url('/bgImg.png')",
       },
     },
   },

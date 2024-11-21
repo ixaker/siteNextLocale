@@ -1,13 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { MenuItem, Button, Box, Popper, Paper } from '@mui/material';
+import { MenuItem, Box, Popper, Paper } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'; // Стрелка вниз
 import { useRouter } from 'next/router';
+import CustomButton from '@/components/ui/button/CustomButton';
 
 const menuItems = [
   {
     title: 'Послуги',
     subMenu: [
-      { title: 'ТОКАРНІ РОБОТИ ЧПУ', href: '/services/tokarni-roboty-chpu' },
+      {
+        title: 'ТОКАРНІ Токарні роботи ЧПУ',
+        href: '/services/tokarni-roboty-chpu',
+      },
       { title: 'ТОКАРНІ РОБОТ', href: '/services/tokarni-robot' },
       { title: 'ФРЕЗЕРНІ РОБОТИ', href: '/services/frezerni-roboty' },
       { title: 'ТЕРМІЧНА ОБРОБКА', href: '/services/termichna-obrobka' },
@@ -35,11 +39,6 @@ const menuItems = [
   { title: 'Контакти', href: '/contact' }, // Этот пункт не имеет подменю
 ];
 
-const buttonStyles = {
-  textTransform: 'uppercase',
-  fontWeight: 'bold',
-};
-
 const MenuComponent: React.FC = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [openSubMenu, setOpenSubMenu] = useState<null | string>(null);
@@ -48,7 +47,6 @@ const MenuComponent: React.FC = () => {
   const router = useRouter();
   const { asPath } = router;
   const currentLang = `/${asPath.split('/')[1]}/`;
-  // console.log('asPath', asPath);
 
   const handleMenuOpen = (
     event: React.MouseEvent<HTMLElement>,
@@ -93,24 +91,26 @@ const MenuComponent: React.FC = () => {
   }, []);
 
   return (
-    <Box
-      ref={menuRef}
-      sx={{
-        display: 'flex',
-        justifyContent: 'flex-end',
-      }}
-    >
+    <nav className="flex items-center gap-20" ref={menuRef}>
       {menuItems.map((item) => (
-        <Box key={item.title} sx={{ position: 'relative' }}>
+        <Box
+          key={item.title}
+          sx={{
+            position: 'relative',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '50px',
+          }}
+        >
           {item.subMenu ? (
             <>
-              <Button
+              <CustomButton
+                variant="menu-btn"
                 onClick={(event) => handleMenuOpen(event, item.title)}
-                sx={buttonStyles}
               >
                 {item.title}
                 <KeyboardArrowDownIcon />
-              </Button>
+              </CustomButton>
 
               {/* Всплывающее меню */}
               <Popper
@@ -141,12 +141,12 @@ const MenuComponent: React.FC = () => {
               href={`${currentLang}${item.href}`}
               style={{ textDecoration: 'none' }}
             >
-              <Button sx={buttonStyles}>{item.title}</Button>
+              <CustomButton variant="menu-btn">{item.title}</CustomButton>
             </a>
           )}
         </Box>
       ))}
-    </Box>
+    </nav>
   );
 };
 

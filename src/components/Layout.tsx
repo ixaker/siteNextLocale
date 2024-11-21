@@ -10,7 +10,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Header />
-      <main className="bg-bgImg h-screen w-screen bg-no-repeat bg-cover">
+      <main>
         <div className="pt-20 text-[white]">{children}</div>
       </main>
       <Footer />

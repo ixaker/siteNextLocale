@@ -4,7 +4,7 @@ export const lightTheme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: '#FFF',
+      main: '#fff',
     },
     secondary: {
       main: '#dc004e',
@@ -14,7 +14,6 @@ export const lightTheme = createTheme({
     fontFamily: 'Roboto, Arial, sans-serif',
   },
 });
-
 
 export const darkTheme = createTheme({
   palette: {

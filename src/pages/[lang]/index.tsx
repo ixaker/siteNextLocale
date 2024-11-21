@@ -1,45 +1,32 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import fs from 'fs';
-import path from 'path';
+import CustomButton from '@/components/ui/button/CustomButton';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
+import {
+  withStaticProps,
+  withStaticPaths,
+  PageProps,
+} from '../../context/withStaticPathsAndProps';
 
-type Props = {
-  translations: { [key: string]: string };
-  lang: string;
-};
-
-const Home = ({ translations, lang }: Props) => {
+const Home: React.FC<PageProps> = ({ translations, lang }) => {
   return (
-    <div>
+    <div className="bg-bgImg h-screen w-screen bg-no-repeat bg-cover absolute top-0 pt-40">
       <h1>{translations.welcome}</h1>
       <p>{translations.about}</p>
       <p>Current language: {lang}</p>
+      <div className="absolute right-5 bottom-7 flex flex-col gap-2 items-center">
+        <CustomButton variant="communication-button">
+          <EmailIcon sx={{ fontSize: '60px' }} />
+        </CustomButton>
+        <CustomButton variant="communication-button">
+          <PhoneIcon sx={{ fontSize: '60px' }} />
+        </CustomButton>
+      </div>
     </div>
   );
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const languages = ['en', 'uk'];
-  const paths = languages.flatMap((lang) => [
-    { params: { lang } },
-    { params: { lang, slug: 'contact' } },
-  ]);
-
-  return { paths, fallback: false };
-};
-
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const { lang } = params as { lang: string };
-
-  // Читаем переводы из файлов JSON
-  const translationsPath = path.join(process.cwd(), 'locales', `${lang}.json`);
-  const translations = JSON.parse(fs.readFileSync(translationsPath, 'utf8'));
-
-  return {
-    props: {
-      translations,
-      lang,
-    },
-  };
-};
+export const getStaticPaths: GetStaticPaths = withStaticPaths;
+export const getStaticProps: GetStaticProps = withStaticProps;
 
 export default Home;

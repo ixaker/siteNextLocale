@@ -1,3 +1,4 @@
+import CustomButton from '@/components/ui/button/CustomButton';
 import { useRouter } from 'next/router';
 
 const LanguageSwitcher = () => {
@@ -11,9 +12,13 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div>
-      <button onClick={() => switchLanguage('en')}>EN</button>
-      <button onClick={() => switchLanguage('uk')}>UK</button>
+    <div className="flex gap-3">
+      <CustomButton variant="leng-btn" onClick={() => switchLanguage('en')}>
+        EN
+      </CustomButton>
+      <CustomButton variant="leng-btn" onClick={() => switchLanguage('uk')}>
+        UK
+      </CustomButton>
     </div>
   );
 };
