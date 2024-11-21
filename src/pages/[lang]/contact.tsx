@@ -1,7 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { withStaticProps, withStaticPaths, PageProps } from '../../context/withStaticPathsAndProps';
 
-const Contact: React.FC<PageProps> = ({ translations, lang }) => {
+const Contact: React.FC<PageProps> = ({ translations }) => {
   return (
     <>
       <h1>{translations.welcome}</h1>

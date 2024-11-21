@@ -4,12 +4,11 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import { withStaticProps, withStaticPaths, PageProps } from '../../context/withStaticPathsAndProps';
 
-const Home: React.FC<PageProps> = ({ translations, lang }) => {
+const Home: React.FC<PageProps> = ({ translations }) => {
   return (
     <div>
       <h1>{translations.welcome}</h1>
       <p>{translations.about}</p>
-      <p>Current language: {lang}</p>
       <div className="absolute right-5 bottom-7 flex flex-col gap-2 items-center">
         <CustomButton variant="communication-button">
           <EmailIcon sx={{ fontSize: '60px' }} />

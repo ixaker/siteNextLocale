@@ -5,9 +5,9 @@ import { ThemeProvider, CssBaseline, useMediaQuery } from '@mui/material';
 import { useState, useEffect, useMemo } from 'react';
 import { lightTheme, darkTheme } from '../theme'; // Импорт тем
 import { LanguageProvider } from '../context/LanguageContext';
+import CustomButton from '@/components/ui/button/CustomButton';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import ModeNightIcon from '@mui/icons-material/ModeNight';
-import CustomButton from '@/components/ui/button/CustomButton';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)'); // Системная тема
@@ -23,17 +23,13 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
   }, [prefersDarkMode]);
 
-  const theme = useMemo(
-    () => (themeMode === 'dark' ? darkTheme : lightTheme),
-    [themeMode]
-  );
+  const theme = useMemo(() => (themeMode === 'dark' ? darkTheme : lightTheme), [themeMode]);
 
   const toggleTheme = () => {
     const newTheme = themeMode === 'light' ? 'dark' : 'light';
     setThemeMode(newTheme);
     localStorage.setItem('themeMode', newTheme);
   };
-
   return (
     <LanguageProvider>
       <ThemeProvider theme={theme}>
@@ -41,6 +37,13 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Layout>
           <Component {...pageProps} />
         </Layout>
+        <CustomButton
+          variant="button-themes"
+          className="absolute z-20 right-[100px] top-[30px]"
+          onClick={toggleTheme}
+        >
+          {themeMode === 'light' ? <LightModeIcon /> : <ModeNightIcon />}
+        </CustomButton>
       </ThemeProvider>
     </LanguageProvider>
   );

@@ -2,7 +2,6 @@ import React from 'react';
 import Menu from './ui/Menu';
 import LanguageSwitcher from './ui/LanguageSwitcher';
 import HeaderLogo from './ui/HeaderLogo';
-import CustomButton from '../ui/button/CustomButton';
 
 const Header: React.FC = () => {
   return (
@@ -24,13 +23,6 @@ const Header: React.FC = () => {
         <div>
           <div>
             <LanguageSwitcher />
-            {/* <CustomButton
-              onClick={toggleTheme}
-              variant="button-themes"
-              className="absolute top-7 right-[100px]"
-            >
-              {themeMode === 'light' ? <LightModeIcon /> : <ModeNightIcon />}
-            </CustomButton> */}
           </div>
         </div>
       </div>

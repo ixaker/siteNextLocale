@@ -1,11 +1,10 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { withStaticProps, withStaticPaths, PageProps } from '../../../context/withStaticPathsAndProps';
 
-const Page: React.FC<PageProps> = ({ translations, lang }) => {
+const Page: React.FC<PageProps> = ({ translations }) => {
   return (
     <div>
-      <h1>Контент</h1>
-      <p>Еще в разработке</p>
+      <h1>{translations.welcome}</h1>
     </div>
   );
 };
