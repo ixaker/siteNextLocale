@@ -5,24 +5,16 @@ type LanguageContextType = {
   changeLanguage: (lang: string) => void;
 };
 
-const LanguageContext = createContext<LanguageContextType | undefined>(
-  undefined
-);
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({
-  children,
-}) => {
-  const [lang, setLang] = useState('en'); // Язык по умолчанию
+export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [lang, setLang] = useState('uk'); // Язык по умолчанию
 
   const changeLanguage = (newLang: string) => {
     setLang(newLang);
   };
 
-  return (
-    <LanguageContext.Provider value={{ lang, changeLanguage }}>
-      {children}
-    </LanguageContext.Provider>
-  );
+  return <LanguageContext.Provider value={{ lang, changeLanguage }}>{children}</LanguageContext.Provider>;
 };
 
 export const useLanguage = () => {
@@ -31,7 +23,7 @@ export const useLanguage = () => {
   if (!context) {
     if (typeof window === 'undefined') {
       // Возвращаем заглушку на сервере
-      return { lang: 'en', changeLanguage: () => {} };
+      return { lang: 'uk', changeLanguage: () => {} };
     }
     throw new Error('useLanguage must be used within a LanguageProvider');
   }

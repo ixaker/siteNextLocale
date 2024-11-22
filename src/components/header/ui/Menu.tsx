@@ -4,53 +4,53 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'; // С
 import { useRouter } from 'next/router';
 import CustomButton from '@/components/ui/button/CustomButton';
 import Link from 'next/link';
-
-interface MenuProps {
-  translations: { [key: string]: string };
-}
+import langEn from '../../../../locales/en.json';
+import { MenuProps, MenuItem } from '../types/types';
 
 const MenuComponent: React.FC<MenuProps> = ({ translations }) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [openSubMenu, setOpenSubMenu] = useState<null | string>(null);
   const menuRef = useRef<HTMLDivElement | null>(null);
 
+  const servicesMenu = (translations?.services as { [key: string]: string }) || langEn.services;
+  const productsMenu = (translations?.product as { [key: string]: string }) || langEn.product;
   const router = useRouter();
   const { asPath } = router;
   const currentLang = `/${asPath.split('/')[1]}/`;
 
-  const menuItems = [
+  const menuItems: MenuItem[] = [
     {
-      title: translations?.services || 'Послуги',
+      title: servicesMenu.title,
       subMenu: [
         {
-          title: 'ТОКАРНІ Токарні роботи ЧПУ',
+          title: servicesMenu.cncTurning,
           href: 'services/tokarni-roboty-chpu',
         },
-        { title: 'ТОКАРНІ РОБОТ', href: 'services/tokarni-robot' },
-        { title: 'ФРЕЗЕРНІ РОБОТИ', href: 'services/frezerni-roboty' },
-        { title: 'ТЕРМІЧНА ОБРОБКА', href: 'services/termichna-obrobka' },
-        { title: 'ЛАЗЕРНА РІЗКА', href: 'services/lazerna-rizka' },
-        { title: 'ШЛІФОВКА МЕТАЛУ', href: 'services/shlifovka-metalu' },
+        { title: servicesMenu.turning, href: 'services/tokarni-robot' },
+        { title: servicesMenu.milling, href: 'services/frezerni-roboty' },
+        { title: servicesMenu.heatTreatment, href: 'services/termichna-obrobka' },
+        { title: servicesMenu.laserCutting, href: 'services/lazerna-rizka' },
+        { title: servicesMenu.metalGinding, href: 'services/shlifovka-metalu' },
         {
-          title: 'ІНДИВІДУАЛЬНІ ЗАМОВЛЕННЯ',
+          title: servicesMenu.customOrders,
           href: 'services/indyvidualni-zamovlennya',
         },
       ],
     },
     {
-      title: translations?.product || 'Продукція',
+      title: productsMenu.title,
       subMenu: [
         {
-          title: 'ЗАЛІЗНИЧНІ ЗАПЧАСТИНИ',
+          title: productsMenu.railwaySpareParts,
           href: 'production/zaliznychni-zapchastyny',
         },
         {
-          title: 'ЗАПЧАСТИНИ ДЛЯ СІЛЬГОСПТЕХНІКИ',
+          title: productsMenu.sparePartsForAgricultural,
           href: 'production/zapchastyny-dlya-silhosptekhniky',
         },
       ],
     },
-    { title: translations?.contacts || 'Контакти', href: 'contact' }, // Этот пункт не имеет подменю
+    { title: productsMenu.contacts, href: 'contact' }, // Этот пункт не имеет подменю
   ];
 
   const handleMenuOpen = (event: React.MouseEvent<HTMLElement>, menuTitle: string) => {
@@ -118,10 +118,21 @@ const MenuComponent: React.FC<MenuProps> = ({ translations }) => {
                 disablePortal
                 style={{ zIndex: 1300 }}
               >
-                <Paper elevation={3} sx={{ mt: 1 }}>
+                <Paper
+                  elevation={3}
+                  sx={{
+                    mt: 1,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '5px',
+                    width: '220px',
+                    padding: '10px',
+                  }}
+                >
                   {item.subMenu
                     ? item.subMenu.map((subItem) => (
                         <Link
+                          className="hover:text-[#c43c1e]"
                           key={subItem.title}
                           href={`${currentLang}${subItem.href}`}
                           onClick={handleMenuClose}

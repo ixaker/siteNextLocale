@@ -7,7 +7,20 @@
   "email": "Email",
   "address": "Address",
   "footer": "We are always happy to answer your questions and hear your suggestions!",
-  "services": "Services",
-  "product": "Product",
-  "contacts": "Contacts"
+  "services": {
+    "title": "Services",
+    "cncTurning": "CNC TURNING",
+    "turning": "TURNING",
+    "milling": "MILLING",
+    "heatTreatment": "HEAT TREATMENT",
+    "laserCutting": "LASER CUTTING",
+    "metalGinding": "METAL GRINDING",
+    "customOrders": "CUSTOM ORDERS"
+  },
+  "product": {
+    "title": "Product",
+    "railwaySpareParts": "RAILWAY SPARE PARTS",
+    "spare-parts-for-agricultural": "SPARE PARTS FOR AGRICULTURAL EQUIPMENT",
+    "contacts": "Contacts"
+  }
 }
