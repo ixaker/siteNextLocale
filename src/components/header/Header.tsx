@@ -3,8 +3,6 @@ import Menu from './ui/Menu';
 import LanguageSwitcher from './ui/LanguageSwitcher';
 import HeaderLogo from './ui/HeaderLogo';
 import ThemeToggleButton from './ui/ThemeToggleButton';
-import { PageProps, withStaticPaths, withStaticProps } from '@/context/withStaticPathsAndProps';
-import { GetStaticPaths, GetStaticProps } from 'next';
 
 interface HeaderProps {
   translations: { [key: string]: string };
