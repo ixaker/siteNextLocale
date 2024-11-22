@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <LanguageProvider>
       <ThemeProvider>
         <CssBaseline /> {/* Базовые стили MUI */}
-        <Layout>
+        <Layout translations={pageProps.translations}>
           <Component {...pageProps} />
         </Layout>
       </ThemeProvider>

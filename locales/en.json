@@ -1,10 +1,13 @@
 {
-    "welcome": "Welcome to our site!",
-    "about": "About us",
-    "title": "Contacts",
-    "description": "Contact us using the following details:",
-    "phone": "Phone",
-    "email": "Email",
-    "address": "Address",
-    "footer": "We are always happy to answer your questions and hear your suggestions!"
-  }
+  "welcome": "Welcome to our site!",
+  "about": "About us",
+  "title": "Contacts",
+  "description": "Contact us using the following details:",
+  "phone": "Phone",
+  "email": "Email",
+  "address": "Address",
+  "footer": "We are always happy to answer your questions and hear your suggestions!",
+  "services": "Services",
+  "product": "Product",
+  "contacts": "Contacts"
+}

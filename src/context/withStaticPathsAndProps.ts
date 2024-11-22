@@ -32,7 +32,7 @@ const loadTranslations = (lang: string) => {
 export const withStaticProps = async <P>(
   context: GetStaticPropsContext
 ): Promise<GetStaticPropsResult<P>> => {
-  const lang = context.params?.lang as string || 'en';
+  const lang = (context.params?.lang as string) || 'en';
 
   const translations = loadTranslations(lang);
 

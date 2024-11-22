@@ -4,12 +4,13 @@ import Footer from './footer/Footer';
 
 interface LayoutProps {
   children: React.ReactNode;
+  translations: { [key: string]: string };
 }
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC<LayoutProps> = ({ children, translations }) => {
   return (
     <>
-      <Header />
+      <Header translations={translations} />
       <main className="bg-bgImg h-screen w-screen bg-no-repeat bg-cover absolute top-0 pt-40">
         <div className="pt-20 text-[white]">{children}</div>
       </main>

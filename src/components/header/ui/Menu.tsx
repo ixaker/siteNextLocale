@@ -5,42 +5,11 @@ import { useRouter } from 'next/router';
 import CustomButton from '@/components/ui/button/CustomButton';
 import Link from 'next/link';
 
-const menuItems = [
-  {
-    title: 'Послуги',
-    subMenu: [
-      {
-        title: 'ТОКАРНІ Токарні роботи ЧПУ',
-        href: 'services/tokarni-roboty-chpu',
-      },
-      { title: 'ТОКАРНІ РОБОТ', href: 'services/tokarni-robot' },
-      { title: 'ФРЕЗЕРНІ РОБОТИ', href: 'services/frezerni-roboty' },
-      { title: 'ТЕРМІЧНА ОБРОБКА', href: 'services/termichna-obrobka' },
-      { title: 'ЛАЗЕРНА РІЗКА', href: 'services/lazerna-rizka' },
-      { title: 'ШЛІФОВКА МЕТАЛУ', href: 'services/shlifovka-metalu' },
-      {
-        title: 'ІНДИВІДУАЛЬНІ ЗАМОВЛЕННЯ',
-        href: 'services/indyvidualni-zamovlennya',
-      },
-    ],
-  },
-  {
-    title: 'Продукція',
-    subMenu: [
-      {
-        title: 'ЗАЛІЗНИЧНІ ЗАПЧАСТИНИ',
-        href: 'production/zaliznychni-zapchastyny',
-      },
-      {
-        title: 'ЗАПЧАСТИНИ ДЛЯ СІЛЬГОСПТЕХНІКИ',
-        href: 'production/zapchastyny-dlya-silhosptekhniky',
-      },
-    ],
-  },
-  { title: 'Контакти', href: 'contact' }, // Этот пункт не имеет подменю
-];
+interface MenuProps {
+  translations: { [key: string]: string };
+}
 
-const MenuComponent: React.FC = () => {
+const MenuComponent: React.FC<MenuProps> = ({ translations }) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [openSubMenu, setOpenSubMenu] = useState<null | string>(null);
   const menuRef = useRef<HTMLDivElement | null>(null);
@@ -48,6 +17,41 @@ const MenuComponent: React.FC = () => {
   const router = useRouter();
   const { asPath } = router;
   const currentLang = `/${asPath.split('/')[1]}/`;
+
+  const menuItems = [
+    {
+      title: translations?.services || 'Послуги',
+      subMenu: [
+        {
+          title: 'ТОКАРНІ Токарні роботи ЧПУ',
+          href: 'services/tokarni-roboty-chpu',
+        },
+        { title: 'ТОКАРНІ РОБОТ', href: 'services/tokarni-robot' },
+        { title: 'ФРЕЗЕРНІ РОБОТИ', href: 'services/frezerni-roboty' },
+        { title: 'ТЕРМІЧНА ОБРОБКА', href: 'services/termichna-obrobka' },
+        { title: 'ЛАЗЕРНА РІЗКА', href: 'services/lazerna-rizka' },
+        { title: 'ШЛІФОВКА МЕТАЛУ', href: 'services/shlifovka-metalu' },
+        {
+          title: 'ІНДИВІДУАЛЬНІ ЗАМОВЛЕННЯ',
+          href: 'services/indyvidualni-zamovlennya',
+        },
+      ],
+    },
+    {
+      title: translations?.product || 'Продукція',
+      subMenu: [
+        {
+          title: 'ЗАЛІЗНИЧНІ ЗАПЧАСТИНИ',
+          href: 'production/zaliznychni-zapchastyny',
+        },
+        {
+          title: 'ЗАПЧАСТИНИ ДЛЯ СІЛЬГОСПТЕХНІКИ',
+          href: 'production/zapchastyny-dlya-silhosptekhniky',
+        },
+      ],
+    },
+    { title: translations?.contacts || 'Контакти', href: 'contact' }, // Этот пункт не имеет подменю
+  ];
 
   const handleMenuOpen = (event: React.MouseEvent<HTMLElement>, menuTitle: string) => {
     setAnchorEl(event.currentTarget);
