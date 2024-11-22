@@ -142,7 +142,9 @@ const MenuComponent: React.FC<MenuProps> = ({ translations, lang }) => {
             </>
           ) : (
             <Link key={item.href} href={`/${lang}/${item.href}`} style={{ textDecoration: 'none' }}>
-              <CustomButton variant="menu-btn">{item.title}</CustomButton>
+              <CustomButton onClick={handleMenuClose} variant="menu-btn">
+                {item.title}
+              </CustomButton>
             </Link>
           )}
         </Box>
