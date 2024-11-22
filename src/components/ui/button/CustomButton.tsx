@@ -5,9 +5,16 @@ interface PropsCustomButton {
   onClick?: (event: React.MouseEvent<HTMLButtonElement>, title: string) => void;
   variant?: 'non-style' | 'menu-btn' | 'leng-btn' | 'button-themes' | 'communication-button';
   className?: string;
+  style?: React.CSSProperties;
 }
 
-const CustomButton: FC<PropsCustomButton> = ({ children, onClick, variant = 'non-style', className }) => {
+const CustomButton: FC<PropsCustomButton> = ({
+  children,
+  onClick,
+  variant = 'non-style',
+  className,
+  style,
+}) => {
   const buttonClass = {
     'menu-btn':
       'font-bold text-xl text-[18px] sm:text-[18px] md:text-[20px] lg:text-[27px] text-[white] hover:text-activeLang transition-all duration-300 ease-in-out',
@@ -22,6 +29,7 @@ const CustomButton: FC<PropsCustomButton> = ({ children, onClick, variant = 'non
     <button
       onClick={onClick ? (event) => onClick(event, String(children)) : undefined}
       className={`cursor-pointer ${buttonClass} ${className}`}
+      style={style}
     >
       {children}
     </button>

@@ -7,11 +7,23 @@ export const lightTheme = createTheme({
       main: '#fff',
     },
     secondary: {
-      main: '#dc004e',
+      main: '#000',
     },
   },
   typography: {
     fontFamily: 'Roboto, Arial, sans-serif',
+  },
+  custom: {
+    buttonTheme: {
+      color: '#fff',
+      backroundcolor: '#000',
+      css: '',
+    },
+    defaultButton: {
+      backroundcolor: '',
+      color: '',
+      css: '',
+    },
   },
 });
 
@@ -19,13 +31,25 @@ export const darkTheme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: '#777',
+      main: '#000',
     },
     secondary: {
-      main: '#f48fb1',
+      main: '#fff',
     },
   },
   typography: {
     fontFamily: 'Roboto, Arial, sans-serif',
+  },
+  custom: {
+    buttonTheme: {
+      backroundcolor: '#000',
+      color: '',
+      css: '',
+    },
+    defaultButton: {
+      backroundcolor: '',
+      color: '',
+      css: '',
+    },
   },
 });
