@@ -25,7 +25,7 @@
   "product": {
     "title": "Product",
     "railwaySpareParts": "RAILWAY SPARE PARTS",
-    "spare-parts-for-agricultural": "SPARE PARTS FOR AGRICULTURAL EQUIPMENT",
+    "sparePartsForAgricultural": "SPARE PARTS FOR AGRICULTURAL EQUIPMENT",
     "contacts": "Contacts"
   }
 }

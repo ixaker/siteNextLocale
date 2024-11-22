@@ -8,10 +8,11 @@ const ThemeToggleButton: React.FC = () => {
   const { themeMode, toggleTheme } = useTheme();
 
   const styleIconBtn = {
-    width: {
-      sm: '20px',
-      md: '30px',
-      lg: '60px',
+    fontSize: {
+      xs: '30px',
+      sm: '30px',
+      md: '35px',
+      lg: '40px',
     },
   };
 

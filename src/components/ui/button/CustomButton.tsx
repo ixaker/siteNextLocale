@@ -17,12 +17,12 @@ const CustomButton: FC<PropsCustomButton> = ({
 }) => {
   const buttonClass = {
     'menu-btn':
-      'font-bold text-xl text-[18px] sm:text-[18px] md:text-[20px] lg:text-[27px] text-[white] hover:text-activeLang transition-all duration-300 ease-in-out',
+      'font-bold text-xl text-[15px]  sm:text-[18px] md:text-[20px] lg:text-[27px] text-[white] hover:text-activeLang transition-all duration-300 ease-in-out',
     'leng-btn': 'font-bold text-lg sm:text-[14px] md:text-[18px] lg:text-[27px] text-[white]',
     'non-style': '',
     'button-themes': 'rounded-full w-10',
     'communication-button':
-      'rounded-full p-4 bg-[black] text-[#c43c1e] hover:bg-slate-800 hover:text-white transition-all duration-300 ease-in-out',
+      ' rounded-full  hover:bg-slate-800 hover:text-white transition-all duration-300 ease-in-out p-2 md:p-4 ',
   }[variant];
 
   return (
