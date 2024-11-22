@@ -15,4 +15,5 @@ export interface Translations {
 
 export interface MenuProps {
   translations: Translations;
+  lang: string;
 }

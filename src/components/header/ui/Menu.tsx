@@ -1,22 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Box, Popper, Paper } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'; // Стрелка вниз
-import { useRouter } from 'next/router';
 import CustomButton from '@/components/ui/button/CustomButton';
 import Link from 'next/link';
 import langEn from '../../../../locales/en.json';
 import { MenuProps, MenuItem } from '../types/types';
 
-const MenuComponent: React.FC<MenuProps> = ({ translations }) => {
+const MenuComponent: React.FC<MenuProps> = ({ translations, lang }) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [openSubMenu, setOpenSubMenu] = useState<null | string>(null);
   const menuRef = useRef<HTMLDivElement | null>(null);
 
   const servicesMenu = (translations?.services as { [key: string]: string }) || langEn.services;
   const productsMenu = (translations?.product as { [key: string]: string }) || langEn.product;
-  const router = useRouter();
-  const { asPath } = router;
-  const currentLang = `/${asPath.split('/')[1]}/`;
 
   const menuItems: MenuItem[] = [
     {
@@ -134,7 +130,7 @@ const MenuComponent: React.FC<MenuProps> = ({ translations }) => {
                         <Link
                           className="hover:text-[#c43c1e]"
                           key={subItem.title}
-                          href={`${currentLang}${subItem.href}`}
+                          href={`/${lang}/${subItem.href}/`}
                           onClick={handleMenuClose}
                         >
                           {subItem.title}
@@ -145,7 +141,7 @@ const MenuComponent: React.FC<MenuProps> = ({ translations }) => {
               </Popper>
             </>
           ) : (
-            <Link href={`${currentLang}${item.href}`} style={{ textDecoration: 'none' }}>
+            <Link key={item.href} href={`/${lang}/${item.href}`} style={{ textDecoration: 'none' }}>
               <CustomButton variant="menu-btn">{item.title}</CustomButton>
             </Link>
           )}

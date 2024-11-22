@@ -6,15 +6,16 @@ import ThemeToggleButton from './ui/ThemeToggleButton';
 
 interface HeaderProps {
   translations: { [key: string]: string };
+  lang: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ translations }) => {
+const Header: React.FC<HeaderProps> = ({ translations, lang }) => {
   return (
     <header className="relative z-20">
       <div className="flex justify-between items-center flex-wrap p-3 bg-inherit absolute top-0 w-full">
         <HeaderLogo />
         <div className="hidden sm:block">
-          <Menu translations={translations} />
+          <Menu translations={translations} lang={lang} />
         </div>
         <div className="flex gap-7 items-center">
           <LanguageSwitcher />
@@ -22,7 +23,7 @@ const Header: React.FC<HeaderProps> = ({ translations }) => {
         </div>
 
         <div className="flex justify-center items-center w-full mt-4 sm:hidden ">
-          <Menu translations={translations} />
+          <Menu translations={translations} lang={lang} />
         </div>
       </div>
     </header>

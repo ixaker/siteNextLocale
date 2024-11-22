@@ -1,4 +1,9 @@
 {
+  "homePage": {
+    "title": "WE MANUFACTURE PRODUCTS OF ANY COMPLEXITY",
+    "description": "TURNING AND MILLING WORK ON CNC MACHINES",
+    "btnSend": "Send drawings for calculation"
+  },
   "welcome": "Welcome to our site!",
   "about": "About us",
   "title": "Contacts",
