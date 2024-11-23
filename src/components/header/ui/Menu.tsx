@@ -105,18 +105,25 @@ const MenuComponent: React.FC<MenuProps> = ({ translations, lang }) => {
                     mt: 1,
                     display: 'flex',
                     flexDirection: 'column',
-                    gap: '5px',
-                    width: '220px',
-                    padding: '10px',
                     zIndex: 1300,
+                    whiteSpace: {
+                      xs: 'wrap',
+                      md: 'nowrap',
+                      lg: 'nowrap',
+                    },
+                    width: {
+                      xs: '160px',
+                      md: 'auto',
+                      lg: 'auto',
+                    },
                   }}
                   onMouseEnter={() => handleSubMenuOpen(item.title)}
                   onMouseLeave={handleSubMenuClose}
                 >
                   {item.subMenu.map((subItem) => (
                     <Link
-                      className="hover:text-[#c43c1e]"
                       key={subItem.title}
+                      className="hover:bg-[#c43c1e] no-wrap transition-all duration-300 ease-in-out p-1 sm:p-1 md:p-1.5 lg:p-2 rounded-[3px] text-[10px] sm:text-[14px] md:text-[15px] lg:text-[17px]"
                       href={`/${lang}/${subItem.href}/`}
                     >
                       {subItem.title}
