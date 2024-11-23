@@ -1,24 +1,35 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { withStaticProps, withStaticPaths, PageProps } from '../../context/withStaticPathsAndProps';
 
+type ContactPageTranslations = {
+  welcome: string;
+  title: string;
+  description: string;
+  phone: string;
+  email: string;
+  address: string;
+  footer: string;
+};
+
 const Page: React.FC<PageProps> = ({ translations }) => {
+  const translationsContactPage = translations.contactPage as ContactPageTranslations;
   return (
     <>
-      <h1>{translations.welcome}</h1>
-      <h1>{translations.title}</h1>
-      <p>{translations['description']}</p>
+      <h1>{translationsContactPage.welcome}</h1>
+      <h1>{translationsContactPage.title}</h1>
+      <p>{translationsContactPage.description}</p>
       <ul>
         <li>
-          <strong>{translations['phone']}:</strong> +380 (44) 123-4567
+          <strong>{translationsContactPage.phone}:</strong> +380 (44) 123-4567
         </li>
         <li>
-          <strong>{translations['email']}:</strong> info@mysite.com
+          <strong>{translationsContactPage.email}:</strong> info@mysite.com
         </li>
         <li>
-          <strong>{translations['address']}:</strong> Киев, Украина
+          <strong>{translationsContactPage.address}:</strong> Киев, Украина
         </li>
       </ul>
-      <p>{translations['footer']}</p>
+      <p>{translationsContactPage.footer}</p>
     </>
   );
 };

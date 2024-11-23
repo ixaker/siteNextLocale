@@ -1,17 +1,20 @@
 {
   "homePage": {
-    "title": "WE MANUFACTURE PRODUCTS OF ANY COMPLEXITY",
+    "topTitle": "WE MANUFACTURE PRODUCTS",
+    "bottomTitle": "OF ANY COMPLEXITY",
     "description": "TURNING AND MILLING WORK ON CNC MACHINES",
     "btnSend": "Send drawings for calculation"
   },
-  "welcome": "Welcome to our site!",
-  "about": "About us",
-  "title": "Contacts",
-  "description": "Contact us using the following details:",
-  "phone": "Phone",
-  "email": "Email",
-  "address": "Address",
-  "footer": "We are always happy to answer your questions and hear your suggestions!",
+  "contactPage": {
+    "welcome": "Welcome to our site!",
+    "about": "About us",
+    "title": "Contacts",
+    "description": "Contact us using the following details:",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "footer": "We are always happy to answer your questions and hear your suggestions!"
+  },
   "services": {
     "title": "Services",
     "cncTurning": "CNC TURNING",
@@ -27,5 +30,6 @@
     "railwaySpareParts": "RAILWAY SPARE PARTS",
     "sparePartsForAgricultural": "SPARE PARTS FOR AGRICULTURAL EQUIPMENT",
     "contacts": "Contacts"
-  }
+  },
+  "welcome": "Welcome to our site!"
 }

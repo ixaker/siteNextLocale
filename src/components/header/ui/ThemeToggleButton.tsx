@@ -23,7 +23,11 @@ const ThemeToggleButton: React.FC = () => {
         className="flex items-center justify-center"
         onClick={toggleTheme}
       >
-        {themeMode === 'light' ? <LightModeIcon sx={styleIconBtn} /> : <ModeNightIcon sx={styleIconBtn} />}
+        {themeMode === 'light' ? (
+          <LightModeIcon sx={styleIconBtn} style={{ color: 'white' }} />
+        ) : (
+          <ModeNightIcon sx={styleIconBtn} style={{ color: 'black' }} />
+        )}
       </CustomButton>
     </>
   );

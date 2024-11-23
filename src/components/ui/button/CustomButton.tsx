@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 interface PropsCustomButton {
   children: React.ReactNode;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>, title: string) => void;
-  variant?: 'non-style' | 'menu-btn' | 'leng-btn' | 'button-themes' | 'communication-button';
+  variant?: 'non-style' | 'menu-btn' | 'leng-btn' | 'button-themes' | 'communication-button' | 'send-btn';
   className?: string;
   style?: React.CSSProperties;
 }
@@ -22,7 +22,9 @@ const CustomButton: FC<PropsCustomButton> = ({
     'non-style': '',
     'button-themes': 'rounded-full w-10',
     'communication-button':
-      ' rounded-full  hover:bg-slate-800 hover:text-white transition-all duration-300 ease-in-out p-2 md:p-4 ',
+      ' rounded-full  hover:bg-slate-800 hover:text-white transition-all duration-300 ease-in-out pt-3 pl-3.5 pr-3.5 pb-3 md:p-4 ',
+    'send-btn':
+      'bg-[#c43c1e] text-[#f9f7dc] text-[15px] sm:text-[20px] px-3 py-2 sm:px-10 sm:py-2 rounded-[10px] hover:bg-[#9e2a1f] hover:text-[#fff] transition-all duration-300 ease-in-out mt-10',
   }[variant];
 
   return (

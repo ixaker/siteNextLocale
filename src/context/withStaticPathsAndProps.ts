@@ -2,6 +2,10 @@ import { GetStaticPropsContext, GetStaticPropsResult, GetStaticPaths } from 'nex
 import path from 'path';
 import fs from 'fs';
 
+type Translations = {
+  [key: string]: string | { [key: string]: string };
+};
+
 //const SUPPORTED_LANGUAGES = ['en', 'uk']; // Поддерживаемые языки
 
 // Определяем поддерживаемые языки динамически
@@ -13,11 +17,11 @@ const getSupportedLanguages = (): string[] => {
 export const SUPPORTED_LANGUAGES = getSupportedLanguages();
 
 // Загружает переводы из файловой системы
-const loadTranslations = (lang: string) => {
+const loadTranslations = (lang: string): Translations => {
   const filePath = path.join(process.cwd(), 'locales', `${lang}.json`);
 
   if (fs.existsSync(filePath)) {
-    return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    return JSON.parse(fs.readFileSync(filePath, 'utf-8')) as Translations;
   } else {
     console.warn(`Translations not found for language: ${lang}`);
     return {
@@ -27,7 +31,6 @@ const loadTranslations = (lang: string) => {
     }; // Значения по умолчанию
   }
 };
-
 // Функция обёртка для getStaticProps
 export const withStaticProps = async <P>(
   context: GetStaticPropsContext
@@ -45,7 +48,7 @@ export const withStaticProps = async <P>(
 };
 
 export type PageProps = {
-  translations: { [key: string]: string };
+  translations: Translations;
   lang: string;
 };
 
