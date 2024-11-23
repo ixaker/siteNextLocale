@@ -112,7 +112,7 @@ const MenuComponent: React.FC<MenuProps> = ({ translations, lang }) => {
                       lg: 'nowrap',
                     },
                     width: {
-                      xs: '160px',
+                      xs: '180px',
                       md: 'auto',
                       lg: 'auto',
                     },
@@ -123,7 +123,7 @@ const MenuComponent: React.FC<MenuProps> = ({ translations, lang }) => {
                   {item.subMenu.map((subItem) => (
                     <Link
                       key={subItem.title}
-                      className="hover:bg-[#c43c1e] no-wrap transition-all duration-300 ease-in-out p-1 sm:p-1 md:p-1.5 lg:p-2 rounded-[3px] text-[10px] sm:text-[14px] md:text-[15px] lg:text-[17px]"
+                      className="hover:bg-[#c43c1e] no-wrap transition-all duration-300 ease-in-out p-1 sm:p-1 md:p-1.5 lg:p-2 rounded-[3px] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px]"
                       href={`/${lang}/${subItem.href}/`}
                     >
                       {subItem.title}
