@@ -1,4 +1,3 @@
-import { Box } from '@mui/material';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -8,7 +7,7 @@ const HeaderLogo = () => {
   const currentLang = asPath.split('/')[1];
   return (
     <Link href={`/${currentLang}`}>
-      <Box
+      {/* <Box
         component="img"
         src="/logo.png"
         alt="Logo"
@@ -21,7 +20,14 @@ const HeaderLogo = () => {
           },
           height: 'auto',
         }}
-      />
+      /> */}
+      <img
+        width="120px"
+        height="40px"
+        src="/logo.png"
+        className="w-[120px] h-auto sm:w-[130px] md:w-[160px] lg:w-[200px]"
+        alt="bg"
+      ></img>
     </Link>
   );
 };

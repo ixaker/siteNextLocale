@@ -18,7 +18,7 @@ const Header: React.FC<PageProps> = ({ translations, lang }) => {
           <ThemeToggleButton />
         </div>
 
-        <div className="flex justify-center items-center w-full mt-4 sm:hidden ">
+        <div className="flex justify-center items-center w-full mt-[30px] sm:hidden ">
           <Menu translations={translations} lang={lang} />
         </div>
       </div>

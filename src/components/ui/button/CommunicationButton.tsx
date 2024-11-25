@@ -19,7 +19,7 @@ const iconSize = {
 
 const CommunicationButton: React.FC<PropsCommunicationButton> = ({ primaryColor, secondaryColor }) => {
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-3 fixed bottom-12 right-4">
       <CustomButton
         ariaLabel="Send Email"
         style={{
