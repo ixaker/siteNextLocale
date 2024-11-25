@@ -1,11 +1,24 @@
 {
+  "lang": "uk_UA",
   "homePage": {
+    "meta": {
+      "title": "Запчасти для агротехники QPART",
+      "description": "Продаж запчастин для імпортної сільгосптехніки з доставкою по Україні | Висока якість Вигідна ціна Гарантія від виробника Допомога у підборі ☎ +38 098 995 07 60.",
+      "keywords": "металообробка",
+      "imgOg": "/logo.png"
+    },
     "topTitle": "ВИГОТОВЛЯЄМО ВИРОБИ",
     "bottomTitle": "БУДЬ-ЯКОЇ СКЛАДНОСТІ",
     "description": "ТОКАРНІ ТА ФРЕЗЕРНІ РОБОТИ НА ВЕРСТАТАХ З ЧПУ",
     "btnSend": "Надіслати креслення на прорахунок"
   },
   "contactPage": {
+    "meta": {
+      "title": "Контакти QPART",
+      "description": "Продаж запчастин для імпортної сільгосптехніки з доставкою по Україні | Висока якість Вигідна ціна Гарантія від виробника Допомога у підборі ☎ +38 098 995 07 60.",
+      "keywords": "металообробка",
+      "imgOg": "/logo.png"
+    },
     "welcome": "Ласкаво просимо на наш сайт!",
     "about": "Про нас",
     "title": "Контакти",
@@ -31,5 +44,30 @@
     "sparePartsForAgricultural": "ЗАПЧАСТИНИ ДЛЯ СІЛЬГОСПТЕХНІКИ",
     "contacts": "Контакти"
   },
-  "welcome": "Ласкаво просимо на наш сайт!"
+  "welcome": "Ласкаво просимо на наш сайт!",
+  "menu": [
+    {
+      "title": "Послуги",
+      "subMenu": [
+        { "title": "ТОКАРНІ РОБОТИ ЧПУ", "href": "services/tokarni-roboty-chpu" },
+        { "title": "ТОКАРНІ РОБОТИ", "href": "services/tokarni-robot" },
+        { "title": "ФРЕЗЕРНІ РОБОТИ", "href": "services/frezerni-roboty" },
+        { "title": "ТЕРМІЧНА ОБРОБКА", "href": "services/termichna-obrobka" },
+        { "title": "ЛАЗЕРНА РІЗКА", "href": "services/lazerna-rizka" },
+        { "title": "ШЛІФОВКА МЕТАЛУ", "href": "services/shlifovka-metalu" },
+        { "title": "ІНДИВІДУАЛЬНІ ЗАМОВЛЕННЯ", "href": "services/indyvidualni-zamovlennya" }
+      ]
+    },
+    {
+      "title": "Продукція",
+      "subMenu": [
+        { "title": "ЗАЛІЗНИЧНІ ЗАПЧАСТИНИ", "href": "production/zaliznychni-zapchastyny" },
+        { "title": "ЗАПЧАСТИНИ ДЛЯ СІЛЬГОСПТЕХНІКИ", "href": "production/zapchastyny-dlya-silhosptekhniky" }
+      ]
+    },
+    {
+      "title": "Контакти",
+      "href": "contact"
+    }
+  ]
 }

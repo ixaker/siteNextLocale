@@ -1,11 +1,24 @@
 {
+  "locale": "en_US",
   "homePage": {
+    "meta": {
+      "title": "Spare parts for QPART agricultural machinery",
+      "description": "Sale of spare parts for imported agricultural machinery with delivery throughout Ukraine | High quality | Favorable price | Manufacturer's warranty | Help in selection ☎ +38 098 995 07 60.",
+      "keywords": "metalworking",
+      "imgOg": "/logo.png"
+    },
     "topTitle": "WE MANUFACTURE PRODUCTS",
     "bottomTitle": "OF ANY COMPLEXITY",
     "description": "TURNING AND MILLING WORK ON CNC MACHINES",
     "btnSend": "Send drawings for calculation"
   },
   "contactPage": {
+    "meta": {
+      "title": "Contacts QPART",
+      "description": "Sale of spare parts for imported agricultural machinery with delivery throughout Ukraine | High quality | Favorable price | Manufacturer's warranty | Help in selection ☎ +38 098 995 07 60.",
+      "keywords": "metalworking",
+      "imgOg": "/logo.png"
+    },
     "welcome": "Welcome to our site!",
     "about": "About us",
     "title": "Contacts",
@@ -31,5 +44,34 @@
     "sparePartsForAgricultural": "SPARE PARTS FOR AGRICULTURAL EQUIPMENT",
     "contacts": "Contacts"
   },
-  "welcome": "Welcome to our site!"
+  "welcome": "Welcome to our site!",
+
+  "menu": [
+    {
+      "title": "Services",
+      "subMenu": [
+        { "title": "CNC TURNING", "href": "services/tokarni-roboty-chpu" },
+        { "title": "TURNING", "href": "services/tokarni-robot" },
+        { "title": "MILLING", "href": "services/frezerni-roboty" },
+        { "title": "HEAT TREATMENT", "href": "services/termichna-obrobka" },
+        { "title": "LASER CUTTING", "href": "services/lazerna-rizka" },
+        { "title": "METAL GRINDING", "href": "services/shlifovka-metalu" },
+        { "title": "CUSTOM ORDERS", "href": "services/indyvidualni-zamovlennya" }
+      ]
+    },
+    {
+      "title": "Product",
+      "subMenu": [
+        { "title": "RAILWAY SPARE PARTS", "href": "production/zaliznychni-zapchastyny" },
+        {
+          "title": "SPARE PARTS FOR AGRICULTURAL EQUIPMENT",
+          "href": "production/zapchastyny-dlya-silhosptekhniky"
+        }
+      ]
+    },
+    {
+      "title": "Contacts",
+      "href": "contact"
+    }
+  ]
 }

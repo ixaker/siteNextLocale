@@ -1,35 +1,35 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { withStaticProps, withStaticPaths, PageProps } from '../../context/withStaticPathsAndProps';
+import DynamicHead from '@/components/shared/DynamicHead';
 
-type ContactPageTranslations = {
-  welcome: string;
-  title: string;
-  description: string;
-  phone: string;
-  email: string;
-  address: string;
-  footer: string;
-};
-
-const Page: React.FC<PageProps> = ({ translations }) => {
-  const translationsContactPage = translations.contactPage as ContactPageTranslations;
+const Page: React.FC<PageProps> = ({ translations, lang }) => {
+  const translationsPage = translations.contactPage;
   return (
     <>
-      <h1>{translationsContactPage.welcome}</h1>
-      <h1>{translationsContactPage.title}</h1>
-      <p>{translationsContactPage.description}</p>
+      <DynamicHead
+        title={translationsPage.meta.title}
+        description={translationsPage.meta.description}
+        keywords={translationsPage.meta.keywords}
+        canonical=""
+        imgOg={translationsPage.meta.imgOg}
+        lang={lang}
+        localeOg={translations.locale}
+      />
+      <h1>{translationsPage.welcome}</h1>
+      <h1>{translationsPage.title}</h1>
+      <p>{translationsPage.description}</p>
       <ul>
         <li>
-          <strong>{translationsContactPage.phone}:</strong> +380 (44) 123-4567
+          <strong>{translationsPage.phone}:</strong> +380 (44) 123-4567
         </li>
         <li>
-          <strong>{translationsContactPage.email}:</strong> info@mysite.com
+          <strong>{translationsPage.email}:</strong> info@mysite.com
         </li>
         <li>
-          <strong>{translationsContactPage.address}:</strong> Киев, Украина
+          <strong>{translationsPage.address}:</strong> Киев, Украина
         </li>
       </ul>
-      <p>{translationsContactPage.footer}</p>
+      <p>{translationsPage.footer}</p>
     </>
   );
 };

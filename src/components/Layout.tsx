@@ -4,14 +4,9 @@ import Header from './header/Header';
 import Footer from './footer/Footer';
 import { darkTheme, lightTheme } from '@/theme';
 import CommunicationButton from './ui/button/CommunicationButton';
+import { PageProps } from '@/context/withStaticPathsAndProps';
 
-interface LayoutProps {
-  children: React.ReactNode;
-  translations: { [key: string]: string };
-  lang: string;
-}
-
-const Layout: React.FC<LayoutProps> = ({ children, translations, lang }) => {
+const Layout: React.FC<PageProps> = ({ children, translations, lang }) => {
   const theme = useTheme();
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;

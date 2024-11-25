@@ -11,9 +11,13 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
-        {' '}
-        {/* Устанавливаем язык по умолчанию */}
+      <Html lang="uk">
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e31837" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />{' '}
         <Head>{/* Можете добавлять сюда другие мета-теги или стили */}</Head>
         <body>
           <Main />

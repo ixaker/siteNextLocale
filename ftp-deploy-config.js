@@ -1,6 +1,6 @@
-require("dotenv").config();
+require('dotenv').config();
 
-const FtpDeploy = require("ftp-deploy");
+const FtpDeploy = require('ftp-deploy');
 const ftpDeploy = new FtpDeploy();
 
 const config = {
@@ -8,9 +8,9 @@ const config = {
   password: process.env.FTP_PASSWORD,
   host: process.env.FTP_HOST,
   port: 21,
-  localRoot: "C:/Users/xaker/Downloads/siteNext-main/siteNext-main/out",
-  remoteRoot: "/",
-  include: ["*", "**/*"],
+  localRoot: './out',
+  remoteRoot: '/',
+  include: ['*', '**/*'],
   deleteRemote: true,
   forcePasv: true,
 };
@@ -18,28 +18,28 @@ const config = {
 // Запуск деплоя
 ftpDeploy
   .deploy(config)
-  .then(() => console.log("Деплой завершен!"))
-  .catch((err) => console.error("Ошибка деплоя:", err));
+  .then(() => console.log('Деплой завершен!'))
+  .catch((err) => console.error('Ошибка деплоя:', err));
 
 // Логирование событий
 
 // Лог каждого загруженного файла
-ftpDeploy.on("uploaded", function (data) {
+ftpDeploy.on('uploaded', function (data) {
   console.log(`Загружен файл: ${data.filename}`);
 });
 
 // Лог прогресса загрузки
-ftpDeploy.on("uploading", function (data) {
+ftpDeploy.on('uploading', function (data) {
   console.log(`Загрузка: ${data.transferredFileCount}/${data.totalFilesCount} файлов`);
   console.log(`Текущий файл: ${data.filename}`);
 });
 
 // Лог при удалении файла (если deleteRemote = true)
-ftpDeploy.on("deleted", function (data) {
+ftpDeploy.on('deleted', function (data) {
   console.log(`Удален файл на сервере: ${data}`);
 });
 
 // Лог завершения деплоя
-ftpDeploy.on("upload-error", function (data) {
+ftpDeploy.on('upload-error', function (data) {
   console.error(`Ошибка загрузки файла ${data.filename}:`, data.err);
 });

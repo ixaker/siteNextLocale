@@ -3,13 +3,9 @@ import Menu from './ui/Menu';
 import LanguageSwitcher from './ui/LanguageSwitcher';
 import HeaderLogo from './ui/HeaderLogo';
 import ThemeToggleButton from './ui/ThemeToggleButton';
+import { PageProps } from '@/context/withStaticPathsAndProps';
 
-interface HeaderProps {
-  translations: { [key: string]: string };
-  lang: string;
-}
-
-const Header: React.FC<HeaderProps> = ({ translations, lang }) => {
+const Header: React.FC<PageProps> = ({ translations, lang }) => {
   return (
     <header className="relative z-20">
       <div className="flex justify-between items-center flex-wrap p-3 bg-inherit absolute top-0 w-full">

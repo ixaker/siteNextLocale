@@ -2,43 +2,16 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Box, Paper } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Link from 'next/link';
-import { MenuItem, MenuProps } from '../types/types';
-import langEn from '../../../../locales/en.json';
 import CustomButton from '@/components/ui/button/CustomButton';
+import { PageProps } from '@/context/withStaticPathsAndProps';
+import langUk from '../../../../locales/uk.json';
 
-const MenuComponent: React.FC<MenuProps> = ({ translations, lang }) => {
+const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
   const [openSubMenu, setOpenSubMenu] = useState<null | string>(null);
   const menuRef = useRef<HTMLDivElement | null>(null);
   const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  const servicesMenu = (translations?.services as { [key: string]: string }) || langEn.services;
-  const productsMenu = (translations?.product as { [key: string]: string }) || langEn.product;
-
-  const menuItems: MenuItem[] = [
-    {
-      title: servicesMenu.title,
-      subMenu: [
-        { title: servicesMenu.cncTurning, href: 'services/tokarni-roboty-chpu' },
-        { title: servicesMenu.turning, href: 'services/tokarni-robot' },
-        { title: servicesMenu.milling, href: 'services/frezerni-roboty' },
-        { title: servicesMenu.heatTreatment, href: 'services/termichna-obrobka' },
-        { title: servicesMenu.laserCutting, href: 'services/lazerna-rizka' },
-        { title: servicesMenu.metalGinding, href: 'services/shlifovka-metalu' },
-        { title: servicesMenu.customOrders, href: 'services/indyvidualni-zamovlennya' },
-      ],
-    },
-    {
-      title: productsMenu.title,
-      subMenu: [
-        { title: productsMenu.railwaySpareParts, href: 'production/zaliznychni-zapchastyny' },
-        {
-          title: productsMenu.sparePartsForAgricultural,
-          href: 'production/zapchastyny-dlya-silhosptekhniky',
-        },
-      ],
-    },
-    { title: productsMenu.contacts, href: 'contact' },
-  ];
+  const menuItems = translations?.menu || langUk.menu;
 
   const handleSubMenuOpen = (menuTitle: string | null) => {
     if (closeTimeoutRef.current) {

@@ -1,10 +1,11 @@
 import { GetStaticPropsContext, GetStaticPropsResult, GetStaticPaths } from 'next';
 import path from 'path';
 import fs from 'fs';
+import { Translations } from '../../locales/types';
 
-type Translations = {
-  [key: string]: string | { [key: string]: string };
-};
+// type Translations = {
+//   [key: string]: string | { [key: string]: string };
+// };
 
 //const SUPPORTED_LANGUAGES = ['en', 'uk']; // Поддерживаемые языки
 
@@ -24,11 +25,9 @@ const loadTranslations = (lang: string): Translations => {
     return JSON.parse(fs.readFileSync(filePath, 'utf-8')) as Translations;
   } else {
     console.warn(`Translations not found for language: ${lang}`);
-    return {
-      welcome: 'Welcome',
-      comingSoon: 'Coming Soon!',
-      inDevelopment: 'Page is under development.',
-    }; // Значения по умолчанию
+
+    const defaultFilePath = path.join(process.cwd(), 'locales', `uk.json`);
+    return JSON.parse(fs.readFileSync(defaultFilePath, 'utf-8')) as Translations;
   }
 };
 // Функция обёртка для getStaticProps
@@ -50,6 +49,7 @@ export const withStaticProps = async <P>(
 export type PageProps = {
   translations: Translations;
   lang: string;
+  children?: React.ReactNode;
 };
 
 // Функция для создания путей
