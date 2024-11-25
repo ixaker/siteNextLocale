@@ -1,15 +1,15 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Box, Popper, Paper } from '@mui/material';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'; // Стрелка вниз
-import CustomButton from '@/components/ui/button/CustomButton';
+import React, { useState, useRef, useEffect } from 'react';
+import { Box, Paper } from '@mui/material';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Link from 'next/link';
+import { MenuItem, MenuProps } from '../types/types';
 import langEn from '../../../../locales/en.json';
-import { MenuProps, MenuItem } from '../types/types';
+import CustomButton from '@/components/ui/button/CustomButton';
 
 const MenuComponent: React.FC<MenuProps> = ({ translations, lang }) => {
-  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [openSubMenu, setOpenSubMenu] = useState<null | string>(null);
   const menuRef = useRef<HTMLDivElement | null>(null);
+  const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const servicesMenu = (translations?.services as { [key: string]: string }) || langEn.services;
   const productsMenu = (translations?.product as { [key: string]: string }) || langEn.product;
@@ -18,53 +18,47 @@ const MenuComponent: React.FC<MenuProps> = ({ translations, lang }) => {
     {
       title: servicesMenu.title,
       subMenu: [
-        {
-          title: servicesMenu.cncTurning,
-          href: 'services/tokarni-roboty-chpu',
-        },
+        { title: servicesMenu.cncTurning, href: 'services/tokarni-roboty-chpu' },
         { title: servicesMenu.turning, href: 'services/tokarni-robot' },
         { title: servicesMenu.milling, href: 'services/frezerni-roboty' },
         { title: servicesMenu.heatTreatment, href: 'services/termichna-obrobka' },
         { title: servicesMenu.laserCutting, href: 'services/lazerna-rizka' },
         { title: servicesMenu.metalGinding, href: 'services/shlifovka-metalu' },
-        {
-          title: servicesMenu.customOrders,
-          href: 'services/indyvidualni-zamovlennya',
-        },
+        { title: servicesMenu.customOrders, href: 'services/indyvidualni-zamovlennya' },
       ],
     },
     {
       title: productsMenu.title,
       subMenu: [
-        {
-          title: productsMenu.railwaySpareParts,
-          href: 'production/zaliznychni-zapchastyny',
-        },
+        { title: productsMenu.railwaySpareParts, href: 'production/zaliznychni-zapchastyny' },
         {
           title: productsMenu.sparePartsForAgricultural,
           href: 'production/zapchastyny-dlya-silhosptekhniky',
         },
       ],
     },
-    { title: productsMenu.contacts, href: 'contact' }, // Этот пункт не имеет подменю
+    { title: productsMenu.contacts, href: 'contact' },
   ];
 
-  const handleMenuOpen = (event: React.MouseEvent<HTMLElement>, menuTitle: string) => {
-    setAnchorEl(event.currentTarget);
-
-    setOpenSubMenu(openSubMenu === menuTitle ? null : menuTitle);
+  const handleSubMenuOpen = (menuTitle: string | null) => {
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+    }
+    setOpenSubMenu(menuTitle);
   };
 
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    setOpenSubMenu(null);
+  // Задержка в 200 мс перед закрытием
+  const handleSubMenuClose = () => {
+    closeTimeoutRef.current = setTimeout(() => {
+      setOpenSubMenu(null);
+    }, 200);
   };
 
-  // Обработчик кликов вне меню
+  // Закрытие меню при клике вне
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        handleMenuClose();
+        setOpenSubMenu(null);
       }
     };
 
@@ -74,22 +68,8 @@ const MenuComponent: React.FC<MenuProps> = ({ translations, lang }) => {
     };
   }, []);
 
-  // поддержку клавиши Escape, чтобы закрывать меню с клавиатуры.
-  useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        handleMenuClose();
-      }
-    };
-
-    document.addEventListener('keydown', handleKeyDown);
-    return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-    };
-  }, []);
-
   return (
-    <nav className="flex items-center gap-5  sm:gap-[30px] md:gap-[40px] lg:gap-[80px]" ref={menuRef}>
+    <nav className="flex items-center gap-5 sm:gap-[30px] md:gap-[40px] lg:gap-[80px]" ref={menuRef}>
       {menuItems.map((item) => (
         <Box
           key={item.title}
@@ -97,54 +77,64 @@ const MenuComponent: React.FC<MenuProps> = ({ translations, lang }) => {
             position: 'relative',
             display: 'flex',
             alignItems: 'center',
+            flexWrap: 'wrap',
           }}
+          onMouseEnter={() => handleSubMenuOpen(item.title)}
+          onMouseLeave={handleSubMenuClose}
         >
           {item.subMenu ? (
             <>
-              <CustomButton variant="menu-btn" onClick={(event) => handleMenuOpen(event, item.title)}>
+              <CustomButton variant="menu-btn">
                 {item.title}
-                <KeyboardArrowDownIcon />
+                <KeyboardArrowDownIcon
+                  style={{
+                    transition: 'transform 0.3s ease',
+                    transform: openSubMenu === item.title ? 'rotate(180deg)' : 'rotate(0deg)',
+                  }}
+                />
               </CustomButton>
 
               {/* Всплывающее меню */}
-              <Popper
-                open={openSubMenu === item.title}
-                anchorEl={anchorEl}
-                placement="bottom-start"
-                disablePortal
-                style={{ zIndex: 1300 }}
-              >
+              {openSubMenu === item.title && (
                 <Paper
                   elevation={3}
                   sx={{
+                    position: 'absolute',
+                    top: '100%',
+                    left: 0,
                     mt: 1,
                     display: 'flex',
                     flexDirection: 'column',
-                    gap: '5px',
-                    width: '220px',
-                    padding: '10px',
+                    zIndex: 1300,
+                    whiteSpace: {
+                      xs: 'wrap',
+                      md: 'nowrap',
+                      lg: 'nowrap',
+                    },
+                    width: {
+                      xs: '180px',
+                      md: 'auto',
+                      lg: 'auto',
+                    },
                   }}
+                  onMouseEnter={() => handleSubMenuOpen(item.title)}
+                  onMouseLeave={handleSubMenuClose}
                 >
-                  {item.subMenu
-                    ? item.subMenu.map((subItem) => (
-                        <Link
-                          className="hover:text-[#c43c1e]"
-                          key={subItem.title}
-                          href={`/${lang}/${subItem.href}/`}
-                          onClick={handleMenuClose}
-                        >
-                          {subItem.title}
-                        </Link>
-                      ))
-                    : null}
+                  {item.subMenu.map((subItem) => (
+                    <Link
+                      key={subItem.title}
+                      className="hover:bg-[#c43c1e] no-wrap transition-all duration-300 ease-in-out p-1 sm:p-1 md:p-1.5 lg:p-2 rounded-[3px] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px]"
+                      href={`/${lang}/${subItem.href}/`}
+                    >
+                      {subItem.title}
+                    </Link>
+                  ))}
                 </Paper>
-              </Popper>
+              )}
             </>
           ) : (
-            <Link key={item.href} href={`/${lang}/${item.href}`} style={{ textDecoration: 'none' }}>
-              <CustomButton onClick={handleMenuClose} variant="menu-btn">
-                {item.title}
-              </CustomButton>
+            <Link href={`/${lang}/${item.href}`} style={{ textDecoration: 'none' }}>
+              <CustomButton variant="menu-btn">{item.title}</CustomButton>
             </Link>
           )}
         </Box>

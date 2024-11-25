@@ -1,28 +1,30 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import CustomButton from '@/components/ui/button/CustomButton';
-import EmailIcon from '@mui/icons-material/Email';
-import PhoneIcon from '@mui/icons-material/Phone';
 import { withStaticProps, withStaticPaths, PageProps } from '../../context/withStaticPathsAndProps';
 
+type HomePageTranslations = {
+  topTitle: string;
+  bottomTitle: string;
+  description: string;
+  btnSend: string;
+};
+
 const Home: React.FC<PageProps> = ({ translations }) => {
-  const textTranslationHome = translations.homePage;
-
-  console.log(textTranslationHome);
-
+  const textTranslationHome = translations.homePage as HomePageTranslations;
   return (
     <div className="pl-4 pr-4">
-      <div className="absolute top-1/2 transform -translate-y-1/2  w-full">
-        {/* <h1 className="text-white text-[50px] font-bold	">{textTranslationHome.title}</h1> */}
-        <p>ТОКАРНІ ТА ФРЕЗЕРНІ РОБОТИ НА ВЕРСТАТАХ З ЧПУ</p>
-        <CustomButton>Надіслати креслення на прорахунок</CustomButton>
-      </div>
-      <div className="absolute right-5 bottom-7 flex flex-col gap-2 items-center">
-        <CustomButton variant="communication-button">
-          <EmailIcon sx={{ fontSize: '60px' }} />
-        </CustomButton>
-        <CustomButton variant="communication-button">
-          <PhoneIcon sx={{ fontSize: '60px' }} />
-        </CustomButton>
+      <div className="flex flex-col justify-center items-center sm:absolute sm:top-1/2 sm:transform sm:-translate-y-1/2 sm:inline">
+        <div>
+          <h1 className="text-[20px] text-center w-full sm:text-start sm:text-[40px] md:text-[55px] lg:text-[70px] font-semibold">
+            {textTranslationHome.topTitle}
+            <br />
+            {textTranslationHome.bottomTitle}
+          </h1>
+        </div>
+        <p className="text-center text-[12px] sm:text-start sm:text-[20px] text-[#f9f7dc] pt-5">
+          {textTranslationHome.description}
+        </p>
+        <CustomButton variant="send-btn">{textTranslationHome.btnSend}</CustomButton>
       </div>
     </div>
   );

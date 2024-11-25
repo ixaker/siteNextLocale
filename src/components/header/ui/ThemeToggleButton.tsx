@@ -8,10 +8,11 @@ const ThemeToggleButton: React.FC = () => {
   const { themeMode, toggleTheme } = useTheme();
 
   const styleIconBtn = {
-    width: {
-      sm: '20px',
-      md: '30px',
-      lg: '60px',
+    fontSize: {
+      xs: '30px',
+      sm: '30px',
+      md: '35px',
+      lg: '40px',
     },
   };
 
@@ -22,7 +23,11 @@ const ThemeToggleButton: React.FC = () => {
         className="flex items-center justify-center"
         onClick={toggleTheme}
       >
-        {themeMode === 'light' ? <LightModeIcon sx={styleIconBtn} /> : <ModeNightIcon sx={styleIconBtn} />}
+        {themeMode === 'light' ? (
+          <LightModeIcon sx={styleIconBtn} style={{ color: 'white' }} />
+        ) : (
+          <ModeNightIcon sx={styleIconBtn} style={{ color: 'black' }} />
+        )}
       </CustomButton>
     </>
   );

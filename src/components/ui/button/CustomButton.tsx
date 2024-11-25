@@ -3,25 +3,35 @@ import React, { FC } from 'react';
 interface PropsCustomButton {
   children: React.ReactNode;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>, title: string) => void;
-  variant?: 'non-style' | 'menu-btn' | 'leng-btn' | 'button-themes' | 'communication-button';
+  variant?: 'non-style' | 'menu-btn' | 'leng-btn' | 'button-themes' | 'communication-button' | 'send-btn';
   className?: string;
+  style?: React.CSSProperties;
 }
 
-const CustomButton: FC<PropsCustomButton> = ({ children, onClick, variant = 'non-style', className }) => {
+const CustomButton: FC<PropsCustomButton> = ({
+  children,
+  onClick,
+  variant = 'non-style',
+  className,
+  style,
+}) => {
   const buttonClass = {
     'menu-btn':
-      'font-bold text-xl text-[18px] sm:text-[18px] md:text-[20px] lg:text-[27px] text-[white] hover:text-activeLang transition-all duration-300 ease-in-out',
+      'font-bold text-[15px] sm:text-[18px] md:text-[20px] lg:text-[27px] text-[white] hover:text-activeLang transition-all duration-300 ease-in-out',
     'leng-btn': 'font-bold text-lg sm:text-[14px] md:text-[18px] lg:text-[27px] text-[white]',
     'non-style': '',
     'button-themes': 'rounded-full w-10',
     'communication-button':
-      'rounded-full p-4 bg-[black] text-[#c43c1e] hover:bg-slate-800 hover:text-white transition-all duration-300 ease-in-out',
+      ' rounded-full  hover:bg-slate-800 hover:text-white transition-all duration-300 ease-in-out pt-3 pl-3.5 pr-3.5 pb-3 md:p-4 ',
+    'send-btn':
+      'bg-[#c43c1e] text-[#f9f7dc] text-[15px] sm:text-[20px] px-3 py-2 sm:px-10 sm:py-2 rounded-[10px] hover:bg-[#9e2a1f] hover:text-[#fff] transition-all duration-300 ease-in-out mt-10',
   }[variant];
 
   return (
     <button
       onClick={onClick ? (event) => onClick(event, String(children)) : undefined}
       className={`cursor-pointer ${buttonClass} ${className}`}
+      style={style}
     >
       {children}
     </button>
