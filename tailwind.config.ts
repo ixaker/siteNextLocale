@@ -14,7 +14,7 @@ const config: Config = {
         activeLang: '#c43c1e',
       },
       backgroundImage: {
-        bgImg: "url('/bgImg.png')",
+        bgImg: "url('/bgImg.webp')",
       },
     },
   },

@@ -1,16 +1,26 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { withStaticProps, withStaticPaths, PageProps } from '../../context/withStaticPathsAndProps';
 import DynamicHead from '@/components/shared/DynamicHead';
+import { useEffect, useState } from 'react';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations.contactPage;
+
+  const [fullUrl, setFullUrl] = useState('');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setFullUrl(window.location.href);
+    }
+  }, []);
+
   return (
     <>
       <DynamicHead
         title={translationsPage.meta.title}
         description={translationsPage.meta.description}
         keywords={translationsPage.meta.keywords}
-        canonical=""
+        canonical={fullUrl}
         imgOg={translationsPage.meta.imgOg}
         lang={lang}
         localeOg={translations.locale}

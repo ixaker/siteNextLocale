@@ -14,6 +14,7 @@ const LanguageSwitcher = () => {
   return (
     <div className="flex gap-3">
       <CustomButton
+        ariaLabel="English language"
         variant="leng-btn"
         className={`${currentLang === 'en' ? 'text-activeLang text-[white]' : ''}`}
         onClick={() => switchLanguage('en')}
@@ -21,6 +22,7 @@ const LanguageSwitcher = () => {
         EN
       </CustomButton>
       <CustomButton
+        ariaLabel="Українська мова"
         variant="leng-btn"
         className={`${currentLang === 'uk' ? 'text-activeLang text-[white]' : ''}`}
         onClick={() => switchLanguage('uk')}

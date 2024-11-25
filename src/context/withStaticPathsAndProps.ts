@@ -3,16 +3,13 @@ import path from 'path';
 import fs from 'fs';
 import { Translations } from '../../locales/types';
 
-// type Translations = {
-//   [key: string]: string | { [key: string]: string };
-// };
-
-//const SUPPORTED_LANGUAGES = ['en', 'uk']; // Поддерживаемые языки
-
 // Определяем поддерживаемые языки динамически
 const getSupportedLanguages = (): string[] => {
   const localesPath = path.join(process.cwd(), 'locales');
-  return fs.readdirSync(localesPath).map((file) => file.replace('.json', '')); // Убираем расширение
+  const files = fs.readdirSync(localesPath);
+  const jsonFiles = files.filter((file) => path.extname(file) === '.json');
+
+  return jsonFiles.map((file) => file.replace('.json', '')); // Убираем расширение
 };
 
 export const SUPPORTED_LANGUAGES = getSupportedLanguages();
@@ -34,7 +31,7 @@ const loadTranslations = (lang: string): Translations => {
 export const withStaticProps = async <P>(
   context: GetStaticPropsContext
 ): Promise<GetStaticPropsResult<P>> => {
-  const lang = (context.params?.lang as string) || 'en';
+  const lang = (context.params?.lang as string) || 'uk';
 
   const translations = loadTranslations(lang);
 

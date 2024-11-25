@@ -6,6 +6,7 @@ interface PropsCustomButton {
   variant?: 'non-style' | 'menu-btn' | 'leng-btn' | 'button-themes' | 'communication-button' | 'send-btn';
   className?: string;
   style?: React.CSSProperties;
+  ariaLabel?: string;
 }
 
 const CustomButton: FC<PropsCustomButton> = ({
@@ -14,6 +15,7 @@ const CustomButton: FC<PropsCustomButton> = ({
   variant = 'non-style',
   className,
   style,
+  ariaLabel,
 }) => {
   const buttonClass = {
     'menu-btn':
@@ -32,6 +34,7 @@ const CustomButton: FC<PropsCustomButton> = ({
       onClick={onClick ? (event) => onClick(event, String(children)) : undefined}
       className={`cursor-pointer ${buttonClass} ${className}`}
       style={style}
+      aria-label={ariaLabel}
     >
       {children}
     </button>

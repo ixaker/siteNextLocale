@@ -57,7 +57,7 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
         >
           {item.subMenu ? (
             <>
-              <CustomButton variant="menu-btn">
+              <CustomButton ariaLabel={item.title} variant="menu-btn">
                 {item.title}
                 <KeyboardArrowDownIcon
                   style={{
@@ -107,7 +107,9 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
             </>
           ) : (
             <Link href={`/${lang}/${item.href}`} style={{ textDecoration: 'none' }}>
-              <CustomButton variant="menu-btn">{item.title}</CustomButton>
+              <CustomButton ariaLabel={item.title} variant="menu-btn">
+                {item.title}
+              </CustomButton>
             </Link>
           )}
         </Box>

@@ -2,11 +2,18 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import CustomButton from '@/components/ui/button/CustomButton';
 import { withStaticProps, withStaticPaths, PageProps } from '../../context/withStaticPathsAndProps';
 import DynamicHead from '@/components/shared/DynamicHead';
+import { useEffect, useState } from 'react';
 
 const Home: React.FC<PageProps> = ({ translations, lang }) => {
-  console.log('lang', lang);
-
   const translationsPage = translations.homePage;
+
+  const [fullUrl, setFullUrl] = useState('');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setFullUrl(window.location.href);
+    }
+  }, []);
 
   return (
     <>
@@ -14,7 +21,7 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
         title={translationsPage.meta.title}
         description={translationsPage.meta.description}
         keywords={translationsPage.meta.keywords}
-        canonical=""
+        canonical={fullUrl}
         imgOg={translationsPage.meta.imgOg}
         lang={lang}
         localeOg={translations.locale}

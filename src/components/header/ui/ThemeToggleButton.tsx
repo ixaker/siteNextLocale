@@ -19,6 +19,7 @@ const ThemeToggleButton: React.FC = () => {
   return (
     <>
       <CustomButton
+        ariaLabel="Theme"
         variant="button-themes"
         className="flex items-center justify-center"
         onClick={toggleTheme}

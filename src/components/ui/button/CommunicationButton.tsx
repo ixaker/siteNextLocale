@@ -21,6 +21,7 @@ const CommunicationButton: React.FC<PropsCommunicationButton> = ({ primaryColor,
   return (
     <div className="flex flex-col gap-3">
       <CustomButton
+        ariaLabel="Send Email"
         style={{
           background: primaryColor,
         }}
@@ -29,6 +30,7 @@ const CommunicationButton: React.FC<PropsCommunicationButton> = ({ primaryColor,
         <EmailIcon style={{ color: secondaryColor }} sx={iconSize} />
       </CustomButton>
       <CustomButton
+        ariaLabel="Phone"
         style={{
           background: primaryColor,
         }}
