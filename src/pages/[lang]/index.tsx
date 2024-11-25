@@ -27,7 +27,7 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
         localeOg={translations.locale}
       />
       <div className="pl-4 pr-4">
-        <div className="w-full absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 flex flex-col justify-center items-center sm:absolute sm:top-1/2 sm:transform sm:-translate-y-1/2 sm:inline sm:-translate-x-0 sm:left-4">
+        <div className="flex flex-col justify-center items-center sm:absolute sm:top-1/2 sm:transform sm:-translate-y-1/2 sm:inline">
           <div>
             <h1 className="text-[20px] text-center w-full sm:text-start sm:text-[40px] md:text-[55px] lg:text-[70px] font-semibold">
               {translationsPage.topTitle}
@@ -40,6 +40,10 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
           </p>
           <CustomButton variant="send-btn">{translationsPage.btnSend}</CustomButton>
         </div>
+
+        {/* <section>
+          <Card srcImg="/assets/05.webp" title="ТОКАРНІ РОБОТИ З ЧПК" />
+        </section> */}
       </div>
     </>
   );

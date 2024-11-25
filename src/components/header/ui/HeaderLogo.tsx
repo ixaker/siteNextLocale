@@ -7,20 +7,6 @@ const HeaderLogo = () => {
   const currentLang = asPath.split('/')[1];
   return (
     <Link href={`/${currentLang}`}>
-      {/* <Box
-        component="img"
-        src="/logo.png"
-        alt="Logo"
-        sx={{
-          width: {
-            xs: '120px',
-            sm: '130px',
-            md: '160px',
-            lg: '200px',
-          },
-          height: 'auto',
-        }}
-      /> */}
       <img
         width="120px"
         height="40px"

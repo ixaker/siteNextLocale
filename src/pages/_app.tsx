@@ -5,8 +5,16 @@ import { CssBaseline } from '@mui/material';
 import { LanguageProvider } from '../context/LanguageContext';
 import { ThemeProvider } from '@/context/theme-context/ThemeContext';
 import Head from 'next/head';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.prefetch = () => Promise.resolve();
+  }, [router]);
+
   return (
     <>
       <Head>
