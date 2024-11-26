@@ -7,6 +7,7 @@ import Card from '@/components/ui/card/Card';
 import langUk from '../../../locales/uk.json';
 import { darkTheme, lightTheme } from '@/theme';
 import { useTheme } from '@mui/material';
+import Image from 'next/image'; // Импортируем Image
 
 const Home: React.FC<PageProps> = ({ translations, lang }) => {
   const [fullUrl, setFullUrl] = useState('');
@@ -89,13 +90,14 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
               </p>
             </div>
             <div>
-              <img
+              <Image
                 className="w-full rounded-lg shadow-2xl"
                 src="/assets/work.jpg"
                 alt="Laptop"
-                width="550px"
-                height="332px"
+                width={550} // Указываем ширину
+                height={332} // Указываем высоту
               />
+              
             </div>
           </div>
         </div>
