@@ -14,7 +14,7 @@ const Card: React.FC<CardProps> = ({ title, srcImg, href }) => {
         <Image
           className="rounded-t-lg object-cover h-[250px] w-[250px] xl:w-[300px] transition-transform duration-500 group-hover:scale-105"
           src={srcImg}
-          alt={title} // Указываем содержательное значение для alt
+          alt="" // Указываем содержательное значение для alt
           width={300} // Указываем ширину
           height={250} // Указываем высоту
           priority // Опционально: указываем, что это изображение важно и его нужно грузить в приоритете
