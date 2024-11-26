@@ -8,7 +8,6 @@ import langUk from '../../../locales/uk.json';
 import RoomIcon from '@mui/icons-material/Room';
 import CustomButton from '@/components/ui/button/CustomButton';
 import EmailIcon from '@mui/icons-material/Email';
-import Image from 'next/image'; // Импортируем Image
 import PhoneIcon from '@mui/icons-material/Phone';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
@@ -18,14 +17,29 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const theme = useTheme();
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
-  const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
   const primaryColor = currentTheme.palette.primary.main;
+  const bgColor = currentTheme.palette.background.default;
 
   const contactsData = [
-    { title: translationsPage.address, description: translationsPage.descriptionAddress, icon: RoomIcon },
-    { title: translationsPage.email, description: translationsPage.descriptionEmail, icon: EmailIcon },
-    { title: translationsPage.phone, description: translationsPage.descriptionPhone, icon: PhoneIcon },
+    {
+      title: translationsPage.address,
+      description: translationsPage.descriptionAddress,
+      icon: RoomIcon,
+      link: 'https://g.co/kgs/H9ewmuP',
+    },
+    {
+      title: translationsPage.email,
+      description: translationsPage.descriptionEmail,
+      icon: EmailIcon,
+      link: '',
+    },
+    {
+      title: translationsPage.phone,
+      description: translationsPage.descriptionPhone,
+      icon: PhoneIcon,
+      link: '+380505917397',
+    },
   ];
 
   useEffect(() => {
@@ -45,27 +59,50 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         lang={lang}
         localeOg={translations.locale}
       />
-      <section className="bg-bgImg min-h-screen bg-no-repeat bg-cover shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)]">
-        <div
-          style={{ backgroundColor: secondaryColor, color: primaryColor }}
-          className="absolute w-full top-[120px]"
-        >
-          <h1 className="text-center font-bold text-[23px]">{translationsPage.title}</h1>
-          <div>
-            {contactsData.map((item, index) => (
-              <div key={index}>
-                <CustomButton style={{ backgroundColor: primaryColor }} variant="communication-button">
-                  {/* <Image
-                    className="w-[60px] p-3"
-                    src={item.icon}
-                    alt={item.title}
-                    width={60} // Указываем ширину
-                    height={60} // Указываем высоту
-                  /> */}
-                  Кнопка
-                </CustomButton>
+      <section className="bg-bgImg max-h-[calc(100vh-137px)] bg-no-repeat bg-cover shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)]">
+        <div className="flex h-screen items-center lg:items-start lg:pt-[100px]">
+          <div
+            className="w-full h-fit px-4 py-8 "
+            style={{ backgroundColor: bgColor, color: secondaryColor }}
+          >
+            <h1 className="text-center font-bold text-[23px] md:text-[30px] lg:text-[40px]">
+              {translationsPage.title}
+            </h1>
+            <div className="mt-[20px] md:flex lg:justify-around">
+              <ul className="flex flex-col gap-10 md:w-[90%] md:justify-between lg:w-[75%] 2xl:w-auto">
+                {contactsData.map((item, index) => (
+                  <li className="flex gap-[30px] items-center" key={index}>
+                    <a target="_blank" href={item.link} aria-label={item.title}>
+                      <CustomButton
+                        ariaLabel={item.title}
+                        style={{ backgroundColor: primaryColor }}
+                        variant="communication-button"
+                      >
+                        <item.icon
+                          style={{ color: secondaryColor }}
+                          className="md:size-[35px] lg:size-[40px]"
+                        />
+                      </CustomButton>
+                    </a>
+                    <div className="flex flex-col">
+                      <span className="text-[18px] font-bold md:text-[25px] lg:text-[35px]">
+                        {item.title}
+                      </span>
+                      <span className="text-[12px] font-extralight md:text-[15px] lg:text-[18px] ">
+                        {item.description}
+                      </span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+              <div>
+                <img
+                  className="hidden md:block"
+                  src="https://scdn.comfy.ua/89fc351a-22e7-41ee-8321-f8a9356ca351/https://cdn.comfy.ua/media/catalog/product/l/e/lenovo_loq_15iax9_rgb.jpg/w_600"
+                  alt="Laptop"
+                />
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
