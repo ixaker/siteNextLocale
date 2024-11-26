@@ -7,8 +7,9 @@ import { darkTheme, lightTheme } from '@/theme';
 import langUk from '../../../locales/uk.json';
 import RoomIcon from '@mui/icons-material/Room';
 import CustomButton from '@/components/ui/button/CustomButton';
-import langUk from '../../../locales/uk.json';
+import EmailIcon from '@mui/icons-material/Email';
 import Image from 'next/image'; // Импортируем Image
+import PhoneIcon from '@mui/icons-material/Phone';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.contactPage || langUk.menu;
@@ -51,16 +52,17 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         >
           <h1 className="text-center font-bold text-[23px]">{translationsPage.title}</h1>
           <div>
-            {translationsPage.contactList.map((item, index) => (
+            {contactsData.map((item, index) => (
               <div key={index}>
                 <CustomButton style={{ backgroundColor: primaryColor }} variant="communication-button">
-                  <Image
+                  {/* <Image
                     className="w-[60px] p-3"
                     src={item.icon}
                     alt={item.title}
                     width={60} // Указываем ширину
                     height={60} // Указываем высоту
-                  />
+                  /> */}
+                  Кнопка
                 </CustomButton>
               </div>
             ))}
