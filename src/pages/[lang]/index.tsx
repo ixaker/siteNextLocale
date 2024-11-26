@@ -82,14 +82,20 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
                 {translationsPage.h3}
               </h3>
               <p
-                className="text-center text-[12px] md:text-[18px] lg:text-[20px] 2xl:text-[25px]"
+                className="text-center text-[14px] md:text-[18px] lg:text-[20px] 2xl:text-[25px]"
                 style={{ color: secondaryColor }}
               >
                 {translationsPage.descriptionCompany}
               </p>
             </div>
             <div>
-              <img className="w-full rounded-lg shadow-2xl" src="/assets/work.jpg" alt="Laptop" width="550px" height="332px" />
+              <img
+                className="w-full rounded-lg shadow-2xl"
+                src="/assets/work.jpg"
+                alt="Laptop"
+                width="550px"
+                height="332px"
+              />
             </div>
           </div>
         </div>

@@ -72,6 +72,7 @@ const Footer: React.FC<PageProps> = () => {
         <div className="flex justify-center gap-4 mt-[20px] pb-[50px]">
           {socialList.map((item, index) => (
             <a
+              aria-label={item.name}
               key={index}
               style={{ color: secondaryColor }}
               className="w-[50px] h-[50px]  hover:!text-activeColor transition-all duration-300 ease-in-out"

@@ -13,7 +13,7 @@ const Card: React.FC<CardProps> = ({ title, srcImg, href }) => {
         <img
           className="rounded-t-lg object-cover  h-[250px] w-[250px] xl:w-[300px] transition-transform duration-500 group-hover:scale-105"
           src={srcImg}
-          alt={title}
+          alt=""
           width={300}
           height={200}
         />
