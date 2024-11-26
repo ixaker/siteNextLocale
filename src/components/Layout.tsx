@@ -22,7 +22,7 @@ const Layout: React.FC<PageProps> = ({ children, translations, lang }) => {
           <CommunicationButton primaryColor={primaryColor} secondaryColor={secondaryColor} />
         </div>
       </main>
-      <Footer />
+      <Footer translations={translations} lang={lang} />
     </>
   );
 };

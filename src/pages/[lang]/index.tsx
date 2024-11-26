@@ -25,7 +25,7 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
   }, []);
 
   return (
-    <div className="mb-[80px]" style={{ backgroundColor: secondaryColor }}>
+    <div style={{ backgroundColor: secondaryColor }}>
       <DynamicHead
         title={translationsPage.meta.title}
         description={translationsPage.meta.description}
@@ -94,7 +94,7 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
           </div>
         </div>
       </section>
-      <section className="pb-[100px]">
+      <section className="pb-[50px]">
         <div className="bg-bgImgHomeBottom min-h-[200px] bg-cover bg-center flex items-center justify-center">
           <CustomButton variant="send-btn">{translationsPage.btnSend}</CustomButton>
         </div>
