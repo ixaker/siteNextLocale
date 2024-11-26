@@ -19,22 +19,22 @@
   "cardData": [
     {
       "title": "CNC TURNING WORKS",
-      "img": "/assets/cnc-turning-works.WEBP",
+      "img": "/assets/cnc-turning-works.webp",
       "href": "services/tokarni-roboty-chpu/"
     },
     {
       "title": "CNC MILLING WORKS",
-      "img": "/assets/cnc-milling-works.WEBP",
+      "img": "/assets/cnc-milling-works.webp",
       "href": "services/frezerni-roboty/"
     },
     {
       "title": "HEAT TREATMENT",
-      "img": "/assets/heat-treatment.JPG",
+      "img": "/assets/heat-treatment.jpg",
       "href": "services/termichna-obrobka/"
     },
     {
       "title": "METAL CASTING",
-      "img": "/assets/metal-casting.WEBP",
+      "img": "/assets/metal-casting.webp",
       "href": "services/indyvidualni-zamovlennya/"
     }
   ],
