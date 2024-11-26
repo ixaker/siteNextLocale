@@ -148,7 +148,7 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
                       <Link
                         key={subItem.title}
                         href={`/${lang}/${subItem.href}/`}
-                        className="hover:bg-[#c43c1e] transition-all duration-300 ease-in-out px-2 py-[11px] sm:p-1 md:p-1.5 lg:p-2 rounded-[3px] text-[14px] sm:text-[14px] md:text-[15px] lg:text-[17px]"
+                        className="hover:bg-[#c43c1e] transition-all duration-300 ease-in-out px-[15px] py-[10px] sm:p-1 md:p-1.5 lg:p-2 rounded-[3px] text-[14px] sm:text-[14px] md:text-[15px] lg:text-[17px]"
                         style={{
                           textDecoration: 'none',
                           display: 'block',

@@ -22,7 +22,7 @@ const Card: React.FC<CardProps> = ({ title, srcImg, href }) => {
         href={href}
         className="h-[30px] md:h-[50px] absolute bottom-0 left-0 right-0 bg-[#763c00] text-white p-2 transition-all duration-500 ease-in-out transform group-hover:scale-110"
       >
-        <h4 className="text-center text-xs font-semibold md:text-lg">{title}</h4>
+        <p className="text-center text-xs font-semibold md:text-lg">{title}</p>
       </Link>
     </div>
   );
