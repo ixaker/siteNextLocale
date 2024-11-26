@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <LanguageProvider>
         <ThemeProvider>
           <CssBaseline /> {/* Базовые стили MUI */}
-          <Layout lang={pageProps.lang} translations={pageProps.translations}>
+          <Layout {...pageProps}>
             <Component {...pageProps} />
           </Layout>
         </ThemeProvider>

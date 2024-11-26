@@ -54,22 +54,6 @@
     "address": "Адреса",
     "footer": "Ми завжди раді вашим запитанням і пропозиціям!"
   },
-  "services": {
-    "title": "Послуги",
-    "cncTurning": "ТОКАРНІ РОБОТИ ЧПУ",
-    "turning": "ТОКАРНІ РОБОТИ",
-    "milling": "ФРЕЗЕРНІ РОБОТИ",
-    "heatTreatment": "ТЕРМІЧНА ОБРОБКА",
-    "laserCutting": "ЛАЗЕРНА РІЗКА",
-    "metalGinding": "ШЛІФОВКА МЕТАЛУ",
-    "customOrders": "ІНДИВІДУАЛЬНІ ЗАМОВЛЕННЯ"
-  },
-  "product": {
-    "title": "Продукція",
-    "railwaySpareParts": "ЗАЛІЗНИЧНІ ЗАПЧАСТИНИ",
-    "sparePartsForAgricultural": "ЗАПЧАСТИНИ ДЛЯ СІЛЬГОСПТЕХНІКИ",
-    "contacts": "Контакти"
-  },
   "welcome": "Ласкаво просимо на наш сайт!",
   "menu": [
     {

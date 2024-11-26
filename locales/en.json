@@ -54,22 +54,6 @@
     "address": "Address",
     "footer": "We are always happy to answer your questions and hear your suggestions!"
   },
-  "services": {
-    "title": "Services",
-    "cncTurning": "CNC TURNING",
-    "turning": "TURNING",
-    "milling": "MILLING",
-    "heatTreatment": "HEAT TREATMENT",
-    "laserCutting": "LASER CUTTING",
-    "metalGinding": "METAL GRINDING",
-    "customOrders": "CUSTOM ORDERS"
-  },
-  "product": {
-    "title": "Product",
-    "railwaySpareParts": "RAILWAY SPARE PARTS",
-    "sparePartsForAgricultural": "SPARE PARTS FOR AGRICULTURAL EQUIPMENT",
-    "contacts": "Contacts"
-  },
   "welcome": "Welcome to our site!",
 
   "menu": [
