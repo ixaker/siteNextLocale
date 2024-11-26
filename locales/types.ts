@@ -43,4 +43,8 @@ export type Translations = {
   welcome: string;
   comingSoon: string;
   inDevelopment: string;
+
+  footer: {
+    join: string;
+  };
 };

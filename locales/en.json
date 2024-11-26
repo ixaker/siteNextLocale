@@ -83,5 +83,8 @@
       "title": "Contacts",
       "href": "contact"
     }
-  ]
+  ],
+  "footer": {
+    "join": "Join"
+  }
 }
