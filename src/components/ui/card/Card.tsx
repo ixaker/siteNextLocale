@@ -1,16 +1,29 @@
+import Link from 'next/link';
+
 interface CardProps {
   title: string;
   srcImg: string;
+  href: string;
 }
-const Card: React.FC<CardProps> = ({ title, srcImg }) => {
+
+const Card: React.FC<CardProps> = ({ title, srcImg, href }) => {
   return (
-    <div className="flex flex-col rounded-t-lg  w-[300px] h-[600px] mt-[700px]">
+    <div className="group relative rounded-t-lg shadow-md overflow-hidden cursor-pointer">
       <div>
-        <img className="rounded-t-lg" src={srcImg} alt={srcImg} />
+        <img
+          className="rounded-t-lg object-cover w-full h-[250px] w-[250px] xl:w-[300px] transition-transform duration-500 group-hover:scale-105"
+          src={srcImg}
+          alt={title}
+          width={200}
+          height={200}
+        />
       </div>
-      <div className="w-auto bg-[#763c00]">
-        <h4 className="text-center">{title}</h4>
-      </div>
+      <Link
+        href={href}
+        className="h-[30px] md:h-[50px] absolute bottom-0 left-0 right-0 bg-[#763c00] text-white p-2 transition-all duration-500 ease-in-out transform group-hover:scale-110"
+      >
+        <h4 className="text-center text-xs font-semibold md:text-lg">{title}</h4>
+      </Link>
     </div>
   );
 };

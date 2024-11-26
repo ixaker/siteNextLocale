@@ -10,8 +10,34 @@
     "topTitle": "ВИГОТОВЛЯЄМО ВИРОБИ",
     "bottomTitle": "БУДЬ-ЯКОЇ СКЛАДНОСТІ",
     "description": "ТОКАРНІ ТА ФРЕЗЕРНІ РОБОТИ НА ВЕРСТАТАХ З ЧПУ",
-    "btnSend": "Надіслати креслення на прорахунок"
+    "btnSend": "Надіслати креслення на прорахунок",
+    "aboutCompany": "ПРО КОМПАНІЮ",
+    "h2": "Компанія «QPART»",
+    "h3": "Послуги з металообробки та виробництва деталей",
+    "descriptionCompany": "Компанія QPART надає послуги з металообробки та виробництва деталей і запчастин будь-якої складності.Ми виконуємо роботи за кресленнями замовника або, за необхідності, розробляємо конструкторську та технічну документацію з нуля.Готові вироби відправляємо по всій території України, а також за її межі. Маємо досвід роботи з іноземними компаніями."
   },
+  "cardData": [
+    {
+      "title": "ТОКАРНІ РОБОТИ З ЧПК",
+      "img": "/assets/cnc-turning-works.WEBP",
+      "href": "services/tokarni-roboty-chpu/"
+    },
+    {
+      "title": "ФРЕЗЕРНІ РОБОТИ З ЧПК",
+      "img": "/assets/cnc-milling-works.WEBP",
+      "href": "services/frezerni-roboty/"
+    },
+    {
+      "title": "ТЕРМІЧНА ОБРОБКА",
+      "img": "/assets/heat-treatment.JPG",
+      "href": "services/termichna-obrobka/"
+    },
+    {
+      "title": "ЛИТТЯ МЕТАЛУ",
+      "img": "/assets/metal-casting.WEBP",
+      "href": "services/indyvidualni-zamovlennya/"
+    }
+  ],
   "contactPage": {
     "meta": {
       "title": "Контакти QPART",

@@ -81,13 +81,17 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
                     zIndex: 1300,
                     whiteSpace: {
                       xs: 'wrap',
+                      sm: 'nowrap',
                       md: 'nowrap',
-                      lg: 'nowrap',
+                      lg: 'nowrpa',
+                      xl: 'nowrap',
                     },
                     width: {
-                      xs: '180px',
+                      xs: 180,
+                      sm: 'auto',
                       md: 'auto',
                       lg: 'auto',
+                      xl: 'auto',
                     },
                   }}
                   onMouseEnter={() => handleSubMenuOpen(item.title)}

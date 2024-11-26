@@ -11,6 +11,8 @@ export type NavigationMenu = {
   subMenu?: [NavigationMenu];
 };
 
+export type CardData = { title: string; img: string; href: string };
+
 export type Translations = {
   locale: string;
   homePage: {
@@ -19,7 +21,12 @@ export type Translations = {
     bottomTitle: string;
     description: string;
     btnSend: string;
+    aboutCompany: string;
+    h2: string;
+    h3: string;
+    descriptionCompany: string;
   };
+  cardData: CardData[];
   contactPage: {
     meta: Meta;
     welcome: string;

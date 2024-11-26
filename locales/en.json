@@ -10,8 +10,34 @@
     "topTitle": "WE MANUFACTURE PRODUCTS",
     "bottomTitle": "OF ANY COMPLEXITY",
     "description": "TURNING AND MILLING WORK ON CNC MACHINES",
-    "btnSend": "Send drawings for calculation"
+    "btnSend": "Send drawings for calculation",
+    "aboutCompany": "ABOUT THE COMPANY",
+    "h2": "Company «QPART»",
+    "h3": "Metalworking and Parts Manufacturing Services",
+    "descriptionCompany": "QPART provides metalworking and parts manufacturing services of any complexity. We perform work based on customer drawings or, if necessary, develop design and technical documentation from scratch. The finished products are shipped throughout Ukraine and abroad. We have experience working with foreign companies."
   },
+  "cardData": [
+    {
+      "title": "CNC TURNING WORKS",
+      "img": "/assets/cnc-turning-works.WEBP",
+      "href": "services/tokarni-roboty-chpu/"
+    },
+    {
+      "title": "CNC MILLING WORKS",
+      "img": "/assets/cnc-milling-works.WEBP",
+      "href": "services/frezerni-roboty/"
+    },
+    {
+      "title": "HEAT TREATMENT",
+      "img": "/assets/heat-treatment.JPG",
+      "href": "services/termichna-obrobka/"
+    },
+    {
+      "title": "METAL CASTING",
+      "img": "/assets/metal-casting.WEBP",
+      "href": "services/indyvidualni-zamovlennya/"
+    }
+  ],
   "contactPage": {
     "meta": {
       "title": "Contacts QPART",

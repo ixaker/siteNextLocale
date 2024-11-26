@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme } from '@mui/material/styles'; // Импортируем useTheme из Material-UI
+import { useTheme } from '@mui/material/styles';
 import Header from './header/Header';
 import Footer from './footer/Footer';
 import { darkTheme, lightTheme } from '@/theme';
@@ -16,9 +16,9 @@ const Layout: React.FC<PageProps> = ({ children, translations, lang }) => {
   return (
     <>
       <Header translations={translations} lang={lang} />
-      <main className="bg-bgImg h-screen w-screen bg-no-repeat bg-cover absolute top-0 pt-40">
-        <div className="pt-20 text-[white]">{children}</div>
-        <div className="absolute right-5 bottom-7 flex flex-col gap-2 items-center">
+      <main>
+        <div className=" text-white">{children}</div>
+        <div>
           <CommunicationButton primaryColor={primaryColor} secondaryColor={secondaryColor} />
         </div>
       </main>
