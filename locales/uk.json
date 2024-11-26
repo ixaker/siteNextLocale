@@ -19,22 +19,22 @@
   "cardData": [
     {
       "title": "ТОКАРНІ РОБОТИ З ЧПК",
-      "img": "/assets/cnc-turning-works.WEBP",
+      "img": "/assets/cnc-turning-works.webp",
       "href": "services/tokarni-roboty-chpu/"
     },
     {
       "title": "ФРЕЗЕРНІ РОБОТИ З ЧПК",
-      "img": "/assets/cnc-milling-works.WEBP",
+      "img": "/assets/cnc-milling-works.webp",
       "href": "services/frezerni-roboty/"
     },
     {
       "title": "ТЕРМІЧНА ОБРОБКА",
-      "img": "/assets/heat-treatment.JPG",
+      "img": "/assets/heat-treatment.jpg",
       "href": "services/termichna-obrobka/"
     },
     {
       "title": "ЛИТТЯ МЕТАЛУ",
-      "img": "/assets/metal-casting.WEBP",
+      "img": "/assets/metal-casting.webp",
       "href": "services/indyvidualni-zamovlennya/"
     }
   ],
