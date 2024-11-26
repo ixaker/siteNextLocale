@@ -25,7 +25,7 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
   }, []);
 
   return (
-    <div style={{ backgroundColor: secondaryColor }}>
+    <div className="mb-[80px]" style={{ backgroundColor: secondaryColor }}>
       <DynamicHead
         title={translationsPage.meta.title}
         description={translationsPage.meta.description}
@@ -47,7 +47,9 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
           <p className="text-center text-[12px] sm:text-start sm:text-[20px] text-[#f9f7dc] pt-5">
             {translationsPage.description}
           </p>
-          <CustomButton variant="send-btn">{translationsPage.btnSend}</CustomButton>
+          <CustomButton className="mt-10" variant="send-btn">
+            {translationsPage.btnSend}
+          </CustomButton>
         </div>
       </div>
       <section className="pl-4 pr-4 pt-[30px] md:pt-[70px]">
@@ -58,29 +60,43 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
             </li>
           ))}
         </ul>
-        <div className="mt-[50px] pb-[50px]">
-          <p style={{ color: primaryColor }} className="text-center text-[25px]	font-thin	">
+        <div className="mt-[50px] pb-[80px]">
+          <p
+            style={{ color: primaryColor }}
+            className="text-center	font-thin text-[15px] md:text-[20px] lg:text-[25px] '2xl:text-[30px]"
+          >
             {translationsPage.aboutCompany}
           </p>
-          <h2 style={{ color: primaryColor }} className="text-center text-[60px] font-bold	">
+          <h2
+            style={{ color: primaryColor }}
+            className="text-center font-bold text-[25px] md:text-[40px] lg:text-[50px] 2xl:text-[55px]"
+          >
             {translationsPage.h2}
           </h2>
-          <div className="mt-[20px] flex justify-between flex-wrap md:flex-nowrap">
-            <div className="w-[100%] flex flex-col justify-around">
-              <h3 className="text-[33px] font-semibold" style={{ color: primaryColor }}>
+          <div className="mt-[20px] flex flex-col gap-5 lg:flex-row xl:justify-between md:mt-[50px]">
+            <div className="flex flex-col justify-around gap-5 lg:w-[80%] xl:w-[70%] 2xl:w-[50%]">
+              <h3
+                className="font-semibold text-[12px] text-center md:text-[22px] lg:text-[25px] 2xl:text-[30px]"
+                style={{ color: primaryColor }}
+              >
                 {translationsPage.h3}
               </h3>
-              <p className="text-[28px] w-[90%] mt-10" style={{ color: primaryColor }}>
+              <p
+                className="text-center text-[12px] md:text-[18px] lg:text-[20px] 2xl:text-[25px]"
+                style={{ color: primaryColor }}
+              >
                 {translationsPage.descriptionCompany}
               </p>
             </div>
             <div>
-              <img
-                src="https://help.apple.com/assets/66D88DE3E5F0552382017794/66D88DE8D6E7FDA43A0B3C1E/ru_RU/eb514f0bfdbef1ea2c58eeb6bc104469.png"
-                alt="Laptop"
-              />
+              <img className="w-full rounded-lg shadow-2xl" src="/assets/work.JPG" alt="Laptop" />
             </div>
           </div>
+        </div>
+      </section>
+      <section className="pb-[100px]">
+        <div className="bg-bgImgHomeBottom min-h-[200px] bg-cover bg-center flex items-center justify-center">
+          <CustomButton variant="send-btn">{translationsPage.btnSend}</CustomButton>
         </div>
       </section>
     </div>

@@ -26,7 +26,7 @@ const CustomButton: FC<PropsCustomButton> = ({
     'communication-button':
       ' rounded-full  hover:bg-slate-800 hover:text-white transition-all duration-300 ease-in-out pt-[16px] pl-[18px] pr-[18px] pb-[16px] md:p-4 ',
     'send-btn':
-      'bg-[#c43c1e] text-[#f9f7dc] text-[15px] sm:text-[20px] px-3 py-2 sm:px-10 sm:py-2 rounded-[10px] hover:bg-[#9e2a1f] hover:text-[#fff] transition-all duration-300 ease-in-out mt-10',
+      'shadow-[0_10px_30px_#000] bg-[#c43c1e] text-[#f9f7dc] text-[15px] sm:text-[20px] px-3 py-2 sm:px-10 sm:py-2 rounded-[10px] hover:bg-[#9e2a1f] hover:text-[#fff] transition-all duration-300 ease-in-out',
   }[variant];
 
   return (

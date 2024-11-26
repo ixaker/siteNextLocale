@@ -15,6 +15,7 @@ const config: Config = {
       },
       backgroundImage: {
         bgImg: "url('/bgImg.webp')",
+        bgImgHomeBottom: 'url(/assets/pipe.webp)',
       },
     },
   },

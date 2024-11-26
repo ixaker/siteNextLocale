@@ -11,10 +11,10 @@ const Card: React.FC<CardProps> = ({ title, srcImg, href }) => {
     <div className="group relative rounded-t-lg shadow-md overflow-hidden cursor-pointer">
       <div>
         <img
-          className="rounded-t-lg object-cover w-full h-[250px] w-[250px] xl:w-[300px] transition-transform duration-500 group-hover:scale-105"
+          className="rounded-t-lg object-cover  h-[250px] w-[250px] xl:w-[300px] transition-transform duration-500 group-hover:scale-105"
           src={srcImg}
           alt={title}
-          width={200}
+          width={300}
           height={200}
         />
       </div>
