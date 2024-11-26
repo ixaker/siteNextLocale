@@ -6,6 +6,7 @@ import { useTheme } from '@mui/material';
 import { darkTheme, lightTheme } from '@/theme';
 import CustomButton from '@/components/ui/button/CustomButton';
 import langUk from '../../../locales/uk.json';
+import Image from 'next/image'; // Импортируем Image
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.contactPage || langUk.menu;
@@ -44,7 +45,13 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
             {translationsPage.contactList.map((item, index) => (
               <div key={index}>
                 <CustomButton style={{ backgroundColor: primaryColor }} variant="communication-button">
-                  <img style={{ fill: 'red' }} className="w-[60px] p-3" src={item.icon} alt={item.title} />
+                  <Image
+                    className="w-[60px] p-3"
+                    src={item.icon}
+                    alt={item.title}
+                    width={60} // Указываем ширину
+                    height={60} // Указываем высоту
+                  />
                 </CustomButton>
               </div>
             ))}
