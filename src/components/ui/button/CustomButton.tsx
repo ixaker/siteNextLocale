@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 interface PropsCustomButton {
   children: React.ReactNode;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>, title: string) => void;
-  variant?: 'non-style' | 'menu-btn' | 'leng-btn' | 'button-themes' | 'communication-button' | 'send-btn';
+  variant?: 'non-style' | 'menu-btn' | 'leng-btn' | 'communication-button' | 'send-btn';
   className?: string;
   style?: React.CSSProperties;
   ariaLabel?: string;
@@ -22,7 +22,6 @@ const CustomButton: FC<PropsCustomButton> = ({
       'font-bold text-[15px] sm:text-[18px] md:text-[20px] lg:text-[27px] text-[white] hover:text-activeColor transition-all duration-300 ease-in-out',
     'leng-btn': 'font-bold text-lg sm:text-[14px] md:text-[18px] lg:text-[27px] text-[white]',
     'non-style': '',
-    'button-themes': 'rounded-full w-10',
     'communication-button':
       'shadow-[0_10px_30px_#000] rounded-full pt-[16px] pl-[18px] pr-[18px] pb-[16px] md:p-4 ',
     'send-btn':

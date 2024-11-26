@@ -16,6 +16,10 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
 
   const menuItems = translations?.menu || langUk.menu;
 
+  const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
+  const bgColor = currentTheme.palette.background.default;
+  const secondaryColor = currentTheme.palette.secondary.main;
+
   const handleMenuOpen = (event: React.MouseEvent<HTMLElement>, menuTitle: string) => {
     setAnchorEl(event.currentTarget);
     setCurrentSubMenu(menuTitle);
@@ -69,9 +73,6 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
       }
     };
   }, [anchorEl]);
-
-  const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
-  const primaryColor = currentTheme.palette.primary.main;
 
   return (
     <nav className="flex items-center gap-5 sm:gap-[30px] md:gap-[40px] lg:gap-[80px]">
@@ -133,13 +134,12 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
                   mt: 1,
                   display: 'flex',
                   flexDirection: 'column',
-                  backgroundColor: primaryColor,
+                  backgroundColor: bgColor,
                   borderRadius: '4px',
                   boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
                   maxHeight: '300px',
                   overflowY: 'auto',
                   maxWidth: '90vw',
-                  padding: '2px 10px',
                 }}
               >
                 <ClickAwayListener onClickAway={handleMenuClose}>
@@ -148,10 +148,11 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
                       <Link
                         key={subItem.title}
                         href={`/${lang}/${subItem.href}/`}
-                        className="hover:bg-[#c43c1e] text-[white] transition-all duration-300 ease-in-out p-1 sm:p-1 md:p-1.5 lg:p-2 rounded-[3px] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px]"
+                        className="hover:bg-[#c43c1e] transition-all duration-300 ease-in-out px-2 py-[10px] sm:p-1 md:p-1.5 lg:p-2 rounded-[3px] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px]"
                         style={{
                           textDecoration: 'none',
                           display: 'block',
+                          color: secondaryColor,
                         }}
                         onClick={handleMenuClose}
                       >
