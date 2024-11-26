@@ -46,15 +46,12 @@
       "imgOg": "/logo.png"
     },
     "title": "Контакти",
-    "contactList": [
-      {
-        "title": "Адреса",
-        "icon": "/icons/location.svg",
-        "description": "вулиця Яхненківська 2 Дніпро, Дніпропетровська область"
-      },
-      { "title": "Пошта", "icon": "/icons/email.svg", "description": "AK.Koshubskiy@gmail.com" },
-      { "title": "Телефон", "icon": "/icons/phone.svg", "description": "+380989950760" }
-    ]
+    "address": "Адреса",
+    "descriptionAddress": "вулиця Яхненківська 2 Дніпро, Дніпропетровська область",
+    "email": "Пошта",
+    "descriptionEmail": "AK.Koshubskiy@gmail.com",
+    "phone": "Телефон",
+    "descriptionPhone": "+380989950760"
   },
   "welcome": "Ласкаво просимо на наш сайт!",
   "menu": [

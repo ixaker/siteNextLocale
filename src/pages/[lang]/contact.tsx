@@ -4,8 +4,13 @@ import DynamicHead from '@/components/shared/DynamicHead';
 import { useEffect, useState } from 'react';
 import { useTheme } from '@mui/material';
 import { darkTheme, lightTheme } from '@/theme';
-import CustomButton from '@/components/ui/button/CustomButton';
 import langUk from '../../../locales/uk.json';
+import RoomIcon from '@mui/icons-material/Room';
+import CustomButton from '@/components/ui/button/CustomButton';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
+// import { Description } from '@mui/icons-material';
+// import { title } from 'process';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.contactPage || langUk.menu;
@@ -14,8 +19,15 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const theme = useTheme();
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
-  const primaryColor = currentTheme.palette.primary.main;
+  const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
+  const primaryColor = currentTheme.palette.primary.main;
+
+  const contactsData = [
+    { title: translationsPage.address, description: translationsPage.descriptionAddress, icon: RoomIcon },
+    { title: translationsPage.email, description: translationsPage.descriptionEmail, icon: EmailIcon },
+    { title: translationsPage.phone, description: translationsPage.descriptionPhone, icon: PhoneIcon },
+  ];
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -35,19 +47,30 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         localeOg={translations.locale}
       />
       <section className="bg-bgImg min-h-screen bg-no-repeat bg-cover shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)]">
-        <div
-          style={{ backgroundColor: secondaryColor, color: primaryColor }}
-          className="absolute w-full top-[120px]"
-        >
-          <h1 className="text-center font-bold text-[23px]">{translationsPage.title}</h1>
-          <div>
-            {translationsPage.contactList.map((item, index) => (
-              <div key={index}>
-                <CustomButton style={{ backgroundColor: primaryColor }} variant="communication-button">
-                  <img style={{ fill: 'red' }} className="w-[60px] p-3" src={item.icon} alt={item.title} />
-                </CustomButton>
-              </div>
-            ))}
+        <div className="flex items-center justify-center h-screen md:justify-start md:items-start md:pt-[100px]">
+          <div
+            className="w-full h-fit px-4 py-4 shadow-lg shadow-gray-500/50 rounded-lg"
+            style={{ backgroundColor: bgColor, color: secondaryColor }}
+          >
+            <h1 className="text-center font-bold text-[23px]">{translationsPage.title}</h1>
+            <ul>
+              {contactsData.map((item, index) => (
+                <li key={index}>
+                  <div className="flex flex-col items-start ">
+                    <CustomButton
+                      className="mt-4"
+                      style={{
+                        background: primaryColor,
+                      }}
+                      variant="communication-button"
+                    >
+                      <item.icon />
+                    </CustomButton>
+                  </div>
+                  <div></div>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
