@@ -139,6 +139,7 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
                   maxHeight: '300px',
                   overflowY: 'auto',
                   maxWidth: '90vw',
+                  padding: '2px 10px',
                 }}
               >
                 <ClickAwayListener onClickAway={handleMenuClose}>

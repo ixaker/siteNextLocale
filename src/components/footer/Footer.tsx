@@ -1,7 +1,6 @@
 import { PageProps } from '@/context/withStaticPathsAndProps';
 import { darkTheme, lightTheme } from '@/theme';
 import { useTheme } from '@mui/material';
-import langUk from '../../../locales/uk.json';
 
 const socialList = [
   {
@@ -54,15 +53,12 @@ const socialList = [
   },
 ];
 
-const Footer: React.FC<PageProps> = ({ translations }) => {
+const Footer: React.FC<PageProps> = () => {
   const theme = useTheme();
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
-  const primaryColor = currentTheme.palette.primary.main;
   const secondaryColor = currentTheme.palette.secondary.main;
   const bgColor = currentTheme.palette.background.default;
-
-  const translationsPage = translations?.footer || langUk.menu;
 
   return (
     <footer
@@ -76,6 +72,7 @@ const Footer: React.FC<PageProps> = ({ translations }) => {
         <div className="flex justify-center gap-4 mt-[20px] pb-[50px]">
           {socialList.map((item, index) => (
             <a
+              key={index}
               style={{ color: secondaryColor }}
               className="w-[50px] h-[50px]  hover:!text-activeColor transition-all duration-300 ease-in-out"
               target="_blank"

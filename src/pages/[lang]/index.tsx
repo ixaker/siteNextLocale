@@ -13,7 +13,6 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
   const theme = useTheme();
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
-  const primaryColor = currentTheme.palette.primary.main;
   const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
   const translationsPage = translations?.homePage || langUk.menu;
