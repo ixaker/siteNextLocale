@@ -25,9 +25,17 @@ const ThemeToggleButton: React.FC = () => {
         onClick={toggleTheme}
       >
         {themeMode === 'light' ? (
-          <LightModeIcon sx={styleIconBtn} style={{ color: 'white' }} />
+          <LightModeIcon
+            className="hover:!text-activeColor  transition-all duration-300 ease-in-out"
+            sx={styleIconBtn}
+            style={{ color: 'white' }}
+          />
         ) : (
-          <ModeNightIcon sx={styleIconBtn} style={{ color: 'black' }} />
+          <ModeNightIcon
+            className="hover:!text-activeColor  transition-all duration-300 ease-in-out"
+            sx={styleIconBtn}
+            style={{ color: 'black' }}
+          />
         )}
       </CustomButton>
     </>

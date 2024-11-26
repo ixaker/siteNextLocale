@@ -16,7 +16,7 @@ const LanguageSwitcher = () => {
       <CustomButton
         ariaLabel="English language"
         variant="leng-btn"
-        className={`${currentLang === 'en' ? 'text-activeLang text-[white]' : ''}`}
+        className={`${currentLang === 'en' ? 'text-activeColor text-[white]' : ''}`}
         onClick={() => switchLanguage('en')}
       >
         EN
@@ -24,7 +24,7 @@ const LanguageSwitcher = () => {
       <CustomButton
         ariaLabel="Українська мова"
         variant="leng-btn"
-        className={`${currentLang === 'uk' ? 'text-activeLang text-[white]' : ''}`}
+        className={`${currentLang === 'uk' ? 'text-activeColor text-[white]' : ''}`}
         onClick={() => switchLanguage('uk')}
       >
         UK

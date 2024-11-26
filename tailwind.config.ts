@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
-        activeLang: '#c43c1e',
+        activeColor: '#c43c1e',
       },
       backgroundImage: {
         bgImg: "url('/bgImg.webp')",

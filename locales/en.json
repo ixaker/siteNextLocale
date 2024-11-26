@@ -45,14 +45,24 @@
       "keywords": "metalworking",
       "imgOg": "/logo.png"
     },
-    "welcome": "Welcome to our site!",
-    "about": "About us",
     "title": "Contacts",
-    "description": "Contact us using the following details:",
-    "phone": "Phone",
-    "email": "Email",
-    "address": "Address",
-    "footer": "We are always happy to answer your questions and hear your suggestions!"
+    "contactList": [
+      {
+        "title": "Address",
+        "icon": "/icons/location.svg",
+        "description": "Yakhnenkivska Street 2, Dnipro, Dnipropetrovsk Region"
+      },
+      {
+        "title": "Email",
+        "icon": "/icons/email.svg",
+        "description": "AK.Koshubskiy@gmail.com"
+      },
+      {
+        "title": "Phone",
+        "icon": "/icons/phone.svg",
+        "description": "+380989950760"
+      }
+    ]
   },
   "welcome": "Welcome to our site!",
 

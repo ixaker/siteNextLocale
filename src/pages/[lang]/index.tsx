@@ -14,6 +14,7 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const primaryColor = currentTheme.palette.primary.main;
+  const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
   const translationsPage = translations?.homePage || langUk.menu;
   const cardData = translations?.cardData || langUk.menu;
@@ -25,7 +26,7 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
   }, []);
 
   return (
-    <div style={{ backgroundColor: secondaryColor }}>
+    <div style={{ backgroundColor: bgColor }}>
       <DynamicHead
         title={translationsPage.meta.title}
         description={translationsPage.meta.description}
@@ -62,13 +63,13 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
         </ul>
         <div className="mt-[50px] pb-[80px]">
           <p
-            style={{ color: primaryColor }}
+            style={{ color: secondaryColor }}
             className="text-center	font-thin text-[15px] md:text-[20px] lg:text-[25px] '2xl:text-[30px]"
           >
             {translationsPage.aboutCompany}
           </p>
           <h2
-            style={{ color: primaryColor }}
+            style={{ color: secondaryColor }}
             className="text-center font-bold text-[25px] md:text-[40px] lg:text-[50px] 2xl:text-[55px]"
           >
             {translationsPage.h2}
@@ -77,13 +78,13 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
             <div className="flex flex-col justify-around gap-5 lg:w-[80%] xl:w-[70%] 2xl:w-[50%]">
               <h3
                 className="font-semibold text-[12px] text-center md:text-[22px] lg:text-[25px] 2xl:text-[30px]"
-                style={{ color: primaryColor }}
+                style={{ color: secondaryColor }}
               >
                 {translationsPage.h3}
               </h3>
               <p
                 className="text-center text-[12px] md:text-[18px] lg:text-[20px] 2xl:text-[25px]"
-                style={{ color: primaryColor }}
+                style={{ color: secondaryColor }}
               >
                 {translationsPage.descriptionCompany}
               </p>

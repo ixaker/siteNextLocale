@@ -27,7 +27,11 @@ const CommunicationButton: React.FC<PropsCommunicationButton> = ({ primaryColor,
         }}
         variant="communication-button"
       >
-        <EmailIcon style={{ color: secondaryColor }} sx={iconSize} />
+        <EmailIcon
+          className="hover:!text-activeColor  transition-all duration-300 ease-in-out"
+          style={{ color: secondaryColor }}
+          sx={iconSize}
+        />
       </CustomButton>
       <CustomButton
         ariaLabel="Phone"
@@ -36,7 +40,11 @@ const CommunicationButton: React.FC<PropsCommunicationButton> = ({ primaryColor,
         }}
         variant="communication-button"
       >
-        <PhoneIcon style={{ color: secondaryColor }} sx={iconSize} />
+        <PhoneIcon
+          className="hover:!text-activeColor  transition-all duration-300 ease-in-out"
+          style={{ color: secondaryColor }}
+          sx={iconSize}
+        />
       </CustomButton>
     </div>
   );

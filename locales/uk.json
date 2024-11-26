@@ -45,14 +45,16 @@
       "keywords": "металообробка",
       "imgOg": "/logo.png"
     },
-    "welcome": "Ласкаво просимо на наш сайт!",
-    "about": "Про нас",
     "title": "Контакти",
-    "description": "Зв'яжіться з нами за наступними контактними даними:",
-    "phone": "Телефон",
-    "email": "Email",
-    "address": "Адреса",
-    "footer": "Ми завжди раді вашим запитанням і пропозиціям!"
+    "contactList": [
+      {
+        "title": "Адреса",
+        "icon": "/icons/location.svg",
+        "description": "вулиця Яхненківська 2 Дніпро, Дніпропетровська область"
+      },
+      { "title": "Пошта", "icon": "/icons/email.svg", "description": "AK.Koshubskiy@gmail.com" },
+      { "title": "Телефон", "icon": "/icons/phone.svg", "description": "+380989950760" }
+    ]
   },
   "welcome": "Ласкаво просимо на наш сайт!",
   "menu": [

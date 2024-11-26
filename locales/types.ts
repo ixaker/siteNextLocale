@@ -11,6 +11,12 @@ export type NavigationMenu = {
   subMenu?: [NavigationMenu];
 };
 
+export type ContactList = [
+  { title: string; icon: string; description: string },
+  { title: string; icon: string; description: string },
+  { title: string; icon: string; description: string },
+];
+
 export type CardData = { title: string; img: string; href: string };
 
 export type Translations = {
@@ -29,14 +35,8 @@ export type Translations = {
   cardData: CardData[];
   contactPage: {
     meta: Meta;
-    welcome: string;
-    about: string;
     title: string;
-    description: string;
-    phone: string;
-    email: string;
-    address: string;
-    footer: string;
+    contactList: ContactList;
   };
   menu: [NavigationMenu];
 
