@@ -10,7 +10,11 @@ import CustomButton from '@/components/ui/button/CustomButton';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import Image from 'next/image';
-import InteractiveMap from '@/components/InteractiveMap/InteractiveMap';
+import dynamic from 'next/dynamic';
+
+const DynamicInteractiveMap = dynamic(() => import('@/components/InteractiveMap/InteractiveMap'), {
+  ssr: false, // Отключаем SSR для этого компонента
+});
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.contactPage || langUk.contactPage;
@@ -21,7 +25,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const secondaryColor = currentTheme.palette.secondary.main;
   const primaryColor = currentTheme.palette.primary.main;
-  const bgColor = currentTheme.palette.background.default;
+/*   const bgColor = currentTheme.palette.background.default; */
 
   const contactsData = [
     {
@@ -95,10 +99,14 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
                 ))}
               </ul>
               <div className="relative">
-                <div className="absolute w-[350px] bottom-[143px] left-[68px] bg-inherit z-20">
-                  <InteractiveMap companyLocation={{ lat: 48.499937, lng: 35.038598 }} />
+                <div className="absolute w-[350px] bottom-[118px] left-[52px] bg-inherit z-20">
+                  <DynamicInteractiveMap  companyLocation={{ lat: 48.499937, lng: 35.038598 }} />
                 </div>
-                <img className="hidden md:block md:relative " src="/assets/LaptopContacts.png" alt="Laptop" />
+                {/* <div className='w-full h-full'> */}
+                  <Image className="hidden md:block md:relative md:w-[421px] md:h-[421px]" src="/assets/LaptopContacts.png" alt="Laptop" width={100} height={100} />
+                
+                {/* </div> */}
+                
               </div>
             </div>
           </div>
