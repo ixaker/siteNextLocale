@@ -7,6 +7,8 @@ import { ThemeProvider } from '@/context/theme-context/ThemeContext';
 import Head from 'next/head';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();

@@ -98,24 +98,37 @@
     "advantagesTitle": "Why Choose Us",
     "listAdvantages": [
       {
-        "description": "Capable of handling large volumes – ensuring uninterrupted work even for large-scale orders."
+        "title": "Capable of handling large volumes – ensuring uninterrupted work even for large-scale orders.",
+        "icon": "/assets/cylinder.png"
       },
       {
-        "description": "More than 300 CNC machines – modern equipment guarantees precision, quality, and speed of execution."
+        "title": "More than 300 CNC machines – modern equipment guarantees precision, quality, and speed of execution.",
+        "icon": "/assets/gears.png"
       },
       {
-        "description": "Flexible deadlines – we work quickly and always on time!"
+        "title": "Flexible deadlines – we work quickly and always on time!",
+        "icon": "/assets/clock-time.png"
       }
     ],
     "descriptionBenefits": "Advantages of laser cutting: The principle of this technology is based on the heat impact of a laser beam. During processing, the material is heated to the melting point, ensuring minimal error and high cutting quality.",
     "peculiaritiesTitle": "Features and Benefits:",
     "listPeculiarities": [
       {
-        "description": "Capability to work with various materials: stainless steel, aluminum, copper, brass, and others, including non-ferrous metals."
+        "description": "Capability to work with various materials: stainless steel, aluminum, copper, brass, and others, including non-ferrous metals.",
+        "icon": "/icons/listPeculiarities.png"
       },
-      { "description": "Perfectly smooth edges without the need for additional processing." },
-      { "description": "Minimization of material waste thanks to high precision." },
-      { "description": "No metal deformation and preservation of its original properties." }
+      {
+        "description": "Perfectly smooth edges without the need for additional processing.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Minimization of material waste thanks to high precision.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "No metal deformation and preservation of its original properties.",
+        "icon": "/icons/listPeculiarities.png"
+      }
     ],
     "descriptionDifferences": "Unlike traditional mechanical cutting methods, laser processing guarantees quality and cost-effectiveness in manufacturing parts of any complexity."
   },

@@ -96,7 +96,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
               </ul>
               <div className="relative">
                 <div className="absolute w-[350px] bottom-[143px] left-[68px] bg-inherit z-20">
-                  <InteractiveMap companyLocation={{ lat: 48.499937, lng: 35.038598 }} />
+                  {/* <InteractiveMap companyLocation={{ lat: 48.499937, lng: 35.038598 }} /> */}
                 </div>
                 <img className="hidden md:block md:relative " src="/assets/LaptopContacts.png" alt="Laptop" />
               </div>

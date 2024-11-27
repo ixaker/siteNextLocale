@@ -13,6 +13,8 @@ export type NavigationMenu = {
 
 export type CardData = { title: string; img: string; href: string };
 
+export type ListAdvantages = { description: string; icon: string };
+
 export type Translations = {
   locale: string;
   homePage: {
@@ -44,10 +46,10 @@ export type Translations = {
     servicesTitle: string;
     listtServices: { description: string }[];
     advantagesTitle: string;
-    listAdvantages: { description: string }[];
+    listAdvantages: { title: string; icon: string }[];
     descriptionBenefits: string;
     peculiaritiesTitle: string;
-    listPeculiarities: { description: string }[];
+    listPeculiarities: { description: string; icon: string }[];
     descriptionDifferences: string;
   };
 
