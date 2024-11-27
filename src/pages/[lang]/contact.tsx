@@ -9,7 +9,6 @@ import RoomIcon from '@mui/icons-material/Room';
 import CustomButton from '@/components/ui/button/CustomButton';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
-import Image from 'next/image';
 import dynamic from 'next/dynamic';
 
 const DynamicInteractiveMap = dynamic(() => import('@/components/InteractiveMap/InteractiveMap'), {

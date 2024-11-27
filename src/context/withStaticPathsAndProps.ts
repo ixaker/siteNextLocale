@@ -3,6 +3,11 @@ import path from 'path';
 import fs from 'fs';
 import { Translations } from '../../locales/types';
 
+export const getDefaultLanguage = (langFromUrl?: string): string => {
+  const defaultLanguage = 'en';
+  return SUPPORTED_LANGUAGES.includes(langFromUrl || '') ? langFromUrl! : defaultLanguage;
+};
+
 // Определяем поддерживаемые языки динамически
 const getSupportedLanguages = (): string[] => {
   const localesPath = path.join(process.cwd(), 'locales');
@@ -39,6 +44,8 @@ export const withStaticProps = async <P>(
     props: {
       translations,
       lang,
+      supportedLanguages: SUPPORTED_LANGUAGES, 
+      defaultLanguage: getDefaultLanguage()
     } as P,
   };
 };
@@ -46,6 +53,8 @@ export const withStaticProps = async <P>(
 export type PageProps = {
   translations: Translations;
   lang: string;
+  supportedLanguages: string[],
+  defaultLanguage: string,
   children?: React.ReactNode;
 };
 

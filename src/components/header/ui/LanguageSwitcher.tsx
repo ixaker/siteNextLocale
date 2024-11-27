@@ -1,10 +1,17 @@
 import CustomButton from '@/components/ui/button/CustomButton';
 import { useRouter } from 'next/router';
 
-const LanguageSwitcher = () => {
+interface LanguageSwitcherProps {
+  supportedLanguages: string[]; // Список поддерживаемых языков
+  currentLang: string; // Текущий язык
+}
+
+const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
+  supportedLanguages = [],
+  currentLang,
+}) => {
   const router = useRouter();
   const { asPath } = router;
-  const currentLang = asPath.split('/')[1];
 
   const switchLanguage = (newLang: string) => {
     const newPath = asPath.replace(/^\/[a-z]{2}/, `/${newLang}`);
@@ -13,22 +20,17 @@ const LanguageSwitcher = () => {
 
   return (
     <div className="flex gap-3">
-      <CustomButton
-        ariaLabel="English language"
-        variant="leng-btn"
-        className={`${currentLang === 'en' ? 'text-activeColor text-[white]' : ''}`}
-        onClick={() => switchLanguage('en')}
-      >
-        EN
-      </CustomButton>
-      <CustomButton
-        ariaLabel="Українська мова"
-        variant="leng-btn"
-        className={`${currentLang === 'uk' ? 'text-activeColor text-[white]' : ''}`}
-        onClick={() => switchLanguage('uk')}
-      >
-        UK
-      </CustomButton>
+      {supportedLanguages.map((lang) => (
+        <CustomButton
+          key={lang}
+          ariaLabel={`Switch to ${lang}`}
+          variant="leng-btn"
+          className={`${currentLang === lang ? 'text-activeColor text-[white]' : ''}`}
+          onClick={() => switchLanguage(lang)}
+        >
+          {lang.toUpperCase()}
+        </CustomButton>
+      ))}
     </div>
   );
 };

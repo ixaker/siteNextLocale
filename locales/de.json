@@ -1,0 +1,135 @@
+{
+  "lang": "de_DE",
+  "homePage": {
+    "meta": {
+      "title": "Ersatzteile für Landtechnik QPART",
+      "description": "Verkauf von Ersatzteilen für importierte Landtechnik mit Lieferung in der gesamten Ukraine | Hohe Qualität Günstiger Preis Herstellergarantie Unterstützung bei der Auswahl ☎ +38 098 995 07 60.",
+      "keywords": "Metallbearbeitung",
+      "imgOg": "/logo.png"
+    },
+    "topTitle": "WIR STELLEN PRODUKTE HER",
+    "bottomTitle": "BELIEBIGER KOMPLEXITÄT",
+    "description": "DREH- UND FRÄSARBEITEN AN CNC-MASCHINEN",
+    "btnSend": "Zeichnung zur Kalkulation senden",
+    "aboutCompany": "ÜBER DAS UNTERNEHMEN",
+    "h2": "Unternehmen «QPART»",
+    "h3": "Dienstleistungen in der Metallbearbeitung und Herstellung von Bauteilen",
+    "descriptionCompany": "Das Unternehmen QPART bietet Dienstleistungen in der Metallbearbeitung und der Herstellung von Bauteilen und Ersatzteilen beliebiger Komplexität. Wir arbeiten nach den Zeichnungen des Kunden oder erstellen bei Bedarf Konstruktions- und technische Dokumentation von Grund auf. Fertige Produkte versenden wir in die gesamte Ukraine und darüber hinaus. Wir haben Erfahrung in der Zusammenarbeit mit ausländischen Unternehmen."
+  },
+  "cardData": [
+    {
+      "title": "CNC-DREHARBEITEN",
+      "img": "/assets/cnc-turning-works.webp",
+      "href": "services/tokarni-roboty-chpu/"
+    },
+    {
+      "title": "CNC-FRÄSARBEITEN",
+      "img": "/assets/cnc-milling-works.webp",
+      "href": "services/frezerni-roboty/"
+    },
+    {
+      "title": "WÄRMEBEHANDLUNG",
+      "img": "/assets/heat-treatment.jpg",
+      "href": "services/termichna-obrobka/"
+    },
+    {
+      "title": "METALLGUSS",
+      "img": "/assets/metal-casting.webp",
+      "href": "services/indyvidualni-zamovlennya/"
+    }
+  ],
+  "contactPage": {
+    "meta": {
+      "title": "Kontakte QPART",
+      "description": "Verkauf von Ersatzteilen für importierte Landtechnik mit Lieferung in der gesamten Ukraine | Hohe Qualität Günstiger Preis Herstellergarantie Unterstützung bei der Auswahl ☎ +38 098 995 07 60.",
+      "keywords": "Metallbearbeitung",
+      "imgOg": "/logo.png"
+    },
+    "title": "Kontakte",
+    "address": "Adresse",
+    "descriptionAddress": "Yakhnenkivska-Straße 2, Dnipro, Oblast Dnipropetrowsk, Postleitzahl: 49025",
+    "email": "E-Mail",
+    "descriptionEmail": "AK.Koshubskiy@gmail.com",
+    "phone": "Telefon",
+    "descriptionPhone": "+380989950760"
+  },
+  "welcome": "Willkommen auf unserer Website!",
+  "menu": [
+    {
+      "title": "Dienstleistungen",
+      "subMenu": [
+        { "title": "CNC-DREHARBEITEN", "href": "services/tokarni-roboty-chpu" },
+        { "title": "DREHARBEITEN", "href": "services/tokarni-robot" },
+        { "title": "FRÄSARBEITEN", "href": "services/frezerni-roboty" },
+        { "title": "WÄRMEBEHANDLUNG", "href": "services/termichna-obrobka" },
+        { "title": "LASERSCHNEIDEN", "href": "services/lazerna-rizka" },
+        { "title": "METALLSCHLEIFEN", "href": "services/shlifovka-metalu" },
+        { "title": "INDIVIDUELLE AUFTRÄGE", "href": "services/indyvidualni-zamovlennya" }
+      ]
+    },
+    {
+      "title": "Produkte",
+      "subMenu": [
+        { "title": "ERSATZTEILE FÜR EISENBAHNEN", "href": "production/zaliznychni-zapchastyny" },
+        { "title": "ERSATZTEILE FÜR LANDTECHNIK", "href": "production/zapchastyny-dlya-silhosptekhniky" }
+      ]
+    },
+    {
+      "title": "Kontakte",
+      "href": "contact"
+    }
+  ],
+  "lazernaRizkaPage": {
+    "title": "Laserschneiden von Metall",
+    "description": "Laserschneiden ist eine moderne Methode zur Bearbeitung und Zuschnitt von Blech, die mit hochpräzisen CNC-gesteuerten Maschinen durchgeführt wird. Jeder Auftrag wird individuell bearbeitet: Vor Arbeitsbeginn wird die Maschine unter Berücksichtigung aller technischen Anforderungen programmiert, was eine ideale Präzision und die Möglichkeit der Bearbeitung von Materialien jeder Komplexität gewährleistet.",
+    "servicesTitle": "Unsere Dienstleistungen",
+    "listServices": [
+      {
+        "description": "Laserperforation von Blech - ideal zur Herstellung von Löchern unterschiedlicher Formen und Größen mit hoher Präzision."
+      },
+      {
+        "description": "Laserschneiden von Rohren und Profilen - ermöglicht eine präzise Bearbeitung komplex geformter Metallkonstruktionen."
+      }
+    ],
+    "advantagesTitle": "Vorteile, bei uns zu bestellen",
+    "listAdvantages": [
+      {
+        "title": "Bereit für große Mengen – wir gewährleisten einen reibungslosen Betrieb auch für umfangreiche Aufträge.",
+        "icon": "/assets/cylinder.png"
+      },
+      {
+        "title": "Über 300 CNC-Maschinen – moderne Ausrüstung garantiert Präzision, Qualität und Geschwindigkeit.",
+        "icon": "/assets/gears.png"
+      },
+      {
+        "title": "Flexible Fristen – wir arbeiten schnell und pünktlich!",
+        "icon": "/assets/clock-time.png"
+      }
+    ],
+    "descriptionBenefits": "Vorteile des Laserschneidens: Das Prinzip der Technologie basiert auf der Wärmeeinwirkung eines Laserstrahls. Während der Bearbeitung wird das Material auf Schmelztemperatur erhitzt, was eine minimale Abweichung und eine hohe Schnittqualität gewährleistet.",
+    "peculiaritiesTitle": "Besonderheiten und Vorteile:",
+    "listPeculiarities": [
+      {
+        "description": "Bearbeitungsmöglichkeit verschiedener Materialien: Edelstahl, Aluminium, Kupfer, Messing und andere, einschließlich Buntmetalle.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Perfekte Schnittkanten ohne zusätzliche Bearbeitung.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Minimierung von Materialverlusten durch hohe Präzision.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Keine Verformung des Metalls und Erhaltung seiner ursprünglichen Eigenschaften.",
+        "icon": "/icons/listPeculiarities.png"
+      }
+    ],
+    "descriptionDifferences": "Im Vergleich zu herkömmlichen mechanischen Schneidmethoden gewährleistet die Laserbearbeitung Qualität und Wirtschaftlichkeit bei der Herstellung von Teilen jeder Komplexität."
+  },
+  "footer": {
+    "join": "Treten Sie bei"
+  },
+  "btnSend": "Zeichnung zur Kalkulation senden"
+}

@@ -1,13 +1,14 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
+import {getDefaultLanguage } from '@/context/withStaticPathsAndProps';
 
 class MyDocument extends Document<{ lang: string }> {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
 
-    // Логика определения языка
-    const lang = ctx.query.lang || 'en'; // Извлекаем язык из URL
+    // Используем функцию для получения языка
+    const lang = getDefaultLanguage(ctx.query.lang as string | undefined);
 
-    return { ...initialProps, lang }; // Передаем lang как пропс
+    return { ...initialProps, lang };
   }
 
   render() {
