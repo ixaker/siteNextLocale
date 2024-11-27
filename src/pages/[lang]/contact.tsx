@@ -11,7 +11,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
-  const translationsPage = translations?.contactPage || langUk.menu;
+  const translationsPage = translations?.contactPage || langUk.contactPage;
 
   const [fullUrl, setFullUrl] = useState('');
   const theme = useTheme();

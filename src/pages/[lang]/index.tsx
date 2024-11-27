@@ -16,8 +16,8 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
-  const translationsPage = translations?.homePage || langUk.menu;
-  const cardData = translations?.cardData || langUk.menu;
+  const translationsPage = translations?.homePage || langUk.homePage;
+  const cardData = translations?.cardData || langUk.cardData;
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -97,7 +97,6 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
                 width={550} // Указываем ширину
                 height={332} // Указываем высоту
               />
-              
             </div>
           </div>
         </div>

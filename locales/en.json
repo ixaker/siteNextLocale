@@ -83,7 +83,45 @@
       "href": "contact"
     }
   ],
+  "lazernaRizkaPage": {
+    "title": "Laser Metal Cutting",
+    "description": "Laser cutting is a modern method of processing and cutting sheet metal using high-precision equipment with CNC (computer numerical control). Each order is processed individually: before starting, the machine is programmed considering all technical requirements, ensuring perfect accuracy and the ability to work with materials of any complexity.",
+    "servicesTitle": "Our Services",
+    "listServices": [
+      {
+        "description": "Laser perforation of sheet metal - ideal for creating holes of various shapes and sizes with high precision."
+      },
+      {
+        "description": "Laser cutting of pipes and profiles - allows for precise processing of complex-shaped metal structures."
+      }
+    ],
+    "advantagesTitle": "Why Choose Us",
+    "listAdvantages": [
+      {
+        "description": "Capable of handling large volumes – ensuring uninterrupted work even for large-scale orders."
+      },
+      {
+        "description": "More than 300 CNC machines – modern equipment guarantees precision, quality, and speed of execution."
+      },
+      {
+        "description": "Flexible deadlines – we work quickly and always on time!"
+      }
+    ],
+    "descriptionBenefits": "Advantages of laser cutting: The principle of this technology is based on the heat impact of a laser beam. During processing, the material is heated to the melting point, ensuring minimal error and high cutting quality.",
+    "peculiaritiesTitle": "Features and Benefits:",
+    "listPeculiarities": [
+      {
+        "description": "Capability to work with various materials: stainless steel, aluminum, copper, brass, and others, including non-ferrous metals."
+      },
+      { "description": "Perfectly smooth edges without the need for additional processing." },
+      { "description": "Minimization of material waste thanks to high precision." },
+      { "description": "No metal deformation and preservation of its original properties." }
+    ],
+    "descriptionDifferences": "Unlike traditional mechanical cutting methods, laser processing guarantees quality and cost-effectiveness in manufacturing parts of any complexity."
+  },
+
   "footer": {
     "join": "Join"
-  }
+  },
+  "btnSend": "Send drawings for calculation"
 }

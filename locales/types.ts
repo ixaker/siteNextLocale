@@ -38,6 +38,18 @@ export type Translations = {
     descriptionPhone: string;
   };
   menu: [NavigationMenu];
+  lazernaRizkaPage: {
+    title: string;
+    description: string;
+    servicesTitle: string;
+    listtServices: { description: string }[];
+    advantagesTitle: string;
+    listAdvantages: { description: string }[];
+    descriptionBenefits: string;
+    peculiaritiesTitle: string;
+    listPeculiarities: { description: string }[];
+    descriptionDifferences: string;
+  };
 
   welcome: string;
   comingSoon: string;
@@ -46,4 +58,5 @@ export type Translations = {
   footer: {
     join: string;
   };
+  btnSend: string;
 };

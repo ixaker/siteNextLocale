@@ -1,14 +1,37 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { withStaticProps, withStaticPaths } from '../../../context/withStaticPathsAndProps';
+import { withStaticProps, withStaticPaths, PageProps } from '../../../context/withStaticPathsAndProps';
+import langUk from '../../../../locales/uk.json';
+import CustomButton from '@/components/ui/button/CustomButton';
+import Image from 'next/image';
 
-interface Props {
-  translations: { [key: string]: string };
-}
+const Page: React.FC<PageProps> = ({ translations }) => {
+  const translationsPage = translations?.lazernaRizkaPage || langUk.lazernaRizkaPage;
 
-const Page: React.FC<Props> = ({ translations }) => {
   return (
-    <div>
-      <h1>{translations.welcome}</h1>
+    <div className="bg-bgImg min-h-screen bg-no-repeat bg-cover shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)]">
+      <section className="p-4">
+        <div className="flex flex-col-reverse h-screen justify-center">
+          <div className="flex flex-col-reverse items-center gap-12 md:flex-row">
+            <div className="max-w-full md:h-full md:bg-none md:max-w-full md:w-[100%]">
+              <Image
+                src="/assets/lazerna-rizka-01.JPG"
+                alt="lazerna-rizka"
+                className=" w-full h-full object-cover lg:max-w-max"
+              />
+            </div>
+
+            <div className="flex flex-col gap-5 h-full md:justify-between">
+              <h1 className="text-center font-bold text-[18px] md:text-[20px] lg:text-[25px]">
+                {translationsPage.title}
+              </h1>
+              <p className="text-center text-[14px] md:text-[16px] lg:text-[20px]">
+                {translationsPage.description}
+              </p>
+              <CustomButton variant="send-btn">{translations.btnSend}</CustomButton>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
