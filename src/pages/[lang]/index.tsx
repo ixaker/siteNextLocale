@@ -94,8 +94,8 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
                 className="w-full rounded-lg shadow-2xl"
                 src="/assets/work.jpg"
                 alt="Laptop"
-                width={550} // Указываем ширину
-                height={332} // Указываем высоту
+                width={550}
+                height={332}
               />
             </div>
           </div>

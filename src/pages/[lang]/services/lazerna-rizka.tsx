@@ -18,8 +18,7 @@ const Page: React.FC<PageProps> = ({ translations }) => {
 
   const listtAdvantages = translationsPage.listAdvantages;
   const listPeculiarities = translationsPage.listPeculiarities;
-
-  console.log('listPeculiarities', listPeculiarities);
+  const listServices = translationsPage.listServices;
 
   return (
     <div style={{ backgroundColor: bgColor }}>
@@ -51,10 +50,34 @@ const Page: React.FC<PageProps> = ({ translations }) => {
         </section>
       </div>
       <section className="mt-5" style={{ color: secondaryColor }}>
-        <p className="text-center w-full font-semibold text-[20px] lg:text-[30px]">
+        <div className="px-4 py-5">
+          <p className="font-bold text-[20px] text-center">{translationsPage.servicesTitle}</p>
+          <ul>
+            {listServices.map((item, index) => (
+              <li className="pt-5" key={index}>
+                <p className="text-[18px]">- {item.description}</p>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-5">
+            <div>
+              <Image
+                alt="lazerna-rizka"
+                src="/assets/lazerna-rizka-02.WEBP"
+                width={100}
+                height={100}
+                className="size-full shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)]"
+              />
+            </div>
+            <CustomButton className="mt-5 w-full" variant="send-btn">
+              {translations.btnSend}
+            </CustomButton>
+          </div>
+        </div>
+        <p className="mt-[20px] text-center w-full font-semibold text-[20px] lg:text-[30px]">
           {translationsPage.advantagesTitle} :
         </p>
-        <div className="py-10">
+        <div className="py-[50px]">
           <div className="md:hidden">
             <Carousel slides={listtAdvantages} />
           </div>
@@ -88,6 +111,12 @@ const Page: React.FC<PageProps> = ({ translations }) => {
               ))}
             </ul>
           </div>
+        </div>
+        <div className="px-4 pt-[30px]">
+          <p className="text-center">{translationsPage.descriptionDifferences}</p>
+        </div>
+        <div className="bg-bgImgHomeBottom min-h-[200px] bg-cover bg-center flex items-center justify-center mt-5">
+          <CustomButton variant="send-btn">{translations.btnSend}</CustomButton>
         </div>
       </section>
     </div>

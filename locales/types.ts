@@ -44,7 +44,7 @@ export type Translations = {
     title: string;
     description: string;
     servicesTitle: string;
-    listtServices: { description: string }[];
+    listServices: { description: string }[];
     advantagesTitle: string;
     listAdvantages: { title: string; icon: string }[];
     descriptionBenefits: string;
