@@ -19,7 +19,7 @@ const CustomButton: FC<PropsCustomButton> = ({
 }) => {
   const buttonClass = {
     'menu-btn':
-      'font-bold text-[15px] sm:text-[18px] md:text-[20px] lg:text-[27px] text-[white] hover:text-activeColor transition-all duration-300 ease-in-out',
+      'font-bold text-[12px] sm:text-[18px] md:text-[20px] lg:text-[27px] text-[white] hover:text-activeColor transition-all duration-300 ease-in-out',
     'leng-btn': 'font-bold text-lg sm:text-[14px] md:text-[18px] lg:text-[27px] text-[white]',
     'non-style': '',
     'communication-button':

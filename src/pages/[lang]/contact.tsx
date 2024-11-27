@@ -10,6 +10,7 @@ import CustomButton from '@/components/ui/button/CustomButton';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import dynamic from 'next/dynamic';
+import Heading from '@/components/ui/typography/Heading';
 
 const DynamicInteractiveMap = dynamic(() => import('@/components/ui/InteractiveMap/InteractiveMap'), {
   ssr: false, // Отключаем SSR для этого компонента
@@ -24,7 +25,6 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const secondaryColor = currentTheme.palette.secondary.main;
   const primaryColor = currentTheme.palette.primary.main;
-  /*   const bgColor = currentTheme.palette.background.default; */
 
   const contactsData = [
     {
@@ -67,9 +67,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       <section className="bg-bgImg max-h-[calc(100vh-137px)] bg-no-repeat bg-cover shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)]">
         <div className="flex h-screen items-center lg:items-start lg:pt-[100px]">
           <div className="w-full h-fit px-4 py-8" style={{ backgroundColor: `rgba(0, 0, 0, 0.5)` }}>
-            <h1 className="text-center font-bold text-[23px] md:text-[30px] lg:text-[40px]">
-              {translationsPage.title}
-            </h1>
+            <Heading level="h1" text={translationsPage.title} alignment="center" />
             <div className="mt-[20px] flex justify-center items-center ">
               <ul className="flex flex-col gap-10 w-auto">
                 {contactsData.map((item, index) => (
@@ -79,6 +77,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
                         ariaLabel={item.title}
                         style={{ backgroundColor: primaryColor }}
                         variant="communication-button"
+                        className="shadow-[0_10px_30px_#fff]"
                       >
                         <item.icon
                           style={{ color: secondaryColor }}

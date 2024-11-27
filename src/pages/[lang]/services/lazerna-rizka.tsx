@@ -4,12 +4,13 @@ import langUk from '../../../../locales/uk.json';
 import CustomButton from '@/components/ui/button/CustomButton';
 import Image from 'next/image';
 import Carousel from '@/components/ui/carousel/Carousel';
-
 import { darkTheme, lightTheme } from '@/theme';
 import { useTheme } from '@mui/material';
 import BackCover from '@/components/ui/back-cover/BackCover';
 import CustomContainer from '@/components/ui/container/CustomContainer';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
+import Paragraph from '@/components/ui/typography/Paragraph';
+import Heading from '@/components/ui/typography/Heading';
 
 const Page: React.FC<PageProps> = ({ translations }) => {
   const translationsPage = translations?.lazernaRizkaPage || langUk.lazernaRizkaPage;
@@ -27,25 +28,21 @@ const Page: React.FC<PageProps> = ({ translations }) => {
     <div style={{ backgroundColor: bgColor }}>
       <BackCover>
         <CustomContainer>
-          <div className="flex flex-col-reverse h-[calc(100vh-120px)] justify-center">
-            <div className="flex flex-col-reverse items-center gap-12 md:flex-row">
-              <div className="hidden shadow-[0_10px_30px_#000] max-w-full md:block md:h-full md:bg-none md:max-w-full md:w-[100%]">
+          <div className="flex flex-col h-[calc(100vh-120px)] justify-center items-center px-4 md:px-8">
+            <div className="flex flex-col-reverse items-center gap-8 md:flex-row md:gap-16 max-w-screen-xl w-full">
+              <div className="hidden md:block flex-shrink-0 md:w-[30%] md:h-fill-available lg:w-5/12 shadow-lg rounded-lg overflow-hidden">
                 <Image
                   src="/assets/lazerna-rizka-01.jpg"
                   alt="lazerna-rizka"
-                  className="w-full max-w-full h-full object-cover lg:max-w-max"
+                  className="w-full h-full object-cover"
                   width={100}
                   height={100}
                 />
               </div>
 
-              <div className="flex flex-col gap-5 h-full md:justify-between md:items-center">
-                <h1 className="text-center font-bold text-[18px] md:text-[20px] lg:text-[30px] lg:w-[80%]">
-                  {translationsPage.title}
-                </h1>
-                <p className="text-center text-[14px] md:text-[16px] lg:text-[22px]">
-                  {translationsPage.description}
-                </p>
+              <div className="flex flex-col gap-6 items-center text-center md:text-left md:items-center md:w-7/12 lg:w-7/12">
+                <Heading level="h1" text={translationsPage.title} alignment="center" />
+                <Paragraph text={translationsPage.description} alignment="center" />
                 <CustomButton variant="send-btn">{translations.btnSend}</CustomButton>
               </div>
             </div>
@@ -54,12 +51,12 @@ const Page: React.FC<PageProps> = ({ translations }) => {
       </BackCover>
       <section className="mt-5" style={{ color: secondaryColor }}>
         <div className="px-4 py-5">
-          <p className="font-bold text-[20px] text-center md:text-[30px]">{translationsPage.servicesTitle}</p>
+          <Heading level="h2" text={translationsPage.servicesTitle} alignment="center" />
           <div className="flex flex-col gap-[20px] pt-5 md:flex-row lg:justify-around lg:gap-[0px]">
             <ul className="flex flex-col gap-3 md:flex md:justify-between md:flex-col lg:max-w-[40%]">
               {listServices.map((item, index) => (
                 <li key={index}>
-                  <p className="text-[18px] md:text-[20px] lg:text-[25px]">- {item.description}</p>
+                  <Paragraph text={`- ${item.description}`} />
                 </li>
               ))}
             </ul>
@@ -77,9 +74,12 @@ const Page: React.FC<PageProps> = ({ translations }) => {
             </div>
           </div>
         </div>
-        <p className="mt-[20px] text-center w-full font-semibold text-[17px] md:text-[30px]">
-          {translationsPage.advantagesTitle} :
-        </p>
+        <Heading
+          level="h2"
+          text={`${translationsPage.advantagesTitle} :`}
+          alignment="center"
+          style="mt-[20px]"
+        />
         <div className="py-[30px] ">
           <div className="md:hidden">
             <Carousel slides={listtAdvantages} />
@@ -95,16 +95,16 @@ const Page: React.FC<PageProps> = ({ translations }) => {
                     height={100}
                     className="size-[50px] lg:size-[60px] xl:size-[100px]"
                   />
-                  <p className="text-[12px] lg:text-[15px] xl:text-[20px]">{item.title}</p>
+                  <Paragraph text={item.title} />
                 </li>
               ))}
             </ul>
           </div>
         </div>
         <div className="px-4 pt-5">
-          <p className="text-center lg:text-[18px]">{translationsPage.descriptionBenefits}</p>
+          <Paragraph text={translationsPage.descriptionBenefits} alignment="center" />
           <div className="pt-5">
-            <h2 className="font-bold text-[20px] lg:text-[30px]">{translationsPage.peculiaritiesTitle}</h2>
+            <Heading level="h2" text={translationsPage.peculiaritiesTitle} />
             <ul className="flex flex-col gap-[15px] mt-[15px]">
               {listPeculiarities.map((item, index) => (
                 <li className="flex items-center gap-3" key={index}>
@@ -115,14 +115,14 @@ const Page: React.FC<PageProps> = ({ translations }) => {
                     height={1000}
                     className="size-[45px] lg:size-[60px]"
                   />
-                  <p className="text-[15px] lg:text-[20px]">{item.description}</p>
+                  <Paragraph text={item.description} />
                 </li>
               ))}
             </ul>
           </div>
         </div>
         <div className="px-4 pt-[30px]">
-          <p className="text-center lg:text-[18px]">{translationsPage.descriptionDifferences}</p>
+          <Paragraph text={translationsPage.descriptionDifferences} alignment="center" />
         </div>
         <CalculationSection textBtn={translations.btnSend} />
       </section>
