@@ -16,11 +16,14 @@
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.16.7",
     "@mui/material": "^5.16.7",
+    "@types/leaflet": "^1.9.14",
     "dotenv": "^16.4.5",
+    "leaflet": "^1.9.4",
     "next": "14.2.17",
     "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-leaflet": "^4.2.1",
     "sass": "^1.81.0"
   },
   "devDependencies": {

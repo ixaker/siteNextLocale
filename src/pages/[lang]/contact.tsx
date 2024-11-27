@@ -9,6 +9,8 @@ import RoomIcon from '@mui/icons-material/Room';
 import CustomButton from '@/components/ui/button/CustomButton';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
+import Image from 'next/image';
+import InteractiveMap from '@/components/InteractiveMap/InteractiveMap';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.contactPage || langUk.contactPage;
@@ -61,10 +63,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       />
       <section className="bg-bgImg max-h-[calc(100vh-137px)] bg-no-repeat bg-cover shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)]">
         <div className="flex h-screen items-center lg:items-start lg:pt-[100px]">
-          <div
-            className="w-full h-fit px-4 py-8 "
-            style={{ backgroundColor: bgColor, color: secondaryColor }}
-          >
+          <div className="w-full h-fit px-4 py-8" style={{ backgroundColor: `rgba(0, 0, 0, 0.5)` }}>
             <h1 className="text-center font-bold text-[23px] md:text-[30px] lg:text-[40px]">
               {translationsPage.title}
             </h1>
@@ -95,12 +94,11 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
                   </li>
                 ))}
               </ul>
-              <div>
-                <img
-                  className="hidden md:block"
-                  src="https://scdn.comfy.ua/89fc351a-22e7-41ee-8321-f8a9356ca351/https://cdn.comfy.ua/media/catalog/product/l/e/lenovo_loq_15iax9_rgb.jpg/w_600"
-                  alt="Laptop"
-                />
+              <div className="relative">
+                <div className="absolute w-[350px] bottom-[143px] left-[68px] bg-inherit z-20">
+                  <InteractiveMap companyLocation={{ lat: 48.499937, lng: 35.038598 }} />
+                </div>
+                <img className="hidden md:block md:relative " src="/assets/LaptopContacts.png" alt="Laptop" />
               </div>
             </div>
           </div>

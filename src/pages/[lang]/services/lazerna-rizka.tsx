@@ -12,11 +12,13 @@ const Page: React.FC<PageProps> = ({ translations }) => {
       <section className="p-4">
         <div className="flex flex-col-reverse h-screen justify-center">
           <div className="flex flex-col-reverse items-center gap-12 md:flex-row">
-            <div className="max-w-full md:h-full md:bg-none md:max-w-full md:w-[100%]">
+            <div className="hidden shadow-[0_10px_30px_#000] max-w-full md:block md:h-full md:bg-none md:max-w-full md:w-[100%]">
               <Image
                 src="/assets/lazerna-rizka-01.JPG"
                 alt="lazerna-rizka"
                 className=" w-full h-full object-cover lg:max-w-max"
+                width={100}
+                height={100}
               />
             </div>
 

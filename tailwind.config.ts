@@ -13,6 +13,9 @@ const config: Config = {
         foreground: 'var(--foreground)',
         activeColor: '#c43c1e',
       },
+      boxShadowColor: {
+        default: '[0_10px_30px_#000]',
+      },
       backgroundImage: {
         bgImg: "url('/bgImg.webp')",
         bgImgHomeBottom: 'url(/assets/pipe.webp)',
