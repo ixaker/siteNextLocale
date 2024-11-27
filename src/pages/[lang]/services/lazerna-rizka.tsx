@@ -31,7 +31,7 @@ const Page: React.FC<PageProps> = ({ translations }) => {
             <div className="flex flex-col-reverse items-center gap-12 md:flex-row">
               <div className="hidden shadow-[0_10px_30px_#000] max-w-full md:block md:h-full md:bg-none md:max-w-full md:w-[100%]">
                 <Image
-                  src="/assets/lazerna-rizka-01.JPG"
+                  src="/assets/lazerna-rizka-01.jpg"
                   alt="lazerna-rizka"
                   className="w-full max-w-full h-full object-cover lg:max-w-max"
                   width={100}
