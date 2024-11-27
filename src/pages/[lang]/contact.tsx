@@ -11,7 +11,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import dynamic from 'next/dynamic';
 
-const DynamicInteractiveMap = dynamic(() => import('@/components/InteractiveMap/InteractiveMap'), {
+const DynamicInteractiveMap = dynamic(() => import('@/components/ui/InteractiveMap/InteractiveMap'), {
   ssr: false, // Отключаем SSR для этого компонента
 });
 

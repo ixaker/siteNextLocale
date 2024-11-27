@@ -3,10 +3,13 @@ import { withStaticProps, withStaticPaths, PageProps } from '../../../context/wi
 import langUk from '../../../../locales/uk.json';
 import CustomButton from '@/components/ui/button/CustomButton';
 import Image from 'next/image';
-import Carousel from '@/components/carousel/Carousel';
+import Carousel from '@/components/ui/carousel/Carousel';
 
 import { darkTheme, lightTheme } from '@/theme';
 import { useTheme } from '@mui/material';
+import BackCover from '@/components/ui/back-cover/BackCover';
+import CustomContainer from '@/components/ui/container/CustomContainer';
+import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
 
 const Page: React.FC<PageProps> = ({ translations }) => {
   const translationsPage = translations?.lazernaRizkaPage || langUk.lazernaRizkaPage;
@@ -22,8 +25,8 @@ const Page: React.FC<PageProps> = ({ translations }) => {
 
   return (
     <div style={{ backgroundColor: bgColor }}>
-      <div className="bg-bgImg max-h-[calc(100vh-120px)] bg-no-repeat bg-cover shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)]">
-        <section className="p-4">
+      <BackCover>
+        <CustomContainer>
           <div className="flex flex-col-reverse h-[calc(100vh-120px)] justify-center">
             <div className="flex flex-col-reverse items-center gap-12 md:flex-row">
               <div className="hidden shadow-[0_10px_30px_#000] max-w-full md:block md:h-full md:bg-none md:max-w-full md:w-[100%]">
@@ -47,8 +50,8 @@ const Page: React.FC<PageProps> = ({ translations }) => {
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </CustomContainer>
+      </BackCover>
       <section className="mt-5" style={{ color: secondaryColor }}>
         <div className="px-4 py-5">
           <p className="font-bold text-[20px] text-center md:text-[30px]">{translationsPage.servicesTitle}</p>
@@ -121,9 +124,7 @@ const Page: React.FC<PageProps> = ({ translations }) => {
         <div className="px-4 pt-[30px]">
           <p className="text-center lg:text-[18px]">{translationsPage.descriptionDifferences}</p>
         </div>
-        <div className="bg-bgImgHomeBottom min-h-[200px] bg-cover bg-center flex items-center justify-center mt-5">
-          <CustomButton variant="send-btn">{translations.btnSend}</CustomButton>
-        </div>
+        <CalculationSection textBtn={translations.btnSend} />
       </section>
     </div>
   );
