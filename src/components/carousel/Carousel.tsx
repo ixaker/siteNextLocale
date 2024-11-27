@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import Slider from 'react-slick';
 
@@ -27,7 +28,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
       {slides.map((slide, index) => (
         <div key={index} className="py-5 px-4 flex items-center justify-center">
           <div className="flex gap-5 items-center justify-center h-full">
-            <img src={slide.icon} alt={slide.title} className="size-20 mb-4" />
+            <Image src={slide.icon} alt={slide.title} className="size-20 mb-4" width={100} height={100} />
             <p className="text-center text-[15px]">{slide.title}</p>
           </div>
         </div>

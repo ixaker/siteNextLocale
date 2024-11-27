@@ -2,6 +2,7 @@ import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import Image from 'next/image';
 
 type Props = {
   companyLocation: { lat: number; lng: number };
@@ -38,8 +39,28 @@ const InteractiveMap: React.FC<Props> = ({ companyLocation }) => {
   };
 
   return (
-    <div style={{ height: '192px', width: '279px' }}>
-      <MapContainer center={[lat, lng]} zoom={13} style={{ height: '100%', width: '100%' }}>
+    <>
+      <Image
+        className=" w-full h-full absolute"
+        src="/assets/LaptopContacts.png"
+        alt="Laptop"
+        width={100}
+        height={100}
+      />
+
+      <MapContainer
+        center={[lat, lng]}
+        zoom={13}
+        style={{
+          height: '85.8%',
+          width: '78.9%',
+          position: 'absolute',
+          left: '10.6%',
+          top: '2.2%',
+          zIndex: 10,
+          borderRadius: '10 10 10 10',
+        }}
+      >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -55,7 +76,7 @@ const InteractiveMap: React.FC<Props> = ({ companyLocation }) => {
           </Popup>
         </Marker>
       </MapContainer>
-    </div>
+    </>
   );
 };
 

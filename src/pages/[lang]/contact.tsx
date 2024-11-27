@@ -71,8 +71,8 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
             <h1 className="text-center font-bold text-[23px] md:text-[30px] lg:text-[40px]">
               {translationsPage.title}
             </h1>
-            <div className="mt-[20px] md:flex lg:justify-around">
-              <ul className="flex flex-col gap-10 md:w-[90%] md:justify-between lg:w-[75%] 2xl:w-auto">
+            <div className="mt-[20px] flex justify-center items-center ">
+              <ul className="flex flex-col gap-10 w-auto">
                 {contactsData.map((item, index) => (
                   <li className="flex gap-[30px] items-center" key={index}>
                     <a target="_blank" href={item.link} aria-label={item.title}>
@@ -88,30 +88,14 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
                       </CustomButton>
                     </a>
                     <div className="flex flex-col">
-                      <span className="text-[18px] font-bold md:text-[25px] lg:text-[35px]">
-                        {item.title}
-                      </span>
-                      <span className="text-[12px] font-extralight md:text-[15px] lg:text-[18px] ">
-                        {item.description}
-                      </span>
+                      <span className="text-[18px] font-bold md:text-[25px] ">{item.title}</span>
+                      <span className="text-[12px] font-extralight md:text-[15px]  ">{item.description}</span>
                     </div>
                   </li>
                 ))}
               </ul>
-              <div className="relative">
-                <div className="absolute w-[350px] bottom-[118px] left-[52px] bg-inherit z-20">
-                  <DynamicInteractiveMap companyLocation={{ lat: 48.499937, lng: 35.038598 }} />
-                </div>
-                {/* <div className='w-full h-full'> */}
-                <Image
-                  className="hidden md:block md:relative md:w-[421px] md:h-[421px]"
-                  src="/assets/LaptopContacts.png"
-                  alt="Laptop"
-                  width={100}
-                  height={100}
-                />
-
-                {/* </div> */}
+              <div className="hidden relative w-full h-[268px] md:block max-w-[451px]">
+                <DynamicInteractiveMap companyLocation={{ lat: 48.499937, lng: 35.038598 }} />
               </div>
             </div>
           </div>

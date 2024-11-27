@@ -36,8 +36,8 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
         lang={lang}
         localeOg={translations.locale}
       />
-      <div className="bg-bgImg min-h-screen bg-no-repeat bg-cover shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)]">
-        <div className="pl-4 pr-4 flex flex-col justify-center items-center h-screen md:items-start">
+      <div className="bg-bgImg ax-h-[calc(100vh-120px)] bg-no-repeat bg-cover shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)]">
+        <div className="pl-4 pr-4 flex flex-col justify-center items-center h-[calc(100vh-120px)] md:items-start">
           <div>
             <h1 className="text-[20px] text-center w-full sm:text-start sm:text-[40px] md:text-[55px] lg:text-[70px] font-semibold">
               {translationsPage.topTitle}
