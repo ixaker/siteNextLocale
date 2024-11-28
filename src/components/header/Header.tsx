@@ -11,8 +11,13 @@ const Header: React.FC<PageProps> = ({ translations, lang, supportedLanguages, d
       <div className="flex justify-between items-center flex-wrap p-3 bg-inherit absolute top-0 w-full">
         <HeaderLogo />
         <div className="flex gap-10 items-center">
-          <div className="hidden sm:block">
-            <Menu translations={translations} lang={lang} supportedLanguages={supportedLanguages} defaultLanguage={defaultLanguage}/>
+          <div className="hidden md:block">
+            <Menu
+              translations={translations}
+              lang={lang}
+              supportedLanguages={supportedLanguages}
+              defaultLanguage={defaultLanguage}
+            />
           </div>
           <div className="flex gap-7 items-center">
             <LanguageSwitcher supportedLanguages={supportedLanguages} currentLang={lang} />
@@ -20,8 +25,13 @@ const Header: React.FC<PageProps> = ({ translations, lang, supportedLanguages, d
           </div>
         </div>
 
-        <div className="flex justify-center items-center w-full mt-[30px] sm:hidden ">
-          <Menu translations={translations} lang={lang} supportedLanguages={supportedLanguages} defaultLanguage={defaultLanguage}/>
+        <div className="flex justify-center items-center w-full mt-[30px] md:hidden ">
+          <Menu
+            translations={translations}
+            lang={lang}
+            supportedLanguages={supportedLanguages}
+            defaultLanguage={defaultLanguage}
+          />
         </div>
       </div>
     </header>

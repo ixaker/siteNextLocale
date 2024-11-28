@@ -1,4 +1,4 @@
-import '../styles/globals.scss'; // Подключение глобальных стилей
+import '../styles/globals.scss';
 import type { AppProps } from 'next/app';
 import Layout from '../components/Layout';
 import { CssBaseline } from '@mui/material';

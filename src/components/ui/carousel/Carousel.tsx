@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import Slider from 'react-slick';
+import Paragraph from '../typography/Paragraph';
 
 interface Slide {
   title: string;
@@ -29,7 +30,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
         <div key={index} className="py-5 px-4 flex items-center justify-center">
           <div className="flex gap-5 items-center justify-center h-full">
             <Image src={slide.icon} alt={slide.title} className="size-20 mb-4" width={100} height={100} />
-            <p className="text-center text-[15px]">{slide.title}</p>
+            <Paragraph text={slide.title} alignment="center" />
           </div>
         </div>
       ))}

@@ -20,6 +20,9 @@ const config: Config = {
         bgImg: "url('/bgImg.webp')",
         bgImgHomeBottom: 'url(/assets/pipe.webp)',
       },
+      height: {
+        'fill-available': '-webkit-fill-available',
+      },
     },
   },
   plugins: [],
