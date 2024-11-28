@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Box, Popper, ClickAwayListener, useTheme } from '@mui/material';
+import React, { useState, useRef } from 'react';
+import { Box, Popper, useTheme } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Link from 'next/link';
 import CustomButton from '@/components/ui/button/CustomButton';
@@ -11,7 +11,7 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [currentSubMenu, setCurrentSubMenu] = useState<null | string>(null);
   const theme = useTheme();
-  const observerRef = useRef<IntersectionObserver | null>(null);
+  // const observerRef = useRef<IntersectionObserver | null>(null);
   const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const menuItems = translations?.menu || langUk.menu;
@@ -29,6 +29,7 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
     if (hoverTimeoutRef.current) {
       clearTimeout(hoverTimeoutRef.current);
     }
+
     setAnchorEl(null);
     setCurrentSubMenu(null);
   };
@@ -49,30 +50,30 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
   };
 
   // Проверка видимости элемента с использованием IntersectionObserver
-  useEffect(() => {
-    if (anchorEl) {
-      observerRef.current = new IntersectionObserver(
-        ([entry]) => {
-          if (!entry.isIntersecting) {
-            handleMenuClose();
-          }
-        },
-        {
-          root: null, // Следим за видимостью в пределах viewport
-          threshold: 0.1, // Считаем невидимым, если менее 10% элемента видно
-        }
-      );
+  // useEffect(() => {
+  //   if (anchorEl) {
+  //     observerRef.current = new IntersectionObserver(
+  //       ([entry]) => {
+  //         if (!entry.isIntersecting) {
+  //           handleMenuClose();
+  //         }
+  //       },
+  //       {
+  //         root: null, // Следим за видимостью в пределах viewport
+  //         threshold: 0.1, // Считаем невидимым, если менее 10% элемента видно
+  //       }
+  //     );
 
-      observerRef.current.observe(anchorEl);
-    }
+  //     observerRef.current.observe(anchorEl);
+  //   }
 
-    return () => {
-      if (observerRef.current && anchorEl) {
-        observerRef.current.unobserve(anchorEl); // Убираем наблюдение при размонтировании
-        observerRef.current.disconnect();
-      }
-    };
-  }, [anchorEl]);
+  //   return () => {
+  //     if (observerRef.current && anchorEl) {
+  //       observerRef.current.unobserve(anchorEl); // Убираем наблюдение при размонтировании
+  //       observerRef.current.disconnect();
+  //     }
+  //   };
+  // }, [anchorEl]);
 
   return (
     <nav className="flex items-center gap-5 sm:gap-[30px] md:gap-[40px] lg:gap-[80px]">
@@ -142,25 +143,25 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
                   maxWidth: '90vw',
                 }}
               >
-                <ClickAwayListener onClickAway={handleMenuClose}>
-                  <Box>
-                    {item.subMenu.map((subItem) => (
-                      <Link
-                        key={subItem.title}
-                        href={`/${lang}/${subItem.href}/`}
-                        className="hover:bg-[#c43c1e] transition-all duration-300 ease-in-out px-[15px] py-[10px] sm:p-1 md:p-1.5 lg:p-2 rounded-[3px] text-[14px] sm:text-[14px] md:text-[15px] lg:text-[17px] "
-                        style={{
-                          textDecoration: 'none',
-                          display: 'block',
-                          color: secondaryColor,
-                        }}
-                        onClick={handleMenuClose}
-                      >
-                        {subItem.title}
-                      </Link>
-                    ))}
-                  </Box>
-                </ClickAwayListener>
+                {/* <ClickAwayListener onClickAway={handleMenuClose}> */}
+                <Box>
+                  {item.subMenu.map((subItem) => (
+                    <Link
+                      key={subItem.title}
+                      href={`/${lang}/${subItem.href}/`}
+                      className="hover:bg-[#c43c1e] transition-all duration-300 ease-in-out px-[15px] py-[10px] sm:p-1 md:p-1.5 lg:p-2 rounded-[3px] text-[14px] sm:text-[14px] md:text-[15px] lg:text-[17px] "
+                      style={{
+                        textDecoration: 'none',
+                        display: 'block',
+                        color: secondaryColor,
+                      }}
+                      onClick={handleMenuClose}
+                    >
+                      {subItem.title}
+                    </Link>
+                  ))}
+                </Box>
+                {/* </ClickAwayListener> */}
               </Popper>
             </>
           ) : (
