@@ -1,7 +1,16 @@
 config.php:
-        return [
-            'smtp_host' => 'smtp.gmail.com',
-            'smtp_user' => 'your_email@gmail.com',
-            'smtp_password' => 'your_password',
-            'smtp_port' => 587,
-        ];
+    <?php
+    // Защита от прямого доступа
+    if (!defined('SECURE_ACCESS')) {
+        http_response_code(403);
+        exit('Access denied');
+    }
+
+    // Конфиденциальные данные
+    return [
+        'smtp_host' => 'mail.adm.tools',
+        'smtp_user' => 'site@qpart.com.ua',
+        'smtp_pass' => 'pass',
+        'smtp_port' => 587,
+    ];
+
