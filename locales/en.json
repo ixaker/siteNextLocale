@@ -34,7 +34,7 @@
     },
     {
       "title": "METAL CASTING",
-      "img": "/assets/metal-casting.webp",
+      "img": "/assets/metal-casting.jpg",
       "href": "services/indyvidualni-zamovlennya/"
     }
   ],
@@ -59,8 +59,19 @@
     {
       "title": "Services",
       "subMenu": [
-        { "title": "CNC TURNING", "href": "services/tokarni-roboty-chpu" },
-        { "title": "TURNING", "href": "services/tokarni-robot" },
+        { "title": "CNC TURNING", "href": "services/tokarni-roboty-chpk" },
+        {
+          "title": "METAL WELDING",
+          "href": "services/zvaryuvannya-metalu"
+        },
+        {
+          "title": "CUTTING ON A BAND SAW MACHINE",
+          "href": "services/porizka-na-verstati"
+        },
+        {
+          "title": "METAL CASTING",
+          "href": "services/lyttya-metalu"
+        },
         { "title": "MILLING", "href": "services/frezerni-roboty" },
         { "title": "HEAT TREATMENT", "href": "services/termichna-obrobka" },
         { "title": "LASER CUTTING", "href": "services/lazerna-rizka" },
@@ -83,6 +94,50 @@
       "href": "contact"
     }
   ],
+
+  "shlifovkaMetaluPage": {
+    "title": "Metal Grinding",
+    "description": "Metal grinding is one of the key areas of activity for QPart. We provide metalworking services throughout Ukraine, taking on complex tasks and adhering to the highest quality standards. If you need metal grinding services in Dnipro, our company will deliver them at the highest level and in the shortest time."
+  },
+  "termichnaObrobkaPage": {
+    "title": "HEAT TREATMENT",
+    "description": "Heat treatment of metal by QPart: hardening, annealing, and tempering"
+  },
+  "frezerniRoboty": {
+    "title": "CNC Milling by QPart: Precision, Quality, Professionalism",
+    "description": "CNC milling is a modern method of metal machining that allows the production of parts with complex geometric parameters and high operational characteristics. This technology is applicable for working with various materials: titanium, aluminum, cast iron, stainless steel, and other metals."
+  },
+  "tokarniRobotyChpkPage": {
+    "title": "CNC Turning: Precision, Quality, Reliability",
+    "description": "CNC turning is a modern metal machining technology that allows the production of parts with high precision and specified parameters. This method is ideal for creating both simple and complex products made from stainless steel, aluminum, brass, cast iron, and other materials.",
+    "peculiaritiesTitle": "Peculiarities of Turning Metal Processing:",
+    "listPeculiarities": [
+      {
+        "description": "Precision and stability. CNC machines provide processing with minimal deviations from the specified dimensions.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Execution speed. Due to process automation, high productivity is achieved even with large volumes of work.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Flexibility in working with materials. The technology is suitable for processing hard alloys, stainless steel, aluminum, and other metals.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Surface quality. Thanks to precise cutting tools, finished products have a smooth, neat surface that meets the specified roughness.",
+        "icon": "/icons/listPeculiarities.png"
+      }
+    ]
+  },
+  "porizkaNaVerstati": {
+    "title": "Cutting on a Bandsaw: Efficiency and Precision",
+    "description": "Cutting on a bandsaw is a modern and reliable method of material processing that ensures high quality and precision of finished parts. Thanks to advanced technologies, this method is optimal for producing parts of any complexity."
+  },
+  "indyvidualniZamovlennya": {
+    "title": "Custom Metal Products: Quality and Timeliness",
+    "description": "Manufacturing metal products is a modern approach to meeting the needs for parts of any complexity. This service allows the client to avoid costs associated with purchasing equipment, training personnel, and organizing the production process. Thanks to advanced technologies, QPart manufactures custom metal products in accordance with the highest quality standards. We work with steel, aluminum, brass, cast iron, stainless steel, and other metals, ensuring precise execution of technical tasks."
+  },
   "lazernaRizkaPage": {
     "title": "Laser Metal Cutting",
     "description": "Laser cutting is a modern method of processing and cutting sheet metal using high-precision equipment with CNC (computer numerical control). Each order is processed individually: before starting, the machine is programmed considering all technical requirements, ensuring perfect accuracy and the ability to work with materials of any complexity.",

@@ -53,6 +53,43 @@ export type Translations = {
     descriptionDifferences: string;
   };
 
+  tokarniRobotyChpkPage: {
+    title: string;
+    description: string;
+    peculiaritiesTitle: string;
+    listPeculiarities: { description: string; icon: string }[];
+  };
+
+  shlifovkaMetaluPage: {
+    title: string;
+    description: string;
+  };
+
+  termichnaObrobkaPage: {
+    title: string;
+    description: string;
+  };
+
+  frezerniRoboty: {
+    title: string;
+    description: string;
+  };
+
+  porizkaNaVerstati: {
+    title: string;
+    description: string;
+  };
+
+  lyttyaMetalu: {
+    title: string;
+    description: string;
+  };
+
+  indyvidualniZamovlennya: {
+    title: string;
+    description: string;
+  };
+
   welcome: string;
   comingSoon: string;
   inDevelopment: string;

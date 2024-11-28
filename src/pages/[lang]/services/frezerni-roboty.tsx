@@ -1,15 +1,28 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { withStaticProps, withStaticPaths } from '../../../context/withStaticPathsAndProps';
+import { withStaticProps, withStaticPaths, PageProps } from '../../../context/withStaticPathsAndProps';
+import BackCover from '@/components/ui/back-cover/BackCover';
+import CustomContainer from '@/components/ui/container/CustomContainer';
+import { useTheme } from '@mui/material';
+import langUk from '../../../../locales/uk.json';
+import { darkTheme, lightTheme } from '@/theme';
 
-interface Props {
-  translations: { [key: string]: string };
-}
+const Page: React.FC<PageProps> = ({ translations }) => {
+  const translationsPage = translations?.frezerniRoboty || langUk.frezerniRoboty;
+  const theme = useTheme();
 
-const Page: React.FC<Props> = ({ translations }) => {
+  const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
+  const bgColor = currentTheme.palette.background.default;
   return (
-    <div>
-      <h1>{translations.welcome}</h1>
-    </div>
+    <section style={{ backgroundColor: bgColor }}>
+      <BackCover>
+        <CustomContainer
+          title={translationsPage.title}
+          description={translationsPage.description}
+          srcImg="/assets/frezerni-roboty.webp"
+          txtButton={translations.btnSend}
+        />
+      </BackCover>
+    </section>
   );
 };
 

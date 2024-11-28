@@ -1,11 +1,8 @@
+import React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { withStaticProps, withStaticPaths } from '../../../context/withStaticPathsAndProps';
+import { withStaticProps, withStaticPaths, PageProps } from '../../../context/withStaticPathsAndProps';
 
-interface Props {
-  translations: { [key: string]: string };
-}
-
-const Page: React.FC<Props> = ({ translations }) => {
+const Page: React.FC<PageProps> = ({ translations }) => {
   return (
     <div>
       <h1>{translations.welcome}</h1>

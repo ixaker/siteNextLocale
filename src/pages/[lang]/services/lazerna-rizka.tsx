@@ -11,6 +11,7 @@ import CustomContainer from '@/components/ui/container/CustomContainer';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
 import Paragraph from '@/components/ui/typography/Paragraph';
 import Heading from '@/components/ui/typography/Heading';
+import FeatureBlock from '@/components/ui/feature-block/FeatureBlock';
 
 const Page: React.FC<PageProps> = ({ translations }) => {
   const translationsPage = translations?.lazernaRizkaPage || langUk.lazernaRizkaPage;
@@ -27,27 +28,12 @@ const Page: React.FC<PageProps> = ({ translations }) => {
   return (
     <div style={{ backgroundColor: bgColor }}>
       <BackCover>
-        <CustomContainer>
-          <div className="flex flex-col h-[calc(100vh-120px)] justify-center items-center px-4 md:px-8">
-            <div className="flex flex-col-reverse items-center gap-8 md:flex-row md:gap-16 max-w-screen-xl w-full">
-              <div className="hidden md:block flex-shrink-0 md:w-[30%] md:h-fill-available lg:w-5/12 shadow-lg rounded-lg overflow-hidden">
-                <Image
-                  src="/assets/lazerna-rizka-01.jpg"
-                  alt="lazerna-rizka"
-                  className="w-full h-full object-cover"
-                  width={100}
-                  height={100}
-                />
-              </div>
-
-              <div className="flex flex-col gap-6 items-center text-center md:text-left md:items-center md:w-7/12 lg:w-7/12">
-                <Heading level="h1" text={translationsPage.title} alignment="center" />
-                <Paragraph text={translationsPage.description} alignment="center" />
-                <CustomButton variant="send-btn">{translations.btnSend}</CustomButton>
-              </div>
-            </div>
-          </div>
-        </CustomContainer>
+        <CustomContainer
+          title={translationsPage.title}
+          description={translationsPage.description}
+          srcImg="/assets/lazerna-rizka-01.jpg"
+          txtButton={translations.btnSend}
+        />
       </BackCover>
       <section className="mt-5" style={{ color: secondaryColor }}>
         <div className="px-4 py-5">
@@ -103,23 +89,7 @@ const Page: React.FC<PageProps> = ({ translations }) => {
         </div>
         <div className="px-4 pt-5">
           <Paragraph text={translationsPage.descriptionBenefits} alignment="center" />
-          <div className="pt-5">
-            <Heading level="h2" text={translationsPage.peculiaritiesTitle} />
-            <ul className="flex flex-col gap-[15px] mt-[15px]">
-              {listPeculiarities.map((item, index) => (
-                <li className="flex items-center gap-3" key={index}>
-                  <Image
-                    src={item.icon}
-                    alt="Icon"
-                    width={100}
-                    height={1000}
-                    className="size-[45px] lg:size-[60px]"
-                  />
-                  <Paragraph text={item.description} />
-                </li>
-              ))}
-            </ul>
-          </div>
+          <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />
         </div>
         <div className="px-4 pt-[30px]">
           <Paragraph text={translationsPage.descriptionDifferences} alignment="center" />

@@ -2,12 +2,12 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import { withStaticProps, withStaticPaths, PageProps } from '../../../context/withStaticPathsAndProps';
 import BackCover from '@/components/ui/back-cover/BackCover';
 import CustomContainer from '@/components/ui/container/CustomContainer';
-import { useTheme } from '@mui/material';
 import langUk from '../../../../locales/uk.json';
+import { useTheme } from '@mui/material';
 import { darkTheme, lightTheme } from '@/theme';
 
 const Page: React.FC<PageProps> = ({ translations }) => {
-  const translationsPage = translations?.indyvidualniZamovlennya || langUk.indyvidualniZamovlennya;
+  const translationsPage = translations?.porizkaNaVerstati || langUk.porizkaNaVerstati;
   const theme = useTheme();
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
@@ -18,7 +18,7 @@ const Page: React.FC<PageProps> = ({ translations }) => {
         <CustomContainer
           title={translationsPage.title}
           description={translationsPage.description}
-          srcImg="/assets/indyvidualni-zamovlennya.jpg"
+          srcImg="/assets/porizka-na-verstati.jpg"
           txtButton={translations.btnSend}
         />
       </BackCover>
