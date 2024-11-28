@@ -9,7 +9,7 @@
     "lint": "next lint",
     "format": "prettier --write .",
     "deploy": "node ftp-deploy-config.js",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap && powershell Copy-Item -Path ./config.php -Destination ./out/ && powershell Copy-Item -Path ./public/sitemap-0.xml -Destination ./out/ && powershell Copy-Item -Path ./public/sitemap.xml -Destination ./out/"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
