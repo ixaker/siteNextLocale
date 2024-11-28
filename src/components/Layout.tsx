@@ -13,6 +13,14 @@ const Layout: React.FC<PageProps> = ({
   supportedLanguages,
   defaultLanguage,
 }) => {
+
+const Layout: React.FC<PageProps> = ({ children, ...restProps }) => {
+  const theme = useTheme();
+
+  const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
+  const primaryColor = currentTheme.palette.primary.main;
+  const secondaryColor = currentTheme.palette.secondary.main;
+
   return (
     <>
       <Header
@@ -21,6 +29,7 @@ const Layout: React.FC<PageProps> = ({
         supportedLanguages={supportedLanguages}
         defaultLanguage={defaultLanguage}
       />
+      <Header {...restProps}/>
       <main>
         <div className=" text-white">{children}</div>
         <div>
@@ -40,6 +49,7 @@ const Layout: React.FC<PageProps> = ({
         supportedLanguages={supportedLanguages}
         defaultLanguage={defaultLanguage}
       />
+      <Footer {...restProps}/>
     </>
   );
 };
