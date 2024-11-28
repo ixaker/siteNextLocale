@@ -8,6 +8,7 @@ import { darkTheme, lightTheme } from '@/theme';
 import FeatureBlock from '@/components/ui/feature-block/FeatureBlock';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
 import ListBenefits from '@/components/ui/list-benefits/ListBenefits';
+import ServiceBlock from '@/components/ui/service-block/ServiceBlock';
 
 const Page: React.FC<PageProps> = ({ translations }) => {
   const translationsPage = translations?.frezerniRoboty || langUk.frezerniRoboty;
@@ -17,6 +18,7 @@ const Page: React.FC<PageProps> = ({ translations }) => {
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
+  const listServices = translationsPage.listServices;
   return (
     <section style={{ backgroundColor: bgColor }}>
       <BackCover>
@@ -27,6 +29,12 @@ const Page: React.FC<PageProps> = ({ translations }) => {
           txtButton={translations.btnSend}
         />
       </BackCover>
+      <ServiceBlock
+        btnText={translations.btnSend}
+        heading={translationsPage.servicesTitle}
+        imgSrc="/assets/tokarni-roboty-chpk2.jpg"
+        list={listServices}
+      />
       <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
       <div className="px-4">
         <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />

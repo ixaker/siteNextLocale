@@ -79,6 +79,8 @@ export type Translations = {
     description: string;
     peculiaritiesTitle: string;
     listPeculiarities: { description: string; icon: string }[];
+    servicesTitle: string;
+    listServices: { description: string }[];
   };
 
   porizkaNaVerstati: {
