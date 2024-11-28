@@ -40,3 +40,4 @@ next-env.d.ts
 sitemap-0.xml
 
 config.php
+public/sitemap.xml
