@@ -6,30 +6,10 @@ import { PageProps } from '@/context/withStaticPathsAndProps';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 
-const Layout: React.FC<PageProps> = ({
-  children,
-  translations,
-  lang,
-  supportedLanguages,
-  defaultLanguage,
-}) => {
-
 const Layout: React.FC<PageProps> = ({ children, ...restProps }) => {
-  const theme = useTheme();
-
-  const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
-  const primaryColor = currentTheme.palette.primary.main;
-  const secondaryColor = currentTheme.palette.secondary.main;
-
   return (
     <>
-      <Header
-        translations={translations}
-        lang={lang}
-        supportedLanguages={supportedLanguages}
-        defaultLanguage={defaultLanguage}
-      />
-      <Header {...restProps}/>
+      <Header {...restProps} />
       <main>
         <div className=" text-white">{children}</div>
         <div>
@@ -43,13 +23,7 @@ const Layout: React.FC<PageProps> = ({ children, ...restProps }) => {
           />
         </div>
       </main>
-      <Footer
-        translations={translations}
-        lang={lang}
-        supportedLanguages={supportedLanguages}
-        defaultLanguage={defaultLanguage}
-      />
-      <Footer {...restProps}/>
+      <Footer {...restProps} />
     </>
   );
 };
