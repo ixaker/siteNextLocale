@@ -329,6 +329,31 @@
       }
     ]
   },
+  "lyttyaMetaluPage": {
+    "title": "METALLGUSS",
+    "description": "QPart ist auf Metallguss spezialisiert und übernimmt Aufträge von der Herstellung einzelner Teile bis hin zur Serienproduktion mit anschließender mechanischer Bearbeitung.",
+    "servicesTitle": "Unsere Dienstleistungen im Bereich Metallguss:",
+    "listServices": [
+      {
+        "description": "Druckguss - Geeignet für Teile mit komplexen Formen und geprägten Konturen. Produkte, die mit diesem Verfahren hergestellt werden, zeichnen sich durch hohe Präzision, Oberflächengüte und erhöhte Korrosionsbeständigkeit aus."
+      },
+      {
+        "description": "Feinguss - Gewährleistet die Herstellung von Formgussteilen mit hoher Maß- und Gewichtsgenauigkeit. Geeignet für alle Arten von Gusslegierungen."
+      },
+      {
+        "description": "Kokillenguss - Ein Verfahren, bei dem geschmolzenes Metall in wiederverwendbare Stahlformen gegossen wird, was eine hohe Dichte und Qualität der Produkte ermöglicht."
+      },
+      {
+        "description": "Sandguss - Eine kostengünstige Methode, die sich für komplexe Teile aus verschiedenen Legierungen eignet. Dank der niedrigen Produktionskosten können die Endpreise der Produkte reduziert werden."
+      },
+      {
+        "description": "Kaltformguss (KFG) - Dieses Verfahren minimiert den Nachbearbeitungsaufwand dank seiner Genauigkeit und Einhaltung der Anforderungen an die Oberflächenrauheit."
+      },
+      {
+        "description": "Verlorene Schaumguss - Ideal für die Herstellung von komplexen und maßgeschneiderten Modellen unter Verwendung von expandiertem Polystyrol."
+      }
+    ]
+  },
   "footer": {
     "join": "Treten Sie bei"
   },

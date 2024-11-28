@@ -93,8 +93,12 @@ export type Translations = {
   lyttyaMetalu: {
     title: string;
     description: string;
+    servicesTitle: string;
+    listServices: { description: string }[];
+    descriptionBenefits: string;
     peculiaritiesTitle: string;
     listPeculiarities: { description: string; icon: string }[];
+    descriptionDifferences: string;
   };
 
   indyvidualniZamovlennya: {

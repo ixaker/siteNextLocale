@@ -335,6 +335,31 @@
       }
     ]
   },
+  "lyttyaMetaluPage": {
+    "title": "METAL CASTING",
+    "description": "QPart specializes in metal casting, handling orders ranging from part production to serial manufacturing with subsequent machining.",
+    "servicesTitle": "Our Metal Casting Services:",
+    "listServices": [
+      {
+        "description": "Die casting - Suitable for parts with complex shapes and embossed contours. Products made using this method feature high precision, surface smoothness, and enhanced corrosion resistance."
+      },
+      {
+        "description": "Investment casting - Ensures the production of shaped castings with high dimensional and weight accuracy. Suitable for all types of casting alloys."
+      },
+      {
+        "description": "Permanent mold casting - A method that involves pouring molten metal into reusable steel molds, ensuring high density and quality of products."
+      },
+      {
+        "description": "Sand casting - A cost-effective method suitable for complex parts made of various alloys. Its low production cost helps reduce the final price of products."
+      },
+      {
+        "description": "Cold box casting (CBS) - This method minimizes post-processing volumes thanks to its accuracy and adherence to surface roughness requirements."
+      },
+      {
+        "description": "Lost foam casting - Ideal for creating complex and custom models using expanded polystyrene."
+      }
+    ]
+  },
 
   "footer": {
     "join": "Join"
