@@ -115,7 +115,15 @@
         "description": "Flachschleifen: Zum Erreichen einer perfekt glatten Oberfläche auf flachen und geformten Oberflächen.",
         "icon": "/icons/listPeculiarities.png"
       }
-    ]
+    ],
+    "servicesTitle": "Was ist Metallschleifen?",
+    "listServices": [
+      {
+        "description": "Das Metallschleifen ist der letzte Schritt bei der Bearbeitung von Metallprodukten, der eine perfekt glatte Oberfläche ermöglicht. Dieser Prozess wird in der Regel nach Dreh- oder Fräsarbeiten durchgeführt, um Unvollkommenheiten zu beseitigen und eine hohe Präzision der gefertigten Teile zu gewährleisten."
+      }
+    ],
+    "question": "Warum ist Metallschleifen notwendig?",
+    "answer": "Das Metallschleifen sorgt für eine perfekt glatte Oberfläche, beseitigt Defekte und Unebenheiten, erhöht die Präzision der Teile und verleiht ihnen eine ästhetische Anziehungskraft. Es ist ein entscheidender Schritt in der Herstellung von Metallprodukten."
   },
   "termichnaObrobkaPage": {
     "title": "WÄRMEBEHANDLUNG",
@@ -133,6 +141,21 @@
       {
         "description": "Metallanlassen – Der letzte Schritt der Wärmebehandlung, der ein Gleichgewicht zwischen Härte und Flexibilität sicherstellt und entscheidend für die Verbesserung der Betriebseigenschaften ist.",
         "icon": "/icons/listPeculiarities.png"
+      }
+    ],
+    "servicesTitle": "Wärmebehandlung von Metall — Ein entscheidender Produktionsschritt, der die Qualität und Leistungseigenschaften der Materialien erheblich verbessert. Von der Härtung bis zur Glühung gewährleisten diese Technologien:",
+    "listServices": [
+      {
+        "description": "Erhöhte Festigkeit und Widerstandsfähigkeit gegen mechanische Belastungen;"
+      },
+      {
+        "description": "Verbesserte Korrosionsbeständigkeit;"
+      },
+      {
+        "description": "Fähigkeit, hohen Temperaturen standzuhalten;"
+      },
+      {
+        "description": "Flexibilität und Reduzierung innerer Spannungen in der Metallstruktur."
       }
     ]
   },
@@ -152,6 +175,23 @@
       {
         "description": "Je nach Auftragskomplexität und Materialeigenschaften werden Scheiben-, End- und Stirnfräser verwendet.",
         "icon": "/icons/listPeculiarities.png"
+      }
+    ],
+    "listServices": [
+      {
+        "description": "Gegenlauffräsen: Der Fräser bewegt sich gegen das Werkstück, bietet hohe Zuverlässigkeit, aber geringere Präzision. Ideal für die Grobbearbeitung."
+      },
+      {
+        "description": "Gleichlauffräsen: Der Fräser und das Werkstück bewegen sich in die gleiche Richtung, wodurch maximale Präzision bei der Feinbearbeitung erzielt wird."
+      },
+      {
+        "description": "Vorschub pro Umdrehung (mm/U): Bewegung des Fräsers pro Umdrehung."
+      },
+      {
+        "description": "Vorschubgeschwindigkeit pro Minute (U/min): Werkzeugbewegung innerhalb einer Minute."
+      },
+      {
+        "description": "Pro Zahn (mm/Zahn): Zurückgelegte Strecke des Fräsers pro Zahndrehung."
       }
     ]
   },
@@ -235,7 +275,26 @@
         "description": "Termingerechte Lieferung. Wir verstehen die Bedeutung einer pünktlichen Lieferung und halten uns daher immer an die vereinbarten Zeitrahmen.",
         "icon": "/icons/listPeculiarities.png"
       }
-    ]
+    ],
+    "servicesTitle": "Die Produkte von QPart werden in verschiedenen Branchen eingesetzt, darunter:",
+    "listServices": [
+      {
+        "description": "Bauwesen: Metallkonstruktionen, Befestigungen, Systeme."
+      },
+      {
+        "description": "Maschinenbau: Wellen, Zahnräder, Gehäuseteile."
+      },
+      {
+        "description": "Luftfahrt: Leichte, robuste Komponenten aus Speziallegierungen."
+      },
+      {
+        "description": "Energie: Turbinenelemente, Rohre, Verkleidungen."
+      },
+      {
+        "description": "Agrarsektor: Ersatzteile für Maschinen, Bauteile für Geräte."
+      }
+    ],
+    "descriptionBenefits": "Dank unserer modernen Ausrüstung und unseres erfahrenen Teams bewältigen wir die anspruchsvollsten Aufgaben im Bereich der Metallverarbeitung."
   },
   "lazernaRizkaPage": {
     "title": "Laserschneiden von Metall",
@@ -335,24 +394,87 @@
     "servicesTitle": "Unsere Dienstleistungen im Bereich Metallguss:",
     "listServices": [
       {
-        "description": "Druckguss - Geeignet für Teile mit komplexen Formen und geprägten Konturen. Produkte, die mit diesem Verfahren hergestellt werden, zeichnen sich durch hohe Präzision, Oberflächengüte und erhöhte Korrosionsbeständigkeit aus."
+        "description": "Pressure casting: Suitable for complex-shaped parts with intricate contours. Products made with this method exhibit high precision, surface smoothness, and increased corrosion resistance."
       },
       {
-        "description": "Feinguss - Gewährleistet die Herstellung von Formgussteilen mit hoher Maß- und Gewichtsgenauigkeit. Geeignet für alle Arten von Gusslegierungen."
+        "description": "Investment casting: Ensures the production of complex castings with high dimensional accuracy and weight precision. Suitable for working with any casting alloys."
+      }
+    ],
+    "listPeculiarities": [
+      {
+        "description": "Casting with foam models: An ideal solution for creating complex and custom designs using expanded polystyrene.",
+        "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Kokillenguss - Ein Verfahren, bei dem geschmolzenes Metall in wiederverwendbare Stahlformen gegossen wird, was eine hohe Dichte und Qualität der Produkte ermöglicht."
+        "description": "Casting using no-bake sand molds: This method minimizes the amount of post-processing needed due to the precision and compliance of details with roughness requirements.",
+        "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Sandguss - Eine kostengünstige Methode, die sich für komplexe Teile aus verschiedenen Legierungen eignet. Dank der niedrigen Produktionskosten können die Endpreise der Produkte reduziert werden."
+        "description": "Sand casting: A cost-effective method suitable for complex parts made from various alloys. Its low cost reduces the final price of the products.",
+        "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Kaltformguss (KFG) - Dieses Verfahren minimiert den Nachbearbeitungsaufwand dank seiner Genauigkeit und Einhaltung der Anforderungen an die Oberflächenrauheit."
-      },
-      {
-        "description": "Verlorene Schaumguss - Ideal für die Herstellung von komplexen und maßgeschneiderten Modellen unter Verwendung von expandiertem Polystyrol."
+        "description": "Permanent mold casting: This method involves pouring molten metal into reusable steel molds, ensuring high density and quality of the products.",
+        "icon": "/icons/listPeculiarities.png"
       }
     ]
+  },
+  "zaliznychniZapchastynyPage": {
+    "title": "Herstellung von Komponenten für die Eisenbahninfrastruktur",
+    "description": "QPart ist auf die Herstellung von hochwertigen Komponenten für die Eisenbahninfrastruktur spezialisiert. Wir gewährleisten die Fertigung verschiedener Teile, die allen modernen Sicherheits- und Betriebszuverlässigkeitsstandards entsprechen. Unsere Lösungen sind sowohl für die Modernisierung bestehender Systeme als auch für den Bau neuer Eisenbahninfrastrukturanlagen geeignet.",
+    "servicesTitle": "Unsere Vorteile",
+    "listServices": [
+      {
+        "description": "Moderne Ausrüstung: CNC-Maschinen gewährleisten eine hohe Fertigungspräzision."
+      },
+      {
+        "description": "Qualitätskontrolle: Alle Teile werden auf die Einhaltung internationaler Standards geprüft."
+      },
+      {
+        "description": "Flexibilität bei der Auftragsabwicklung: Wir bearbeiten sowohl große Serien als auch Einzelstücke."
+      },
+      {
+        "description": "Schnelle Durchlaufzeiten: Wir liefern schnell, ohne die Qualität zu beeinträchtigen."
+      }
+    ],
+    "descriptionBenefits": "Kontaktieren Sie uns und wir liefern Eisenbahnteile, die vollständig Ihren Anforderungen entsprechen!",
+    "peculiaritiesTitle": "Welche Teile stellen wir her?",
+    "listPeculiarities": [
+      {
+        "description": "Radsätze, Bremsscheiben, Achsen;",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Bogie-Rahmen, Befestigungskomponenten, Federn.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Schienenbefestigungen, Schienenstöße, Unterlagsplatten;",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Zugbolzen, Ankerschraubensysteme, Lagerteile.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Signalstangen, Plattformen, Montagemodule;",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Metallkonstruktionen für Brücken, Tunnel, Plattformen.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Spezialisierte Produkte nach Zeichnungen des Kunden;",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Teile mit nicht standardmäßigen Konfigurationen für einzigartige Bedürfnisse.",
+        "icon": "/icons/listPeculiarities.png"
+      }
+    ],
+    "question": "Warum sollten Sie uns wählen?",
+    "answer": "QPart arbeitet seit vielen Jahren mit Unternehmen der Eisenbahnbranche zusammen und bietet optimale Lösungen zur Steigerung der Effizienz und Sicherheit ihrer Aktivitäten."
   },
   "footer": {
     "join": "Treten Sie bei"

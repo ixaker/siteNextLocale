@@ -1,13 +1,15 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { withStaticProps, withStaticPaths, PageProps } from '../../../context/withStaticPathsAndProps';
 import BackCover from '@/components/ui/back-cover/BackCover';
-import CustomContainer from '@/components/ui/container/CustomContainer';
+import CapitalBlock from '@/components/ui/capital-block/CapitalBlock';
 import { useTheme } from '@mui/material';
 import langUk from '../../../../locales/uk.json';
 import { darkTheme, lightTheme } from '@/theme';
 import FeatureBlock from '@/components/ui/feature-block/FeatureBlock';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
 import ListBenefits from '@/components/ui/list-benefits/ListBenefits';
+import ServiceBlock from '@/components/ui/service-block/ServiceBlock';
+import Paragraph from '@/components/ui/typography/Paragraph';
 
 const Page: React.FC<PageProps> = ({ translations }) => {
   const translationsPage = translations?.indyvidualniZamovlennya || langUk.indyvidualniZamovlennya;
@@ -17,18 +19,27 @@ const Page: React.FC<PageProps> = ({ translations }) => {
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
+  const listServices = translationsPage.listServices;
+  const secondaryColor = currentTheme.palette.secondary.main;
   return (
-    <section style={{ backgroundColor: bgColor }}>
+    <section style={{ backgroundColor: bgColor, color: secondaryColor }}>
       <BackCover>
-        <CustomContainer
+        <CapitalBlock
           title={translationsPage.title}
           description={translationsPage.description}
           srcImg="/assets/indyvidualni-zamovlennya.jpg"
           txtButton={translations.btnSend}
         />
       </BackCover>
+      <ServiceBlock
+        btnText={translations.btnSend}
+        heading={translationsPage.servicesTitle}
+        imgSrc="/assets/indyvidualni-zamovlennya2.webp"
+        list={listServices}
+      />
       <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
       <div className="px-4">
+        <Paragraph text={translationsPage.descriptionBenefits} alignment="center" />
         <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />
       </div>
       <CalculationSection textBtn={translations.btnSend} />

@@ -2,26 +2,29 @@ import React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { withStaticProps, withStaticPaths, PageProps } from '../../../context/withStaticPathsAndProps';
 import BackCover from '@/components/ui/back-cover/BackCover';
-import CustomContainer from '@/components/ui/container/CustomContainer';
+import CapitalBlock from '@/components/ui/capital-block/CapitalBlock';
 import { useTheme } from '@mui/material';
 import { darkTheme, lightTheme } from '@/theme';
 import langUk from '../../../../locales/uk.json';
 import ServiceBlock from '@/components/ui/service-block/ServiceBlock';
 import ListBenefits from '@/components/ui/list-benefits/ListBenefits';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
+import FeatureBlock from '@/components/ui/feature-block/FeatureBlock';
 
 const Page: React.FC<PageProps> = ({ translations }) => {
-  const translationsPage = translations?.lyttyaMetalu || langUk.lyttyaMetaluPage;
+  const translationsPage = translations?.lyttyaMetaluPage || langUk.lyttyaMetaluPage;
   const theme = useTheme();
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
+  const secondaryColor = currentTheme.palette.secondary.main;
   const listServices = translationsPage.listServices;
   const orderBenefits = translations.orderBenefits.listOrderBenefits;
+  const listPeculiarities = translationsPage.listPeculiarities;
   return (
-    <div style={{ backgroundColor: bgColor }}>
+    <div style={{ backgroundColor: bgColor, color: secondaryColor }}>
       <BackCover>
-        <CustomContainer
+        <CapitalBlock
           title={translationsPage.title}
           description={translationsPage.description}
           srcImg="/assets/metal-casting.jpg"
@@ -34,6 +37,7 @@ const Page: React.FC<PageProps> = ({ translations }) => {
         imgSrc="/assets/lyttya-metalu2.jpg"
         list={listServices}
       />
+      <FeatureBlock listPeculiarities={listPeculiarities} />
       <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
       <CalculationSection textBtn={translations.btnSend} />
     </div>

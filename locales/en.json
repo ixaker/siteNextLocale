@@ -120,7 +120,15 @@
         "description": "Surface grinding: for achieving a perfectly smooth surface on flat and shaped surfaces.",
         "icon": "/icons/listPeculiarities.png"
       }
-    ]
+    ],
+    "servicesTitle": "What is Metal Grinding?",
+    "listServices": [
+      {
+        "description": "Metal grinding is the final stage of processing metal products, allowing for achieving a perfectly smooth surface. This procedure is typically performed after turning or milling operations to eliminate imperfections and ensure high precision of manufactured parts."
+      }
+    ],
+    "question": "Why is metal grinding necessary?",
+    "answer": "Metal grinding ensures a perfectly smooth surface, removes defects and irregularities, enhances the precision of parts, and makes them aesthetically appealing. It is a critical stage in the manufacturing of metal products."
   },
   "termichnaObrobkaPage": {
     "title": "HEAT TREATMENT",
@@ -138,6 +146,21 @@
       {
         "description": "Tempering metal – The final stage of heat treatment, ensuring a balance between hardness and flexibility, crucial for improving operational performance.",
         "icon": "/icons/listPeculiarities.png"
+      }
+    ],
+    "servicesTitle": "Heat Treatment of Metal — A crucial stage in production that significantly improves the quality and performance characteristics of materials. From hardening to annealing, these technologies ensure:",
+    "listServices": [
+      {
+        "description": "Increased strength and resistance to mechanical stress;"
+      },
+      {
+        "description": "Improved corrosion resistance;"
+      },
+      {
+        "description": "Ability to withstand high temperatures;"
+      },
+      {
+        "description": "Flexibility and reduction of internal stresses in the metal structure."
       }
     ]
   },
@@ -157,6 +180,24 @@
       {
         "description": "Disc, end, and face mills are used depending on the complexity of the order and the material characteristics.",
         "icon": "/icons/listPeculiarities.png"
+      }
+    ],
+    "servicesTitle": "Technical Aspects of Milling:",
+    "listServices": [
+      {
+        "description": "Up milling: The cutter moves against the workpiece, offering high reliability but lower precision. Ideal for rough machining."
+      },
+      {
+        "description": "Down milling: The cutter and workpiece move in the same direction, enabling maximum precision during finish machining."
+      },
+      {
+        "description": "Feed per revolution (mm/rev): Movement of the cutter per one revolution."
+      },
+      {
+        "description": "Feed rate per minute (rev/min): Tool movement in one minute."
+      },
+      {
+        "description": "Per tooth (mm/tooth): Distance covered by the cutter per one tooth rotation."
       }
     ]
   },
@@ -241,7 +282,26 @@
         "description": "Timely delivery. We understand the importance of on-time delivery, which is why we always adhere to agreed timelines.",
         "icon": "/icons/listPeculiarities.png"
       }
-    ]
+    ],
+    "servicesTitle": "QPart products are used in various industries, including:",
+    "listServices": [
+      {
+        "description": "Construction: Metal structures, fasteners, system elements."
+      },
+      {
+        "description": "Mechanical engineering: Shafts, gears, housing parts."
+      },
+      {
+        "description": "Aviation: Lightweight, durable components made of special alloys."
+      },
+      {
+        "description": "Energy: Turbine elements, pipes, casings."
+      },
+      {
+        "description": "Agricultural sector: Spare parts for machinery, equipment components."
+      }
+    ],
+    "descriptionBenefits": "Thanks to our modern equipment and experienced team, we tackle the most challenging tasks in the field of metalworking."
   },
   "lazernaRizkaPage": {
     "title": "Laser Metal Cutting",
@@ -337,28 +397,92 @@
   },
   "lyttyaMetaluPage": {
     "title": "METAL CASTING",
-    "description": "QPart specializes in metal casting, handling orders ranging from part production to serial manufacturing with subsequent machining.",
-    "servicesTitle": "Our Metal Casting Services:",
+    "description": "QPart specializes in metal casting, handling orders from part manufacturing to serial production with subsequent machining.",
+    "servicesTitle": "Our metal casting services:",
     "listServices": [
       {
-        "description": "Die casting - Suitable for parts with complex shapes and embossed contours. Products made using this method feature high precision, surface smoothness, and enhanced corrosion resistance."
+        "description": "Pressure casting: Suitable for complex-shaped parts with intricate contours. Products made with this method exhibit high precision, surface smoothness, and increased corrosion resistance."
       },
       {
-        "description": "Investment casting - Ensures the production of shaped castings with high dimensional and weight accuracy. Suitable for all types of casting alloys."
+        "description": "Investment casting: Ensures the production of complex castings with high dimensional accuracy and weight precision. Suitable for working with any casting alloys."
+      }
+    ],
+    "listPeculiarities": [
+      {
+        "description": "Casting with foam models: An ideal solution for creating complex and custom designs using expanded polystyrene.",
+        "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Permanent mold casting - A method that involves pouring molten metal into reusable steel molds, ensuring high density and quality of products."
+        "description": "Casting using no-bake sand molds: This method minimizes the amount of post-processing needed due to the precision and compliance of details with roughness requirements.",
+        "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Sand casting - A cost-effective method suitable for complex parts made of various alloys. Its low production cost helps reduce the final price of products."
+        "description": "Sand casting: A cost-effective method suitable for complex parts made from various alloys. Its low cost reduces the final price of the products.",
+        "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Cold box casting (CBS) - This method minimizes post-processing volumes thanks to its accuracy and adherence to surface roughness requirements."
-      },
-      {
-        "description": "Lost foam casting - Ideal for creating complex and custom models using expanded polystyrene."
+        "description": "Permanent mold casting: This method involves pouring molten metal into reusable steel molds, ensuring high density and quality of the products.",
+        "icon": "/icons/listPeculiarities.png"
       }
     ]
+  },
+
+  "zaliznychniZapchastynyPage": {
+    "title": "Manufacturing Components for Railway Infrastructure",
+    "description": "QPart specializes in the production of high-quality components for railway infrastructure. We ensure the manufacturing of various parts that meet all modern safety and operational reliability standards. Our solutions are suitable for both upgrading existing systems and constructing new railway facilities.",
+    "servicesTitle": "Our Advantages",
+    "listServices": [
+      {
+        "description": "Modern Equipment: CNC machines ensure high manufacturing precision."
+      },
+      {
+        "description": "Quality Control: All parts undergo testing to meet international standards."
+      },
+      {
+        "description": "Flexibility in Order Execution: We handle both large batches and single units."
+      },
+      {
+        "description": "Quick Turnaround Times: We provide fast production without compromising quality."
+      }
+    ],
+    "descriptionBenefits": "Reach out to us, and we’ll deliver railway parts that fully meet your requirements!",
+    "peculiaritiesTitle": "What Parts Do We Manufacture?",
+    "listPeculiarities": [
+      {
+        "description": "Wheelsets, brake discs, axles;",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Bogie frame, fastening components, springs.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Rail fastenings, fishplates, base plates;",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Tie bolts, anchor systems, bearing parts.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Signal poles, platforms, mounting assemblies;",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Metal structures for bridges, tunnels, platforms.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Specialized products based on client drawings;",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Parts with non-standard configurations for unique needs.",
+        "icon": "/icons/listPeculiarities.png"
+      }
+    ],
+    "question": "Why Choose Us?",
+    "answer": "QPart has been collaborating with railway industry enterprises for many years, offering optimal solutions to enhance the efficiency and safety of their operations."
   },
 
   "footer": {

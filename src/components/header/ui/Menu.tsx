@@ -11,7 +11,6 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [currentSubMenu, setCurrentSubMenu] = useState<null | string>(null);
   const theme = useTheme();
-  // const observerRef = useRef<IntersectionObserver | null>(null);
   const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const menuItems = translations?.menu || langUk.menu;
@@ -46,34 +45,8 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
     hoverTimeoutRef.current = setTimeout(() => {
       setAnchorEl(null);
       setCurrentSubMenu(null);
-    }, 200); // Добавляем небольшую задержку перед закрытием
+    }, 200);
   };
-
-  // Проверка видимости элемента с использованием IntersectionObserver
-  // useEffect(() => {
-  //   if (anchorEl) {
-  //     observerRef.current = new IntersectionObserver(
-  //       ([entry]) => {
-  //         if (!entry.isIntersecting) {
-  //           handleMenuClose();
-  //         }
-  //       },
-  //       {
-  //         root: null, // Следим за видимостью в пределах viewport
-  //         threshold: 0.1, // Считаем невидимым, если менее 10% элемента видно
-  //       }
-  //     );
-
-  //     observerRef.current.observe(anchorEl);
-  //   }
-
-  //   return () => {
-  //     if (observerRef.current && anchorEl) {
-  //       observerRef.current.unobserve(anchorEl); // Убираем наблюдение при размонтировании
-  //       observerRef.current.disconnect();
-  //     }
-  //   };
-  // }, [anchorEl]);
 
   return (
     <nav className="flex items-center gap-5 sm:gap-[30px] md:gap-[40px] lg:gap-[80px]">
@@ -113,20 +86,20 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
                   {
                     name: 'offset',
                     options: {
-                      offset: [10, 10], // Отступы: 10px по горизонтали, 10px по вертикали
+                      offset: [10, 10],
                     },
                   },
                   {
                     name: 'preventOverflow',
                     options: {
                       boundary: 'viewport',
-                      padding: 16, // Минимальный отступ от краёв экрана
+                      padding: 16,
                     },
                   },
                   {
                     name: 'flip',
                     options: {
-                      fallbackPlacements: ['bottom-start', 'top-start'], // Попытка расположить меню сверху или снизу
+                      fallbackPlacements: ['bottom-start', 'top-start'],
                     },
                   },
                 ]}
@@ -138,12 +111,9 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
                   backgroundColor: bgColor,
                   borderRadius: '4px',
                   boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
-                  maxHeight: '300px',
-                  overflowY: 'auto',
                   maxWidth: '90vw',
                 }}
               >
-                {/* <ClickAwayListener onClickAway={handleMenuClose}> */}
                 <Box>
                   {item.subMenu.map((subItem) => (
                     <Link
@@ -161,7 +131,6 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
                     </Link>
                   ))}
                 </Box>
-                {/* </ClickAwayListener> */}
               </Popper>
             </>
           ) : (

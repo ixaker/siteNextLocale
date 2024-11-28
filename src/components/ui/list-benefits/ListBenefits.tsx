@@ -4,15 +4,17 @@ import Paragraph from '../typography/Paragraph';
 import Heading from '../typography/Heading';
 
 interface ListBenefitsProps {
-  heading: string;
+  heading?: string;
   orderBenefits: { title: string; icon: string }[];
 }
 
 const ListBenefits: React.FC<ListBenefitsProps> = ({ heading, orderBenefits }) => {
   return (
     <section>
-      <Heading level="h2" text={`${heading} :`} alignment="center" style="mt-[20px]" />
-      <div className="py-[30px] ">
+      {heading && heading.trim() !== '' && (
+        <Heading level="h2" text={`${heading} :`} alignment="center" style="mt-[20px]" />
+      )}
+      <div className="py-[30px]">
         <div className="md:hidden">
           <Carousel slides={orderBenefits} />
         </div>

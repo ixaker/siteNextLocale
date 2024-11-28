@@ -65,6 +65,10 @@ export type Translations = {
     description: string;
     peculiaritiesTitle: string;
     listPeculiarities: { description: string; icon: string }[];
+    servicesTitle: string;
+    listServices: { description: string }[];
+    question: string;
+    answer: string;
   };
 
   termichnaObrobkaPage: {
@@ -72,6 +76,8 @@ export type Translations = {
     description: string;
     peculiaritiesTitle: string;
     listPeculiarities: { description: string; icon: string }[];
+    servicesTitle: string;
+    listServices: { description: string }[];
   };
 
   frezerniRoboty: {
@@ -92,7 +98,7 @@ export type Translations = {
     listServices: { description: string }[];
   };
 
-  lyttyaMetalu: {
+  lyttyaMetaluPage: {
     title: string;
     description: string;
     servicesTitle: string;
@@ -108,6 +114,9 @@ export type Translations = {
     description: string;
     peculiaritiesTitle: string;
     listPeculiarities: { description: string; icon: string }[];
+    servicesTitle: string;
+    listServices: { description: string }[];
+    descriptionBenefits: string;
   };
 
   orderBenefits: {
@@ -124,6 +133,30 @@ export type Translations = {
     peculiaritiesTitle: string;
     listPeculiarities: { description: string; icon: string }[];
     descriptionDifferences: string;
+  };
+
+  zaliznychniZapchastynyPage: {
+    title: string;
+    description: string;
+    servicesTitle: string;
+    listServices: { description: string }[];
+    descriptionBenefits: string;
+    peculiaritiesTitle: string;
+    listPeculiarities: { description: string; icon: string }[];
+    question: string;
+    answer: string;
+  };
+
+  zapchastynyDlyaSilhosptekhnikyPage: {
+    title: string;
+    description: string;
+    servicesTitle: string;
+    listServices: { description: string }[];
+    descriptionBenefits: string;
+    peculiaritiesTitle: string;
+    listPeculiarities: { description: string; icon: string }[];
+    question: string;
+    answer: string;
   };
 
   welcome: string;

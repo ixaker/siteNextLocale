@@ -6,7 +6,6 @@ import CustomButton from '../button/CustomButton';
 interface ServiceBlock {
   heading: string;
   list: { description: string }[];
-  //   description?: string
   btnText: string;
   imgSrc: string;
 }
@@ -15,7 +14,7 @@ const ServiceBlock: React.FC<ServiceBlock> = ({ heading, list, btnText, imgSrc }
   return (
     <div className="px-4 py-5">
       <Heading level="h2" text={heading} alignment="center" />
-      <div className="flex flex-col gap-[20px] pt-5 md:flex-row lg:justify-around lg:gap-[0px]">
+      <div className="flex flex-col items-center gap-[20px] pt-5 md:flex-row lg:justify-around lg:gap-[0px]">
         <ul className="flex flex-col gap-3 md:flex md:justify-between md:flex-col lg:max-w-[40%]">
           {list.map((item, index) => (
             <li key={index}>
@@ -23,13 +22,13 @@ const ServiceBlock: React.FC<ServiceBlock> = ({ heading, list, btnText, imgSrc }
             </li>
           ))}
         </ul>
-        <div className="relative xl:max-w-[50%]">
+        <div className="relative xl:w-[400px] xl:max-h-[500px]">
           <Image
             alt="lazerna-rizka"
             src={imgSrc}
             width={100}
             height={100}
-            className="size-full shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)] w-full rounded-[10px] md:w-[auto] md:max-w-[400px] xl:max-w-[600px]"
+            className="max-h-[300px] size-full shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)] w-full rounded-[10px] md:w-[auto] md:max-w-[400px] xl:w-full xl:max-h-[500px]"
           />
           <CustomButton className="mt-5 w-full text-nowrap absolute bottom-0" variant="send-btn">
             {btnText}

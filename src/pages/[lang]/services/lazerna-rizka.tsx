@@ -4,7 +4,7 @@ import langUk from '../../../../locales/uk.json';
 import { darkTheme, lightTheme } from '@/theme';
 import { useTheme } from '@mui/material';
 import BackCover from '@/components/ui/back-cover/BackCover';
-import CustomContainer from '@/components/ui/container/CustomContainer';
+import CapitalBlock from '@/components/ui/capital-block/CapitalBlock';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
 import Paragraph from '@/components/ui/typography/Paragraph';
 import FeatureBlock from '@/components/ui/feature-block/FeatureBlock';
@@ -24,9 +24,9 @@ const Page: React.FC<PageProps> = ({ translations }) => {
   const listServices = translationsPage.listServices;
 
   return (
-    <div style={{ backgroundColor: bgColor }}>
+    <div style={{ backgroundColor: bgColor, color: secondaryColor }}>
       <BackCover>
-        <CustomContainer
+        <CapitalBlock
           title={translationsPage.title}
           description={translationsPage.description}
           srcImg="/assets/lazerna-rizka-01.jpg"
@@ -34,7 +34,7 @@ const Page: React.FC<PageProps> = ({ translations }) => {
         />
       </BackCover>
 
-      <section className="mt-5" style={{ color: secondaryColor }}>
+      <section className="mt-5">
         <ServiceBlock
           btnText={translations.btnSend}
           heading={translationsPage.servicesTitle}
