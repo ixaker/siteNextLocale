@@ -6,7 +6,7 @@ import { darkTheme, lightTheme } from '@/theme';
 import CommunicationButton from './ui/button/CommunicationButton';
 import { PageProps } from '@/context/withStaticPathsAndProps';
 
-const Layout: React.FC<PageProps> = ({ children, translations, lang, supportedLanguages, defaultLanguage }) => {
+const Layout: React.FC<PageProps> = ({ children, ...restProps }) => {
   const theme = useTheme();
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
@@ -15,14 +15,14 @@ const Layout: React.FC<PageProps> = ({ children, translations, lang, supportedLa
 
   return (
     <>
-      <Header translations={translations} lang={lang} supportedLanguages={supportedLanguages} defaultLanguage={defaultLanguage}/>
+      <Header {...restProps}/>
       <main>
         <div className=" text-white">{children}</div>
         <div>
           <CommunicationButton primaryColor={primaryColor} secondaryColor={secondaryColor} />
         </div>
       </main>
-      <Footer translations={translations} lang={lang} supportedLanguages={supportedLanguages} defaultLanguage={defaultLanguage}/>
+      <Footer {...restProps}/>
     </>
   );
 };
