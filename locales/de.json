@@ -92,15 +92,68 @@
   ],
   "shlifovkaMetaluPage": {
     "title": "Metall Schleifen",
-    "description": "Metall schleifen ist eines der wichtigsten Tätigkeitsfelder von QPart. Wir bieten Metallbearbeitungsdienste in ganz Ukraine an, nehmen komplexe Aufgaben an und halten uns an die höchsten Qualitätsstandards. Wenn Sie Metallbearbeitung in Dnipro benötigen, sorgt unser Unternehmen dafür, dass diese auf höchstem Niveau und in kürzester Zeit ausgeführt wird."
+    "description": "Metall schleifen ist eines der wichtigsten Tätigkeitsfelder von QPart. Wir bieten Metallbearbeitungsdienste in ganz Ukraine an, nehmen komplexe Aufgaben an und halten uns an die höchsten Qualitätsstandards. Wenn Sie Metallbearbeitung in Dnipro benötigen, sorgt unser Unternehmen dafür, dass diese auf höchstem Niveau und in kürzester Zeit ausgeführt wird.",
+    "peculiaritiesTitle": "Wir verwenden eine Vielzahl von Schleifmethoden, darunter:",
+    "listPeculiarities": [
+      {
+        "description": "Außenrundschleifen: Wird zur Bearbeitung großer Teile mit hoher Präzision verwendet.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Innenrundschleifen: Verbessert die Qualität der Innenflächen von Bauteilen wie Lagern oder Hydraulikkomponenten.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Zahnschleifen: Zur Bearbeitung von Zahnrädern, die in verschiedenen Mechanismen verwendet werden.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Zentrumsloses Schleifen: Effektiv zur Bearbeitung von äußeren und inneren Oberflächen von Bauteilen.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Flachschleifen: Zum Erreichen einer perfekt glatten Oberfläche auf flachen und geformten Oberflächen.",
+        "icon": "/icons/listPeculiarities.png"
+      }
+    ]
   },
   "termichnaObrobkaPage": {
     "title": "WÄRMEBEHANDLUNG",
-    "description": "Wärmebehandlung von Metall durch QPart: Härten, Glühen und Anlassen"
+    "description": "Wärmebehandlung von Metall durch QPart: Härten, Glühen und Anlassen",
+    "peculiaritiesTitle": "Unsere Hauptdienstleistungen:",
+    "listPeculiarities": [
+      {
+        "description": "Metallhärtung.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Glühen von Stahl und anderen Metallen – Dieser Prozess umfasst langsames Abkühlen nach dem Erhitzen, was die Härte reduziert, innere Spannungen beseitigt und die Metallstruktur verbessert.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Metallanlassen – Der letzte Schritt der Wärmebehandlung, der ein Gleichgewicht zwischen Härte und Flexibilität sicherstellt und entscheidend für die Verbesserung der Betriebseigenschaften ist.",
+        "icon": "/icons/listPeculiarities.png"
+      }
+    ]
   },
   "frezerniRoboty": {
     "title": "CNC-Fräsen von QPart: Präzision, Qualität, Professionalität",
-    "description": "CNC-Fräsen ist eine moderne Methode der Metallbearbeitung, die die Herstellung von Teilen mit komplexen geometrischen Parametern und hohen Betriebseigenschaften ermöglicht. Diese Technologie ist für die Arbeit mit verschiedenen Materialien geeignet: Titan, Aluminium, Gusseisen, rostfreiem Stahl und anderen Metallen."
+    "description": "CNC-Fräsen ist eine moderne Methode der Metallbearbeitung, die die Herstellung von Teilen mit komplexen geometrischen Parametern und hohen Betriebseigenschaften ermöglicht. Diese Technologie ist für die Arbeit mit verschiedenen Materialien geeignet: Titan, Aluminium, Gusseisen, rostfreiem Stahl und anderen Metallen.",
+    "peculiaritiesTitle": "Eigenschaften der CNC-Fräsarbeiten:",
+    "listPeculiarities": [
+      {
+        "description": "Der Einsatz von hochpräzisen Fräsmaschinen mit numerischer Steuerung gewährleistet maximale Genauigkeit und minimalen Einfluss des menschlichen Faktors.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Die Technologie eignet sich sowohl für grobe als auch für präzise Bearbeitung, wodurch eine ideale Oberflächenqualität der Teile erreicht wird.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Je nach Auftragskomplexität und Materialeigenschaften werden Scheiben-, End- und Stirnfräser verwendet.",
+        "icon": "/icons/listPeculiarities.png"
+      }
+    ]
   },
   "tokarniRobotyChpkPage": {
     "title": "CNC-Drehen: Präzision, Qualität, Zuverlässigkeit",
@@ -122,15 +175,67 @@
         "description": "Oberflächenqualität. Dank präziser Schneidwerkzeuge haben fertige Produkte eine glatte, ordentliche Oberfläche, die die angegebene Rauheit erfüllt.",
         "icon": "/icons/listPeculiarities.png"
       }
+    ],
+    "servicesTitle": "Technische Details der Drehbearbeitung:",
+    "listServices": [
+      {
+        "description": "Zugabe. Vor Arbeitsbeginn wird die Materialschichtdicke bestimmt, die entfernt werden muss, um die vorgegebenen Maße zu erreichen."
+      },
+      {
+        "description": "CNC-Bearbeitung. Im Prozess wird eine computergesteuerte numerische Steuerung eingesetzt, die Fehler durch menschliche Faktoren ausschließt."
+      }
     ]
   },
   "porizkaNaVerstati": {
     "title": "Sägen auf einer Bandsäge: Effizienz und Präzision",
-    "description": "Das Sägen auf einer Bandsäge ist eine moderne und zuverlässige Methode der Materialbearbeitung, die eine hohe Qualität und Präzision der fertigen Teile gewährleistet. Dank fortschrittlicher Technologien ist diese Methode optimal für die Herstellung von Teilen jeder Komplexität."
+    "description": "Das Sägen auf einer Bandsäge ist eine moderne und zuverlässige Methode der Materialbearbeitung, die eine hohe Qualität und Präzision der fertigen Teile gewährleistet. Dank fortschrittlicher Technologien ist diese Methode optimal für die Herstellung von Teilen jeder Komplexität.",
+    "listPeculiarities": [
+      {
+        "description": "Schnittgenauigkeit bis zu 1 mm: Perfekte Übereinstimmung mit den angegebenen Maßen ohne Abweichungen.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Sauberer und präziser Schnitt: Keine verbrannten Kanten, Risse oder andere Defekte.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Minimale Schnittstärke: Wirtschaftliche Materialnutzung mit minimalen Verlusten.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Flexibilität bei der Wahl der Schnittwinkel: Möglichkeit, unter 30°, 45°, 60° oder 90° zu schneiden, je nach Bedarf.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Fertige 'Baugruppen'-Teile: Elemente, die für die weitere Montage oder Verwendung bereit sind.",
+        "icon": "/icons/listPeculiarities.png"
+      }
+    ],
+    "servicesTitle": "Unsere Dienstleistungen",
+    "listServices": [
+      {
+        "description": "Bandsägen-Schneiden gewährleistet Geschwindigkeit, Qualität und Präzision bei der Ausführung jedes Auftrags. Diese Lösung ist ideal sowohl für individuelle Projekte als auch für die Serienproduktion."
+      }
+    ]
   },
   "indyvidualniZamovlennya": {
     "title": "Maßgeschneiderte Metallprodukte: Qualität und Pünktlichkeit",
-    "description": "Die Herstellung von Metallprodukten ist ein moderner Ansatz zur Deckung des Bedarfs an Teilen jeder Komplexität. Diese Dienstleistung ermöglicht es dem Kunden, Kosten für den Erwerb von Ausrüstungen, Schulungen des Personals und die Organisation des Produktionsprozesses zu vermeiden. Dank fortschrittlicher Technologien stellt QPart maßgeschneiderte Metallprodukte gemäß den höchsten Qualitätsstandards her. Wir arbeiten mit Stahl, Aluminium, Messing, Gusseisen, Edelstahl und anderen Metallen und gewährleisten eine präzise Ausführung der technischen Aufgaben."
+    "description": "Die Herstellung von Metallprodukten ist ein moderner Ansatz zur Deckung des Bedarfs an Teilen jeder Komplexität. Diese Dienstleistung ermöglicht es dem Kunden, Kosten für den Erwerb von Ausrüstungen, Schulungen des Personals und die Organisation des Produktionsprozesses zu vermeiden. Dank fortschrittlicher Technologien stellt QPart maßgeschneiderte Metallprodukte gemäß den höchsten Qualitätsstandards her. Wir arbeiten mit Stahl, Aluminium, Messing, Gusseisen, Edelstahl und anderen Metallen und gewährleisten eine präzise Ausführung der technischen Aufgaben.",
+    "peculiaritiesTitle": "Bei der Herstellung von maßgeschneiderten Metallprodukten werden folgende Aspekte berücksichtigt:",
+    "listPeculiarities": [
+      {
+        "description": "Technische Spezifikationen. Wir arbeiten eng mit dem Kunden zusammen, um sicherzustellen, dass alle Produkte vollständig seinen Anforderungen entsprechen.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Design und Berechnungen. Die Wahl des Materials, der Dicke, der strukturellen Elemente und der Fertigungsmethode gewährleistet die Haltbarkeit und Funktionalität des Endprodukts.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Termingerechte Lieferung. Wir verstehen die Bedeutung einer pünktlichen Lieferung und halten uns daher immer an die vereinbarten Zeitrahmen.",
+        "icon": "/icons/listPeculiarities.png"
+      }
+    ]
   },
   "lazernaRizkaPage": {
     "title": "Laserschneiden von Metall",
@@ -182,6 +287,48 @@
     "descriptionDifferences": "Im Vergleich zu herkömmlichen mechanischen Schneidmethoden gewährleistet die Laserbearbeitung Qualität und Wirtschaftlichkeit bei der Herstellung von Teilen jeder Komplexität."
   },
 
+  "orderBenefits": {
+    "orderBenefitsTitle": "Vorteile einer Bestellung bei uns",
+    "listOrderBenefits": [
+      {
+        "title": "Bereit für große Mengen – wir gewährleisten einen reibungslosen Betrieb auch bei Großaufträgen.",
+        "icon": "/assets/cylinder.png"
+      },
+      {
+        "title": "Mehr als 300 CNC-Maschinen – moderne Ausrüstung garantiert Präzision, Qualität und Geschwindigkeit.",
+        "icon": "/assets/gears.png"
+      },
+      {
+        "title": "Flexible Lieferzeiten – wir arbeiten schnell und immer pünktlich!",
+        "icon": "/assets/clock-time.png"
+      }
+    ]
+  },
+  "zvaryuvannyaMetaluPage": {
+    "title": "SCHWEIßARBEITEN",
+    "description": "Die Metallbearbeitung ist ein komplexer und verantwortungsvoller Prozess, der Qualifikation und Erfahrung erfordert. In der Schmiede „QPart“ führen professionelle Schweißer alle Arten von Schweißarbeiten qualitativ hochwertig und termingerecht aus.",
+    "servicesTitle": "Unsere Dienstleistungen",
+    "listServices": [
+      {
+        "description": "Mechanisches Schweißen – ideal für die Arbeit mit verschiedenen Metallen."
+      },
+      {
+        "description": "Lichtbogenschweißen – eine der am häufigsten verwendeten Methoden für zuverlässige Verbindungen."
+      },
+      {
+        "description": "Manuelles Lichtbogenschweißen – eine vielseitige Methode für unterschiedliche Bedingungen."
+      },
+      {
+        "description": "Laserschweißen – eine hochpräzise Technik für komplexe Konstruktionen."
+      },
+      {
+        "description": "Plasma- und Punktschweißen – für besondere Anforderungen an Qualität und Präzision."
+      },
+      {
+        "description": "Schmiedeschweißen – eine traditionelle Methode, die für künstlerische Arbeiten verwendet wird."
+      }
+    ]
+  },
   "footer": {
     "join": "Treten Sie bei"
   },

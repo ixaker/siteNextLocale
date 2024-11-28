@@ -14,7 +14,7 @@ const CustomContainer: React.FC<CustomContainerProps> = ({ title, description, s
   return (
     <div className="flex flex-col h-[calc(100vh-120px)] justify-center items-center px-4 md:px-8">
       <div className="flex flex-col-reverse items-center gap-8 md:flex-row md:gap-16 max-w-screen-xl w-full">
-        <div className="hidden md:block flex-shrink-0 md:w-[30%] md:h-fill-available lg:w-5/12 shadow-lg rounded-lg overflow-hidden">
+        <div className="hidden md:block flex-shrink-0 md:w-[30%] md:h-fill-available lg:w-5/12 lg:h-[400px] shadow-lg rounded-lg overflow-hidden">
           <Image
             src={srcImg}
             alt="lazerna-rizka"

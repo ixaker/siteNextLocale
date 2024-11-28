@@ -5,10 +5,15 @@ import { useTheme } from '@mui/material';
 import { darkTheme, lightTheme } from '@/theme';
 import BackCover from '@/components/ui/back-cover/BackCover';
 import CustomContainer from '@/components/ui/container/CustomContainer';
+import FeatureBlock from '@/components/ui/feature-block/FeatureBlock';
+import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
+import ListBenefits from '@/components/ui/list-benefits/ListBenefits';
 
 const Page: React.FC<PageProps> = ({ translations }) => {
   const translationsPage = translations?.termichnaObrobkaPage || langUk.termichnaObrobkaPage;
   const theme = useTheme();
+  const listPeculiarities = translationsPage.listPeculiarities;
+  const orderBenefits = translations.orderBenefits.listOrderBenefits;
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
@@ -22,6 +27,11 @@ const Page: React.FC<PageProps> = ({ translations }) => {
           txtButton={translations.btnSend}
         />
       </BackCover>
+      <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
+      <div className="px-4">
+        <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />
+      </div>
+      <CalculationSection textBtn={translations.btnSend} />
     </section>
   );
 };

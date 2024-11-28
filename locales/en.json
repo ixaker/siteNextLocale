@@ -97,15 +97,68 @@
 
   "shlifovkaMetaluPage": {
     "title": "Metal Grinding",
-    "description": "Metal grinding is one of the key areas of activity for QPart. We provide metalworking services throughout Ukraine, taking on complex tasks and adhering to the highest quality standards. If you need metal grinding services in Dnipro, our company will deliver them at the highest level and in the shortest time."
+    "description": "Metal grinding is one of the key areas of activity for QPart. We provide metalworking services throughout Ukraine, taking on complex tasks and adhering to the highest quality standards. If you need metal grinding services in Dnipro, our company will deliver them at the highest level and in the shortest time.",
+    "peculiaritiesTitle": "We use a wide range of grinding methods, including:",
+    "listPeculiarities": [
+      {
+        "description": "External cylindrical grinding: used for processing large parts with high precision.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Internal grinding: improves the quality of internal surfaces of parts, such as bearings or hydraulic components.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Gear grinding: for processing gear wheels used in various mechanisms.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Centerless grinding: effective for processing external and internal surfaces of parts.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Surface grinding: for achieving a perfectly smooth surface on flat and shaped surfaces.",
+        "icon": "/icons/listPeculiarities.png"
+      }
+    ]
   },
   "termichnaObrobkaPage": {
     "title": "HEAT TREATMENT",
-    "description": "Heat treatment of metal by QPart: hardening, annealing, and tempering"
+    "description": "Heat treatment of metal by QPart: hardening, annealing, and tempering",
+    "peculiaritiesTitle": "Our Key Services:",
+    "listPeculiarities": [
+      {
+        "description": "Metal hardening.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Annealing of steel and other metals – This process involves slow cooling after heating, which reduces hardness, eliminates internal stresses, and improves the metal's structure.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Tempering metal – The final stage of heat treatment, ensuring a balance between hardness and flexibility, crucial for improving operational performance.",
+        "icon": "/icons/listPeculiarities.png"
+      }
+    ]
   },
   "frezerniRoboty": {
     "title": "CNC Milling by QPart: Precision, Quality, Professionalism",
-    "description": "CNC milling is a modern method of metal machining that allows the production of parts with complex geometric parameters and high operational characteristics. This technology is applicable for working with various materials: titanium, aluminum, cast iron, stainless steel, and other metals."
+    "description": "CNC milling is a modern method of metal machining that allows the production of parts with complex geometric parameters and high operational characteristics. This technology is applicable for working with various materials: titanium, aluminum, cast iron, stainless steel, and other metals.",
+    "peculiaritiesTitle": "Features of CNC Milling Works:",
+    "listPeculiarities": [
+      {
+        "description": "The use of high-precision milling machines with numerical control ensures maximum accuracy and minimal human factor influence.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "The technology is suitable for both rough and finishing operations, allowing for the achievement of perfect surface quality on the parts.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Disc, end, and face mills are used depending on the complexity of the order and the material characteristics.",
+        "icon": "/icons/listPeculiarities.png"
+      }
+    ]
   },
   "tokarniRobotyChpkPage": {
     "title": "CNC Turning: Precision, Quality, Reliability",
@@ -128,15 +181,67 @@
         "description": "Surface quality. Thanks to precise cutting tools, finished products have a smooth, neat surface that meets the specified roughness.",
         "icon": "/icons/listPeculiarities.png"
       }
+    ],
+    "servicesTitle": "Technical details of turning processing:",
+    "listServices": [
+      {
+        "description": "Allowance. Before starting work, the thickness of the material layer to be removed to achieve the specified dimensions is determined."
+      },
+      {
+        "description": "CNC processing. The process uses computer numerical control, which eliminates errors caused by human factors."
+      }
     ]
   },
   "porizkaNaVerstati": {
     "title": "Cutting on a Bandsaw: Efficiency and Precision",
-    "description": "Cutting on a bandsaw is a modern and reliable method of material processing that ensures high quality and precision of finished parts. Thanks to advanced technologies, this method is optimal for producing parts of any complexity."
+    "description": "Cutting on a bandsaw is a modern and reliable method of material processing that ensures high quality and precision of finished parts. Thanks to advanced technologies, this method is optimal for producing parts of any complexity.",
+    "peculiaritiesTitle": "Advantages of Band Saw Cutting: ",
+    "listPeculiarities": [
+      {
+        "description": "Cutting accuracy up to 1 mm: Perfect match to the specified dimensions without deviations.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Clean and neat cut: No burnt edges, chips, or other defects.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Minimal cutting thickness: Economical material usage with minimal waste.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Flexibility in choosing cutting angles: Ability to cut at 30°, 45°, 60°, or 90° angles for various needs.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Ready-made 'assembly' parts: Elements ready for further assembly or use.",
+        "icon": "/icons/listPeculiarities.png"
+      }
+    ],
+    "servicesTitle": "Our Services",
+    "listServices": [
+      {
+        "description": "Band saw cutting ensures speed, quality, and precision in fulfilling any order. This solution is ideal for both individual projects and mass production."
+      }
+    ]
   },
   "indyvidualniZamovlennya": {
     "title": "Custom Metal Products: Quality and Timeliness",
-    "description": "Manufacturing metal products is a modern approach to meeting the needs for parts of any complexity. This service allows the client to avoid costs associated with purchasing equipment, training personnel, and organizing the production process. Thanks to advanced technologies, QPart manufactures custom metal products in accordance with the highest quality standards. We work with steel, aluminum, brass, cast iron, stainless steel, and other metals, ensuring precise execution of technical tasks."
+    "description": "Manufacturing metal products is a modern approach to meeting the needs for parts of any complexity. This service allows the client to avoid costs associated with purchasing equipment, training personnel, and organizing the production process. Thanks to advanced technologies, QPart manufactures custom metal products in accordance with the highest quality standards. We work with steel, aluminum, brass, cast iron, stainless steel, and other metals, ensuring precise execution of technical tasks.",
+    "listPeculiarities": [
+      {
+        "description": "Technical specifications. We work closely with the client to ensure that all products fully meet their requirements.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Design and calculations. The choice of material, thickness, structural elements, and manufacturing method ensures the durability and functionality of the final product.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Timely delivery. We understand the importance of on-time delivery, which is why we always adhere to agreed timelines.",
+        "icon": "/icons/listPeculiarities.png"
+      }
+    ]
   },
   "lazernaRizkaPage": {
     "title": "Laser Metal Cutting",
@@ -186,6 +291,49 @@
       }
     ],
     "descriptionDifferences": "Unlike traditional mechanical cutting methods, laser processing guarantees quality and cost-effectiveness in manufacturing parts of any complexity."
+  },
+
+  "orderBenefits": {
+    "orderBenefitsTitle": "Advantages of Ordering with Us",
+    "listOrderBenefits": [
+      {
+        "title": "Ready for large volumes – ensuring uninterrupted operations even for large-scale orders.",
+        "icon": "/assets/cylinder.png"
+      },
+      {
+        "title": "More than 300 CNC machines – modern equipment guarantees precision, quality, and speed of execution.",
+        "icon": "/assets/gears.png"
+      },
+      {
+        "title": "Flexible deadlines – we work quickly and always on time!",
+        "icon": "/assets/clock-time.png"
+      }
+    ]
+  },
+  "zvaryuvannyaMetaluPage": {
+    "title": "WELDING WORKS",
+    "description": "Metalworking is a complex and responsible process that requires qualification and experience. At the “QPart” forge, professional welders perform all types of welding work efficiently and on time.",
+    "servicesTitle": "Our Services",
+    "listServices": [
+      {
+        "description": "Mechanical welding – ideal for working with various metals."
+      },
+      {
+        "description": "Arc welding – one of the most common methods for creating reliable joints."
+      },
+      {
+        "description": "Manual arc welding – a versatile method for different conditions."
+      },
+      {
+        "description": "Laser welding – a high-precision technique for complex structures."
+      },
+      {
+        "description": "Plasma and spot welding – for special quality and precision requirements."
+      },
+      {
+        "description": "Forge welding – a traditional method used for artistic creations."
+      }
+    ]
   },
 
   "footer": {

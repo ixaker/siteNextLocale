@@ -45,8 +45,6 @@ export type Translations = {
     description: string;
     servicesTitle: string;
     listServices: { description: string }[];
-    advantagesTitle: string;
-    listAdvantages: { title: string; icon: string }[];
     descriptionBenefits: string;
     peculiaritiesTitle: string;
     listPeculiarities: { description: string; icon: string }[];
@@ -58,36 +56,68 @@ export type Translations = {
     description: string;
     peculiaritiesTitle: string;
     listPeculiarities: { description: string; icon: string }[];
+    servicesTitle: string;
+    listServices: { description: string }[];
   };
 
   shlifovkaMetaluPage: {
     title: string;
     description: string;
+    peculiaritiesTitle: string;
+    listPeculiarities: { description: string; icon: string }[];
   };
 
   termichnaObrobkaPage: {
     title: string;
     description: string;
+    peculiaritiesTitle: string;
+    listPeculiarities: { description: string; icon: string }[];
   };
 
   frezerniRoboty: {
     title: string;
     description: string;
+    peculiaritiesTitle: string;
+    listPeculiarities: { description: string; icon: string }[];
   };
 
   porizkaNaVerstati: {
     title: string;
     description: string;
+    peculiaritiesTitle: string;
+    listPeculiarities: { description: string; icon: string }[];
+    servicesTitle: string;
+    listServices: { description: string }[];
   };
 
   lyttyaMetalu: {
     title: string;
     description: string;
+    peculiaritiesTitle: string;
+    listPeculiarities: { description: string; icon: string }[];
   };
 
   indyvidualniZamovlennya: {
     title: string;
     description: string;
+    peculiaritiesTitle: string;
+    listPeculiarities: { description: string; icon: string }[];
+  };
+
+  orderBenefits: {
+    orderBenefitsTitle: string;
+    listOrderBenefits: { title: string; icon: string }[];
+  };
+
+  zvaryuvannyaMetaluPage: {
+    title: string;
+    description: string;
+    servicesTitle: string;
+    listServices: { description: string }[];
+    descriptionBenefits: string;
+    peculiaritiesTitle: string;
+    listPeculiarities: { description: string; icon: string }[];
+    descriptionDifferences: string;
   };
 
   welcome: string;

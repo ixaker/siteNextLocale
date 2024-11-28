@@ -5,13 +5,20 @@ import CustomContainer from '@/components/ui/container/CustomContainer';
 import langUk from '../../../../locales/uk.json';
 import { useTheme } from '@mui/material';
 import { darkTheme, lightTheme } from '@/theme';
+import FeatureBlock from '@/components/ui/feature-block/FeatureBlock';
+import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
+import ListBenefits from '@/components/ui/list-benefits/ListBenefits';
+import ServiceBlock from '@/components/ui/service-block/ServiceBlock';
 
 const Page: React.FC<PageProps> = ({ translations }) => {
   const translationsPage = translations?.porizkaNaVerstati || langUk.porizkaNaVerstati;
   const theme = useTheme();
+  const listPeculiarities = translationsPage.listPeculiarities;
+  const orderBenefits = translations.orderBenefits.listOrderBenefits;
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
+  const listServices = translationsPage.listServices;
   return (
     <section style={{ backgroundColor: bgColor }}>
       <BackCover>
@@ -22,6 +29,17 @@ const Page: React.FC<PageProps> = ({ translations }) => {
           txtButton={translations.btnSend}
         />
       </BackCover>
+      <ServiceBlock
+        btnText={translations.btnSend}
+        heading={translationsPage.servicesTitle}
+        imgSrc="/assets/porizka-na-verstati2.jpg"
+        list={listServices}
+      />
+      <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
+      <div className="px-4">
+        <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />
+      </div>
+      <CalculationSection textBtn={translations.btnSend} />
     </section>
   );
 };
