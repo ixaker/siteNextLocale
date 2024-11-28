@@ -13,7 +13,7 @@ const HeaderLogo = () => {
         alt="Логотип сайта"
         width={120}
         height={40}
-        className="w-[100px] h-auto md:w-[120px] lg:w-[150px] xl:w-[200px]"
+        className="w-[100px] h-auto md:w-[120px] lg:w-[150px] xl:w-[220px]"
         priority
       />
     </Link>

@@ -65,7 +65,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         localeOg={translations.locale}
       />
       <section className="bg-bgImg max-h-[calc(100vh-137px)] bg-no-repeat bg-cover shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)]">
-        <div className="flex h-screen items-center lg:items-start lg:pt-[100px]">
+        <div className="flex h-screen items-center lg:items-center">
           <div className="w-full h-fit px-4 py-8" style={{ backgroundColor: `rgba(0, 0, 0, 0.5)` }}>
             <Heading level="h1" text={translationsPage.title} alignment="center" />
             <div className="mt-[20px] flex justify-center items-center ">

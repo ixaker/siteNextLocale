@@ -1,23 +1,20 @@
 import React from 'react';
 import CustomButton from './CustomButton';
-import EmailIcon from '@mui/icons-material/Email';
-import PhoneIcon from '@mui/icons-material/Phone';
+import { useTheme } from '@mui/material';
+import { darkTheme, lightTheme } from '@/theme';
 
 interface PropsCommunicationButton {
-  primaryColor: string;
-  secondaryColor: string;
+  email: React.ReactNode;
+  phone: React.ReactNode;
 }
 
-const iconSize = {
-  fontSize: {
-    xs: '30px',
-    sm: '30px',
-    md: '40px',
-    lg: '50px',
-  },
-};
+const CommunicationButton: React.FC<PropsCommunicationButton> = ({ email, phone }) => {
+  const theme = useTheme();
 
-const CommunicationButton: React.FC<PropsCommunicationButton> = ({ primaryColor, secondaryColor }) => {
+  const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
+  const primaryColor = currentTheme.palette.primary.main;
+  const secondaryColor = currentTheme.palette.secondary.main;
+
   return (
     <div className="flex flex-col gap-3 fixed bottom-12 right-4">
       <a href="mailto:pavelgluskov264@gmail.com">
@@ -25,14 +22,11 @@ const CommunicationButton: React.FC<PropsCommunicationButton> = ({ primaryColor,
           ariaLabel="Send Email"
           style={{
             background: primaryColor,
+            color: secondaryColor,
           }}
           variant="communication-button"
         >
-          <EmailIcon
-            className="hover:!text-activeColor  transition-all duration-300 ease-in-out"
-            style={{ color: secondaryColor }}
-            sx={iconSize}
-          />
+          {email}
         </CustomButton>
       </a>
       <a href="tel:+380505917397">
@@ -40,14 +34,11 @@ const CommunicationButton: React.FC<PropsCommunicationButton> = ({ primaryColor,
           ariaLabel="Phone"
           style={{
             background: primaryColor,
+            color: secondaryColor,
           }}
           variant="communication-button"
         >
-          <PhoneIcon
-            className="hover:!text-activeColor  transition-all duration-300 ease-in-out"
-            style={{ color: secondaryColor }}
-            sx={iconSize}
-          />
+          {phone}
         </CustomButton>
       </a>
     </div>
