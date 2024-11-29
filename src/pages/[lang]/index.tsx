@@ -70,7 +70,7 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
             </div>
             <div>
               <Image
-                className="w-full rounded-lg shadow-2xl"
+                className="w-full rounded-2xl shadow-2xl"
                 src="/assets/work.jpg"
                 alt="Laptop"
                 width={550}

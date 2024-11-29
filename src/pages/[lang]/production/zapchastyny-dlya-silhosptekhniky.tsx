@@ -48,7 +48,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         <CapitalBlock
           title={translationsPage.title}
           description={translationsPage.description}
-          srcImg="/assets/zapchastynyDlyaSilhosptekhniky1.jpg"
+          srcImg="/assets/zapchastynyDlyaSilhosptekhniky2.jpg"
           txtButton={translations.btnSend}
         />
       </BackCover>

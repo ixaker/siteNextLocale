@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
-import {getDefaultLanguage } from '@/context/withStaticPathsAndProps';
+import { getDefaultLanguage } from '@/context/withStaticPathsAndProps';
 
 class MyDocument extends Document<{ lang: string }> {
   static async getInitialProps(ctx: DocumentContext) {
@@ -23,6 +23,7 @@ class MyDocument extends Document<{ lang: string }> {
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+          <meta property="og:type" content="website" />
         </Head>
         <body>
           <Main />

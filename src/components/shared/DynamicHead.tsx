@@ -36,17 +36,17 @@ const DynamicHead: React.FC<DynamicHeadProps> = ({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={canonical} />
+      <meta property="og:url" content="https://site.qpart.com.ua/" />
       <meta property="og:image" content={imgOg} />
       <meta property="og:image:width" content="200" />
       <meta property="og:image:height" content="200" />
       <meta property="og:locale" content={localeOg} />
-      {/* <meta property="og:locale:alternate" content="en_US" /> */}
       {/* <!-- Twitter Cards --> */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={imgOg} />
+      <meta property="og:site_name" content="QPART" />
       {/* <!-- Facebook Specific Tags --> */}
       <meta property="fb:app_id" content="1234567890" />
       {/* <!-- JSON-LD Структурированные данные --> */}
