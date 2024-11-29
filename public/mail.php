@@ -52,8 +52,12 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = $config['smtp_port']; // Порт SMTP
 
+    // Настройка кодировки
+    $mail->CharSet = 'UTF-8';
+    $mail->Encoding = 'base64';
+
     // Настройка отправителя и получателя
-    $mail->setFrom($config['smtp_user'], 'Your Name'); // Замените 'Your Name' на ваше имя
+    $mail->setFrom($config['smtp_user'], 'Site'); // Замените 'Your Name' на ваше имя
     $mail->addAddress('xaker.dnepr@gmail.com'); // Получатель
 
     // Тема и сообщение
