@@ -40,7 +40,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         description={translationsPage.description}
         keywords={translationsPage.title}
         canonical={fullUrl}
-        imgOg="/assets/zapchastynyDlyaSilhosptekhniky1.jpg"
+        imgOg="/assets/zapchastyny-dlya-silhosptekhniky1.jpg"
         lang={lang}
         localeOg={translations.locale}
       />
@@ -48,7 +48,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         <CapitalBlock
           title={translationsPage.title}
           description={translationsPage.description}
-          srcImg="/assets/zapchastynyDlyaSilhosptekhniky2.jpg"
+          srcImg="/assets/zapchastyny-dlya-silhosptekhniky1.jpg"
           txtButton={translations.btnSend}
         />
       </BackCover>
@@ -59,7 +59,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       <ServiceBlock
         btnText={translations.btnSend}
         heading={translationsPage.servicesTitle}
-        imgSrc="/assets/zapchastynyDlyaSilhosptekhniky2.jpg"
+        imgSrc="/assets/zapchastyny-dlya-silhosptekhniky2.jpg"
         list={listServices}
       />
       <FeatureBlock listPeculiarities={listPeculiarities} />

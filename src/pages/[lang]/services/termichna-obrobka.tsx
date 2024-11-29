@@ -36,7 +36,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         description={translationsPage.description}
         keywords={translationsPage.title}
         canonical={fullUrl}
-        imgOg="/assets/termichna-obrobka.jpg"
+        imgOg="/assets/heat-treatment.jpg"
         lang={lang}
         localeOg={translations.locale}
       />
@@ -44,7 +44,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         <CapitalBlock
           title={translationsPage.title}
           description={translationsPage.description}
-          srcImg="/assets/termichna-obrobka.jpg"
+          srcImg="/assets/heat-treatment.jpg"
           txtButton={translations.btnSend}
         />
       </BackCover>

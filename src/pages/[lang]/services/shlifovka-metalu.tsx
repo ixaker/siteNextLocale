@@ -52,7 +52,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       <ServiceBlock
         btnText={translations.btnSend}
         heading={translationsPage.servicesTitle}
-        imgSrc="/assets/shlifovka-metalu2.png"
+        imgSrc="/assets/shlifovka-metalu2.jpg"
         list={listServices}
       />
       <div className="px-4">

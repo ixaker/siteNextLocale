@@ -36,7 +36,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         description={translationsPage.description}
         keywords={translationsPage.title}
         canonical={fullUrl}
-        imgOg="/assets/frezerni-roboty.webp"
+        imgOg="/assets/cnc-milling-works.webp"
         lang={lang}
         localeOg={translations.locale}
       />
@@ -44,14 +44,14 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         <CapitalBlock
           title={translationsPage.title}
           description={translationsPage.description}
-          srcImg="/assets/frezerni-roboty.webp"
+          srcImg="/assets/cnc-milling-works.webp"
           txtButton={translations.btnSend}
         />
       </BackCover>
       <ServiceBlock
         btnText={translations.btnSend}
         heading={translationsPage.servicesTitle}
-        imgSrc="/assets/tokarni-roboty-chpk2.jpg"
+        imgSrc="/assets/frezerni-roboty2.jpg"
         list={listServices}
       />
       <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
