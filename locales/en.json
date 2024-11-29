@@ -132,7 +132,7 @@
   },
   "termichnaObrobkaPage": {
     "title": "HEAT TREATMENT",
-    "description": "Heat treatment of metal by QPart: hardening, annealing, and tempering",
+    "description": "Heat treatment of metal by QPart: quenching, annealing, and tempering.This is a key stage in production that significantly improves the quality and performance characteristics of materials.",
     "peculiaritiesTitle": "Our Key Services:",
     "listPeculiarities": [
       {
@@ -148,7 +148,7 @@
         "icon": "/icons/listPeculiarities.png"
       }
     ],
-    "servicesTitle": "Heat Treatment of Metal — A crucial stage in production that significantly improves the quality and performance characteristics of materials. From hardening to annealing, these technologies ensure:",
+    "servicesTitle": "From quenching to annealing, these technologies provide:",
     "listServices": [
       {
         "description": "Increased strength and resistance to mechanical stress;"

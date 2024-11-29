@@ -34,7 +34,7 @@ const Page: React.FC<PageProps> = ({ translations }) => {
       <ServiceBlock
         btnText={translations.btnSend}
         heading={translationsPage.servicesTitle}
-        imgSrc="/assets/indyvidualni-zamovlennya2.webp"
+        imgSrc="/assets/indyvidualni-zamovlennya2.jpg"
         list={listServices}
       />
       <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />

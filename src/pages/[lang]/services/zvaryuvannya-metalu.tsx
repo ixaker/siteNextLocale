@@ -28,13 +28,13 @@ const Page: React.FC<PageProps> = ({ translations }) => {
           txtButton={translations.btnSend}
         />
       </BackCover>
-      <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
       <ServiceBlock
         btnText={translations.btnSend}
         heading={translationsPage.servicesTitle}
         imgSrc="/assets/zvaryuvannya-metalu2.jpg"
         list={listServices}
       />
+      <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
       <CalculationSection textBtn={translations.btnSend} />
     </div>
   );
