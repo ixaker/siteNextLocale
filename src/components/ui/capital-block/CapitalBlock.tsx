@@ -27,7 +27,7 @@ const CapitalBlock: React.FC<CapitalBlockrProps> = ({ title, description, srcImg
         <div className="flex flex-col gap-6 items-center text-center md:text-left md:items-center md:w-7/12 lg:w-7/12">
           <Heading level="h1" text={title} alignment="center" />
           <Paragraph text={description} alignment="center" />
-          <ButtonSubmitDrawing secretKey="" text={txtButton} />
+          <ButtonSubmitDrawing text={txtButton} />
         </div>
       </div>
     </div>

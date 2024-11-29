@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // Проверяем наличие ключа безопасности (защита от несанкционированного доступа)
-$secretKey = 'your_secret_key_here'; // Замените на ваш секретный ключ
+$secretKey = '8355f5423b072c553809f09be3b7ca5fb0f7555c'; // Замените на ваш секретный ключ
 if (!isset($_POST['token']) || $_POST['token'] !== $secretKey) {
     http_response_code(403); // Доступ запрещен
     exit(json_encode(['success' => false, 'error' => 'Forbidden: Invalid token']));
@@ -27,9 +27,9 @@ use PHPMailer\PHPMailer\Exception;
 header('Content-Type: application/json'); // Устанавливаем JSON-заголовок для ответа
 
 // Проверяем обязательные параметры
-if (empty($_POST['to']) || empty($_POST['subject']) || empty($_POST['message'])) {
+if (empty($_POST['phone'])) {
     http_response_code(400); // Неверный запрос
-    exit(json_encode(['success' => false, 'error' => 'Missing required fields']));
+    exit(json_encode(['success' => false, 'error' => 'Missing required field phone']));
 }
 
 // Проверяем наличие файла в запросе
@@ -37,6 +37,8 @@ if (empty($_FILES['attachment']['tmp_name'])) {
     http_response_code(400); // Неверный запрос
     exit(json_encode(['success' => false, 'error' => 'Attachment is required']));
 }
+
+$phone = $_POST['phone'];
 
 try {
     $mail = new PHPMailer(true);
@@ -52,11 +54,11 @@ try {
 
     // Настройка отправителя и получателя
     $mail->setFrom($config['smtp_user'], 'Your Name'); // Замените 'Your Name' на ваше имя
-    $mail->addAddress($_POST['to']); // Получатель
+    $mail->addAddress('xaker.dnepr@gmail.com'); // Получатель
 
     // Тема и сообщение
-    $mail->Subject = $_POST['subject'];
-    $mail->Body = $_POST['message'];
+    $mail->Subject = 'Заявка c сайта QPART';
+    $mail->Body = 'Телефон: ' .$phone;
 
     // Добавление вложения
     $attachmentPath = $_FILES['attachment']['tmp_name'];

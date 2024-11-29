@@ -31,7 +31,6 @@ const ServiceBlock: React.FC<ServiceBlock> = ({ heading, list, btnText, imgSrc }
             className="max-h-[300px] size-full shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)] w-full rounded-[10px] md:w-[auto] md:max-w-[400px] xl:w-full xl:max-h-[500px]"
           />
           <ButtonSubmitDrawing
-            secretKey=""
             text={btnText}
             className="mt-5 w-full text-nowrap absolute bottom-0"
           />

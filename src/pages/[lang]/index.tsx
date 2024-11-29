@@ -49,7 +49,7 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
             </h1>
           </div>
           <Paragraph text={translationsPage.description} style="text-center sm:text-start pt-5" />
-          <ButtonSubmitDrawing secretKey="" text={translationsPage.btnSend} className="mt-10" />
+          <ButtonSubmitDrawing text={translationsPage.btnSend} className="mt-10" />
         </div>
       </div>
       <section style={{ color: secondaryColor }} className="pl-4 pr-4 pt-[30px] md:pt-[70px]">

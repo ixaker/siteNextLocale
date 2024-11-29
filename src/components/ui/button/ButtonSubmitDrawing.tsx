@@ -21,10 +21,9 @@ const style = {
 interface ButtonSubmitDrawingProps {
   text: string;
   className?: string;
-  secretKey: string;
 }
 
-const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ text, className, secretKey }) => {
+const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ text, className }) => {
   const [open, setOpen] = React.useState(false);
   const [file, setFile] = React.useState<File | null>(null);
   const [statusMessage, setStatusMessage] = React.useState<string>('');
@@ -62,16 +61,14 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ text, classNa
     }
 
     const formData = new FormData();
-    formData.append('token', secretKey);
-    formData.append('to', 'recipient@example.com');
-    formData.append('subject', 'Subject of your email');
-    formData.append('message', 'Your message here');
+    formData.append('token', '8355f5423b072c553809f09be3b7ca5fb0f7555c');
+    formData.append('phone', '+38 093 123 45 67');
     formData.append('attachment', file);
 
     setStatusMessage('Sending file...');
 
     try {
-      const response = await fetch('/path/to/your/php/script.php', {
+      const response = await fetch('/mail.php', {
         method: 'POST',
         body: formData,
       });
