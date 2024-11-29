@@ -26,27 +26,6 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const secondaryColor = currentTheme.palette.secondary.main;
   const primaryColor = currentTheme.palette.primary.main;
 
-  const contactsData = [
-    {
-      title: translationsPage.address,
-      description: translationsPage.descriptionAddress,
-      icon: RoomIcon,
-      link: 'https://g.co/kgs/H9ewmuP',
-    },
-    {
-      title: translationsPage.email,
-      description: translationsPage.descriptionEmail,
-      icon: EmailIcon,
-      link: '',
-    },
-    {
-      title: translationsPage.phone,
-      description: translationsPage.descriptionPhone,
-      icon: PhoneIcon,
-      link: '+380505917397',
-    },
-  ];
-
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setFullUrl(window.location.href);
@@ -70,27 +49,70 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
             <Heading level="h1" text={translationsPage.title} alignment="center" />
             <div className="mt-[20px] flex justify-center items-center ">
               <ul className="flex flex-col gap-10 w-auto">
-                {contactsData.map((item, index) => (
-                  <li className="flex gap-[30px] items-center" key={index}>
-                    <a target="_blank" href={item.link} aria-label={item.title}>
-                      <CustomButton
-                        ariaLabel={item.title}
-                        style={{ backgroundColor: primaryColor }}
-                        variant="communication-button"
-                        className="shadow-[0_10px_30px_#fff]"
-                      >
-                        <item.icon
-                          style={{ color: secondaryColor }}
-                          className="md:size-[35px] lg:size-[40px]"
-                        />
-                      </CustomButton>
-                    </a>
-                    <div className="flex flex-col">
-                      <span className="text-[18px] font-bold md:text-[25px] ">{item.title}</span>
-                      <span className="text-[12px] font-extralight md:text-[15px]  ">{item.description}</span>
-                    </div>
-                  </li>
-                ))}
+                <li className="flex gap-[30px] items-center">
+                  <a target="_blank" href={translationsPage.address} aria-label={translationsPage.address}>
+                    <CustomButton
+                      ariaLabel={translationsPage.address}
+                      style={{ backgroundColor: primaryColor }}
+                      variant="communication-button"
+                      className="shadow-[0_10px_30px_#fff]"
+                    >
+                      <RoomIcon style={{ color: secondaryColor }} className="md:size-[35px] lg:size-[40px]" />
+                    </CustomButton>
+                  </a>
+                  <div className="flex flex-col">
+                    <span className="text-[18px] font-bold md:text-[25px] ">{translationsPage.address}</span>
+                    <span className="text-[12px] font-extralight md:text-[15px]  ">
+                      {translationsPage.descriptionAddress}
+                    </span>
+                  </div>
+                </li>
+                <li className="flex gap-[30px] items-center">
+                  <a
+                    target="_blank"
+                    href="mailto:AK.Koshubskiy@gmail.com"
+                    aria-label={translationsPage.email}
+                  >
+                    <CustomButton
+                      ariaLabel={translationsPage.email}
+                      style={{ backgroundColor: primaryColor }}
+                      variant="communication-button"
+                      className="shadow-[0_10px_30px_#fff]"
+                    >
+                      <EmailIcon
+                        style={{ color: secondaryColor }}
+                        className="md:size-[35px] lg:size-[40px]"
+                      />
+                    </CustomButton>
+                  </a>
+                  <div className="flex flex-col">
+                    <span className="text-[18px] font-bold md:text-[25px] ">{translationsPage.email}</span>
+                    <span className="text-[12px] font-extralight md:text-[15px]  ">
+                      {translationsPage.descriptionEmail}
+                    </span>
+                  </div>
+                </li>
+                <li className="flex gap-[30px] items-center">
+                  <a target="_blank" href="tel:+380989950760" aria-label={translationsPage.phone}>
+                    <CustomButton
+                      ariaLabel={translationsPage.phone}
+                      style={{ backgroundColor: primaryColor }}
+                      variant="communication-button"
+                      className="shadow-[0_10px_30px_#fff]"
+                    >
+                      <PhoneIcon
+                        style={{ color: secondaryColor }}
+                        className="md:size-[35px] lg:size-[40px]"
+                      />
+                    </CustomButton>
+                  </a>
+                  <div className="flex flex-col">
+                    <span className="text-[18px] font-bold md:text-[25px] ">{translationsPage.phone}</span>
+                    <span className="text-[12px] font-extralight md:text-[15px]  ">
+                      {translationsPage.descriptionPhone}
+                    </span>
+                  </div>
+                </li>
               </ul>
               <div className="hidden relative w-full h-[268px] md:block max-w-[451px]">
                 <DynamicInteractiveMap companyLocation={{ lat: 48.499937, lng: 35.038598 }} />
