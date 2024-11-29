@@ -1,4 +1,4 @@
-import CustomButton from '../button/CustomButton';
+import ButtonSubmitDrawing from '../button/ButtonSubmitDrawing';
 
 interface CalculationSection {
   textBtn: string;
@@ -7,7 +7,7 @@ interface CalculationSection {
 const CalculationSection: React.FC<CalculationSection> = ({ textBtn }) => {
   return (
     <div className="bg-bgImgHomeBottom min-h-[200px] bg-cover bg-center flex items-center justify-center mt-5">
-      <CustomButton variant="send-btn">{textBtn}</CustomButton>
+      <ButtonSubmitDrawing text={textBtn} />
     </div>
   );
 };

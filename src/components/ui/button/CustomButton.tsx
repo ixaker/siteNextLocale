@@ -29,14 +29,16 @@ const CustomButton: FC<PropsCustomButton> = ({
   }[variant];
 
   return (
-    <button
-      onClick={onClick ? (event) => onClick(event, String(children)) : undefined}
-      className={`cursor-pointer ${buttonClass} ${className}`}
-      style={style}
-      aria-label={ariaLabel}
-    >
-      {children}
-    </button>
+    <div>
+      <button
+        onClick={onClick ? (event) => onClick(event, String(children)) : undefined}
+        className={`cursor-pointer ${buttonClass} ${className}`}
+        style={style}
+        aria-label={ariaLabel}
+      >
+        {children}
+      </button>
+    </div>
   );
 };
 

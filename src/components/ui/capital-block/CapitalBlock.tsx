@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Heading from '../typography/Heading';
 import Paragraph from '../typography/Paragraph';
-import CustomButton from '../button/CustomButton';
+import ButtonSubmitDrawing from '../button/ButtonSubmitDrawing';
 
 interface CapitalBlockrProps {
   title: string;
@@ -27,7 +27,7 @@ const CapitalBlock: React.FC<CapitalBlockrProps> = ({ title, description, srcImg
         <div className="flex flex-col gap-6 items-center text-center md:text-left md:items-center md:w-7/12 lg:w-7/12">
           <Heading level="h1" text={title} alignment="center" />
           <Paragraph text={description} alignment="center" />
-          <CustomButton variant="send-btn">{txtButton}</CustomButton>
+          <ButtonSubmitDrawing secretKey="" text={txtButton} />
         </div>
       </div>
     </div>

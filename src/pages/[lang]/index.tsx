@@ -1,5 +1,4 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import CustomButton from '@/components/ui/button/CustomButton';
 import { withStaticProps, withStaticPaths, PageProps } from '../../context/withStaticPathsAndProps';
 import DynamicHead from '@/components/shared/DynamicHead';
 import { useEffect, useState } from 'react';
@@ -11,6 +10,7 @@ import Image from 'next/image';
 import Paragraph from '@/components/ui/typography/Paragraph';
 import Heading from '@/components/ui/typography/Heading';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
+import ButtonSubmitDrawing from '@/components/ui/button/ButtonSubmitDrawing';
 
 const Home: React.FC<PageProps> = ({ translations, lang }) => {
   const [fullUrl, setFullUrl] = useState('');
@@ -49,9 +49,7 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
             </h1>
           </div>
           <Paragraph text={translationsPage.description} style="text-center sm:text-start pt-5" />
-          <CustomButton className="mt-10" variant="send-btn">
-            {translationsPage.btnSend}
-          </CustomButton>
+          <ButtonSubmitDrawing secretKey="" text={translationsPage.btnSend} className="mt-10" />
         </div>
       </div>
       <section style={{ color: secondaryColor }} className="pl-4 pr-4 pt-[30px] md:pt-[70px]">
