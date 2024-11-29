@@ -31,7 +31,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
     if (typeof window !== 'undefined') {
       setFullUrl(window.location.href);
     }
-  }, []);
+  }, [fullUrl]);
 
   return (
     <section style={{ backgroundColor: bgColor, color: secondaryColor }}>
