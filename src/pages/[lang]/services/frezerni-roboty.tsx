@@ -11,7 +11,6 @@ import ListBenefits from '@/components/ui/list-benefits/ListBenefits';
 import ServiceBlock from '@/components/ui/service-block/ServiceBlock';
 import DynamicHead from '@/components/shared/DynamicHead';
 import { useEffect, useState } from 'react';
-import Header from '@/components/header/Header';
 
 const Page: React.FC<PageProps> = ({ ...restProps }) => {
   const translations = restProps.translations;
