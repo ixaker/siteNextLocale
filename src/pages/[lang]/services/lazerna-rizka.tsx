@@ -30,7 +30,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
     if (typeof window !== 'undefined') {
       setFullUrl(window.location.href);
     }
-  }, []);
+  }, [fullUrl]);
 
   return (
     <div style={{ backgroundColor: bgColor, color: secondaryColor }}>
