@@ -32,8 +32,6 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
     }
   }, [fullUrl]);
 
-  console.log('translations.locale', translations.locale);
-
   return (
     <div style={{ backgroundColor: bgColor, color: secondaryColor }}>
       <DynamicHead

@@ -11,6 +11,7 @@ import Paragraph from '@/components/ui/typography/Paragraph';
 import Heading from '@/components/ui/typography/Heading';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
 import ButtonSubmitDrawing from '@/components/ui/button/ButtonSubmitDrawing';
+import BackCover from '@/components/ui/back-cover/BackCover';
 
 const Home: React.FC<PageProps> = ({ translations, lang }) => {
   const [fullUrl, setFullUrl] = useState('');
@@ -39,8 +40,9 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
         lang={lang}
         localeOg={translations.locale}
       />
-      <div className="bg-bgImg ax-h-[calc(100vh-120px)] bg-no-repeat bg-cover shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)]">
-        <div className="pl-4 pr-4 flex flex-col justify-center items-center h-[calc(100vh-120px)] md:items-start">
+      {/* <div className="bg-bgImg ax-h-[calc(100vh-120px)] bg-no-repeat bg-cover shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)]"> */}
+      <BackCover>
+        <div className="px-4 md:px-8 text-white pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6 flex flex-col items-center md:items-start">
           <div>
             <h1 className="text-[20px] text-center w-full sm:text-start sm:text-[40px] md:text-[55px] lg:text-[70px] font-semibold">
               {translationsPage.topTitle}
@@ -51,7 +53,8 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
           <Paragraph text={translationsPage.description} style="text-center sm:text-start pt-5" />
           <ButtonSubmitDrawing text={translationsPage.btnSend} className="mt-10" />
         </div>
-      </div>
+        {/* </div> */}
+      </BackCover>
       <section style={{ color: secondaryColor }} className="pl-4 pr-4 pt-[30px] md:pt-[70px]">
         <ul className="flex flex-wrap justify-center gap-[10px] lg: xl:justify-between">
           {cardData.map((item, index) => (

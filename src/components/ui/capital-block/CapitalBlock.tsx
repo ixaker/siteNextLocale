@@ -12,8 +12,8 @@ interface CapitalBlockrProps {
 
 const CapitalBlock: React.FC<CapitalBlockrProps> = ({ title, description, srcImg, txtButton }) => {
   return (
-    <div className="flex flex-col h-[calc(100vh-120px)] md:h-screen justify-center items-center px-4 md:px-8 text-white">
-      <div className="flex flex-col-reverse items-center gap-8 md:flex-row md:gap-16 md:mt-[140px] max-w-screen-xl w-full">
+    <div className="px-4 md:px-8 text-white pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6 flex flex-col items-center md:items-start">
+      <div className="flex flex-col-reverse items-center gap-8 md:flex-row md:gap-16  max-w-screen-xl w-full my-[0] mx-[auto]">
         <div className="hidden md:block flex-shrink-0 md:w-[30%] md:h-fill-available lg:w-5/12 lg:h-[400px] shadow-lg rounded-lg overflow-hidden">
           <Image
             src={srcImg}
