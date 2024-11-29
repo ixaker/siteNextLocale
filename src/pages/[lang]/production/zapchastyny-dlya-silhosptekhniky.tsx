@@ -52,9 +52,6 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           txtButton={translations.btnSend}
         />
       </BackCover>
-      <div className="px-4 pt-5">
-        <Paragraph text={translationsPage.descriptionBenefits} alignment="center" />
-      </div>
 
       <ServiceBlock
         btnText={translations.btnSend}

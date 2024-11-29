@@ -478,7 +478,7 @@
   },
   "zapchastynyDlyaSilhosptekhnikyPage": {
     "title": "Produktion von Ersatzteilen für Landmaschinen",
-    "description": "Unser Unternehmen ist auf die Herstellung hochwertiger Ersatzteile für Landmaschinen spezialisiert und berücksichtigt dabei die Bedürfnisse der Landwirte sowie die Besonderheiten moderner Landtechnik. Wir bieten eine breite Palette an Komponenten, die für verschiedene Maschinen geeignet sind und deren störungsfreien Betrieb auch unter schwierigsten Bedingungen gewährleisten.",
+    "description": "Unser Unternehmen ist auf die Herstellung hochwertiger Ersatzteile für Landmaschinen spezialisiert und berücksichtigt dabei die Bedürfnisse der Landwirte sowie die Besonderheiten moderner Landtechnik. Wir bieten eine breite Palette an Komponenten, die für verschiedene Maschinen geeignet sind und deren störungsfreien Betrieb auch unter schwierigsten Bedingungen gewährleisten.Sichern Sie Ihre Maschinen mit hochwertigen Ersatzteilen",
     "servicesTitle": "Unser Sortiment umfasst:",
     "listServices": [
       {
@@ -502,7 +502,6 @@
         "icon": "/icons/listPeculiarities.png"
       }
     ],
-    "descriptionBenefits": "Sichern Sie Ihre Maschinen mit hochwertigen Ersatzteilen",
     "question": "Warum wählen Sie uns?",
     "answer": "Wir arbeiten daran, dass Ihre Landmaschinen stets in einwandfreiem Zustand bleiben. Bestellen Sie Ersatzteile bei uns, und wir garantieren Ihnen hochwertige Produkte, erschwingliche Preise und professionellen Service."
   },

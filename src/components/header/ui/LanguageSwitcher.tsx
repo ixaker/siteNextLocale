@@ -6,10 +6,7 @@ interface LanguageSwitcherProps {
   currentLang: string; // Текущий язык
 }
 
-const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
-  supportedLanguages = [],
-  currentLang,
-}) => {
+const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ supportedLanguages = [], currentLang }) => {
   const router = useRouter();
   const { asPath } = router;
 

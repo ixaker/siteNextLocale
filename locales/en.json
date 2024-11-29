@@ -487,7 +487,7 @@
 
   "zapchastynyDlyaSilhosptekhnikyPage": {
     "title": "Production of Spare Parts for Agricultural Machinery",
-    "description": "Our company specializes in creating high-quality spare parts for agricultural machinery, taking into account the needs of farmers and the specifics of modern farming equipment. We offer a wide range of components suitable for various types of machinery, ensuring uninterrupted operation even under the toughest conditions.",
+    "description": "Our company specializes in creating high-quality spare parts for agricultural machinery, taking into account the needs of farmers and the specifics of modern farming equipment. We offer a wide range of components suitable for various types of machinery, ensuring uninterrupted operation even under the toughest conditions.Ensure your equipment with high-quality spare parts",
     "servicesTitle": "Our range includes:",
     "listServices": [
       {
@@ -511,7 +511,6 @@
         "icon": "/icons/listPeculiarities.png"
       }
     ],
-    "descriptionBenefits": "Ensure your equipment with high-quality spare parts",
     "question": "Why choose us?",
     "answer": "We work to ensure that your agricultural machinery is always in excellent condition. Order spare parts from us, and we guarantee you high-quality products, affordable prices, and professional service."
   },
