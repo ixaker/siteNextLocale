@@ -476,6 +476,37 @@
     "question": "Warum sollten Sie uns wählen?",
     "answer": "QPart arbeitet seit vielen Jahren mit Unternehmen der Eisenbahnbranche zusammen und bietet optimale Lösungen zur Steigerung der Effizienz und Sicherheit ihrer Aktivitäten."
   },
+  "zapchastynyDlyaSilhosptekhnikyPage": {
+    "title": "Produktion von Ersatzteilen für Landmaschinen",
+    "description": "Unser Unternehmen ist auf die Herstellung hochwertiger Ersatzteile für Landmaschinen spezialisiert und berücksichtigt dabei die Bedürfnisse der Landwirte sowie die Besonderheiten moderner Landtechnik. Wir bieten eine breite Palette an Komponenten, die für verschiedene Maschinen geeignet sind und deren störungsfreien Betrieb auch unter schwierigsten Bedingungen gewährleisten.",
+    "servicesTitle": "Unser Sortiment umfasst:",
+    "listServices": [
+      {
+        "description": "Teile für Bodenbearbeitungsmaschinen: Pflüge, Kultivatoren, Eggen, Sämaschinen. Wir stellen Komponenten her, die die optimale Leistung dieser Maschinen sicherstellen, darunter Scheiben, Scharen, Lager und Wellen."
+      },
+      {
+        "description": "Ersatzteile für Getreideerntemaschinen: Dreschtrommeln, Riemen, Zahnräder, Messersegmente, Spannvorrichtungen, Rollen. Unsere Teile helfen den Maschinen, während der Spitzenbelastung in der Erntesaison effizient zu arbeiten."
+      }
+    ],
+    "listPeculiarities": [
+      {
+        "description": "Komponenten für Futtererntemaschinen: Messer, Häcksler, Wellen, Ketten, die den störungsfreien Betrieb der Tierhaltungstechnik gewährleisten.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Teile für Lader und Manipulatoren: Hydraulikzylinder, Befestigungen, Schläuche, die für die zuverlässige Funktion von Zusatzgeräten erforderlich sind.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Spezialisierte Sonderanfertigungen: Wir fertigen individuelle Ersatzteile nach den spezifischen Wünschen unserer Kunden.",
+        "icon": "/icons/listPeculiarities.png"
+      }
+    ],
+    "descriptionBenefits": "Sichern Sie Ihre Maschinen mit hochwertigen Ersatzteilen",
+    "question": "Warum wählen Sie uns?",
+    "answer": "Wir arbeiten daran, dass Ihre Landmaschinen stets in einwandfreiem Zustand bleiben. Bestellen Sie Ersatzteile bei uns, und wir garantieren Ihnen hochwertige Produkte, erschwingliche Preise und professionellen Service."
+  },
+
   "footer": {
     "join": "Treten Sie bei"
   },

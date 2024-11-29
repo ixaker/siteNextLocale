@@ -485,6 +485,37 @@
     "answer": "QPart has been collaborating with railway industry enterprises for many years, offering optimal solutions to enhance the efficiency and safety of their operations."
   },
 
+  "zapchastynyDlyaSilhosptekhnikyPage": {
+    "title": "Production of Spare Parts for Agricultural Machinery",
+    "description": "Our company specializes in creating high-quality spare parts for agricultural machinery, taking into account the needs of farmers and the specifics of modern farming equipment. We offer a wide range of components suitable for various types of machinery, ensuring uninterrupted operation even under the toughest conditions.",
+    "servicesTitle": "Our range includes:",
+    "listServices": [
+      {
+        "description": "Parts for soil cultivation machinery: plows, cultivators, harrows, seeders. We produce components to maintain the optimal performance of this equipment, including discs, moldboards, bearings, and shafts."
+      },
+      {
+        "description": "Spare parts for grain harvesting equipment: threshing drums, belts, gears, knife segments, tensioners, rollers. Our parts help machinery work efficiently during peak loads in the harvest season."
+      }
+    ],
+    "listPeculiarities": [
+      {
+        "description": "Components for forage harvesting machinery: knives, shredders, shafts, chains that ensure uninterrupted operation of livestock equipment.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Parts for loaders and manipulators: hydraulic cylinders, mounts, hoses necessary for the reliable functioning of auxiliary equipment.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Specialized custom parts: we manufacture individual spare parts according to specific customer requests.",
+        "icon": "/icons/listPeculiarities.png"
+      }
+    ],
+    "descriptionBenefits": "Ensure your equipment with high-quality spare parts",
+    "question": "Why choose us?",
+    "answer": "We work to ensure that your agricultural machinery is always in excellent condition. Order spare parts from us, and we guarantee you high-quality products, affordable prices, and professional service."
+  },
+
   "footer": {
     "join": "Join"
   },

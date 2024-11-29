@@ -52,6 +52,9 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           txtButton={translations.btnSend}
         />
       </BackCover>
+      <div className="px-4 pt-5">
+        <Paragraph text={translationsPage.descriptionBenefits} alignment="center" />
+      </div>
 
       <ServiceBlock
         btnText={translations.btnSend}
@@ -59,12 +62,9 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         imgSrc="/assets/zapchastynyDlyaSilhosptekhniky2.jpg"
         list={listServices}
       />
+      <FeatureBlock listPeculiarities={listPeculiarities} />
 
       <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
-      <div className="px-4 pt-5">
-        <Paragraph text={translationsPage.descriptionBenefits} alignment="center" />
-        <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />
-      </div>
       <div className="px-4 pt-[30px]">
         <Paragraph text={translationsPage.question} alignment="center" />
         <Paragraph text={translationsPage.answer} alignment="center" />
