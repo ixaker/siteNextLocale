@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { withStaticProps, withStaticPaths, PageProps } from '../../../context/withStaticPathsAndProps';
 import BackCover from '@/components/ui/back-cover/BackCover';
@@ -10,8 +10,9 @@ import ServiceBlock from '@/components/ui/service-block/ServiceBlock';
 import ListBenefits from '@/components/ui/list-benefits/ListBenefits';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
 import FeatureBlock from '@/components/ui/feature-block/FeatureBlock';
+import DynamicHead from '@/components/shared/DynamicHead';
 
-const Page: React.FC<PageProps> = ({ translations }) => {
+const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.lyttyaMetaluPage || langUk.lyttyaMetaluPage;
   const theme = useTheme();
 
@@ -21,8 +22,24 @@ const Page: React.FC<PageProps> = ({ translations }) => {
   const listServices = translationsPage.listServices;
   const orderBenefits = translations.orderBenefits.listOrderBenefits;
   const listPeculiarities = translationsPage.listPeculiarities;
+
+  const [fullUrl, setFullUrl] = useState('');
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setFullUrl(window.location.href);
+    }
+  }, []);
   return (
     <div style={{ backgroundColor: bgColor, color: secondaryColor }}>
+      <DynamicHead
+        title={translationsPage.title}
+        description={translationsPage.description}
+        keywords={translationsPage.title}
+        canonical={fullUrl}
+        imgOg="/assets/metal-casting.jpg"
+        lang={lang}
+        localeOg={translations.locale}
+      />
       <BackCover>
         <CapitalBlock
           title={translationsPage.title}

@@ -8,8 +8,10 @@ import { darkTheme, lightTheme } from '@/theme';
 import ServiceBlock from '@/components/ui/service-block/ServiceBlock';
 import ListBenefits from '@/components/ui/list-benefits/ListBenefits';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
+import DynamicHead from '@/components/shared/DynamicHead';
+import { useEffect, useState } from 'react';
 
-const Page: React.FC<PageProps> = ({ translations }) => {
+const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.zvaryuvannyaMetaluPage || langUk.zvaryuvannyaMetaluPage;
   const theme = useTheme();
   const orderBenefits = translations.orderBenefits.listOrderBenefits;
@@ -18,8 +20,23 @@ const Page: React.FC<PageProps> = ({ translations }) => {
   const bgColor = currentTheme.palette.background.default;
   const listServices = translationsPage.listServices;
   const secondaryColor = currentTheme.palette.secondary.main;
+  const [fullUrl, setFullUrl] = useState('');
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setFullUrl(window.location.href);
+    }
+  }, []);
   return (
     <div style={{ backgroundColor: bgColor, color: secondaryColor }}>
+      <DynamicHead
+        title={translationsPage.title}
+        description={translationsPage.description}
+        keywords={translationsPage.title}
+        canonical={fullUrl}
+        imgOg="/assets/zvaryuvannya-metalu.webp"
+        lang={lang}
+        localeOg={translations.locale}
+      />
       <BackCover>
         <CapitalBlock
           title={translationsPage.title}

@@ -10,8 +10,10 @@ import CalculationSection from '@/components/ui/calculation-section/CalculationS
 import ListBenefits from '@/components/ui/list-benefits/ListBenefits';
 import ServiceBlock from '@/components/ui/service-block/ServiceBlock';
 import Paragraph from '@/components/ui/typography/Paragraph';
+import DynamicHead from '@/components/shared/DynamicHead';
+import { useEffect, useState } from 'react';
 
-const Page: React.FC<PageProps> = ({ translations }) => {
+const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.indyvidualniZamovlennya || langUk.indyvidualniZamovlennya;
   const theme = useTheme();
   const listPeculiarities = translationsPage.listPeculiarities;
@@ -21,8 +23,24 @@ const Page: React.FC<PageProps> = ({ translations }) => {
   const bgColor = currentTheme.palette.background.default;
   const listServices = translationsPage.listServices;
   const secondaryColor = currentTheme.palette.secondary.main;
+
+  const [fullUrl, setFullUrl] = useState('');
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setFullUrl(window.location.href);
+    }
+  }, []);
   return (
     <section style={{ backgroundColor: bgColor, color: secondaryColor }}>
+      <DynamicHead
+        title={translationsPage.title}
+        description={translationsPage.description}
+        keywords={translationsPage.title}
+        canonical={fullUrl}
+        imgOg="/assets/indyvidualni-zamovlennya.jpg"
+        lang={lang}
+        localeOg={translations.locale}
+      />
       <BackCover>
         <CapitalBlock
           title={translationsPage.title}
