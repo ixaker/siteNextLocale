@@ -9,8 +9,10 @@ import FeatureBlock from '@/components/ui/feature-block/FeatureBlock';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
 import ListBenefits from '@/components/ui/list-benefits/ListBenefits';
 import ServiceBlock from '@/components/ui/service-block/ServiceBlock';
+import DynamicHead from '@/components/shared/DynamicHead';
+import { useEffect, useState } from 'react';
 
-const Page: React.FC<PageProps> = ({ translations }) => {
+const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.tokarniRobotyChpkPage || langUk.tokarniRobotyChpkPage;
   const theme = useTheme();
   const orderBenefits = translations.orderBenefits.listOrderBenefits;
@@ -21,8 +23,24 @@ const Page: React.FC<PageProps> = ({ translations }) => {
   const listPeculiarities = translationsPage.listPeculiarities;
   const listServices = translationsPage.listServices;
 
+  const [fullUrl, setFullUrl] = useState('');
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setFullUrl(window.location.href);
+    }
+  }, []);
+
   return (
     <section style={{ backgroundColor: bgColor, color: secondaryColor }}>
+      <DynamicHead
+        title={translationsPage.title}
+        description={translationsPage.description}
+        keywords={translationsPage.title}
+        canonical={fullUrl}
+        imgOg="/assets/tokarni-roboty-chpk.jpg"
+        lang={lang}
+        localeOg={translations.locale}
+      />
       <BackCover>
         <CapitalBlock
           title={translationsPage.title}
