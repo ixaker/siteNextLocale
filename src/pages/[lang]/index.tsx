@@ -40,7 +40,6 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
         lang={lang}
         localeOg={translations.locale}
       />
-      {/* <div className="bg-bgImg ax-h-[calc(100vh-120px)] bg-no-repeat bg-cover shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)]"> */}
       <BackCover>
         <div className="px-4 md:px-8 text-white pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6 flex flex-col items-center md:items-start">
           <div>

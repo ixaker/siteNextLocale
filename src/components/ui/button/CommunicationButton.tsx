@@ -16,7 +16,7 @@ const CommunicationButton: React.FC<PropsCommunicationButton> = ({ email, phone 
   const secondaryColor = currentTheme.palette.secondary.main;
 
   return (
-    <div className="flex flex-col gap-3 fixed bottom-12 right-4">
+    <div className="flex flex-col gap-3 fixed bottom-12 right-4 z-[99]">
       <a href="mailto:pavelgluskov264@gmail.com">
         <CustomButton
           ariaLabel="Send Email"

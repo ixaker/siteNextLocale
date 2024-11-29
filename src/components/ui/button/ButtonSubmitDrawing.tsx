@@ -5,6 +5,7 @@ import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Typography from '@mui/material/Typography';
 import CustomButton from './CustomButton';
+import { TextField } from '@mui/material';
 
 const style = {
   position: 'absolute',
@@ -27,6 +28,7 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ text, classNa
   const [open, setOpen] = React.useState(false);
   const [file, setFile] = React.useState<File | null>(null);
   const [statusMessage, setStatusMessage] = React.useState<string>('');
+  const [numberPhone, setNumberPhone] = React.useState('+380');
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -109,11 +111,8 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ text, classNa
       >
         <Fade in={open}>
           <Box sx={style}>
-            <Typography id="transition-modal-title" variant="h6" component="h2">
-              Upload a file
-            </Typography>
-            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              Drag and drop a file here or select one to upload.
+            <Typography id="transition-modal-description" sx={{ mt: 2, textAlign: 'center' }}>
+              Залиште Ваше креслення та номер телефону, ми з вами оперативно звяжимся для обговорення детлаей
             </Typography>
 
             {/* File drop area */}
@@ -144,6 +143,21 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ text, classNa
                 Choose File
               </CustomButton>
             </Box>
+
+            <Typography id="transition-modal-description" sx={{ mt: 2, textAlign: 'center' }}>
+              Обмеження розміру файла: до 20 Mb*
+            </Typography>
+
+            <TextField
+              id="outlined-textarea"
+              label="Моібльний номер телефону"
+              placeholder="+380"
+              multiline
+              className="w-full mt-5"
+              sx={{ color: 'red', placeContent: 'red' }}
+              value={numberPhone}
+              onChange={(e) => setNumberPhone(e.target.value)}
+            />
 
             {/* File actions */}
             <Box sx={{ marginTop: '20px', textAlign: 'center' }}>

@@ -11,6 +11,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import dynamic from 'next/dynamic';
 import Heading from '@/components/ui/typography/Heading';
+import BackCover from '@/components/ui/back-cover/BackCover';
 
 const DynamicInteractiveMap = dynamic(() => import('@/components/ui/InteractiveMap/InteractiveMap'), {
   ssr: false, // Отключаем SSR для этого компонента
@@ -43,9 +44,13 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         lang={lang}
         localeOg={translations.locale}
       />
-      <section className="bg-bgImg max-h-[calc(100vh-137px)] bg-no-repeat bg-cover shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)]">
-        <div className="flex h-screen items-center lg:items-center">
-          <div className="w-full h-fit px-4 py-8" style={{ backgroundColor: `rgba(0, 0, 0, 0.5)` }}>
+      {/* pt-[190px] xl:pt-[200px] min-h-[90vh]*/}
+      <BackCover>
+        <div className="min-w-screen min-h-[calc(100vh-140px)] flex flex-col justify-center pb-[20px]">
+          <div
+            className="min-w-screen px-4 py-8 mt-[130px]"
+            style={{ backgroundColor: `rgba(0, 0, 0, 0.5)` }}
+          >
             <Heading level="h1" text={translationsPage.title} alignment="center" />
             <div className="mt-[20px] flex justify-center items-center ">
               <ul className="flex flex-col gap-10 w-auto">
@@ -120,7 +125,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
             </div>
           </div>
         </div>
-      </section>
+      </BackCover>
     </>
   );
 };
