@@ -44,8 +44,8 @@ export const withStaticProps = async <P>(
     props: {
       translations,
       lang,
-      supportedLanguages: SUPPORTED_LANGUAGES, 
-      defaultLanguage: getDefaultLanguage()
+      supportedLanguages: SUPPORTED_LANGUAGES,
+      defaultLanguage: getDefaultLanguage(),
     } as P,
   };
 };
@@ -53,8 +53,8 @@ export const withStaticProps = async <P>(
 export type PageProps = {
   translations: Translations;
   lang: string;
-  supportedLanguages: string[],
-  defaultLanguage: string,
+  supportedLanguages: string[];
+  defaultLanguage: string;
   children?: React.ReactNode;
 };
 

@@ -9,6 +9,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import ButtonSubmitDrawing from '@/components/ui/button/ButtonSubmitDrawing';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -26,7 +27,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <ThemeProvider>
           <CssBaseline /> {/* Базовые стили MUI */}
           <Layout {...pageProps}>
-            <Component {...pageProps} />
+            <Component {...pageProps}>
+              <ButtonSubmitDrawing {...pageProps} />
+            </Component>
           </Layout>
         </ThemeProvider>
       </LanguageProvider>

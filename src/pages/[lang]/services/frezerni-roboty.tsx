@@ -44,6 +44,8 @@ const Page: React.FC<PageProps> = ({ ...restProps }) => {
       <BackCover>
         {/* <Header {...restProps} /> */}
         <CapitalBlock
+          translations={translations}
+          lang={restProps.lang}
           title={translationsPage.title}
           description={translationsPage.description}
           srcImg="/assets/cnc-milling-works.webp"
@@ -51,6 +53,8 @@ const Page: React.FC<PageProps> = ({ ...restProps }) => {
         />
       </BackCover>
       <ServiceBlock
+        translations={translations}
+        lang={restProps.lang}
         btnText={translations.btnSend}
         heading={translationsPage.servicesTitle}
         imgSrc="/assets/frezerni-roboty2.jpg"
@@ -60,7 +64,7 @@ const Page: React.FC<PageProps> = ({ ...restProps }) => {
       <div className="px-4">
         <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />
       </div>
-      <CalculationSection textBtn={translations.btnSend} />
+      <CalculationSection translations={translations} lang={restProps.lang} />
     </section>
   );
 };

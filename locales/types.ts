@@ -58,6 +58,7 @@ export type Translations = {
     listPeculiarities: { description: string; icon: string }[];
     servicesTitle: string;
     listServices: { description: string }[];
+    callToAction: string;
   };
 
   shlifovkaMetaluPage: {
@@ -157,6 +158,21 @@ export type Translations = {
     listPeculiarities: { description: string; icon: string }[];
     question: string;
     answer: string;
+  };
+
+  modalInfo: {
+    nameBtn: string;
+    title: string;
+    descriptionBtn: string;
+    description: string;
+    fileName: string;
+    noFile: string;
+    limitation: string;
+    inputTitle: string;
+    numberPhone: string;
+    submitBtn: string;
+    removeBtn: string;
+    sendingBtn: string;
   };
 
   welcome: string;

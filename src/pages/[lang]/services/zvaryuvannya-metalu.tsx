@@ -39,6 +39,8 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       />
       <BackCover>
         <CapitalBlock
+          translations={translations}
+          lang={lang}
           title={translationsPage.title}
           description={translationsPage.description}
           srcImg="/assets/zvaryuvannya-metalu.webp"
@@ -46,13 +48,15 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         />
       </BackCover>
       <ServiceBlock
+        translations={translations}
+        lang={lang}
         btnText={translations.btnSend}
         heading={translationsPage.servicesTitle}
         imgSrc="/assets/zvaryuvannya-metalu2.jpg"
         list={listServices}
       />
       <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
-      <CalculationSection textBtn={translations.btnSend} />
+      <CalculationSection translations={translations} lang={lang} />
     </div>
   );
 };

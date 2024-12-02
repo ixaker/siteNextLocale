@@ -46,9 +46,13 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           description={translationsPage.description}
           srcImg="/assets/porizka-na-verstati.jpg"
           txtButton={translations.btnSend}
+          translations={translations}
+          lang={lang}
         />
       </BackCover>
       <ServiceBlock
+        translations={translations}
+        lang={lang}
         btnText={translations.btnSend}
         heading={translationsPage.servicesTitle}
         imgSrc="/assets/porizka-na-verstati2.jpg"
@@ -58,7 +62,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       <div className="px-4">
         <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />
       </div>
-      <CalculationSection textBtn={translations.btnSend} />
+      <CalculationSection translations={translations} lang={lang} />
     </section>
   );
 };

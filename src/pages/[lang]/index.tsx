@@ -50,7 +50,12 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
             </h1>
           </div>
           <Paragraph text={translationsPage.description} style="text-center sm:text-start pt-5" />
-          <ButtonSubmitDrawing text={translationsPage.btnSend} className="mt-10" />
+          <ButtonSubmitDrawing
+            lang={lang}
+            text={translationsPage.btnSend}
+            translations={translations}
+            className="mt-10"
+          />
         </div>
         {/* </div> */}
       </BackCover>

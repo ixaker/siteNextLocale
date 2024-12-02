@@ -2,8 +2,6 @@ import Image from 'next/image';
 import React from 'react';
 import Slider from 'react-slick';
 import Paragraph from '../typography/Paragraph';
-import { useTheme } from '@mui/material';
-import { darkTheme, lightTheme } from '@/theme';
 
 interface Slide {
   title: string;
@@ -15,22 +13,8 @@ interface CarouselProps {
 }
 
 const Carousel: React.FC<CarouselProps> = ({ slides }) => {
-  const theme = useTheme();
-
-  const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
-  const secondaryColor = currentTheme.palette.secondary.main;
-
-  console.log('secondaryColor', secondaryColor);
-
   const settings = {
     dots: true,
-    // customPaging: (i) => (
-    //   <div
-    //     className={`size-1.5 rounded-full transition-colors`}
-    //     style={{ margin: '0 4px', backgroundColor: secondaryColor, color: 'red' }}
-    //   />
-    // ),
-    // useCSS: true,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,

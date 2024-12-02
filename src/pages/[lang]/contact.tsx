@@ -26,12 +26,20 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const secondaryColor = currentTheme.palette.secondary.main;
   const primaryColor = currentTheme.palette.primary.main;
+  const bgColor = currentTheme.palette.background.default;
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setFullUrl(window.location.href);
     }
   }, []);
+
+  function hexToRgba(hex: string, alpha: number): string {
+    const [r, g, b] = hex.match(/\w\w/g)?.map((c) => parseInt(c, 16)) ?? [0, 0, 0];
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  }
+
+  const bgColorWithTransparency: string = hexToRgba(bgColor, 0.5);
 
   return (
     <>
@@ -44,12 +52,14 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         lang={lang}
         localeOg={translations.locale}
       />
-      {/* pt-[190px] xl:pt-[200px] min-h-[90vh]*/}
       <BackCover>
-        <div className="min-w-screen min-h-[calc(100vh-140px)] flex flex-col justify-center pb-[20px]">
+        <div
+          className="min-w-screen min-h-[calc(100vh-140px)] flex flex-col justify-center pb-[20px]"
+          style={{ color: secondaryColor }}
+        >
           <div
             className="min-w-screen px-4 py-8 mt-[130px]"
-            style={{ backgroundColor: `rgba(0, 0, 0, 0.5)` }}
+            style={{ backgroundColor: bgColorWithTransparency }}
           >
             <Heading level="h1" text={translationsPage.title} alignment="center" />
             <div className="mt-[20px] flex justify-center items-center ">
@@ -58,9 +68,8 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
                   <a target="_blank" href={translationsPage.address} aria-label={translationsPage.address}>
                     <CustomButton
                       ariaLabel={translationsPage.address}
-                      style={{ backgroundColor: primaryColor }}
+                      style={{ backgroundColor: primaryColor, boxShadow: `0 10px 30px ${secondaryColor}` }}
                       variant="communication-button"
-                      className="shadow-[0_10px_30px_#fff]"
                     >
                       <RoomIcon style={{ color: secondaryColor }} className="md:size-[35px] lg:size-[40px]" />
                     </CustomButton>
@@ -80,9 +89,8 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
                   >
                     <CustomButton
                       ariaLabel={translationsPage.email}
-                      style={{ backgroundColor: primaryColor }}
+                      style={{ backgroundColor: primaryColor, boxShadow: `0 10px 30px ${secondaryColor}` }}
                       variant="communication-button"
-                      className="shadow-[0_10px_30px_#fff]"
                     >
                       <EmailIcon
                         style={{ color: secondaryColor }}
@@ -101,9 +109,8 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
                   <a target="_blank" href="tel:+380989950760" aria-label={translationsPage.phone}>
                     <CustomButton
                       ariaLabel={translationsPage.phone}
-                      style={{ backgroundColor: primaryColor }}
+                      style={{ backgroundColor: primaryColor, boxShadow: `0 10px 30px ${secondaryColor}` }}
                       variant="communication-button"
-                      className="shadow-[0_10px_30px_#fff]"
                     >
                       <PhoneIcon
                         style={{ color: secondaryColor }}

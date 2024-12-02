@@ -44,6 +44,8 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       />
       <BackCover>
         <CapitalBlock
+          translations={translations}
+          lang={lang}
           title={translationsPage.title}
           description={translationsPage.description}
           srcImg="/assets/zaliznychni-zapchastyny1.jpg"
@@ -52,6 +54,8 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       </BackCover>
 
       <ServiceBlock
+        translations={translations}
+        lang={lang}
         btnText={translations.btnSend}
         heading={translationsPage.servicesTitle}
         imgSrc="/assets/zaliznychni-zapchastyny2.jpg"
@@ -67,7 +71,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         <Paragraph text={translationsPage.question} alignment="center" />
         <Paragraph text={translationsPage.answer} alignment="center" />
       </div>
-      <CalculationSection textBtn={translations.btnSend} />
+      <CalculationSection translations={translations} lang={lang} />
     </section>
   );
 };

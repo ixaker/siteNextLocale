@@ -231,7 +231,8 @@
       {
         "description": "CNC processing. The process uses computer numerical control, which eliminates errors caused by human factors."
       }
-    ]
+    ],
+    "callToAction": "Order high-precision CNC turning services today. We guarantee the perfect quality of every part!"
   },
   "porizkaNaVerstati": {
     "title": "Cutting on a Bandsaw: Efficiency and Precision",
@@ -513,6 +514,20 @@
     ],
     "question": "Why choose us?",
     "answer": "We work to ensure that your agricultural machinery is always in excellent condition. Order spare parts from us, and we guarantee you high-quality products, affordable prices, and professional service."
+  },
+
+  "modalInfo": {
+    "title": "Leave your drawing and phone number, and we will contact you promptly to discuss the details.",
+    "descriptionBtn": "Choose File",
+    "fileName": "File selected:",
+    "noFile": "File not selected",
+    "description": "Select File",
+    "limitation": "File size limit: up to 20 Mb*",
+    "inputTitle": "Mobile phone number",
+    "numberPhone": "+",
+    "submitBtn": "Submit",
+    "removeBtn": "Remove",
+    "sendingBtn ": "Sending..."
   },
 
   "footer": {

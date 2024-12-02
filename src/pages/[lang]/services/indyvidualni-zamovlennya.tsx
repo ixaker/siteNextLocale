@@ -47,6 +47,8 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           description={translationsPage.description}
           srcImg="/assets/indyvidualni-zamovlennya.jpg"
           txtButton={translations.btnSend}
+          translations={translations}
+          lang={lang}
         />
       </BackCover>
       <ServiceBlock
@@ -54,13 +56,15 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         heading={translationsPage.servicesTitle}
         imgSrc="/assets/indyvidualni-zamovlennya2.jpg"
         list={listServices}
+        lang={lang}
+        translations={translations}
       />
       <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
       <div className="px-4">
         <Paragraph text={translationsPage.descriptionBenefits} alignment="center" />
         <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />
       </div>
-      <CalculationSection textBtn={translations.btnSend} />
+      <CalculationSection lang={lang} translations={translations} />
     </section>
   );
 };

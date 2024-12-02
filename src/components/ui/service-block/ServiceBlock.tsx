@@ -2,15 +2,18 @@ import Image from 'next/image';
 import Heading from '../typography/Heading';
 import Paragraph from '../typography/Paragraph';
 import ButtonSubmitDrawing from '../button/ButtonSubmitDrawing';
+import { PageProps } from '@/context/withStaticPathsAndProps';
 
 interface ServiceBlock {
   heading: string;
   list: { description: string }[];
   btnText: string;
   imgSrc: string;
+  translations: PageProps['translations'];
+  lang: PageProps['lang'];
 }
 
-const ServiceBlock: React.FC<ServiceBlock> = ({ heading, list, btnText, imgSrc }) => {
+const ServiceBlock: React.FC<ServiceBlock> = ({ heading, list, imgSrc, translations, lang }) => {
   return (
     <div className="px-4 py-5">
       <Heading level="h2" text={heading} alignment="center" />
@@ -31,7 +34,8 @@ const ServiceBlock: React.FC<ServiceBlock> = ({ heading, list, btnText, imgSrc }
             className="max-h-[300px] size-full shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)] w-full rounded-[10px] md:w-[auto] md:max-w-[400px] xl:w-full xl:max-h-[500px]"
           />
           <ButtonSubmitDrawing
-            text={btnText}
+            lang={lang}
+            translations={translations}
             className="mt-5 w-full text-nowrap absolute bottom-0"
           />
         </div>

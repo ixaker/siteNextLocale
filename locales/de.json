@@ -224,7 +224,8 @@
       {
         "description": "CNC-Bearbeitung. Im Prozess wird eine computergesteuerte numerische Steuerung eingesetzt, die Fehler durch menschliche Faktoren ausschließt."
       }
-    ]
+    ],
+    "callToAction": "Bestellen Sie hochpräzise CNC-Drehbearbeitung noch heute. Wir garantieren die perfekte Qualität jedes Teils!"
   },
   "porizkaNaVerstati": {
     "title": "Sägen auf einer Bandsäge: Effizienz und Präzision",
@@ -504,6 +505,20 @@
     ],
     "question": "Warum wählen Sie uns?",
     "answer": "Wir arbeiten daran, dass Ihre Landmaschinen stets in einwandfreiem Zustand bleiben. Bestellen Sie Ersatzteile bei uns, und wir garantieren Ihnen hochwertige Produkte, erschwingliche Preise und professionellen Service."
+  },
+
+  "modalInfo": {
+    "title": "Hinterlassen Sie Ihre Zeichnung und Telefonnummer, und wir werden Sie umgehend kontaktieren, um die Details zu besprechen.",
+    "descriptionBtn": "Datei auswählen",
+    "fileName": "Ausgewählte Datei:",
+    "noFile": "Keine Datei ausgewählt",
+    "description": "Datei auswählen",
+    "limitation": "Dateigrößenbeschränkung: bis zu 20 MB*",
+    "inputTitle": "Mobiltelefonnummer",
+    "numberPhone": "+49",
+    "submitBtn": "Einreichen",
+    "removeBtn": "Entfernen",
+    "sendingBtn": "Senden..."
   },
 
   "footer": {
