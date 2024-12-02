@@ -98,6 +98,7 @@ export type Translations = {
     listPeculiarities: { description: string; icon: string }[];
     servicesTitle: string;
     listServices: { description: string }[];
+    callToAction: string;
   };
 
   lyttyaMetaluPage: {

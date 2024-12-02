@@ -11,6 +11,7 @@ import ListBenefits from '@/components/ui/list-benefits/ListBenefits';
 import ServiceBlock from '@/components/ui/service-block/ServiceBlock';
 import DynamicHead from '@/components/shared/DynamicHead';
 import { useEffect, useState } from 'react';
+import Paragraph from '@/components/ui/typography/Paragraph';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.porizkaNaVerstati || langUk.porizkaNaVerstati;
@@ -61,6 +62,9 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
       <div className="px-4">
         <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />
+      </div>
+      <div className="px-4 pt-[30px]">
+        <Paragraph text={translationsPage.callToAction} alignment="center" />
       </div>
       <CalculationSection translations={translations} lang={lang} />
     </section>
