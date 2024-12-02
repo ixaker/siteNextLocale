@@ -64,9 +64,12 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         <FeatureBlock listPeculiarities={listServicesContinuation} />
       </div>
       <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
-      <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />
+      <div className="px-4">
+        <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />
+      </div>
       <div className="px-4 pt-[30px]">
-        <Paragraph text={translationsPage.callToAction} alignment="center" />
+        <Paragraph text={translationsPage.callToActionTop} alignment="center" />
+        <Paragraph text={translationsPage.callToActionBottom} alignment="center" />
       </div>
       <CalculationSection translations={translations} lang={lang} />
     </div>

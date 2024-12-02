@@ -127,7 +127,8 @@
         "description": "Metal grinding is the final stage of processing metal products, allowing for achieving a perfectly smooth surface. This procedure is typically performed after turning or milling operations to eliminate imperfections and ensure high precision of manufactured parts."
       }
     ],
-    "callToAction": "Smoothness and precision of every surface. Order metal grinding today!"
+    "callToActionTop": "Smoothness and precision of every surface.",
+    "callToActionBottom": "Order metal grinding today!"
   },
   "termichnaObrobkaPage": {
     "title": "HEAT TREATMENT",
@@ -234,7 +235,8 @@
         "description": "CNC processing. The process uses computer numerical control, which eliminates errors caused by human factors."
       }
     ],
-    "callToAction": "Order high-precision CNC turning services today. We guarantee the perfect quality of every part!"
+    "callToActionTop": "Order high-precision CNC turning services today.",
+    "callToActionBottom": " We guarantee the perfect quality of every part!"
   },
   "porizkaNaVerstati": {
     "title": "Cutting on a Bandsaw: Efficiency and Precision",
@@ -268,7 +270,8 @@
         "description": "Band saw cutting ensures speed, quality, and precision in fulfilling any order. This solution is ideal for both individual projects and mass production."
       }
     ],
-    "callToAction": "Precise metal cutting with no extra costs. Submit your request for our services today!"
+    "callToActionTop": "Precise metal cutting with no extra costs.",
+    "callToActionBottom": "Submit your request for our services today!"
   },
   "indyvidualniZamovlennya": {
     "title": "Custom Metal Products: Quality and Timeliness",
@@ -359,7 +362,9 @@
         "icon": "/icons/listPeculiarities.png"
       }
     ],
-    "descriptionDifferences": "Fast and precise laser cutting of metal for any task. Leave an application right now!"
+
+    "callToActionTop": "Fast and precise laser cutting of metal for any task.",
+    "callToActionBottom": "Leave an application right now!"
   },
 
   "orderBenefits": {
@@ -422,7 +427,9 @@
         "icon": "/icons/listPeculiarities.png"
       }
     ],
-    "callToAction": "High-quality metal welding for your project. Order the service now"
+
+    "callToActionTop": "High-quality metal welding for your project.",
+    "callToActionBottom": "Order the service now"
   },
   "lyttyaMetaluPage": {
     "title": "METAL CASTING",
@@ -469,7 +476,8 @@
         "description": "- Shell Casting - A method involving pouring molten metal into reusable steel molds, allowing for high density and quality of products."
       }
     ],
-    "callToAction": "Order reliable metal casting based on your drawings. We will create the required products!"
+    "callToActionTop": "Order reliable metal casting based on your drawings.",
+    "callToActionBottom": "We will create the required products!"
   },
 
   "zaliznychniZapchastynyPage": {
@@ -490,7 +498,6 @@
         "description": "Quick Turnaround Times: We provide fast production without compromising quality."
       }
     ],
-    "descriptionBenefits": "Reach out to us, and we’ll deliver railway parts that fully meet your requirements!",
     "peculiaritiesTitle": "What Parts Do We Manufacture?",
     "listPeculiarities": [
       {

@@ -48,8 +48,8 @@ export type Translations = {
     descriptionBenefits: string;
     peculiaritiesTitle: string;
     listPeculiarities: { description: string; icon: string }[];
-    descriptionDifferences: string;
-    callToAction: string;
+    callToActionTop: string;
+    callToActionBottom: string;
   };
 
   tokarniRobotyChpkPage: {
@@ -59,7 +59,8 @@ export type Translations = {
     listPeculiarities: { description: string; icon: string }[];
     servicesTitle: string;
     listServices: { description: string }[];
-    callToAction: string;
+    callToActionTop: string;
+    callToActionBottom: string;
   };
 
   shlifovkaMetaluPage: {
@@ -69,7 +70,8 @@ export type Translations = {
     listPeculiarities: { description: string; icon: string }[];
     servicesTitle: string;
     listServices: { description: string }[];
-    callToAction: string;
+    callToActionTop: string;
+    callToActionBottom: string;
   };
 
   termichnaObrobkaPage: {
@@ -99,7 +101,8 @@ export type Translations = {
     listPeculiarities: { description: string; icon: string }[];
     servicesTitle: string;
     listServices: { description: string }[];
-    callToAction: string;
+    callToActionTop: string;
+    callToActionBottom: string;
   };
 
   lyttyaMetaluPage: {
@@ -111,7 +114,8 @@ export type Translations = {
     descriptionBenefits: string;
     peculiaritiesTitle: string;
     listPeculiarities: { description: string; icon: string }[];
-    callToAction: string;
+    callToActionTop: string;
+    callToActionBottom: string;
   };
 
   indyvidualniZamovlennya: {
@@ -139,8 +143,8 @@ export type Translations = {
     descriptionBenefits: string;
     peculiaritiesTitle: string;
     listPeculiarities: { description: string; icon: string }[];
-    descriptionDifferences: string;
-    callToAction: string;
+    callToActionTop: string;
+    callToActionBottom: string;
   };
 
   zaliznychniZapchastynyPage: {
@@ -148,7 +152,6 @@ export type Translations = {
     description: string;
     servicesTitle: string;
     listServices: { description: string }[];
-    descriptionBenefits: string;
     peculiaritiesTitle: string;
     listPeculiarities: { description: string; icon: string }[];
     question: string;

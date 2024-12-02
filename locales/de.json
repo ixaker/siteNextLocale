@@ -122,7 +122,8 @@
         "description": "Das Metallschleifen ist der letzte Schritt bei der Bearbeitung von Metallprodukten, der eine perfekt glatte Oberfläche ermöglicht. Dieser Prozess wird in der Regel nach Dreh- oder Fräsarbeiten durchgeführt, um Unvollkommenheiten zu beseitigen und eine hohe Präzision der gefertigten Teile zu gewährleisten."
       }
     ],
-    "callToAction": "Glätte und Präzision jeder Oberfläche. Bestellen Sie noch heute das Schleifen von Metall!"
+    "callToActionTop": "SmGlätte und Präzision jeder Oberfläche.",
+    "callToActionBottom": "Bestellen Sie noch heute das Schleifen von Metall!"
   },
   "termichnaObrobkaPage": {
     "title": "WÄRMEBEHANDLUNG",
@@ -227,7 +228,8 @@
         "description": "CNC-Bearbeitung. Im Prozess wird eine computergesteuerte numerische Steuerung eingesetzt, die Fehler durch menschliche Faktoren ausschließt."
       }
     ],
-    "callToAction": "Bestellen Sie hochpräzise CNC-Drehbearbeitung noch heute. Wir garantieren die perfekte Qualität jedes Teils!"
+    "callToActionTop": "Bestellen Sie hochpräzise CNC-Drehbearbeitung noch heute.",
+    "callToActionBottom": " Wir garantieren die perfekte Qualität jedes Teils!"
   },
   "porizkaNaVerstati": {
     "title": "Sägen auf einer Bandsäge: Effizienz und Präzision",
@@ -260,7 +262,9 @@
         "description": "Bandsägen-Schneiden gewährleistet Geschwindigkeit, Qualität und Präzision bei der Ausführung jedes Auftrags. Diese Lösung ist ideal sowohl für individuelle Projekte als auch für die Serienproduktion."
       }
     ],
-    "callToAction": "Precise metal cutting with no extra costs. Submit your request for our services today!"
+
+    "callToActionTop": "Präzises Schneiden von Metall ohne zusätzliche Kosten",
+    "callToActionBottom": "Senden Sie noch heute Ihre Anfrage für unsere Dienstleistungen!"
   },
   "indyvidualniZamovlennya": {
     "title": "Maßgeschneiderte Metallprodukte: Qualität und Pünktlichkeit",
@@ -352,7 +356,8 @@
         "icon": "/icons/listPeculiarities.png"
       }
     ],
-    "descriptionDifferences": "Schnelles und präzises Laserschneiden von Metall für jede Aufgabe. Lassen Sie noch heute eine Anfrage ein!"
+    "callToActionTop": "Schnelles und präzises Laserschneiden von Metall für jede Aufgabe.",
+    "callToActionBottom": "Lassen Sie noch heute eine Anfrage ein!"
   },
 
   "orderBenefits": {
@@ -415,7 +420,8 @@
         "icon": "/icons/listPeculiarities.png"
       }
     ],
-    "callToAction": "Hochwertiges Metallschweißen für Ihr Projekt. Bestellen Sie den Service jetzt!"
+    "callToActionTop": "Hochwertiges Metallschweißen für Ihr Projekt.",
+    "callToActionBottom": "Bestellen Sie den Service jetzt!"
   },
   "lyttyaMetaluPage": {
     "title": "METALLGUSS",
@@ -463,7 +469,8 @@
       }
     ],
 
-    "callToAction": "Bestellen Sie zuverlässiges Metallguss nach Ihren Zeichnungen. Wir werden die benötigten Produkte herstellen!"
+    "callToActionTop": "Bestellen Sie zuverlässiges Metallguss nach Ihren Zeichnungen.",
+    "callToActionBottom": "Wir werden die benötigten Produkte herstellen!"
   },
   "zaliznychniZapchastynyPage": {
     "title": "Herstellung von Komponenten für die Eisenbahninfrastruktur",
@@ -483,7 +490,6 @@
         "description": "Schnelle Durchlaufzeiten: Wir liefern schnell, ohne die Qualität zu beeinträchtigen."
       }
     ],
-    "descriptionBenefits": "Kontaktieren Sie uns und wir liefern Eisenbahnteile, die vollständig Ihren Anforderungen entsprechen!",
     "peculiaritiesTitle": "Welche Teile stellen wir her?",
     "listPeculiarities": [
       {
