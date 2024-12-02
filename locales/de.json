@@ -429,24 +429,41 @@
         "description": "Investment casting: Ensures the production of complex castings with high dimensional accuracy and weight precision. Suitable for working with any casting alloys."
       }
     ],
+    "listServicesContinuation": [
+      {
+        "description": "- Foam-Gießen - Eine ideale Option für die Herstellung komplexer und maßgeschneiderter Modelle mit expandiertem Polystyrol."
+      },
+      {
+        "description": "- Feinguss (H.T.S.) - Diese Methode minimiert das Volumen der Nachbearbeitung durch die Präzision und Übereinstimmung der Teile mit den Anforderungen an die Rauheit."
+      },
+      {
+        "description": "- Sandguss - Eine wirtschaftliche Methode, die sich für komplexe Teile aus verschiedenen Legierungen eignet. Dank der niedrigen Kosten trägt sie zur Senkung des Endpreises der Produkte bei."
+      },
+      {
+        "description": "- Hohlguss - Ein Verfahren, bei dem geschmolzenes Metall in wiederverwendbare Stahlformen gegossen wird, was eine hohe Dichte und Qualität der Produkte ermöglicht."
+      }
+    ],
+    "peculiaritiesTitle": "Besonderheiten des Metallgussprozesses",
     "listPeculiarities": [
       {
-        "description": "Casting with foam models: An ideal solution for creating complex and custom designs using expanded polystyrene.",
+        "description": "Hohe Präzision bei der Formung von Bauteilen. Gießen ermöglicht die Herstellung von Produkten mit komplexer Geometrie und hoher Detailgenauigkeit. Dies ist die ideale Lösung für die Massenproduktion identischer Teile.",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Casting using no-bake sand molds: This method minimizes the amount of post-processing needed due to the precision and compliance of details with roughness requirements.",
+        "description": "Vielfalt an Materialien. Der Prozess eignet sich für die Arbeit mit einer breiten Palette von Metallen und Legierungen wie Gusseisen, Aluminium, Stahl, Kupfer usw.",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Sand casting: A cost-effective method suitable for complex parts made from various alloys. Its low cost reduces the final price of the products.",
+        "description": "Minimierung des Materialabfalls. Der Einsatz moderner Gießtechnologien gewährleistet eine hohe Prozesseffizienz und reduziert Abfälle.",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Permanent mold casting: This method involves pouring molten metal into reusable steel molds, ensuring high density and quality of the products.",
+        "description": "Flexibilität in der Produktion. Das Gießverfahren eignet sich sowohl für Kleinserien- als auch für Großserienproduktion und ermöglicht die Herstellung von großen sowie kleinen Teilen.",
         "icon": "/icons/listPeculiarities.png"
       }
-    ]
+    ],
+
+    "callToAction": "Bestellen Sie zuverlässiges Metallguss nach Ihren Zeichnungen. Wir werden die benötigten Produkte herstellen!"
   },
   "zaliznychniZapchastynyPage": {
     "title": "Herstellung von Komponenten für die Eisenbahninfrastruktur",

@@ -106,10 +106,11 @@ export type Translations = {
     description: string;
     servicesTitle: string;
     listServices: { description: string }[];
+    listServicesContinuation: { description: string }[];
     descriptionBenefits: string;
     peculiaritiesTitle: string;
     listPeculiarities: { description: string; icon: string }[];
-    descriptionDifferences: string;
+    callToAction: string;
   };
 
   indyvidualniZamovlennya: {

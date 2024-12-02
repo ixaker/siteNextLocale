@@ -11,6 +11,7 @@ import ListBenefits from '@/components/ui/list-benefits/ListBenefits';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
 import FeatureBlock from '@/components/ui/feature-block/FeatureBlock';
 import DynamicHead from '@/components/shared/DynamicHead';
+import Paragraph from '@/components/ui/typography/Paragraph';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.lyttyaMetaluPage || langUk.lyttyaMetaluPage;
@@ -22,6 +23,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const listServices = translationsPage.listServices;
   const orderBenefits = translations.orderBenefits.listOrderBenefits;
   const listPeculiarities = translationsPage.listPeculiarities;
+  const listServicesContinuation = translationsPage.listServicesContinuation;
 
   const [fullUrl, setFullUrl] = useState('');
   useEffect(() => {
@@ -58,8 +60,14 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         imgSrc="/assets/lyttya-metalu2.jpg"
         list={listServices}
       />
-      <FeatureBlock listPeculiarities={listPeculiarities} />
+      <div className="px-4">
+        <FeatureBlock listPeculiarities={listServicesContinuation} />
+      </div>
       <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
+      <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />
+      <div className="px-4 pt-[30px]">
+        <Paragraph text={translationsPage.callToAction} alignment="center" />
+      </div>
       <CalculationSection translations={translations} lang={lang} />
     </div>
   );
