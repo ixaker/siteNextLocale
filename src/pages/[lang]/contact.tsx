@@ -39,7 +39,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
     return `rgba(${r}, ${g}, ${b}, ${alpha})`;
   }
 
-  const bgColorWithTransparency: string = hexToRgba(bgColor, 0.5);
+  const bgColorWithTransparency: string = hexToRgba(bgColor, 0.9);
 
   return (
     <>
