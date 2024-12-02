@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
@@ -5,10 +7,14 @@ import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Typography from '@mui/material/Typography';
 import CustomButton from './CustomButton';
-import { useTheme } from '@mui/material';
+import { Button, styled, useTheme } from '@mui/material';
 import langUk from '../../../../locales/uk.json';
 import { PageProps } from '@/context/withStaticPathsAndProps';
 import { darkTheme, lightTheme } from '@/theme';
+import ClearIcon from '@mui/icons-material/Clear';
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
+import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 
 const style = {
   position: 'absolute',
@@ -30,13 +36,10 @@ interface ButtonSubmitDrawingProps {
 
 const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations, className, lang }) => {
   const theme = useTheme();
-
   const [open, setOpen] = React.useState(false);
   const [fileList, setFileList] = React.useState<File[]>([]);
   const [statusMessage, setStatusMessage] = React.useState<string>('');
-
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const [drag, setDrag] = React.useState(false);
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const secondaryColor = currentTheme.palette.secondary.main;
@@ -45,9 +48,12 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
   const translationsPage = translations?.modalInfo || langUk.modalInfo;
   const [numberPhone, setNumberPhone] = React.useState('');
 
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   React.useEffect(() => {
-    setNumberPhone(translationsPage.numberPhone);
-  }, [lang]);
+    setDrag(false);
+  }, [fileList]);
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files;
@@ -58,10 +64,15 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
       console.error('No files selected or input is invalid.');
     }
   };
+  const dragLeaveHandler = (event: React.DragEvent<HTMLDivElement>) => {
+    event.preventDefault();
+    setDrag(false);
+  };
 
   const handleDragOver = (event: React.DragEvent<HTMLDivElement>) => {
     event.preventDefault();
     event.stopPropagation();
+    setDrag(true);
   };
 
   const handleDrop = (event: React.DragEvent<HTMLDivElement>) => {
@@ -115,8 +126,13 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
     }
   };
 
-  console.log('statusMessage', statusMessage);
-
+  function bytesToMegabytes(bytes: number) {
+    if (typeof bytes !== 'number' || bytes < 0) {
+      throw new Error('Input must be a non-negative number');
+    }
+    const megabytes = Math.round((bytes / (1024 * 1024)) * 100) / 100;
+    return parseFloat(megabytes.toPrecision(3));
+  }
   return (
     <div>
       <CustomButton className={className} variant="send-btn" onClick={handleOpen}>
@@ -137,65 +153,95 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
       >
         <Fade in={open}>
           <Box sx={style}>
-            <Typography id="transition-modal-description" sx={{ mt: 2, textAlign: 'center' }}>
+            <Typography id="transition-modal-description" sx={{ textAlign: 'center' }}>
               {translationsPage.title}
             </Typography>
 
-            <Box
-              sx={{
-                border: '2px dashed #ccc',
-                padding: '20px',
+            <div
+              style={{
+                border: drag ? '2px dashed blue' : '2px dashed #ccc',
+                padding: '10px',
                 marginTop: '20px',
                 textAlign: 'center',
               }}
               onDragOver={handleDragOver}
               onDrop={handleDrop}
+              onDragLeave={(e) => dragLeaveHandler(e)}
             >
-              <Typography variant="body2" color="textSecondary">
-                {translationsPage.dropFile}
-              </Typography>
-              <input
-                type="file"
-                id="file-upload"
-                style={{ display: 'none' }}
-                multiple
-                onChange={handleFileChange}
-              />
-              <CustomButton
-                className="mt-5 border p-2 hover:border-orange-500 hover:text-orange-500 transition-all duration-300 ease-in-out"
-                onClick={() => document.getElementById('file-upload')?.click()}
-              >
-                {translationsPage.descriptionBtn}
-              </CustomButton>
-            </Box>
+              {drag ? (
+                <div className="relative z-10 h-[106px] flex items-center justify-center">
+                  <CloudDownloadIcon className="size-[86px] absolute z-[0]" />
+                </div>
+              ) : (
+                <>
+                  <Typography variant="body2" color="textSecondary">
+                    {translationsPage.dropFile}
+                  </Typography>
+                  <input
+                    type="file"
+                    id="file-upload"
+                    style={{ display: 'none' }}
+                    multiple
+                    onChange={handleFileChange}
+                  />
+                  <Button
+                    component="label"
+                    role={undefined}
+                    variant="contained"
+                    tabIndex={-1}
+                    startIcon={<CloudUploadIcon />}
+                    className="bg-[#c43c1e]  hover:bg-[#9e2a1f] text-[#fff] transition-all duration-300 ease-in-out mt-4"
+                    onClick={() => document.getElementById('file-upload')?.click()}
+                  >
+                    {translationsPage.descriptionBtn}
+                  </Button>
+
+                  <Typography id="transition-modal-description" sx={{ mt: 2, textAlign: 'center' }}>
+                    {translationsPage.limitation}
+                  </Typography>
+                </>
+              )}
+            </div>
 
             {fileList.length > 0 && (
               <Box sx={{ mt: 2 }}>
                 {fileList.map((file, index) => (
-                  <Box key={index} sx={{ display: 'flex', justifyContent: 'space-between', mt: 1 }}>
-                    <Typography variant="body2">{file.name}</Typography>
-                    <CustomButton
-                      className="border p-1 text-sm hover:border-red-500 hover:text-red-500 transition-all duration-300 ease-in-out"
-                      onClick={() => handleFileRemove(index)}
-                    >
-                      {translationsPage.removeBtn}
-                    </CustomButton>
+                  <Box
+                    key={index}
+                    sx={{
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      mt: 1,
+                      border: '1 px solid',
+                      alignItems: 'center',
+                    }}
+                  >
+                    <div className="flex items-center gap-2 w-full justify-between">
+                      <InsertDriveFileIcon />
+                      <Typography
+                        className="text-nowrap overflow-hidden w-1/2 text-ellipsis "
+                        variant="body2"
+                      >
+                        {file.name}
+                      </Typography>
+                      <Typography variant="body2">{bytesToMegabytes(file.size)} Mb</Typography>
+                      <CustomButton
+                        className="border p-1 text-sm hover:border-red-500 hover:text-red-500 transition-all duration-300 ease-in-out"
+                        onClick={() => handleFileRemove(index)}
+                      >
+                        <ClearIcon />
+                      </CustomButton>
+                    </div>
                   </Box>
                 ))}
               </Box>
             )}
-
-            <Typography id="transition-modal-description" sx={{ mt: 2, textAlign: 'center' }}>
-              {translationsPage.limitation}
-            </Typography>
             <input
               type="number"
               value={numberPhone}
               onChange={(e) => setNumberPhone(e.target.value)}
               style={{
-                color: secondaryColor,
-                backgroundColor: bgColor,
-                borderColor: secondaryColor,
+                backgroundColor: 'white',
                 borderRadius: '5px',
               }}
               className="w-full mt-4 text-[16px] p-1.5 border"
@@ -204,14 +250,17 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
 
             <Box sx={{ marginTop: '20px', textAlign: 'center' }}>
               {numberPhone.length > 9 && fileList.length > 0 ? (
-                <CustomButton
-                  className="border p-2 w-full hover:border-orange-500 hover:text-orange-500 transition-all duration-300 ease-in-out"
+                <Button
                   onClick={handleFileSubmit}
+                  className="bg-[#c43c1e]  hover:bg-[#9e2a1f] hover:text-[#fff] transition-all duration-300 ease-in-out w-full"
+                  variant="outlined"
                 >
                   {translationsPage.submitBtn}
-                </CustomButton>
+                </Button>
               ) : (
-                translationsPage.fieldCheck
+                <Button className="w-full bg-[silver]" onClick={handleFileSubmit} variant="outlined" disabled>
+                  {translationsPage.submitBtn}
+                </Button>
               )}
             </Box>
 
