@@ -296,7 +296,9 @@
         "description": "Agrarsektor: Ersatzteile für Maschinen, Bauteile für Geräte."
       }
     ],
-    "descriptionBenefits": "Dank unserer modernen Ausrüstung und unseres erfahrenen Teams bewältigen wir die anspruchsvollsten Aufgaben im Bereich der Metallverarbeitung."
+    "descriptionBenefits": "Dank unserer modernen Ausrüstung und unseres erfahrenen Teams bewältigen wir die anspruchsvollsten Aufgaben im Bereich der Metallverarbeitung.",
+    "question": "Benötigen Sie eine maßgeschneiderte Lösung?",
+    "answer": "Wir fertigen Teile nach Ihren Anforderungen. Kontaktieren Sie uns!"
   },
   "lazernaRizkaPage": {
     "title": "Laserschneiden von Metall",

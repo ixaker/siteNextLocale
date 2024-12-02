@@ -118,6 +118,8 @@ export type Translations = {
     servicesTitle: string;
     listServices: { description: string }[];
     descriptionBenefits: string;
+    question: string;
+    answer: string;
   };
 
   orderBenefits: {

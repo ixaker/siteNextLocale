@@ -50,12 +50,7 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
             </h1>
           </div>
           <Paragraph text={translationsPage.description} style="text-center sm:text-start pt-5" />
-          <ButtonSubmitDrawing
-            lang={lang}
-            text={translationsPage.btnSend}
-            translations={translations}
-            className="mt-10"
-          />
+          <ButtonSubmitDrawing lang={lang} translations={translations} className="mt-10" />
         </div>
         {/* </div> */}
       </BackCover>
@@ -88,7 +83,7 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
         </div>
       </section>
       <section className="pb-[50px]">
-        <CalculationSection textBtn={translations.btnSend} />
+        <CalculationSection lang={lang} translations={translations} />
       </section>
     </div>
   );

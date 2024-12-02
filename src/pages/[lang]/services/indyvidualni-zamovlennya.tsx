@@ -64,6 +64,10 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         <Paragraph text={translationsPage.descriptionBenefits} alignment="center" />
         <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />
       </div>
+      <div className="px-4 pt-[30px]">
+        <Paragraph text={translationsPage.question} alignment="center" />
+        <Paragraph text={translationsPage.answer} alignment="center" />
+      </div>
       <CalculationSection lang={lang} translations={translations} />
     </section>
   );

@@ -303,7 +303,9 @@
         "description": "Agricultural sector: Spare parts for machinery, equipment components."
       }
     ],
-    "descriptionBenefits": "Thanks to our modern equipment and experienced team, we tackle the most challenging tasks in the field of metalworking."
+    "descriptionBenefits": "Thanks to our modern equipment and experienced team, we tackle the most challenging tasks in the field of metalworking.",
+    "question": "Need a custom solution?",
+    "answer": "We will manufacture parts according to your requirements. Contact us!"
   },
   "lazernaRizkaPage": {
     "title": "Laser Metal Cutting",
