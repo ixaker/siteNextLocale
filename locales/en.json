@@ -586,7 +586,8 @@
     "submitBtn": "Submit",
     "removeBtn": "Remove",
     "sendingBtn ": "Sending...",
-    "fieldCheck": "Upload the file and enter your mobile phone number"
+    "fieldCheck": "Upload the file and enter your mobile phone number",
+    "dropFile": "Drag or select file"
   },
 
   "footer": {

@@ -184,6 +184,7 @@ export type Translations = {
     removeBtn: string;
     sendingBtn: string;
     fieldCheck: string;
+    dropFile: string;
   };
 
   welcome: string;

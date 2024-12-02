@@ -577,7 +577,8 @@
     "submitBtn": "Einreichen",
     "removeBtn": "Entfernen",
     "sendingBtn": "Senden...",
-    "fieldCheck": "Laden Sie die Datei hoch und geben Sie Ihre Mobiltelefonnummer ein"
+    "fieldCheck": "Laden Sie die Datei hoch und geben Sie Ihre Mobiltelefonnummer ein",
+    "dropFile": "Eine Datei ziehen oder auswählen"
   },
 
   "footer": {

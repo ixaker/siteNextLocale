@@ -32,8 +32,7 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
   const theme = useTheme();
 
   const [open, setOpen] = React.useState(false);
-  const [file, setFile] = React.useState<File | null>(null);
-  const [fileListm, setFileList] = React.useState<string[]>(['']);
+  const [fileList, setFileList] = React.useState<File[]>([]);
   const [statusMessage, setStatusMessage] = React.useState<string>('');
 
   const handleOpen = () => setOpen(true);
@@ -51,8 +50,12 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
   }, [lang]);
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    if (event.target.files) {
-      setFile(event.target.files[0]);
+    const files = event.target.files;
+
+    if (files) {
+      setFileList((prevFiles) => [...prevFiles, ...Array.from(files)]);
+    } else {
+      console.error('No files selected or input is invalid.');
     }
   };
 
@@ -65,27 +68,29 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
     event.preventDefault();
     event.stopPropagation();
     if (event.dataTransfer.files.length > 0) {
-      setFile(event.dataTransfer.files[0]);
+      setFileList((prevFiles) => [...prevFiles, ...Array.from(event.dataTransfer.files)]);
     }
   };
 
-  const handleFileRemove = () => {
-    setNumberPhone('');
-    setFile(null);
+  const handleFileRemove = (index: number) => {
+    setFileList((prevFiles) => prevFiles.filter((_, i) => i !== index));
   };
 
   const handleFileSubmit = async () => {
-    if (!file) {
-      setStatusMessage('No file selected.');
+    if (fileList.length === 0) {
+      setStatusMessage('No files selected.');
       return;
     }
 
     const formData = new FormData();
     formData.append('token', '8355f5423b072c553809f09be3b7ca5fb0f7555c');
     formData.append('phone', numberPhone);
-    formData.append('attachment', file);
 
-    setStatusMessage('Sending file...');
+    fileList.forEach((file, index) => {
+      formData.append(`attachment[${index}]`, file);
+    });
+
+    setStatusMessage('Sending files...');
 
     try {
       const response = await fetch('/mail.php', {
@@ -96,7 +101,8 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
       const result = await response.json();
 
       if (response.ok && result.success) {
-        setStatusMessage('File sent successfully!');
+        setStatusMessage('Files sent successfully!');
+        setFileList([]);
       } else {
         setStatusMessage(`Error: ${result.error || 'Unknown error'}`);
       }
@@ -108,6 +114,8 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
       }
     }
   };
+
+  console.log('statusMessage', statusMessage);
 
   return (
     <div>
@@ -143,16 +151,16 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
               onDragOver={handleDragOver}
               onDrop={handleDrop}
             >
-              {file ? (
-                <Typography variant="body2" color="textSecondary">
-                  {translationsPage.fileName} {file.name}
-                </Typography>
-              ) : (
-                <Typography variant="body2" color="textSecondary">
-                  {translationsPage.noFile}
-                </Typography>
-              )}
-              <input type="file" id="file-upload" style={{ display: 'none' }} onChange={handleFileChange} />
+              <Typography variant="body2" color="textSecondary">
+                {translationsPage.dropFile}
+              </Typography>
+              <input
+                type="file"
+                id="file-upload"
+                style={{ display: 'none' }}
+                multiple
+                onChange={handleFileChange}
+              />
               <CustomButton
                 className="mt-5 border p-2 hover:border-orange-500 hover:text-orange-500 transition-all duration-300 ease-in-out"
                 onClick={() => document.getElementById('file-upload')?.click()}
@@ -160,6 +168,22 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
                 {translationsPage.descriptionBtn}
               </CustomButton>
             </Box>
+
+            {fileList.length > 0 && (
+              <Box sx={{ mt: 2 }}>
+                {fileList.map((file, index) => (
+                  <Box key={index} sx={{ display: 'flex', justifyContent: 'space-between', mt: 1 }}>
+                    <Typography variant="body2">{file.name}</Typography>
+                    <CustomButton
+                      className="border p-1 text-sm hover:border-red-500 hover:text-red-500 transition-all duration-300 ease-in-out"
+                      onClick={() => handleFileRemove(index)}
+                    >
+                      {translationsPage.removeBtn}
+                    </CustomButton>
+                  </Box>
+                ))}
+              </Box>
+            )}
 
             <Typography id="transition-modal-description" sx={{ mt: 2, textAlign: 'center' }}>
               {translationsPage.limitation}
@@ -179,23 +203,15 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
             />
 
             <Box sx={{ marginTop: '20px', textAlign: 'center' }}>
-              {numberPhone.length > 9 && file ? (
-                <div>
-                  <CustomButton
-                    className="border p-2 w-full  hover:border-orange-500 hover:text-orange-500 transition-all duration-300 ease-in-out"
-                    onClick={handleFileSubmit}
-                  >
-                    {translationsPage.submitBtn}
-                  </CustomButton>
-                  <CustomButton
-                    className="border p-2 w-full  hover:border-orange-500 hover:text-orange-500 mt-5 transition-all duration-300 ease-in-out"
-                    onClick={handleFileRemove}
-                  >
-                    {translationsPage.removeBtn}
-                  </CustomButton>
-                </div>
+              {numberPhone.length > 9 && fileList.length > 0 ? (
+                <CustomButton
+                  className="border p-2 w-full hover:border-orange-500 hover:text-orange-500 transition-all duration-300 ease-in-out"
+                  onClick={handleFileSubmit}
+                >
+                  {translationsPage.submitBtn}
+                </CustomButton>
               ) : (
-                'Додайте файл та вкажіть мобільний номер телефону'
+                translationsPage.fieldCheck
               )}
             </Box>
 
