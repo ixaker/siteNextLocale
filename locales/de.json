@@ -49,7 +49,7 @@
     "address": "Adresse",
     "descriptionAddress": "Yakhnenkivska-Straße 2, Dnipro, Oblast Dnipropetrowsk, Postleitzahl: 49025",
     "email": "E-Mail",
-    "descriptionEmail": "AK.Koshubskiy@gmail.com",
+    "descriptionEmail": "info@qpart.com.ua",
     "phone": "Telefon",
     "descriptionPhone": "+380989950760"
   },
@@ -122,42 +122,43 @@
         "description": "Das Metallschleifen ist der letzte Schritt bei der Bearbeitung von Metallprodukten, der eine perfekt glatte Oberfläche ermöglicht. Dieser Prozess wird in der Regel nach Dreh- oder Fräsarbeiten durchgeführt, um Unvollkommenheiten zu beseitigen und eine hohe Präzision der gefertigten Teile zu gewährleisten."
       }
     ],
-    "question": "Warum ist Metallschleifen notwendig?",
-    "answer": "Das Metallschleifen sorgt für eine perfekt glatte Oberfläche, beseitigt Defekte und Unebenheiten, erhöht die Präzision der Teile und verleiht ihnen eine ästhetische Anziehungskraft. Es ist ein entscheidender Schritt in der Herstellung von Metallprodukten."
+    "callToAction": "Glätte und Präzision jeder Oberfläche. Bestellen Sie noch heute das Schleifen von Metall!"
   },
   "termichnaObrobkaPage": {
     "title": "WÄRMEBEHANDLUNG",
     "description": "Wärmebehandlung von Metall durch QPart: Härten, Glühen und Anlassen",
-    "peculiaritiesTitle": "Unsere Hauptdienstleistungen:",
+    "peculiaritiesTitle": "Von Härten bis zum Glühen - diese Technologien gewährleisten:",
     "listPeculiarities": [
       {
-        "description": "Metallhärtung.",
+        "description": "Erhöhung der Festigkeit und Widerstandsfähigkeit gegen mechanische Belastungen;",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Glühen von Stahl und anderen Metallen – Dieser Prozess umfasst langsames Abkühlen nach dem Erhitzen, was die Härte reduziert, innere Spannungen beseitigt und die Metallstruktur verbessert.",
+        "description": "Verbesserung der Korrosionsbeständigkeit;",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Metallanlassen – Der letzte Schritt der Wärmebehandlung, der ein Gleichgewicht zwischen Härte und Flexibilität sicherstellt und entscheidend für die Verbesserung der Betriebseigenschaften ist.",
+        "description": "Beständigkeit gegenüber hohen Temperaturen;",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Flexibilität und Reduzierung von inneren Spannungen in der Metallstruktur.",
         "icon": "/icons/listPeculiarities.png"
       }
     ],
-    "servicesTitle": "Von der Härtung bis zum Glühen bieten diese Technologien:",
+    "servicesTitle": "Unsere Hauptleistungen:",
     "listServices": [
       {
-        "description": "Erhöhte Festigkeit und Widerstandsfähigkeit gegen mechanische Belastungen;"
+        "description": "Härtung von Metall."
       },
       {
-        "description": "Verbesserte Korrosionsbeständigkeit;"
+        "description": "Glühen von Stahl und anderen Metallen - Dieser Prozess beinhaltet ein langsames Abkühlen nach dem Erhitzen, wodurch die Härte reduziert, innere Spannungen beseitigt und die Metallstruktur verbessert wird."
       },
       {
-        "description": "Fähigkeit, hohen Temperaturen standzuhalten;"
-      },
-      {
-        "description": "Flexibilität und Reduzierung innerer Spannungen in der Metallstruktur."
+        "description": "Anlassen von Metall - Der abschließende Schritt der Wärmebehandlung, der ein Gleichgewicht zwischen Härte und Flexibilität schafft und entscheidend für die Verbesserung der Betriebseigenschaften ist."
       }
-    ]
+    ],
+    "callToAction": "Optimieren Sie die Festigkeit und Langlebigkeit Ihrer Teile. Bestellen Sie die Wärmebehandlung bei uns!"
   },
   "frezerniRoboty": {
     "title": "CNC-Fräsen von QPart: Präzision, Qualität, Professionalität",
@@ -387,11 +388,31 @@
       {
         "description": "Schmiedeschweißen – eine traditionelle Methode, die für künstlerische Arbeiten verwendet wird."
       }
-    ]
+    ],
+    "peculiaritiesTitle": "Besonderheiten unserer Metallbearbeitung:",
+    "listPeculiarities": [
+      {
+        "description": "Professioneller Ansatz: Schweißer mit Erfahrung in der Arbeit mit verschiedenen Metallarten.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Technologische Fortschritte: Einsatz moderner Methoden wie MIG-, TIG- und manuelles Lichtbogenschweißen.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Präzision: Minimierung von Nähten und Metallverformungen.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Materialvielfalt: Schweißen von Eisen-, Nichteisenmetallen, Edelstahl und Aluminium.",
+        "icon": "/icons/listPeculiarities.png"
+      }
+    ],
+    "callToAction": "Hochwertiges Metallschweißen für Ihr Projekt. Bestellen Sie den Service jetzt!"
   },
   "lyttyaMetaluPage": {
     "title": "METALLGUSS",
-    "description": "QPart ist auf Metallguss spezialisiert und übernimmt Aufträge von der Herstellung einzelner Teile bis hin zur Serienproduktion mit anschließender mechanischer Bearbeitung.",
+    "description": "QPart ist auf Metallguss spezialisiert und übernimmt Aufträge von der Herstellung einzelner Teile bis hin zur Serienproduktion mit anschließender mechanischer Bearbeitung. Wir gewährleisten Präzision, Qualität und Langlebigkeit jedes Produkts durch den Einsatz moderner Technologien und hochwertiger Materialien.",
     "servicesTitle": "Unsere Dienstleistungen im Bereich Metallguss:",
     "listServices": [
       {
@@ -474,8 +495,8 @@
         "icon": "/icons/listPeculiarities.png"
       }
     ],
-    "question": "Warum sollten Sie uns wählen?",
-    "answer": "QPart arbeitet seit vielen Jahren mit Unternehmen der Eisenbahnbranche zusammen und bietet optimale Lösungen zur Steigerung der Effizienz und Sicherheit ihrer Aktivitäten."
+    "question": "Brauchen Sie Ersatzteile für die Eisenbahn?",
+    "answer": "Wir fertigen sie nach Ihren Vorgaben und unter Berücksichtigung aller Anforderungen!"
   },
   "zapchastynyDlyaSilhosptekhnikyPage": {
     "title": "Produktion von Ersatzteilen für Landmaschinen",
@@ -483,10 +504,16 @@
     "servicesTitle": "Unser Sortiment umfasst:",
     "listServices": [
       {
-        "description": "Teile für Bodenbearbeitungsmaschinen: Pflüge, Kultivatoren, Eggen, Sämaschinen. Wir stellen Komponenten her, die die optimale Leistung dieser Maschinen sicherstellen, darunter Scheiben, Scharen, Lager und Wellen."
+        "description": "Moderne Ausstattung. Der Einsatz von CNC-Maschinen gewährleistet eine hohe Fertigungsgenauigkeit."
       },
       {
-        "description": "Ersatzteile für Getreideerntemaschinen: Dreschtrommeln, Riemen, Zahnräder, Messersegmente, Spannvorrichtungen, Rollen. Unsere Teile helfen den Maschinen, während der Spitzenbelastung in der Erntesaison effizient zu arbeiten."
+        "description": "Qualitätskontrolle. Alle Teile werden auf die Einhaltung internationaler Standards überprüft."
+      },
+      {
+        "description": "Flexibilität bei der Auftragsausführung. Wir arbeiten sowohl mit großen Serien als auch mit Einzelanfertigungen."
+      },
+      {
+        "description": "Schnelle Lieferzeiten. Wir gewährleisten eine zügige Fertigung ohne Qualitätsverlust."
       }
     ],
     "listPeculiarities": [
@@ -503,8 +530,8 @@
         "icon": "/icons/listPeculiarities.png"
       }
     ],
-    "question": "Warum wählen Sie uns?",
-    "answer": "Wir arbeiten daran, dass Ihre Landmaschinen stets in einwandfreiem Zustand bleiben. Bestellen Sie Ersatzteile bei uns, und wir garantieren Ihnen hochwertige Produkte, erschwingliche Preise und professionellen Service."
+    "question": "Suchen Sie Ersatzteile für landwirtschaftliche Maschinen?",
+    "answer": "Bestellen Sie bei uns, und wir fertigen sie speziell für Ihre Maschinen an!"
   },
 
   "modalInfo": {

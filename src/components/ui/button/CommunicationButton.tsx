@@ -17,7 +17,7 @@ const CommunicationButton: React.FC<PropsCommunicationButton> = ({ email, phone 
 
   return (
     <div className="flex flex-col gap-3 fixed bottom-12 right-4 z-[99]">
-      <a href="mailto:pavelgluskov264@gmail.com">
+      <a href="mailto:info@qpart.com.ua">
         <CustomButton
           ariaLabel="Send Email"
           style={{
@@ -29,7 +29,7 @@ const CommunicationButton: React.FC<PropsCommunicationButton> = ({ email, phone 
           {email}
         </CustomButton>
       </a>
-      <a href="tel:+380505917397">
+      <a href="tel:+380989950760">
         <CustomButton
           ariaLabel="Phone"
           style={{

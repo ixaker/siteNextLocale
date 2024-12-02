@@ -82,11 +82,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
                   </div>
                 </li>
                 <li className="flex gap-[30px] items-center">
-                  <a
-                    target="_blank"
-                    href="mailto:AK.Koshubskiy@gmail.com"
-                    aria-label={translationsPage.email}
-                  >
+                  <a target="_blank" href="mailto:info@qpart.com.ua" aria-label={translationsPage.email}>
                     <CustomButton
                       ariaLabel={translationsPage.email}
                       style={{ backgroundColor: primaryColor, boxShadow: `0 10px 30px ${secondaryColor}` }}

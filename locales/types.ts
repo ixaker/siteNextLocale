@@ -68,8 +68,7 @@ export type Translations = {
     listPeculiarities: { description: string; icon: string }[];
     servicesTitle: string;
     listServices: { description: string }[];
-    question: string;
-    answer: string;
+    callToAction: string;
   };
 
   termichnaObrobkaPage: {
@@ -79,6 +78,7 @@ export type Translations = {
     listPeculiarities: { description: string; icon: string }[];
     servicesTitle: string;
     listServices: { description: string }[];
+    callToAction: string;
   };
 
   frezerniRoboty: {
@@ -134,6 +134,7 @@ export type Translations = {
     peculiaritiesTitle: string;
     listPeculiarities: { description: string; icon: string }[];
     descriptionDifferences: string;
+    callToAction: string;
   };
 
   zaliznychniZapchastynyPage: {

@@ -10,11 +10,14 @@ import ListBenefits from '@/components/ui/list-benefits/ListBenefits';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
 import DynamicHead from '@/components/shared/DynamicHead';
 import { useEffect, useState } from 'react';
+import FeatureBlock from '@/components/ui/feature-block/FeatureBlock';
+import Paragraph from '@/components/ui/typography/Paragraph';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.zvaryuvannyaMetaluPage || langUk.zvaryuvannyaMetaluPage;
   const theme = useTheme();
   const orderBenefits = translations.orderBenefits.listOrderBenefits;
+  const listPeculiarities = translationsPage.listPeculiarities;
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
@@ -56,6 +59,12 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         list={listServices}
       />
       <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
+      <div className="px-4">
+        <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />
+      </div>
+      <div className="px-4 pt-[30px]">
+        <Paragraph text={translationsPage.callToAction} alignment="center" />
+      </div>
       <CalculationSection translations={translations} lang={lang} />
     </div>
   );

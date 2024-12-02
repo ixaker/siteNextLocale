@@ -49,7 +49,7 @@
     "address": "Address",
     "descriptionAddress": "Yakhnenkivska Street 2, Dnipro, Dnipropetrovsk Region, index: 49025",
     "email": "Email",
-    "descriptionEmail": "AK.Koshubskiy@gmail.com",
+    "descriptionEmail": "info@qpart.com.ua",
     "phone": "Phone",
     "descriptionPhone": "+380989950760"
   },
@@ -127,42 +127,43 @@
         "description": "Metal grinding is the final stage of processing metal products, allowing for achieving a perfectly smooth surface. This procedure is typically performed after turning or milling operations to eliminate imperfections and ensure high precision of manufactured parts."
       }
     ],
-    "question": "Why is metal grinding necessary?",
-    "answer": "Metal grinding ensures a perfectly smooth surface, removes defects and irregularities, enhances the precision of parts, and makes them aesthetically appealing. It is a critical stage in the manufacturing of metal products."
+    "callToAction": "Smoothness and precision of every surface. Order metal grinding today!"
   },
   "termichnaObrobkaPage": {
     "title": "HEAT TREATMENT",
     "description": "Heat treatment of metal by QPart: quenching, annealing, and tempering.This is a key stage in production that significantly improves the quality and performance characteristics of materials.",
-    "peculiaritiesTitle": "Our Key Services:",
+    "peculiaritiesTitle": "From hardening to annealing, these technologies ensure:",
     "listPeculiarities": [
       {
-        "description": "Metal hardening.",
+        "description": "Enhancing strength and resistance to mechanical stress;",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Annealing of steel and other metals – This process involves slow cooling after heating, which reduces hardness, eliminates internal stresses, and improves the metal's structure.",
+        "description": "Improving corrosion resistance;",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Tempering metal – The final stage of heat treatment, ensuring a balance between hardness and flexibility, crucial for improving operational performance.",
+        "description": "Withstanding high-temperature exposure;",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Flexibility and reduction of internal stresses in the metal structure.",
         "icon": "/icons/listPeculiarities.png"
       }
     ],
-    "servicesTitle": "From quenching to annealing, these technologies provide:",
+    "servicesTitle": "Our main services:",
     "listServices": [
       {
-        "description": "Increased strength and resistance to mechanical stress;"
+        "description": "Metal hardening."
       },
       {
-        "description": "Improved corrosion resistance;"
+        "description": "Annealing of steel and other metals - This process involves slow cooling after heating, which reduces hardness, eliminates internal stresses, and improves the metal structure."
       },
       {
-        "description": "Ability to withstand high temperatures;"
-      },
-      {
-        "description": "Flexibility and reduction of internal stresses in the metal structure."
+        "description": "Metal tempering - The final stage of heat treatment, providing a balance between hardness and flexibility, crucial for improving operational performance."
       }
-    ]
+    ],
+    "callToAction": "Optimize the strength and durability of your parts. Order heat treatment from us!"
   },
   "frezerniRoboty": {
     "title": "CNC Milling by QPart: Precision, Quality, Professionalism",
@@ -394,11 +395,31 @@
       {
         "description": "Forge welding – a traditional method used for artistic creations."
       }
-    ]
+    ],
+    "peculiaritiesTitle": "Features of our metal welding:",
+    "listPeculiarities": [
+      {
+        "description": "Professional approach: Welders with experience working with various types of metals.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Technological advancement: Use of modern methods such as MIG, TIG, and manual arc welding.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Precision: Minimizing seams and metal deformations.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Material variety: Welding of ferrous, non-ferrous metals, stainless steel, and aluminum.",
+        "icon": "/icons/listPeculiarities.png"
+      }
+    ],
+    "callToAction": "High-quality metal welding for your project. Order the service now"
   },
   "lyttyaMetaluPage": {
     "title": "METAL CASTING",
-    "description": "QPart specializes in metal casting, handling orders from part manufacturing to serial production with subsequent machining.",
+    "description": "QPart specializes in metal casting, handling orders ranging from the production of individual parts to mass production with subsequent machining. We ensure precision, quality, and durability of each product by utilizing modern technologies and high-quality materials.",
     "servicesTitle": "Our metal casting services:",
     "listServices": [
       {
@@ -482,8 +503,8 @@
         "icon": "/icons/listPeculiarities.png"
       }
     ],
-    "question": "Why Choose Us?",
-    "answer": "QPart has been collaborating with railway industry enterprises for many years, offering optimal solutions to enhance the efficiency and safety of their operations."
+    "question": "Need railway spare parts?",
+    "answer": "We will manufacture them to your order, taking all requirements into account!"
   },
 
   "zapchastynyDlyaSilhosptekhnikyPage": {
@@ -492,10 +513,16 @@
     "servicesTitle": "Our range includes:",
     "listServices": [
       {
-        "description": "Parts for soil cultivation machinery: plows, cultivators, harrows, seeders. We produce components to maintain the optimal performance of this equipment, including discs, moldboards, bearings, and shafts."
+        "description": "Modern equipment. The use of CNC machines ensures high manufacturing precision."
       },
       {
-        "description": "Spare parts for grain harvesting equipment: threshing drums, belts, gears, knife segments, tensioners, rollers. Our parts help machinery work efficiently during peak loads in the harvest season."
+        "description": "Quality control. All parts are inspected for compliance with international standards."
+      },
+      {
+        "description": "Flexibility in order execution. We work with both large batches and single items."
+      },
+      {
+        "description": "Fast lead times. We provide prompt manufacturing without compromising quality."
       }
     ],
     "listPeculiarities": [
@@ -512,8 +539,8 @@
         "icon": "/icons/listPeculiarities.png"
       }
     ],
-    "question": "Why choose us?",
-    "answer": "We work to ensure that your agricultural machinery is always in excellent condition. Order spare parts from us, and we guarantee you high-quality products, affordable prices, and professional service."
+    "question": "Looking for spare parts for agricultural machinery?",
+    "answer": "Order from us, and we will manufacture them specifically for your machinery!"
   },
 
   "modalInfo": {
