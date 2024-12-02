@@ -19,12 +19,12 @@
   "cardData": [
     {
       "title": "ТОКАРНІ РОБОТИ З ЧПК",
-      "img": "/assets/cnc-turning-works.webp",
+      "img": "/assets/tokarni-roboty-chpk.png",
       "href": "services/tokarni-roboty-chpk/"
     },
     {
       "title": "ФРЕЗЕРНІ РОБОТИ З ЧПК",
-      "img": "/assets/cnc-milling-works.webp",
+      "img": "/assets/cnc-milling-works.png",
       "href": "services/frezerni-roboty/"
     },
     {
@@ -561,7 +561,8 @@
     "numberPhone": "+380",
     "submitBtn": "Надіслати",
     "removeBtn": "Видалити",
-    "sendingBtn": "Відправляється..."
+    "sendingBtn": "Відправляється...",
+    "fieldCheck": "Додайте файл та вкажіть мобільний номер телефону"
   },
 
   "footer": {

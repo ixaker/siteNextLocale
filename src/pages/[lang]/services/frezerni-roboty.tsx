@@ -38,7 +38,7 @@ const Page: React.FC<PageProps> = ({ ...restProps }) => {
         description={translationsPage.description}
         keywords={translationsPage.title}
         canonical={fullUrl}
-        imgOg="/assets/cnc-milling-works.webp"
+        imgOg="/assets/cnc-milling-works.png"
         lang={restProps.lang}
         localeOg={translations.locale}
       />
@@ -49,7 +49,7 @@ const Page: React.FC<PageProps> = ({ ...restProps }) => {
           lang={restProps.lang}
           title={translationsPage.title}
           description={translationsPage.description}
-          srcImg="/assets/cnc-milling-works.webp"
+          srcImg="/assets/cnc-milling-works.png"
           txtButton={translations.btnSend}
         />
       </BackCover>

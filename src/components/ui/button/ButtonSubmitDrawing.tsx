@@ -32,6 +32,8 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
   const [file, setFile] = React.useState<File | null>(null);
   const [statusMessage, setStatusMessage] = React.useState<string>('');
 
+  console.log('File', file);
+
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
@@ -62,6 +64,7 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
   };
 
   const handleFileRemove = () => {
+    setNumberPhone('');
     setFile(null);
   };
 
@@ -169,7 +172,7 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
 
             {/* File actions */}
             <Box sx={{ marginTop: '20px', textAlign: 'center' }}>
-              {file && (
+              {numberPhone.length > 8 && file ? (
                 <div>
                   <CustomButton
                     className="border p-2 w-full  hover:border-orange-500 hover:text-orange-500 transition-all duration-300 ease-in-out"
@@ -184,6 +187,8 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
                     {translationsPage.removeBtn}
                   </CustomButton>
                 </div>
+              ) : (
+                'Додайте файл та вкажіть мобільний номер телефону'
               )}
             </Box>
 

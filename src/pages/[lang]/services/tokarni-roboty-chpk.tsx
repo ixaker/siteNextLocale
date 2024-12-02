@@ -48,7 +48,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           translations={translations}
           title={translationsPage.title}
           description={translationsPage.description}
-          srcImg="/assets/tokarni-roboty-chpk.jpg"
+          srcImg="/assets/tokarni-roboty-chpk2.jpg"
           txtButton={translations.btnSend}
         />
       </BackCover>
@@ -57,7 +57,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         translations={translations}
         btnText={translations.btnSend}
         heading={translationsPage.servicesTitle}
-        imgSrc="/assets/tokarni-roboty-chpk2.jpg"
+        imgSrc="/assets/tokarni-roboty-chpk.jpg"
         list={listServices}
       />
       <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />

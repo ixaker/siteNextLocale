@@ -19,12 +19,12 @@
   "cardData": [
     {
       "title": "CNC-DREHARBEITEN",
-      "img": "/assets/cnc-turning-works.webp",
+      "img": "/assets/tokarni-roboty-chpk.png",
       "href": "services/tokarni-roboty-chpu/"
     },
     {
       "title": "CNC-FRÄSARBEITEN",
-      "img": "/assets/cnc-milling-works.webp",
+      "img": "/assets/cnc-milling-works.png",
       "href": "services/frezerni-roboty/"
     },
     {
@@ -576,7 +576,8 @@
     "numberPhone": "+49",
     "submitBtn": "Einreichen",
     "removeBtn": "Entfernen",
-    "sendingBtn": "Senden..."
+    "sendingBtn": "Senden...",
+    "fieldCheck": "Laden Sie die Datei hoch und geben Sie Ihre Mobiltelefonnummer ein"
   },
 
   "footer": {

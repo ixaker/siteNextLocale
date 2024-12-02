@@ -31,7 +31,7 @@ const ServiceBlock: React.FC<ServiceBlock> = ({ heading, list, imgSrc, translati
             src={imgSrc}
             width={100}
             height={100}
-            className="w-full h-auto object-cover shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)] rounded-[10px] md:w-auto md:max-w-[400px] xl:w-auto xl:h-auto"
+            className="w-screen h-[250px] object-cover shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)] rounded-[10px] md:max-w-[400px] md:w-[450px] md:h-[300px]"
           />
           <ButtonSubmitDrawing
             lang={lang}

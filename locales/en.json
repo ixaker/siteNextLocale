@@ -19,12 +19,12 @@
   "cardData": [
     {
       "title": "CNC TURNING WORKS",
-      "img": "/assets/cnc-turning-works.webp",
+      "img": "/assets/tokarni-roboty-chpk.png",
       "href": "services/tokarni-roboty-chpu/"
     },
     {
       "title": "CNC MILLING WORKS",
-      "img": "/assets/cnc-milling-works.webp",
+      "img": "/assets/cnc-milling-works.png",
       "href": "services/frezerni-roboty/"
     },
     {
@@ -585,7 +585,8 @@
     "numberPhone": "+",
     "submitBtn": "Submit",
     "removeBtn": "Remove",
-    "sendingBtn ": "Sending..."
+    "sendingBtn ": "Sending...",
+    "fieldCheck": "Upload the file and enter your mobile phone number"
   },
 
   "footer": {

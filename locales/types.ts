@@ -183,6 +183,7 @@ export type Translations = {
     submitBtn: string;
     removeBtn: string;
     sendingBtn: string;
+    fieldCheck: string;
   };
 
   welcome: string;
