@@ -49,6 +49,7 @@ export type Translations = {
     peculiaritiesTitle: string;
     listPeculiarities: { description: string; icon: string }[];
     descriptionDifferences: string;
+    callToAction: string;
   };
 
   tokarniRobotyChpkPage: {

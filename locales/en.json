@@ -338,7 +338,7 @@
     "peculiaritiesTitle": "Features and Benefits:",
     "listPeculiarities": [
       {
-        "description": "Capability to work with various materials: stainless steel, aluminum, copper, brass, and others, including non-ferrous metals.",
+        "description": "Ability to work with various materials: stainless steel, aluminum, copper, brass, and others, including non-ferrous metals.",
         "icon": "/icons/listPeculiarities.png"
       },
       {
@@ -346,15 +346,19 @@
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Minimization of material waste thanks to high precision.",
+        "description": "Minimized material waste due to high precision.",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "No metal deformation and preservation of its original properties.",
+        "description": "No deformation of the metal, preserving its original properties.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Unlike traditional mechanical cutting methods, laser processing guarantees quality and cost-effectiveness for producing parts of any complexity.",
         "icon": "/icons/listPeculiarities.png"
       }
     ],
-    "descriptionDifferences": "Unlike traditional mechanical cutting methods, laser processing guarantees quality and cost-effectiveness in manufacturing parts of any complexity."
+    "descriptionDifferences": "Fast and precise laser cutting of metal for any task. Leave an application right now!"
   },
 
   "orderBenefits": {

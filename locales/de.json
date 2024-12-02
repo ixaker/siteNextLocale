@@ -331,23 +331,27 @@
     "peculiaritiesTitle": "Besonderheiten und Vorteile:",
     "listPeculiarities": [
       {
-        "description": "Bearbeitungsmöglichkeit verschiedener Materialien: Edelstahl, Aluminium, Kupfer, Messing und andere, einschließlich Buntmetalle.",
+        "description": "Möglichkeit, mit verschiedenen Materialien zu arbeiten: Edelstahl, Aluminium, Kupfer, Messing und andere, einschließlich Nichteisenmetalle.",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Perfekte Schnittkanten ohne zusätzliche Bearbeitung.",
+        "description": "Perfekt glatte Kanten ohne die Notwendigkeit zusätzlicher Bearbeitung.",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Minimierung von Materialverlusten durch hohe Präzision.",
+        "description": "Minimierung des Materialverlusts durch hohe Präzision.",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Keine Verformung des Metalls und Erhaltung seiner ursprünglichen Eigenschaften.",
+        "description": "Keine Deformation des Metalls und Erhaltung seiner ursprünglichen Eigenschaften.",
+        "icon": "/icons/listPeculiarities.png"
+      },
+      {
+        "description": "Im Gegensatz zu traditionellen mechanischen Schneidverfahren garantiert die Laserbearbeitung Qualität und Wirtschaftlichkeit bei der Herstellung von Teilen jeder Komplexität.",
         "icon": "/icons/listPeculiarities.png"
       }
     ],
-    "descriptionDifferences": "Im Vergleich zu herkömmlichen mechanischen Schneidmethoden gewährleistet die Laserbearbeitung Qualität und Wirtschaftlichkeit bei der Herstellung von Teilen jeder Komplexität."
+    "descriptionDifferences": "Schnelles und präzises Laserschneiden von Metall für jede Aufgabe. Lassen Sie noch heute eine Anfrage ein!"
   },
 
   "orderBenefits": {
