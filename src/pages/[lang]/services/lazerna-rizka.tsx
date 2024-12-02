@@ -65,7 +65,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         />
         <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
         <div className="px-4 pt-5">
-          <Paragraph text={translationsPage.descriptionBenefits} alignment="center" />
+          {/* <Paragraph text={translationsPage.descriptionBenefits} alignment="center" /> */}
           <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />
         </div>
         <div className="px-4 pt-[30px]">
