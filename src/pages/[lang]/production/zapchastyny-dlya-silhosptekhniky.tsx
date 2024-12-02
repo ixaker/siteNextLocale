@@ -63,9 +63,11 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         imgSrc="/assets/zapchastyny-dlya-silhosptekhniky2.jpg"
         list={listServices}
       />
-      <FeatureBlock listPeculiarities={listPeculiarities} />
 
       <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
+      <div className="px-4">
+        <FeatureBlock listPeculiarities={listPeculiarities} />
+      </div>
       <div className="px-4 pt-[30px]">
         <Paragraph text={translationsPage.question} alignment="center" />
         <Paragraph text={translationsPage.answer} alignment="center" />

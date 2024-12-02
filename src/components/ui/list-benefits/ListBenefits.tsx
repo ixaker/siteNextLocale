@@ -19,7 +19,7 @@ const ListBenefits: React.FC<ListBenefitsProps> = ({ heading, orderBenefits }) =
           <Carousel slides={orderBenefits} />
         </div>
         <div className="px-4 hidden border-y-2 border-black py-5 md:block">
-          <ul className="flex gap-4">
+          <ul className="flex gap-1">
             {orderBenefits.map((item, index) => (
               <li className="flex items-center gap-3" key={index}>
                 <Image
