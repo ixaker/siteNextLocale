@@ -5,9 +5,10 @@ import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Typography from '@mui/material/Typography';
 import CustomButton from './CustomButton';
-import { TextField } from '@mui/material';
+import { useTheme } from '@mui/material';
 import langUk from '../../../../locales/uk.json';
 import { PageProps } from '@/context/withStaticPathsAndProps';
+import { darkTheme, lightTheme } from '@/theme';
 
 const style = {
   position: 'absolute',
@@ -28,14 +29,19 @@ interface ButtonSubmitDrawingProps {
 }
 
 const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations, className, lang }) => {
+  const theme = useTheme();
+
   const [open, setOpen] = React.useState(false);
   const [file, setFile] = React.useState<File | null>(null);
+  const [fileListm, setFileList] = React.useState<string[]>(['']);
   const [statusMessage, setStatusMessage] = React.useState<string>('');
-
-  console.log('File', file);
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+  const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
+  const secondaryColor = currentTheme.palette.secondary.main;
+  const bgColor = currentTheme.palette.background.default;
 
   const translationsPage = translations?.modalInfo || langUk.modalInfo;
   const [numberPhone, setNumberPhone] = React.useState('');
@@ -127,7 +133,6 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
               {translationsPage.title}
             </Typography>
 
-            {/* File drop area */}
             <Box
               sx={{
                 border: '2px dashed #ccc',
@@ -144,7 +149,7 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
                 </Typography>
               ) : (
                 <Typography variant="body2" color="textSecondary">
-                  {translationsPage.fileName}
+                  {translationsPage.noFile}
                 </Typography>
               )}
               <input type="file" id="file-upload" style={{ display: 'none' }} onChange={handleFileChange} />
@@ -159,20 +164,22 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
             <Typography id="transition-modal-description" sx={{ mt: 2, textAlign: 'center' }}>
               {translationsPage.limitation}
             </Typography>
-
-            <TextField
-              id="outlined-textarea"
-              label={translationsPage.inputTitle}
-              multiline
-              className="w-full mt-5"
-              sx={{ color: 'red', placeContent: 'red' }}
+            <input
+              type="number"
               value={numberPhone}
               onChange={(e) => setNumberPhone(e.target.value)}
+              style={{
+                color: secondaryColor,
+                backgroundColor: bgColor,
+                borderColor: secondaryColor,
+                borderRadius: '5px',
+              }}
+              className="w-full mt-4 text-[16px] p-1.5 border"
+              placeholder={translationsPage.inputTitle}
             />
 
-            {/* File actions */}
             <Box sx={{ marginTop: '20px', textAlign: 'center' }}>
-              {numberPhone.length > 8 && file ? (
+              {numberPhone.length > 9 && file ? (
                 <div>
                   <CustomButton
                     className="border p-2 w-full  hover:border-orange-500 hover:text-orange-500 transition-all duration-300 ease-in-out"
@@ -192,7 +199,6 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
               )}
             </Box>
 
-            {/* Status message */}
             {statusMessage && (
               <Typography variant="body2" sx={{ marginTop: '20px', color: 'red' }}>
                 {statusMessage}
