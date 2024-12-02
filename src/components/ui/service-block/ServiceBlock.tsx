@@ -25,13 +25,13 @@ const ServiceBlock: React.FC<ServiceBlock> = ({ heading, list, imgSrc, translati
             </li>
           ))}
         </ul>
-        <div className="relative xl:w-[400px] xl:max-h-[500px]">
+        <div className="relative xl:w-fit xl:max-h-[500px]">
           <Image
             alt="lazerna-rizka"
             src={imgSrc}
             width={100}
             height={100}
-            className="max-h-[300px] size-full shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)] w-full rounded-[10px] md:w-[auto] md:max-w-[400px] xl:w-full xl:max-h-[500px]"
+            className="w-full h-auto object-cover shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)] rounded-[10px] md:w-auto md:max-w-[400px] xl:w-auto xl:h-auto"
           />
           <ButtonSubmitDrawing
             lang={lang}

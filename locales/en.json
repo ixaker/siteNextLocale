@@ -164,7 +164,8 @@
         "description": "Metal tempering - The final stage of heat treatment, providing a balance between hardness and flexibility, crucial for improving operational performance."
       }
     ],
-    "callToAction": "Optimize the strength and durability of your parts. Order heat treatment from us!"
+    "callToActionTop": "Optimize the strength and durability of your parts.",
+    "callToActionBottom": "Order heat treatment from us!"
   },
   "frezerniRoboty": {
     "title": "CNC Milling by QPart: Precision, Quality, Professionalism",
@@ -308,7 +309,6 @@
         "description": "Agricultural sector: Spare parts for machinery, equipment components."
       }
     ],
-    "descriptionBenefits": "Thanks to our modern equipment and experienced team, we tackle the most challenging tasks in the field of metalworking.",
     "question": "Need a custom solution?",
     "answer": "We will manufacture parts according to your requirements. Contact us!"
   },

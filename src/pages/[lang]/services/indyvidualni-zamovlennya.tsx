@@ -54,14 +54,13 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       <ServiceBlock
         btnText={translations.btnSend}
         heading={translationsPage.servicesTitle}
-        imgSrc="/assets/indyvidualni-zamovlennya2.jpg"
+        imgSrc="/assets/indyvidualni-zamovlennya22.jpg"
         list={listServices}
         lang={lang}
         translations={translations}
       />
       <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
       <div className="px-4">
-        <Paragraph text={translationsPage.descriptionBenefits} alignment="center" />
         <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />
       </div>
       <div className="px-4 pt-[30px]">

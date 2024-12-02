@@ -81,7 +81,8 @@ export type Translations = {
     listPeculiarities: { description: string; icon: string }[];
     servicesTitle: string;
     listServices: { description: string }[];
-    callToAction: string;
+    callToActionTop: string;
+    callToActionBottom: string;
   };
 
   frezerniRoboty: {
@@ -125,7 +126,6 @@ export type Translations = {
     listPeculiarities: { description: string; icon: string }[];
     servicesTitle: string;
     listServices: { description: string }[];
-    descriptionBenefits: string;
     question: string;
     answer: string;
   };

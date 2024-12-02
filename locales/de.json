@@ -159,7 +159,8 @@
         "description": "Anlassen von Metall - Der abschließende Schritt der Wärmebehandlung, der ein Gleichgewicht zwischen Härte und Flexibilität schafft und entscheidend für die Verbesserung der Betriebseigenschaften ist."
       }
     ],
-    "callToAction": "Optimieren Sie die Festigkeit und Langlebigkeit Ihrer Teile. Bestellen Sie die Wärmebehandlung bei uns!"
+    "callToActionTop": "Optimieren Sie die Festigkeit und Langlebigkeit Ihrer Teile.",
+    "callToActionBottom": "Bestellen Sie die Wärmebehandlung bei uns!"
   },
   "frezerniRoboty": {
     "title": "CNC-Fräsen von QPart: Präzision, Qualität, Professionalität",
@@ -302,7 +303,6 @@
         "description": "Agrarsektor: Ersatzteile für Maschinen, Bauteile für Geräte."
       }
     ],
-    "descriptionBenefits": "Dank unserer modernen Ausrüstung und unseres erfahrenen Teams bewältigen wir die anspruchsvollsten Aufgaben im Bereich der Metallverarbeitung.",
     "question": "Benötigen Sie eine maßgeschneiderte Lösung?",
     "answer": "Wir fertigen Teile nach Ihren Anforderungen. Kontaktieren Sie uns!"
   },

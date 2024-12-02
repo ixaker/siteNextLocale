@@ -30,8 +30,8 @@ const FeatureBlock: React.FC<FeatureBlock> = ({ title, listPeculiarities }) => {
                   className="w-[52px] h-[60px] lg:w-[52px] lg:h-[60px] relative max-w-fit z-[3]"
                 />
                 <div
-                  style={{ boxShadow: `0px 0px 20px 10px ${secondaryColor}`, background: '#c43c1e' }}
-                  className="absolute rounded-full size-[50%]  "
+                  style={{ boxShadow: `0px 0px 20px 10px ${secondaryColor}`, backgroundColor: 'white' }}
+                  className="absolute rounded-full size-[50%] "
                 ></div>
               </div>
             )}
