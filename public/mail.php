@@ -65,13 +65,15 @@ try {
     $mail->Body = 'Телефон: ' .$phone;
 
     // Добавление вложения
-    $attachmentPath = $_FILES['attachment']['tmp_name'];
-    $attachmentName = $_FILES['attachment']['name'];
-
-    if (is_uploaded_file($attachmentPath)) {
-        $mail->addAttachment($attachmentPath, $attachmentName);
-    } else {
-        throw new Exception('File upload error.');
+    if (isset($_FILES['attachment'])) {
+        for ($i = 0; $i < count($_FILES['attachment']['name']); $i++) {
+            if (is_uploaded_file($_FILES['attachment']['tmp_name'][$i])) {
+                $mail->addAttachment(
+                    $_FILES['attachment']['tmp_name'][$i],
+                    $_FILES['attachment']['name'][$i]
+                );
+            }
+        }
     }
 
     // Отправка письма
