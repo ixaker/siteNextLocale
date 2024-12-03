@@ -12,6 +12,7 @@ import Heading from '@/components/ui/typography/Heading';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
 import ButtonSubmitDrawing from '@/components/ui/button/ButtonSubmitDrawing';
 import BackCover from '@/components/ui/back-cover/BackCover';
+import NavigationMap from '@/components/ui/navigation-map/NavigationMap';
 
 const Home: React.FC<PageProps> = ({ translations, lang }) => {
   const [fullUrl, setFullUrl] = useState('');
@@ -22,6 +23,7 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
   const secondaryColor = currentTheme.palette.secondary.main;
   const translationsPage = translations?.homePage || langUk.homePage;
   const cardData = translations?.cardData || langUk.cardData;
+  const translationsMenuService = translations.menu[0]?.subMenu;
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -41,18 +43,22 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
         localeOg={translations.locale}
       />
       <BackCover>
-        <div className="px-4 md:px-8 text-white pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6 flex flex-col items-center md:items-start">
-          <div>
-            <h1 className="text-[20px] text-center w-full sm:text-start sm:text-[40px] md:text-[55px] lg:text-[70px] font-semibold">
-              {translationsPage.topTitle}
-              <br />
-              {translationsPage.bottomTitle}
-            </h1>
+        <div className="px-4 text-white pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6 flex justify-center  lg:justify-between">
+          <NavigationMap translationsMenuService={translationsMenuService || []} />
+
+          <div className="flex flex-col justify-center items-center lg:items-start">
+            <div>
+              <h1 className="text-[20px] text-center w-full sm:text-start sm:text-[40px] md:text-[55px] lg:text-[48px] xl:text-[70px] font-semibold">
+                {translationsPage.topTitle}
+                <br />
+                {translationsPage.bottomTitle}
+              </h1>
+            </div>
+            <Paragraph text={translationsPage.description} style="text-center sm:text-start pt-5" />
+            <ButtonSubmitDrawing lang={lang} translations={translations} className="mt-10" />
           </div>
-          <Paragraph text={translationsPage.description} style="text-center sm:text-start pt-5" />
-          <ButtonSubmitDrawing lang={lang} translations={translations} className="mt-10" />
+          <div></div>
         </div>
-        {/* </div> */}
       </BackCover>
       <section style={{ color: secondaryColor }} className="pl-4 pr-4 pt-[30px] md:pt-[70px]">
         <ul className="flex flex-wrap justify-center gap-[10px] lg: xl:justify-between">
@@ -75,8 +81,8 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
                 className="w-full rounded-2xl shadow-2xl"
                 src="/assets/work.jpg"
                 alt="Laptop"
-                width={550}
-                height={332}
+                width={100}
+                height={100}
               />
             </div>
           </div>
