@@ -57,7 +57,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         translations={translations}
         btnText={translations.btnSend}
         heading={translationsPage.servicesTitle}
-        imgSrc="/assets/tokarni-roboty-chpk.jpg"
+        imgSrc="/assets/tokarni-roboty-chpk.png"
         list={listServices}
       />
       <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />

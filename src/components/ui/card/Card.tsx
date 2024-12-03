@@ -15,13 +15,13 @@ const Card: React.FC<CardProps> = ({ title, srcImg, href }) => {
           className="rounded-t-lg object-cover h-[250px] w-[250px] xl:w-[300px] transition-transform duration-500 group-hover:scale-105"
           src={srcImg}
           alt=""
-          width={300}
+          width={100}
           height={250}
           priority
         />
       </div>
-      <div className="h-[30px] md:h-[50px] absolute bottom-0 left-0 right-0 bg-[#763c00] text-white p-2 transition-all duration-500 ease-in-out transform group-hover:scale-110">
-        <p className="text-center text-xs font-semibold md:text-lg">{title}</p>
+      <div className="h-[30px] md:h-[50px] absolute bottom-0 left-0 right-0 bg-[#763c00] text-white p-2 transition-all duration-500 ease-in-out transform group-hover:scale-110 flex items-center justify-center">
+        <p className="text-center text-xs font-semibold md:text-[16px]">{title}</p>
       </div>
     </Link>
   );

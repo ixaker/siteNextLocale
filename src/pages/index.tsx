@@ -22,7 +22,11 @@ const RedirectPage: React.FC<RedirectPageProps> = ({ supportedLanguages, default
 
     // Перенаправляем пользователя на предпочитаемый язык
     const preferredLanguage = getPreferredLanguage();
-    router.replace(`/${preferredLanguage}`);
+
+    const saveLang = localStorage.getItem('lang') || preferredLanguage;
+
+    localStorage.setItem('lang', saveLang);
+    router.replace(`/${saveLang}`);
   }, [router, supportedLanguages, defaultLanguage]);
 
   return null; // Эта страница ничего не отображает

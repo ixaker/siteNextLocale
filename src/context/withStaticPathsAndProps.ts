@@ -5,6 +5,7 @@ import { Translations } from '../../locales/types';
 
 export const getDefaultLanguage = (langFromUrl?: string): string => {
   const defaultLanguage = 'en';
+
   return SUPPORTED_LANGUAGES.includes(langFromUrl || '') ? langFromUrl! : defaultLanguage;
 };
 
@@ -12,6 +13,7 @@ export const getDefaultLanguage = (langFromUrl?: string): string => {
 const getSupportedLanguages = (): string[] => {
   const localesPath = path.join(process.cwd(), 'locales');
   const files = fs.readdirSync(localesPath);
+  // получаем массив джейсонов с язіком
   const jsonFiles = files.filter((file) => path.extname(file) === '.json');
 
   return jsonFiles.map((file) => file.replace('.json', '')); // Убираем расширение

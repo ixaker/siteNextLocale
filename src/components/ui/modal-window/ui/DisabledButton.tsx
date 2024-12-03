@@ -19,7 +19,7 @@ const DisabledButton: React.FC<DisabledButtonProps> = ({
 }) => {
   return (
     <Button
-      className="w-full bg-[silver]"
+      sx={{ width: '100%', backgroundColor: 'silver' }}
       onClick={() => handleFileSubmit(fileList, setStatusMessage, setFileList, numberPhone)}
       variant="outlined"
       disabled

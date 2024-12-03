@@ -117,7 +117,14 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ open, translations, setOpen }
             {numberPhone.length > 9 && fileList.length > 0 ? (
               <Button
                 onClick={() => handleFileSubmit(fileList, setStatusMessage, setFileList, numberPhone)}
-                className="bg-[#c43c1e]  hover:bg-[#9e2a1f] hover:text-[#fff] transition-all duration-300 ease-in-out w-full"
+                sx={{
+                  color: '#000',
+                  fontWeight: '500',
+                  backgroundColor: '#c43c1e',
+                  width: '100%',
+                  ':hover': { color: '#fff', bgcolor: '#9e2a1f' },
+                  transition: 'all 0.3s ease-in-out',
+                }}
                 variant="outlined"
               >
                 {translationsPage.submitBtn}

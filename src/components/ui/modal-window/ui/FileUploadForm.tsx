@@ -28,7 +28,12 @@ const FileUploadForm: React.FC<FileUploadFormProps> = ({ title, setFileList, txt
         variant="contained"
         tabIndex={-1}
         startIcon={<CloudUploadIcon />}
-        className="bg-[#c43c1e]  hover:bg-[#9e2a1f] text-[#fff] transition-all duration-300 ease-in-out mt-4"
+        sx={{
+          bgcolor: '#c43c1e',
+          ':hover': { color: '#fff', bgcolor: '#9e2a1f' },
+          transition: 'all 0.3s ease-in-out',
+          marginTop: '16px',
+        }}
         onClick={() => document.getElementById('file-upload')?.click()}
       >
         {txtBtn}
