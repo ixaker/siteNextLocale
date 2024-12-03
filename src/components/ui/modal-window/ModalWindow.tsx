@@ -1,4 +1,4 @@
-import { Backdrop, Box, Button, Fade, Modal, Typography } from '@mui/material';
+import { Backdrop, Box, Button, CircularProgress, Fade, Modal, Typography } from '@mui/material';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import { PageProps } from '@/context/withStaticPathsAndProps';
 import langUk from '../../../../locales/uk.json';
@@ -41,6 +41,17 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ open, translations, setOpen }
     setDrag(false);
   }, [fileList]);
 
+  let message = null;
+
+  if (statusMessage === 'ok') {
+    message = <p className="text-green">Відправлено</p>;
+  } else if (statusMessage === 'error') {
+    message = <p className="text-[red]">Сталася помилка</p>;
+  } else if (statusMessage === 'unknown error') {
+    message = <p className="text-[red]">Сталася невідома помилка</p>;
+  } else if (statusMessage === 'loading') {
+    message = <CircularProgress sx={{ color: '#c43c1e' }} />;
+  }
   return (
     <Modal
       aria-labelledby="transition-modal-title"
@@ -139,12 +150,7 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ open, translations, setOpen }
               />
             )}
           </Box>
-
-          {statusMessage && (
-            <Typography variant="body2" sx={{ marginTop: '20px', color: 'red' }}>
-              {statusMessage}
-            </Typography>
-          )}
+          <div className="mt-4 flex justify-center items-center">{message}</div>
         </Box>
       </Fade>
     </Modal>

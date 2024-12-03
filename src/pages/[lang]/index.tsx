@@ -44,7 +44,7 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
       />
       <BackCover>
         <div className="px-4 text-white pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6 flex justify-center  lg:justify-between">
-          <NavigationMap translationsMenuService={translationsMenuService || []} />
+          <NavigationMap lang={lang} translationsMenuService={translationsMenuService || []} />
 
           <div className="flex flex-col justify-center items-center lg:items-start">
             <div>
