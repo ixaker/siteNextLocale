@@ -43,7 +43,6 @@ const Page: React.FC<PageProps> = ({ ...restProps }) => {
         localeOg={translations.locale}
       />
       <BackCover>
-        {/* <Header {...restProps} /> */}
         <CapitalBlock
           translations={translations}
           lang={restProps.lang}

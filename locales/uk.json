@@ -59,10 +59,7 @@
       "subMenu": [
         { "title": "ТОКАРНІ РОБОТИ З ЧПК", "href": "services/tokarni-roboty-chpk" },
         { "title": "ЗВАРЮВАННЯ МЕТАЛУ", "href": "services/zvaryuvannya-metalu" },
-        {
-          "title": "ПОРІЗКА НА СТРІЧКОПИЛЬНОМУ ВЕРСТАТІ",
-          "href": "services/porizka-na-verstati"
-        },
+        { "title": "СТРІЧКОПИЛЬНОМУ ПОРІЗКА", "href": "services/porizka-na-verstati" },
         { "title": "ЛИТТЯ МЕТАЛУ", "href": "services/lyttya-metalu" },
         { "title": "ФРЕЗЕРНІ РОБОТИ З ЧПК", "href": "services/frezerni-roboty" },
         { "title": "ТЕРМІЧНА ОБРОБКА", "href": "services/termichna-obrobka" },

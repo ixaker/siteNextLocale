@@ -4,11 +4,6 @@ export const handleFileSubmit = async (
   setFileList: React.Dispatch<React.SetStateAction<File[]>>,
   numberPhone: string
 ) => {
-  if (fileList.length === 0) {
-    setStatusMessage('No files selected.');
-    return;
-  }
-
   const formData = new FormData();
   formData.append('token', '8355f5423b072c553809f09be3b7ca5fb0f7555c');
   formData.append('phone', numberPhone);
@@ -17,7 +12,7 @@ export const handleFileSubmit = async (
     formData.append(`attachment[${index}]`, file);
   });
 
-  setStatusMessage('Sending files...');
+  setStatusMessage('loading');
 
   try {
     const response = await fetch('/mail.php', {
@@ -28,16 +23,16 @@ export const handleFileSubmit = async (
     const result = await response.json();
 
     if (response.ok && result.success) {
-      setStatusMessage('Files sent successfully!');
+      setStatusMessage('ок');
       setFileList([]);
     } else {
-      setStatusMessage(`Error: ${result.error || 'Unknown error'}`);
+      setStatusMessage(`error'}`);
     }
   } catch (error: unknown) {
     if (error instanceof Error) {
-      setStatusMessage(`Error: ${error.message}`);
+      setStatusMessage(`error`);
     } else {
-      setStatusMessage('An unknown error occurred');
+      setStatusMessage('unknown error');
     }
   }
 };
