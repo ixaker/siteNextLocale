@@ -40,7 +40,6 @@ const FileUploadForm: React.FC<FileUploadFormProps> = ({ title, setFileList, txt
       >
         {txtBtn}
       </Button>
-
       <Typography id="transition-modal-description" sx={{ mt: 2, textAlign: 'center' }}>
         {limitation}
       </Typography>

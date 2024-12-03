@@ -2,7 +2,9 @@ export const handleFileSubmit = async (
   fileList: File[],
   setStatusMessage: React.Dispatch<React.SetStateAction<string>>,
   setFileList: React.Dispatch<React.SetStateAction<File[]>>,
-  numberPhone: string
+  numberPhone: string,
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>,
+  setOpenAlert: React.Dispatch<React.SetStateAction<boolean>>
 ) => {
   const formData = new FormData();
   formData.append('token', '8355f5423b072c553809f09be3b7ca5fb0f7555c');
@@ -25,6 +27,8 @@ export const handleFileSubmit = async (
     if (response.ok && result.success) {
       setStatusMessage('ок');
       setFileList([]);
+      setOpen(false);
+      setOpenAlert(true);
     } else {
       setStatusMessage(`error'}`);
     }

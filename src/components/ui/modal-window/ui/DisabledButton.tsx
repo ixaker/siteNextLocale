@@ -1,29 +1,13 @@
 import { Button } from '@mui/material';
-import { handleFileSubmit } from '../utils/network';
 import React from 'react';
 
 interface DisabledButtonProps {
-  fileList: File[];
-  setFileList: React.Dispatch<React.SetStateAction<File[]>>;
-  setStatusMessage: React.Dispatch<React.SetStateAction<string>>;
-  numberPhone: string;
   textBtn: string;
 }
 
-const DisabledButton: React.FC<DisabledButtonProps> = ({
-  fileList,
-  setStatusMessage,
-  setFileList,
-  numberPhone,
-  textBtn,
-}) => {
+const DisabledButton: React.FC<DisabledButtonProps> = ({ textBtn }) => {
   return (
-    <Button
-      sx={{ width: '100%', backgroundColor: 'silver' }}
-      onClick={() => handleFileSubmit(fileList, setStatusMessage, setFileList, numberPhone)}
-      variant="outlined"
-      disabled
-    >
+    <Button sx={{ width: '100%', backgroundColor: 'silver' }} variant="outlined" disabled>
       {textBtn}
     </Button>
   );

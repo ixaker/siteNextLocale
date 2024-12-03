@@ -8,6 +8,7 @@ import { handleFileSubmit } from './utils/network';
 import ListFiles from './ui/ListFiles';
 import FileUploadForm from './ui/FileUploadForm';
 import DisabledButton from './ui/DisabledButton';
+import CustomizationAlert from './ui/CustomizationAlert';
 
 interface ModalWindowProps {
   open: boolean;
@@ -32,6 +33,17 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ open, translations, setOpen }
   const [fileList, setFileList] = useState<File[]>([]);
   const [numberPhone, setNumberPhone] = useState('');
   const [statusMessage, setStatusMessage] = useState<string>('');
+  const [openAlert, setOpenAlert] = useState<boolean>(false);
+
+  const [overallSize, setOverallSize] = useState<number>(0);
+  const calculateTotalSize = (fileList: File[]) => {
+    const totalSize = fileList.reduce((total, file) => total + file.size, 0);
+    setOverallSize(totalSize);
+  };
+
+  useEffect(() => {
+    calculateTotalSize(fileList);
+  }, [fileList]);
 
   const translationsPage = translations?.modalInfo || langUk.modalInfo;
 
@@ -42,6 +54,16 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ open, translations, setOpen }
   }, [fileList]);
 
   let message = null;
+
+  function bytesToMegabytes(bytes: number) {
+    if (typeof bytes !== 'number' || bytes < 0) {
+      throw new Error('Input must be a non-negative number');
+    }
+    const megabytes = Math.round((bytes / (1024 * 1024)) * 100) / 100;
+    return parseFloat(megabytes.toPrecision(2));
+  }
+
+  const resultSize = bytesToMegabytes(overallSize);
 
   if (statusMessage === 'ok') {
     message = <p className="text-green">Відправлено</p>;
@@ -71,7 +93,7 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ open, translations, setOpen }
           <Typography id="transition-modal-description" sx={{ textAlign: 'center', fontWeight: 'bold' }}>
             {translationsPage.title}
           </Typography>
-
+          <CustomizationAlert message="TEST" openAlert={openAlert} setOpenAlert={setOpenAlert} />
           <div
             style={{
               border: drag ? '2px dashed #c43c1e' : '2px dashed #ccc',
@@ -109,6 +131,15 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ open, translations, setOpen }
                   key={index}
                 />
               ))}
+              {resultSize > 20.0 ? (
+                <Typography variant="body2" sx={{ color: 'red', marginTop: '20px' }}>
+                  {fileList.length > 1
+                    ? 'Розмір файлів перевищує максимальний ліміт у 20 Мб'
+                    : 'Розмір файлу перевищує максимальний ліміт у 20 Мб.'}
+                </Typography>
+              ) : (
+                ''
+              )}
             </ul>
           )}
           <input
@@ -125,9 +156,18 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ open, translations, setOpen }
           />
 
           <Box sx={{ marginTop: '20px', textAlign: 'center' }}>
-            {numberPhone.length > 9 && fileList.length > 0 ? (
+            {resultSize < 20.0 && numberPhone.length > 9 && fileList.length > 0 ? (
               <Button
-                onClick={() => handleFileSubmit(fileList, setStatusMessage, setFileList, numberPhone)}
+                onClick={() =>
+                  handleFileSubmit(
+                    fileList,
+                    setStatusMessage,
+                    setFileList,
+                    numberPhone,
+                    setOpen,
+                    setOpenAlert
+                  )
+                }
                 sx={{
                   color: '#fff',
                   fontWeight: '500',
@@ -141,13 +181,7 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ open, translations, setOpen }
                 {translationsPage.submitBtn}
               </Button>
             ) : (
-              <DisabledButton
-                fileList={fileList}
-                numberPhone={numberPhone}
-                setFileList={setFileList}
-                setStatusMessage={setStatusMessage}
-                textBtn={translationsPage.submitBtn}
-              />
+              <DisabledButton textBtn={translationsPage.submitBtn} />
             )}
           </Box>
           <div className="mt-4 flex justify-center items-center">{message}</div>
