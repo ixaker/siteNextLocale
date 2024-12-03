@@ -129,11 +129,11 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ open, translations, setOpen }
               <Button
                 onClick={() => handleFileSubmit(fileList, setStatusMessage, setFileList, numberPhone)}
                 sx={{
-                  color: '#000',
+                  color: '#fff',
                   fontWeight: '500',
                   backgroundColor: '#c43c1e',
                   width: '100%',
-                  ':hover': { color: '#fff', bgcolor: '#9e2a1f' },
+                  ':hover': { bgcolor: '#9e2a1f' },
                   transition: 'all 0.3s ease-in-out',
                 }}
                 variant="outlined"

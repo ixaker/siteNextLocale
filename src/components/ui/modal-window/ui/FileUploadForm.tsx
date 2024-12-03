@@ -23,6 +23,7 @@ const FileUploadForm: React.FC<FileUploadFormProps> = ({ title, setFileList, txt
         onChange={(event) => handleFileChange(event, setFileList)}
       />
       <Button
+        className="text-[white]"
         component="label"
         role={undefined}
         variant="contained"
@@ -30,9 +31,10 @@ const FileUploadForm: React.FC<FileUploadFormProps> = ({ title, setFileList, txt
         startIcon={<CloudUploadIcon />}
         sx={{
           bgcolor: '#c43c1e',
-          ':hover': { color: '#fff', bgcolor: '#9e2a1f' },
+          ':hover': { bgcolor: '#9e2a1f' },
           transition: 'all 0.3s ease-in-out',
           marginTop: '16px',
+          color: 'white',
         }}
         onClick={() => document.getElementById('file-upload')?.click()}
       >

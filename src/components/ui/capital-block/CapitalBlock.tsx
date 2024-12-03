@@ -18,11 +18,11 @@ const CapitalBlock: React.FC<CapitalBlockrProps> = ({ title, description, srcImg
   const translationsMenuService = translations.menu[0]?.subMenu;
   return (
     <div className="px-6 text-white pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6">
-      <div className="block lg:flex lg:items-center lg:justify-between lg:gap-8 md:flex-row md:gap-16 max-w-full ">
+      <div className="block lg:flex lg:items-start lg:justify-between lg:gap-8 md:flex-row md:gap-16 max-w-full ">
         <div>
           <NavigationMap lang={lang} translationsMenuService={translationsMenuService || []} />
         </div>
-        <div className="flex gap-5 items-center">
+        <div className="max-w-[100%] mx-0 my-0 flex gap-5 items-center xl:max-w-[70%] xl:mx-0 xl:my-auto">
           <div className="hidden md:block flex-shrink-0 md:w-[50%] md:h-fill-available lg:w-5/12 lg:h-[400px] shadow-lg rounded-lg overflow-hidden">
             <Image
               src={srcImg}
