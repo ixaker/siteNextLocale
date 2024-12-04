@@ -2,6 +2,7 @@ import React from 'react';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import Button from '@mui/material/Button';
+import CloseIcon from '@mui/icons-material/Close';
 
 interface CustomizationAlertProps {
   message: string;
@@ -20,18 +21,29 @@ const CustomizationAlert: React.FC<CustomizationAlertProps> = ({ message, openAl
   return (
     <div>
       <Snackbar
+        sx={{
+          width: 'auto',
+          position: 'fixed',
+          top: '50%',
+        }}
         open={openAlert}
-        autoHideDuration={6000} // уведомление исчезнет автоматически через 6 секунд
+        autoHideDuration={6000}
         onClose={handleClose}
         anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
       >
         <Alert
           onClose={handleClose}
-          severity="info"
-          sx={{ width: '100%' }}
+          severity="success"
+          sx={{
+            width: '100%',
+            backgroundColor: '#edf7ed',
+            color: 'black',
+            borderRadius: '7px',
+            border: '2px solid darkgreen',
+          }}
           action={
             <Button color="inherit" size="small" onClick={handleClose}>
-              Закрыть
+              <CloseIcon />
             </Button>
           }
         >
