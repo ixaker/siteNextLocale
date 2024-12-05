@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import CloseIcon from '@mui/icons-material/Close';
 
 interface CustomizationAlertProps {
-  message: string;
+  message?: string;
   openAlert: boolean;
   setOpenAlert: React.Dispatch<React.SetStateAction<boolean>>;
 }

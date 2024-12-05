@@ -32,7 +32,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         description={translationsPage.description}
         keywords={translationsPage.title}
         canonical={fullUrl}
-        imgOg="/assets/tokarni-roboty-chpk.jpg"
+        imgOg="/assets/tokarni-roboty-chpk.jpeg"
         lang={lang}
         localeOg={translations.locale}
       />

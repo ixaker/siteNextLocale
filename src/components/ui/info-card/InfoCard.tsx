@@ -17,7 +17,7 @@ const InfoCard: React.FC<InfoCardProps> = ({ srcImg, descriptionCard, title, dir
         <div
           className={`flex w-full gap-5 sm:flex ${direction === 'row-reverse' ? 'sm:flex-row-reverse' : 'sm:flex-row'} flex-col`}
         >
-          <div className="sm:max-w-[400px] max-h-[150px] sm:max-h-[400px] h-full w-full">
+          <div className="sm:max-w-[400px] max-h-[200px] sm:max-h-[400px] h-full w-full">
             <Image
               src={srcImg}
               alt={srcImg}

@@ -24,7 +24,7 @@
     },
     {
       "title": "CNC-FRÄSARBEITEN",
-      "img": "/assets/frezerni-roboty4.png",
+      "img": "/assets/frezerni-roboty4.jpg",
       "href": "services/frezerni-roboty/"
     },
     {
@@ -75,6 +75,7 @@
         { "title": "WÄRMEBEHANDLUNG", "href": "services/termichna-obrobka" },
         { "title": "LASERSCHNEIDEN", "href": "services/lazerna-rizka" },
         { "title": "METALLSCHLEIFEN", "href": "services/shlifovka-metalu" },
+        { "title": "SANDBLASTVERARBEITUNG", "href": "services/piskostruminni-roboty" },
         { "title": "INDIVIDUELLE AUFTRÄGE", "href": "services/indyvidualni-zamovlennya" }
       ]
     },
@@ -568,21 +569,16 @@
   "modalInfo": {
     "title": "Hinterlassen Sie Ihre Zeichnung und Telefonnummer, und wir werden Sie umgehend kontaktieren, um die Details zu besprechen.",
     "descriptionBtn": "Datei auswählen",
-    "fileName": "Ausgewählte Datei:",
-    "noFile": "Keine Datei ausgewählt",
-    "description": "Datei auswählen",
+
     "limitation": "Dateigrößenbeschränkung: bis zu 20 MB*",
     "inputTitle": "Mobiltelefonnummer",
-    "numberPhone": "+49",
     "submitBtn": "Einreichen",
-    "removeBtn": "Entfernen",
-    "sendingBtn": "Senden...",
-    "fieldCheck": "Laden Sie die Datei hoch und geben Sie Ihre Mobiltelefonnummer ein",
     "dropFile": "Eine Datei ziehen oder auswählen"
   },
 
   "footer": {
     "join": "Treten Sie bei"
   },
-  "btnSend": "Zeichnung zur Kalkulation senden"
+  "btnSend": "Zeichnung zur Kalkulation senden",
+  "messageInformation": "Nachricht gesendet"
 }

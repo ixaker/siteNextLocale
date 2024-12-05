@@ -68,6 +68,7 @@
         { "title": "ТЕРМИЧЕСКАЯ ОБРАБОТКА", "href": "services/termichna-obrobka" },
         { "title": "ЛАЗЕРНАЯ РЕЗКА С ЧПУ", "href": "services/lazerna-rizka" },
         { "title": "ШЛИФОВКА МЕТАЛЛА", "href": "services/shlifovka-metalu" },
+        { "title": "ПЕСКОСТРУЙНАЯ ОБРАБОТКА", "href": "services/piskostruminni-roboty" },
         { "title": "ИНДИВИДУАЛЬНЫЕ ЗАКАЗЫ", "href": "services/indyvidualni-zamovlennya" }
       ]
     },
@@ -552,21 +553,15 @@
   "modalInfo": {
     "title": "Залиште Ваше креслення та номер телефону, ми з вами оперативно звяжимся для обговорення детлаей",
     "descriptionBtn": "Виберіть Файл",
-    "fileName": "Вибраний файл:",
-    "noFile": "Файл не обрано",
-    "description": "Виберіть Файл",
     "limitation": "Обмеження розміру файла: до 20 Mb*",
     "inputTitle": "Мобільний номер телефону",
-    "numberPhone": "+380",
     "submitBtn": "Надіслати",
-    "removeBtn": "Видалити",
-    "sendingBtn": "Відправляється...",
-    "fieldCheck": "Додайте файл та вкажіть мобільний номер телефону",
     "dropFile": "Перетягніть або оберіть файл"
   },
 
   "footer": {
     "join": "Приєднуйтесь"
   },
-  "btnSend": "Надіслати креслення на прорахунок"
+  "btnSend": "Надіслати креслення на прорахунок",
+  "messageInformation": "Сообщение отправлено"
 }

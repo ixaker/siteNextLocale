@@ -9,6 +9,7 @@ import DynamicHead from '@/components/shared/DynamicHead';
 import { useEffect, useState } from 'react';
 import InformationBlock from '@/components/ui/information-block/InformationBlock';
 import InfoCard from '@/components/ui/info-card/InfoCard';
+import Paragraph from '@/components/ui/typography/Paragraph';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.frezerniRoboty || langUk.frezerniRoboty;
@@ -32,7 +33,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         description={translationsPage.description}
         keywords={translationsPage.title}
         canonical={fullUrl}
-        imgOg="/assets/frezerni-roboty.png"
+        imgOg="/assets/frezerni-roboty.jpg"
         lang={lang}
         localeOg={translations.locale}
       />
@@ -42,7 +43,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           descriptionTop="Ми перетворюємо складні завдання на готові рішення. Завдяки широкому парку фрезерних оброблювальних центрів із ЧПК, сучасним технологіям і професійній команді, ми обробляємо деталі будь-якої складності та великих обсягів."
           descriptionBottom="Потрібен надійний партнер для роботи з великими серіями, складними формами чи важкими деталями? Ми готові до викликів."
           translations={translations}
-          srcImg="/assets/frezerni-roboty.png"
+          srcImg="/assets/frezerni-roboty.jpg"
           lang={lang}
           translationsMenuService={translationsMenuService || []}
         />
@@ -52,33 +53,42 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         <InfoCard
           aligntText="end"
           direction="row-reverse"
-          srcImg="/assets/frezerni-roboty2.png"
-          title="Виконуємо будь-які обсяги токарних робіт"
-          descriptionCard="Ми розуміємо, що ваш бізнес не може чекати. Завдяки сучасним потужностям і налагодженій логістиці, ваше замовлення буде виконане в максимально стислі терміни. Забудьте про тривалі строки виробництва — ми працюємо швидко і якісно"
+          srcImg="/assets/frezerni-roboty2.jpeg"
+          title="Потужний парк сучасного обладнання."
+          descriptionCard="У нашому арсеналі понад 30 фрезерних оброблювальних центрів із ЧПК, серед яких: • вертикальні фрезерні станки ЧПК, • горизонтальні фрезерні станки із одним або змінними столами,• портальний 5-осьовий оброблювальний центр із робочим полем 2000х4000 мм для великих і складних деталей."
         />
         <InfoCard
           aligntText="start"
           direction="row"
-          srcImg="/assets/frezerni-roboty3.png"
-          title="Швидке виконання замовлень"
-          descriptionCard="Наш парк налічує понад 300 сучасних верстатів із ЧПК, які працюють без зупинки. Ми обробляємо великі партії деталей без проблем. Хочете замовити тисячі виробів? Це не питання. Якщо ваші постачальники не витримують навантаження, ми готові взятися за ваше замовлення та виконати його вчасно."
+          srcImg="/assets/frezerni-roboty3.jpg"
+          title="Деталі будь-якої складності та точності."
+          descriptionCard="Наші технології дозволяють обробляти складні 3D-форматні поверхні, а також забезпечувати високу точність навіть для найменших елементів. Там, де інші здаються, ми говоримо: “Коли починаємо?”."
         />
         <InfoCard
           aligntText="end"
           direction="row-reverse"
-          srcImg="/assets/frezerni-roboty4.png"
-          title="Точність і виготовлення деталей будь-якої складності"
-          descriptionCard="Наші верстати дозволяють виготовляти великі деталі діаметром до 4000 мм і довжиною до 8000 мм. Потрібні дрібні, складні деталі від 10 мм? Ми це зробимо з максимальною точністю. Там, де інші здаються, ми пропонуємо рішення і запитуємо: “Коли починаємо?”."
+          srcImg="/assets/frezerni-roboty4.jpg"
+          title="Комплексний підхід."
+          descriptionCard="Ми пропонуємо повний цикл фрезерної обробки, щоб ви отримали готову деталь без необхідності звертатися до інших підрядників. Ваше завдання – наша відповідальність."
         />
         <InfoCard
           aligntText="start"
           direction="row"
           srcImg="/assets/frezerni-roboty5.png"
-          title="Комплексний підхід до виготовлення деталей"
-          descriptionCard="З нами вам не потрібно шукати інших підрядників для завершення процесу. Ми виконуємо весь спектр робіт: від точного виготовлення на ЧПК до підготовки деталей для подальшого використання. Ви отримуєте повне рішення в одному місці."
+          title="Швидке виконання замовлень."
+          descriptionCard="Завдяки сучасним потужностям і налагодженій логістиці, ваше замовлення буде виконане в максимально стислі терміни. Забудьте про затримки – ми працюємо швидко та якісно."
         />
       </div>
-
+      <div className="px-4 mt-10">
+        <Paragraph
+          alignment="center"
+          text="Ми готові стати вашим надійним партнером у сфері фрезерних робіт!"
+        />
+        <Paragraph
+          alignment="center"
+          text="Залиште заявку прямо зараз і переконайтесь у наших можливостях."
+        />
+      </div>
       <CalculationSection translations={translations} lang={lang} />
     </section>
   );

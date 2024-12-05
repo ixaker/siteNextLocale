@@ -78,7 +78,7 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ open, translations, setOpen }
   return (
     <>
       <CustomizationAlert
-        message="Повідомлення відправлено"
+        message={translations?.messageInformation}
         openAlert={openAlert}
         setOpenAlert={setOpenAlert}
       />

@@ -171,19 +171,11 @@ export type Translations = {
   };
 
   modalInfo: {
-    nameBtn: string;
     title: string;
     descriptionBtn: string;
-    description: string;
-    fileName: string;
-    noFile: string;
     limitation: string;
     inputTitle: string;
-    numberPhone: string;
     submitBtn: string;
-    removeBtn: string;
-    sendingBtn: string;
-    fieldCheck: string;
     dropFile: string;
   };
 
@@ -195,4 +187,5 @@ export type Translations = {
     join: string;
   };
   btnSend: string;
+  messageInformation: string;
 };

@@ -24,7 +24,7 @@
     },
     {
       "title": "CNC MILLING WORKS",
-      "img": "/assets/frezerni-roboty4.png",
+      "img": "/assets/frezerni-roboty4.jpg",
       "href": "services/frezerni-roboty/"
     },
     {
@@ -76,6 +76,7 @@
         { "title": "HEAT TREATMENT", "href": "services/termichna-obrobka" },
         { "title": "LASER CUTTING", "href": "services/lazerna-rizka" },
         { "title": "METAL GRINDING", "href": "services/shlifovka-metalu" },
+        { "title": "SANDBLASTING PROCESSING", "href": "services/piskostruminni-roboty" },
         { "title": "CUSTOM ORDERS", "href": "services/indyvidualni-zamovlennya" }
       ]
     },
@@ -577,21 +578,15 @@
   "modalInfo": {
     "title": "Leave your drawing and phone number, and we will contact you promptly to discuss the details.",
     "descriptionBtn": "Choose File",
-    "fileName": "File selected:",
-    "noFile": "File not selected",
-    "description": "Select File",
     "limitation": "File size limit: up to 20 Mb*",
     "inputTitle": "Mobile phone number",
-    "numberPhone": "+",
     "submitBtn": "Submit",
-    "removeBtn": "Remove",
-    "sendingBtn ": "Sending...",
-    "fieldCheck": "Upload the file and enter your mobile phone number",
     "dropFile": "Drag or select file"
   },
 
   "footer": {
     "join": "Join"
   },
-  "btnSend": "Send drawings for calculation"
+  "btnSend": "Send drawings for calculation",
+  "messageInformation": "Message sent"
 }

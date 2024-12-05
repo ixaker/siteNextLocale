@@ -2,15 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { withStaticProps, withStaticPaths, PageProps } from '../../../context/withStaticPathsAndProps';
 import BackCover from '@/components/ui/back-cover/BackCover';
-import CapitalBlock from '@/components/ui/capital-block/CapitalBlock';
 import { useTheme } from '@mui/material';
 import { darkTheme, lightTheme } from '@/theme';
 import langUk from '../../../../locales/uk.json';
-import ServiceBlock from '@/components/ui/service-block/ServiceBlock';
-import ListBenefits from '@/components/ui/list-benefits/ListBenefits';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
-import FeatureBlock from '@/components/ui/feature-block/FeatureBlock';
 import DynamicHead from '@/components/shared/DynamicHead';
+import InformationBlock from '@/components/ui/information-block/InformationBlock';
+import InfoCard from '@/components/ui/info-card/InfoCard';
 import Paragraph from '@/components/ui/typography/Paragraph';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
@@ -20,10 +18,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
-  const listServices = translationsPage.listServices;
-  const orderBenefits = translations.orderBenefits.listOrderBenefits;
-  const listPeculiarities = translationsPage.listPeculiarities;
-  const listServicesContinuation = translationsPage.listServicesContinuation;
+  const translationsMenuService = translations.menu[0]?.subMenu;
 
   const [fullUrl, setFullUrl] = useState('');
   useEffect(() => {
@@ -38,39 +33,62 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         description={translationsPage.description}
         keywords={translationsPage.title}
         canonical={fullUrl}
-        imgOg="/assets/metal-casting.jpg"
+        imgOg="/assets/lyttya-metalu.jpg"
         lang={lang}
         localeOg={translations.locale}
       />
       <BackCover>
-        <CapitalBlock
+        <InformationBlock
+          title="Лиття"
+          descriptionTop="Ми перетворюємо складні задачі на ефективні рішення! Завдяки передовому обладнанню та сучасним технологіям лиття, ми виготовляємо високоякісні відливки з різних матеріалів, забезпечуючи точність та надійність кожного етапу виробництва."
+          descriptionBottom="Потрібен партнер для великих обсягів або складних відливок? Ми готові втілити ваші найскладніші проекти."
           translations={translations}
+          srcImg="/assets/lyttya-metalu.jpg"
           lang={lang}
-          title={translationsPage.title}
-          description={translationsPage.description}
-          srcImg="/assets/metal-casting.jpg"
-          txtButton={translations.btnSend}
+          translationsMenuService={translationsMenuService || []}
         />
       </BackCover>
-      <ServiceBlock
-        translations={translations}
-        lang={lang}
-        btnText={translations.btnSend}
-        heading={translationsPage.servicesTitle}
-        imgSrc="/assets/lyttya-metalu2.jpg"
-        list={listServices}
-      />
-      <div className="px-4">
-        <FeatureBlock listPeculiarities={listServicesContinuation} />
+
+      <div className="sm:px-4 mt-6">
+        <InfoCard
+          aligntText="end"
+          direction="row-reverse"
+          srcImg="/assets/lyttya-metalu2.jpg"
+          title="У нас є різноманітні можливості для лиття:"
+          descriptionCard="Лиття на автоматичних лініях для масового виробництва. Центробіжне лиття для створення деталей з високою міцністю. Лиття в кокіль для точних та довговічних відливок. Лиття ХТС для високотемпературних сплавів. Лиття кольорових металів під низьким тиском для забезпечення гладкості поверхні. Лиття кольорових металів в кокіль для точних деталей.
+"
+        />
+        <InfoCard
+          aligntText="start"
+          direction="row"
+          srcImg="/assets/lyttya-metalu3.jpg"
+          title="Висока точність та надійність."
+          descriptionCard="Наші технології та досвід дозволяють досягти максимальної точності в процесі лиття, що робить нашу продукцію надійною та довговічною."
+        />
+        <InfoCard
+          aligntText="end"
+          direction="row-reverse"
+          srcImg="/assets/lyttya-metalu4.jpg"
+          title="Комплексний підхід."
+          descriptionCard="Ми пропонуємо повний цикл послуг з лиття, починаючи від розробки технології і закінчуючи готовими виробами, що дозволяє вам не звертатися до інших підрядників."
+        />
+        <InfoCard
+          aligntText="start"
+          direction="row"
+          srcImg="/assets/lyttya-metalu5.jpg"
+          title="Ми перетворюємо складні задачі на ефективні рішення!"
+          descriptionCard="Завдяки передовому обладнанню та сучасним технологіям лиття, ми виготовляємо високоякісні відливки з різних матеріалів, забезпечуючи точність та надійність кожного етапу виробництва."
+        />
       </div>
-      <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
-      <div className="px-4">
-        <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />
+
+      <div className="px-4 mt-10">
+        <Paragraph alignment="center" text="Довіртесь професіоналам!" />
+        <Paragraph
+          alignment="center"
+          text="Замовте лиття у нас вже сьогодні і отримайте якісні відливки, що відповідають усім вашим вимогам!"
+        />
       </div>
-      <div className="px-4 pt-[30px]">
-        <Paragraph text={translationsPage.callToActionTop} alignment="center" />
-        <Paragraph text={translationsPage.callToActionBottom} alignment="center" />
-      </div>
+
       <CalculationSection translations={translations} lang={lang} />
     </div>
   );
