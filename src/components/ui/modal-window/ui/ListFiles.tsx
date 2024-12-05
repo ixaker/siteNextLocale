@@ -24,7 +24,7 @@ const ListFiles: React.FC<ListFilesProps> = ({ index, fileName, fileSize, setFil
     <li key={index} className="flex justify-between mt-1  items-center">
       <div className="flex items-center gap-2 w-full justify-between">
         <InsertDriveFileIcon />
-        <div className="flex justify-between w-full">
+        <div className="flex justify-between w-full overflow-hidden">
           <Typography className="text-nowrap overflow-hidden w-1/2 text-ellipsis " variant="body2">
             {fileName}
           </Typography>

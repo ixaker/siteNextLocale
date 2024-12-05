@@ -11,8 +11,6 @@ interface NavigationMapProps {
 const NavigationMap: React.FC<NavigationMapProps> = ({ lang, translationsMenuService = [] }) => {
   const router = useRouter();
 
-  console.log(router.asPath);
-
   return (
     <ul className="hidden lg:flex flex-col justify-around">
       {translationsMenuService.map((item, index) => {
