@@ -20,6 +20,15 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const secondaryColor = currentTheme.palette.secondary.main;
   const translationsMenuService = translations.menu[0]?.subMenu;
 
+  const list = [
+    { description: 'Вертикальні фрезерні станки ЧПК' },
+    { description: 'Горизонтальні фрезерні станки із одним або змінними столами' },
+    {
+      description:
+        'Портальний 5-осьовий оброблювальний центр із робочим полем 2000х4000 мм для великих і складних деталей',
+    },
+  ];
+
   const [fullUrl, setFullUrl] = useState('');
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -55,7 +64,8 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           direction="row-reverse"
           srcImg="/assets/frezerni-roboty2.jpeg"
           title="Потужний парк сучасного обладнання."
-          descriptionCard="У нашому арсеналі понад 30 фрезерних оброблювальних центрів із ЧПК, серед яких: • вертикальні фрезерні станки ЧПК, • горизонтальні фрезерні станки із одним або змінними столами,• портальний 5-осьовий оброблювальний центр із робочим полем 2000х4000 мм для великих і складних деталей."
+          // descriptionCard="У нашому арсеналі понад 30 фрезерних оброблювальних центрів із ЧПК, серед яких: • вертикальні фрезерні станки ЧПК, • горизонтальні фрезерні станки із одним або змінними столами,• портальний 5-осьовий оброблювальний центр із робочим полем 2000х4000 мм для великих і складних деталей."
+          list={list}
         />
         <InfoCard
           aligntText="start"

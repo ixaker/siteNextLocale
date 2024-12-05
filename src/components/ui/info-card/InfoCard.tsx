@@ -5,12 +5,20 @@ import Heading from '../typography/Heading';
 interface InfoCardProps {
   title: string;
   srcImg: string;
-  descriptionCard: string;
+  descriptionCard?: string;
   direction: 'row' | 'row-reverse';
   aligntText: 'start' | 'end';
+  list?: { description: string }[];
 }
 
-const InfoCard: React.FC<InfoCardProps> = ({ srcImg, descriptionCard, title, direction, aligntText }) => {
+const InfoCard: React.FC<InfoCardProps> = ({
+  srcImg,
+  descriptionCard,
+  title,
+  direction,
+  aligntText,
+  list,
+}) => {
   return (
     <>
       <div className="pt-5 flex w-full mx-0 my-0 lg:max-w-[80%] lg:mx-auto lg:my-0">
@@ -30,7 +38,17 @@ const InfoCard: React.FC<InfoCardProps> = ({ srcImg, descriptionCard, title, dir
             className={`flex text-center flex-col ${aligntText === 'start' ? 'sm:text-start' : 'sm:text-end'} justify-between md:justify-center gap-5 p-4 md:p-0`}
           >
             <Heading level="h2" text={title} />
-            <Paragraph text={descriptionCard} />
+            {list && list.length > 0 ? (
+              <ul>
+                {list.map((item, index) => (
+                  <li key={index}>
+                    <Paragraph text={`\u2022 ${item.description}`}></Paragraph>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              descriptionCard && <Paragraph text={descriptionCard} />
+            )}
           </div>
         </div>
       </div>

@@ -4,14 +4,12 @@ import langUk from '../../../../locales/uk.json';
 import { darkTheme, lightTheme } from '@/theme';
 import { useTheme } from '@mui/material';
 import BackCover from '@/components/ui/back-cover/BackCover';
-import CapitalBlock from '@/components/ui/capital-block/CapitalBlock';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
-import Paragraph from '@/components/ui/typography/Paragraph';
-import FeatureBlock from '@/components/ui/feature-block/FeatureBlock';
-import ListBenefits from '@/components/ui/list-benefits/ListBenefits';
-import ServiceBlock from '@/components/ui/service-block/ServiceBlock';
 import DynamicHead from '@/components/shared/DynamicHead';
 import { useEffect, useState } from 'react';
+import InformationBlock from '@/components/ui/information-block/InformationBlock';
+import InfoCard from '@/components/ui/info-card/InfoCard';
+import Paragraph from '@/components/ui/typography/Paragraph';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.lazernaRizkaPage || langUk.lazernaRizkaPage;
@@ -21,9 +19,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
 
-  const orderBenefits = translations.orderBenefits.listOrderBenefits;
-  const listPeculiarities = translationsPage.listPeculiarities;
-  const listServices = translationsPage.listServices;
+  const translationsMenuService = translations.menu[0]?.subMenu;
 
   const [fullUrl, setFullUrl] = useState('');
   useEffect(() => {
@@ -32,6 +28,14 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
     }
   }, [fullUrl]);
 
+  const list = [
+    { description: 'Високу точність і чистоту зрізу' },
+    { description: 'Різання металів до 20 мм' },
+    {
+      description: 'Можливість обробки великих розмірів',
+    },
+  ];
+
   return (
     <div style={{ backgroundColor: bgColor, color: secondaryColor }}>
       <DynamicHead
@@ -39,41 +43,61 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         description={translationsPage.description}
         keywords={translationsPage.title}
         canonical={fullUrl}
-        imgOg="/assets/lazerna-rizka-01.jpg"
+        imgOg="/assets/lazerna-rizka.jpg"
         lang={lang}
         localeOg={translations.locale}
       />
       <BackCover>
-        <CapitalBlock
+        <InformationBlock
+          title="Лазерна порізка"
+          descriptionTop="Ми спеціалізуємося на високоточній лазерній порізці, використовуючи новітнє обладнання. Наші лазерні верстати з робочим полем 2000 мм х 6000 мм дозволяють різати матеріали товщиною до 20 мм з максимальним рівнем точності і чистоти зрізу."
+          descriptionBottom="Лазерне різання металу будь-якої складності – ми готові виконати ваше замовлення!"
           translations={translations}
+          srcImg="/assets/lazerna-rizka.jpg"
           lang={lang}
-          title={translationsPage.title}
-          description={translationsPage.description}
-          srcImg="/assets/lazerna-rizka-01.jpeg"
-          txtButton={translations.btnSend}
+          translationsMenuService={translationsMenuService || []}
         />
       </BackCover>
 
-      <section className="mt-5">
-        <ServiceBlock
-          translations={translations}
-          lang={lang}
-          btnText={translations.btnSend}
-          heading={translationsPage.servicesTitle}
-          imgSrc="/assets/lazerna-rizka-02.jpeg"
-          list={listServices}
+      <div className="sm:px-4 mt-6">
+        <InfoCard
+          aligntText="end"
+          direction="row-reverse"
+          srcImg="/assets/lazerna-rizka2.jpg"
+          title="Наші лазерні верстати забезпечують:"
+          list={list}
         />
-        <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
-        <div className="px-4 pt-5">
-          {/* <Paragraph text={translationsPage.descriptionBenefits} alignment="center" /> */}
-          <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />
-        </div>
-        <div className="px-4 pt-[30px]">
-          <Paragraph text={translationsPage.callToActionTop} alignment="center" />
-          <Paragraph text={translationsPage.callToActionBottom} alignment="center" />
-        </div>
-        <CalculationSection translations={translations} lang={lang} />
-      </section>
+        <InfoCard
+          aligntText="start"
+          direction="row"
+          srcImg="/assets/lazerna-rizka3.jpg"
+          title="Точність та надійність"
+          descriptionCard="Ми гарантуємо точність і акуратність різання, що дозволяє досягати ідеальних результатів навіть для складних геометрій."
+        />
+        <InfoCard
+          aligntText="end"
+          direction="row-reverse"
+          srcImg="/assets/lazerna-rizka4.jpg"
+          title="Швидке виконання замовлень"
+          descriptionCard="Завдяки автоматизації процесу, ми виконуватимемо ваше замовлення в оптимальні строки без втрати якості."
+        />
+        <InfoCard
+          aligntText="start"
+          direction="row"
+          srcImg="/assets/lazerna-rizka5.jpg"
+          title="Комплексний підхід"
+          descriptionCard="Пропонуємо повний спектр послуг лазерної порізки, що дозволяє вам отримати готові деталі без необхідності додаткової обробки"
+        />
+      </div>
+
+      <div className="px-4 mt-10">
+        <Paragraph
+          alignment="center"
+          text="Залиште заявку прямо зараз і переконайтеся у наших можливостях!"
+        />
+      </div>
+
+      <CalculationSection translations={translations} lang={lang} />
     </div>
   );
 };

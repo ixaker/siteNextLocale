@@ -20,6 +20,17 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const secondaryColor = currentTheme.palette.secondary.main;
   const translationsMenuService = translations.menu[0]?.subMenu;
 
+  const list = [
+    { description: 'Лиття на автоматичних лініях для масового виробництва' },
+    { description: 'Центробіжне лиття для створення деталей з високою міцністю' },
+    {
+      description: 'Лиття в кокіль для точних та довговічних відливок',
+    },
+    { description: 'Лиття ХТС для високотемпературних сплавів' },
+    { description: 'Лиття кольорових металів під низьким тиском для забезпечення гладкості поверхні' },
+    { description: 'Лиття кольорових металів в кокіль для точних деталей' },
+  ];
+
   const [fullUrl, setFullUrl] = useState('');
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -55,8 +66,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           direction="row-reverse"
           srcImg="/assets/lyttya-metalu2.jpg"
           title="У нас є різноманітні можливості для лиття:"
-          descriptionCard="Лиття на автоматичних лініях для масового виробництва. Центробіжне лиття для створення деталей з високою міцністю. Лиття в кокіль для точних та довговічних відливок. Лиття ХТС для високотемпературних сплавів. Лиття кольорових металів під низьким тиском для забезпечення гладкості поверхні. Лиття кольорових металів в кокіль для точних деталей.
-"
+          list={list}
         />
         <InfoCard
           aligntText="start"
