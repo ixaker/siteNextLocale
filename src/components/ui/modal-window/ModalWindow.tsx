@@ -153,7 +153,8 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ open, translations, setOpen }
               </ul>
             )}
             <input
-              type="number"
+              type="tel"
+              maxLength={16}
               value={numberPhone}
               onChange={(e) => setNumberPhone(e.target.value)}
               style={{
