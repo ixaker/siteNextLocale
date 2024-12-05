@@ -4,24 +4,18 @@ import BackCover from '@/components/ui/back-cover/BackCover';
 import { useTheme } from '@mui/material';
 import langUk from '../../../../locales/uk.json';
 import { darkTheme, lightTheme } from '@/theme';
-import FeatureBlock from '@/components/ui/feature-block/FeatureBlock';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
-import ListBenefits from '@/components/ui/list-benefits/ListBenefits';
-import ServiceBlock from '@/components/ui/service-block/ServiceBlock';
 import DynamicHead from '@/components/shared/DynamicHead';
 import { useEffect, useState } from 'react';
-import Paragraph from '@/components/ui/typography/Paragraph';
 import InformationBlock from '@/components/ui/information-block/InformationBlock';
+import InfoCard from '@/components/ui/info-card/InfoCard';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.frezerniRoboty || langUk.frezerniRoboty;
   const theme = useTheme();
-  const listPeculiarities = translationsPage.listPeculiarities;
-  const orderBenefits = translations.orderBenefits.listOrderBenefits;
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
-  const listServices = translationsPage.listServices;
   const secondaryColor = currentTheme.palette.secondary.main;
   const translationsMenuService = translations.menu[0]?.subMenu;
 
@@ -38,7 +32,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         description={translationsPage.description}
         keywords={translationsPage.title}
         canonical={fullUrl}
-        imgOg="/assets/frezerni-roboty-01.png"
+        imgOg="/assets/frezerni-roboty.png"
         lang={lang}
         localeOg={translations.locale}
       />
@@ -48,26 +42,43 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           descriptionTop="Ми перетворюємо складні завдання на готові рішення. Завдяки широкому парку фрезерних оброблювальних центрів із ЧПК, сучасним технологіям і професійній команді, ми обробляємо деталі будь-якої складності та великих обсягів."
           descriptionBottom="Потрібен надійний партнер для роботи з великими серіями, складними формами чи важкими деталями? Ми готові до викликів."
           translations={translations}
-          srcImg="/assets/frezerni-roboty-01.png"
+          srcImg="/assets/frezerni-roboty.png"
           lang={lang}
           translationsMenuService={translationsMenuService || []}
         />
       </BackCover>
-      <ServiceBlock
-        translations={translations}
-        lang={lang}
-        btnText={translations.btnSend}
-        heading={translationsPage.servicesTitle}
-        imgSrc="/assets/frezerni-roboty2.jpg"
-        list={listServices}
-      />
-      <ListBenefits heading={translations.orderBenefits.orderBenefitsTitle} orderBenefits={orderBenefits} />
-      <div className="px-4">
-        <FeatureBlock listPeculiarities={listPeculiarities} title={translationsPage.peculiaritiesTitle} />
+
+      <div className="sm:px-4 mt-6">
+        <InfoCard
+          aligntText="end"
+          direction="row-reverse"
+          srcImg="/assets/frezerni-roboty2.png"
+          title="Виконуємо будь-які обсяги токарних робіт"
+          descriptionCard="Ми розуміємо, що ваш бізнес не може чекати. Завдяки сучасним потужностям і налагодженій логістиці, ваше замовлення буде виконане в максимально стислі терміни. Забудьте про тривалі строки виробництва — ми працюємо швидко і якісно"
+        />
+        <InfoCard
+          aligntText="start"
+          direction="row"
+          srcImg="/assets/frezerni-roboty3.png"
+          title="Швидке виконання замовлень"
+          descriptionCard="Наш парк налічує понад 300 сучасних верстатів із ЧПК, які працюють без зупинки. Ми обробляємо великі партії деталей без проблем. Хочете замовити тисячі виробів? Це не питання. Якщо ваші постачальники не витримують навантаження, ми готові взятися за ваше замовлення та виконати його вчасно."
+        />
+        <InfoCard
+          aligntText="end"
+          direction="row-reverse"
+          srcImg="/assets/frezerni-roboty4.png"
+          title="Точність і виготовлення деталей будь-якої складності"
+          descriptionCard="Наші верстати дозволяють виготовляти великі деталі діаметром до 4000 мм і довжиною до 8000 мм. Потрібні дрібні, складні деталі від 10 мм? Ми це зробимо з максимальною точністю. Там, де інші здаються, ми пропонуємо рішення і запитуємо: “Коли починаємо?”."
+        />
+        <InfoCard
+          aligntText="start"
+          direction="row"
+          srcImg="/assets/frezerni-roboty5.png"
+          title="Комплексний підхід до виготовлення деталей"
+          descriptionCard="З нами вам не потрібно шукати інших підрядників для завершення процесу. Ми виконуємо весь спектр робіт: від точного виготовлення на ЧПК до підготовки деталей для подальшого використання. Ви отримуєте повне рішення в одному місці."
+        />
       </div>
-      <div className="px-4 pt-[30px]">
-        <Paragraph text={translationsPage.callToAction} alignment="center" />
-      </div>
+
       <CalculationSection translations={translations} lang={lang} />
     </section>
   );

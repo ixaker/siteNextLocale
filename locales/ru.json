@@ -19,12 +19,12 @@
   "cardData": [
     {
       "title": "ТОКАРНЫЕ РАБОТЫ С ЧПУ",
-      "img": "/assets/tokarni-roboty-chpk.png",
+      "img": "/assets/tokarni-roboty-chpk.jpeg",
       "href": "services/tokarni-roboty-chpk/"
     },
     {
       "title": "ФРЕЗЕРНЫЕ РАБОТЫ С ЧПУ",
-      "img": "/assets/frezerni-roboty-01.png",
+      "img": "/assets/frezerni-roboty4.png",
       "href": "services/frezerni-roboty/"
     },
     {

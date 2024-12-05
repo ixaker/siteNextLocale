@@ -16,7 +16,7 @@ const Card: React.FC<CardProps> = ({ title, srcImg, href }) => {
           src={srcImg}
           alt=""
           width={100}
-          height={250}
+          height={100}
           priority
         />
       </div>

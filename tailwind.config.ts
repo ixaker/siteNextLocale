@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import plugin from 'tailwindcss/plugin';
 
 const config: Config = {
   content: [
@@ -25,6 +26,17 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addComponents }) {
+      addComponents({
+        '.hover-text-active': {
+          transition: 'all 300ms ease-in-out',
+          '&:hover': {
+            color: '#c43c1e',
+          },
+        },
+      });
+    }),
+  ],
 };
 export default config;
