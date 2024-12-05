@@ -1,5 +1,7 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { NavigationMenu } from '../../../../locales/types';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 interface NavigationMapProps {
   translationsMenuService: NavigationMenu[];
@@ -7,18 +9,36 @@ interface NavigationMapProps {
 }
 
 const NavigationMap: React.FC<NavigationMapProps> = ({ lang, translationsMenuService = [] }) => {
+  const router = useRouter();
+
+  console.log(router.asPath);
+
   return (
-    <ul className="!bg-[rgba(26,25,25,0.56)] px-4 pb-4 pt-2 h-fit hidden lg:block relative top-[revert-layer] left-[0%] bottom-[110px] z-[99] w-fit">
-      {translationsMenuService.map((item, index) => (
-        <li className="mt-2" key={index}>
-          <Link
-            className=" text-white font-bold hover:text-activeColor transition-all duration-300 ease-in-out text-[15px] text-nowrap no-underline"
-            href={`/${lang}/${item.href}`}
+    <ul className="hidden lg:flex flex-col justify-around">
+      {translationsMenuService.map((item, index) => {
+        const isActive = router.asPath === `/${lang}/${item.href}/`;
+        console.log(isActive);
+        console.log(`/${lang}/${item.href}`);
+
+        return (
+          <li
+            key={index}
+            className={`ease-in-out w-fit pl-2 pr-6 py-2 rounded-r-[20px] ${
+              isActive ? 'bg-activeColor' : '!bg-[rgba(26,25,25,0.56)]'
+            }`}
           >
-            {item.title}
-          </Link>
-        </li>
-      ))}
+            <Link
+              className={`text-white font-bold transition-all duration-300 ease-in-out text-[15px] text-nowrap flex items-center transform hover:translate-x-2 ${
+                isActive ? 'text-highlightColor' : 'hover:text-activeColor'
+              }`}
+              href={`/${lang}/${item.href}`}
+            >
+              <ArrowForwardIosIcon />
+              {item.title}
+            </Link>
+          </li>
+        );
+      })}
     </ul>
   );
 };

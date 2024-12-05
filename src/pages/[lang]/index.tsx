@@ -43,21 +43,21 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
         localeOg={translations.locale}
       />
       <BackCover>
-        <div className="px-4 text-white pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6 flex justify-center  lg:justify-between">
+        <div className="flex min-h-[inherit] pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6">
           <NavigationMap lang={lang} translationsMenuService={translationsMenuService || []} />
-
-          <div className="flex flex-col justify-center items-center lg:items-start">
-            <div>
-              <h1 className="text-[20px] text-center w-full sm:text-start sm:text-[40px] md:text-[55px] lg:text-[48px] xl:text-[70px] font-semibold">
-                {translationsPage.topTitle}
-                <br />
-                {translationsPage.bottomTitle}
-              </h1>
+          <div className="px-4 text-white w-full flex items-start justify-center">
+            <div className="flex flex-col justify-center items-center lg:items-start">
+              <div>
+                <h1 className="text-[20px] text-center w-full sm:text-start sm:text-[40px] md:text-[55px] lg:text-[48px] xl:text-[70px] font-semibold">
+                  {translationsPage.topTitle}
+                  <br />
+                  {translationsPage.bottomTitle}
+                </h1>
+              </div>
+              <Paragraph text={translationsPage.description} style="text-center sm:text-start pt-5" />
+              <ButtonSubmitDrawing lang={lang} translations={translations} className="mt-10" />
             </div>
-            <Paragraph text={translationsPage.description} style="text-center sm:text-start pt-5" />
-            <ButtonSubmitDrawing lang={lang} translations={translations} className="mt-10" />
           </div>
-          <div></div>
         </div>
       </BackCover>
       <section style={{ color: secondaryColor }} className="pl-4 pr-4 pt-[30px] md:pt-[70px]">

@@ -17,26 +17,26 @@ interface CapitalBlockrProps {
 const CapitalBlock: React.FC<CapitalBlockrProps> = ({ title, description, srcImg, translations, lang }) => {
   const translationsMenuService = translations.menu[0]?.subMenu;
   return (
-    <div className="px-6 text-white pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6">
-      <div className="block lg:flex lg:items-start lg:justify-between lg:gap-8 md:flex-row md:gap-16 max-w-full ">
-        <div>
-          <NavigationMap lang={lang} translationsMenuService={translationsMenuService || []} />
-        </div>
-        <div className="max-w-[100%] mx-0 my-0 flex gap-5 items-center xl:max-w-[70%] xl:mx-0 xl:my-auto">
-          <div className="hidden md:block flex-shrink-0 md:w-[50%] md:h-fill-available lg:w-5/12 lg:h-[400px] shadow-lg rounded-lg overflow-hidden">
+    <div className="flex min-h-[inherit] pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6">
+      <div className="flex gap-4 min-w-fit">
+        <NavigationMap lang={lang} translationsMenuService={translationsMenuService || []} />
+        <div className="px-4 text-white min-w-full flex items-start justify-center">
+          <div className="hidden sm:block max-w-[400px] w-full h-full ">
             <Image
               src={srcImg}
               alt="lazerna-rizka"
-              className="w-full h-full object-cover"
+              className=" w-full h-full object-cover rounded-l-[10px]"
               width={100}
               height={100}
             />
           </div>
 
-          <div className="flex flex-col gap-6 items-center text-center md:text-left md:items-center md:w-7/12 lg:w-7/12">
+          <div className="w-full gap-4 sm:max-w-[60%] flex flex-col justify-around">
             <Heading level="h1" text={title} alignment="center" />
             <Paragraph text={description} alignment="center" />
-            <ButtonSubmitDrawing lang={lang} translations={translations} />
+            <div className="flex justify-center">
+              <ButtonSubmitDrawing lang={lang} translations={translations} />
+            </div>
           </div>
         </div>
       </div>
