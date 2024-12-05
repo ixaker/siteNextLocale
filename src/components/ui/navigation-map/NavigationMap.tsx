@@ -17,8 +17,6 @@ const NavigationMap: React.FC<NavigationMapProps> = ({ lang, translationsMenuSer
     <ul className="hidden lg:flex flex-col justify-around">
       {translationsMenuService.map((item, index) => {
         const isActive = router.asPath === `/${lang}/${item.href}/`;
-        console.log(isActive);
-        console.log(`/${lang}/${item.href}`);
 
         return (
           <li
@@ -28,7 +26,7 @@ const NavigationMap: React.FC<NavigationMapProps> = ({ lang, translationsMenuSer
             }`}
           >
             <Link
-              className={`text-white font-bold transition-all duration-300 ease-in-out text-[15px] text-nowrap flex items-center transform hover:translate-x-2 ${
+              className={`text-white font-bold transition-all duration-300 ease-in-out text-[12px] text-nowrap flex items-center transform hover:translate-x-2 ${
                 isActive ? 'text-highlightColor' : 'hover:text-activeColor'
               }`}
               href={`/${lang}/${item.href}`}

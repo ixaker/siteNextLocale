@@ -12,8 +12,8 @@ const Heading: React.FC<HeadingProps> = ({ text, level, style, alignment = 'left
   const Tag = level;
   const baseStyles =
     level === 'h1'
-      ? 'text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold'
-      : 'text-xl md:text-2xl lg:ttext-3xl xl:text-4xl font-semibold';
+      ? 'text-xl md:text-2xl lg:text-3xl 2xl:text-5xl font-bold'
+      : 'text-xl md:text-xl lg:ttext-2xl xl:text-4xl font-semibold';
 
   return <Tag className={`${baseStyles} text-${alignment} ${style} ${display}`}>{text}</Tag>;
 };
