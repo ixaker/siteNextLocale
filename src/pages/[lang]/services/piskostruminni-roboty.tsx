@@ -41,7 +41,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   return (
     <section style={{ backgroundColor: bgColor, color: secondaryColor }}>
       <DynamicHead
-        title={translationsPage.title}
+        title="Пескоструйна обробка"
         description={translationsPage.description}
         keywords={translationsPage.title}
         canonical={fullUrl}

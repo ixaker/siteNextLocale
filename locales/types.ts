@@ -119,17 +119,6 @@ export type Translations = {
     callToActionBottom: string;
   };
 
-  indyvidualniZamovlennya: {
-    title: string;
-    description: string;
-    peculiaritiesTitle: string;
-    listPeculiarities: { description: string; icon: string }[];
-    servicesTitle: string;
-    listServices: { description: string }[];
-    question: string;
-    answer: string;
-  };
-
   orderBenefits: {
     orderBenefitsTitle: string;
     listOrderBenefits: { title: string; icon: string }[];

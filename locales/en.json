@@ -76,8 +76,7 @@
         { "title": "HEAT TREATMENT", "href": "services/termichna-obrobka" },
         { "title": "LASER CUTTING", "href": "services/lazerna-rizka" },
         { "title": "METAL GRINDING", "href": "services/shlifovka-metalu" },
-        { "title": "SANDBLASTING PROCESSING", "href": "services/piskostruminni-roboty" },
-        { "title": "CUSTOM ORDERS", "href": "services/indyvidualni-zamovlennya" }
+        { "title": "SANDBLASTING PROCESSING", "href": "services/piskostruminni-roboty" }
       ]
     },
     {
@@ -274,44 +273,6 @@
     ],
     "callToActionTop": "Precise metal cutting with no extra costs.",
     "callToActionBottom": "Submit your request for our services today!"
-  },
-  "indyvidualniZamovlennya": {
-    "title": "Custom Metal Products: Quality and Timeliness",
-    "description": "Manufacturing metal products is a modern approach to meeting the needs for parts of any complexity. This service allows the client to avoid costs associated with purchasing equipment, training personnel, and organizing the production process. Thanks to advanced technologies, QPart manufactures custom metal products in accordance with the highest quality standards. We work with steel, aluminum, brass, cast iron, stainless steel, and other metals, ensuring precise execution of technical tasks.",
-    "listPeculiarities": [
-      {
-        "description": "Technical specifications. We work closely with the client to ensure that all products fully meet their requirements.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Design and calculations. The choice of material, thickness, structural elements, and manufacturing method ensures the durability and functionality of the final product.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Timely delivery. We understand the importance of on-time delivery, which is why we always adhere to agreed timelines.",
-        "icon": "/icons/listPeculiarities.png"
-      }
-    ],
-    "servicesTitle": "QPart products are used in various industries, including:",
-    "listServices": [
-      {
-        "description": "Construction: Metal structures, fasteners, system elements."
-      },
-      {
-        "description": "Mechanical engineering: Shafts, gears, housing parts."
-      },
-      {
-        "description": "Aviation: Lightweight, durable components made of special alloys."
-      },
-      {
-        "description": "Energy: Turbine elements, pipes, casings."
-      },
-      {
-        "description": "Agricultural sector: Spare parts for machinery, equipment components."
-      }
-    ],
-    "question": "Need a custom solution?",
-    "answer": "We will manufacture parts according to your requirements. Contact us!"
   },
   "lazernaRizkaPage": {
     "title": "Laser Metal Cutting",

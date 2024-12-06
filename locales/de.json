@@ -75,8 +75,7 @@
         { "title": "WÄRMEBEHANDLUNG", "href": "services/termichna-obrobka" },
         { "title": "LASERSCHNEIDEN", "href": "services/lazerna-rizka" },
         { "title": "METALLSCHLEIFEN", "href": "services/shlifovka-metalu" },
-        { "title": "SANDBLASTVERARBEITUNG", "href": "services/piskostruminni-roboty" },
-        { "title": "INDIVIDUELLE AUFTRÄGE", "href": "services/indyvidualni-zamovlennya" }
+        { "title": "SANDBLASTVERARBEITUNG", "href": "services/piskostruminni-roboty" }
       ]
     },
     {
@@ -267,45 +266,6 @@
 
     "callToActionTop": "Präzises Schneiden von Metall ohne zusätzliche Kosten",
     "callToActionBottom": "Senden Sie noch heute Ihre Anfrage für unsere Dienstleistungen!"
-  },
-  "indyvidualniZamovlennya": {
-    "title": "Maßgeschneiderte Metallprodukte: Qualität und Pünktlichkeit",
-    "description": "Die Herstellung von Metallprodukten ist ein moderner Ansatz zur Deckung des Bedarfs an Teilen jeder Komplexität. Diese Dienstleistung ermöglicht es dem Kunden, Kosten für den Erwerb von Ausrüstungen, Schulungen des Personals und die Organisation des Produktionsprozesses zu vermeiden. Dank fortschrittlicher Technologien stellt QPart maßgeschneiderte Metallprodukte gemäß den höchsten Qualitätsstandards her. Wir arbeiten mit Stahl, Aluminium, Messing, Gusseisen, Edelstahl und anderen Metallen und gewährleisten eine präzise Ausführung der technischen Aufgaben.",
-    "peculiaritiesTitle": "Bei der Herstellung von maßgeschneiderten Metallprodukten werden folgende Aspekte berücksichtigt:",
-    "listPeculiarities": [
-      {
-        "description": "Technische Spezifikationen. Wir arbeiten eng mit dem Kunden zusammen, um sicherzustellen, dass alle Produkte vollständig seinen Anforderungen entsprechen.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Design und Berechnungen. Die Wahl des Materials, der Dicke, der strukturellen Elemente und der Fertigungsmethode gewährleistet die Haltbarkeit und Funktionalität des Endprodukts.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Termingerechte Lieferung. Wir verstehen die Bedeutung einer pünktlichen Lieferung und halten uns daher immer an die vereinbarten Zeitrahmen.",
-        "icon": "/icons/listPeculiarities.png"
-      }
-    ],
-    "servicesTitle": "Die Produkte von QPart werden in verschiedenen Branchen eingesetzt, darunter:",
-    "listServices": [
-      {
-        "description": "Bauwesen: Metallkonstruktionen, Befestigungen, Systeme."
-      },
-      {
-        "description": "Maschinenbau: Wellen, Zahnräder, Gehäuseteile."
-      },
-      {
-        "description": "Luftfahrt: Leichte, robuste Komponenten aus Speziallegierungen."
-      },
-      {
-        "description": "Energie: Turbinenelemente, Rohre, Verkleidungen."
-      },
-      {
-        "description": "Agrarsektor: Ersatzteile für Maschinen, Bauteile für Geräte."
-      }
-    ],
-    "question": "Benötigen Sie eine maßgeschneiderte Lösung?",
-    "answer": "Wir fertigen Teile nach Ihren Anforderungen. Kontaktieren Sie uns!"
   },
   "lazernaRizkaPage": {
     "title": "Laserschneiden von Metall",
