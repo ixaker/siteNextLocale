@@ -66,7 +66,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           aligntText="end"
           direction="row-reverse"
           srcImg="/assets/piskostruminni-roboty2.jpg"
-          title="Ми маємо різні можливості для очищення:"
+          title="Ми маємо різні можливості для очищення"
           list={list}
         />
         <InfoCard
@@ -81,14 +81,14 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           direction="row-reverse"
           srcImg="/assets/piskostruminni-roboty4.png"
           title="Швидке виконання замовлень"
-          descriptionCard="Завдяки налагодженій логістиці та високій потужності обладнання ми виконуємо замовлення у найкоротші терміни без шкоди для якості."
+          descriptionCard="Завдяки налагодженій логістиці та високій потужності обладнання ми виконуємо замовлення у найкоротші терміни без шкоди для якості"
         />
         <InfoCard
           aligntText="start"
           direction="row"
           srcImg="/assets/piskostruminni-roboty5.webp"
           title="Комплексний підхід"
-          descriptionCard="Ми пропонуємо повний цикл послуг з очищення, що дозволяє вам отримати готові деталі без потреби звертатися до інших підрядників."
+          descriptionCard="Ми пропонуємо повний цикл послуг з очищення, що дозволяє вам отримати готові деталі без потреби звертатися до інших підрядників"
         />
       </div>
 

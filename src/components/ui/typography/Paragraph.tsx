@@ -8,7 +8,7 @@ interface ParagraphProps {
 
 const Paragraph: React.FC<ParagraphProps> = ({ text, style, alignment = 'left' }) => {
   return (
-    <p className={`text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-${alignment} ${style}`}>
+    <p className={`text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl text-${alignment} ${style}`}>
       {text}
     </p>
   );

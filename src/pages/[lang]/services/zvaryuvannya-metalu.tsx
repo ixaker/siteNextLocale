@@ -62,7 +62,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           aligntText="end"
           direction="row-reverse"
           srcImg="/assets/zvaryuvannya-metalu2.jpg"
-          title="Наш парк обладнання включає:"
+          title="Наш парк обладнання включає"
           list={list}
         />
         <InfoCard
@@ -70,14 +70,14 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           direction="row"
           srcImg="/assets/zvaryuvannya-metalu3.jpg"
           title="Висока точність і якість"
-          descriptionCard="Наші технології забезпечують міцні та надійні зварні шви, навіть для складних металів і конструкцій."
+          descriptionCard="Наші технології забезпечують міцні та надійні зварні шви, навіть для складних металів і конструкцій"
         />
         <InfoCard
           aligntText="end"
           direction="row-reverse"
           srcImg="/assets/zvaryuvannya-metalu4.jpg"
           title="Швидке виконання замовлень"
-          descriptionCard="Завдяки досвідченій команді та високотехнологічному обладнанню, ми виконуємо замовлення оперативно і з високою точністю."
+          descriptionCard="Завдяки досвідченій команді та високотехнологічному обладнанню, ми виконуємо замовлення оперативно і з високою точністю"
         />
         <InfoCard
           aligntText="start"

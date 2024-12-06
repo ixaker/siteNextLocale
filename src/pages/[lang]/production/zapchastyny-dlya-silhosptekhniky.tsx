@@ -54,7 +54,6 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           srcImg="/assets/zapchastyny-dlya-silhosptekhniky.jpg"
           lang={lang}
           translationsMenuService={translationsMenuService || []}
-          style="2xl:text-[33px]"
         />
       </BackCover>
 

@@ -49,7 +49,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       />
       <BackCover>
         <InformationBlock
-          title="Лазерна порізка"
+          title="ЛАЗЕРНА РІЗКА З ЧПК"
           descriptionTop="Ми спеціалізуємося на високоточній лазерній порізці, використовуючи новітнє обладнання. Наші лазерні верстати з робочим полем 2000 мм х 6000 мм дозволяють різати матеріали товщиною до 20 мм з максимальним рівнем точності і чистоти зрізу."
           descriptionBottom="Лазерне різання металу будь-якої складності – ми готові виконати ваше замовлення!"
           translations={translations}
@@ -64,7 +64,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           aligntText="end"
           direction="row-reverse"
           srcImg="/assets/lazerna-rizka2.jpg"
-          title="Наші лазерні верстати забезпечують:"
+          title="Наші лазерні верстати забезпечують"
           list={list}
         />
         <InfoCard
@@ -72,14 +72,14 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           direction="row"
           srcImg="/assets/lazerna-rizka3.jpg"
           title="Точність та надійність"
-          descriptionCard="Ми гарантуємо точність і акуратність різання, що дозволяє досягати ідеальних результатів навіть для складних геометрій."
+          descriptionCard="Ми гарантуємо точність і акуратність різання, що дозволяє досягати ідеальних результатів навіть для складних геометрій"
         />
         <InfoCard
           aligntText="end"
           direction="row-reverse"
           srcImg="/assets/lazerna-rizka4.jpg"
           title="Швидке виконання замовлень"
-          descriptionCard="Завдяки автоматизації процесу, ми виконуватимемо ваше замовлення в оптимальні строки без втрати якості."
+          descriptionCard="Завдяки автоматизації процесу, ми виконуватимемо ваше замовлення в оптимальні строки без втрати якості"
         />
         <InfoCard
           aligntText="start"

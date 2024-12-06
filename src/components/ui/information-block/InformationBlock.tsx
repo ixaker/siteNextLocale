@@ -42,7 +42,7 @@ const InformationBlock: React.FC<InformationBlock> = ({
             />
           </div>
           <div className="w-full gap-4 sm:max-w-[60%] flex flex-col justify-around mr-4 mb-5 mt-5">
-            <Heading style={style} level="h1" text={title} alignment="left" />
+            <Heading style={`${style} uppercase`} level="h2" text={title} alignment="left" />
             <Paragraph text={descriptionTop} alignment="left" />
             <Paragraph text={descriptionBottom} alignment="left" />
             <div className="flex justify-start">

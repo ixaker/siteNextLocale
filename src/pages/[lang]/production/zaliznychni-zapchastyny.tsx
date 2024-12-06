@@ -52,7 +52,6 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           srcImg="/assets/zaliznychni-zapchastyny.jpg"
           lang={lang}
           translationsMenuService={translationsMenuService || []}
-          style="2xl:text-[33px]"
         />
       </BackCover>
 
