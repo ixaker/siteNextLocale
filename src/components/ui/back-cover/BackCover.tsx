@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 interface BackCoverProps {
   children: React.ReactNode;
@@ -6,23 +7,16 @@ interface BackCoverProps {
 }
 
 const BackCover: React.FC<BackCoverProps> = ({ children, bgImg }) => {
-  const [backgroundImage, setBackgroundImage] = useState(bgImg);
+  const isSmallScreen = useMediaQuery({ query: '(max-width: 640px)' });
+  const [backgroundImage, setBackgroundImage] = useState<string | undefined>(bgImg);
 
   useEffect(() => {
-    const updateBackground = () => {
-      if (window.innerWidth > 640) {
-        setBackgroundImage('/bgImg.webp');
-      } else {
-        setBackgroundImage(bgImg);
-      }
-    };
-
-    updateBackground();
-
-    window.addEventListener('resize', updateBackground);
-
-    return () => window.removeEventListener('resize', updateBackground);
-  }, [bgImg]);
+    if (isSmallScreen) {
+      setBackgroundImage(bgImg || `/bgImg.webp?v=${new Date().getTime()}`);
+    } else {
+      setBackgroundImage(`/bgImg.webp?v=${new Date().getTime()}`);
+    }
+  }, [isSmallScreen, bgImg]);
 
   return (
     <div

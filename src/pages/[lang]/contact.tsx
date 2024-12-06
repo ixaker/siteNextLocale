@@ -54,7 +54,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       />
       <BackCover>
         <div
-          className="min-w-screen min-h-[calc(100vh-140px)] flex flex-col justify-center pb-[20px]"
+          className="min-w-screen min-h-[calc(100vh-140px)] flex flex-col justify-center pb-[20px] relative z-10"
           style={{ color: secondaryColor }}
         >
           <div

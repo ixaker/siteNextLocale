@@ -43,7 +43,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         lang={lang}
         localeOg={translations.locale}
       />
-      <BackCover>
+      <BackCover bgImg="/assets/zaliznychni-zapchastyny.jpg">
         <InformationBlock
           title={translationsPage.title}
           descriptionTop="Компанія QPart спеціалізується на виготовленні високоякісних деталей для залізничної інфраструктури. Ми забезпечуємо виробництво різноманітних компонентів, які відповідають усім сучасним стандартам безпеки та експлуатаційної надійності."

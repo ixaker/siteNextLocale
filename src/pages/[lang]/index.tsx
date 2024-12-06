@@ -43,7 +43,7 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
         localeOg={translations.locale}
       />
       <BackCover>
-        <div className="flex min-h-[inherit] pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6">
+        <div className="flex min-h-[inherit] pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6 relative z-10">
           <NavigationMap lang={lang} translationsMenuService={translationsMenuService || []} />
           <div className="px-4 text-white w-full flex items-start justify-center">
             <div className="flex flex-col justify-center items-center lg:items-start">
@@ -80,7 +80,7 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
             <div>
               <Image
                 className="w-full rounded-2xl shadow-2xl"
-                src="/assets/work.jpg"
+                src={`/assets/work.jpg?v=${new Date().getTime()}`}
                 alt="Laptop"
                 width={100}
                 height={100}

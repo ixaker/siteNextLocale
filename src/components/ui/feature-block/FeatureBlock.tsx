@@ -23,7 +23,7 @@ const FeatureBlock: React.FC<FeatureBlock> = ({ title, listPeculiarities }) => {
             {item.icon && (
               <div className="relative flex justify-center items-center ">
                 <Image
-                  src={item.icon}
+                  src={`${item.icon}?v=${new Date().getTime()}`}
                   alt="Icon"
                   width={100}
                   height={100}

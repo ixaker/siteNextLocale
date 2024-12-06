@@ -45,7 +45,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         lang={lang}
         localeOg={translations.locale}
       />
-      <BackCover>
+      <BackCover bgImg="/assets/zapchastyny-dlya-silhosptekhniky.jpg">
         <InformationBlock
           title="Виробництво запчастин для сільськогосподарської техніки"
           descriptionTop="Наша компанія спеціалізується на створенні якісних запчастин для сільськогосподарської техніки, враховуючи потреби аграріїв та особливості сучасного фермерського обладнання."

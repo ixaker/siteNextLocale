@@ -42,7 +42,7 @@ const InteractiveMap: React.FC<Props> = ({ companyLocation }) => {
     <>
       <Image
         className=" w-full h-full absolute"
-        src="/assets/LaptopContacts.png"
+        src={`/assets/LaptopContacts.png?v=${new Date().getTime()}`}
         alt="Laptop"
         width={100}
         height={100}
