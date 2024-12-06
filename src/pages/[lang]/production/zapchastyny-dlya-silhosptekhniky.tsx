@@ -1,7 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { withStaticProps, withStaticPaths, PageProps } from '../../../context/withStaticPathsAndProps';
 import BackCover from '@/components/ui/back-cover/BackCover';
-import CapitalBlock from '@/components/ui/capital-block/CapitalBlock';
 import langUk from '../../../../locales/uk.json';
 import { useTheme } from '@mui/material';
 import { darkTheme, lightTheme } from '@/theme';
@@ -12,6 +11,7 @@ import FeatureBlock from '@/components/ui/feature-block/FeatureBlock';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
 import DynamicHead from '@/components/shared/DynamicHead';
 import { useEffect, useState } from 'react';
+import InformationBlock from '@/components/ui/information-block/InformationBlock';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage =
@@ -25,6 +25,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const listServices = translationsPage.listServices;
   const orderBenefits = translations.orderBenefits.listOrderBenefits;
   const listPeculiarities = translationsPage.listPeculiarities;
+  const translationsMenuService = translations.menu[0]?.subMenu;
 
   const [fullUrl, setFullUrl] = useState('');
   useEffect(() => {
@@ -40,18 +41,20 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         description={translationsPage.description}
         keywords={translationsPage.title}
         canonical={fullUrl}
-        imgOg="/assets/zapchastyny-dlya-silhosptekhniky1.jpg"
+        imgOg="/assets/zapchastyny-dlya-silhosptekhniky.jpg"
         lang={lang}
         localeOg={translations.locale}
       />
       <BackCover>
-        <CapitalBlock
+        <InformationBlock
+          title="Виробництво запчастин для сільськогосподарської техніки"
+          descriptionTop="Наша компанія спеціалізується на створенні якісних запчастин для сільськогосподарської техніки, враховуючи потреби аграріїв та особливості сучасного фермерського обладнання."
+          descriptionBottom="Ми пропонуємо широкий асортимент деталей, які підходять для різних видів техніки та забезпечують її безперебійну роботу навіть у найважчих умовах.Забезпечте свою техніку якісними запчастинами"
           translations={translations}
+          srcImg="/assets/zapchastyny-dlya-silhosptekhniky.jpg"
           lang={lang}
-          title={translationsPage.title}
-          description={translationsPage.description}
-          srcImg="/assets/zapchastyny-dlya-silhosptekhniky1.jpg"
-          txtButton={translations.btnSend}
+          translationsMenuService={translationsMenuService || []}
+          style="2xl:text-[33px]"
         />
       </BackCover>
 

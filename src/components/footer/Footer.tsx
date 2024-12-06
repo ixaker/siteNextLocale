@@ -61,14 +61,8 @@ const Footer: React.FC<PageProps> = () => {
   const bgColor = currentTheme.palette.background.default;
 
   return (
-    <footer
-      className="border-t border-gray-700 shadow-md shadow-gray-900 pt-4"
-      style={{ backgroundColor: bgColor }}
-    >
+    <footer className="shadow-md shadow-gray-900 pt-4" style={{ backgroundColor: bgColor }}>
       <nav>
-        {/* <div className="flex items-center justify-center text-[20px]">
-          <span style={{ color: primaryColor }}>{translationsPage.join}</span>
-        </div> */}
         <div className="flex justify-center gap-4 mt-[20px] pb-[50px]">
           {socialList.map((item, index) => (
             <a

@@ -14,6 +14,7 @@ interface InformationBlock {
   translations: PageProps['translations'];
   lang: string;
   translationsMenuService: NavigationMenu[];
+  style?: string;
 }
 
 const InformationBlock: React.FC<InformationBlock> = ({
@@ -24,6 +25,7 @@ const InformationBlock: React.FC<InformationBlock> = ({
   translations,
   lang,
   translationsMenuService,
+  style,
 }) => {
   return (
     <div className="flex min-h-[inherit] pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6">
@@ -40,7 +42,7 @@ const InformationBlock: React.FC<InformationBlock> = ({
             />
           </div>
           <div className="w-full gap-4 sm:max-w-[60%] flex flex-col justify-around mr-4 mb-5 mt-5">
-            <Heading level="h1" text={title} alignment="left" />
+            <Heading style={style} level="h1" text={title} alignment="left" />
             <Paragraph text={descriptionTop} alignment="left" />
             <Paragraph text={descriptionBottom} alignment="left" />
             <div className="flex justify-start">

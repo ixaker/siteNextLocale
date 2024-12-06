@@ -1,7 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { withStaticProps, withStaticPaths, PageProps } from '../../../context/withStaticPathsAndProps';
 import BackCover from '@/components/ui/back-cover/BackCover';
-import CapitalBlock from '@/components/ui/capital-block/CapitalBlock';
 import langUk from '../../../../locales/uk.json';
 import { useTheme } from '@mui/material';
 import { darkTheme, lightTheme } from '@/theme';
@@ -12,6 +11,7 @@ import FeatureBlock from '@/components/ui/feature-block/FeatureBlock';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
 import DynamicHead from '@/components/shared/DynamicHead';
 import { useEffect, useState } from 'react';
+import InformationBlock from '@/components/ui/information-block/InformationBlock';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.zaliznychniZapchastynyPage || langUk.zaliznychniZapchastynyPage;
@@ -24,6 +24,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const listServices = translationsPage.listServices;
   const orderBenefits = translations.orderBenefits.listOrderBenefits;
   const listPeculiarities = translationsPage.listPeculiarities;
+  const translationsMenuService = translations.menu[0]?.subMenu;
 
   const [fullUrl, setFullUrl] = useState('');
   useEffect(() => {
@@ -38,18 +39,20 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         description={translationsPage.description}
         keywords={translationsPage.title}
         canonical={fullUrl}
-        imgOg="/assets/zaliznychni-zapchastyny1.jpg"
+        imgOg="/assets/zaliznychni-zapchastyny.jpg"
         lang={lang}
         localeOg={translations.locale}
       />
       <BackCover>
-        <CapitalBlock
-          translations={translations}
-          lang={lang}
+        <InformationBlock
           title={translationsPage.title}
-          description={translationsPage.description}
-          srcImg="/assets/zaliznychni-zapchastyny1.jpg"
-          txtButton={translations.btnSend}
+          descriptionTop="Компанія QPart спеціалізується на виготовленні високоякісних деталей для залізничної інфраструктури. Ми забезпечуємо виробництво різноманітних компонентів, які відповідають усім сучасним стандартам безпеки та експлуатаційної надійності."
+          descriptionBottom="Наші рішення підходять як для модернізації існуючих систем, так і для будівництва нових залізничних об’єктів."
+          translations={translations}
+          srcImg="/assets/zaliznychni-zapchastyny.jpg"
+          lang={lang}
+          translationsMenuService={translationsMenuService || []}
+          style="2xl:text-[33px]"
         />
       </BackCover>
 

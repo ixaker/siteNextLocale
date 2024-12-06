@@ -65,7 +65,11 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
             <div className="mt-[20px] flex justify-center items-center ">
               <ul className="flex flex-col gap-10 w-auto">
                 <li className="flex gap-[30px] items-center">
-                  <a target="_blank" href={translationsPage.address} aria-label={translationsPage.address}>
+                  <a
+                    target="_blank"
+                    href="https://maps.app.goo.gl/jPbgbWosaTq8GeNe7"
+                    aria-label={translationsPage.address}
+                  >
                     <CustomButton
                       ariaLabel={translationsPage.address}
                       style={{ backgroundColor: primaryColor, boxShadow: `0 10px 30px ${secondaryColor}` }}
