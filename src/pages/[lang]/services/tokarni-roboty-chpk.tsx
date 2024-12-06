@@ -37,7 +37,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         lang={lang}
         localeOg={translations.locale}
       />
-      <BackCover>
+      <BackCover bgImg="/assets/tokarni-roboty-chpk.jpg">
         <InformationBlock
           title="ТОКАРНА ОБРОБКА"
           descriptionTop="Ми виконуємо те, що інші називають неможливим. Великий парк верстатів із ЧПК, сучасні технології та команда професіоналів дозволяють нам виготовляти деталі будь-якої складності та обсягу."

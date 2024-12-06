@@ -38,7 +38,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         lang={lang}
         localeOg={translations.locale}
       />
-      <BackCover>
+      <BackCover bgImg="/assets/porizka-na-verstati.jpg">
         <InformationBlock
           title="СТРІЧКОПИЛЬНА ПОРІЗКА"
           descriptionTop="Ми пропонуємо високоякісну порізку металу за допомогою лентопилів ЧПК, що дозволяє обробляти заготовки з великою точністю і швидкістю. Завдяки нашому сучасному парку обладнання, ми здатні виконувати великі обсяги робіт будь-якої складності."

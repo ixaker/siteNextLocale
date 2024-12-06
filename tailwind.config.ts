@@ -19,7 +19,8 @@ const config: Config = {
       },
       backgroundImage: {
         bgImg: "url('/bgImg.webp')",
-        bgImgHomeBottom: 'url(/assets/bgImgCalculationSection.jpg)',
+        bgTokarHome: 'url(/assets/tokarni-roboty-chpk.jpg)',
+        bgImgHomeBottom: 'url(/assets/bgImgCalculationSection.png)',
       },
       height: {
         'fill-available': '-webkit-fill-available',

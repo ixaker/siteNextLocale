@@ -48,7 +48,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         lang={lang}
         localeOg={translations.locale}
       />
-      <BackCover>
+      <BackCover bgImg="/assets/lyttya-metalu.jpg">
         <InformationBlock
           title="Лиття"
           descriptionTop="Ми перетворюємо складні задачі на ефективні рішення! Завдяки передовому обладнанню та сучасним технологіям лиття, ми виготовляємо високоякісні відливки з різних матеріалів, забезпечуючи точність та надійність кожного етапу виробництва."

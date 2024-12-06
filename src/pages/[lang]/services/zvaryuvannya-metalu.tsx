@@ -45,7 +45,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         lang={lang}
         localeOg={translations.locale}
       />
-      <BackCover>
+      <BackCover bgImg="/assets/zvaryuvannya-metalu.jpg">
         <InformationBlock
           title="Зварювання"
           descriptionTop="Ми надаємо широкий спектр зварювальних послуг, використовуючи найсучасніше обладнання та інноваційні технології. Наші зварювальні роботи відрізняються високою якістю та точністю, що дозволяє нам виконувати проекти будь-якої складності."

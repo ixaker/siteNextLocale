@@ -47,7 +47,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         lang={lang}
         localeOg={translations.locale}
       />
-      <BackCover>
+      <BackCover bgImg="/assets/lazerna-rizka.jpg">
         <InformationBlock
           title="ЛАЗЕРНА РІЗКА З ЧПК"
           descriptionTop="Ми спеціалізуємося на високоточній лазерній порізці, використовуючи новітнє обладнання. Наші лазерні верстати з робочим полем 2000 мм х 6000 мм дозволяють різати матеріали товщиною до 20 мм з максимальним рівнем точності і чистоти зрізу."

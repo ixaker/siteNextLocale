@@ -46,7 +46,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         lang={lang}
         localeOg={translations.locale}
       />
-      <BackCover>
+      <BackCover bgImg="/assets/termichna-obrobka.jpg">
         <InformationBlock
           title="Термообробка металів"
           descriptionTop="Ми пропонуємо комплексні рішення для термообробки металів будь-якої складності. Завдяки сучасному обладнанню, передовим технологіям і досвідченій команді, ми забезпечуємо високу якість і точність обробки, що відповідає найвищим стандартам."

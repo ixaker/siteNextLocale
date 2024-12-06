@@ -28,10 +28,10 @@ const InformationBlock: React.FC<InformationBlock> = ({
   style,
 }) => {
   return (
-    <div className="flex min-h-[inherit] pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6">
+    <div className="flex min-h-[inherit] pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6 relative z-[10]">
       <NavigationMap lang={lang} translationsMenuService={translationsMenuService || []} />
       <div className="px-4 text-white flex items-start justify-center w-full">
-        <div className="flex gap-3 max-h-[450px]  max-w-[1050px]  justify-between bg-inherit sm:bg-[#000000a3] rounded-l-[10px] rounded-[20px]">
+        <div className="flex gap-3 max-h-[450px]  max-w-[1050px]  justify-between bg-inherit sm:bg-[#000000af] rounded-l-[10px] rounded-[20px]">
           <div className="hidden sm:block max-w-[320px] w-full h-[450px] ">
             <Image
               width={100}

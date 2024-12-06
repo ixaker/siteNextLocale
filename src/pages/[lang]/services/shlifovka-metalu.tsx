@@ -52,7 +52,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         lang={lang}
         localeOg={translations.locale}
       />
-      <BackCover>
+      <BackCover bgImg="/assets/shlifovka-metalu.jpg">
         <InformationBlock
           title="Шліфування металу"
           descriptionTop="Ми перетворюємо складні завдання на готові рішення. Завдяки сучасному парку шліфувальних верстатів, передовим технологіям і досвідченій команді, ми гарантуємо точну та якісну обробку поверхонь деталей будь-якої складності."

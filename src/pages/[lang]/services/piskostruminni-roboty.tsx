@@ -49,7 +49,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         lang={lang}
         localeOg={translations.locale}
       />
-      <BackCover>
+      <BackCover bgImg="/assets/piskostruminni-roboty.webp">
         <InformationBlock
           title="Пескоструйна обробка"
           descriptionTop="Ми пропонуємо широкий спектр послуг з очищення матеріалів, використовуючи сучасні технології та обладнання, що забезпечує високу ефективність і якість обробки. Наш парк обладнання дозволяє здійснювати очищення різних типів матеріалів, забезпечуючи ідеальний результат для будь-яких задач."

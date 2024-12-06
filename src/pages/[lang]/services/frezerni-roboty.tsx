@@ -46,7 +46,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         lang={lang}
         localeOg={translations.locale}
       />
-      <BackCover>
+      <BackCover bgImg="/assets/frezerni-roboty.jpg">
         <InformationBlock
           title="Фрезерна обробка на ЧПК"
           descriptionTop="Ми перетворюємо складні завдання на готові рішення. Завдяки широкому парку фрезерних оброблювальних центрів із ЧПК, сучасним технологіям і професійній команді, ми обробляємо деталі будь-якої складності та великих обсягів."
