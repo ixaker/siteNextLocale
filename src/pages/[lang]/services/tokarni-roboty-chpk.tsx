@@ -9,6 +9,7 @@ import DynamicHead from '@/components/shared/DynamicHead';
 import { useEffect, useState } from 'react';
 import InformationBlock from '@/components/ui/information-block/InformationBlock';
 import InfoCard from '@/components/ui/info-card/InfoCard';
+import Paragraph from '@/components/ui/typography/Paragraph';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.tokarniRobotyChpkPage || langUk.tokarniRobotyChpkPage;
@@ -32,7 +33,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         description={translationsPage.description}
         keywords={translationsPage.title}
         canonical={fullUrl}
-        imgOg="/assets/tokarni-roboty-chpk.jpeg"
+        imgOg="/assets/tokarni-roboty-chpk.jpg"
         lang={lang}
         localeOg={translations.locale}
       />
@@ -42,7 +43,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           descriptionTop="Ми виконуємо те, що інші називають неможливим. Великий парк верстатів із ЧПК, сучасні технології та команда професіоналів дозволяють нам виготовляти деталі будь-якої складності та обсягу."
           descriptionBottom="Шукаєте партнера, який впорається з великими партіями, складними формами та жорсткими термінами? Ви знайшли його."
           translations={translations}
-          srcImg="/assets/tokarni-roboty-chpk.jpeg"
+          srcImg="/assets/tokarni-roboty-chpk.jpg"
           lang={lang}
           translationsMenuService={translationsMenuService || []}
         />
@@ -51,32 +52,40 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         <InfoCard
           aligntText="end"
           direction="row-reverse"
-          srcImg="/assets/tokarni-roboty-chpk2.png"
+          srcImg="/assets/tokarni-roboty-chpk2.jpg"
           title="Виконуємо будь-які обсяги токарних робіт"
           descriptionCard="Ми розуміємо, що ваш бізнес не може чекати. Завдяки сучасним потужностям і налагодженій логістиці, ваше замовлення буде виконане в максимально стислі терміни. Забудьте про тривалі строки виробництва — ми працюємо швидко і якісно"
         />
         <InfoCard
           aligntText="start"
           direction="row"
-          srcImg="/assets/tokarni-roboty-chpk3.png"
+          srcImg="/assets/tokarni-roboty-chpk3.webp"
           title="Швидке виконання замовлень"
           descriptionCard="Наш парк налічує понад 300 сучасних верстатів із ЧПК, які працюють без зупинки. Ми обробляємо великі партії деталей без проблем. Хочете замовити тисячі виробів? Це не питання. Якщо ваші постачальники не витримують навантаження, ми готові взятися за ваше замовлення та виконати його вчасно."
         />
         <InfoCard
           aligntText="end"
           direction="row-reverse"
-          srcImg="/assets/tokarni-roboty-chpk4.png"
+          srcImg="/assets/tokarni-roboty-chpk4.jpg"
           title="Точність і виготовлення деталей будь-якої складності"
           descriptionCard="Наші верстати дозволяють виготовляти великі деталі діаметром до 4000 мм і довжиною до 8000 мм. Потрібні дрібні, складні деталі від 10 мм? Ми це зробимо з максимальною точністю. Там, де інші здаються, ми пропонуємо рішення і запитуємо: “Коли починаємо?”."
         />
         <InfoCard
           aligntText="start"
           direction="row"
-          srcImg="/assets/tokarni-roboty-chpk5.png"
+          srcImg="/assets/tokarni-roboty-chpk5.webp"
           title="Комплексний підхід до виготовлення деталей"
           descriptionCard="З нами вам не потрібно шукати інших підрядників для завершення процесу. Ми виконуємо весь спектр робіт: від точного виготовлення на ЧПК до підготовки деталей для подальшого використання. Ви отримуєте повне рішення в одному місці."
         />
       </div>
+
+      <div className="px-4 mt-10">
+        <Paragraph
+          alignment="center"
+          text="Ми готові стати вашим надійним партнером у сфері токарних робіт!"
+        />
+      </div>
+
       <CalculationSection translations={translations} lang={lang} />
     </section>
   );
