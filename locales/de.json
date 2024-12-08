@@ -240,6 +240,40 @@
     ],
     "callToAction": "Reichen Sie jetzt Ihre Anfrage ein und überzeugen Sie sich von unseren Fähigkeiten!"
   },
+  "shlifovkaMetaluPage": {
+    "title": "Metallbearbeitung durch Schleifen",
+    "descriptionTop": "Wir verwandeln komplexe Aufgaben in fertige Lösungen. Dank unserer modernen Maschinenpark für Schleifmaschinen, fortschrittlicher Technologien und einem erfahrenen Team garantieren wir präzise und qualitativ hochwertige Oberflächenbearbeitung von Teilen jeder Komplexität.",
+    "descriptionBottom": "Suchen Sie nach Spezialisten, die Ihre Bedürfnisse verstehen? Wir sind bereit, Ihr Partner zu werden und selbst die komplexesten Aufträge auszuführen.",
+    "infoCard": [
+      {
+        "title": "Unser Maschinenpark umfasst eine breite Palette von Schleifmaschinen",
+        "list": [
+          { "description": "Zentrifugal-Schleifmaschinen" },
+          { "description": "Zylinderschleifmaschinen, einschließlich CNC-Modelle" },
+          { "description": "Flachschleifmaschinen" },
+          { "description": "Ausrüstung für Innen- und Tiefinnenschleifen" },
+          { "description": "Gewindeschleifmaschinen" }
+        ],
+        "image": "/assets/shlifovka-metalu2.jpg"
+      },
+      {
+        "title": "Hohe Präzision und Qualität",
+        "description": "Unsere Technologien ermöglichen es, perfekte Oberflächenreinheit zu erreichen und maximale Präzision, selbst für kleinste Teile und komplexe Formen.",
+        "image": "/assets/shlifovka-metalu3.webp"
+      },
+      {
+        "title": "Schnelle Auftragsabwicklung",
+        "description": "Dank unserer optimierten Logistik und leistungsstarker Ausrüstung führen wir Aufträge in kürzester Zeit ohne Qualitätsverlust aus.",
+        "image": "/assets/shlifovka-metalu4.jpg"
+      },
+      {
+        "title": "Ganzheitlicher Ansatz",
+        "description": "Wir bieten einen vollständigen Zyklus von Schleifoperationen an, sodass Sie fertige Produkte ohne die Notwendigkeit, andere Auftragnehmer einzubeziehen, erhalten.",
+        "image": "/assets/shlifovka-metalu5.jpg"
+      }
+    ],
+    "callToAction": "Reichen Sie jetzt Ihre Anfrage ein – wir helfen, Ihre Ideen in die Realität umzusetzen!"
+  },
 
   "cardData": [
     {
@@ -314,41 +348,6 @@
       "href": "contact"
     }
   ],
-  "shlifovkaMetaluPage": {
-    "title": "Metall Schleifen",
-    "description": "Wärmebehandlung von Metall durch QPart: Härten, Glühen und Anlassen.Dies ist ein entscheidender Schritt in der Produktion, der die Qualität und die Gebrauchseigenschaften der Materialien erheblich verbessert.",
-    "peculiaritiesTitle": "Wir verwenden eine Vielzahl von Schleifmethoden, darunter:",
-    "listPeculiarities": [
-      {
-        "description": "Außenrundschleifen: Wird zur Bearbeitung großer Teile mit hoher Präzision verwendet.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Innenrundschleifen: Verbessert die Qualität der Innenflächen von Bauteilen wie Lagern oder Hydraulikkomponenten.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Zahnschleifen: Zur Bearbeitung von Zahnrädern, die in verschiedenen Mechanismen verwendet werden.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Zentrumsloses Schleifen: Effektiv zur Bearbeitung von äußeren und inneren Oberflächen von Bauteilen.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Flachschleifen: Zum Erreichen einer perfekt glatten Oberfläche auf flachen und geformten Oberflächen.",
-        "icon": "/icons/listPeculiarities.png"
-      }
-    ],
-    "servicesTitle": "Was ist Metallschleifen?",
-    "listServices": [
-      {
-        "description": "Das Metallschleifen ist der letzte Schritt bei der Bearbeitung von Metallprodukten, der eine perfekt glatte Oberfläche ermöglicht. Dieser Prozess wird in der Regel nach Dreh- oder Fräsarbeiten durchgeführt, um Unvollkommenheiten zu beseitigen und eine hohe Präzision der gefertigten Teile zu gewährleisten."
-      }
-    ],
-    "callToActionTop": "SmGlätte und Präzision jeder Oberfläche.",
-    "callToActionBottom": "Bestellen Sie noch heute das Schleifen von Metall!"
-  },
 
   "orderBenefits": {
     "orderBenefitsTitle": "Vorteile einer Bestellung bei uns",

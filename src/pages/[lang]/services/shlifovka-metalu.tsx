@@ -13,6 +13,7 @@ import Paragraph from '@/components/ui/typography/Paragraph';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.shlifovkaMetaluPage || langUk.shlifovkaMetaluPage;
+  const cardList = translationsPage.infoCard;
   const theme = useTheme();
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
@@ -26,25 +27,11 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
     }
   }, [fullUrl]);
 
-  const list = [
-    { description: 'Безцентрові шліфувальні верстати;' },
-    { description: 'Круглі шліфувальні верстати, зокрема з ЧПК' },
-    {
-      description: 'Плоскошліфувальні машини',
-    },
-    {
-      description: 'Обладнання для внутрішнього та глибокого внутрішнього шліфування',
-    },
-    {
-      description: 'Верстати для різьбошліфування',
-    },
-  ];
-
   return (
     <section style={{ backgroundColor: bgColor, color: secondaryColor }}>
       <DynamicHead
         title={translationsPage.title}
-        description={translationsPage.description}
+        description={translationsPage.descriptionTop}
         keywords={translationsPage.title}
         canonical={fullUrl}
         imgOg="/assets/shlifovka-metalu.jpg"
@@ -53,9 +40,9 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       />
       <BackCover bgImg="/assets/shlifovka-metalu.jpg">
         <InformationBlock
-          title="Шліфування металу"
-          descriptionTop="Ми перетворюємо складні завдання на готові рішення. Завдяки сучасному парку шліфувальних верстатів, передовим технологіям і досвідченій команді, ми гарантуємо точну та якісну обробку поверхонь деталей будь-якої складності."
-          descriptionBottom="Прагнете знайти спеціалістів, які розуміють ваші потреби? Ми готові стати вашим партнером і виконати навіть найскладніші замовлення."
+          title={translationsPage.title}
+          descriptionTop={translationsPage.descriptionTop}
+          descriptionBottom={translationsPage.descriptionBottom}
           translations={translations}
           srcImg="/assets/shlifovka-metalu.jpg"
           lang={lang}
@@ -63,41 +50,22 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       </BackCover>
 
       <div className="sm:px-4 mt-6">
-        <InfoCard
-          aligntText="end"
-          direction="row-reverse"
-          srcImg="/assets/shlifovka-metalu2.jpg"
-          title="Наш парк включає широкий асортимент шліфувальних верстатів"
-          list={list}
-        />
-        <InfoCard
-          aligntText="start"
-          direction="row"
-          srcImg="/assets/shlifovka-metalu3.webp"
-          title="Висока точність і якість"
-          descriptionCard="Наші технології дозволяють досягти ідеальної чистоти поверхні та забезпечують максимальну точність навіть для найдрібніших деталей і складних форм"
-        />
-        <InfoCard
-          aligntText="end"
-          direction="row-reverse"
-          srcImg="/assets/shlifovka-metalu4.jpg"
-          title="Швидке виконання замовлень"
-          descriptionCard="Завдяки налагодженій логістиці та високій потужності обладнання ми виконуємо замовлення у найкоротші терміни без шкоди для якості"
-        />
-        <InfoCard
-          aligntText="start"
-          direction="row"
-          srcImg="/assets/shlifovka-metalu5.jpg"
-          title="Комплексний підхід"
-          descriptionCard="Ми надаємо повний цикл шліфувальних робіт, щоб ви отримали готову продукцію без необхідності залучати інших підрядників"
-        />
+        {cardList.map((item, index) => (
+          <div key={index}>
+            <InfoCard
+              aligntText={index % 2 === 0 ? 'end' : 'start'}
+              direction={index % 2 === 0 ? 'row-reverse' : 'row'}
+              srcImg={item.image}
+              title={item.title}
+              descriptionCard={!item.list || item.list.length === 0 ? item.description : undefined}
+              list={item.list}
+            />
+          </div>
+        ))}
       </div>
 
       <div className="px-4 mt-10">
-        <Paragraph
-          alignment="center"
-          text="Залиште заявку прямо зараз – ми допоможемо втілити ваші ідеї в реальність!"
-        />
+        <Paragraph alignment="center" text={translationsPage.callToAction} />
       </div>
 
       <CalculationSection translations={translations} lang={lang} />

@@ -52,16 +52,7 @@ export type Translations = {
 
   tokarniRobotyChpkPage: ServicesPage;
 
-  shlifovkaMetaluPage: {
-    title: string;
-    description: string;
-    peculiaritiesTitle: string;
-    listPeculiarities: { description: string; icon: string }[];
-    servicesTitle: string;
-    listServices: { description: string }[];
-    callToActionTop: string;
-    callToActionBottom: string;
-  };
+  shlifovkaMetaluPage: ServicesPage;
 
   termichnaObrobkaPage: ServicesPage;
 

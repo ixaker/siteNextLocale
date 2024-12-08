@@ -238,6 +238,40 @@
     ],
     "callToAction": "Submit your application right now and see our capabilities!"
   },
+  "shlifovkaMetaluPage": {
+    "title": "Metal Grinding",
+    "descriptionTop": "We turn complex tasks into ready solutions. Thanks to our modern fleet of grinding machines, advanced technologies, and experienced team, we guarantee precise and high-quality surface processing for parts of any complexity.",
+    "descriptionBottom": "Looking for specialists who understand your needs? We are ready to become your partner and fulfill even the most complex orders.",
+    "infoCard": [
+      {
+        "title": "Our fleet includes a wide range of grinding machines",
+        "list": [
+          { "description": "Centerless grinding machines" },
+          { "description": "Cylindrical grinding machines, including CNC models" },
+          { "description": "Surface grinding machines" },
+          { "description": "Internal and deep internal grinding equipment" },
+          { "description": "Thread grinding machines" }
+        ],
+        "image": "/assets/shlifovka-metalu2.jpg"
+      },
+      {
+        "title": "High precision and quality",
+        "description": "Our technologies allow us to achieve perfect surface cleanliness and provide maximum precision even for the smallest parts and complex shapes.",
+        "image": "/assets/shlifovka-metalu3.webp"
+      },
+      {
+        "title": "Fast order fulfillment",
+        "description": "Thanks to our streamlined logistics and powerful equipment, we fulfill orders in the shortest time possible without compromising quality.",
+        "image": "/assets/shlifovka-metalu4.jpg"
+      },
+      {
+        "title": "Comprehensive approach",
+        "description": "We provide a full cycle of grinding operations, so you can receive finished products without the need to involve other contractors.",
+        "image": "/assets/shlifovka-metalu5.jpg"
+      }
+    ],
+    "callToAction": "Submit your application right now – we’ll help bring your ideas to life!"
+  },
 
   "cardData": [
     {
@@ -315,42 +349,6 @@
       "href": "contact"
     }
   ],
-
-  "shlifovkaMetaluPage": {
-    "title": "Metal Grinding",
-    "description": "Metal grinding is one of the key areas of activity for QPart. We provide metalworking services throughout Ukraine, taking on complex tasks and adhering to the highest quality standards. If you need metal grinding services in Dnipro, our company will deliver them at the highest level and in the shortest time.",
-    "peculiaritiesTitle": "We use a wide range of grinding methods, including:",
-    "listPeculiarities": [
-      {
-        "description": "External cylindrical grinding: used for processing large parts with high precision.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Internal grinding: improves the quality of internal surfaces of parts, such as bearings or hydraulic components.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Gear grinding: for processing gear wheels used in various mechanisms.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Centerless grinding: effective for processing external and internal surfaces of parts.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Surface grinding: for achieving a perfectly smooth surface on flat and shaped surfaces.",
-        "icon": "/icons/listPeculiarities.png"
-      }
-    ],
-    "servicesTitle": "What is Metal Grinding?",
-    "listServices": [
-      {
-        "description": "Metal grinding is the final stage of processing metal products, allowing for achieving a perfectly smooth surface. This procedure is typically performed after turning or milling operations to eliminate imperfections and ensure high precision of manufactured parts."
-      }
-    ],
-    "callToActionTop": "Smoothness and precision of every surface.",
-    "callToActionBottom": "Order metal grinding today!"
-  },
 
   "orderBenefits": {
     "orderBenefitsTitle": "Advantages of Ordering with Us",
