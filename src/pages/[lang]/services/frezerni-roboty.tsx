@@ -13,20 +13,12 @@ import Paragraph from '@/components/ui/typography/Paragraph';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.frezerniRoboty || langUk.frezerniRoboty;
+  const cardList = translationsPage.infoCard;
   const theme = useTheme();
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
-
-  const list = [
-    { description: 'Вертикальні фрезерні станки ЧПК' },
-    { description: 'Горизонтальні фрезерні станки із одним або змінними столами' },
-    {
-      description:
-        'Портальний 5-осьовий оброблювальний центр із робочим полем 2000х4000 мм для великих і складних деталей',
-    },
-  ];
 
   const [fullUrl, setFullUrl] = useState('');
   useEffect(() => {
@@ -38,7 +30,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
     <section style={{ backgroundColor: bgColor, color: secondaryColor }}>
       <DynamicHead
         title={translationsPage.title}
-        description={translationsPage.description}
+        description={translationsPage.descriptionTop}
         keywords={translationsPage.title}
         canonical={fullUrl}
         imgOg="/assets/frezerni-roboty.jpg"
@@ -47,9 +39,9 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       />
       <BackCover bgImg="/assets/frezerni-roboty.jpg">
         <InformationBlock
-          title="Фрезерна обробка на ЧПК"
-          descriptionTop="Ми перетворюємо складні завдання на готові рішення. Завдяки широкому парку фрезерних оброблювальних центрів із ЧПК, сучасним технологіям і професійній команді, ми обробляємо деталі будь-якої складності та великих обсягів."
-          descriptionBottom="Потрібен надійний партнер для роботи з великими серіями, складними формами чи важкими деталями? Ми готові до викликів."
+          title={translationsPage.title}
+          descriptionTop={translationsPage.descriptionTop}
+          descriptionBottom={translationsPage.descriptionBottom}
           translations={translations}
           srcImg="/assets/frezerni-roboty.jpg"
           lang={lang}
@@ -57,41 +49,22 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       </BackCover>
 
       <div className="sm:px-4 mt-6">
-        <InfoCard
-          aligntText="end"
-          direction="row-reverse"
-          srcImg="/assets/frezerni-roboty2.jpeg"
-          title="Потужний парк сучасного обладнання"
-          list={list}
-        />
-        <InfoCard
-          aligntText="start"
-          direction="row"
-          srcImg="/assets/frezerni-roboty3.jpg"
-          title="Деталі будь-якої складності та точності"
-          descriptionCard="Наші технології дозволяють обробляти складні 3D-форматні поверхні, а також забезпечувати високу точність навіть для найменших елементів. Там, де інші здаються, ми говоримо: “Коли починаємо?”"
-        />
-        <InfoCard
-          aligntText="end"
-          direction="row-reverse"
-          srcImg="/assets/frezerni-roboty4.jpg"
-          title="Комплексний підхід"
-          descriptionCard="Ми пропонуємо повний цикл фрезерної обробки, щоб ви отримали готову деталь без необхідності звертатися до інших підрядників. Ваше завдання – наша відповідальність"
-        />
-        <InfoCard
-          aligntText="start"
-          direction="row"
-          srcImg="/assets/frezerni-roboty5.png"
-          title="Швидке виконання замовлень"
-          descriptionCard="Завдяки сучасним потужностям і налагодженій логістиці, ваше замовлення буде виконане в максимально стислі терміни. Забудьте про затримки – ми працюємо швидко та якісно"
-        />
+        {cardList.map((item, index) => (
+          <div key={index}>
+            <InfoCard
+              aligntText={index % 2 === 0 ? 'end' : 'start'}
+              direction={index % 2 === 0 ? 'row-reverse' : 'row'}
+              srcImg={item.image}
+              title={item.title}
+              descriptionCard={!item.list || item.list.length === 0 ? item.description : undefined}
+              list={item.list}
+            />
+          </div>
+        ))}
       </div>
       <div className="px-4 mt-10">
-        <Paragraph
-          alignment="center"
-          text="Ми готові стати вашим надійним партнером у сфері фрезерних робіт!"
-        />
-        <Paragraph alignment="center" text="Залиште заявку прямо зараз і переконайтесь у наших можливостях" />
+        <Paragraph alignment="center" text={translationsPage.callToActionGeneral || ''} />
+        <Paragraph alignment="center" text={translationsPage.callToAction} />
       </div>
       <CalculationSection translations={translations} lang={lang} />
     </section>

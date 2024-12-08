@@ -84,15 +84,7 @@ export type Translations = {
     callToActionBottom: string;
   };
 
-  frezerniRoboty: {
-    title: string;
-    description: string;
-    peculiaritiesTitle: string;
-    listPeculiarities: { description: string; icon: string }[];
-    servicesTitle: string;
-    listServices: { description: string }[];
-    callToAction: string;
-  };
+  frezerniRoboty: ServicesPage;
 
   porizkaNaVerstati: ServicesPage;
 

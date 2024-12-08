@@ -139,6 +139,41 @@
     "callToActionGeneral": "Vertrauen Sie den Profis!",
     "callToAction": "Bestellen Sie noch heute Gießen bei uns und erhalten Sie hochqualitative Gussstücke, die all Ihren Anforderungen entsprechen!"
   },
+  "frezerniRoboty": {
+    "title": "CNC-Fräsen",
+    "descriptionTop": "Wir verwandeln komplexe Aufgaben in fertige Lösungen. Mit einer breiten Palette von CNC-Fräszentren, modernen Technologien und einem professionellen Team bearbeiten wir Teile jeder Komplexität und großen Volumens.",
+    "descriptionBottom": "Brauchen Sie einen zuverlässigen Partner für große Serien, komplexe Formen oder schwere Teile? Wir sind bereit für die Herausforderung.",
+    "infoCard": [
+      {
+        "title": "Leistungsstarker Maschinenpark",
+        "list": [
+          { "description": "Vertikale CNC-Fräsmaschinen" },
+          { "description": "Horizontale Fräsmaschinen mit einzelnen oder austauschbaren Tischen" },
+          {
+            "description": "Portal 5-Achs-Bearbeitungszentrum mit einer Arbeitsfläche von 2000x4000 mm für große und komplexe Teile"
+          }
+        ],
+        "image": "/assets/frezerni-roboty2.jpeg"
+      },
+      {
+        "title": "Teile jeder Komplexität und Präzision",
+        "description": "Unsere Technologien ermöglichen es uns, komplexe 3D-Formflächen zu bearbeiten und höchste Präzision selbst für die kleinsten Elemente zu gewährleisten. Wo andere aufgeben, sagen wir: 'Wann fangen wir an?'",
+        "image": "/assets/frezerni-roboty3.jpg"
+      },
+      {
+        "title": "Ganzheitlicher Ansatz",
+        "description": "Wir bieten einen vollständigen Frässervice, damit Sie das fertige Teil erhalten, ohne sich an andere Auftragnehmer wenden zu müssen. Ihre Aufgabe ist unsere Verantwortung.",
+        "image": "/assets/frezerni-roboty4.jpg"
+      },
+      {
+        "title": "Schnelle Auftragsabwicklung",
+        "description": "Dank moderner Kapazitäten und optimierter Logistik wird Ihr Auftrag in kürzester Zeit ausgeführt. Vergessen Sie Verzögerungen – wir arbeiten schnell und effizient.",
+        "image": "/assets/frezerni-roboty5.png"
+      }
+    ],
+    "callToActionGeneral": "Wir sind bereit, Ihr zuverlässiger Partner im Bereich Fräsarbeiten zu werden!",
+    "callToAction": "Stellen Sie jetzt Ihre Anfrage und überzeugen Sie sich von unseren Fähigkeiten!"
+  },
 
   "cardData": [
     {
@@ -285,43 +320,7 @@
     "callToActionTop": "Optimieren Sie die Festigkeit und Langlebigkeit Ihrer Teile.",
     "callToActionBottom": "Bestellen Sie die Wärmebehandlung bei uns!"
   },
-  "frezerniRoboty": {
-    "title": "CNC-Fräsen von QPart: Präzision, Qualität, Professionalität",
-    "description": "CNC-Fräsen ist eine moderne Methode der Metallbearbeitung, die die Herstellung von Teilen mit komplexen geometrischen Parametern und hohen Betriebseigenschaften ermöglicht. Diese Technologie ist für die Arbeit mit verschiedenen Materialien geeignet: Titan, Aluminium, Gusseisen, rostfreiem Stahl und anderen Metallen.",
-    "peculiaritiesTitle": "Eigenschaften der CNC-Fräsarbeiten:",
-    "listPeculiarities": [
-      {
-        "description": "Der Einsatz von hochpräzisen Fräsmaschinen mit numerischer Steuerung gewährleistet maximale Genauigkeit und minimalen Einfluss des menschlichen Faktors.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Die Technologie eignet sich sowohl für grobe als auch für präzise Bearbeitung, wodurch eine ideale Oberflächenqualität der Teile erreicht wird.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Je nach Auftragskomplexität und Materialeigenschaften werden Scheiben-, End- und Stirnfräser verwendet.",
-        "icon": "/icons/listPeculiarities.png"
-      }
-    ],
-    "listServices": [
-      {
-        "description": "Gegenlauffräsen: Der Fräser bewegt sich gegen das Werkstück, bietet hohe Zuverlässigkeit, aber geringere Präzision. Ideal für die Grobbearbeitung."
-      },
-      {
-        "description": "Gleichlauffräsen: Der Fräser und das Werkstück bewegen sich in die gleiche Richtung, wodurch maximale Präzision bei der Feinbearbeitung erzielt wird."
-      },
-      {
-        "description": "Vorschub pro Umdrehung (mm/U): Bewegung des Fräsers pro Umdrehung."
-      },
-      {
-        "description": "Vorschubgeschwindigkeit pro Minute (U/min): Werkzeugbewegung innerhalb einer Minute."
-      },
-      {
-        "description": "Pro Zahn (mm/Zahn): Zurückgelegte Strecke des Fräsers pro Zahndrehung."
-      }
-    ],
-    "callToAction": "Vertrauen Sie uns CNC-Fräsarbeiten an – wir garantieren Präzision und schnelle Ausführung Ihrer Aufgaben!"
-  },
+
   "lazernaRizkaPage": {
     "title": "Laserschneiden von Metall",
     "description": "Laserschneiden ist eine moderne Methode zur Bearbeitung und Zuschnitt von Blech, die mit hochpräzisen CNC-gesteuerten Maschinen durchgeführt wird. Jeder Auftrag wird individuell bearbeitet: Vor Arbeitsbeginn wird die Maschine unter Berücksichtigung aller technischen Anforderungen programmiert, was eine ideale Präzision und die Möglichkeit der Bearbeitung von Materialien jeder Komplexität gewährleistet.",

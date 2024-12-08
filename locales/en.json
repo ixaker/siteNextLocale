@@ -139,6 +139,41 @@
     "callToActionGeneral": "Trust the professionals!",
     "callToAction": "Order casting with us today and receive high-quality castings that meet all your requirements!"
   },
+  "frezerniRoboty": {
+    "title": "CNC Milling",
+    "descriptionTop": "We turn complex tasks into ready solutions. With a wide range of CNC milling centers, modern technologies, and a professional team, we process parts of any complexity and large volumes.",
+    "descriptionBottom": "Need a reliable partner for large series, complex shapes, or heavy parts? We are ready for the challenge.",
+    "infoCard": [
+      {
+        "title": "Powerful fleet of modern equipment",
+        "list": [
+          { "description": "Vertical CNC milling machines" },
+          { "description": "Horizontal milling machines with single or interchangeable tables" },
+          {
+            "description": "Portal 5-axis machining center with a working area of 2000x4000 mm for large and complex parts"
+          }
+        ],
+        "image": "/assets/frezerni-roboty2.jpeg"
+      },
+      {
+        "title": "Parts of any complexity and precision",
+        "description": "Our technologies allow us to process complex 3D-shaped surfaces and ensure high precision even for the smallest elements. Where others give up, we say: 'When do we start?'",
+        "image": "/assets/frezerni-roboty3.jpg"
+      },
+      {
+        "title": "Comprehensive approach",
+        "description": "We offer a full cycle of milling services, so you get the finished part without the need to contact other contractors. Your task is our responsibility.",
+        "image": "/assets/frezerni-roboty4.jpg"
+      },
+      {
+        "title": "Fast order fulfillment",
+        "description": "Thanks to modern capabilities and streamlined logistics, your order will be completed in the shortest possible time. Forget delays – we work quickly and efficiently.",
+        "image": "/assets/frezerni-roboty5.png"
+      }
+    ],
+    "callToActionGeneral": "We are ready to become your reliable partner in the field of milling!",
+    "callToAction": "Submit your request now and see our capabilities!"
+  },
 
   "cardData": [
     {
@@ -288,44 +323,6 @@
     ],
     "callToActionTop": "Optimize the strength and durability of your parts.",
     "callToActionBottom": "Order heat treatment from us!"
-  },
-  "frezerniRoboty": {
-    "title": "CNC Milling by QPart: Precision, Quality, Professionalism",
-    "description": "CNC milling is a modern method of metal machining that allows the production of parts with complex geometric parameters and high operational characteristics. This technology is applicable for working with various materials: titanium, aluminum, cast iron, stainless steel, and other metals.",
-    "peculiaritiesTitle": "Features of CNC Milling Works:",
-    "listPeculiarities": [
-      {
-        "description": "The use of high-precision milling machines with numerical control ensures maximum accuracy and minimal human factor influence.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "The technology is suitable for both rough and finishing operations, allowing for the achievement of perfect surface quality on the parts.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Disc, end, and face mills are used depending on the complexity of the order and the material characteristics.",
-        "icon": "/icons/listPeculiarities.png"
-      }
-    ],
-    "servicesTitle": "Technical Aspects of Milling:",
-    "listServices": [
-      {
-        "description": "Up milling: The cutter moves against the workpiece, offering high reliability but lower precision. Ideal for rough machining."
-      },
-      {
-        "description": "Down milling: The cutter and workpiece move in the same direction, enabling maximum precision during finish machining."
-      },
-      {
-        "description": "Feed per revolution (mm/rev): Movement of the cutter per one revolution."
-      },
-      {
-        "description": "Feed rate per minute (rev/min): Tool movement in one minute."
-      },
-      {
-        "description": "Per tooth (mm/tooth): Distance covered by the cutter per one tooth rotation."
-      }
-    ],
-    "callToAction": "Trust us with CNC milling work — we guarantee precision and fast execution of your tasks!"
   },
 
   "lazernaRizkaPage": {
