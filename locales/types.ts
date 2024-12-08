@@ -15,7 +15,7 @@ export type ServicesPage = {
   title: string;
   descriptionTop: string;
   descriptionBottom: string;
-  infoCard: { title: string; description: string; image: string }[];
+  infoCard: { title: string; description?: string; list?: { description: string }[]; image: string }[];
   callToAction: string;
 };
 
@@ -121,17 +121,7 @@ export type Translations = {
     listOrderBenefits: { title: string; icon: string }[];
   };
 
-  zvaryuvannyaMetaluPage: {
-    title: string;
-    description: string;
-    servicesTitle: string;
-    listServices: { description: string }[];
-    descriptionBenefits: string;
-    peculiaritiesTitle: string;
-    listPeculiarities: { description: string; icon: string }[];
-    callToActionTop: string;
-    callToActionBottom: string;
-  };
+  zvaryuvannyaMetaluPage: ServicesPage;
 
   zaliznychniZapchastynyPage: {
     title: string;

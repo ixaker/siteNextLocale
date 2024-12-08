@@ -13,21 +13,23 @@ import Paragraph from '@/components/ui/typography/Paragraph';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.zvaryuvannyaMetaluPage || langUk.zvaryuvannyaMetaluPage;
+  const cardList = translationsPage.infoCard;
   const theme = useTheme();
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
   const [fullUrl, setFullUrl] = useState('');
-  const list = [
-    { description: 'Полуавтоматичну зварку' },
-    { description: 'Аргонове зварювання' },
-    {
-      description: 'Лазерне зварювання',
-    },
-    { description: 'Електродугове зварювання' },
-    { description: 'Контактну зварку' },
-  ];
+
+  // const list = [
+  //   { description: 'Полуавтоматичну зварку' },
+  //   { description: 'Аргонове зварювання' },
+  //   {
+  //     description: 'Лазерне зварювання',
+  //   },
+  //   { description: 'Електродугове зварювання' },
+  //   { description: 'Контактну зварку' },
+  // ];
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setFullUrl(window.location.href);
@@ -37,7 +39,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
     <div style={{ backgroundColor: bgColor, color: secondaryColor }}>
       <DynamicHead
         title={translationsPage.title}
-        description={translationsPage.description}
+        description={translationsPage.descriptionTop}
         keywords={translationsPage.title}
         canonical={fullUrl}
         imgOg="/assets/zvaryuvannya-metalu.jpg"
@@ -46,51 +48,29 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       />
       <BackCover bgImg="/assets/zvaryuvannya-metalu.jpg">
         <InformationBlock
-          title="Зварювання"
-          descriptionTop="Ми надаємо широкий спектр зварювальних послуг, використовуючи найсучасніше обладнання та інноваційні технології. Наші зварювальні роботи відрізняються високою якістю та точністю, що дозволяє нам виконувати проекти будь-якої складності."
-          descriptionBottom="Потрібна зварка? Ми готові взятися за ваше завдання будь-якої складності. "
+          title={translationsPage.title}
+          descriptionTop={translationsPage.descriptionTop}
+          descriptionBottom={translationsPage.descriptionBottom}
           translations={translations}
           srcImg="/assets/zvaryuvannya-metalu.jpg"
           lang={lang}
         />
       </BackCover>
-
-      <div className="sm:px-4 mt-6">
-        <InfoCard
-          aligntText="end"
-          direction="row-reverse"
-          srcImg="/assets/zvaryuvannya-metalu2.jpg"
-          title="Наш парк обладнання включає"
-          list={list}
-        />
-        <InfoCard
-          aligntText="start"
-          direction="row"
-          srcImg="/assets/zvaryuvannya-metalu3.jpg"
-          title="Висока точність і якість"
-          descriptionCard="Наші технології забезпечують міцні та надійні зварні шви, навіть для складних металів і конструкцій"
-        />
-        <InfoCard
-          aligntText="end"
-          direction="row-reverse"
-          srcImg="/assets/zvaryuvannya-metalu4.jpg"
-          title="Швидке виконання замовлень"
-          descriptionCard="Завдяки досвідченій команді та високотехнологічному обладнанню, ми виконуємо замовлення оперативно і з високою точністю"
-        />
-        <InfoCard
-          aligntText="start"
-          direction="row"
-          srcImg="/assets/zvaryuvannya-metalu5.jpg"
-          title="Комплексний підхід"
-          descriptionCard="Ми надаємо повний цикл зварювальних послуг, щоб ви отримали готову деталь без необхідності звертатися до інших підрядників"
-        />
-      </div>
+      {cardList.map((item, index) => (
+        <div key={index}>
+          <InfoCard
+            aligntText={index % 2 === 0 ? 'end' : 'start'}
+            direction={index % 2 === 0 ? 'row-reverse' : 'row'}
+            srcImg={item.image}
+            title={item.title}
+            descriptionCard={!item.list || item.list.length === 0 ? item.description : undefined}
+            list={item.list}
+          />
+        </div>
+      ))}
 
       <div className="px-4 mt-10">
-        <Paragraph
-          alignment="center"
-          text="Залиште заявку прямо зараз і переконайтеся у наших можливостях!"
-        />
+        <Paragraph alignment="center" text={translationsPage.callToAction} />
       </div>
 
       <CalculationSection translations={translations} lang={lang} />

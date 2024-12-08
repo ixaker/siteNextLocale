@@ -41,6 +41,41 @@
     ],
     "callToAction": "We are ready to become your reliable partner in turning works!"
   },
+  "zvaryuvannyaMetaluPage": {
+    "title": "Welding",
+    "descriptionTop": "We provide a wide range of welding services using the most modern equipment and innovative technologies. Our welding work is characterized by high quality and precision, enabling us to handle projects of any complexity.",
+    "descriptionBottom": "Need welding? We are ready to take on your task, no matter the complexity.",
+    "infoCard": [
+      {
+        "title": "Our equipment includes",
+        "list": [
+          { "description": "Semi-automatic welding" },
+          { "description": "Argon welding" },
+          { "description": "Laser welding" },
+          { "description": "Arc welding" },
+          { "description": "Spot welding" }
+        ],
+        "image": "/assets/zvaryuvannya-metalu2.jpg"
+      },
+      {
+        "title": "High precision and quality",
+        "description": "Our technologies ensure strong and reliable welds, even for complex metals and structures",
+        "image": "/assets/zvaryuvannya-metalu3.jpg"
+      },
+      {
+        "title": "Fast order execution",
+        "description": "Thanks to an experienced team and high-tech equipment, we complete orders quickly and with great precision",
+        "image": "/assets/zvaryuvannya-metalu4.jpg"
+      },
+      {
+        "title": "Comprehensive approach",
+        "description": "We provide a full cycle of welding services so that you receive a finished part without needing to contact other contractors",
+        "image": "/assets/zvaryuvannya-metalu5.jpg"
+      }
+    ],
+    "callToAction": "Submit your application now and see what we can do!"
+  },
+
   "cardData": [
     {
       "title": "CNC TURNING WORKS",
@@ -334,53 +369,6 @@
         "icon": "/assets/clock-time.png"
       }
     ]
-  },
-  "zvaryuvannyaMetaluPage": {
-    "title": "WELDING WORKS",
-    "description": "Metalworking is a complex and responsible process that requires qualification and experience. At the “QPart” forge, professional welders perform all types of welding work efficiently and on time.",
-    "servicesTitle": "Our Services",
-    "listServices": [
-      {
-        "description": "Mechanical welding – ideal for working with various metals."
-      },
-      {
-        "description": "Arc welding – one of the most common methods for creating reliable joints."
-      },
-      {
-        "description": "Manual arc welding – a versatile method for different conditions."
-      },
-      {
-        "description": "Laser welding – a high-precision technique for complex structures."
-      },
-      {
-        "description": "Plasma and spot welding – for special quality and precision requirements."
-      },
-      {
-        "description": "Forge welding – a traditional method used for artistic creations."
-      }
-    ],
-    "peculiaritiesTitle": "Features of our metal welding:",
-    "listPeculiarities": [
-      {
-        "description": "Professional approach: Welders with experience working with various types of metals.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Technological advancement: Use of modern methods such as MIG, TIG, and manual arc welding.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Precision: Minimizing seams and metal deformations.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Material variety: Welding of ferrous, non-ferrous metals, stainless steel, and aluminum.",
-        "icon": "/icons/listPeculiarities.png"
-      }
-    ],
-
-    "callToActionTop": "High-quality metal welding for your project.",
-    "callToActionBottom": "Order the service now"
   },
   "lyttyaMetaluPage": {
     "title": "METAL CASTING",

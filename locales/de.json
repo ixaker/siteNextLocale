@@ -41,6 +41,41 @@
     ],
     "callToAction": "Wir sind bereit, Ihr zuverlässiger Partner für Dreharbeiten zu werden!"
   },
+  "zvaryuvannyaMetaluPage": {
+    "title": "Schweißen",
+    "descriptionTop": "Wir bieten ein breites Spektrum an Schweißdienstleistungen mit modernster Ausrüstung und innovativen Technologien. Unsere Schweißarbeiten zeichnen sich durch hohe Qualität und Präzision aus, sodass wir Projekte jeder Komplexität realisieren können.",
+    "descriptionBottom": "Brauchen Sie Schweißarbeiten? Wir sind bereit, Ihre Aufgabe unabhängig von der Komplexität zu übernehmen.",
+    "infoCard": [
+      {
+        "title": "Unser Maschinenpark umfasst",
+        "list": [
+          { "description": "Halbautomatisches Schweißen" },
+          { "description": "Argonschweißen" },
+          { "description": "Laserschweißen" },
+          { "description": "Lichtbogenschweißen" },
+          { "description": "Punktschweißen" }
+        ],
+        "image": "/assets/zvaryuvannya-metalu2.jpg"
+      },
+      {
+        "title": "Hohe Präzision und Qualität",
+        "description": "Unsere Technologien sorgen für starke und zuverlässige Schweißnähte, selbst bei komplexen Metallen und Konstruktionen",
+        "image": "/assets/zvaryuvannya-metalu3.jpg"
+      },
+      {
+        "title": "Schnelle Auftragsausführung",
+        "description": "Dank eines erfahrenen Teams und hochmoderner Ausrüstung erledigen wir Aufträge schnell und präzise",
+        "image": "/assets/zvaryuvannya-metalu4.jpg"
+      },
+      {
+        "title": "Umfassender Ansatz",
+        "description": "Wir bieten einen vollständigen Zyklus von Schweißdienstleistungen, sodass Sie ein fertiges Teil erhalten, ohne andere Auftragnehmer kontaktieren zu müssen",
+        "image": "/assets/zvaryuvannya-metalu5.jpg"
+      }
+    ],
+    "callToAction": "Reichen Sie jetzt Ihre Anfrage ein und überzeugen Sie sich von unseren Möglichkeiten!"
+  },
+
   "cardData": [
     {
       "title": "CNC-DREHARBEITEN",
@@ -328,52 +363,6 @@
         "icon": "/assets/clock-time.png"
       }
     ]
-  },
-  "zvaryuvannyaMetaluPage": {
-    "title": "SCHWEIßARBEITEN",
-    "description": "Die Metallbearbeitung ist ein komplexer und verantwortungsvoller Prozess, der Qualifikation und Erfahrung erfordert. In der Schmiede „QPart“ führen professionelle Schweißer alle Arten von Schweißarbeiten qualitativ hochwertig und termingerecht aus.",
-    "servicesTitle": "Unsere Dienstleistungen",
-    "listServices": [
-      {
-        "description": "Mechanisches Schweißen – ideal für die Arbeit mit verschiedenen Metallen."
-      },
-      {
-        "description": "Lichtbogenschweißen – eine der am häufigsten verwendeten Methoden für zuverlässige Verbindungen."
-      },
-      {
-        "description": "Manuelles Lichtbogenschweißen – eine vielseitige Methode für unterschiedliche Bedingungen."
-      },
-      {
-        "description": "Laserschweißen – eine hochpräzise Technik für komplexe Konstruktionen."
-      },
-      {
-        "description": "Plasma- und Punktschweißen – für besondere Anforderungen an Qualität und Präzision."
-      },
-      {
-        "description": "Schmiedeschweißen – eine traditionelle Methode, die für künstlerische Arbeiten verwendet wird."
-      }
-    ],
-    "peculiaritiesTitle": "Besonderheiten unserer Metallbearbeitung:",
-    "listPeculiarities": [
-      {
-        "description": "Professioneller Ansatz: Schweißer mit Erfahrung in der Arbeit mit verschiedenen Metallarten.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Technologische Fortschritte: Einsatz moderner Methoden wie MIG-, TIG- und manuelles Lichtbogenschweißen.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Präzision: Minimierung von Nähten und Metallverformungen.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Materialvielfalt: Schweißen von Eisen-, Nichteisenmetallen, Edelstahl und Aluminium.",
-        "icon": "/icons/listPeculiarities.png"
-      }
-    ],
-    "callToActionTop": "Hochwertiges Metallschweißen für Ihr Projekt.",
-    "callToActionBottom": "Bestellen Sie den Service jetzt!"
   },
   "lyttyaMetaluPage": {
     "title": "METALLGUSS",
