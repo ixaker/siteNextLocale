@@ -17,6 +17,8 @@ export type ServicesPage = {
   descriptionBottom: string;
   infoCard: { title: string; description?: string; list?: { description: string }[]; image: string }[];
   callToAction: string;
+  callToActionGeneral?: string;
+  callToActionBottom: string;
 };
 
 export type CardData = { title: string; img: string; href: string };
@@ -94,18 +96,7 @@ export type Translations = {
 
   porizkaNaVerstati: ServicesPage;
 
-  lyttyaMetaluPage: {
-    title: string;
-    description: string;
-    servicesTitle: string;
-    listServices: { description: string }[];
-    listServicesContinuation: { description: string }[];
-    descriptionBenefits: string;
-    peculiaritiesTitle: string;
-    listPeculiarities: { description: string; icon: string }[];
-    callToActionTop: string;
-    callToActionBottom: string;
-  };
+  lyttyaMetaluPage: ServicesPage;
 
   orderBenefits: {
     orderBenefitsTitle: string;

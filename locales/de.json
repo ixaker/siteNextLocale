@@ -103,6 +103,43 @@
     ],
     "callToAction": "Reichen Sie jetzt Ihre Anfrage ein, und wir werden Ihren Auftrag schnell und auf höchstem Niveau ausführen!"
   },
+  "lyttyaMetaluPage": {
+    "title": "Gießen",
+    "descriptionTop": "Wir verwandeln komplexe Aufgaben in effektive Lösungen! Mit modernster Ausrüstung und fortschrittlichen Gießtechnologien produzieren wir hochqualitative Gussstücke aus verschiedenen Materialien und gewährleisten Präzision und Zuverlässigkeit in jeder Produktionsphase.",
+    "descriptionBottom": "Benötigen Sie einen Partner für große Mengen oder komplexe Gussteile? Wir sind bereit, Ihre herausforderndsten Projekte umzusetzen.",
+    "infoCard": [
+      {
+        "title": "Wir bieten verschiedene Gießmöglichkeiten",
+        "list": [
+          { "description": "Gießen auf automatisierten Linien für die Massenproduktion" },
+          { "description": "Zentrifugales Gießen für die Herstellung von Teilen mit hoher Festigkeit" },
+          { "description": "Gießen in Formen für präzise und langlebige Gussstücke" },
+          { "description": "HTS-Gießen für hochtemperaturbeständige Legierungen" },
+          { "description": "Gießen von Nichteisenmetallen unter Niederdruck für eine glatte Oberfläche" },
+          { "description": "Gießen von Nichteisenmetallen in Formen für präzise Teile" }
+        ],
+        "image": "/assets/lyttya-metalu2.jpg"
+      },
+      {
+        "title": "Hohe Präzision und Zuverlässigkeit",
+        "description": "Unsere Technologien und Erfahrungen ermöglichen es uns, maximale Präzision im Gießprozess zu erreichen, wodurch unsere Produkte zuverlässig und langlebig sind.",
+        "image": "/assets/lyttya-metalu3.jpg"
+      },
+      {
+        "title": "Ganzheitlicher Ansatz",
+        "description": "Wir bieten einen vollständigen Gießservice von der Technologieentwicklung bis hin zu fertigen Produkten, wodurch Sie keine anderen Auftragnehmer benötigen.",
+        "image": "/assets/lyttya-metalu4.jpg"
+      },
+      {
+        "title": "Wir verwandeln komplexe Aufgaben in effektive Lösungen!",
+        "description": "Mit modernster Ausrüstung und fortschrittlichen Gießtechnologien produzieren wir hochqualitative Gussstücke aus verschiedenen Materialien und gewährleisten Präzision und Zuverlässigkeit in jeder Produktionsphase.",
+        "image": "/assets/lyttya-metalu5.jpg"
+      }
+    ],
+    "callToActionGeneral": "Vertrauen Sie den Profis!",
+    "callToAction": "Bestellen Sie noch heute Gießen bei uns und erhalten Sie hochqualitative Gussstücke, die all Ihren Anforderungen entsprechen!"
+  },
+
   "cardData": [
     {
       "title": "CNC-DREHARBEITEN",
@@ -355,55 +392,6 @@
         "icon": "/assets/clock-time.png"
       }
     ]
-  },
-  "lyttyaMetaluPage": {
-    "title": "METALLGUSS",
-    "description": "QPart ist auf Metallguss spezialisiert und übernimmt Aufträge von der Herstellung einzelner Teile bis hin zur Serienproduktion mit anschließender mechanischer Bearbeitung. Wir gewährleisten Präzision, Qualität und Langlebigkeit jedes Produkts durch den Einsatz moderner Technologien und hochwertiger Materialien.",
-    "servicesTitle": "Unsere Dienstleistungen im Bereich Metallguss:",
-    "listServices": [
-      {
-        "description": "Pressure casting: Suitable for complex-shaped parts with intricate contours. Products made with this method exhibit high precision, surface smoothness, and increased corrosion resistance."
-      },
-      {
-        "description": "Investment casting: Ensures the production of complex castings with high dimensional accuracy and weight precision. Suitable for working with any casting alloys."
-      }
-    ],
-    "listServicesContinuation": [
-      {
-        "description": "- Foam-Gießen - Eine ideale Option für die Herstellung komplexer und maßgeschneiderter Modelle mit expandiertem Polystyrol."
-      },
-      {
-        "description": "- Feinguss (H.T.S.) - Diese Methode minimiert das Volumen der Nachbearbeitung durch die Präzision und Übereinstimmung der Teile mit den Anforderungen an die Rauheit."
-      },
-      {
-        "description": "- Sandguss - Eine wirtschaftliche Methode, die sich für komplexe Teile aus verschiedenen Legierungen eignet. Dank der niedrigen Kosten trägt sie zur Senkung des Endpreises der Produkte bei."
-      },
-      {
-        "description": "- Hohlguss - Ein Verfahren, bei dem geschmolzenes Metall in wiederverwendbare Stahlformen gegossen wird, was eine hohe Dichte und Qualität der Produkte ermöglicht."
-      }
-    ],
-    "peculiaritiesTitle": "Besonderheiten des Metallgussprozesses",
-    "listPeculiarities": [
-      {
-        "description": "Hohe Präzision bei der Formung von Bauteilen. Gießen ermöglicht die Herstellung von Produkten mit komplexer Geometrie und hoher Detailgenauigkeit. Dies ist die ideale Lösung für die Massenproduktion identischer Teile.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Vielfalt an Materialien. Der Prozess eignet sich für die Arbeit mit einer breiten Palette von Metallen und Legierungen wie Gusseisen, Aluminium, Stahl, Kupfer usw.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Minimierung des Materialabfalls. Der Einsatz moderner Gießtechnologien gewährleistet eine hohe Prozesseffizienz und reduziert Abfälle.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Flexibilität in der Produktion. Das Gießverfahren eignet sich sowohl für Kleinserien- als auch für Großserienproduktion und ermöglicht die Herstellung von großen sowie kleinen Teilen.",
-        "icon": "/icons/listPeculiarities.png"
-      }
-    ],
-
-    "callToActionTop": "Bestellen Sie zuverlässiges Metallguss nach Ihren Zeichnungen.",
-    "callToActionBottom": "Wir werden die benötigten Produkte herstellen!"
   },
   "zaliznychniZapchastynyPage": {
     "title": "Herstellung von Komponenten für die Eisenbahninfrastruktur",

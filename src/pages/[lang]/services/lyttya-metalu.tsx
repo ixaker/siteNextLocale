@@ -13,22 +13,12 @@ import Paragraph from '@/components/ui/typography/Paragraph';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.lyttyaMetaluPage || langUk.lyttyaMetaluPage;
+  const cardList = translationsPage.infoCard;
   const theme = useTheme();
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
-
-  const list = [
-    { description: 'Лиття на автоматичних лініях для масового виробництва' },
-    { description: 'Центробіжне лиття для створення деталей з високою міцністю' },
-    {
-      description: 'Лиття в кокіль для точних та довговічних відливок',
-    },
-    { description: 'Лиття ХТС для високотемпературних сплавів' },
-    { description: 'Лиття кольорових металів під низьким тиском для забезпечення гладкості поверхні' },
-    { description: 'Лиття кольорових металів в кокіль для точних деталей' },
-  ];
 
   const [fullUrl, setFullUrl] = useState('');
   useEffect(() => {
@@ -40,7 +30,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
     <div style={{ backgroundColor: bgColor, color: secondaryColor }}>
       <DynamicHead
         title={translationsPage.title}
-        description={translationsPage.description}
+        description={translationsPage.descriptionTop}
         keywords={translationsPage.title}
         canonical={fullUrl}
         imgOg="/assets/lyttya-metalu.jpg"
@@ -49,9 +39,9 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       />
       <BackCover bgImg="/assets/lyttya-metalu.jpg">
         <InformationBlock
-          title="Лиття"
-          descriptionTop="Ми перетворюємо складні задачі на ефективні рішення! Завдяки передовому обладнанню та сучасним технологіям лиття, ми виготовляємо високоякісні відливки з різних матеріалів, забезпечуючи точність та надійність кожного етапу виробництва."
-          descriptionBottom="Потрібен партнер для великих обсягів або складних відливок? Ми готові втілити ваші найскладніші проекти."
+          title={translationsPage.title}
+          descriptionTop={translationsPage.descriptionTop}
+          descriptionBottom={translationsPage.descriptionBottom}
           translations={translations}
           srcImg="/assets/lyttya-metalu.jpg"
           lang={lang}
@@ -59,42 +49,23 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       </BackCover>
 
       <div className="sm:px-4 mt-6">
-        <InfoCard
-          aligntText="end"
-          direction="row-reverse"
-          srcImg="/assets/lyttya-metalu2.jpg"
-          title="У нас є різноманітні можливості для лиття"
-          list={list}
-        />
-        <InfoCard
-          aligntText="start"
-          direction="row"
-          srcImg="/assets/lyttya-metalu3.jpg"
-          title="Висока точність та надійність"
-          descriptionCard="Наші технології та досвід дозволяють досягти максимальної точності в процесі лиття, що робить нашу продукцію надійною та довговічною"
-        />
-        <InfoCard
-          aligntText="end"
-          direction="row-reverse"
-          srcImg="/assets/lyttya-metalu4.jpg"
-          title="Комплексний підхід"
-          descriptionCard="Ми пропонуємо повний цикл послуг з лиття, починаючи від розробки технології і закінчуючи готовими виробами, що дозволяє вам не звертатися до інших підрядників"
-        />
-        <InfoCard
-          aligntText="start"
-          direction="row"
-          srcImg="/assets/lyttya-metalu5.jpg"
-          title="Ми перетворюємо складні задачі на ефективні рішення!"
-          descriptionCard="Завдяки передовому обладнанню та сучасним технологіям лиття, ми виготовляємо високоякісні відливки з різних матеріалів, забезпечуючи точність та надійність кожного етапу виробництва"
-        />
+        {cardList.map((item, index) => (
+          <div key={index}>
+            <InfoCard
+              aligntText={index % 2 === 0 ? 'end' : 'start'}
+              direction={index % 2 === 0 ? 'row-reverse' : 'row'}
+              srcImg={item.image}
+              title={item.title}
+              descriptionCard={!item.list || item.list.length === 0 ? item.description : undefined}
+              list={item.list}
+            />
+          </div>
+        ))}
       </div>
 
       <div className="px-4 mt-10">
-        <Paragraph alignment="center" text="Довіртесь професіоналам!" />
-        <Paragraph
-          alignment="center"
-          text="Замовте лиття у нас вже сьогодні і отримайте якісні відливки, що відповідають усім вашим вимогам!"
-        />
+        <Paragraph alignment="center" text={translationsPage.callToActionGeneral || ''} />
+        <Paragraph alignment="center" text={translationsPage.callToAction} />
       </div>
 
       <CalculationSection translations={translations} lang={lang} />

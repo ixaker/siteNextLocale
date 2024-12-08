@@ -21,15 +21,6 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const secondaryColor = currentTheme.palette.secondary.main;
   const [fullUrl, setFullUrl] = useState('');
 
-  // const list = [
-  //   { description: 'Полуавтоматичну зварку' },
-  //   { description: 'Аргонове зварювання' },
-  //   {
-  //     description: 'Лазерне зварювання',
-  //   },
-  //   { description: 'Електродугове зварювання' },
-  //   { description: 'Контактну зварку' },
-  // ];
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setFullUrl(window.location.href);
@@ -56,18 +47,21 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           lang={lang}
         />
       </BackCover>
-      {cardList.map((item, index) => (
-        <div key={index}>
-          <InfoCard
-            aligntText={index % 2 === 0 ? 'end' : 'start'}
-            direction={index % 2 === 0 ? 'row-reverse' : 'row'}
-            srcImg={item.image}
-            title={item.title}
-            descriptionCard={!item.list || item.list.length === 0 ? item.description : undefined}
-            list={item.list}
-          />
-        </div>
-      ))}
+
+      <div className="sm:px-4 mt-6">
+        {cardList.map((item, index) => (
+          <div key={index}>
+            <InfoCard
+              aligntText={index % 2 === 0 ? 'end' : 'start'}
+              direction={index % 2 === 0 ? 'row-reverse' : 'row'}
+              srcImg={item.image}
+              title={item.title}
+              descriptionCard={!item.list || item.list.length === 0 ? item.description : undefined}
+              list={item.list}
+            />
+          </div>
+        ))}
+      </div>
 
       <div className="px-4 mt-10">
         <Paragraph alignment="center" text={translationsPage.callToAction} />

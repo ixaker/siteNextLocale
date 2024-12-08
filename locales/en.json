@@ -103,6 +103,43 @@
     ],
     "callToAction": "Submit your application now, and we will complete your order quickly and at the highest level!"
   },
+  "lyttyaMetaluPage": {
+    "title": "Casting",
+    "descriptionTop": "We turn complex tasks into effective solutions! With advanced equipment and modern casting technologies, we produce high-quality castings from various materials, ensuring precision and reliability at every stage of production.",
+    "descriptionBottom": "Do you need a partner for large volumes or complex castings? We are ready to execute your most challenging projects.",
+    "infoCard": [
+      {
+        "title": "We offer various casting options",
+        "list": [
+          { "description": "Casting on automated lines for mass production" },
+          { "description": "Centrifugal casting for creating parts with high strength" },
+          { "description": "Casting in molds for precise and durable castings" },
+          { "description": "HTS casting for high-temperature alloys" },
+          { "description": "Casting of non-ferrous metals under low pressure for a smooth surface" },
+          { "description": "Casting of non-ferrous metals in molds for precise parts" }
+        ],
+        "image": "/assets/lyttya-metalu2.jpg"
+      },
+      {
+        "title": "High precision and reliability",
+        "description": "Our technologies and experience allow us to achieve maximum precision in the casting process, making our products reliable and durable.",
+        "image": "/assets/lyttya-metalu3.jpg"
+      },
+      {
+        "title": "Comprehensive approach",
+        "description": "We offer a full range of casting services, from technology development to finished products, allowing you not to deal with other contractors.",
+        "image": "/assets/lyttya-metalu4.jpg"
+      },
+      {
+        "title": "We turn complex tasks into effective solutions!",
+        "description": "With advanced equipment and modern casting technologies, we produce high-quality castings from various materials, ensuring precision and reliability at every stage of production.",
+        "image": "/assets/lyttya-metalu5.jpg"
+      }
+    ],
+    "callToActionGeneral": "Trust the professionals!",
+    "callToAction": "Order casting with us today and receive high-quality castings that meet all your requirements!"
+  },
+
   "cardData": [
     {
       "title": "CNC TURNING WORKS",
@@ -362,54 +399,6 @@
         "icon": "/assets/clock-time.png"
       }
     ]
-  },
-  "lyttyaMetaluPage": {
-    "title": "METAL CASTING",
-    "description": "QPart specializes in metal casting, handling orders ranging from the production of individual parts to mass production with subsequent machining. We ensure precision, quality, and durability of each product by utilizing modern technologies and high-quality materials.",
-    "servicesTitle": "Our metal casting services:",
-    "listServices": [
-      {
-        "description": "Pressure casting: Suitable for complex-shaped parts with intricate contours. Products made with this method exhibit high precision, surface smoothness, and increased corrosion resistance."
-      },
-      {
-        "description": "Investment casting: Ensures the production of complex castings with high dimensional accuracy and weight precision. Suitable for working with any casting alloys."
-      }
-    ],
-    "peculiaritiesTitle": "Features of the Metal Casting Process",
-    "listPeculiarities": [
-      {
-        "description": "High precision in part formation. Casting allows creating products with complex geometry and high detail. This is the ideal solution for mass production of identical parts.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Variety of materials. The process is suitable for working with a wide range of metals and alloys such as cast iron, aluminum, steel, copper, etc.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Minimal material waste. The use of modern casting technologies ensures high process efficiency and reduces waste.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Flexibility in production. The casting method is suitable for both small-batch and large-scale production, allowing for the manufacturing of both large and small parts.",
-        "icon": "/icons/listPeculiarities.png"
-      }
-    ],
-    "listServicesContinuation": [
-      {
-        "description": "- Foam Casting - An ideal option for creating complex and custom models using expanded polystyrene."
-      },
-      {
-        "description": "- Lost Wax Casting (H.T.S.) - This method minimizes post-processing volumes due to the precision and conformity of parts to roughness requirements."
-      },
-      {
-        "description": "- Sand Casting - An economical method suitable for complex parts made from various alloys. Thanks to its low cost, it helps reduce the final product price."
-      },
-      {
-        "description": "- Shell Casting - A method involving pouring molten metal into reusable steel molds, allowing for high density and quality of products."
-      }
-    ],
-    "callToActionTop": "Order reliable metal casting based on your drawings.",
-    "callToActionBottom": "We will create the required products!"
   },
 
   "zaliznychniZapchastynyPage": {
