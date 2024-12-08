@@ -274,6 +274,45 @@
     ],
     "callToAction": "Reichen Sie jetzt Ihre Anfrage ein – wir helfen, Ihre Ideen in die Realität umzusetzen!"
   },
+  "piskostruminniRoboty": {
+    "title": "Sandstrahlen",
+    "descriptionTop": "Wir bieten eine breite Palette an Materialreinigungsdiensten mit modernen Technologien und Ausrüstungen, die hohe Effizienz und Qualität gewährleisten. Unser Maschinenpark ermöglicht es uns, verschiedene Materialien zu reinigen und perfekte Ergebnisse für jede Aufgabe zu erzielen.",
+    "descriptionBottom": "Suchen Sie einen zuverlässigen Partner für die Reinigung von Teilen von Schmutz und Korrosion? Wir sind bereit für jede Herausforderung.",
+    "infoCard": [
+      {
+        "title": "Wir bieten verschiedene Reinigungsmöglichkeiten",
+        "list": [
+          {
+            "description": "Sandstrahlen zur Entfernung von Korrosion, Schmutz und Farbe von Metall- und anderen Oberflächen"
+          },
+          {
+            "description": "Kugelstrahlen zur Bearbeitung von Metallteilen, die eine intensivere Behandlung erfordern"
+          },
+          {
+            "description": "Laserreinigung für eine sanfte und präzise Entfernung von Schmutz ohne Beschädigung der Oberfläche"
+          }
+        ],
+        "image": "/assets/piskostruminni-roboty2.jpg"
+      },
+      {
+        "title": "Hohe Präzision und Effizienz",
+        "description": "Dank modernster Technologien und Luftaufbereitungssysteme gewährleisten wir maximale Effizienz und Präzision bei der Reinigung aller Materialien.",
+        "image": "/assets/piskostruminni-roboty3.jpg"
+      },
+      {
+        "title": "Schnelle Auftragsabwicklung",
+        "description": "Durch optimierte Logistik und leistungsstarke Ausrüstung erledigen wir Aufträge in kürzester Zeit ohne Qualitätsverlust.",
+        "image": "/assets/piskostruminni-roboty4.png"
+      },
+      {
+        "title": "Ganzheitlicher Ansatz",
+        "description": "Wir bieten einen vollständigen Reinigungservice, sodass Sie fertige Teile erhalten, ohne andere Auftragnehmer hinzuziehen zu müssen.",
+        "image": "/assets/piskostruminni-roboty5.webp"
+      }
+    ],
+    "callToActionGeneral": "Vertrauen Sie den Profis!",
+    "callToAction": "Bestellen Sie noch heute Sandstrahldienste bei uns und überzeugen Sie sich von unseren Fähigkeiten!"
+  },
 
   "cardData": [
     {
@@ -348,24 +387,6 @@
       "href": "contact"
     }
   ],
-
-  "orderBenefits": {
-    "orderBenefitsTitle": "Vorteile einer Bestellung bei uns",
-    "listOrderBenefits": [
-      {
-        "title": "Bereit für große Mengen – wir gewährleisten einen reibungslosen Betrieb auch bei Großaufträgen.",
-        "icon": "/assets/cylinder.png"
-      },
-      {
-        "title": "Mehr als 300 CNC-Maschinen – moderne Ausrüstung garantiert Präzision, Qualität und Geschwindigkeit.",
-        "icon": "/assets/gears.png"
-      },
-      {
-        "title": "Flexible Lieferzeiten – wir arbeiten schnell und immer pünktlich!",
-        "icon": "/assets/clock-time.png"
-      }
-    ]
-  },
   "zaliznychniZapchastynyPage": {
     "title": "Herstellung von Komponenten für die Eisenbahninfrastruktur",
     "description": "QPart ist auf die Herstellung von hochwertigen Komponenten für die Eisenbahninfrastruktur spezialisiert. Wir gewährleisten die Fertigung verschiedener Teile, die allen modernen Sicherheits- und Betriebszuverlässigkeitsstandards entsprechen. Unsere Lösungen sind sowohl für die Modernisierung bestehender Systeme als auch für den Bau neuer Eisenbahninfrastrukturanlagen geeignet.",
