@@ -13,6 +13,8 @@ import Paragraph from '@/components/ui/typography/Paragraph';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.porizkaNaVerstati || langUk.porizkaNaVerstati;
+  const cardList = translationsPage.infoCard;
+
   const theme = useTheme();
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
@@ -30,7 +32,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
     <section style={{ backgroundColor: bgColor, color: secondaryColor }}>
       <DynamicHead
         title={translationsPage.title}
-        description={translationsPage.description}
+        description={translationsPage.descriptionTop}
         keywords={translationsPage.title}
         canonical={fullUrl}
         imgOg="/assets/porizka-na-verstati.jpg"
@@ -39,9 +41,9 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       />
       <BackCover bgImg="/assets/porizka-na-verstati.jpg">
         <InformationBlock
-          title="СТРІЧКОПИЛЬНА ПОРІЗКА"
-          descriptionTop="Ми пропонуємо високоякісну порізку металу за допомогою лентопилів ЧПК, що дозволяє обробляти заготовки з великою точністю і швидкістю. Завдяки нашому сучасному парку обладнання, ми здатні виконувати великі обсяги робіт будь-якої складності."
-          descriptionBottom="Прагнете знайти надійного партнера для порізки металу? Ми готові виконати замовлення будь-якої складності з високою точністю та швидкістю."
+          title={translationsPage.title}
+          descriptionTop={translationsPage.descriptionTop}
+          descriptionBottom={translationsPage.descriptionBottom}
           translations={translations}
           srcImg="/assets/porizka-na-verstati.jpg"
           lang={lang}
@@ -49,41 +51,21 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       </BackCover>
 
       <div className="sm:px-4 mt-6">
-        <InfoCard
-          aligntText="end"
-          direction="row-reverse"
-          srcImg="/assets/porizka-na-verstati2.webp"
-          title="Потужний парк обладнання"
-          descriptionCard="У нас є більше 10 лентопилів ЧПК, здатних різати заготовки діаметром від 10 до 550 мм, що забезпечує гнучкість і можливість працювати з різними типами металу"
-        />
-        <InfoCard
-          aligntText="start"
-          direction="row"
-          srcImg="/assets/porizka-na-verstati3.jpg"
-          title="Універсальність у роботі"
-          descriptionCard="Ми маємо вертикальні лентопили, які дозволяють здійснювати порізку довгих листових заготовок при необхідності, що розширює можливості обробки"
-        />
-        <InfoCard
-          aligntText="end"
-          direction="row-reverse"
-          srcImg="/assets/porizka-na-verstati4.jpg"
-          title="Висока точність і швидкість"
-          descriptionCard="Ми гарантуємо високу точність порізки і швидке виконання замовлень, що дозволяє зекономити час і забезпечити точні результати"
-        />
-        <InfoCard
-          aligntText="start"
-          direction="row"
-          srcImg="/assets/porizka-na-verstati5.jpg"
-          title="Комплексне обслуговування"
-          descriptionCard="Пропонуємо повний цикл послуг з порізки металу, що дозволяє вам отримати готові деталі без необхідності звертатися до інших підрядників"
-        />
+        {cardList.map((item, index) => (
+          <div key={index}>
+            <InfoCard
+              aligntText={index % 2 === 0 ? 'end' : 'start'}
+              direction={index % 2 === 0 ? 'row-reverse' : 'row'}
+              srcImg={item.image}
+              title={item.title}
+              descriptionCard={item.description}
+            />
+          </div>
+        ))}
       </div>
 
       <div className="px-4 mt-10">
-        <Paragraph
-          alignment="center"
-          text="Залиште заявку зараз, і ми виконаємо ваше замовлення швидко та на найвищому рівні!"
-        />
+        <Paragraph alignment="center" text={translationsPage.callToAction} />
       </div>
 
       <CalculationSection translations={translations} lang={lang} />

@@ -75,7 +75,34 @@
     ],
     "callToAction": "Submit your application now and see what we can do!"
   },
-
+  "porizkaNaVerstati": {
+    "title": "BANDSAW CUTTING",
+    "descriptionTop": "We offer high-quality metal cutting using CNC bandsaws, allowing us to process blanks with great precision and speed. Thanks to our modern equipment fleet, we can handle large volumes of work of any complexity.",
+    "descriptionBottom": "Looking for a reliable partner for metal cutting? We are ready to fulfill orders of any complexity with high precision and speed.",
+    "infoCard": [
+      {
+        "title": "Powerful equipment fleet",
+        "description": "We have more than 10 CNC bandsaws capable of cutting blanks with a diameter from 10 to 550 mm, ensuring flexibility and the ability to work with various types of metal",
+        "image": "/assets/porizka-na-verstati2.webp"
+      },
+      {
+        "title": "Versatility in operation",
+        "description": "We have vertical bandsaws that allow for cutting long sheet blanks if necessary, expanding our processing capabilities",
+        "image": "/assets/porizka-na-verstati3.jpg"
+      },
+      {
+        "title": "High precision and speed",
+        "description": "We guarantee high cutting precision and fast order execution, saving time and ensuring accurate results",
+        "image": "/assets/porizka-na-verstati4.jpg"
+      },
+      {
+        "title": "Comprehensive service",
+        "description": "We offer a full cycle of metal cutting services, allowing you to receive finished parts without needing to contact other contractors",
+        "image": "/assets/porizka-na-verstati5.jpg"
+      }
+    ],
+    "callToAction": "Submit your application now, and we will complete your order quickly and at the highest level!"
+  },
   "cardData": [
     {
       "title": "CNC TURNING WORKS",
@@ -263,41 +290,7 @@
     ],
     "callToAction": "Trust us with CNC milling work — we guarantee precision and fast execution of your tasks!"
   },
-  "porizkaNaVerstati": {
-    "title": "Cutting on a Bandsaw: Efficiency and Precision",
-    "description": "Cutting on a bandsaw is a modern and reliable method of material processing that ensures high quality and precision of finished parts. Thanks to advanced technologies, this method is optimal for producing parts of any complexity.",
-    "peculiaritiesTitle": "Advantages of Band Saw Cutting: ",
-    "listPeculiarities": [
-      {
-        "description": "Cutting accuracy up to 1 mm: Perfect match to the specified dimensions without deviations.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Clean and neat cut: No burnt edges, chips, or other defects.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Minimal cutting thickness: Economical material usage with minimal waste.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Flexibility in choosing cutting angles: Ability to cut at 30°, 45°, 60°, or 90° angles for various needs.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Ready-made 'assembly' parts: Elements ready for further assembly or use.",
-        "icon": "/icons/listPeculiarities.png"
-      }
-    ],
-    "servicesTitle": "Our Services",
-    "listServices": [
-      {
-        "description": "Band saw cutting ensures speed, quality, and precision in fulfilling any order. This solution is ideal for both individual projects and mass production."
-      }
-    ],
-    "callToActionTop": "Precise metal cutting with no extra costs.",
-    "callToActionBottom": "Submit your request for our services today!"
-  },
+
   "lazernaRizkaPage": {
     "title": "Laser Metal Cutting",
     "description": "Laser cutting is a modern method of processing and cutting sheet metal using high-precision equipment with CNC (computer numerical control). Each order is processed individually: before starting, the machine is programmed considering all technical requirements, ensuring perfect accuracy and the ability to work with materials of any complexity.",

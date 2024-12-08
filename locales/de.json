@@ -75,7 +75,34 @@
     ],
     "callToAction": "Reichen Sie jetzt Ihre Anfrage ein und überzeugen Sie sich von unseren Möglichkeiten!"
   },
-
+  "porizkaNaVerstati": {
+    "title": "BANDSÄGENSCHNITT",
+    "descriptionTop": "Wir bieten hochwertige Metallschnitte mit CNC-Bandsägen an, die es uns ermöglichen, Rohlinge mit hoher Präzision und Geschwindigkeit zu bearbeiten. Dank unseres modernen Maschinenparks können wir große Arbeitsvolumen jeder Komplexität bewältigen.",
+    "descriptionBottom": "Suchen Sie einen zuverlässigen Partner für Metallschnitte? Wir sind bereit, Aufträge jeder Komplexität mit hoher Präzision und Geschwindigkeit zu erfüllen.",
+    "infoCard": [
+      {
+        "title": "Leistungsstarker Maschinenpark",
+        "description": "Wir verfügen über mehr als 10 CNC-Bandsägen, die in der Lage sind, Rohlinge mit einem Durchmesser von 10 bis 550 mm zu schneiden. Dies gewährleistet Flexibilität und die Möglichkeit, mit verschiedenen Metallarten zu arbeiten",
+        "image": "/assets/porizka-na-verstati2.webp"
+      },
+      {
+        "title": "Vielseitigkeit im Betrieb",
+        "description": "Wir verfügen über vertikale Bandsägen, die es ermöglichen, lange Blechrohlinge bei Bedarf zu schneiden, wodurch unsere Bearbeitungsmöglichkeiten erweitert werden",
+        "image": "/assets/porizka-na-verstati3.jpg"
+      },
+      {
+        "title": "Hohe Präzision und Geschwindigkeit",
+        "description": "Wir garantieren eine hohe Schneidpräzision und schnelle Auftragsabwicklung, sparen Zeit und liefern genaue Ergebnisse",
+        "image": "/assets/porizka-na-verstati4.jpg"
+      },
+      {
+        "title": "Umfassender Service",
+        "description": "Wir bieten einen vollständigen Zyklus von Metallschneidedienstleistungen an, sodass Sie fertige Teile erhalten, ohne andere Auftragnehmer kontaktieren zu müssen",
+        "image": "/assets/porizka-na-verstati5.jpg"
+      }
+    ],
+    "callToAction": "Reichen Sie jetzt Ihre Anfrage ein, und wir werden Ihren Auftrag schnell und auf höchstem Niveau ausführen!"
+  },
   "cardData": [
     {
       "title": "CNC-DREHARBEITEN",
@@ -257,41 +284,6 @@
       }
     ],
     "callToAction": "Vertrauen Sie uns CNC-Fräsarbeiten an – wir garantieren Präzision und schnelle Ausführung Ihrer Aufgaben!"
-  },
-  "porizkaNaVerstati": {
-    "title": "Sägen auf einer Bandsäge: Effizienz und Präzision",
-    "description": "Das Sägen auf einer Bandsäge ist eine moderne und zuverlässige Methode der Materialbearbeitung, die eine hohe Qualität und Präzision der fertigen Teile gewährleistet. Dank fortschrittlicher Technologien ist diese Methode optimal für die Herstellung von Teilen jeder Komplexität.",
-    "listPeculiarities": [
-      {
-        "description": "Schnittgenauigkeit bis zu 1 mm: Perfekte Übereinstimmung mit den angegebenen Maßen ohne Abweichungen.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Sauberer und präziser Schnitt: Keine verbrannten Kanten, Risse oder andere Defekte.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Minimale Schnittstärke: Wirtschaftliche Materialnutzung mit minimalen Verlusten.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Flexibilität bei der Wahl der Schnittwinkel: Möglichkeit, unter 30°, 45°, 60° oder 90° zu schneiden, je nach Bedarf.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Fertige 'Baugruppen'-Teile: Elemente, die für die weitere Montage oder Verwendung bereit sind.",
-        "icon": "/icons/listPeculiarities.png"
-      }
-    ],
-    "servicesTitle": "Unsere Dienstleistungen",
-    "listServices": [
-      {
-        "description": "Bandsägen-Schneiden gewährleistet Geschwindigkeit, Qualität und Präzision bei der Ausführung jedes Auftrags. Diese Lösung ist ideal sowohl für individuelle Projekte als auch für die Serienproduktion."
-      }
-    ],
-
-    "callToActionTop": "Präzises Schneiden von Metall ohne zusätzliche Kosten",
-    "callToActionBottom": "Senden Sie noch heute Ihre Anfrage für unsere Dienstleistungen!"
   },
   "lazernaRizkaPage": {
     "title": "Laserschneiden von Metall",

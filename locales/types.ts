@@ -92,16 +92,7 @@ export type Translations = {
     callToAction: string;
   };
 
-  porizkaNaVerstati: {
-    title: string;
-    description: string;
-    peculiaritiesTitle: string;
-    listPeculiarities: { description: string; icon: string }[];
-    servicesTitle: string;
-    listServices: { description: string }[];
-    callToActionTop: string;
-    callToActionBottom: string;
-  };
+  porizkaNaVerstati: ServicesPage;
 
   lyttyaMetaluPage: {
     title: string;
