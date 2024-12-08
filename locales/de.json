@@ -2,19 +2,44 @@
   "locale": "de_DE",
   "homePage": {
     "meta": {
-      "title": "Ersatzteile für Landtechnik QPART",
-      "description": "Verkauf von Ersatzteilen für importierte Landtechnik mit Lieferung in der gesamten Ukraine | Hohe Qualität Günstiger Preis Herstellergarantie Unterstützung bei der Auswahl ☎ +38 098 995 07 60.",
-      "keywords": "Metallbearbeitung",
+      "title": "Firma «QPART»",
+      "description": "Wir bieten Dienstleistungen in der Metallbearbeitung und der Herstellung von Teilen und Ersatzteilen jeglicher Komplexität an. Wir arbeiten nach den Zeichnungen des Kunden oder entwickeln bei Bedarf Konstruktions- und technische Dokumentationen von Grund auf neu. Fertige Produkte werden in die gesamte Ukraine sowie ins Ausland geliefert. Wir haben Erfahrung in der Zusammenarbeit mit ausländischen Unternehmen. ☎ +38 098 995 07 60.",
+      "keywords": "Metallbearbeitung, QPART, Herstellung von Teilen, CNC-Dreharbeiten, CNC-Fräsarbeiten, Wärmebehandlung, Metallguss",
       "imgOg": "/logo.png"
     },
     "topTitle": "WIR STELLEN PRODUKTE HER",
-    "bottomTitle": "BELIEBIGER KOMPLEXITÄT",
+    "bottomTitle": "JEDER KOMPLEXITÄT",
     "description": "DREH- UND FRÄSARBEITEN AN CNC-MASCHINEN",
-    "btnSend": "Zeichnung zur Kalkulation senden",
-    "aboutCompany": "ÜBER DAS UNTERNEHMEN",
-    "h2": "Unternehmen «QPART»",
-    "h3": "Dienstleistungen in der Metallbearbeitung und Herstellung von Bauteilen",
-    "descriptionCompany": "Das Unternehmen QPART bietet Dienstleistungen in der Metallbearbeitung und der Herstellung von Bauteilen und Ersatzteilen beliebiger Komplexität. Wir arbeiten nach den Zeichnungen des Kunden oder erstellen bei Bedarf Konstruktions- und technische Dokumentation von Grund auf. Fertige Produkte versenden wir in die gesamte Ukraine und darüber hinaus. Wir haben Erfahrung in der Zusammenarbeit mit ausländischen Unternehmen."
+    "h2": "Firma «QPART»",
+    "descriptionCompany": "Wir bieten Dienstleistungen in der Metallbearbeitung und der Herstellung von Teilen und Ersatzteilen jeglicher Komplexität an. Wir arbeiten nach den Zeichnungen des Kunden oder entwickeln bei Bedarf Konstruktions- und technische Dokumentationen von Grund auf neu. Fertige Produkte werden in die gesamte Ukraine sowie ins Ausland geliefert. Wir haben Erfahrung in der Zusammenarbeit mit ausländischen Unternehmen."
+  },
+  "tokarniRobotyChpkPage": {
+    "title": "DREHARBEITEN",
+    "descriptionTop": "Wir erreichen das, was andere unmöglich nennen. Eine große Flotte von CNC-Maschinen, moderne Technologien und ein Team von Profis ermöglichen es uns, Teile jeder Komplexität und in jedem Umfang herzustellen.",
+    "descriptionBottom": "Suchen Sie einen Partner, der mit großen Mengen, komplexen Formen und engen Fristen umgehen kann? Sie haben ihn gefunden.",
+    "infoCard": [
+      {
+        "title": "Wir führen Dreharbeiten in jedem Umfang aus",
+        "description": "Wir verstehen, dass Ihr Geschäft nicht warten kann. Dank moderner Kapazitäten und optimierter Logistik wird Ihr Auftrag so schnell wie möglich erledigt. Vergessen Sie lange Produktionszeiten — wir arbeiten schnell und effizient.",
+        "image": "/assets/tokarni-roboty-chpk2.jpg"
+      },
+      {
+        "title": "Schnelle Auftragsabwicklung",
+        "description": "Unser Maschinenpark umfasst über 300 moderne CNC-Maschinen, die rund um die Uhr arbeiten. Wir verarbeiten große Mengen von Teilen ohne Probleme. Möchten Sie Tausende von Teilen bestellen? Kein Problem. Wenn Ihre Lieferanten die Last nicht bewältigen können, sind wir bereit, Ihre Bestellung zu übernehmen und pünktlich zu erfüllen.",
+        "image": "/assets/tokarni-roboty-chpk3.webp"
+      },
+      {
+        "title": "Präzision und Herstellung von Teilen jeder Komplexität",
+        "description": "Unsere Maschinen können große Teile mit einem Durchmesser von bis zu 4000 mm und einer Länge von bis zu 8000 mm herstellen. Brauchen Sie kleine, komplexe Teile ab 10 mm? Wir machen es mit maximaler Präzision. Dort, wo andere aufgeben, bieten wir Lösungen an und fragen: 'Wann fangen wir an?'",
+        "image": "/assets/tokarni-roboty-chpk4.jpg"
+      },
+      {
+        "title": "Umfassender Ansatz zur Herstellung von Teilen",
+        "description": "Mit uns müssen Sie keine anderen Auftragnehmer suchen, um den Prozess abzuschließen. Wir führen das gesamte Spektrum der Arbeiten aus: von präziser Fertigung auf CNC-Maschinen bis zur Vorbereitung der Teile für die weitere Verwendung. Sie erhalten eine Komplettlösung an einem Ort.",
+        "image": "/assets/tokarni-roboty-chpk5.webp"
+      }
+    ],
+    "callToAction": "Wir sind bereit, Ihr zuverlässiger Partner für Dreharbeiten zu werden!"
   },
   "cardData": [
     {
@@ -53,7 +78,6 @@
     "phone": "Telefon",
     "descriptionPhone": "+380989950760"
   },
-  "welcome": "Willkommen auf unserer Website!",
   "menu": [
     {
       "title": "Dienstleistungen",
@@ -198,39 +222,6 @@
       }
     ],
     "callToAction": "Vertrauen Sie uns CNC-Fräsarbeiten an – wir garantieren Präzision und schnelle Ausführung Ihrer Aufgaben!"
-  },
-  "tokarniRobotyChpkPage": {
-    "title": "CNC-Drehen: Präzision, Qualität, Zuverlässigkeit",
-    "description": "CNC-Drehen ist eine moderne Metallbearbeitungstechnologie, die die Herstellung von Teilen mit hoher Präzision und festgelegten Parametern ermöglicht. Diese Methode eignet sich ideal für die Herstellung sowohl einfacher als auch komplexer Produkte aus rostfreiem Stahl, Aluminium, Messing, Gusseisen und anderen Materialien.",
-    "listPeculiarities": [
-      {
-        "description": "Präzision und Stabilität. CNC-Maschinen gewährleisten die Bearbeitung mit minimalen Abweichungen von den angegebenen Maßen.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Ausführungsgeschwindigkeit. Durch die Automatisierung des Prozesses wird eine hohe Produktivität selbst bei großen Arbeitsvolumina erreicht.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Flexibilität bei der Arbeit mit Materialien. Die Technologie eignet sich für die Bearbeitung von Hartlegierungen, Edelstahl, Aluminium und anderen Metallen.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Oberflächenqualität. Dank präziser Schneidwerkzeuge haben fertige Produkte eine glatte, ordentliche Oberfläche, die die angegebene Rauheit erfüllt.",
-        "icon": "/icons/listPeculiarities.png"
-      }
-    ],
-    "servicesTitle": "Technische Details der Drehbearbeitung:",
-    "listServices": [
-      {
-        "description": "Zugabe. Vor Arbeitsbeginn wird die Materialschichtdicke bestimmt, die entfernt werden muss, um die vorgegebenen Maße zu erreichen."
-      },
-      {
-        "description": "CNC-Bearbeitung. Im Prozess wird eine computergesteuerte numerische Steuerung eingesetzt, die Fehler durch menschliche Faktoren ausschließt."
-      }
-    ],
-    "callToActionTop": "Bestellen Sie hochpräzise CNC-Drehbearbeitung noch heute.",
-    "callToActionBottom": " Wir garantieren die perfekte Qualität jedes Teils!"
   },
   "porizkaNaVerstati": {
     "title": "Sägen auf einer Bandsäge: Effizienz und Präzision",

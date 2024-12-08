@@ -13,11 +13,11 @@ import Paragraph from '@/components/ui/typography/Paragraph';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.tokarniRobotyChpkPage || langUk.tokarniRobotyChpkPage;
+  const cardList = translationsPage.infoCard;
   const theme = useTheme();
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
-  const translationsMenuService = translations.menu[0]?.subMenu;
 
   const [fullUrl, setFullUrl] = useState('');
   useEffect(() => {
@@ -30,7 +30,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
     <section style={{ backgroundColor: bgColor, color: secondaryColor }}>
       <DynamicHead
         title={translationsPage.title}
-        description={translationsPage.description}
+        description={translationsPage.descriptionTop}
         keywords={translationsPage.title}
         canonical={fullUrl}
         imgOg="/assets/tokarni-roboty-chpk.jpg"
@@ -39,51 +39,30 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       />
       <BackCover bgImg="/assets/tokarni-roboty-chpk.jpg">
         <InformationBlock
-          title="ТОКАРНА ОБРОБКА"
-          descriptionTop="Ми виконуємо те, що інші називають неможливим. Великий парк верстатів із ЧПК, сучасні технології та команда професіоналів дозволяють нам виготовляти деталі будь-якої складності та обсягу."
-          descriptionBottom="Шукаєте партнера, який впорається з великими партіями, складними формами та жорсткими термінами? Ви знайшли його."
+          title={translationsPage.title}
+          descriptionTop={translationsPage.descriptionTop}
+          descriptionBottom={translationsPage.descriptionBottom}
           translations={translations}
           srcImg="/assets/tokarni-roboty-chpk.jpg"
           lang={lang}
-          translationsMenuService={translationsMenuService || []}
         />
       </BackCover>
       <div className="sm:px-4 mt-6">
-        <InfoCard
-          aligntText="end"
-          direction="row-reverse"
-          srcImg="/assets/tokarni-roboty-chpk2.jpg"
-          title="Виконуємо будь-які обсяги токарних робіт"
-          descriptionCard="Ми розуміємо, що ваш бізнес не може чекати. Завдяки сучасним потужностям і налагодженій логістиці, ваше замовлення буде виконане в максимально стислі терміни. Забудьте про тривалі строки виробництва — ми працюємо швидко і якісно"
-        />
-        <InfoCard
-          aligntText="start"
-          direction="row"
-          srcImg="/assets/tokarni-roboty-chpk3.webp"
-          title="Швидке виконання замовлень"
-          descriptionCard="Наш парк налічує понад 300 сучасних верстатів із ЧПК, які працюють без зупинки. Ми обробляємо великі партії деталей без проблем. Хочете замовити тисячі виробів? Це не питання. Якщо ваші постачальники не витримують навантаження, ми готові взятися за ваше замовлення та виконати його вчасно"
-        />
-        <InfoCard
-          aligntText="end"
-          direction="row-reverse"
-          srcImg="/assets/tokarni-roboty-chpk4.jpg"
-          title="Точність і виготовлення деталей будь-якої складності"
-          descriptionCard="Наші верстати дозволяють виготовляти великі деталі діаметром до 4000 мм і довжиною до 8000 мм. Потрібні дрібні, складні деталі від 10 мм? Ми це зробимо з максимальною точністю. Там, де інші здаються, ми пропонуємо рішення і запитуємо: “Коли починаємо?”"
-        />
-        <InfoCard
-          aligntText="start"
-          direction="row"
-          srcImg="/assets/tokarni-roboty-chpk5.webp"
-          title="Комплексний підхід до виготовлення деталей"
-          descriptionCard="З нами вам не потрібно шукати інших підрядників для завершення процесу. Ми виконуємо весь спектр робіт: від точного виготовлення на ЧПК до підготовки деталей для подальшого використання. Ви отримуєте повне рішення в одному місці"
-        />
+        {cardList.map((item, index) => (
+          <div key={index}>
+            <InfoCard
+              aligntText={index % 2 === 0 ? 'end' : 'start'}
+              direction={index % 2 === 0 ? 'row-reverse' : 'row'}
+              srcImg={item.image}
+              title={item.title}
+              descriptionCard={item.description}
+            />
+          </div>
+        ))}
       </div>
 
       <div className="px-4 mt-10">
-        <Paragraph
-          alignment="center"
-          text="Ми готові стати вашим надійним партнером у сфері токарних робіт!"
-        />
+        <Paragraph alignment="center" text={translationsPage.callToAction} />
       </div>
 
       <CalculationSection translations={translations} lang={lang} />

@@ -11,6 +11,14 @@ export type NavigationMenu = {
   subMenu?: [NavigationMenu];
 };
 
+export type ServicesPage = {
+  title: string;
+  descriptionTop: string;
+  descriptionBottom: string;
+  infoCard: { title: string; description: string; image: string }[];
+  callToAction: string;
+};
+
 export type CardData = { title: string; img: string; href: string };
 
 export type ListAdvantages = { description: string; icon: string };
@@ -22,8 +30,6 @@ export type Translations = {
     topTitle: string;
     bottomTitle: string;
     description: string;
-    btnSend: string;
-    aboutCompany: string;
     h2: string;
     h3: string;
     descriptionCompany: string;
@@ -52,16 +58,7 @@ export type Translations = {
     callToActionBottom: string;
   };
 
-  tokarniRobotyChpkPage: {
-    title: string;
-    description: string;
-    peculiaritiesTitle: string;
-    listPeculiarities: { description: string; icon: string }[];
-    servicesTitle: string;
-    listServices: { description: string }[];
-    callToActionTop: string;
-    callToActionBottom: string;
-  };
+  tokarniRobotyChpkPage: ServicesPage;
 
   shlifovkaMetaluPage: {
     title: string;

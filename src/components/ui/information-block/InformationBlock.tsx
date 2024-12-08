@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Heading from '../typography/Heading';
 import Paragraph from '../typography/Paragraph';
 import NavigationMap from '../navigation-map/NavigationMap';
-import { NavigationMenu } from '../../../../locales/types';
 import ButtonSubmitDrawing from '../button/ButtonSubmitDrawing';
 import { PageProps } from '@/context/withStaticPathsAndProps';
 
@@ -13,7 +12,6 @@ interface InformationBlock {
   srcImg: string;
   translations: PageProps['translations'];
   lang: string;
-  translationsMenuService: NavigationMenu[];
   style?: string;
 }
 
@@ -24,9 +22,9 @@ const InformationBlock: React.FC<InformationBlock> = ({
   srcImg,
   translations,
   lang,
-  translationsMenuService,
   style,
 }) => {
+  const translationsMenuService = translations.menu[0]?.subMenu;
   return (
     <div className="flex min-h-[inherit] pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6 relative z-[10]">
       <NavigationMap lang={lang} translationsMenuService={translationsMenuService || []} />

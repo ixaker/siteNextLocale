@@ -19,7 +19,6 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
 
-  const translationsMenuService = translations.menu[0]?.subMenu;
   const [fullUrl, setFullUrl] = useState('');
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -60,7 +59,6 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           translations={translations}
           srcImg="/assets/shlifovka-metalu.jpg"
           lang={lang}
-          translationsMenuService={translationsMenuService || []}
         />
       </BackCover>
 

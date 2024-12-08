@@ -69,11 +69,8 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
           ))}
         </ul>
         <div className="mt-[50px] pb-[80px]">
-          {/* <Paragraph text={translationsPage.aboutCompany} alignment="center" /> */}
-          {/* <Heading level="h2" text={translationsPage.h2} alignment="left" /> */}
           <div className="mt-[20px] flex flex-col gap-5 lg:flex-row xl:justify-between md:mt-[50px]">
             <div className="flex flex-col justify-center gap-5 lg:w-[80%] xl:w-[70%] 2xl:w-[50%]">
-              {/* <Heading level="h2" text={translationsPage.h3} alignment="center" /> */}
               <Heading level="h2" text={translationsPage.h2} alignment="center" />
               <Paragraph text={translationsPage.descriptionCompany} alignment="center" />
             </div>

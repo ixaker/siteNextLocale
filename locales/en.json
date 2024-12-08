@@ -2,19 +2,44 @@
   "locale": "en_US",
   "homePage": {
     "meta": {
-      "title": "Spare parts for QPART agricultural machinery",
-      "description": "Sale of spare parts for imported agricultural machinery with delivery throughout Ukraine | High quality | Favorable price | Manufacturer's warranty | Help in selection ☎ +38 098 995 07 60.",
-      "keywords": "metalworking",
+      "title": "Company «QPART»",
+      "description": "We provide metalworking services and manufacture parts and spare parts of any complexity. We perform work according to the customer's drawings or, if necessary, develop design and technical documentation from scratch. Finished products are shipped throughout Ukraine and abroad. We have experience working with foreign companies. ☎ +38 098 995 07 60.",
+      "keywords": "metalworking, QPART, manufacturing parts, CNC turning work, CNC milling work, heat treatment, metal casting",
       "imgOg": "/logo.png"
     },
     "topTitle": "WE MANUFACTURE PRODUCTS",
     "bottomTitle": "OF ANY COMPLEXITY",
-    "description": "TURNING AND MILLING WORK ON CNC MACHINES",
-    "btnSend": "Send drawings for calculation",
-    "aboutCompany": "ABOUT THE COMPANY",
+    "description": "TURNING AND MILLING WORKS ON CNC MACHINES",
     "h2": "Company «QPART»",
-    "h3": "Metalworking and Parts Manufacturing Services",
-    "descriptionCompany": "QPART provides metalworking and parts manufacturing services of any complexity. We perform work based on customer drawings or, if necessary, develop design and technical documentation from scratch. The finished products are shipped throughout Ukraine and abroad. We have experience working with foreign companies."
+    "descriptionCompany": "We provide metalworking services and manufacture parts and spare parts of any complexity. We perform work according to the customer's drawings or, if necessary, develop design and technical documentation from scratch. Finished products are shipped throughout Ukraine and abroad. We have experience working with foreign companies."
+  },
+  "tokarniRobotyChpkPage": {
+    "title": "TURNING PROCESSING",
+    "descriptionTop": "We achieve what others call impossible. A large fleet of CNC machines, modern technologies, and a team of professionals allow us to manufacture parts of any complexity and volume.",
+    "descriptionBottom": "Looking for a partner who can handle large batches, complex shapes, and tight deadlines? You found one.",
+    "infoCard": [
+      {
+        "title": "We perform any volume of turning work",
+        "description": "We understand that your business can't wait. Thanks to modern capabilities and streamlined logistics, your order will be completed as quickly as possible. Forget about long production times — we work fast and efficiently.",
+        "image": "/assets/tokarni-roboty-chpk2.jpg"
+      },
+      {
+        "title": "Quick order completion",
+        "description": "Our fleet includes over 300 modern CNC machines operating nonstop. We process large batches of parts without issues. Want to order thousands of items? No problem. If your suppliers can't handle the load, we're ready to take on your order and complete it on time.",
+        "image": "/assets/tokarni-roboty-chpk3.webp"
+      },
+      {
+        "title": "Precision and production of parts of any complexity",
+        "description": "Our machines can manufacture large parts with a diameter of up to 4000 mm and a length of up to 8000 mm. Need small, intricate parts starting from 10 mm? We’ll do it with maximum precision. Where others give up, we offer solutions and ask: 'When do we start?'",
+        "image": "/assets/tokarni-roboty-chpk4.jpg"
+      },
+      {
+        "title": "Comprehensive approach to part manufacturing",
+        "description": "With us, you don’t need to look for other contractors to complete the process. We perform the full range of work: from precision manufacturing on CNC to preparing parts for further use. You get a complete solution in one place.",
+        "image": "/assets/tokarni-roboty-chpk5.webp"
+      }
+    ],
+    "callToAction": "We are ready to become your reliable partner in turning works!"
   },
   "cardData": [
     {
@@ -53,8 +78,6 @@
     "phone": "Phone",
     "descriptionPhone": "+380989950760"
   },
-  "welcome": "Welcome to our site!",
-
   "menu": [
     {
       "title": "Services",
@@ -204,40 +227,6 @@
       }
     ],
     "callToAction": "Trust us with CNC milling work — we guarantee precision and fast execution of your tasks!"
-  },
-  "tokarniRobotyChpkPage": {
-    "title": "CNC Turning: Precision, Quality, Reliability",
-    "description": "CNC turning is a modern metal machining technology that allows the production of parts with high precision and specified parameters. This method is ideal for creating both simple and complex products made from stainless steel, aluminum, brass, cast iron, and other materials.",
-    "peculiaritiesTitle": "Peculiarities of Turning Metal Processing:",
-    "listPeculiarities": [
-      {
-        "description": "Precision and stability. CNC machines provide processing with minimal deviations from the specified dimensions.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Execution speed. Due to process automation, high productivity is achieved even with large volumes of work.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Flexibility in working with materials. The technology is suitable for processing hard alloys, stainless steel, aluminum, and other metals.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Surface quality. Thanks to precise cutting tools, finished products have a smooth, neat surface that meets the specified roughness.",
-        "icon": "/icons/listPeculiarities.png"
-      }
-    ],
-    "servicesTitle": "Technical details of turning processing:",
-    "listServices": [
-      {
-        "description": "Allowance. Before starting work, the thickness of the material layer to be removed to achieve the specified dimensions is determined."
-      },
-      {
-        "description": "CNC processing. The process uses computer numerical control, which eliminates errors caused by human factors."
-      }
-    ],
-    "callToActionTop": "Order high-precision CNC turning services today.",
-    "callToActionBottom": " We guarantee the perfect quality of every part!"
   },
   "porizkaNaVerstati": {
     "title": "Cutting on a Bandsaw: Efficiency and Precision",

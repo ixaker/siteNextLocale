@@ -18,7 +18,6 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
-  const translationsMenuService = translations.menu[0]?.subMenu;
 
   const list = [
     { description: 'Лиття на автоматичних лініях для масового виробництва' },
@@ -56,7 +55,6 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           translations={translations}
           srcImg="/assets/lyttya-metalu.jpg"
           lang={lang}
-          translationsMenuService={translationsMenuService || []}
         />
       </BackCover>
 

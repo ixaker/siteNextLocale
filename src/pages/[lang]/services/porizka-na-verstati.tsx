@@ -18,7 +18,6 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
-  const translationsMenuService = translations.menu[0]?.subMenu;
 
   const [fullUrl, setFullUrl] = useState('');
   useEffect(() => {
@@ -46,7 +45,6 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           translations={translations}
           srcImg="/assets/porizka-na-verstati.jpg"
           lang={lang}
-          translationsMenuService={translationsMenuService || []}
         />
       </BackCover>
 

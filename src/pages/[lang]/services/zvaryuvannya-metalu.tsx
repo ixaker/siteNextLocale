@@ -15,7 +15,6 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.zvaryuvannyaMetaluPage || langUk.zvaryuvannyaMetaluPage;
   const theme = useTheme();
 
-  const translationsMenuService = translations.menu[0]?.subMenu;
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
@@ -53,7 +52,6 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           translations={translations}
           srcImg="/assets/zvaryuvannya-metalu.jpg"
           lang={lang}
-          translationsMenuService={translationsMenuService || []}
         />
       </BackCover>
 

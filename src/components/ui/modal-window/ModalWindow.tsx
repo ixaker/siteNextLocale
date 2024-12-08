@@ -102,7 +102,7 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ open, translations, setOpen }
               {translationsPage.title}
             </Typography>
             <button className="absolute top-[5px] right-[5px]" onClick={() => setOpen(false)}>
-              <CloseIcon sx={{ color: 'black', fontSize: '30  px' }} />
+              <CloseIcon sx={{ fontSize: '30  px' }} />
             </button>
             <div
               style={{
