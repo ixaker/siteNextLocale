@@ -13,6 +13,7 @@ import Paragraph from '@/components/ui/typography/Paragraph';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.lazernaRizkaPage || langUk.lazernaRizkaPage;
+  const cardList = translationsPage.infoCard;
   const theme = useTheme();
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
@@ -26,19 +27,11 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
     }
   }, [fullUrl]);
 
-  const list = [
-    { description: 'Високу точність і чистоту зрізу' },
-    { description: 'Різання металів до 20 мм' },
-    {
-      description: 'Можливість обробки великих розмірів',
-    },
-  ];
-
   return (
     <div style={{ backgroundColor: bgColor, color: secondaryColor }}>
       <DynamicHead
         title={translationsPage.title}
-        description={translationsPage.description}
+        description={translationsPage.descriptionTop}
         keywords={translationsPage.title}
         canonical={fullUrl}
         imgOg="/assets/lazerna-rizka.jpg"
@@ -47,9 +40,9 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       />
       <BackCover bgImg="/assets/lazerna-rizka.jpg">
         <InformationBlock
-          title="ЛАЗЕРНА РІЗКА З ЧПК"
-          descriptionTop="Ми спеціалізуємося на високоточній лазерній порізці, використовуючи новітнє обладнання. Наші лазерні верстати з робочим полем 2000 мм х 6000 мм дозволяють різати матеріали товщиною до 20 мм з максимальним рівнем точності і чистоти зрізу."
-          descriptionBottom="Лазерне різання металу будь-якої складності – ми готові виконати ваше замовлення!"
+          title={translationsPage.title}
+          descriptionTop={translationsPage.descriptionTop}
+          descriptionBottom={translationsPage.descriptionBottom}
           translations={translations}
           srcImg="/assets/lazerna-rizka.jpg"
           lang={lang}
@@ -57,41 +50,22 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       </BackCover>
 
       <div className="sm:px-4 mt-6">
-        <InfoCard
-          aligntText="end"
-          direction="row-reverse"
-          srcImg="/assets/lazerna-rizka2.jpg"
-          title="Наші лазерні верстати забезпечують"
-          list={list}
-        />
-        <InfoCard
-          aligntText="start"
-          direction="row"
-          srcImg="/assets/lazerna-rizka3.jpg"
-          title="Точність та надійність"
-          descriptionCard="Ми гарантуємо точність і акуратність різання, що дозволяє досягати ідеальних результатів навіть для складних геометрій"
-        />
-        <InfoCard
-          aligntText="end"
-          direction="row-reverse"
-          srcImg="/assets/lazerna-rizka4.jpg"
-          title="Швидке виконання замовлень"
-          descriptionCard="Завдяки автоматизації процесу, ми виконуватимемо ваше замовлення в оптимальні строки без втрати якості"
-        />
-        <InfoCard
-          aligntText="start"
-          direction="row"
-          srcImg="/assets/lazerna-rizka5.jpg"
-          title="Комплексний підхід"
-          descriptionCard="Пропонуємо повний спектр послуг лазерної порізки, що дозволяє вам отримати готові деталі без необхідності додаткової обробки"
-        />
+        {cardList.map((item, index) => (
+          <div key={index}>
+            <InfoCard
+              aligntText={index % 2 === 0 ? 'end' : 'start'}
+              direction={index % 2 === 0 ? 'row-reverse' : 'row'}
+              srcImg={item.image}
+              title={item.title}
+              descriptionCard={!item.list || item.list.length === 0 ? item.description : undefined}
+              list={item.list}
+            />
+          </div>
+        ))}
       </div>
 
       <div className="px-4 mt-10">
-        <Paragraph
-          alignment="center"
-          text="Залиште заявку прямо зараз і переконайтеся у наших можливостях!"
-        />
+        <Paragraph alignment="center" text={translationsPage.callToAction} />
       </div>
 
       <CalculationSection translations={translations} lang={lang} />

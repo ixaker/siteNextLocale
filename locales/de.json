@@ -208,6 +208,38 @@
     ],
     "callToAction": "Warten Sie nicht — vertrauen Sie den Profis!"
   },
+  "lazernaRizkaPage": {
+    "title": "CNC LASERSCHNEIDEN",
+    "descriptionTop": "Wir spezialisieren uns auf hochpräzises Laserschneiden unter Verwendung modernster Ausrüstung. Unsere Lasermaschinen mit einem Arbeitsbereich von 2000 mm x 6000 mm ermöglichen das Schneiden von Materialien bis zu einer Dicke von 20 mm mit höchster Präzision und Schnittsauberkeit.",
+    "descriptionBottom": "Laserschneiden von Metall jeglicher Komplexität – wir sind bereit, Ihre Bestellung auszuführen!",
+    "infoCard": [
+      {
+        "title": "Unsere Lasermaschinen bieten",
+        "list": [
+          { "description": "Hohe Präzision und Schnittsauberkeit" },
+          { "description": "Schneiden von Metallen bis zu 20 mm" },
+          { "description": "Möglichkeit der Bearbeitung großer Größen" }
+        ],
+        "image": "/assets/lazerna-rizka2.jpg"
+      },
+      {
+        "title": "Präzision und Zuverlässigkeit",
+        "description": "Wir garantieren Schneidegenauigkeit und Sauberkeit, sodass auch bei komplexen Geometrien perfekte Ergebnisse erzielt werden.",
+        "image": "/assets/lazerna-rizka3.jpg"
+      },
+      {
+        "title": "Schnelle Auftragsabwicklung",
+        "description": "Dank der Automatisierung des Prozesses werden wir Ihre Bestellung in optimaler Zeit ohne Qualitätsverlust ausführen.",
+        "image": "/assets/lazerna-rizka4.jpg"
+      },
+      {
+        "title": "Ganzheitlicher Ansatz",
+        "description": "Wir bieten ein vollständiges Spektrum an Laserschneidservices, sodass Sie fertige Teile ohne zusätzliche Bearbeitung erhalten können.",
+        "image": "/assets/lazerna-rizka5.jpg"
+      }
+    ],
+    "callToAction": "Reichen Sie jetzt Ihre Anfrage ein und überzeugen Sie sich von unseren Fähigkeiten!"
+  },
 
   "cardData": [
     {
@@ -316,60 +348,6 @@
     ],
     "callToActionTop": "SmGlätte und Präzision jeder Oberfläche.",
     "callToActionBottom": "Bestellen Sie noch heute das Schleifen von Metall!"
-  },
-
-  "lazernaRizkaPage": {
-    "title": "Laserschneiden von Metall",
-    "description": "Laserschneiden ist eine moderne Methode zur Bearbeitung und Zuschnitt von Blech, die mit hochpräzisen CNC-gesteuerten Maschinen durchgeführt wird. Jeder Auftrag wird individuell bearbeitet: Vor Arbeitsbeginn wird die Maschine unter Berücksichtigung aller technischen Anforderungen programmiert, was eine ideale Präzision und die Möglichkeit der Bearbeitung von Materialien jeder Komplexität gewährleistet.",
-    "servicesTitle": "Unsere Dienstleistungen",
-    "listServices": [
-      {
-        "description": "Laserperforation von Blech - ideal zur Herstellung von Löchern unterschiedlicher Formen und Größen mit hoher Präzision."
-      },
-      {
-        "description": "Laserschneiden von Rohren und Profilen - ermöglicht eine präzise Bearbeitung komplex geformter Metallkonstruktionen."
-      }
-    ],
-    "advantagesTitle": "Vorteile, bei uns zu bestellen",
-    "listAdvantages": [
-      {
-        "title": "Bereit für große Mengen – wir gewährleisten einen reibungslosen Betrieb auch für umfangreiche Aufträge.",
-        "icon": "/assets/cylinder.png"
-      },
-      {
-        "title": "Über 300 CNC-Maschinen – moderne Ausrüstung garantiert Präzision, Qualität und Geschwindigkeit.",
-        "icon": "/assets/gears.png"
-      },
-      {
-        "title": "Flexible Fristen – wir arbeiten schnell und pünktlich!",
-        "icon": "/assets/clock-time.png"
-      }
-    ],
-    "peculiaritiesTitle": "Besonderheiten und Vorteile:",
-    "listPeculiarities": [
-      {
-        "description": "Möglichkeit, mit verschiedenen Materialien zu arbeiten: Edelstahl, Aluminium, Kupfer, Messing und andere, einschließlich Nichteisenmetalle.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Perfekt glatte Kanten ohne die Notwendigkeit zusätzlicher Bearbeitung.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Minimierung des Materialverlusts durch hohe Präzision.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Keine Deformation des Metalls und Erhaltung seiner ursprünglichen Eigenschaften.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Im Gegensatz zu traditionellen mechanischen Schneidverfahren garantiert die Laserbearbeitung Qualität und Wirtschaftlichkeit bei der Herstellung von Teilen jeder Komplexität.",
-        "icon": "/icons/listPeculiarities.png"
-      }
-    ],
-    "callToActionTop": "Schnelles und präzises Laserschneiden von Metall für jede Aufgabe.",
-    "callToActionBottom": "Lassen Sie noch heute eine Anfrage ein!"
   },
 
   "orderBenefits": {

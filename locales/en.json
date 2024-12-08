@@ -206,6 +206,38 @@
     ],
     "callToAction": "Don't wait — trust the professionals!"
   },
+  "lazernaRizkaPage": {
+    "title": "CNC LASER CUTTING",
+    "descriptionTop": "We specialize in high-precision laser cutting using the latest equipment. Our laser machines with a working field of 2000 mm x 6000 mm allow cutting materials up to 20 mm thick with the highest level of precision and cut cleanliness.",
+    "descriptionBottom": "Laser cutting of metal of any complexity – we are ready to fulfill your order!",
+    "infoCard": [
+      {
+        "title": "Our laser machines provide",
+        "list": [
+          { "description": "High precision and cut cleanliness" },
+          { "description": "Cutting of metals up to 20 mm" },
+          { "description": "Ability to process large sizes" }
+        ],
+        "image": "/assets/lazerna-rizka2.jpg"
+      },
+      {
+        "title": "Precision and reliability",
+        "description": "We guarantee cutting accuracy and neatness, allowing for perfect results even for complex geometries.",
+        "image": "/assets/lazerna-rizka3.jpg"
+      },
+      {
+        "title": "Fast order fulfillment",
+        "description": "Thanks to process automation, we will complete your order in optimal time without compromising quality.",
+        "image": "/assets/lazerna-rizka4.jpg"
+      },
+      {
+        "title": "Comprehensive approach",
+        "description": "We offer a full range of laser cutting services, allowing you to receive finished parts without the need for additional processing.",
+        "image": "/assets/lazerna-rizka5.jpg"
+      }
+    ],
+    "callToAction": "Submit your application right now and see our capabilities!"
+  },
 
   "cardData": [
     {
@@ -318,61 +350,6 @@
     ],
     "callToActionTop": "Smoothness and precision of every surface.",
     "callToActionBottom": "Order metal grinding today!"
-  },
-
-  "lazernaRizkaPage": {
-    "title": "Laser Metal Cutting",
-    "description": "Laser cutting is a modern method of processing and cutting sheet metal using high-precision equipment with CNC (computer numerical control). Each order is processed individually: before starting, the machine is programmed considering all technical requirements, ensuring perfect accuracy and the ability to work with materials of any complexity.",
-    "servicesTitle": "Our Services",
-    "listServices": [
-      {
-        "description": "Laser perforation of sheet metal - ideal for creating holes of various shapes and sizes with high precision."
-      },
-      {
-        "description": "Laser cutting of pipes and profiles - allows for precise processing of complex-shaped metal structures."
-      }
-    ],
-    "advantagesTitle": "Why Choose Us",
-    "listAdvantages": [
-      {
-        "title": "Capable of handling large volumes – ensuring uninterrupted work even for large-scale orders.",
-        "icon": "/assets/cylinder.png"
-      },
-      {
-        "title": "More than 300 CNC machines – modern equipment guarantees precision, quality, and speed of execution.",
-        "icon": "/assets/gears.png"
-      },
-      {
-        "title": "Flexible deadlines – we work quickly and always on time!",
-        "icon": "/assets/clock-time.png"
-      }
-    ],
-    "peculiaritiesTitle": "Features and Benefits:",
-    "listPeculiarities": [
-      {
-        "description": "Ability to work with various materials: stainless steel, aluminum, copper, brass, and others, including non-ferrous metals.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Perfectly smooth edges without the need for additional processing.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Minimized material waste due to high precision.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "No deformation of the metal, preserving its original properties.",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Unlike traditional mechanical cutting methods, laser processing guarantees quality and cost-effectiveness for producing parts of any complexity.",
-        "icon": "/icons/listPeculiarities.png"
-      }
-    ],
-
-    "callToActionTop": "Fast and precise laser cutting of metal for any task.",
-    "callToActionBottom": "Leave an application right now!"
   },
 
   "orderBenefits": {

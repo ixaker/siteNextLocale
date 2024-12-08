@@ -48,17 +48,7 @@ export type Translations = {
     descriptionPhone: string;
   };
   menu: [NavigationMenu];
-  lazernaRizkaPage: {
-    title: string;
-    description: string;
-    servicesTitle: string;
-    listServices: { description: string }[];
-    descriptionBenefits: string;
-    peculiaritiesTitle: string;
-    listPeculiarities: { description: string; icon: string }[];
-    callToActionTop: string;
-    callToActionBottom: string;
-  };
+  lazernaRizkaPage: ServicesPage;
 
   tokarniRobotyChpkPage: ServicesPage;
 
