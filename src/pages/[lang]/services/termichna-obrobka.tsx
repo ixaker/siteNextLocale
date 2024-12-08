@@ -13,6 +13,7 @@ import Paragraph from '@/components/ui/typography/Paragraph';
 
 const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const translationsPage = translations?.termichnaObrobkaPage || langUk.termichnaObrobkaPage;
+  const cardList = translationsPage.infoCard;
   const theme = useTheme();
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
@@ -26,18 +27,11 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
     }
   }, [fullUrl]);
 
-  const list = [
-    { description: 'Стандартні електричні печі для закалки та відпуску' },
-    { description: 'Потужні газові печі для обробки деталей вагою до 100 т' },
-    {
-      description: 'Установки ТВЧ для закалки довгих валів',
-    },
-  ];
   return (
     <section style={{ backgroundColor: bgColor, color: secondaryColor }}>
       <DynamicHead
         title={translationsPage.title}
-        description={translationsPage.description}
+        description={translationsPage.descriptionTop}
         keywords={translationsPage.title}
         canonical={fullUrl}
         imgOg="/assets/termichna-obrobka.jpg"
@@ -46,9 +40,9 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       />
       <BackCover bgImg="/assets/termichna-obrobka.jpg">
         <InformationBlock
-          title="Термообробка металів"
-          descriptionTop="Ми пропонуємо комплексні рішення для термообробки металів будь-якої складності. Завдяки сучасному обладнанню, передовим технологіям і досвідченій команді, ми забезпечуємо високу якість і точність обробки, що відповідає найвищим стандартам."
-          descriptionBottom="Обираючи нас для термообробки, ви отримуєте не лише високоякісну обробку, а й надійного партнера, який завжди виконує обіцянки"
+          title={translationsPage.title}
+          descriptionTop={translationsPage.descriptionTop}
+          descriptionBottom={translationsPage.descriptionBottom}
           translations={translations}
           srcImg="/assets/termichna-obrobka.jpg"
           lang={lang}
@@ -56,38 +50,22 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       </BackCover>
 
       <div className="sm:px-4 mt-6">
-        <InfoCard
-          aligntText="end"
-          direction="row-reverse"
-          srcImg="/assets/termichna-obrobka2.jpg"
-          title="Наше підприємство має великий арсенал обладнання для термообробки, включаючи"
-          list={list}
-        />
-        <InfoCard
-          aligntText="start"
-          direction="row"
-          srcImg="/assets/termichna-obrobka3.webp"
-          title="Максимальна точність і надійність"
-          descriptionCard="Ми використовуємо тільки найсучасніші технології, щоб забезпечити оптимальні умови для кожної деталі. Ваша продукція буде оброблена з високою точністю та відповідно до найвищих стандартів якості"
-        />
-        <InfoCard
-          aligntText="end"
-          direction="row-reverse"
-          srcImg="/assets/termichna-obrobka4.jpg"
-          title="Швидке виконання замовлень"
-          descriptionCard="Наші технології та організовані процеси дозволяють виконувати замовлення в мінімальні терміни без компромісів щодо якості. Ми розуміємо важливість своєчасного виконання, тому завжди дотримуємося обіцяних строків"
-        />
-        <InfoCard
-          aligntText="start"
-          direction="row"
-          srcImg="/assets/termichna-obrobka5.jpg"
-          title="Комплексний підхід"
-          descriptionCard="Ми беремо на себе весь цикл термообробки, від початкової обробки до готової деталі, що дозволяє зекономити ваш час і ресурси"
-        />
+        {cardList.map((item, index) => (
+          <div key={index}>
+            <InfoCard
+              aligntText={index % 2 === 0 ? 'end' : 'start'}
+              direction={index % 2 === 0 ? 'row-reverse' : 'row'}
+              srcImg={item.image}
+              title={item.title}
+              descriptionCard={!item.list || item.list.length === 0 ? item.description : undefined}
+              list={item.list}
+            />
+          </div>
+        ))}
       </div>
 
       <div className="px-4 mt-10">
-        <Paragraph alignment="center" text="Не відкладайте — довіртеся професіоналам!" />
+        <Paragraph alignment="center" text={translationsPage.callToAction} />
       </div>
 
       <CalculationSection translations={translations} lang={lang} />

@@ -174,6 +174,38 @@
     "callToActionGeneral": "We are ready to become your reliable partner in the field of milling!",
     "callToAction": "Submit your request now and see our capabilities!"
   },
+  "termichnaObrobkaPage": {
+    "title": "Heat Treatment of Metals",
+    "descriptionTop": "We offer comprehensive solutions for heat treatment of metals of any complexity. With modern equipment, advanced technologies, and an experienced team, we ensure high quality and precision that meets the highest standards.",
+    "descriptionBottom": "By choosing us for heat treatment, you not only get high-quality processing, but also a reliable partner who always keeps their promises.",
+    "infoCard": [
+      {
+        "title": "Our company has a wide range of heat treatment equipment, including",
+        "list": [
+          { "description": "Standard electric furnaces for hardening and tempering" },
+          { "description": "Powerful gas furnaces for processing parts weighing up to 100 tons" },
+          { "description": "Induction hardening installations for hardening long shafts" }
+        ],
+        "image": "/assets/termichna-obrobka2.jpg"
+      },
+      {
+        "title": "Maximum precision and reliability",
+        "description": "We use only the most modern technologies to ensure optimal conditions for each part. Your products will be processed with high precision and according to the highest quality standards.",
+        "image": "/assets/termichna-obrobka3.webp"
+      },
+      {
+        "title": "Fast order fulfillment",
+        "description": "Our technologies and organized processes allow us to complete orders in the shortest possible time without compromising quality. We understand the importance of timely execution, so we always adhere to the promised deadlines.",
+        "image": "/assets/termichna-obrobka4.jpg"
+      },
+      {
+        "title": "Comprehensive approach",
+        "description": "We take care of the entire heat treatment cycle, from initial processing to the finished part, saving you time and resources.",
+        "image": "/assets/termichna-obrobka5.jpg"
+      }
+    ],
+    "callToAction": "Don't wait — trust the professionals!"
+  },
 
   "cardData": [
     {
@@ -286,43 +318,6 @@
     ],
     "callToActionTop": "Smoothness and precision of every surface.",
     "callToActionBottom": "Order metal grinding today!"
-  },
-  "termichnaObrobkaPage": {
-    "title": "HEAT TREATMENT",
-    "description": "Heat treatment of metal by QPart: quenching, annealing, and tempering.This is a key stage in production that significantly improves the quality and performance characteristics of materials.",
-    "peculiaritiesTitle": "From hardening to annealing, these technologies ensure:",
-    "listPeculiarities": [
-      {
-        "description": "Enhancing strength and resistance to mechanical stress;",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Improving corrosion resistance;",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Withstanding high-temperature exposure;",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Flexibility and reduction of internal stresses in the metal structure.",
-        "icon": "/icons/listPeculiarities.png"
-      }
-    ],
-    "servicesTitle": "Our main services:",
-    "listServices": [
-      {
-        "description": "Metal hardening."
-      },
-      {
-        "description": "Annealing of steel and other metals - This process involves slow cooling after heating, which reduces hardness, eliminates internal stresses, and improves the metal structure."
-      },
-      {
-        "description": "Metal tempering - The final stage of heat treatment, providing a balance between hardness and flexibility, crucial for improving operational performance."
-      }
-    ],
-    "callToActionTop": "Optimize the strength and durability of your parts.",
-    "callToActionBottom": "Order heat treatment from us!"
   },
 
   "lazernaRizkaPage": {

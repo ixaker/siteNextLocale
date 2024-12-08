@@ -174,6 +174,40 @@
     "callToActionGeneral": "Wir sind bereit, Ihr zuverlässiger Partner im Bereich Fräsarbeiten zu werden!",
     "callToAction": "Stellen Sie jetzt Ihre Anfrage und überzeugen Sie sich von unseren Fähigkeiten!"
   },
+  "termichnaObrobkaPage": {
+    "title": "Wärmebehandlung von Metallen",
+    "descriptionTop": "Wir bieten umfassende Lösungen für die Wärmebehandlung von Metallen jeder Komplexität. Mit modernster Ausrüstung, fortschrittlichen Technologien und einem erfahrenen Team gewährleisten wir eine hohe Qualität und Präzision, die den höchsten Standards entsprechen.",
+    "descriptionBottom": "Wenn Sie uns für die Wärmebehandlung wählen, erhalten Sie nicht nur eine hochwertige Bearbeitung, sondern auch einen zuverlässigen Partner, der immer seine Versprechen hält.",
+    "infoCard": [
+      {
+        "title": "Unser Unternehmen verfügt über eine breite Palette an Wärmebehandlungsanlagen, darunter",
+        "list": [
+          { "description": "Standard-Elektroöfen für Abschrecken und Anlassen" },
+          {
+            "description": "Leistungsstarke Gasöfen für die Bearbeitung von Teilen mit einem Gewicht von bis zu 100 Tonnen"
+          },
+          { "description": "Induktionshärtungsanlagen für die Härtebehandlung langer Wellen" }
+        ],
+        "image": "/assets/termichna-obrobka2.jpg"
+      },
+      {
+        "title": "Maximale Präzision und Zuverlässigkeit",
+        "description": "Wir verwenden nur die modernsten Technologien, um optimale Bedingungen für jedes Teil zu gewährleisten. Ihre Produkte werden mit hoher Präzision und nach den höchsten Qualitätsstandards bearbeitet.",
+        "image": "/assets/termichna-obrobka3.webp"
+      },
+      {
+        "title": "Schnelle Auftragsabwicklung",
+        "description": "Unsere Technologien und organisierten Prozesse ermöglichen es uns, Aufträge in kürzester Zeit zu erledigen, ohne die Qualität zu beeinträchtigen. Wir verstehen die Bedeutung einer termingerechten Ausführung und halten stets die versprochenen Fristen ein.",
+        "image": "/assets/termichna-obrobka4.jpg"
+      },
+      {
+        "title": "Ganzheitlicher Ansatz",
+        "description": "Wir übernehmen den gesamten Wärmebehandlungsprozess, von der ersten Bearbeitung bis zum fertigen Teil, und sparen so Ihre Zeit und Ressourcen.",
+        "image": "/assets/termichna-obrobka5.jpg"
+      }
+    ],
+    "callToAction": "Warten Sie nicht — vertrauen Sie den Profis!"
+  },
 
   "cardData": [
     {
@@ -282,43 +316,6 @@
     ],
     "callToActionTop": "SmGlätte und Präzision jeder Oberfläche.",
     "callToActionBottom": "Bestellen Sie noch heute das Schleifen von Metall!"
-  },
-  "termichnaObrobkaPage": {
-    "title": "WÄRMEBEHANDLUNG",
-    "description": "Wärmebehandlung von Metall durch QPart: Härten, Glühen und Anlassen",
-    "peculiaritiesTitle": "Von Härten bis zum Glühen - diese Technologien gewährleisten:",
-    "listPeculiarities": [
-      {
-        "description": "Erhöhung der Festigkeit und Widerstandsfähigkeit gegen mechanische Belastungen;",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Verbesserung der Korrosionsbeständigkeit;",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Beständigkeit gegenüber hohen Temperaturen;",
-        "icon": "/icons/listPeculiarities.png"
-      },
-      {
-        "description": "Flexibilität und Reduzierung von inneren Spannungen in der Metallstruktur.",
-        "icon": "/icons/listPeculiarities.png"
-      }
-    ],
-    "servicesTitle": "Unsere Hauptleistungen:",
-    "listServices": [
-      {
-        "description": "Härtung von Metall."
-      },
-      {
-        "description": "Glühen von Stahl und anderen Metallen - Dieser Prozess beinhaltet ein langsames Abkühlen nach dem Erhitzen, wodurch die Härte reduziert, innere Spannungen beseitigt und die Metallstruktur verbessert wird."
-      },
-      {
-        "description": "Anlassen von Metall - Der abschließende Schritt der Wärmebehandlung, der ein Gleichgewicht zwischen Härte und Flexibilität schafft und entscheidend für die Verbesserung der Betriebseigenschaften ist."
-      }
-    ],
-    "callToActionTop": "Optimieren Sie die Festigkeit und Langlebigkeit Ihrer Teile.",
-    "callToActionBottom": "Bestellen Sie die Wärmebehandlung bei uns!"
   },
 
   "lazernaRizkaPage": {
