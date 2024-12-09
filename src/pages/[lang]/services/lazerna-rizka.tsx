@@ -34,17 +34,17 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         description={translationsPage.descriptionTop}
         keywords={translationsPage.title}
         canonical={fullUrl}
-        imgOg="/assets/lazerna-rizka.jpg"
+        imgOg="/assets/lazerna-rizka.jpeg"
         lang={lang}
         localeOg={translations.locale}
       />
-      <BackCover bgImg="/assets/lazerna-rizka.jpg">
+      <BackCover bgImg="/assets/lazerna-rizka.jpeg">
         <InformationBlock
           title={translationsPage.title}
           descriptionTop={translationsPage.descriptionTop}
           descriptionBottom={translationsPage.descriptionBottom}
           translations={translations}
-          srcImg="/assets/lazerna-rizka.jpg"
+          srcImg="/assets/lazerna-rizka.jpeg"
           lang={lang}
         />
       </BackCover>

@@ -218,22 +218,22 @@
           { "description": "Cutting of metals up to 20 mm" },
           { "description": "Ability to process large sizes" }
         ],
-        "image": "/assets/lazerna-rizka2.jpg"
+        "image": "/assets/lazerna-rizka2.jpeg"
       },
       {
         "title": "Precision and reliability",
         "description": "We guarantee cutting accuracy and neatness, allowing for perfect results even for complex geometries.",
-        "image": "/assets/lazerna-rizka3.jpg"
+        "image": "/assets/lazerna-rizka3.jpeg"
       },
       {
         "title": "Fast order fulfillment",
         "description": "Thanks to process automation, we will complete your order in optimal time without compromising quality.",
-        "image": "/assets/lazerna-rizka4.jpg"
+        "image": "/assets/lazerna-rizka4.jpeg"
       },
       {
         "title": "Comprehensive approach",
         "description": "We offer a full range of laser cutting services, allowing you to receive finished parts without the need for additional processing.",
-        "image": "/assets/lazerna-rizka5.jpg"
+        "image": "/assets/lazerna-rizka5.jpeg"
       }
     ],
     "callToAction": "Submit your application right now and see our capabilities!"
@@ -252,22 +252,22 @@
           { "description": "Internal and deep internal grinding equipment" },
           { "description": "Thread grinding machines" }
         ],
-        "image": "/assets/shlifovka-metalu2.jpg"
+        "image": "/assets/shlifovka-metalu2.jpeg"
       },
       {
         "title": "High precision and quality",
         "description": "Our technologies allow us to achieve perfect surface cleanliness and provide maximum precision even for the smallest parts and complex shapes.",
-        "image": "/assets/shlifovka-metalu3.webp"
+        "image": "/assets/shlifovka-metalu3.jpeg"
       },
       {
         "title": "Fast order fulfillment",
         "description": "Thanks to our streamlined logistics and powerful equipment, we fulfill orders in the shortest time possible without compromising quality.",
-        "image": "/assets/shlifovka-metalu4.jpg"
+        "image": "/assets/shlifovka-metalu4.jpeg"
       },
       {
         "title": "Comprehensive approach",
         "description": "We provide a full cycle of grinding operations, so you can receive finished products without the need to involve other contractors.",
-        "image": "/assets/shlifovka-metalu5.jpg"
+        "image": "/assets/shlifovka-metalu5.jpeg"
       }
     ],
     "callToAction": "Submit your application right now – we’ll help bring your ideas to life!"

@@ -228,22 +228,22 @@
           { "description": "Резку металлов до 20 мм" },
           { "description": "Возможность обработки больших размеров" }
         ],
-        "image": "/assets/lazerna-rizka2.jpg"
+        "image": "/assets/lazerna-rizka2.jpeg"
       },
       {
         "title": "Точность и надежность",
         "description": "Мы гарантируем точность и аккуратность резки, что позволяет достигать идеальных результатов даже для сложных геометрий.",
-        "image": "/assets/lazerna-rizka3.jpg"
+        "image": "/assets/lazerna-rizka3.jpeg"
       },
       {
         "title": "Быстрое выполнение заказов",
         "description": "Благодаря автоматизации процесса, мы выполним ваш заказ в оптимальные сроки без потери качества.",
-        "image": "/assets/lazerna-rizka4.jpg"
+        "image": "/assets/lazerna-rizka4.jpeg"
       },
       {
         "title": "Комплексный подход",
         "description": "Предлагаем полный спектр услуг лазерной резки, позволяя вам получать готовые детали без необходимости дополнительной обработки.",
-        "image": "/assets/lazerna-rizka5.jpg"
+        "image": "/assets/lazerna-rizka5.jpeg"
       }
     ],
     "callToAction": "Оставьте заявку прямо сейчас и убедитесь в наших возможностях!"
@@ -262,22 +262,22 @@
           { "description": "Оборудование для внутренней и глубокой внутренней шлифовки" },
           { "description": "Станки для резьбошлифования" }
         ],
-        "image": "/assets/shlifovka-metalu2.jpg"
+        "image": "/assets/shlifovka-metalu2.jpeg"
       },
       {
         "title": "Высокая точность и качество",
         "description": "Наши технологии позволяют достичь идеальной чистоты поверхности и обеспечить максимальную точность даже для самых мелких деталей и сложных форм.",
-        "image": "/assets/shlifovka-metalu3.webp"
+        "image": "/assets/shlifovka-metalu3.jpeg"
       },
       {
         "title": "Быстрое выполнение заказов",
         "description": "Благодаря налаженной логистике и мощному оборудованию мы выполняем заказы в кратчайшие сроки без ущерба для качества.",
-        "image": "/assets/shlifovka-metalu4.jpg"
+        "image": "/assets/shlifovka-metalu4.jpeg"
       },
       {
         "title": "Комплексный подход",
         "description": "Мы предоставляем полный цикл шлифовальных работ, чтобы вы получили готовую продукцию без необходимости привлечения других подрядчиков.",
-        "image": "/assets/shlifovka-metalu5.jpg"
+        "image": "/assets/shlifovka-metalu5.jpeg"
       }
     ],
     "callToAction": "Оставьте заявку прямо сейчас – мы поможем воплотить ваши идеи в реальность!"
