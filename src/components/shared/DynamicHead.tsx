@@ -23,7 +23,6 @@ const DynamicHead: React.FC<DynamicHeadProps> = ({
 }) => {
   return (
     <Head>
-      {' '}
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
@@ -41,30 +40,18 @@ const DynamicHead: React.FC<DynamicHeadProps> = ({
       <meta property="og:image:width" content="200" />
       <meta property="og:image:height" content="200" />
       <meta property="og:locale" content={localeOg} />
+
+      <meta property="og:type" content="article" />
+      <meta name="twitter:card" content="summary" />
       {/* <!-- Twitter Cards --> */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={imgOg} />
       <meta property="og:site_name" content="QPART" />
-      {/* <!-- Facebook Specific Tags --> */}
       <meta property="fb:app_id" content="1234567890" />
-      {/* <!-- JSON-LD Структурированные данные --> */}
-      {/* <script type="application/ld+json">
-    {
-      '@context': "https://schema.org",
-      "@type": "Organization",
-      "name": "Название вашей компании по металлообработке",
-      "url": "https://example.com",
-      "logo": "https://example.com/logo.png",
-      "contactPoint": [{
-        "@type": "ContactPoint",
-        "telephone": "+1-800-555-5555",
-        "contactType": "Customer Service",
-        "availableLanguage": ["Ukrainian", "English"]
-      }]
-    }
-    </script> */}
+
+      <meta property="og:type" content="website" />
     </Head>
   );
 };
