@@ -4,7 +4,7 @@ import fs from 'fs';
 import { Translations } from '../../locales/types';
 
 export const getDefaultLanguage = (langFromUrl?: string): string => {
-  const defaultLanguage = 'en';
+  const defaultLanguage = 'uk';
 
   return SUPPORTED_LANGUAGES.includes(langFromUrl || '') ? langFromUrl! : defaultLanguage;
 };

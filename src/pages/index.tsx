@@ -13,20 +13,28 @@ const RedirectPage: React.FC<RedirectPageProps> = ({ supportedLanguages, default
 
   useEffect(() => {
     const getPreferredLanguage = () => {
-      // Определяем язык пользователя
+      // Сначала проверяем язык в localStorage
+      const localLang = localStorage.getItem('lang');
+      if (localLang) {
+        return localLang === 'ru' ? 'uk' : localLang;
+      }
+
       const browserLanguage = navigator.language.split('-')[0];
+      if (browserLanguage === 'ru') {
+        return 'uk';
+      }
 
       // Если язык поддерживается, возвращаем его, иначе — язык по умолчанию
       return supportedLanguages.includes(browserLanguage) ? browserLanguage : defaultLanguage;
     };
 
-    // Перенаправляем пользователя на предпочитаемый язык
     const preferredLanguage = getPreferredLanguage();
 
-    const saveLang = localStorage.getItem('lang') || preferredLanguage;
+    if (preferredLanguage !== 'ru') {
+      localStorage.setItem('lang', preferredLanguage);
+    }
 
-    localStorage.setItem('lang', saveLang);
-    router.replace(`/${saveLang}`);
+    router.replace(`/${preferredLanguage}`);
   }, [router, supportedLanguages, defaultLanguage]);
 
   return null; // Эта страница ничего не отображает

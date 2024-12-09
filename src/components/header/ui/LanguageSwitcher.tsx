@@ -14,6 +14,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ supportedLanguages 
 
   const switchLanguage = (newLang: string) => {
     const newPath = asPath.replace(/^\/[a-z]{2}/, `/${newLang}`);
+
     router.push(newPath);
     localStorage.setItem('lang', newLang);
   };
