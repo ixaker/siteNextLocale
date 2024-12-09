@@ -33,17 +33,17 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
         description={translationsPage.descriptionTop}
         keywords={translationsPage.title}
         canonical={fullUrl}
-        imgOg="/assets/tokarni-roboty-chpk.jpg"
+        imgOg="/assets/tokarni-roboty-chpk.jpeg"
         lang={lang}
         localeOg={translations.locale}
       />
-      <BackCover bgImg="/assets/tokarni-roboty-chpk.jpg">
+      <BackCover bgImg="/assets/tokarni-roboty-chpk.jpeg">
         <InformationBlock
           title={translationsPage.title}
           descriptionTop={translationsPage.descriptionTop}
           descriptionBottom={translationsPage.descriptionBottom}
           translations={translations}
-          srcImg="/assets/tokarni-roboty-chpk.jpg"
+          srcImg="/assets/tokarni-roboty-chpk.jpeg"
           lang={lang}
         />
       </BackCover>
