@@ -24,7 +24,6 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const listServices = translationsPage.listServices;
   const orderBenefits = translations.orderBenefits.listOrderBenefits;
   const listPeculiarities = translationsPage.listPeculiarities;
-  const translationsMenuService = translations.menu[0]?.subMenu;
 
   const [fullUrl, setFullUrl] = useState('');
   useEffect(() => {
@@ -51,7 +50,6 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           translations={translations}
           srcImg="/assets/zaliznychni-zapchastyny.jpg"
           lang={lang}
-          translationsMenuService={translationsMenuService || []}
         />
       </BackCover>
 

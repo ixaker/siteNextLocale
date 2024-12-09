@@ -309,6 +309,23 @@
     "callToActionGeneral": "Trust the professionals!",
     "callToAction": "Order sandblasting services with us today and experience our capabilities!"
   },
+  "orderBenefits": {
+    "orderBenefitsTitle": "Advantages of Ordering with Us",
+    "listOrderBenefits": [
+      {
+        "title": "Ready for large volumes – ensuring uninterrupted operations even for large-scale orders.",
+        "icon": "/assets/cylinder.png"
+      },
+      {
+        "title": "More than 300 CNC machines – modern equipment guarantees precision, quality, and speed of execution.",
+        "icon": "/assets/gears.png"
+      },
+      {
+        "title": "Flexible deadlines – we work quickly and always on time!",
+        "icon": "/assets/clock-time.png"
+      }
+    ]
+  },
 
   "cardData": [
     {

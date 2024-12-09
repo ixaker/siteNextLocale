@@ -313,6 +313,23 @@
     "callToActionGeneral": "Vertrauen Sie den Profis!",
     "callToAction": "Bestellen Sie noch heute Sandstrahldienste bei uns und überzeugen Sie sich von unseren Fähigkeiten!"
   },
+  "orderBenefits": {
+    "orderBenefitsTitle": "Vorteile einer Bestellung bei uns",
+    "listOrderBenefits": [
+      {
+        "title": "Bereit für große Mengen – wir gewährleisten einen reibungslosen Betrieb auch bei Großaufträgen.",
+        "icon": "/assets/cylinder.png"
+      },
+      {
+        "title": "Mehr als 300 CNC-Maschinen – moderne Ausrüstung garantiert Präzision, Qualität und Geschwindigkeit.",
+        "icon": "/assets/gears.png"
+      },
+      {
+        "title": "Flexible Lieferzeiten – wir arbeiten schnell und immer pünktlich!",
+        "icon": "/assets/clock-time.png"
+      }
+    ]
+  },
 
   "cardData": [
     {

@@ -65,6 +65,10 @@ export type Translations = {
   zvaryuvannyaMetaluPage: ServicesPage;
 
   piskostruminniRoboty: ServicesPage;
+  orderBenefits: {
+    orderBenefitsTitle: string;
+    listOrderBenefits: { title: string; icon: string }[];
+  };
 
   zaliznychniZapchastynyPage: {
     title: string;
