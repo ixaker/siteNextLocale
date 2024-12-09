@@ -163,7 +163,7 @@
       {
         "title": "Ganzheitlicher Ansatz",
         "description": "Wir bieten einen vollständigen Frässervice, damit Sie das fertige Teil erhalten, ohne sich an andere Auftragnehmer wenden zu müssen. Ihre Aufgabe ist unsere Verantwortung.",
-        "image": "/assets/frezerni-roboty4.jpeg"
+        "image": "/assets/frezerni-roboty4.webp"
       },
       {
         "title": "Schnelle Auftragsabwicklung",
@@ -334,23 +334,23 @@
   "cardData": [
     {
       "title": "CNC-DREHARBEITEN",
-      "img": "/assets/tokarni-roboty-chpk.jpg",
+      "img": "/assets/tokarni-roboty-chpk.webp",
       "href": "services/tokarni-roboty-chpk/"
     },
     {
       "title": "CNC-FRÄSARBEITEN",
-      "img": "/assets/frezerni-roboty4.jpg",
+      "img": "/assets/frezerni-roboty4.webp",
       "href": "services/frezerni-roboty/"
     },
     {
       "title": "WÄRMEBEHANDLUNG",
-      "img": "/assets/termichna-obrobka.jpg",
+      "img": "/assets/termichna-obrobka.webp",
       "href": "services/termichna-obrobka/"
     },
     {
-      "title": "METALLGUSS",
-      "img": "/assets/metal-casting.jpg",
-      "href": "services/indyvidualni-zamovlennya/"
+      "title": "METALLGIESSEN",
+      "img": "/assets/metal-casting.webp",
+      "href": "services/lyttya-metalu/"
     }
   ],
   "contactPage": {

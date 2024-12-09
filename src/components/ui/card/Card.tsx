@@ -18,6 +18,7 @@ const Card: React.FC<CardProps> = ({ title, srcImg, href }) => {
           width={100}
           height={100}
           priority
+          sizes="(max-width: 768px) 250px, (max-width: 1280px) 300px, 300px"
         />
       </div>
       <div className="h-[30px] md:h-[50px] absolute bottom-0 left-0 right-0 bg-[#763c00] text-white p-2 transition-all duration-500 ease-in-out transform group-hover:scale-110 flex items-center justify-center">

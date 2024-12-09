@@ -128,7 +128,7 @@
           },
           { "description": "Литье цветных металлов в кокиль для точных деталей" }
         ],
-        "image": "/assets/llyttya-metalu2.jpeg"
+        "image": "/assets/lyttya-metalu2.jpeg"
       },
       {
         "title": "Высокая точность и надежность",
@@ -173,7 +173,7 @@
       {
         "title": "Комплексный подход",
         "description": "Мы предлагаем полный цикл фрезерной обработки, чтобы вы получили готовую деталь без необходимости обращаться к другим подрядчикам. Ваша задача – наша ответственность.",
-        "image": "/assets/frezerni-roboty4.jpeg"
+        "image": "/assets/frezerni-roboty4.webp"
       },
       {
         "title": "Быстрое выполнение заказов",
@@ -342,22 +342,22 @@
   "cardData": [
     {
       "title": "ТОКАРНЫЕ РАБОТЫ С ЧПУ",
-      "img": "/assets/tokarni-roboty-chpk.jpg",
+      "img": "/assets/tokarni-roboty-chpk.webp",
       "href": "services/tokarni-roboty-chpk/"
     },
     {
       "title": "ФРЕЗЕРНЫЕ РАБОТЫ С ЧПУ",
-      "img": "/assets/frezerni-roboty4.jpg",
+      "img": "/assets/frezerni-roboty4.webp",
       "href": "services/frezerni-roboty/"
     },
     {
       "title": "ТЕРМИЧЕСКАЯ ОБРАБОТКА",
-      "img": "/assets/termichna-obrobka.jpg",
+      "img": "/assets/termichna-obrobka.webp",
       "href": "services/termichna-obrobka/"
     },
     {
-      "title": "ЛИТЬЕ МЕТАЛЛА",
-      "img": "/assets/metal-casting.jpg",
+      "title": "ЛИТЬЁ МЕТАЛЛА",
+      "img": "/assets/metal-casting.webp",
       "href": "services/lyttya-metalu/"
     }
   ],

@@ -165,7 +165,7 @@
       {
         "title": "Комплексний підхід",
         "description": "Ми пропонуємо повний цикл фрезерної обробки, щоб ви отримали готову деталь без необхідності звертатися до інших підрядників. Ваше завдання – наша відповідальність",
-        "image": "/assets/frezerni-roboty4.jpeg"
+        "image": "/assets/frezerni-roboty4.webp"
       },
       {
         "title": "Швидке виконання замовлень",
@@ -338,22 +338,22 @@
   "cardData": [
     {
       "title": "ТОКАРНІ РОБОТИ З ЧПК",
-      "img": "/assets/tokarni-roboty-chpk.jpg",
+      "img": "/assets/tokarni-roboty-chpk.webp",
       "href": "services/tokarni-roboty-chpk/"
     },
     {
       "title": "ФРЕЗЕРНІ РОБОТИ З ЧПК",
-      "img": "/assets/frezerni-roboty4.jpg",
+      "img": "/assets/frezerni-roboty4.webp",
       "href": "services/frezerni-roboty/"
     },
     {
       "title": "ТЕРМІЧНА ОБРОБКА",
-      "img": "/assets/termichna-obrobka.jpg",
+      "img": "/assets/termichna-obrobka.webp",
       "href": "services/termichna-obrobka/"
     },
     {
       "title": "ЛИТТЯ МЕТАЛУ",
-      "img": "/assets/metal-casting.jpg",
+      "img": "/assets/metal-casting.webp",
       "href": "services/lyttya-metalu/"
     }
   ],

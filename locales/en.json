@@ -163,7 +163,7 @@
       {
         "title": "Comprehensive approach",
         "description": "We offer a full cycle of milling services, so you get the finished part without the need to contact other contractors. Your task is our responsibility.",
-        "image": "/assets/frezerni-roboty4.jpeg"
+        "image": "/assets/frezerni-roboty4.webp"
       },
       {
         "title": "Fast order fulfillment",
@@ -329,24 +329,24 @@
 
   "cardData": [
     {
-      "title": "CNC TURNING WORKS",
-      "img": "/assets/tokarni-roboty-chpk.jpg",
+      "title": "CNC TURNING WORK",
+      "img": "/assets/tokarni-roboty-chpk.webp",
       "href": "services/tokarni-roboty-chpk/"
     },
     {
-      "title": "CNC MILLING WORKS",
-      "img": "/assets/frezerni-roboty4.jpg",
+      "title": "CNC MILLING WORK",
+      "img": "/assets/frezerni-roboty4.webp",
       "href": "services/frezerni-roboty/"
     },
     {
       "title": "HEAT TREATMENT",
-      "img": "/assets/termichna-obrobka.jpg",
+      "img": "/assets/termichna-obrobka.webp",
       "href": "services/termichna-obrobka/"
     },
     {
       "title": "METAL CASTING",
-      "img": "/assets/metal-casting.jpg",
-      "href": "services/indyvidualni-zamovlennya/"
+      "img": "/assets/metal-casting.webp",
+      "href": "services/lyttya-metalu/"
     }
   ],
   "contactPage": {
