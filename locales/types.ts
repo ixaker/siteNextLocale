@@ -90,9 +90,14 @@ export type Translations = {
     title: string;
     descriptionBtn: string;
     limitation: string;
+    filesSizeIsLarger: string;
+    fileSizeIsLarger: string;
     inputTitle: string;
     submitBtn: string;
     dropFile: string;
+    successfulSending: string;
+    errorMessage: string;
+    unknownError: string;
   };
 
   welcome: string;

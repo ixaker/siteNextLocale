@@ -67,11 +67,11 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ open, translations, setOpen }
   const resultSize = bytesToMegabytes(overallSize);
 
   if (statusMessage === 'ok') {
-    message = <p className="text-green">Відправлено</p>;
+    message = <p className="text-green">{translationsPage.successfulSending}</p>;
   } else if (statusMessage === 'error') {
-    message = <p className="text-[red]">Сталася помилка</p>;
+    message = <p className="text-[red]">{translationsPage.errorMessage}</p>;
   } else if (statusMessage === 'unknown error') {
-    message = <p className="text-[red]">Сталася невідома помилка</p>;
+    message = <p className="text-[red]">{translationsPage.unknownError}</p>;
   } else if (statusMessage === 'loading') {
     message = <CircularProgress sx={{ color: '#c43c1e' }} />;
   }
@@ -144,8 +144,8 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ open, translations, setOpen }
                 {resultSize > 20.0 ? (
                   <Typography variant="body2" sx={{ color: 'red', marginTop: '20px' }}>
                     {fileList.length > 1
-                      ? 'Розмір файлів перевищує максимальний ліміт у 20 Мб'
-                      : 'Розмір файлу перевищує максимальний ліміт у 20 Мб.'}
+                      ? translationsPage.filesSizeIsLarger
+                      : translationsPage.fileSizeIsLarger}
                   </Typography>
                 ) : (
                   ''

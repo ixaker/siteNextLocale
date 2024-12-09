@@ -495,12 +495,17 @@
   },
 
   "modalInfo": {
-    "title": "Leave your drawing and phone number, and we will contact you promptly to discuss the details.",
-    "descriptionBtn": "Choose File",
-    "limitation": "File size limit: up to 20 Mb*",
+    "title": "Leave your drawing and phone number, and we will promptly contact you to discuss the details.",
+    "dropFile": "Drag or select a file",
+    "descriptionBtn": "Select File",
+    "limitation": "File size limit: up to 20 MB*",
+    "filesSizeIsLarger": "The total file size exceeds the maximum limit of 20 MB.",
+    "fileSizeIsLarger": "The file size exceeds the maximum limit of 20 MB.",
+    "successfulSending": "Sent successfully",
+    "errorMessage": "An error occurred",
+    "unknownError": "An unknown error occurred",
     "inputTitle": "Mobile phone number",
-    "submitBtn": "Submit",
-    "dropFile": "Drag or select file"
+    "submitBtn": "Send"
   },
 
   "footer": {

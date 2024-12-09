@@ -500,13 +500,17 @@
   },
 
   "modalInfo": {
-    "title": "Hinterlassen Sie Ihre Zeichnung und Telefonnummer, und wir werden Sie umgehend kontaktieren, um die Details zu besprechen.",
+    "title": "Hinterlassen Sie Ihre Zeichnung und Telefonnummer, und wir werden uns umgehend mit Ihnen in Verbindung setzen, um die Details zu besprechen.",
+    "dropFile": "Datei ziehen oder auswählen",
     "descriptionBtn": "Datei auswählen",
-
-    "limitation": "Dateigrößenbeschränkung: bis zu 20 MB*",
+    "limitation": "Maximale Dateigröße: bis zu 20 MB*",
+    "filesSizeIsLarger": "Die Gesamtdateigröße überschreitet das maximale Limit von 20 MB.",
+    "fileSizeIsLarger": "Die Dateigröße überschreitet das maximale Limit von 20 MB.",
+    "successfulSending": "Erfolgreich gesendet",
+    "errorMessage": "Ein Fehler ist aufgetreten",
+    "unknownError": "Ein unbekannter Fehler ist aufgetreten",
     "inputTitle": "Mobiltelefonnummer",
-    "submitBtn": "Einreichen",
-    "dropFile": "Eine Datei ziehen oder auswählen"
+    "submitBtn": "Senden"
   },
 
   "footer": {
