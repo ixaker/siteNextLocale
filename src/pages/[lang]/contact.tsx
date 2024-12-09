@@ -58,7 +58,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
           style={{ color: secondaryColor }}
         >
           <div
-            className="min-w-screen px-4 py-8 mt-[130px]"
+            className="min-w-screen px-4 py-8 mt-[130px] md:mt-[150px] lg:mt-[170px] xl:mt-[200px]"
             style={{ backgroundColor: bgColorWithTransparency }}
           >
             <Heading level="h1" text={translationsPage.title} alignment="center" />
