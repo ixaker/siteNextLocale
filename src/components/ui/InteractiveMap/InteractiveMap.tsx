@@ -6,9 +6,11 @@ import Image from 'next/image';
 
 type Props = {
   companyLocation: { lat: number; lng: number };
+  ourLocation: string;
+  buildRoute: string;
 };
 
-const InteractiveMap: React.FC<Props> = ({ companyLocation }) => {
+const InteractiveMap: React.FC<Props> = ({ companyLocation, ourLocation, buildRoute }) => {
   const { lat, lng } = companyLocation;
 
   // Кастомная иконка для маркера
@@ -68,9 +70,9 @@ const InteractiveMap: React.FC<Props> = ({ companyLocation }) => {
         <Marker position={[lat, lng]} icon={customIcon}>
           <Popup>
             <div>
-              <p>Мы здесь!</p>
+              <p>{ourLocation}</p>
               <button onClick={handleRouteClick} style={{ cursor: 'pointer', padding: '5px 10px' }}>
-                Построить маршрут
+                {buildRoute}
               </button>
             </div>
           </Popup>

@@ -370,7 +370,9 @@
     "email": "Пошта",
     "descriptionEmail": "info@qpart.com.ua",
     "phone": "Телефон",
-    "descriptionPhone": "+380989950760"
+    "descriptionPhone": "+380989950760",
+    "ourLocation": "Ми тут!",
+    "buildRoute": "Побудувати маршрут"
   },
   "menu": [
     {

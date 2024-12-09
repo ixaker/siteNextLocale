@@ -355,18 +355,20 @@
   ],
   "contactPage": {
     "meta": {
-      "title": "Kontakte QPART",
-      "description": "Verkauf von Ersatzteilen für importierte Landtechnik mit Lieferung in der gesamten Ukraine | Hohe Qualität Günstiger Preis Herstellergarantie Unterstützung bei der Auswahl ☎ +38 098 995 07 60.",
-      "keywords": "Metallbearbeitung",
+      "title": "QPART Kontakte",
+      "description": "Verkauf von Ersatzteilen für importierte Landmaschinen mit Lieferung in der gesamten Ukraine | Hohe Qualität Günstiger Preis Herstellergarantie Unterstützung bei der Auswahl ☎ +38 098 995 07 60.",
+      "keywords": "Metallverarbeitung",
       "imgOg": "/logo.png"
     },
     "title": "Kontakte",
     "address": "Adresse",
-    "descriptionAddress": "Yakhnenkivska-Straße 2, Dnipro, Oblast Dnipropetrowsk, Postleitzahl: 49025",
+    "descriptionAddress": "Yakhnenskivska-Straße 2, Dnipro, Region Dnipropetrowsk, PLZ: 49025",
     "email": "E-Mail",
     "descriptionEmail": "info@qpart.com.ua",
     "phone": "Telefon",
-    "descriptionPhone": "+380989950760"
+    "descriptionPhone": "+380989950760",
+    "ourLocation": "Wir sind hier!",
+    "buildRoute": "Route planen"
   },
   "menu": [
     {

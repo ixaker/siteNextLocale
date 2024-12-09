@@ -58,6 +58,8 @@ export type Translations = {
     descriptionEmail: string;
     phone: string;
     descriptionPhone: string;
+    ourLocation: string;
+    buildRoute: string;
   };
   menu: [NavigationMenu];
   lazernaRizkaPage: ServicesPage;

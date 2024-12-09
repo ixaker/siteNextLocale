@@ -127,7 +127,11 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
                 </li>
               </ul>
               <div className="hidden relative w-full h-[268px] md:block max-w-[451px]">
-                <DynamicInteractiveMap companyLocation={{ lat: 48.499937, lng: 35.038598 }} />
+                <DynamicInteractiveMap
+                  buildRoute={translationsPage.buildRoute}
+                  ourLocation={translationsPage.ourLocation}
+                  companyLocation={{ lat: 48.499937, lng: 35.038598 }}
+                />
               </div>
             </div>
           </div>
