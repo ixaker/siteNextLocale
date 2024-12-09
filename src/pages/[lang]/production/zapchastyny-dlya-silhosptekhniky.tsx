@@ -25,7 +25,6 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   const listServices = translationsPage.listServices;
   const orderBenefits = translations.orderBenefits.listOrderBenefits;
   const listPeculiarities = translationsPage.listPeculiarities;
-  const translationsMenuService = translations.menu[0]?.subMenu;
 
   const [fullUrl, setFullUrl] = useState('');
   useEffect(() => {
@@ -38,7 +37,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
     <section style={{ backgroundColor: bgColor, color: secondaryColor }}>
       <DynamicHead
         title={translationsPage.title}
-        description={translationsPage.description}
+        description={translationsPage.descriptionTop}
         keywords={translationsPage.title}
         canonical={fullUrl}
         imgOg="/assets/zapchastyny-dlya-silhosptekhniky.jpg"
@@ -47,13 +46,12 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       />
       <BackCover bgImg="/assets/zapchastyny-dlya-silhosptekhniky.jpg">
         <InformationBlock
-          title="Виробництво запчастин для сільськогосподарської техніки"
-          descriptionTop="Наша компанія спеціалізується на створенні якісних запчастин для сільськогосподарської техніки, враховуючи потреби аграріїв та особливості сучасного фермерського обладнання."
-          descriptionBottom="Ми пропонуємо широкий асортимент деталей, які підходять для різних видів техніки та забезпечують її безперебійну роботу навіть у найважчих умовах.Забезпечте свою техніку якісними запчастинами"
+          title={translationsPage.title}
+          descriptionTop={translationsPage.descriptionTop}
+          descriptionBottom={translationsPage.descriptionBottom}
           translations={translations}
           srcImg="/assets/zapchastyny-dlya-silhosptekhniky.jpg"
           lang={lang}
-          translationsMenuService={translationsMenuService || []}
         />
       </BackCover>
 

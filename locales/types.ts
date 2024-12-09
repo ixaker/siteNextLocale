@@ -84,17 +84,7 @@ export type Translations = {
 
   zaliznychniZapchastynyPage: ProductPage;
 
-  zapchastynyDlyaSilhosptekhnikyPage: {
-    title: string;
-    description: string;
-    servicesTitle: string;
-    listServices: { description: string }[];
-    descriptionBenefits: string;
-    peculiaritiesTitle: string;
-    listPeculiarities: { description: string; icon: string }[];
-    question: string;
-    answer: string;
-  };
+  zapchastynyDlyaSilhosptekhnikyPage: ProductPage;
 
   modalInfo: {
     title: string;

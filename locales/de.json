@@ -462,35 +462,36 @@
     "answer": "Wir fertigen sie nach Ihren Anforderungen, unter Berücksichtigung aller Vorgaben!"
   },
   "zapchastynyDlyaSilhosptekhnikyPage": {
-    "title": "Produktion von Ersatzteilen für Landmaschinen",
-    "description": "Unser Unternehmen ist auf die Herstellung hochwertiger Ersatzteile für Landmaschinen spezialisiert und berücksichtigt dabei die Bedürfnisse der Landwirte sowie die Besonderheiten moderner Landtechnik. Wir bieten eine breite Palette an Komponenten, die für verschiedene Maschinen geeignet sind und deren störungsfreien Betrieb auch unter schwierigsten Bedingungen gewährleisten.Sichern Sie Ihre Maschinen mit hochwertigen Ersatzteilen",
-    "servicesTitle": "Unser Sortiment umfasst:",
+    "title": "Herstellung von Ersatzteilen für landwirtschaftliche Maschinen",
+    "descriptionTop": "Unser Unternehmen ist auf die Herstellung hochwertiger Ersatzteile für landwirtschaftliche Maschinen spezialisiert, wobei die Bedürfnisse der Landwirte und die Besonderheiten moderner Landtechnik berücksichtigt werden.",
+    "descriptionBottom": "Wir bieten ein breites Sortiment an Teilen, die für verschiedene Maschinentypen geeignet sind und einen störungsfreien Betrieb auch unter schwierigsten Bedingungen gewährleisten. Statten Sie Ihre Maschinen mit hochwertigen Ersatzteilen aus.",
+    "servicesTitle": "Unsere Vorteile:",
     "listServices": [
       {
-        "description": "Moderne Ausstattung. Der Einsatz von CNC-Maschinen gewährleistet eine hohe Fertigungsgenauigkeit."
+        "description": "Moderne Ausrüstung. Der Einsatz von CNC-Maschinen garantiert eine hohe Fertigungspräzision."
       },
       {
-        "description": "Qualitätskontrolle. Alle Teile werden auf die Einhaltung internationaler Standards überprüft."
+        "description": "Qualitätskontrolle. Alle Teile werden auf die Einhaltung internationaler Standards geprüft."
       },
       {
-        "description": "Flexibilität bei der Auftragsausführung. Wir arbeiten sowohl mit großen Serien als auch mit Einzelanfertigungen."
+        "description": "Flexibilität bei der Auftragsabwicklung. Wir bearbeiten sowohl Großserien als auch Einzelteile."
       },
       {
-        "description": "Schnelle Lieferzeiten. Wir gewährleisten eine zügige Fertigung ohne Qualitätsverlust."
+        "description": "Schnelle Lieferzeiten. Wir sorgen für eine zügige Produktion ohne Qualitätseinbußen."
       }
     ],
-    "peculiaritiesTitle": "Welche Teile stellen wir her?",
+    "peculiaritiesTitle": "Welche Teile produzieren wir?",
     "listPeculiarities": [
       {
-        "description": "Komponenten für Futtererntemaschinen: Messer, Häcksler, Wellen, Ketten, die den störungsfreien Betrieb der Tierhaltungstechnik gewährleisten.",
+        "description": "Komponenten für Futtererntemaschinen: Messer, Schredder, Wellen, die einen störungsfreien Betrieb der Tierhaltungsmaschinen gewährleisten.",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Teile für Lader und Manipulatoren: Hydraulikzylinder, Befestigungen, Schläuche, die für die zuverlässige Funktion von Zusatzgeräten erforderlich sind.",
+        "description": "Teile für Lader und Manipulatoren: Hydraulikzylinder, Halterungen, die für den zuverlässigen Betrieb von Zusatzgeräten erforderlich sind.",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Spezialisierte Sonderanfertigungen: Wir fertigen individuelle Ersatzteile nach den spezifischen Wünschen unserer Kunden.",
+        "description": "Spezielle Ersatzteile auf Bestellung: Wir fertigen maßgeschneiderte Ersatzteile nach den spezifischen Anforderungen der Kunden.",
         "icon": "/icons/listPeculiarities.png"
       }
     ],

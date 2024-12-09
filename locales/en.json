@@ -464,39 +464,34 @@
 
   "zapchastynyDlyaSilhosptekhnikyPage": {
     "title": "Production of Spare Parts for Agricultural Machinery",
-    "description": "Our company specializes in creating high-quality spare parts for agricultural machinery, taking into account the needs of farmers and the specifics of modern farming equipment. We offer a wide range of components suitable for various types of machinery, ensuring uninterrupted operation even under the toughest conditions.Ensure your equipment with high-quality spare parts",
-    "servicesTitle": "Our range includes:",
+    "descriptionTop": "Our company specializes in creating high-quality spare parts for agricultural machinery, considering the needs of farmers and the features of modern farming equipment.",
+    "descriptionBottom": "We offer a wide range of parts suitable for various types of machinery, ensuring its uninterrupted operation even under the toughest conditions. Equip your machinery with high-quality spare parts.",
+    "servicesTitle": "Our Advantages:",
     "listServices": [
+      { "description": "Modern equipment. The use of CNC machines guarantees high manufacturing precision." },
+      { "description": "Quality control. All parts undergo testing to meet international standards." },
       {
-        "description": "Modern equipment. The use of CNC machines ensures high manufacturing precision."
+        "description": "Flexibility in order fulfillment. We handle both large batches and individual items."
       },
-      {
-        "description": "Quality control. All parts are inspected for compliance with international standards."
-      },
-      {
-        "description": "Flexibility in order execution. We work with both large batches and single items."
-      },
-      {
-        "description": "Fast lead times. We provide prompt manufacturing without compromising quality."
-      }
+      { "description": "Fast turnaround times. We ensure quick production without compromising quality." }
     ],
-    "peculiaritiesTitle": "What parts do we manufacture?",
+    "peculiaritiesTitle": "What parts do we produce?",
     "listPeculiarities": [
       {
-        "description": "Components for forage harvesting machinery: knives, shredders, shafts, chains that ensure uninterrupted operation of livestock equipment.",
+        "description": "Components for forage harvesting equipment: knives, shredders, shafts that ensure uninterrupted operation of livestock machinery.",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Parts for loaders and manipulators: hydraulic cylinders, mounts, hoses necessary for the reliable functioning of auxiliary equipment.",
+        "description": "Parts for loaders and manipulators: hydraulic cylinders, mounts necessary for reliable functioning of auxiliary equipment.",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Specialized custom parts: we manufacture individual spare parts according to specific customer requests.",
+        "description": "Custom parts: we manufacture bespoke spare parts according to specific customer requests.",
         "icon": "/icons/listPeculiarities.png"
       }
     ],
     "question": "Looking for spare parts for agricultural machinery?",
-    "answer": "Order from us, and we will manufacture them specifically for your machinery!"
+    "answer": "Order from us, and we will manufacture them specifically for your equipment!"
   },
 
   "modalInfo": {
