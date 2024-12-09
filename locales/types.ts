@@ -21,6 +21,18 @@ export type ServicesPage = {
   callToActionBottom: string;
 };
 
+export type ProductPage = {
+  title: string;
+  descriptionTop: string;
+  descriptionBottom: string;
+  servicesTitle: string;
+  listServices: { description: string }[];
+  peculiaritiesTitle: string;
+  listPeculiarities: { description: string; icon: string }[];
+  question: string;
+  answer: string;
+};
+
 export type CardData = { title: string; img: string; href: string };
 
 export type ListAdvantages = { description: string; icon: string };
@@ -70,16 +82,7 @@ export type Translations = {
     listOrderBenefits: { title: string; icon: string }[];
   };
 
-  zaliznychniZapchastynyPage: {
-    title: string;
-    description: string;
-    servicesTitle: string;
-    listServices: { description: string }[];
-    peculiaritiesTitle: string;
-    listPeculiarities: { description: string; icon: string }[];
-    question: string;
-    answer: string;
-  };
+  zaliznychniZapchastynyPage: ProductPage;
 
   zapchastynyDlyaSilhosptekhnikyPage: {
     title: string;

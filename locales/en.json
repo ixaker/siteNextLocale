@@ -405,24 +405,25 @@
   ],
 
   "zaliznychniZapchastynyPage": {
-    "title": "Manufacturing Components for Railway Infrastructure",
-    "description": "QPart specializes in the production of high-quality components for railway infrastructure. We ensure the manufacturing of various parts that meet all modern safety and operational reliability standards. Our solutions are suitable for both upgrading existing systems and constructing new railway facilities.",
+    "title": "Manufacturing of Railway Infrastructure Components",
+    "descriptionTop": "QPart specializes in the production of high-quality components for railway infrastructure. We ensure the manufacturing of various components that meet all modern safety and operational reliability standards.",
+    "descriptionBottom": "Our solutions are suitable for both the modernization of existing systems and the construction of new railway facilities.",
     "servicesTitle": "Our Advantages",
     "listServices": [
       {
-        "description": "Modern Equipment: CNC machines ensure high manufacturing precision."
+        "description": "Modern equipment. The use of CNC machines guarantees high manufacturing precision."
       },
       {
-        "description": "Quality Control: All parts undergo testing to meet international standards."
+        "description": "Quality control. All components undergo verification to comply with international standards."
       },
       {
-        "description": "Flexibility in Order Execution: We handle both large batches and single units."
+        "description": "Flexibility in order execution. We work with both large batches and individual items."
       },
       {
-        "description": "Quick Turnaround Times: We provide fast production without compromising quality."
+        "description": "Quick timelines. We ensure prompt production without compromising quality."
       }
     ],
-    "peculiaritiesTitle": "What Parts Do We Manufacture?",
+    "peculiaritiesTitle": "What Components Do We Produce?",
     "listPeculiarities": [
       {
         "description": "Wheelsets, brake discs, axles;",
@@ -433,15 +434,15 @@
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Rail fastenings, fishplates, base plates;",
+        "description": "Rail fastenings;",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Tie bolts, anchor systems, bearing parts.",
+        "description": "Tension bolts, anchor systems, support parts.",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Signal poles, platforms, mounting assemblies;",
+        "description": "Signal posts, platforms, mounting units;",
         "icon": "/icons/listPeculiarities.png"
       },
       {
@@ -449,16 +450,16 @@
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Specialized products based on client drawings;",
+        "description": "Specialized products according to customer drawings;",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Parts with non-standard configurations for unique needs.",
+        "description": "Custom-configured components for unique needs.",
         "icon": "/icons/listPeculiarities.png"
       }
     ],
-    "question": "Need railway spare parts?",
-    "answer": "We will manufacture them to your order, taking all requirements into account!"
+    "question": "Need railway parts?",
+    "answer": "We will produce them to your order, taking all requirements into account!"
   },
 
   "zapchastynyDlyaSilhosptekhnikyPage": {

@@ -35,7 +35,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
     <section style={{ backgroundColor: bgColor, color: secondaryColor }}>
       <DynamicHead
         title={translationsPage.title}
-        description={translationsPage.description}
+        description={translationsPage.descriptionTop}
         keywords={translationsPage.title}
         canonical={fullUrl}
         imgOg="/assets/zaliznychni-zapchastyny.jpg"
@@ -45,8 +45,8 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
       <BackCover bgImg="/assets/zaliznychni-zapchastyny.jpg">
         <InformationBlock
           title={translationsPage.title}
-          descriptionTop="Компанія QPart спеціалізується на виготовленні високоякісних деталей для залізничної інфраструктури. Ми забезпечуємо виробництво різноманітних компонентів, які відповідають усім сучасним стандартам безпеки та експлуатаційної надійності."
-          descriptionBottom="Наші рішення підходять як для модернізації існуючих систем, так і для будівництва нових залізничних об’єктів."
+          descriptionTop={translationsPage.descriptionTop}
+          descriptionBottom={translationsPage.descriptionBottom}
           translations={translations}
           srcImg="/assets/zaliznychni-zapchastyny.jpg"
           lang={lang}

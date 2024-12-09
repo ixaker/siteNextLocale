@@ -405,43 +405,44 @@
     }
   ],
   "zaliznychniZapchastynyPage": {
-    "title": "Herstellung von Komponenten für die Eisenbahninfrastruktur",
-    "description": "QPart ist auf die Herstellung von hochwertigen Komponenten für die Eisenbahninfrastruktur spezialisiert. Wir gewährleisten die Fertigung verschiedener Teile, die allen modernen Sicherheits- und Betriebszuverlässigkeitsstandards entsprechen. Unsere Lösungen sind sowohl für die Modernisierung bestehender Systeme als auch für den Bau neuer Eisenbahninfrastrukturanlagen geeignet.",
+    "title": "Herstellung von Komponenten für Eisenbahninfrastruktur",
+    "descriptionTop": "QPart spezialisiert sich auf die Herstellung von hochwertigen Komponenten für die Eisenbahninfrastruktur. Wir gewährleisten die Produktion von verschiedenen Komponenten, die allen modernen Sicherheits- und Betriebsstandards entsprechen.",
+    "descriptionBottom": "Unsere Lösungen eignen sich sowohl für die Modernisierung bestehender Systeme als auch für den Bau neuer Eisenbahnanlagen.",
     "servicesTitle": "Unsere Vorteile",
     "listServices": [
       {
-        "description": "Moderne Ausrüstung: CNC-Maschinen gewährleisten eine hohe Fertigungspräzision."
+        "description": "Moderne Ausstattung. Der Einsatz von CNC-Maschinen garantiert hohe Fertigungspräzision."
       },
       {
-        "description": "Qualitätskontrolle: Alle Teile werden auf die Einhaltung internationaler Standards geprüft."
+        "description": "Qualitätskontrolle. Alle Komponenten werden auf die Einhaltung internationaler Standards geprüft."
       },
       {
-        "description": "Flexibilität bei der Auftragsabwicklung: Wir bearbeiten sowohl große Serien als auch Einzelstücke."
+        "description": "Flexibilität in der Auftragsausführung. Wir arbeiten sowohl mit großen Serien als auch mit Einzelstücken."
       },
       {
-        "description": "Schnelle Durchlaufzeiten: Wir liefern schnell, ohne die Qualität zu beeinträchtigen."
+        "description": "Schnelle Lieferzeiten. Wir gewährleisten eine zügige Produktion ohne Qualitätseinbußen."
       }
     ],
-    "peculiaritiesTitle": "Welche Teile stellen wir her?",
+    "peculiaritiesTitle": "Welche Komponenten stellen wir her?",
     "listPeculiarities": [
       {
         "description": "Radsätze, Bremsscheiben, Achsen;",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Bogie-Rahmen, Befestigungskomponenten, Federn.",
+        "description": "Drehgestellrahmen, Befestigungsteile, Federn.",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Schienenbefestigungen, Schienenstöße, Unterlagsplatten;",
+        "description": "Schienenbefestigungen;",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Zugbolzen, Ankerschraubensysteme, Lagerteile.",
+        "description": "Zugschrauben, Ankersysteme, Stützenteile.",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Signalstangen, Plattformen, Montagemodule;",
+        "description": "Signalpfosten, Plattformen, Montageeinheiten;",
         "icon": "/icons/listPeculiarities.png"
       },
       {
@@ -449,16 +450,16 @@
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Spezialisierte Produkte nach Zeichnungen des Kunden;",
+        "description": "Spezialprodukte nach Kundenzeichnungen;",
         "icon": "/icons/listPeculiarities.png"
       },
       {
-        "description": "Teile mit nicht standardmäßigen Konfigurationen für einzigartige Bedürfnisse.",
+        "description": "Teile mit Sonderkonfiguration für spezifische Anforderungen.",
         "icon": "/icons/listPeculiarities.png"
       }
     ],
-    "question": "Brauchen Sie Ersatzteile für die Eisenbahn?",
-    "answer": "Wir fertigen sie nach Ihren Vorgaben und unter Berücksichtigung aller Anforderungen!"
+    "question": "Brauchen Sie Eisenbahnteile?",
+    "answer": "Wir fertigen sie nach Ihren Anforderungen, unter Berücksichtigung aller Vorgaben!"
   },
   "zapchastynyDlyaSilhosptekhnikyPage": {
     "title": "Produktion von Ersatzteilen für Landmaschinen",
