@@ -140,39 +140,36 @@
     "callToAction": "Bestellen Sie noch heute Gießen bei uns und erhalten Sie hochqualitative Gussstücke, die all Ihren Anforderungen entsprechen!"
   },
   "frezerniRoboty": {
-    "title": "CNC-Fräsen",
-    "descriptionTop": "Unsere CNC-Zentren sind in der Lage, Fräsarbeiten mit hoher Präzision, sogar für die komplexesten Teile, durchzuführen. Ein professioneller Ansatz und moderne Ausrüstung ermöglichen es uns, mit großen Chargen und Sonderformen zu arbeiten.",
-    "descriptionBottom": "Benötigen Sie einen Partner, dem Sie komplexe Aufgaben anvertrauen können? Wir sind bereit, für Ihren Erfolg zu arbeiten.",
+    "title": "CNC-FRÄSBEARBEITUNG",
+    "descriptionTop": "Unsere CNC-Zentren führen Fräsarbeiten mit hoher Präzision aus, selbst bei den komplexesten Teilen. Fachkompetenz und moderne Ausstattung ermöglichen es uns, große Chargen und nicht standardisierte Formen zu bearbeiten.",
+    "descriptionBottom": "Suchen Sie einen Partner, dem Sie komplexe Aufgaben anvertrauen können? Wir sind bereit, für Ihren Erfolg zu arbeiten.",
     "infoCard": [
       {
-        "title": "Leistungsstarker Maschinenpark",
-        "list": [
-          { "description": "Vertikale CNC-Fräsmaschinen" },
-          { "description": "Horizontale Fräsmaschinen mit einzelnen oder austauschbaren Tischen" },
-          {
-            "description": "Portal 5-Achs-Bearbeitungszentrum mit einer Arbeitsfläche von 2000x4000 mm für große und komplexe Teile"
-          }
-        ],
+        "title": "Zuverlässige Lösungen für komplexe Aufgaben",
+        "description": "Unsere Fräskompetenzen ermöglichen die Herstellung von Teilen mit höchster Präzision und Komplexität. Wir verwenden moderne Ausrüstung, die eine einwandfreie Zuverlässigkeit der Endprodukte gewährleistet.",
         "image": "/assets/frezerni-roboty2.jpeg"
       },
       {
-        "title": "Teile jeder Komplexität und Präzision",
-        "description": "Unsere Technologien ermöglichen es uns, komplexe 3D-Formflächen zu bearbeiten und höchste Präzision selbst für die kleinsten Elemente zu gewährleisten. Wo andere aufgeben, sagen wir: 'Wann fangen wir an?'",
+        "title": "Kapazitäten für große und kleine Teile. In unserem Maschinenpark:",
+        "list": [
+          { "description": "Vertikale CNC-Fräsmaschinen" },
+          { "description": "Horizontale Maschinen mit schneller Tischwechselmöglichkeit" },
+          { "description": "Portal-5-Achs-Zentren zur Bearbeitung von Teilen bis zu 2000×4000 mm." }
+        ],
         "image": "/assets/frezerni-roboty3.jpeg"
       },
       {
-        "title": "Ganzheitlicher Ansatz",
-        "description": "Wir bieten einen vollständigen Frässervice, damit Sie das fertige Teil erhalten, ohne sich an andere Auftragnehmer wenden zu müssen. Ihre Aufgabe ist unsere Verantwortung.",
+        "title": "Komplette Bearbeitung",
+        "description": "Wir bieten eine vollständige Palette von Fräsdienstleistungen, um sicherzustellen, dass Ihr Projekt perfekt ausgeführt wird — vom Entwurf bis zum fertigen Teil. Dank unserer Kapazitäten arbeiten wir effizient, ohne Qualitätseinbußen.",
         "image": "/assets/frezerni-roboty4.webp"
       },
       {
-        "title": "Schnelle Auftragsabwicklung",
-        "description": "Dank moderner Kapazitäten und optimierter Logistik wird Ihr Auftrag in kürzester Zeit ausgeführt. Vergessen Sie Verzögerungen – wir arbeiten schnell und effizient.",
+        "title": "Zusätzliche Möglichkeiten",
+        "description": "Unsere Technologien eignen sich sowohl für die Erstellung komplexer 3D-Strukturen für innovative Projekte als auch für die Herstellung einfacher und standardmäßiger Teile für eine Vielzahl von Aufgaben. Wir bearbeiten jede Anfrage, unabhängig von ihrer Komplexität.",
         "image": "/assets/frezerni-roboty5.jpg"
       }
     ],
-    "callToActionGeneral": "Wir sind bereit, Ihr zuverlässiger Partner im Bereich Fräsarbeiten zu werden!",
-    "callToAction": "Stellen Sie jetzt Ihre Anfrage und überzeugen Sie sich von unseren Fähigkeiten!"
+    "callToAction": "Beginnen Sie noch heute mit uns und erleben Sie die Vorteile der Zusammenarbeit mit Profis!"
   },
   "termichnaObrobkaPage": {
     "title": "Wärmebehandlung von Metallen",

@@ -64,7 +64,6 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
         ))}
       </div>
       <div className="px-4 mt-10">
-        <Paragraph alignment="center" text={translationsPage.callToActionGeneral || ''} />
         <Paragraph alignment="center" text={translationsPage.callToAction} />
       </div>
       <CalculationSection translations={translations} lang={lang} />

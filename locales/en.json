@@ -140,39 +140,36 @@
     "callToAction": "Order casting with us today and receive high-quality castings that meet all your requirements!"
   },
   "frezerniRoboty": {
-    "title": "CNC Milling",
-    "descriptionTop": "Our CNC centers are capable of performing milling with high precision, even for the most complex parts. A professional approach and modern equipment allow us to work with large batches and non-standard shapes.",
-    "descriptionBottom": "Need a partner you can trust with complex tasks? We are ready to work for your success.",
+    "title": "CNC MILLING PROCESSING",
+    "descriptionTop": "Our CNC centers can perform milling with high precision, even for the most complex parts. Professional expertise and modern equipment allow us to handle large batches and non-standard shapes.",
+    "descriptionBottom": "Looking for a partner you can trust with complex tasks? We are ready to work for your success.",
     "infoCard": [
       {
-        "title": "Powerful fleet of modern equipment",
-        "list": [
-          { "description": "Vertical CNC milling machines" },
-          { "description": "Horizontal milling machines with single or interchangeable tables" },
-          {
-            "description": "Portal 5-axis machining center with a working area of 2000x4000 mm for large and complex parts"
-          }
-        ],
+        "title": "Reliable Solutions for Complex Tasks",
+        "description": "Our milling capabilities enable the production of parts with the highest precision and complexity. We use modern equipment that ensures impeccable reliability of the final products.",
         "image": "/assets/frezerni-roboty2.jpeg"
       },
       {
-        "title": "Parts of any complexity and precision",
-        "description": "Our technologies allow us to process complex 3D-shaped surfaces and ensure high precision even for the smallest elements. Where others give up, we say: 'When do we start?'",
+        "title": "Capacity for Large and Small Parts. In our equipment fleet:",
+        "list": [
+          { "description": "Vertical CNC milling machines" },
+          { "description": "Horizontal machines with quick table-changing capabilities" },
+          { "description": "Portal 5-axis centers for processing parts up to 2000×4000 mm." }
+        ],
         "image": "/assets/frezerni-roboty3.jpeg"
       },
       {
-        "title": "Comprehensive approach",
-        "description": "We offer a full cycle of milling services, so you get the finished part without the need to contact other contractors. Your task is our responsibility.",
+        "title": "Full Cycle Processing",
+        "description": "We offer a full range of milling services to ensure your project is executed flawlessly — from drawing to finished part. Thanks to our capabilities, we work efficiently without compromising quality.",
         "image": "/assets/frezerni-roboty4.webp"
       },
       {
-        "title": "Fast order fulfillment",
-        "description": "Thanks to modern capabilities and streamlined logistics, your order will be completed in the shortest possible time. Forget delays – we work quickly and efficiently.",
+        "title": "Additional Capabilities",
+        "description": "Our technologies are suitable for creating complex 3D structures for innovative projects and manufacturing simple and standard parts for a wide range of tasks. We handle any requests, regardless of complexity.",
         "image": "/assets/frezerni-roboty5.jpg"
       }
     ],
-    "callToActionGeneral": "We are ready to become your reliable partner in the field of milling!",
-    "callToAction": "Submit your request now and see our capabilities!"
+    "callToAction": "Start working with us today and experience the benefits of working with professionals!"
   },
   "termichnaObrobkaPage": {
     "title": "Heat Treatment of Metals",
