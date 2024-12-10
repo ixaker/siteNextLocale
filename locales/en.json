@@ -43,37 +43,36 @@
   },
   "zvaryuvannyaMetaluPage": {
     "title": "Metal Welding",
-    "descriptionTop": "Welding of any complexity becomes a reality thanks to our advanced equipment and innovative approaches. We ensure precision, strength, and reliability for every weld, regardless of the volume or type of metal.",
-    "descriptionBottom": "Need quality welding? We are ready to help you bring even the most complex ideas to life.",
+    "descriptionTop": "Welding work of any complexity becomes a reality thanks to our advanced equipment and innovative approaches. We ensure the precision, strength, and reliability of every weld, regardless of the scale and type of metal.",
+    "descriptionBottom": "Need quality welding? We are ready to help you realize even the most complex ideas.",
     "infoCard": [
       {
-        "title": "Our equipment includes",
-        "list": [
-          { "description": "Semi-automatic welding" },
-          { "description": "Argon welding" },
-          { "description": "Laser welding" },
-          { "description": "Arc welding" },
-          { "description": "Spot welding" }
-        ],
+        "title": "Innovative Solutions for Complex Structures",
+        "description": "We provide comprehensive welding services, guaranteeing high quality and compliance with modern standards. Thanks to advanced equipment and experienced specialists, you can be confident in the durability and flawless execution of any metal structure.",
         "image": "/assets/zvaryuvannya-metalu2.jpeg"
       },
       {
-        "title": "High precision and quality",
-        "description": "Our technologies ensure strong and reliable welds, even for complex metals and structures",
+        "title": "Wide Range of Technologies. Our welding capabilities include:",
+        "list": [
+          { "description": "Semi-automatic welding" },
+          { "description": "TIG welding" },
+          { "description": "Laser welding" },
+          { "description": "Arc and contact welding" }
+        ],
         "image": "/assets/zvaryuvannya-metalu3.jpeg"
       },
       {
-        "title": "Fast order execution",
-        "description": "Thanks to an experienced team and high-tech equipment, we complete orders quickly and with great precision",
+        "title": "Support at Every Stage",
+        "description": "We take care of the full cycle of metal processing: from preparation to final production. Our goal is to provide you with a finished part without the need to involve other contractors.",
         "image": "/assets/zvaryuvannya-metalu4.jpeg"
       },
       {
-        "title": "Comprehensive approach",
-        "description": "We provide a full cycle of welding services so that you receive a finished part without needing to contact other contractors",
+        "title": "Specialized Solutions",
+        "description": "We offer welding for creating custom constructions that require unique technologies and expertise.",
         "image": "/assets/zvaryuvannya-metalu5.jpeg"
       }
     ],
-    "callToAction": "Submit your application now and see what we can do!"
+    "callToAction": "Trust us with your tasks, and we will show you what true professionalism in welding looks like!"
   },
   "porizkaNaVerstati": {
     "title": "BANDSAW CUTTING",

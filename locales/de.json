@@ -43,37 +43,36 @@
   },
   "zvaryuvannyaMetaluPage": {
     "title": "Metallschweißen",
-    "descriptionTop": "Schweißarbeiten jeder Komplexität werden dank unserer fortschrittlichen Technik und innovativen Ansätze Realität. Wir gewährleisten Präzision, Stärke und Zuverlässigkeit bei jeder Naht, unabhängig vom Volumen oder Metalltyp.",
-    "descriptionBottom": "Benötigen Sie hochwertiges Schweißen? Wir sind bereit, Ihnen zu helfen, auch die anspruchsvollsten Ideen umzusetzen.",
+    "descriptionTop": "Schweißarbeiten jeder Komplexität werden dank unserer fortschrittlichen Technik und innovativen Ansätze Realität. Wir gewährleisten die Präzision, Festigkeit und Zuverlässigkeit jeder Naht, unabhängig vom Umfang und Typ des Metalls.",
+    "descriptionBottom": "Benötigen Sie qualitativ hochwertiges Schweißen? Wir sind bereit, Ihnen bei der Umsetzung auch der komplexesten Ideen zu helfen.",
     "infoCard": [
       {
-        "title": "Unser Maschinenpark umfasst",
-        "list": [
-          { "description": "Halbautomatisches Schweißen" },
-          { "description": "Argonschweißen" },
-          { "description": "Laserschweißen" },
-          { "description": "Lichtbogenschweißen" },
-          { "description": "Punktschweißen" }
-        ],
+        "title": "Innovative Lösungen für komplexe Konstruktionen",
+        "description": "Wir bieten umfassende Schweißdienstleistungen und garantieren hohe Qualität sowie die Einhaltung moderner Standards. Dank modernster Ausrüstung und erfahrener Fachleute können Sie sich auf die Langlebigkeit und fehlerfreie Ausführung jeder Metallkonstruktion verlassen.",
         "image": "/assets/zvaryuvannya-metalu2.jpeg"
       },
       {
-        "title": "Hohe Präzision und Qualität",
-        "description": "Unsere Technologien sorgen für starke und zuverlässige Schweißnähte, selbst bei komplexen Metallen und Konstruktionen",
+        "title": "Breites Spektrum an Technologien. Unsere Schweißkapazitäten umfassen:",
+        "list": [
+          { "description": "Halbautomatisches Schweißen" },
+          { "description": "Wolfram-Inertgas-Schweißen (TIG)" },
+          { "description": "Laser-Schweißen" },
+          { "description": "Lichtbogen- und Widerstandsschweißen" }
+        ],
         "image": "/assets/zvaryuvannya-metalu3.jpeg"
       },
       {
-        "title": "Schnelle Auftragsausführung",
-        "description": "Dank eines erfahrenen Teams und hochmoderner Ausrüstung erledigen wir Aufträge schnell und präzise",
+        "title": "Unterstützung in jeder Phase",
+        "description": "Wir kümmern uns um den gesamten Zyklus der Metallbearbeitung: von der Vorbereitung bis zur Endproduktion. Unser Ziel ist es, Ihnen ein fertiges Teil zu liefern, ohne dass Sie auf andere Auftragnehmer angewiesen sind.",
         "image": "/assets/zvaryuvannya-metalu4.jpeg"
       },
       {
-        "title": "Umfassender Ansatz",
-        "description": "Wir bieten einen vollständigen Zyklus von Schweißdienstleistungen, sodass Sie ein fertiges Teil erhalten, ohne andere Auftragnehmer kontaktieren zu müssen",
+        "title": "Spezialisierte Lösungen",
+        "description": "Wir bieten Schweißen für die Erstellung maßgeschneiderter Konstruktionen, die einzigartige Technologien und Fachwissen erfordern.",
         "image": "/assets/zvaryuvannya-metalu5.jpeg"
       }
     ],
-    "callToAction": "Reichen Sie jetzt Ihre Anfrage ein und überzeugen Sie sich von unseren Möglichkeiten!"
+    "callToAction": "Vertrauen Sie uns Ihre Aufgaben an und wir zeigen Ihnen, was echte Professionalität im Schweißen bedeutet!"
   },
   "porizkaNaVerstati": {
     "title": "BANDSÄGENSCHNITT",
