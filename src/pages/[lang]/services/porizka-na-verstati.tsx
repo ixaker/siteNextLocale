@@ -1,7 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { withStaticProps, withStaticPaths, PageProps } from '../../../context/withStaticPathsAndProps';
-import BackCover from '@/components/ui/back-cover/BackCover';
-import langUk from '../../../../locales/uk.json';
+import { withStaticProps, withStaticPaths, PageProps, ServicesComponentProps } from '../../../context/withStaticPathsAndProps';
 import { useTheme } from '@mui/material';
 import { darkTheme, lightTheme } from '@/theme';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
@@ -12,16 +10,15 @@ import InfoCard from '@/components/ui/info-card/InfoCard';
 import Paragraph from '@/components/ui/typography/Paragraph';
 
 const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) => {
-  const translationsPage = translations?.porizkaNaVerstati || langUk.porizkaNaVerstati;
+  const translationsPage = translations.porizkaNaVerstati;
   const cardList = translationsPage.infoCard;
-
   const theme = useTheme();
-
+  const componentProps: ServicesComponentProps = { translations, lang, supportedLanguages, translationsPage };
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
-
   const [fullUrl, setFullUrl] = useState('');
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setFullUrl(window.location.href);
@@ -40,16 +37,7 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
         lang={lang}
         localeOg={translations.locale}
       />
-      <BackCover bgImg="/assets/porizka-na-verstati.jpg">
-        <InformationBlock
-          title={translationsPage.title}
-          descriptionTop={translationsPage.descriptionTop}
-          descriptionBottom={translationsPage.descriptionBottom}
-          translations={translations}
-          srcImg="/assets/porizka-na-verstati.jpg"
-          lang={lang}
-        />
-      </BackCover>
+      <InformationBlock {...componentProps} />
 
       <div className="sm:px-4 mt-6">
         {cardList.map((item, index) => (

@@ -19,6 +19,7 @@ export type ServicesPage = {
   callToAction: string;
   callToActionGeneral?: string;
   callToActionBottom: string;
+  srcImg: string;
 };
 
 export type ProductPage = {
@@ -31,6 +32,7 @@ export type ProductPage = {
   listPeculiarities: { description: string; icon: string }[];
   question: string;
   answer: string;
+  srcImg: string;
 };
 
 export type CardData = { title: string; img: string; href: string };

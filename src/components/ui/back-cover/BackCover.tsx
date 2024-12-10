@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
 interface BackCoverProps {
@@ -8,8 +8,10 @@ interface BackCoverProps {
 
 const BackCover: React.FC<BackCoverProps> = ({ children, bgImg }) => {
   const isSmallScreen = useMediaQuery({ query: '(max-width: 640px)' });
-  const backgroundImage = React.useMemo(() => {
-    return isSmallScreen && bgImg ? bgImg : '/bgImg.webp';
+  const [backgroundImage, setBackgroundImage] = useState('/bgImg.webp');
+
+  useEffect(() => {
+    setBackgroundImage(isSmallScreen && bgImg ? bgImg : '/bgImg.webp');
   }, [isSmallScreen, bgImg]);
 
   return (

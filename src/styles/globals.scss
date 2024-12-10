@@ -25,6 +25,10 @@ input[type='number']::-webkit-outer-spin-button {
   top: 50% !important;
 }
 
+.slick-slide {
+  padding: 0 10px;
+}
+
 @media (min-width: 600px) {
   .css-ovdqdu {
     top: 50% !important;

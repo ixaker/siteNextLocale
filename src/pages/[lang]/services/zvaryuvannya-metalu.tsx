@@ -1,8 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { withStaticProps, withStaticPaths, PageProps } from '../../../context/withStaticPathsAndProps';
-import BackCover from '@/components/ui/back-cover/BackCover';
+import { withStaticProps, withStaticPaths, PageProps, ServicesComponentProps } from '../../../context/withStaticPathsAndProps';
 import { useTheme } from '@mui/material';
-import langUk from '../../../../locales/uk.json';
 import { darkTheme, lightTheme } from '@/theme';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
 import DynamicHead from '@/components/shared/DynamicHead';
@@ -12,10 +10,10 @@ import InfoCard from '@/components/ui/info-card/InfoCard';
 import Paragraph from '@/components/ui/typography/Paragraph';
 
 const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) => {
-  const translationsPage = translations?.zvaryuvannyaMetaluPage || langUk.zvaryuvannyaMetaluPage;
+  const translationsPage = translations.zvaryuvannyaMetaluPage;
   const cardList = translationsPage.infoCard;
   const theme = useTheme();
-
+  const componentProps: ServicesComponentProps = { translations, lang, supportedLanguages, translationsPage };
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
@@ -38,16 +36,7 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
         lang={lang}
         localeOg={translations.locale}
       />
-      <BackCover bgImg="/assets/zvaryuvannya-metalu.jpeg">
-        <InformationBlock
-          title={translationsPage.title}
-          descriptionTop={translationsPage.descriptionTop}
-          descriptionBottom={translationsPage.descriptionBottom}
-          translations={translations}
-          srcImg="/assets/zvaryuvannya-metalu.jpeg"
-          lang={lang}
-        />
-      </BackCover>
+      <InformationBlock {...componentProps} />
 
       <div className="sm:px-4 mt-6">
         {cardList.map((item, index) => (

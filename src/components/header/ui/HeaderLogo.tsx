@@ -9,7 +9,7 @@ const HeaderLogo = () => {
   return (
     <Link href={`/${currentLang}`}>
       <Image
-        src={`/logo.png?v=${new Date().getTime()}`}
+        src="/logo.png"
         alt="Логотип сайта"
         width={120}
         height={40}

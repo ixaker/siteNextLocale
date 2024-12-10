@@ -4,7 +4,6 @@ import DynamicHead from '@/components/shared/DynamicHead';
 import { useEffect, useState } from 'react';
 import { useTheme } from '@mui/material';
 import { darkTheme, lightTheme } from '@/theme';
-import langUk from '../../../locales/uk.json';
 import RoomIcon from '@mui/icons-material/Room';
 import CustomButton from '@/components/ui/button/CustomButton';
 import EmailIcon from '@mui/icons-material/Email';
@@ -18,7 +17,7 @@ const DynamicInteractiveMap = dynamic(() => import('@/components/ui/InteractiveM
 });
 
 const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) => {
-  const translationsPage = translations?.contactPage || langUk.contactPage;
+  const translationsPage = translations.contactPage;
 
   const [fullUrl, setFullUrl] = useState('');
   const theme = useTheme();

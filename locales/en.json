@@ -14,6 +14,7 @@
     "descriptionCompany": "We provide metalworking services and manufacture parts and spare parts of any complexity. We perform work according to the customer's drawings or, if necessary, develop design and technical documentation from scratch. Finished products are shipped throughout Ukraine and abroad. We have experience working with foreign companies."
   },
   "tokarniRobotyChpkPage": {
+    "srcImg": "/assets/tokarni-roboty-chpk.webp",
     "title": "CNC TURNING",
     "descriptionTop": "We do what others call impossible. A large fleet of CNC machines, modern technologies, and a team of professionals allow us to manufacture parts of any complexity and volume.",
     "descriptionBottom": "Looking for a partner who can handle large batches, complex shapes, and tight deadlines? You've found one.",
@@ -42,6 +43,7 @@
     "callToAction": "We are ready to become your reliable partner in turning works!"
   },
   "zvaryuvannyaMetaluPage": {
+    "srcImg": "/assets/zvaryuvannya-metalu.jpeg",
     "title": "Metal Welding",
     "descriptionTop": "Welding work of any complexity becomes a reality thanks to our advanced equipment and innovative approaches. We ensure the precision, strength, and reliability of every weld, regardless of the scale and type of metal.",
     "descriptionBottom": "Need quality welding? We are ready to help you realize even the most complex ideas.",
@@ -75,6 +77,7 @@
     "callToAction": "Trust us with your tasks, and we will show you what true professionalism in welding looks like!"
   },
   "porizkaNaVerstati": {
+    "srcImg": "/assets/porizka-na-verstati.jpg",
     "title": "BAND SAW CUTTING",
     "descriptionTop": "We offer professional metal cutting using CNC equipment, ensuring high speed and flawless results. Our solutions are perfect for processing large volumes of material, guaranteeing the precision of every cut.",
     "descriptionBottom": "Looking for a partner for reliable metal cutting? We are always ready to collaborate.",
@@ -103,6 +106,7 @@
     "callToAction": "Order metal cutting from us and experience our speed and quality!"
   },
   "lyttyaMetaluPage": {
+    "srcImg": "/assets/lyttya-metalu.jpeg",
     "title": "Metal Casting",
     "descriptionTop": "Modern casting technologies help us manufacture complex and reliable parts from various materials. We ensure quality at every stage of production, guaranteeing compliance with the highest standards.",
     "descriptionBottom": "Looking for specialists for complex cast parts? We will turn your idea into reality.",
@@ -136,6 +140,7 @@
     "callToAction": "Submit an application today and receive products that meet your expectations and even exceed them!"
   },
   "frezerniRoboty": {
+    "srcImg": "/assets/frezerni-roboty.jpeg",
     "title": "CNC MILLING PROCESSING",
     "descriptionTop": "Our CNC centers can perform milling with high precision, even for the most complex parts. Professional expertise and modern equipment allow us to handle large batches and non-standard shapes.",
     "descriptionBottom": "Looking for a partner you can trust with complex tasks? We are ready to work for your success.",
@@ -168,6 +173,7 @@
     "callToAction": "Start working with us today and experience the benefits of working with professionals!"
   },
   "termichnaObrobkaPage": {
+    "srcImg": "/assets/termichna-obrobka.webp",
     "title": "HEAT TREATMENT",
     "descriptionTop": "We ensure high-quality metal heat treatment thanks to state-of-the-art equipment and an experienced team. Your products will gain the required strength, durability, and compliance with standards.",
     "descriptionBottom": "Looking for a reliable partner for heat treatment? We offer solutions that work.",
@@ -179,11 +185,7 @@
       },
       {
         "title": "Unique Capabilities. We use:",
-        "list": [
-          { "description": "Electric furnaces" },
-          { "description": "Gas furnaces" },
-          { "description": "Induction heating installations" }
-        ],
+        "list": [{ "description": "Electric furnaces" }, { "description": "Gas furnaces" }, { "description": "Induction heating installations" }],
         "image": "/assets/termichna-obrobka3.jpeg"
       },
       {
@@ -200,6 +202,7 @@
     "callToAction": "Submit your request now, and your products will become a benchmark of reliability!"
   },
   "lazernaRizkaPage": {
+    "srcImg": "/assets/lazerna-rizka.jpeg",
     "title": "LASER CUTTING WITH CNC",
     "descriptionTop": "The laser cutting technology we use guarantees perfect precision and cleanliness of processing. We work with various materials, ensuring excellent results even for complex tasks.",
     "descriptionBottom": "Your parts deserve the best quality. We will ensure it for you.",
@@ -228,6 +231,7 @@
     "callToAction": "Order laser cutting from us and experience our professionalism in action!"
   },
   "shlifovkaMetaluPage": {
+    "srcImg": "/assets/shlifovka-metalu.jpeg",
     "title": "Metal Grinding",
     "descriptionTop": "We offer high-precision surface grinding, achieving perfect smoothness. Our specialists and modern equipment ensure quality even for the most challenging tasks.",
     "descriptionBottom": "Want perfectly processed parts? We know how to do it.",
@@ -260,6 +264,7 @@
     "callToAction": "Entrust your orders to us and experience impeccable quality!"
   },
   "piskostruminniRoboty": {
+    "srcImg": "/assets/piskostruminni-roboty.jpeg",
     "title": "SANDBLASTING",
     "descriptionTop": "Effective cleaning of surfaces from contaminants and corrosion is our specialty. Modern equipment and advanced technologies allow us to achieve the best results for various types of materials.",
     "descriptionBottom": "Choose quality and professionalism for sandblasting. We are ready for your tasks.",
@@ -395,6 +400,7 @@
   ],
 
   "zaliznychniZapchastynyPage": {
+    "srcImg": "/assets/zaliznychni-zapchastyny.jpeg",
     "title": "Manufacturing of Railway Infrastructure Components",
     "descriptionTop": "QPart specializes in the production of high-quality components for railway infrastructure. We ensure the manufacturing of various components that meet all modern safety and operational reliability standards.",
     "descriptionBottom": "Our solutions are suitable for both the modernization of existing systems and the construction of new railway facilities.",
@@ -453,6 +459,7 @@
   },
 
   "zapchastynyDlyaSilhosptekhnikyPage": {
+    "srcImg": "/assets/zapchastyny-dlya-silhosptekhniky.jpeg",
     "title": "Production of Spare Parts for Agricultural Machinery",
     "descriptionTop": "Our company specializes in creating high-quality spare parts for agricultural machinery, considering the needs of farmers and the features of modern farming equipment.",
     "descriptionBottom": "We offer a wide range of parts suitable for various types of machinery, ensuring its uninterrupted operation even under the toughest conditions. Equip your machinery with high-quality spare parts.",

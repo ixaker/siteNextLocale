@@ -1,7 +1,7 @@
 import { GetStaticPropsContext, GetStaticPropsResult, GetStaticPaths } from 'next';
 import path from 'path';
 import fs from 'fs';
-import { Translations } from '../../locales/types';
+import { ProductPage, ServicesPage, Translations } from '../../locales/types';
 
 export const getDefaultLanguage = (langFromUrl?: string): string => {
   const defaultLanguage = 'uk';
@@ -35,9 +35,7 @@ const loadTranslations = (lang: string): Translations => {
   }
 };
 // Функция обёртка для getStaticProps
-export const withStaticProps = async <P>(
-  context: GetStaticPropsContext
-): Promise<GetStaticPropsResult<P>> => {
+export const withStaticProps = async <P>(context: GetStaticPropsContext): Promise<GetStaticPropsResult<P>> => {
   const lang = (context.params?.lang as string) || 'uk';
 
   const translations = loadTranslations(lang);
@@ -60,6 +58,19 @@ export type PageProps = {
   children?: React.ReactNode;
 };
 
+export type ServicesComponentProps = {
+  translations: Translations;
+  lang: string;
+  supportedLanguages: string[];
+  translationsPage: ServicesPage;
+};
+
+export type ProductComponentProps = {
+  translations: Translations;
+  lang: string;
+  supportedLanguages: string[];
+  translationsPage: ProductPage;
+};
 // Функция для создания путей
 export const withStaticPaths: GetStaticPaths = async () => {
   const paths = SUPPORTED_LANGUAGES.map((lang) => ({

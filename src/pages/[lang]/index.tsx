@@ -21,7 +21,7 @@ const Home: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
-  const translationsPage = translations?.homePage || langUk.homePage;
+  const translationsPage = translations.homePage;
   const cardData = translations?.cardData || langUk.cardData;
   const translationsMenuService = translations.menu[0]?.subMenu;
 
@@ -76,13 +76,8 @@ const Home: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
               <Paragraph text={translationsPage.descriptionCompany} alignment="center" />
             </div>
             <div>
-              <Image
-                className="w-full rounded-2xl shadow-2xl"
-                src={`/assets/work.jpg?v=${new Date().getTime()}`}
-                alt="Laptop"
-                width={100}
-                height={100}
-              />
+              {/* ?v=${new Date().getTime()} */}
+              <Image className="w-full rounded-2xl shadow-2xl" src={`/assets/work.jpg`} alt="Laptop" width={100} height={100} />
             </div>
           </div>
         </div>

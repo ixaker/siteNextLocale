@@ -1,8 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { withStaticProps, withStaticPaths, PageProps } from '../../../context/withStaticPathsAndProps';
-import BackCover from '@/components/ui/back-cover/BackCover';
+import { withStaticProps, withStaticPaths, PageProps, ServicesComponentProps } from '../../../context/withStaticPathsAndProps';
 import { useTheme } from '@mui/material';
-import langUk from '../../../../locales/uk.json';
 import { darkTheme, lightTheme } from '@/theme';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
 import DynamicHead from '@/components/shared/DynamicHead';
@@ -10,11 +8,13 @@ import { useEffect, useState } from 'react';
 import InformationBlock from '@/components/ui/information-block/InformationBlock';
 import InfoCard from '@/components/ui/info-card/InfoCard';
 import Paragraph from '@/components/ui/typography/Paragraph';
+// import OurEquipment from '@/components/ui/equipment/OurEquipment';
 
 const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) => {
-  const translationsPage = translations?.frezerniRoboty || langUk.frezerniRoboty;
+  const translationsPage = translations.frezerniRoboty;
   const cardList = translationsPage.infoCard;
   const theme = useTheme();
+  const componentProps: ServicesComponentProps = { translations, lang, supportedLanguages, translationsPage };
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
@@ -38,16 +38,7 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
         lang={lang}
         localeOg={translations.locale}
       />
-      <BackCover bgImg="/assets/frezerni-roboty.jpeg">
-        <InformationBlock
-          title={translationsPage.title}
-          descriptionTop={translationsPage.descriptionTop}
-          descriptionBottom={translationsPage.descriptionBottom}
-          translations={translations}
-          srcImg="/assets/frezerni-roboty.jpeg"
-          lang={lang}
-        />
-      </BackCover>
+      <InformationBlock {...componentProps} />
 
       <div className="sm:px-4 mt-6">
         {cardList.map((item, index) => (
@@ -66,6 +57,8 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
       <div className="px-4 mt-10">
         <Paragraph alignment="center" text={translationsPage.callToAction} />
       </div>
+
+      {/* <OurEquipment /> */}
 
       <CalculationSection translations={translations} lang={lang} />
     </section>

@@ -1,7 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { withStaticProps, withStaticPaths, PageProps } from '../../../context/withStaticPathsAndProps';
-import BackCover from '@/components/ui/back-cover/BackCover';
-import langUk from '../../../../locales/uk.json';
+import { withStaticProps, withStaticPaths, PageProps, ProductComponentProps } from '../../../context/withStaticPathsAndProps';
 import { useTheme } from '@mui/material';
 import { darkTheme, lightTheme } from '@/theme';
 import ServiceBlock from '@/components/ui/service-block/ServiceBlock';
@@ -14,10 +12,9 @@ import { useEffect, useState } from 'react';
 import InformationBlock from '@/components/ui/information-block/InformationBlock';
 
 const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) => {
-  const translationsPage =
-    translations?.zapchastynyDlyaSilhosptekhnikyPage || langUk.zapchastynyDlyaSilhosptekhnikyPage;
+  const translationsPage = translations.zapchastynyDlyaSilhosptekhnikyPage;
   const theme = useTheme();
-
+  const componentProps: ProductComponentProps = { translations, lang, supportedLanguages, translationsPage };
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
@@ -45,16 +42,7 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
         lang={lang}
         localeOg={translations.locale}
       />
-      <BackCover bgImg="/assets/zapchastyny-dlya-silhosptekhniky.jpeg">
-        <InformationBlock
-          title={translationsPage.title}
-          descriptionTop={translationsPage.descriptionTop}
-          descriptionBottom={translationsPage.descriptionBottom}
-          translations={translations}
-          srcImg="/assets/zapchastyny-dlya-silhosptekhniky.jpeg"
-          lang={lang}
-        />
-      </BackCover>
+      <InformationBlock {...componentProps} />
 
       <ServiceBlock
         translations={translations}
