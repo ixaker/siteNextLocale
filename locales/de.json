@@ -209,36 +209,32 @@
     "callToAction": "Warten Sie nicht — vertrauen Sie den Profis!"
   },
   "lazernaRizkaPage": {
-    "title": "CNC LASERSCHNEIDEN",
-    "descriptionTop": "Die von uns verwendete Laserschneidtechnologie garantiert perfekte Präzision und Sauberkeit der Bearbeitung. Wir arbeiten mit verschiedenen Materialien und gewährleisten ausgezeichnete Ergebnisse, auch bei komplexen Aufgaben.",
+    "title": "LASERSCHNEIDEN MIT CNC",
+    "descriptionTop": "Die von uns verwendete Laserschneidtechnologie garantiert perfekte Präzision und Sauberkeit der Verarbeitung. Wir arbeiten mit verschiedenen Materialien und gewährleisten ausgezeichnete Ergebnisse, selbst bei komplexen Aufgaben.",
     "descriptionBottom": "Ihre Teile verdienen die beste Qualität. Wir garantieren sie für Sie.",
     "infoCard": [
       {
-        "title": "Unsere Lasermaschinen bieten",
-        "list": [
-          { "description": "Hohe Präzision und Schnittsauberkeit" },
-          { "description": "Schneiden von Metallen bis zu 20 mm" },
-          { "description": "Möglichkeit der Bearbeitung großer Größen" }
-        ],
+        "title": "Moderne Schneidtechnologien",
+        "description": "Unsere Lasermaschinen gewährleisten eine makellose Präzision der Bearbeitung, die für komplexe geometrische Strukturen und hochpräzise Aufgaben erforderlich ist.",
         "image": "/assets/lazerna-rizka2.jpeg"
       },
       {
-        "title": "Präzision und Zuverlässigkeit",
-        "description": "Wir garantieren Schneidegenauigkeit und Sauberkeit, sodass auch bei komplexen Geometrien perfekte Ergebnisse erzielt werden.",
+        "title": "Kapazitäten für jede Aufgabe",
+        "description": "Wir schneiden Metalle bis zu einer Dicke von 20 mm und bearbeiten große Rohlinge. Die Prozessautomatisierung ermöglicht es uns, selbst große Aufträge in kurzer Zeit abzuwickeln.",
         "image": "/assets/lazerna-rizka3.jpeg"
       },
       {
-        "title": "Schnelle Auftragsabwicklung",
-        "description": "Dank der Automatisierung des Prozesses werden wir Ihre Bestellung in optimaler Zeit ohne Qualitätsverlust ausführen.",
+        "title": "Umfassende Dienstleistungen",
+        "description": "Sie erhalten Teile, die ohne zusätzliche Bearbeitung sofort weiterverwendet werden können. Wir bieten einen vollständigen Zyklus der Lasermetallbearbeitung.",
         "image": "/assets/lazerna-rizka4.jpeg"
       },
       {
-        "title": "Ganzheitlicher Ansatz",
-        "description": "Wir bieten ein vollständiges Spektrum an Laserschneidservices, sodass Sie fertige Teile ohne zusätzliche Bearbeitung erhalten können.",
+        "title": "Herstellung funktionaler Komponenten",
+        "description": "Unsere Technologien ermöglichen die Herstellung von Teilen jeder Komplexität, unter Berücksichtigung der kleinsten technischen Anforderungen und Projektspezifikationen.",
         "image": "/assets/lazerna-rizka5.jpeg"
       }
     ],
-    "callToAction": "Reichen Sie jetzt Ihre Anfrage ein und überzeugen Sie sich von unseren Fähigkeiten!"
+    "callToAction": "Bestellen Sie Laserschneiden bei uns und erleben Sie unseren Professionalismus in Aktion!"
   },
   "shlifovkaMetaluPage": {
     "title": "Metallbearbeitung durch Schleifen",

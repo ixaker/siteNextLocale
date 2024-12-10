@@ -207,36 +207,32 @@
     "callToAction": "Don't wait — trust the professionals!"
   },
   "lazernaRizkaPage": {
-    "title": "CNC LASER CUTTING",
-    "descriptionTop": "The laser cutting technology we use guarantees perfect precision and cleanliness of the process. We work with various materials, ensuring excellent results even for complex tasks.",
+    "title": "LASER CUTTING WITH CNC",
+    "descriptionTop": "The laser cutting technology we use guarantees perfect precision and cleanliness of processing. We work with various materials, ensuring excellent results even for complex tasks.",
     "descriptionBottom": "Your parts deserve the best quality. We will ensure it for you.",
     "infoCard": [
       {
-        "title": "Our laser machines provide",
-        "list": [
-          { "description": "High precision and cut cleanliness" },
-          { "description": "Cutting of metals up to 20 mm" },
-          { "description": "Ability to process large sizes" }
-        ],
+        "title": "Modern Cutting Technologies",
+        "description": "Our laser machines ensure impeccable processing precision, essential for complex geometric structures and high-precision tasks.",
         "image": "/assets/lazerna-rizka2.jpeg"
       },
       {
-        "title": "Precision and reliability",
-        "description": "We guarantee cutting accuracy and neatness, allowing for perfect results even for complex geometries.",
+        "title": "Capabilities for Any Task",
+        "description": "We cut metals up to 20 mm thick and process large blanks. Process automation allows us to complete even large orders in a short time.",
         "image": "/assets/lazerna-rizka3.jpeg"
       },
       {
-        "title": "Fast order fulfillment",
-        "description": "Thanks to process automation, we will complete your order in optimal time without compromising quality.",
+        "title": "Comprehensive Services",
+        "description": "You receive parts ready for further use, without the need for additional operations. We offer a full cycle of laser metal processing.",
         "image": "/assets/lazerna-rizka4.jpeg"
       },
       {
-        "title": "Comprehensive approach",
-        "description": "We offer a full range of laser cutting services, allowing you to receive finished parts without the need for additional processing.",
+        "title": "Creating Functional Components",
+        "description": "Our technologies allow us to manufacture parts of any complexity, considering the smallest technical requirements and project specifics.",
         "image": "/assets/lazerna-rizka5.jpeg"
       }
     ],
-    "callToAction": "Submit your application right now and see our capabilities!"
+    "callToAction": "Order laser cutting from us and experience our professionalism in action!"
   },
   "shlifovkaMetaluPage": {
     "title": "Metal Grinding",
