@@ -104,40 +104,37 @@
     "callToAction": "Submit your application now, and we will complete your order quickly and at the highest level!"
   },
   "lyttyaMetaluPage": {
-    "title": "Casting",
-    "descriptionTop": "Modern casting technologies help us produce complex and reliable parts from various materials. We ensure quality at every stage of production, meeting the highest standards.",
-    "descriptionBottom": "Looking for experts in complex cast products? We will bring your idea to life.",
+    "title": "Metal Casting",
+    "descriptionTop": "Modern casting technologies help us manufacture complex and reliable parts from various materials. We ensure quality at every stage of production, guaranteeing compliance with the highest standards.",
+    "descriptionBottom": "Looking for specialists for complex cast parts? We will turn your idea into reality.",
     "infoCard": [
       {
-        "title": "We offer various casting options",
-        "list": [
-          { "description": "Casting on automated lines for mass production" },
-          { "description": "Centrifugal casting for creating parts with high strength" },
-          { "description": "Casting in molds for precise and durable castings" },
-          { "description": "HTS casting for high-temperature alloys" },
-          { "description": "Casting of non-ferrous metals under low pressure for a smooth surface" },
-          { "description": "Casting of non-ferrous metals in molds for precise parts" }
-        ],
+        "title": "Perfection and Long Service Life of Cast Products",
+        "description": "We offer a full range of metal casting services, including the production of complex parts for various industries. Thanks to our innovative solutions, you receive products with flawless precision, exceptional reliability, and long service life.",
         "image": "/assets/lyttya-metalu2.jpeg"
       },
       {
-        "title": "High precision and reliability",
-        "description": "Our technologies and experience allow us to achieve maximum precision in the casting process, making our products reliable and durable.",
+        "title": "Innovative Casting Technologies. Our capabilities include:",
+        "list": [
+          { "description": "Casting on automatic lines" },
+          { "description": "Centrifugal casting" },
+          { "description": "Die casting" },
+          { "description": "Low-pressure casting of high-temperature steels and non-ferrous metals" }
+        ],
         "image": "/assets/lyttya-metalu3.jpeg"
       },
       {
-        "title": "Comprehensive approach",
-        "description": "We offer a full range of casting services, from technology development to finished products, allowing you not to deal with other contractors.",
+        "title": "Full Production Cycle",
+        "description": "We provide all stages, from the development of the technological process to the delivery of finished products. This ensures you receive products that meet the highest quality standards.",
         "image": "/assets/lyttya-metalu4.jpeg"
       },
       {
-        "title": "We turn complex tasks into effective solutions!",
-        "description": "With advanced equipment and modern casting technologies, we produce high-quality castings from various materials, ensuring precision and reliability at every stage of production.",
+        "title": "Wide Selection of Materials",
+        "description": "We work with various types of metals, including high-alloy steels and non-ferrous alloys, to ensure the perfect result for any project.",
         "image": "/assets/lyttya-metalu5.jpeg"
       }
     ],
-    "callToActionGeneral": "Trust the professionals!",
-    "callToAction": "Order casting with us today and receive high-quality castings that meet all your requirements!"
+    "callToAction": "Submit an application today and receive products that meet your expectations and even exceed them!"
   },
   "frezerniRoboty": {
     "title": "CNC MILLING PROCESSING",

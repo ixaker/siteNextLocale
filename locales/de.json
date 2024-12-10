@@ -104,40 +104,37 @@
     "callToAction": "Reichen Sie jetzt Ihre Anfrage ein, und wir werden Ihren Auftrag schnell und auf höchstem Niveau ausführen!"
   },
   "lyttyaMetaluPage": {
-    "title": "Gießen",
-    "descriptionTop": "Moderne Gießtechnologien ermöglichen es uns, komplexe und zuverlässige Bauteile aus verschiedenen Materialien herzustellen. Wir garantieren Qualität in jeder Produktionsphase und erfüllen die höchsten Standards.",
-    "descriptionBottom": "Suchen Sie Spezialisten für komplexe Gussteile? Wir setzen Ihre Idee in die Realität um.",
+    "title": "Metallgießen",
+    "descriptionTop": "Moderne Gießtechnologien helfen uns, komplexe und zuverlässige Teile aus verschiedenen Materialien herzustellen. Wir gewährleisten Qualität in jeder Produktionsphase und garantieren die Einhaltung der höchsten Standards.",
+    "descriptionBottom": "Suchen Sie Spezialisten für komplexe Gussprodukte? Wir setzen Ihre Idee in die Realität um.",
     "infoCard": [
       {
-        "title": "Wir bieten verschiedene Gießmöglichkeiten",
-        "list": [
-          { "description": "Gießen auf automatisierten Linien für die Massenproduktion" },
-          { "description": "Zentrifugales Gießen für die Herstellung von Teilen mit hoher Festigkeit" },
-          { "description": "Gießen in Formen für präzise und langlebige Gussstücke" },
-          { "description": "HTS-Gießen für hochtemperaturbeständige Legierungen" },
-          { "description": "Gießen von Nichteisenmetallen unter Niederdruck für eine glatte Oberfläche" },
-          { "description": "Gießen von Nichteisenmetallen in Formen für präzise Teile" }
-        ],
+        "title": "Perfektion und lange Lebensdauer von Gussprodukten",
+        "description": "Wir bieten ein vollständiges Leistungsspektrum im Bereich Metallgießen, einschließlich der Herstellung komplexer Teile für verschiedene Industrien. Dank unserer innovativen Lösungen erhalten Sie Produkte mit makelloser Präzision, außergewöhnlicher Zuverlässigkeit und langer Lebensdauer.",
         "image": "/assets/lyttya-metalu2.jpeg"
       },
       {
-        "title": "Hohe Präzision und Zuverlässigkeit",
-        "description": "Unsere Technologien und Erfahrungen ermöglichen es uns, maximale Präzision im Gießprozess zu erreichen, wodurch unsere Produkte zuverlässig und langlebig sind.",
+        "title": "Innovative Gießtechnologien. Unsere Möglichkeiten umfassen:",
+        "list": [
+          { "description": "Gießen auf automatisierten Linien" },
+          { "description": "Zentrifugalgießen" },
+          { "description": "Druckguss" },
+          { "description": "Niederdruckguss von hochtemperaturbeständigen Stählen und Nichteisenmetallen" }
+        ],
         "image": "/assets/lyttya-metalu3.jpeg"
       },
       {
-        "title": "Ganzheitlicher Ansatz",
-        "description": "Wir bieten einen vollständigen Gießservice von der Technologieentwicklung bis hin zu fertigen Produkten, wodurch Sie keine anderen Auftragnehmer benötigen.",
+        "title": "Voller Produktionszyklus",
+        "description": "Wir bieten alle Phasen an, von der Entwicklung des technologischen Prozesses bis zur Lieferung der fertigen Produkte. Dadurch erhalten Sie Produkte, die den höchsten Qualitätsstandards entsprechen.",
         "image": "/assets/lyttya-metalu4.jpeg"
       },
       {
-        "title": "Wir verwandeln komplexe Aufgaben in effektive Lösungen!",
-        "description": "Mit modernster Ausrüstung und fortschrittlichen Gießtechnologien produzieren wir hochqualitative Gussstücke aus verschiedenen Materialien und gewährleisten Präzision und Zuverlässigkeit in jeder Produktionsphase.",
+        "title": "Große Auswahl an Materialien",
+        "description": "Wir arbeiten mit verschiedenen Metallarten, einschließlich hochlegierter Stähle und Nichteisenlegierungen, um für jedes Projekt das perfekte Ergebnis zu gewährleisten.",
         "image": "/assets/lyttya-metalu5.jpeg"
       }
     ],
-    "callToActionGeneral": "Vertrauen Sie den Profis!",
-    "callToAction": "Bestellen Sie noch heute Gießen bei uns und erhalten Sie hochqualitative Gussstücke, die all Ihren Anforderungen entsprechen!"
+    "callToAction": "Reichen Sie noch heute eine Anfrage ein und erhalten Sie Produkte, die Ihre Erwartungen erfüllen und sogar übertreffen!"
   },
   "frezerniRoboty": {
     "title": "CNC-FRÄSBEARBEITUNG",
