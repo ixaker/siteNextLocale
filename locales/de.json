@@ -260,43 +260,42 @@
     "callToAction": "Vertrauen Sie uns Ihre Aufträge an und erleben Sie makellose Qualität!"
   },
   "piskostruminniRoboty": {
-    "title": "Sandstrahlen",
-    "descriptionTop": "Effektive Oberflächenreinigung von Verunreinigungen und Korrosion ist unsere Spezialität. Moderne Ausrüstung und fortschrittliche Technologien ermöglichen es uns, die besten Ergebnisse für verschiedene Materialtypen zu erzielen.",
-    "descriptionBottom": "Wählen Sie Qualität und Professionalität für Sandstrahlen. Wir sind bereit für Ihre Aufgaben.",
+    "title": "SANDBLÄSTEN",
+    "descriptionTop": "Effektive Reinigung von Oberflächen von Verunreinigungen und Korrosion ist unsere Spezialität. Moderne Ausrüstung und fortschrittliche Technologien ermöglichen es uns, die besten Ergebnisse für verschiedene Materialarten zu erzielen.",
+    "descriptionBottom": "Wählen Sie Qualität und Professionalität für das Sandstrahlen. Wir sind bereit für Ihre Aufgaben.",
     "infoCard": [
       {
-        "title": "Wir bieten verschiedene Reinigungsmöglichkeiten",
-        "list": [
-          {
-            "description": "Sandstrahlen zur Entfernung von Korrosion, Schmutz und Farbe von Metall- und anderen Oberflächen"
-          },
-          {
-            "description": "Kugelstrahlen zur Bearbeitung von Metallteilen, die eine intensivere Behandlung erfordern"
-          },
-          {
-            "description": "Laserreinigung für eine sanfte und präzise Entfernung von Schmutz ohne Beschädigung der Oberfläche"
-          }
-        ],
+        "title": "Effektive Reinigung für perfekte Ergebnisse",
+        "description": "Wir bieten eine breite Palette von Sandstrahl-Dienstleistungen an, die Verunreinigungen, Korrosion und alte Beschichtungen von jedem Material entfernen.",
         "image": "/assets/piskostruminni-roboty2.jpeg"
       },
       {
-        "title": "Hohe Präzision und Effizienz",
-        "description": "Dank modernster Technologien und Luftaufbereitungssysteme gewährleisten wir maximale Effizienz und Präzision bei der Reinigung aller Materialien.",
+        "title": "Technologisches Arsenal. Unsere Möglichkeiten umfassen:",
+        "list": [
+          {
+            "description": "Sandstrahlen"
+          },
+          {
+            "description": "Kugelstrahlen"
+          },
+          {
+            "description": "Laserreinigung"
+          }
+        ],
         "image": "/assets/piskostruminni-roboty3.jpeg"
       },
       {
-        "title": "Schnelle Auftragsabwicklung",
-        "description": "Durch optimierte Logistik und leistungsstarke Ausrüstung erledigen wir Aufträge in kürzester Zeit ohne Qualitätsverlust.",
+        "title": "Umfassender Ansatz",
+        "description": "Wir bieten einen vollständigen Verarbeitungszyklus, sodass Sie ein fertiges Produkt erhalten, das Ihren Erwartungen voll entspricht.",
         "image": "/assets/piskostruminni-roboty4.jpeg"
       },
       {
-        "title": "Ganzheitlicher Ansatz",
-        "description": "Wir bieten einen vollständigen Reinigungservice, sodass Sie fertige Teile erhalten, ohne andere Auftragnehmer hinzuziehen zu müssen.",
+        "title": "Einzigartige Fähigkeiten",
+        "description": "Wir bieten einen vollständigen Reinigungsservicezyklus, sodass Sie fertige Teile erhalten, ohne andere Auftragnehmer zu kontaktieren.",
         "image": "/assets/piskostruminni-roboty5.jpeg"
       }
     ],
-    "callToActionGeneral": "Vertrauen Sie den Profis!",
-    "callToAction": "Bestellen Sie noch heute Sandstrahldienste bei uns und überzeugen Sie sich von unseren Fähigkeiten!"
+    "callToAction": "Bestellen Sie die Bearbeitung bei uns und überzeugen Sie sich davon, dass Ihre Produkte makellos aussehen werden!"
   },
   "orderBenefits": {
     "orderBenefitsTitle": "Vorteile einer Bestellung bei uns",

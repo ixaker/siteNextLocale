@@ -260,41 +260,42 @@
     "callToAction": "Entrust your orders to us and experience impeccable quality!"
   },
   "piskostruminniRoboty": {
-    "title": "Sandblasting",
-    "descriptionTop": "Effective surface cleaning from contaminants and corrosion is our specialty. Modern equipment and advanced technologies allow us to achieve the best results for various types of materials.",
+    "title": "SANDBLASTING",
+    "descriptionTop": "Effective cleaning of surfaces from contaminants and corrosion is our specialty. Modern equipment and advanced technologies allow us to achieve the best results for various types of materials.",
     "descriptionBottom": "Choose quality and professionalism for sandblasting. We are ready for your tasks.",
     "infoCard": [
       {
-        "title": "We have various cleaning capabilities",
-        "list": [
-          {
-            "description": "Sandblasting for removing corrosion, dirt, and paint from metal and other surfaces"
-          },
-          { "description": "Shot blasting for processing metal parts that require intensive treatment" },
-          {
-            "description": "Laser cleaning for delicate and precise removal of dirt without damaging the surface"
-          }
-        ],
+        "title": "Effective Cleaning for Perfect Results",
+        "description": "We offer a wide range of sandblasting services that remove contaminants, corrosion, and old coatings from any material.",
         "image": "/assets/piskostruminni-roboty2.jpeg"
       },
       {
-        "title": "High precision and efficiency",
-        "description": "Thanks to the latest technologies and air preparation systems, we provide maximum efficiency and precision in cleaning for all materials.",
+        "title": "Technological Arsenal. Our capabilities include:",
+        "list": [
+          {
+            "description": "Sandblasting"
+          },
+          {
+            "description": "Shot blasting"
+          },
+          {
+            "description": "Laser cleaning"
+          }
+        ],
         "image": "/assets/piskostruminni-roboty3.jpeg"
       },
       {
-        "title": "Fast order fulfillment",
-        "description": "With streamlined logistics and powerful equipment, we complete orders in the shortest possible time without compromising quality.",
+        "title": "Comprehensive Approach",
+        "description": "We provide a full processing cycle so you receive a finished product that fully meets your expectations.",
         "image": "/assets/piskostruminni-roboty4.jpeg"
       },
       {
-        "title": "Comprehensive approach",
-        "description": "We offer a full range of cleaning services, allowing you to receive finished parts without the need to contact other contractors.",
+        "title": "Unique Capabilities",
+        "description": "We offer a complete cleaning service cycle, so you receive finished parts without needing to contact other contractors.",
         "image": "/assets/piskostruminni-roboty5.jpeg"
       }
     ],
-    "callToActionGeneral": "Trust the professionals!",
-    "callToAction": "Order sandblasting services with us today and experience our capabilities!"
+    "callToAction": "Order processing from us and see that your products will look flawless!"
   },
   "orderBenefits": {
     "orderBenefitsTitle": "Advantages of Ordering with Us",
