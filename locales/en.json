@@ -14,28 +14,28 @@
     "descriptionCompany": "We provide metalworking services and manufacture parts and spare parts of any complexity. We perform work according to the customer's drawings or, if necessary, develop design and technical documentation from scratch. Finished products are shipped throughout Ukraine and abroad. We have experience working with foreign companies."
   },
   "tokarniRobotyChpkPage": {
-    "title": "TURNING PROCESSING",
-    "descriptionTop": "We achieve what others call impossible. A large fleet of CNC machines, modern technologies, and a team of professionals allow us to manufacture parts of any complexity and volume.",
-    "descriptionBottom": "Looking for a partner who can handle large batches, complex shapes, and tight deadlines? You found one.",
+    "title": "CNC TURNING",
+    "descriptionTop": "We do what others call impossible. A large fleet of CNC machines, modern technologies, and a team of professionals allow us to manufacture parts of any complexity and volume.",
+    "descriptionBottom": "Looking for a partner who can handle large batches, complex shapes, and tight deadlines? You've found one.",
     "infoCard": [
       {
-        "title": "We perform any volume of turning work",
-        "description": "We understand that your business can't wait. Thanks to modern capabilities and streamlined logistics, your order will be completed as quickly as possible. Forget about long production times — we work fast and efficiently.",
+        "title": "We Handle Any Volume of Turning Works",
+        "description": "We understand that your business can't wait. Thanks to modern capacities and established logistics, your order will be completed in the shortest possible time. Forget about long production times — we work quickly and efficiently.",
         "image": "/assets/tokarni-roboty-chpk2.jpeg"
       },
       {
-        "title": "Quick order completion",
-        "description": "Our fleet includes over 300 modern CNC machines that operate without interruption. We process large batches of parts with ease. If your suppliers can't handle the load, we are ready to take on your order and complete it on time.",
+        "title": "Fast Order Fulfillment",
+        "description": "Our fleet includes over 300 modern CNC machines that operate non-stop. We process large batches of parts without problems. Want to order large volumes of products? No problem. If your suppliers can't handle the load, we are ready to take on your order and deliver it on time.",
         "image": "/assets/tokarni-roboty-chpk3.jpeg"
       },
       {
-        "title": "Precision and production of parts of any complexity",
-        "description": "Our machines can manufacture large parts with a diameter of up to 4000 mm and a length of up to 8000 mm. Need small, intricate parts starting from 10 mm? We’ll do it with maximum precision. Where others give up, we offer solutions and ask: 'When do we start?'",
+        "title": "Precision and Manufacturing of Any Complexity",
+        "description": "Our machines allow us to produce large parts with a diameter of up to 4000 mm and a length of up to 8000 mm. Need small, complex parts starting from 10 mm? We will make them with maximum precision. Where others fail, we offer solutions and ask, 'When do we start?'",
         "image": "/assets/tokarni-roboty-chpk4.jpeg"
       },
       {
         "title": "Comprehensive Approach",
-        "description": "From processing to final finishing — we are ready to support your project at every stage. Our clients receive a complete solution: from turning operations to preparing parts for use.",
+        "description": "From machining to final finishing — we are ready to support your project at every stage. Our clients receive a complete solution: from CNC turning to preparing parts for use.",
         "image": "/assets/tokarni-roboty-chpk5.jpeg"
       }
     ],
