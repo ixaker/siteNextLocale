@@ -14,7 +14,7 @@ import ButtonSubmitDrawing from '@/components/ui/button/ButtonSubmitDrawing';
 import BackCover from '@/components/ui/back-cover/BackCover';
 import NavigationMap from '@/components/ui/navigation-map/NavigationMap';
 
-const Home: React.FC<PageProps> = ({ translations, lang }) => {
+const Home: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) => {
   const [fullUrl, setFullUrl] = useState('');
   const theme = useTheme();
 
@@ -34,6 +34,7 @@ const Home: React.FC<PageProps> = ({ translations, lang }) => {
   return (
     <div style={{ backgroundColor: bgColor }}>
       <DynamicHead
+        supportedLanguages={supportedLanguages}
         title={translationsPage.meta.title}
         description={translationsPage.meta.description}
         keywords={translationsPage.meta.keywords}

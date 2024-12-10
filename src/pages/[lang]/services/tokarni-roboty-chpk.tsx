@@ -11,7 +11,7 @@ import InformationBlock from '@/components/ui/information-block/InformationBlock
 import InfoCard from '@/components/ui/info-card/InfoCard';
 import Paragraph from '@/components/ui/typography/Paragraph';
 
-const Page: React.FC<PageProps> = ({ translations, lang }) => {
+const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) => {
   const translationsPage = translations?.tokarniRobotyChpkPage || langUk.tokarniRobotyChpkPage;
   const cardList = translationsPage.infoCard;
   const theme = useTheme();
@@ -29,6 +29,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   return (
     <section style={{ backgroundColor: bgColor, color: secondaryColor }}>
       <DynamicHead
+        supportedLanguages={supportedLanguages}
         title={translationsPage.title}
         description={translationsPage.descriptionTop}
         keywords={translationsPage.title}

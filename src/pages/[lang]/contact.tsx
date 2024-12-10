@@ -17,7 +17,7 @@ const DynamicInteractiveMap = dynamic(() => import('@/components/ui/InteractiveM
   ssr: false, // Отключаем SSR для этого компонента
 });
 
-const Page: React.FC<PageProps> = ({ translations, lang }) => {
+const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) => {
   const translationsPage = translations?.contactPage || langUk.contactPage;
 
   const [fullUrl, setFullUrl] = useState('');
@@ -44,6 +44,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   return (
     <>
       <DynamicHead
+        supportedLanguages={supportedLanguages}
         title={translationsPage.meta.title}
         description={translationsPage.meta.description}
         keywords={translationsPage.meta.keywords}

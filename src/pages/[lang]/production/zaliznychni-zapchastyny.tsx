@@ -13,7 +13,7 @@ import DynamicHead from '@/components/shared/DynamicHead';
 import { useEffect, useState } from 'react';
 import InformationBlock from '@/components/ui/information-block/InformationBlock';
 
-const Page: React.FC<PageProps> = ({ translations, lang }) => {
+const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) => {
   const translationsPage = translations?.zaliznychniZapchastynyPage || langUk.zaliznychniZapchastynyPage;
   const theme = useTheme();
 
@@ -34,6 +34,7 @@ const Page: React.FC<PageProps> = ({ translations, lang }) => {
   return (
     <section style={{ backgroundColor: bgColor, color: secondaryColor }}>
       <DynamicHead
+        supportedLanguages={supportedLanguages}
         title={translationsPage.title}
         description={translationsPage.descriptionTop}
         keywords={translationsPage.title}

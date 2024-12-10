@@ -7,9 +7,9 @@ interface DynamicHeadProps {
   keywords: string;
   lang: string; // Язык страницы
   canonical: string;
-  //   alternate: string
   imgOg: string;
   localeOg: string;
+  supportedLanguages: string[];
 }
 
 const DynamicHead: React.FC<DynamicHeadProps> = ({
@@ -20,6 +20,7 @@ const DynamicHead: React.FC<DynamicHeadProps> = ({
   imgOg,
   lang,
   localeOg,
+  supportedLanguages,
 }) => {
   return (
     <Head>
@@ -29,7 +30,10 @@ const DynamicHead: React.FC<DynamicHeadProps> = ({
       <meta name="robots" content="index, follow" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="canonical" href={canonical} />
-      {/* <link rel="alternate" hrefLang="en" href="https://example.com/en" /> */}
+      {supportedLanguages.map((item, index) => (
+        <link key={index} rel="alternate" hrefLang={item} href={`https://site.qpart.com.ua/${item}/`} />
+      ))}
+      <link rel="alternate" hrefLang="x-default" href="https://site.qpart.com.ua" />
       <link rel="manifest" href={`/manifest_${lang}.json`} />
       {/* <!-- Open Graph Tags --> */}
       <meta property="og:title" content={title} />
