@@ -5,23 +5,14 @@ interface DynamicHeadProps {
   title: string;
   description: string;
   keywords: string;
-  lang: string; // Язык страницы
+  lang: string;
   canonical: string;
   imgOg: string;
   localeOg: string;
   supportedLanguages: string[];
 }
 
-const DynamicHead: React.FC<DynamicHeadProps> = ({
-  title,
-  description,
-  keywords,
-  canonical,
-  imgOg,
-  lang,
-  localeOg,
-  supportedLanguages,
-}) => {
+const DynamicHead: React.FC<DynamicHeadProps> = ({ title, description, keywords, canonical, imgOg, lang, localeOg, supportedLanguages }) => {
   return (
     <Head>
       <title>{title}</title>

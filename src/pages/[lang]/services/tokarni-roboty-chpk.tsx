@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import InformationBlock from '@/components/ui/information-block/InformationBlock';
 import InfoCard from '@/components/ui/info-card/InfoCard';
 import Paragraph from '@/components/ui/typography/Paragraph';
+import OurEquipment from '@/components/ui/equipment/OurEquipment';
 
 const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) => {
   const translationsPage = translations.tokarniRobotyChpkPage;
@@ -51,6 +52,8 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
           </div>
         ))}
       </div>
+
+      <OurEquipment {...componentProps} />
 
       <div className="px-4 mt-10">
         <Paragraph alignment="center" text={translationsPage.callToAction} />

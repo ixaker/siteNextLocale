@@ -40,6 +40,30 @@
         "image": "/assets/tokarni-roboty-chpk5.jpeg"
       }
     ],
+    "ourEquipmentTitle": "OUR EQUIPMENT",
+    "ourEquipment": [
+      {
+        "title": "HURCO BMC 4020HT",
+        "description": ["X-axis: 1020 mm", "Y-axis: 510 mm", "Z-axis: 610 mm", "Table length: 1220 mm", "Table width: 510 mm"],
+        "image": "/assets/hurco-bmc-4020ht.webp"
+      },
+      {
+        "title": "KRYLE VMC 700",
+        "description": ["X-axis: 700 mm", "Y-axis: 450 mm", "Z-axis: 450 mm", "Table length: 1000 mm", "Table width: 480 mm"],
+        "image": "/assets/kryle-vmv-700.webp"
+      },
+      {
+        "title": "Fadal 904-1 VMC 3016 CNC Vertical",
+        "description": [
+          "Table size: 39″ x 16″",
+          "Table load capacity: 2736 lbs",
+          "X-axis travel: 30 inches",
+          "Y-axis travel: 16 inches",
+          "Z-axis travel: 20 inches"
+        ],
+        "image": "/assets/fadal-904-1-vmc-3016-cnc.webp"
+      }
+    ],
     "callToAction": "We are ready to become your reliable partner in turning works!"
   },
   "zvaryuvannyaMetaluPage": {
@@ -168,6 +192,45 @@
         "title": "Additional Capabilities",
         "description": "Our technologies are suitable for creating complex 3D structures for innovative projects and manufacturing simple and standard parts for a wide range of tasks. We handle any requests, regardless of complexity.",
         "image": "/assets/frezerni-roboty5.jpg"
+      }
+    ],
+    "ourEquipmentTitle": "OUR EQUIPMENT",
+    "ourEquipment": [
+      {
+        "title": "Boehringer VDF 250C-U",
+        "description": [
+          "Control system: B32T",
+          "Turning diameter (mm): 400",
+          "Turning length (mm): 1000",
+          "Spindle bore diameter (mm): 78",
+          "Rapid traverse in X/Z axes (m/min): 10",
+          "Tool positions in the turret (pcs): 12"
+        ],
+        "image": "/assets/vdf-250c-u.webp"
+      },
+      {
+        "title": "GILDEMEISTER NEF CT40",
+        "description": [
+          "Processing length: 600 mm",
+          "Processing diameter in chuck: up to 190 mm",
+          "Processing diameter in collet chuck: up to 65 mm",
+          "Travel along X axis: 225 mm",
+          "Travel along Z axis: 600 mm",
+          "Spindle bore: 65 mm"
+        ],
+        "image": "/assets/nef-ct40.webp"
+      },
+      {
+        "title": "HITACHI SEIKI HITEC-TURN 20",
+        "description": [
+          "Max length: 380 mm",
+          "Max diameter: 210 mm",
+          "Max diameter above the bed: 380 mm",
+          "Diameter above the support: 210 mm",
+          "Distance between centers: 630 mm",
+          "Spindle: A2-6"
+        ],
+        "image": "/assets/hitec-turn-20.webp"
       }
     ],
     "callToAction": "Start working with us today and experience the benefits of working with professionals!"

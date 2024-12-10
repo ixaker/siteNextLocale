@@ -40,6 +40,30 @@
         "image": "/assets/tokarni-roboty-chpk5.jpeg"
       }
     ],
+    "ourEquipmentTitle": "UNSERE AUSRÜSTUNG",
+    "ourEquipment": [
+      {
+        "title": "HURCO BMC 4020HT",
+        "description": ["X-Achse: 1020 mm", "Y-Achse: 510 mm", "Z-Achse: 610 mm", "Tischlänge: 1220 mm", "Tischbreite: 510 mm"],
+        "image": "/assets/hurco-bmc-4020ht.webp"
+      },
+      {
+        "title": "KRYLE VMC 700",
+        "description": ["X-Achse: 700 mm", "Y-Achse: 450 mm", "Z-Achse: 450 mm", "Tischlänge: 1000 mm", "Tischbreite: 480 mm"],
+        "image": "/assets/kryle-vmv-700.webp"
+      },
+      {
+        "title": "Fadal 904-1 VMC 3016 CNC Vertical",
+        "description": [
+          "Tischgröße: 39″ x 16″",
+          "Tischtragfähigkeit: 2736 Pfund",
+          "X-Achsen-Verfahrweg: 30 Zoll",
+          "Y-Achsen-Verfahrweg: 16 Zoll",
+          "Z-Achsen-Verfahrweg: 20 Zoll"
+        ],
+        "image": "/assets/fadal-904-1-vmc-3016-cnc.webp"
+      }
+    ],
     "callToAction": "Wir sind bereit, Ihr zuverlässiger Partner für Dreharbeiten zu werden!"
   },
   "zvaryuvannyaMetaluPage": {
@@ -168,6 +192,45 @@
         "title": "Zusätzliche Möglichkeiten",
         "description": "Unsere Technologien eignen sich sowohl für die Erstellung komplexer 3D-Strukturen für innovative Projekte als auch für die Herstellung einfacher und standardmäßiger Teile für eine Vielzahl von Aufgaben. Wir bearbeiten jede Anfrage, unabhängig von ihrer Komplexität.",
         "image": "/assets/frezerni-roboty5.jpg"
+      }
+    ],
+    "ourEquipmentTitle": "UNSERE AUSRÜSTUNG",
+    "ourEquipment": [
+      {
+        "title": "Boehringer VDF 250C-U",
+        "description": [
+          "Steuerungssystem: B32T",
+          "Drehdurchmesser (mm): 400",
+          "Drehlänge (mm): 1000",
+          "Spindelbohrungsdurchmesser (mm): 78",
+          "Schnellvorschub in den Achsen X/Z (m/min): 10",
+          "Werkzeugplätze im Revolver (Stk.): 12"
+        ],
+        "image": "/assets/vdf-250c-u.webp"
+      },
+      {
+        "title": "GILDEMEISTER NEF CT40",
+        "description": [
+          "Bearbeitungslänge: 600 mm",
+          "Bearbeitungsdurchmesser im Backenfutter: bis 190 mm",
+          "Bearbeitungsdurchmesser im Spannzangenfutter: bis 65 mm",
+          "Verfahrweg in der X-Achse: 225 mm",
+          "Verfahrweg in der Z-Achse: 600 mm",
+          "Spindelbohrung: 65 mm"
+        ],
+        "image": "/assets/nef-ct40.webp"
+      },
+      {
+        "title": "HITACHI SEIKI HITEC-TURN 20",
+        "description": [
+          "Maximale Länge: 380 mm",
+          "Maximaler Durchmesser: 210 mm",
+          "Maximaler Durchmesser über dem Bett: 380 mm",
+          "Durchmesser über dem Support: 210 mm",
+          "Abstand zwischen den Zentren: 630 mm",
+          "Spindel: A2-6"
+        ],
+        "image": "/assets/hitec-turn-20.webp"
       }
     ],
     "callToAction": "Beginnen Sie noch heute mit uns und erleben Sie die Vorteile der Zusammenarbeit mit Profis!"
