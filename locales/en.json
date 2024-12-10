@@ -75,32 +75,32 @@
     "callToAction": "Trust us with your tasks, and we will show you what true professionalism in welding looks like!"
   },
   "porizkaNaVerstati": {
-    "title": "BANDSAW CUTTING",
-    "descriptionTop": "We offer professional metal cutting using CNC equipment, ensuring high work speed and impeccable results. Our solutions are ideal for processing large volumes of material, guaranteeing precision in every cut.",
-    "descriptionBottom": "Looking for a reliable partner for metal cutting? We are always ready to collaborate.",
+    "title": "BAND SAW CUTTING",
+    "descriptionTop": "We offer professional metal cutting using CNC equipment, ensuring high speed and flawless results. Our solutions are perfect for processing large volumes of material, guaranteeing the precision of every cut.",
+    "descriptionBottom": "Looking for a partner for reliable metal cutting? We are always ready to collaborate.",
     "infoCard": [
       {
-        "title": "Powerful equipment fleet",
-        "description": "We have more than 10 CNC bandsaws capable of cutting blanks with a diameter from 10 to 550 mm, ensuring flexibility and the ability to work with various types of metal",
+        "title": "Precision and Speed of Metal Cutting",
+        "description": "We specialize in band saw cutting of workpieces of various shapes and sizes. Our equipment allows us to work with a wide range of materials and ensures high reliability of every cut.",
         "image": "/assets/porizka-na-verstati2.jpeg"
       },
       {
-        "title": "Versatility in operation",
-        "description": "We have vertical bandsaws that allow for cutting long sheet blanks if necessary, expanding our processing capabilities",
+        "title": "Professional Approach to Any Order",
+        "description": "Our equipment fleet includes over 10 CNC band saws capable of processing workpieces with diameters ranging from 10 to 550 mm. Vertical band saws allow for the cutting of long sheets or specialized structures.",
         "image": "/assets/porizka-na-verstati3.jpeg"
       },
       {
-        "title": "High precision and speed",
-        "description": "We guarantee high cutting precision and fast order execution, saving time and ensuring accurate results",
+        "title": "Complete Processing",
+        "description": "We offer not just metal cutting, but a full cycle of services, including preparation of parts for further processing. You won't need to spend time coordinating with other contractors — we handle everything in one place.",
         "image": "/assets/porizka-na-verstati4.jpeg"
       },
       {
-        "title": "Comprehensive service",
-        "description": "We offer a full cycle of metal cutting services, allowing you to receive finished parts without needing to contact other contractors",
+        "title": "Solutions for Unique Tasks",
+        "description": "Our team ensures precise metal cutting for projects with non-standard requirements, achieving perfect results.",
         "image": "/assets/porizka-na-verstati5.jpeg"
       }
     ],
-    "callToAction": "Submit your application now, and we will complete your order quickly and at the highest level!"
+    "callToAction": "Order metal cutting from us and experience our speed and quality!"
   },
   "lyttyaMetaluPage": {
     "title": "Metal Casting",

@@ -75,32 +75,32 @@
     "callToAction": "Vertrauen Sie uns Ihre Aufgaben an und wir zeigen Ihnen, was echte Professionalität im Schweißen bedeutet!"
   },
   "porizkaNaVerstati": {
-    "title": "BANDSÄGENSCHNITT",
-    "descriptionTop": "Wir bieten professionelle Metallbearbeitung mit CNC-Geräten, die hohe Arbeitsgeschwindigkeit und makellose Ergebnisse gewährleisten. Unsere Lösungen sind ideal für die Verarbeitung großer Materialmengen und garantieren Präzision bei jedem Schnitt.",
-    "descriptionBottom": "Suchen Sie einen zuverlässigen Partner für die Metallbearbeitung? Wir sind immer bereit zur Zusammenarbeit.",
+    "title": "BANDSÄGENSCHNEIDEN",
+    "descriptionTop": "Wir bieten professionelle Metallbearbeitung mit CNC-Ausrüstung, die hohe Geschwindigkeit und perfekte Ergebnisse garantiert. Unsere Lösungen sind ideal für die Verarbeitung großer Materialmengen und gewährleisten die Präzision jedes Schnitts.",
+    "descriptionBottom": "Suchen Sie einen Partner für zuverlässiges Metallschneiden? Wir sind immer bereit zur Zusammenarbeit.",
     "infoCard": [
       {
-        "title": "Leistungsstarker Maschinenpark",
-        "description": "Wir verfügen über mehr als 10 CNC-Bandsägen, die in der Lage sind, Rohlinge mit einem Durchmesser von 10 bis 550 mm zu schneiden. Dies gewährleistet Flexibilität und die Möglichkeit, mit verschiedenen Metallarten zu arbeiten",
+        "title": "Präzision und Geschwindigkeit beim Metallschneiden",
+        "description": "Wir spezialisieren uns auf Bandsägenschnitte von Werkstücken verschiedener Formen und Größen. Unsere Ausrüstung ermöglicht es uns, mit einer breiten Palette von Materialien zu arbeiten und gewährleistet hohe Zuverlässigkeit bei jedem Schnitt.",
         "image": "/assets/porizka-na-verstati2.jpeg"
       },
       {
-        "title": "Vielseitigkeit im Betrieb",
-        "description": "Wir verfügen über vertikale Bandsägen, die es ermöglichen, lange Blechrohlinge bei Bedarf zu schneiden, wodurch unsere Bearbeitungsmöglichkeiten erweitert werden",
+        "title": "Professioneller Ansatz für jede Bestellung",
+        "description": "Unser Gerätepark umfasst mehr als 10 CNC-Bandsägen, die Werkstücke mit Durchmessern von 10 bis 550 mm bearbeiten können. Vertikale Bandsägen ermöglichen das Schneiden von langen Blechen oder spezialisierten Konstruktionen.",
         "image": "/assets/porizka-na-verstati3.jpeg"
       },
       {
-        "title": "Hohe Präzision und Geschwindigkeit",
-        "description": "Wir garantieren eine hohe Schneidpräzision und schnelle Auftragsabwicklung, sparen Zeit und liefern genaue Ergebnisse",
+        "title": "Vollständige Bearbeitung",
+        "description": "Wir bieten nicht nur Metallschneiden, sondern einen vollständigen Servicezyklus, einschließlich der Vorbereitung von Teilen für die weitere Verarbeitung. Sie müssen keine Zeit mit der Koordination mit anderen Auftragnehmern verschwenden – wir erledigen alles an einem Ort.",
         "image": "/assets/porizka-na-verstati4.jpeg"
       },
       {
-        "title": "Umfassender Service",
-        "description": "Wir bieten einen vollständigen Zyklus von Metallschneidedienstleistungen an, sodass Sie fertige Teile erhalten, ohne andere Auftragnehmer kontaktieren zu müssen",
+        "title": "Lösungen für einzigartige Aufgaben",
+        "description": "Unser Team sorgt für präzises Metallschneiden bei Projekten mit nicht standardisierten Anforderungen und erzielt perfekte Ergebnisse.",
         "image": "/assets/porizka-na-verstati5.jpeg"
       }
     ],
-    "callToAction": "Reichen Sie jetzt Ihre Anfrage ein, und wir werden Ihren Auftrag schnell und auf höchstem Niveau ausführen!"
+    "callToAction": "Bestellen Sie Metallschneiden bei uns und erleben Sie unsere Geschwindigkeit und Qualität!"
   },
   "lyttyaMetaluPage": {
     "title": "Metallgießen",
