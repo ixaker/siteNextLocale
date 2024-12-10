@@ -172,36 +172,36 @@
     "callToAction": "Start working with us today and experience the benefits of working with professionals!"
   },
   "termichnaObrobkaPage": {
-    "title": "Heat Treatment of Metals",
-    "descriptionTop": "We ensure high-quality heat treatment of metals thanks to the latest equipment and an experienced team. Your products will gain the necessary strength, durability, and compliance with standards.",
+    "title": "HEAT TREATMENT",
+    "descriptionTop": "We ensure high-quality metal heat treatment thanks to state-of-the-art equipment and an experienced team. Your products will gain the required strength, durability, and compliance with standards.",
     "descriptionBottom": "Looking for a reliable partner for heat treatment? We offer solutions that work.",
     "infoCard": [
       {
-        "title": "Our company has a wide range of heat treatment equipment, including",
-        "list": [
-          { "description": "Standard electric furnaces for hardening and tempering" },
-          { "description": "Powerful gas furnaces for processing parts weighing up to 100 tons" },
-          { "description": "Induction hardening installations for hardening long shafts" }
-        ],
+        "title": "Strengthening and Durability of Parts",
+        "description": "We specialize in metal heat treatment that provides optimal mechanical properties for your parts. Our technologies ensure the required strength and durability.",
         "image": "/assets/termichna-obrobka2.jpeg"
       },
       {
-        "title": "Maximum precision and reliability",
-        "description": "We use only the most modern technologies to ensure optimal conditions for each part. Your products will be processed with high precision and according to the highest quality standards.",
+        "title": "Unique Capabilities. We use:",
+        "list": [
+          { "description": "Electric furnaces" },
+          { "description": "Gas furnaces" },
+          { "description": "Induction heating installations" }
+        ],
         "image": "/assets/termichna-obrobka3.jpeg"
       },
       {
-        "title": "Fast order fulfillment",
-        "description": "Our technologies and organized processes allow us to complete orders in the shortest possible time without compromising quality. We understand the importance of timely execution, so we always adhere to the promised deadlines.",
+        "title": "Comprehensive Service",
+        "description": "From initial processing to final refinement — we accompany each stage to ensure you receive a finished part of the highest quality.",
         "image": "/assets/termichna-obrobka4.jpeg"
       },
       {
-        "title": "Comprehensive approach",
-        "description": "We take care of the entire heat treatment cycle, from initial processing to the finished part, saving you time and resources.",
+        "title": "Specialized Technologies",
+        "description": "We apply advanced processing methods to create parts that meet the most stringent requirements and standards.",
         "image": "/assets/termichna-obrobka5.jpeg"
       }
     ],
-    "callToAction": "Don't wait — trust the professionals!"
+    "callToAction": "Submit your request now, and your products will become a benchmark of reliability!"
   },
   "lazernaRizkaPage": {
     "title": "LASER CUTTING WITH CNC",

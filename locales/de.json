@@ -172,38 +172,36 @@
     "callToAction": "Beginnen Sie noch heute mit uns und erleben Sie die Vorteile der Zusammenarbeit mit Profis!"
   },
   "termichnaObrobkaPage": {
-    "title": "Wärmebehandlung von Metallen",
-    "descriptionTop": "Wir gewährleisten eine hohe Qualität der Wärmebehandlung von Metallen dank modernster Ausrüstung und einem erfahrenen Team. Ihre Produkte erhalten die erforderliche Festigkeit, Langlebigkeit und entsprechen den Standards.",
-    "descriptionBottom": "Suchen Sie einen zuverlässigen Partner für Wärmebehandlung? Wir bieten Lösungen, die funktionieren.",
+    "title": "WÄRMEBEHANDLUNG",
+    "descriptionTop": "Wir gewährleisten eine hochwertige Wärmebehandlung von Metallen dank modernster Ausrüstung und einem erfahrenen Team. Ihre Produkte erhalten die erforderliche Festigkeit, Langlebigkeit und Normenkonformität.",
+    "descriptionBottom": "Suchen Sie einen zuverlässigen Partner für die Wärmebehandlung? Wir bieten Lösungen, die funktionieren.",
     "infoCard": [
       {
-        "title": "Unser Unternehmen verfügt über eine breite Palette an Wärmebehandlungsanlagen, darunter",
-        "list": [
-          { "description": "Standard-Elektroöfen für Abschrecken und Anlassen" },
-          {
-            "description": "Leistungsstarke Gasöfen für die Bearbeitung von Teilen mit einem Gewicht von bis zu 100 Tonnen"
-          },
-          { "description": "Induktionshärtungsanlagen für die Härtebehandlung langer Wellen" }
-        ],
+        "title": "Stärkung und Langlebigkeit der Teile",
+        "description": "Wir sind auf die Wärmebehandlung von Metallen spezialisiert, die optimale mechanische Eigenschaften für Ihre Teile gewährleistet. Unsere Technologien sorgen für die erforderliche Festigkeit und Langlebigkeit.",
         "image": "/assets/termichna-obrobka2.jpeg"
       },
       {
-        "title": "Maximale Präzision und Zuverlässigkeit",
-        "description": "Wir verwenden nur die modernsten Technologien, um optimale Bedingungen für jedes Teil zu gewährleisten. Ihre Produkte werden mit hoher Präzision und nach den höchsten Qualitätsstandards bearbeitet.",
+        "title": "Einzigartige Möglichkeiten. Wir nutzen:",
+        "list": [
+          { "description": "Elektrische Öfen" },
+          { "description": "Gasöfen" },
+          { "description": "Induktionsheizungsanlagen" }
+        ],
         "image": "/assets/termichna-obrobka3.jpeg"
       },
       {
-        "title": "Schnelle Auftragsabwicklung",
-        "description": "Unsere Technologien und organisierten Prozesse ermöglichen es uns, Aufträge in kürzester Zeit zu erledigen, ohne die Qualität zu beeinträchtigen. Wir verstehen die Bedeutung einer termingerechten Ausführung und halten stets die versprochenen Fristen ein.",
+        "title": "Umfassender Service",
+        "description": "Von der ersten Bearbeitung bis zur finalen Veredelung — wir begleiten jede Phase, damit Sie ein Fertigteil von höchster Qualität erhalten.",
         "image": "/assets/termichna-obrobka4.jpeg"
       },
       {
-        "title": "Ganzheitlicher Ansatz",
-        "description": "Wir übernehmen den gesamten Wärmebehandlungsprozess, von der ersten Bearbeitung bis zum fertigen Teil, und sparen so Ihre Zeit und Ressourcen.",
+        "title": "Spezialisierte Technologien",
+        "description": "Wir wenden fortschrittliche Verarbeitungsmethoden an, um Teile zu erstellen, die den strengsten Anforderungen und Standards entsprechen.",
         "image": "/assets/termichna-obrobka5.jpeg"
       }
     ],
-    "callToAction": "Warten Sie nicht — vertrauen Sie den Profis!"
+    "callToAction": "Senden Sie jetzt Ihre Anfrage, und Ihre Produkte werden zum Maßstab für Zuverlässigkeit!"
   },
   "lazernaRizkaPage": {
     "title": "LASERSCHNEIDEN MIT CNC",
