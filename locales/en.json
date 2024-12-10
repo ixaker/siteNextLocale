@@ -233,37 +233,35 @@
   },
   "shlifovkaMetaluPage": {
     "title": "Metal Grinding",
-    "descriptionTop": "We offer high-precision surface grinding, achieving perfect smoothness. Our specialists and modern equipment ensure quality even for the most complex tasks.",
+    "descriptionTop": "We offer high-precision surface grinding, achieving perfect smoothness. Our specialists and modern equipment ensure quality even for the most challenging tasks.",
     "descriptionBottom": "Want perfectly processed parts? We know how to do it.",
     "infoCard": [
       {
-        "title": "Our fleet includes a wide range of grinding machines",
-        "list": [
-          { "description": "Centerless grinding machines" },
-          { "description": "Cylindrical grinding machines, including CNC models" },
-          { "description": "Surface grinding machines" },
-          { "description": "Internal and deep internal grinding equipment" },
-          { "description": "Thread grinding machines" }
-        ],
+        "title": "Perfect Cleanliness and Precision",
+        "description": "We provide high-quality grinding to create parts with perfectly smooth surfaces and high precision, in accordance with your technical requirements.",
         "image": "/assets/shlifovka-metalu2.jpeg"
       },
       {
-        "title": "High precision and quality",
-        "description": "Our technologies allow us to achieve perfect surface cleanliness and provide maximum precision even for the smallest parts and complex shapes.",
+        "title": "Extensive Equipment Selection. Our inventory includes:",
+        "list": [
+          { "description": "Cylindrical and surface CNC grinders" },
+          { "description": "Centerless grinding machines" },
+          { "description": "Equipment for internal and thread grinding" }
+        ],
         "image": "/assets/shlifovka-metalu3.jpeg"
       },
       {
-        "title": "Fast order fulfillment",
-        "description": "Thanks to our streamlined logistics and powerful equipment, we fulfill orders in the shortest time possible without compromising quality.",
+        "title": "Complete Processing",
+        "description": "We take care of the entire processing cycle, ensuring you receive products that meet all your expectations and standards.",
         "image": "/assets/shlifovka-metalu4.jpeg"
       },
       {
-        "title": "Comprehensive approach",
-        "description": "We provide a full cycle of grinding operations, so you can receive finished products without the need to involve other contractors.",
+        "title": "Specialized Solutions",
+        "description": "We process non-standard surfaces and complex elements, ensuring they meet the highest requirements.",
         "image": "/assets/shlifovka-metalu5.jpeg"
       }
     ],
-    "callToAction": "Submit your application right now – we’ll help bring your ideas to life!"
+    "callToAction": "Entrust your orders to us and experience impeccable quality!"
   },
   "piskostruminniRoboty": {
     "title": "Sandblasting",

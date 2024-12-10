@@ -232,38 +232,36 @@
     "callToAction": "Bestellen Sie Laserschneiden bei uns und erleben Sie unseren Professionalismus in Aktion!"
   },
   "shlifovkaMetaluPage": {
-    "title": "Metallbearbeitung durch Schleifen",
-    "descriptionTop": "Wir bieten hochpräzises Oberflächenschleifen und erreichen perfekte Glätte. Unsere Spezialisten und moderne Ausrüstung gewährleisten Qualität, selbst bei den komplexesten Aufgaben.",
-    "descriptionBottom": "Möchten Sie perfekt bearbeitete Teile? Wir wissen, wie man das macht.",
+    "title": "Metallschleifen",
+    "descriptionTop": "Wir bieten hochpräzises Schleifen von Oberflächen und erreichen dabei perfekte Glätte. Unsere Spezialisten und moderne Ausrüstung gewährleisten Qualität selbst bei den schwierigsten Aufgaben.",
+    "descriptionBottom": "Möchten Sie perfekt bearbeitete Teile? Wir wissen, wie das geht.",
     "infoCard": [
       {
-        "title": "Unser Maschinenpark umfasst eine breite Palette von Schleifmaschinen",
-        "list": [
-          { "description": "Zentrifugal-Schleifmaschinen" },
-          { "description": "Zylinderschleifmaschinen, einschließlich CNC-Modelle" },
-          { "description": "Flachschleifmaschinen" },
-          { "description": "Ausrüstung für Innen- und Tiefinnenschleifen" },
-          { "description": "Gewindeschleifmaschinen" }
-        ],
+        "title": "Perfekte Sauberkeit und Präzision",
+        "description": "Wir bieten hochwertiges Schleifen, um Teile mit perfekt glatten Oberflächen und hoher Präzision gemäß Ihren technischen Anforderungen herzustellen.",
         "image": "/assets/shlifovka-metalu2.jpeg"
       },
       {
-        "title": "Hohe Präzision und Qualität",
-        "description": "Unsere Technologien ermöglichen es, perfekte Oberflächenreinheit zu erreichen und maximale Präzision, selbst für kleinste Teile und komplexe Formen.",
+        "title": "Große Auswahl an Ausrüstung. Unser Bestand umfasst:",
+        "list": [
+          { "description": "Rund- und Flächenschleifmaschinen mit CNC" },
+          { "description": "Spitzenlose Schleifmaschinen" },
+          { "description": "Ausrüstung für Innen- und Gewindeschleifen" }
+        ],
         "image": "/assets/shlifovka-metalu3.jpeg"
       },
       {
-        "title": "Schnelle Auftragsabwicklung",
-        "description": "Dank unserer optimierten Logistik und leistungsstarker Ausrüstung führen wir Aufträge in kürzester Zeit ohne Qualitätsverlust aus.",
+        "title": "Komplette Bearbeitung",
+        "description": "Wir übernehmen den gesamten Bearbeitungszyklus, damit Sie Produkte erhalten, die all Ihren Erwartungen und Standards entsprechen.",
         "image": "/assets/shlifovka-metalu4.jpeg"
       },
       {
-        "title": "Ganzheitlicher Ansatz",
-        "description": "Wir bieten einen vollständigen Zyklus von Schleifoperationen an, sodass Sie fertige Produkte ohne die Notwendigkeit, andere Auftragnehmer einzubeziehen, erhalten.",
+        "title": "Spezialisierte Lösungen",
+        "description": "Wir bearbeiten nicht standardisierte Oberflächen und komplexe Elemente und stellen sicher, dass sie den höchsten Anforderungen entsprechen.",
         "image": "/assets/shlifovka-metalu5.jpeg"
       }
     ],
-    "callToAction": "Reichen Sie jetzt Ihre Anfrage ein – wir helfen, Ihre Ideen in die Realität umzusetzen!"
+    "callToAction": "Vertrauen Sie uns Ihre Aufträge an und erleben Sie makellose Qualität!"
   },
   "piskostruminniRoboty": {
     "title": "Sandstrahlen",
