@@ -27,7 +27,7 @@ const InfoCard: React.FC<InfoCardProps> = ({
         >
           <div className="sm:max-w-[400px] max-h-[200px] sm:max-h-[400px] h-full w-full">
             <Image
-              src={srcImg}
+              src={`${srcImg}?v=${new Date().getTime()}`}
               alt={srcImg}
               width={100}
               height={100}
