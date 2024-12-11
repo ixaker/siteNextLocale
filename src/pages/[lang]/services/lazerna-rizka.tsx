@@ -1,61 +1,34 @@
-import { GetStaticPaths, GetStaticProps } from 'next';
-import { withStaticProps, withStaticPaths, PageProps, ServicesComponentProps } from '../../../context/withStaticPathsAndProps';
-import { darkTheme, lightTheme } from '@/theme';
-import { useTheme } from '@mui/material';
-import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
-import DynamicHead from '@/components/shared/DynamicHead';
-import { useEffect, useState } from 'react';
-import InformationBlock from '@/components/ui/information-block/InformationBlock';
-import InfoCard from '@/components/ui/info-card/InfoCard';
-import Paragraph from '@/components/ui/typography/Paragraph';
+import * as Common from '@/context/commonImports';
+import { withStaticProps, withStaticPaths } from '../../../context/withStaticPathsAndProps';
 
-const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) => {
+const Page: React.FC<Common.PageProps> = ({ translations, lang, supportedLanguages }) => {
   const translationsPage = translations.lazernaRizkaPage;
-  const cardList = translationsPage.infoCard;
-  const theme = useTheme();
-  const [fullUrl, setFullUrl] = useState('');
-  useEffect(() => {
+  const theme = Common.useTheme();
+  const [fullUrl, setFullUrl] = Common.useState('');
+  Common.useEffect(() => {
     if (typeof window !== 'undefined') {
       setFullUrl(window.location.href);
     }
   }, [fullUrl]);
 
-  const componentProps: ServicesComponentProps = { translations, lang, supportedLanguages, translationsPage, fullUrl };
+  const componentProps: Common.ServicesComponentProps = { translations, lang, supportedLanguages, translationsPage, fullUrl };
 
-  const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
+  const currentTheme = theme.palette.mode === 'dark' ? Common.darkTheme : Common.lightTheme;
   const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
 
   return (
-    <div style={{ backgroundColor: bgColor, color: secondaryColor }}>
-      <DynamicHead {...componentProps} />
-      <InformationBlock {...componentProps} />
-
-      <div className="sm:px-4 mt-6">
-        {cardList.map((item, index) => (
-          <div key={index}>
-            <InfoCard
-              aligntText={index % 2 === 0 ? 'end' : 'start'}
-              direction={index % 2 === 0 ? 'row-reverse' : 'row'}
-              srcImg={item.image}
-              title={item.title}
-              descriptionCard={!item.list || item.list.length === 0 ? item.description : undefined}
-              list={item.list}
-            />
-          </div>
-        ))}
-      </div>
-
-      <div className="px-4 mt-10">
-        <Paragraph alignment="center" text={translationsPage.callToAction} />
-      </div>
-
-      <CalculationSection translations={translations} lang={lang} />
-    </div>
+    <section style={{ backgroundColor: bgColor, color: secondaryColor }}>
+      <Common.DynamicHead {...componentProps} />
+      <Common.InformationBlock {...componentProps} />
+      <Common.InfoCardList {...componentProps} />
+      <Common.Paragraph style="mt-10 px-4" alignment="center" text={translationsPage.callToAction} />
+      <Common.CalculationSection translations={translations} lang={lang} />
+    </section>
   );
 };
 
-export const getStaticPaths: GetStaticPaths = withStaticPaths;
-export const getStaticProps: GetStaticProps = withStaticProps;
+export const getStaticPaths: Common.GetStaticPaths = withStaticPaths;
+export const getStaticProps: Common.GetStaticProps = withStaticProps;
 
 export default Page;

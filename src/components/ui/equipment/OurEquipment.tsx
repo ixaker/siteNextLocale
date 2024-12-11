@@ -1,6 +1,5 @@
 import { ServicesComponentProps } from '@/context/withStaticPathsAndProps';
 import Heading from '../typography/Heading';
-import Paragraph from '../typography/Paragraph';
 import Slider from 'react-slick';
 import Image from 'next/image';
 
@@ -50,9 +49,9 @@ const OurEquipment: React.FC<ServicesComponentProps> = (componentProps) => {
                 className="rounded-t-lg bg-[white] w-[auto] h-[250px] mb-[70px]"
               />
             </div>
-            <div className="absolute bottom-0 left-0 w-full h-[25%] group-hover:h-[80%] bg-black bg-opacity-75 transition-all duration-300 rounded-t-lg px-4 py-4 flex flex-col items-center ">
-              <Paragraph style="text-white font-semibold text-md" text={item.title} alignment="center" />
-              <Paragraph style="text-white font-semibold text-md" text={item.name} alignment="center" />
+            <div className="absolute bottom-0 left-0 w-full h-[25%] group-hover:h-[80%] bg-black bg-opacity-75 transition-all duration-300  px-4 py-4 flex flex-col items-center ">
+              <p className="text-white font-semiboldtext-sm text-[13px] md:text-[14px] lg:text-[16px]">{item.title}</p>
+              <p className="text-[14px] md:text-[14px] lg:text-[16px]">{item.name}</p>
               <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-4">
                 {item.description.map((desc, descIndex) => (
                   <span key={descIndex} className="block text-sm leading-5 text-center mb-2">
