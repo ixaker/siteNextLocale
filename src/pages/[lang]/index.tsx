@@ -77,7 +77,7 @@ const Home: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
             </div>
             <div>
               {/* ?v=${new Date().getTime()} */}
-              <Image className="w-full rounded-2xl shadow-2xl" src={`/assets/work.jpg`} alt="Laptop" width={100} height={100} />
+              <Image className="w-full rounded-2xl shadow-2xl" src={`/assets/work.webp`} alt="Laptop" width={100} height={100} />
             </div>
           </div>
         </div>

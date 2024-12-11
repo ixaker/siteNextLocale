@@ -22,22 +22,22 @@
       {
         "title": "Wir übernehmen jede Menge Dreharbeiten",
         "description": "Wir verstehen, dass Ihr Geschäft nicht warten kann. Dank moderner Kapazitäten und etablierter Logistik wird Ihre Bestellung in kürzester Zeit erledigt. Vergessen Sie lange Produktionszeiten — wir arbeiten schnell und effizient.",
-        "image": "/assets/tokarni-roboty-chpk2.jpeg"
+        "image": "/assets/tokarni-roboty-chpk2.webp"
       },
       {
         "title": "Schnelle Auftragsabwicklung",
         "description": "Unser Fuhrpark umfasst mehr als 300 moderne CNC-Maschinen, die ununterbrochen arbeiten. Wir bearbeiten große Serien von Teilen problemlos. Möchten Sie große Mengen an Produkten bestellen? Kein Problem. Wenn Ihre Lieferanten die Last nicht bewältigen können, sind wir bereit, Ihre Bestellung zu übernehmen und sie pünktlich zu liefern.",
-        "image": "/assets/tokarni-roboty-chpk3.jpeg"
+        "image": "/assets/tokarni-roboty-chpk3.webp"
       },
       {
         "title": "Präzision und Fertigung von Teilen jeder Komplexität",
         "description": "Unsere Maschinen ermöglichen es, große Teile mit einem Durchmesser von bis zu 4000 mm und einer Länge von bis zu 8000 mm zu fertigen. Benötigen Sie kleine, komplexe Teile ab 10 mm? Wir fertigen sie mit höchster Präzision. Wo andere scheitern, bieten wir Lösungen und fragen: 'Wann fangen wir an?'",
-        "image": "/assets/tokarni-roboty-chpk4.jpeg"
+        "image": "/assets/tokarni-roboty-chpk4.webp"
       },
       {
         "title": "Umfassender Ansatz",
         "description": "Von der Bearbeitung bis zur endgültigen Veredelung — wir unterstützen Ihr Projekt in jeder Phase. Unsere Kunden erhalten eine vollständige Lösung: vom CNC-Drehen bis zur Vorbereitung der Teile für die Nutzung.",
-        "image": "/assets/tokarni-roboty-chpk5.jpeg"
+        "image": "/assets/tokarni-roboty-chpk5.webp"
       }
     ],
     "ourEquipmentTitle": "UNSERE AUSRÜSTUNG",
@@ -67,7 +67,7 @@
     "callToAction": "Wir sind bereit, Ihr zuverlässiger Partner für Dreharbeiten zu werden!"
   },
   "zvaryuvannyaMetaluPage": {
-    "srcImg": "/assets/zvaryuvannya-metalu.jpeg",
+    "srcImg": "/assets/zvaryuvannya-metalu.webp",
     "title": "Metallschweißen",
     "descriptionTop": "Schweißarbeiten jeder Komplexität werden dank unserer fortschrittlichen Technik und innovativen Ansätze Realität. Wir gewährleisten die Präzision, Festigkeit und Zuverlässigkeit jeder Naht, unabhängig vom Umfang und Typ des Metalls.",
     "descriptionBottom": "Benötigen Sie qualitativ hochwertiges Schweißen? Wir sind bereit, Ihnen bei der Umsetzung auch der komplexesten Ideen zu helfen.",
@@ -75,7 +75,7 @@
       {
         "title": "Innovative Lösungen für komplexe Konstruktionen",
         "description": "Wir bieten umfassende Schweißdienstleistungen und garantieren hohe Qualität sowie die Einhaltung moderner Standards. Dank modernster Ausrüstung und erfahrener Fachleute können Sie sich auf die Langlebigkeit und fehlerfreie Ausführung jeder Metallkonstruktion verlassen.",
-        "image": "/assets/zvaryuvannya-metalu2.jpeg"
+        "image": "/assets/zvaryuvannya-metalu2.webp"
       },
       {
         "title": "Breites Spektrum an Technologien. Unsere Schweißkapazitäten umfassen:",
@@ -85,23 +85,23 @@
           { "description": "Laser-Schweißen" },
           { "description": "Lichtbogen- und Widerstandsschweißen" }
         ],
-        "image": "/assets/zvaryuvannya-metalu3.jpeg"
+        "image": "/assets/zvaryuvannya-metalu3.webp"
       },
       {
         "title": "Unterstützung in jeder Phase",
         "description": "Wir kümmern uns um den gesamten Zyklus der Metallbearbeitung: von der Vorbereitung bis zur Endproduktion. Unser Ziel ist es, Ihnen ein fertiges Teil zu liefern, ohne dass Sie auf andere Auftragnehmer angewiesen sind.",
-        "image": "/assets/zvaryuvannya-metalu4.jpeg"
+        "image": "/assets/zvaryuvannya-metalu4.webp"
       },
       {
         "title": "Spezialisierte Lösungen",
         "description": "Wir bieten Schweißen für die Erstellung maßgeschneiderter Konstruktionen, die einzigartige Technologien und Fachwissen erfordern.",
-        "image": "/assets/zvaryuvannya-metalu5.jpeg"
+        "image": "/assets/zvaryuvannya-metalu5.webp"
       }
     ],
     "callToAction": "Vertrauen Sie uns Ihre Aufgaben an und wir zeigen Ihnen, was echte Professionalität im Schweißen bedeutet!"
   },
   "porizkaNaVerstati": {
-    "srcImg": "/assets/porizka-na-verstati.jpg",
+    "srcImg": "/assets/porizka-na-verstati.webp",
     "title": "BANDSÄGENSCHNEIDEN",
     "descriptionTop": "Wir bieten professionelle Metallbearbeitung mit CNC-Ausrüstung, die hohe Geschwindigkeit und perfekte Ergebnisse garantiert. Unsere Lösungen sind ideal für die Verarbeitung großer Materialmengen und gewährleisten die Präzision jedes Schnitts.",
     "descriptionBottom": "Suchen Sie einen Partner für zuverlässiges Metallschneiden? Wir sind immer bereit zur Zusammenarbeit.",
@@ -109,28 +109,28 @@
       {
         "title": "Präzision und Geschwindigkeit beim Metallschneiden",
         "description": "Wir spezialisieren uns auf Bandsägenschnitte von Werkstücken verschiedener Formen und Größen. Unsere Ausrüstung ermöglicht es uns, mit einer breiten Palette von Materialien zu arbeiten und gewährleistet hohe Zuverlässigkeit bei jedem Schnitt.",
-        "image": "/assets/porizka-na-verstati2.jpeg"
+        "image": "/assets/porizka-na-verstati2.webp"
       },
       {
         "title": "Professioneller Ansatz für jede Bestellung",
         "description": "Unser Gerätepark umfasst mehr als 10 CNC-Bandsägen, die Werkstücke mit Durchmessern von 10 bis 550 mm bearbeiten können. Vertikale Bandsägen ermöglichen das Schneiden von langen Blechen oder spezialisierten Konstruktionen.",
-        "image": "/assets/porizka-na-verstati3.jpeg"
+        "image": "/assets/porizka-na-verstati3.webp"
       },
       {
         "title": "Vollständige Bearbeitung",
         "description": "Wir bieten nicht nur Metallschneiden, sondern einen vollständigen Servicezyklus, einschließlich der Vorbereitung von Teilen für die weitere Verarbeitung. Sie müssen keine Zeit mit der Koordination mit anderen Auftragnehmern verschwenden – wir erledigen alles an einem Ort.",
-        "image": "/assets/porizka-na-verstati4.jpeg"
+        "image": "/assets/porizka-na-verstati4.webp"
       },
       {
         "title": "Lösungen für einzigartige Aufgaben",
         "description": "Unser Team sorgt für präzises Metallschneiden bei Projekten mit nicht standardisierten Anforderungen und erzielt perfekte Ergebnisse.",
-        "image": "/assets/porizka-na-verstati5.jpeg"
+        "image": "/assets/porizka-na-verstati5.webp"
       }
     ],
     "callToAction": "Bestellen Sie Metallschneiden bei uns und erleben Sie unsere Geschwindigkeit und Qualität!"
   },
   "lyttyaMetaluPage": {
-    "srcImg": "/assets/lyttya-metalu.jpeg",
+    "srcImg": "/assets/lyttya-metalu.webp",
     "title": "Metallgießen",
     "descriptionTop": "Moderne Gießtechnologien helfen uns, komplexe und zuverlässige Teile aus verschiedenen Materialien herzustellen. Wir gewährleisten Qualität in jeder Produktionsphase und garantieren die Einhaltung der höchsten Standards.",
     "descriptionBottom": "Suchen Sie Spezialisten für komplexe Gussprodukte? Wir setzen Ihre Idee in die Realität um.",
@@ -138,7 +138,7 @@
       {
         "title": "Perfektion und lange Lebensdauer von Gussprodukten",
         "description": "Wir bieten ein vollständiges Leistungsspektrum im Bereich Metallgießen, einschließlich der Herstellung komplexer Teile für verschiedene Industrien. Dank unserer innovativen Lösungen erhalten Sie Produkte mit makelloser Präzision, außergewöhnlicher Zuverlässigkeit und langer Lebensdauer.",
-        "image": "/assets/lyttya-metalu2.jpeg"
+        "image": "/assets/lyttya-metalu2.webp"
       },
       {
         "title": "Innovative Gießtechnologien. Unsere Möglichkeiten umfassen:",
@@ -148,23 +148,23 @@
           { "description": "Druckguss" },
           { "description": "Niederdruckguss von hochtemperaturbeständigen Stählen und Nichteisenmetallen" }
         ],
-        "image": "/assets/lyttya-metalu3.jpeg"
+        "image": "/assets/lyttya-metalu3.webp"
       },
       {
         "title": "Voller Produktionszyklus",
         "description": "Wir bieten alle Phasen an, von der Entwicklung des technologischen Prozesses bis zur Lieferung der fertigen Produkte. Dadurch erhalten Sie Produkte, die den höchsten Qualitätsstandards entsprechen.",
-        "image": "/assets/lyttya-metalu4.jpeg"
+        "image": "/assets/lyttya-metalu4.webp"
       },
       {
         "title": "Große Auswahl an Materialien",
         "description": "Wir arbeiten mit verschiedenen Metallarten, einschließlich hochlegierter Stähle und Nichteisenlegierungen, um für jedes Projekt das perfekte Ergebnis zu gewährleisten.",
-        "image": "/assets/lyttya-metalu5.jpeg"
+        "image": "/assets/lyttya-metalu5.webp"
       }
     ],
     "callToAction": "Reichen Sie noch heute eine Anfrage ein und erhalten Sie Produkte, die Ihre Erwartungen erfüllen und sogar übertreffen!"
   },
   "frezerniRoboty": {
-    "srcImg": "/assets/frezerni-roboty.jpeg",
+    "srcImg": "/assets/frezerni-roboty.webp",
     "title": "CNC-FRÄSBEARBEITUNG",
     "descriptionTop": "Unsere CNC-Zentren führen Fräsarbeiten mit hoher Präzision aus, selbst bei den komplexesten Teilen. Fachkompetenz und moderne Ausstattung ermöglichen es uns, große Chargen und nicht standardisierte Formen zu bearbeiten.",
     "descriptionBottom": "Suchen Sie einen Partner, dem Sie komplexe Aufgaben anvertrauen können? Wir sind bereit, für Ihren Erfolg zu arbeiten.",
@@ -172,7 +172,7 @@
       {
         "title": "Zuverlässige Lösungen für komplexe Aufgaben",
         "description": "Unsere Fräskompetenzen ermöglichen die Herstellung von Teilen mit höchster Präzision und Komplexität. Wir verwenden moderne Ausrüstung, die eine einwandfreie Zuverlässigkeit der Endprodukte gewährleistet.",
-        "image": "/assets/frezerni-roboty2.jpeg"
+        "image": "/assets/frezerni-roboty2.webp"
       },
       {
         "title": "Kapazitäten für große und kleine Teile. In unserem Maschinenpark:",
@@ -181,7 +181,7 @@
           { "description": "Horizontale Maschinen mit schneller Tischwechselmöglichkeit" },
           { "description": "Portal-5-Achs-Zentren zur Bearbeitung von Teilen bis zu 2000×4000 mm." }
         ],
-        "image": "/assets/frezerni-roboty3.jpeg"
+        "image": "/assets/frezerni-roboty3.webp"
       },
       {
         "title": "Komplette Bearbeitung",
@@ -191,7 +191,7 @@
       {
         "title": "Zusätzliche Möglichkeiten",
         "description": "Unsere Technologien eignen sich sowohl für die Erstellung komplexer 3D-Strukturen für innovative Projekte als auch für die Herstellung einfacher und standardmäßiger Teile für eine Vielzahl von Aufgaben. Wir bearbeiten jede Anfrage, unabhängig von ihrer Komplexität.",
-        "image": "/assets/frezerni-roboty5.jpg"
+        "image": "/assets/frezerni-roboty5.webp"
       }
     ],
     "ourEquipmentTitle": "UNSERE AUSRÜSTUNG",
@@ -244,28 +244,28 @@
       {
         "title": "Stärkung und Langlebigkeit der Teile",
         "description": "Wir sind auf die Wärmebehandlung von Metallen spezialisiert, die optimale mechanische Eigenschaften für Ihre Teile gewährleistet. Unsere Technologien sorgen für die erforderliche Festigkeit und Langlebigkeit.",
-        "image": "/assets/termichna-obrobka2.jpeg"
+        "image": "/assets/termichna-obrobka2.webp"
       },
       {
         "title": "Einzigartige Möglichkeiten. Wir nutzen:",
         "list": [{ "description": "Elektrische Öfen" }, { "description": "Gasöfen" }, { "description": "Induktionsheizungsanlagen" }],
-        "image": "/assets/termichna-obrobka3.jpeg"
+        "image": "/assets/termichna-obrobka3.webp"
       },
       {
         "title": "Umfassender Service",
         "description": "Von der ersten Bearbeitung bis zur finalen Veredelung — wir begleiten jede Phase, damit Sie ein Fertigteil von höchster Qualität erhalten.",
-        "image": "/assets/termichna-obrobka4.jpeg"
+        "image": "/assets/termichna-obrobka4.webp"
       },
       {
         "title": "Spezialisierte Technologien",
         "description": "Wir wenden fortschrittliche Verarbeitungsmethoden an, um Teile zu erstellen, die den strengsten Anforderungen und Standards entsprechen.",
-        "image": "/assets/termichna-obrobka5.jpeg"
+        "image": "/assets/termichna-obrobka5.webp"
       }
     ],
     "callToAction": "Senden Sie jetzt Ihre Anfrage, und Ihre Produkte werden zum Maßstab für Zuverlässigkeit!"
   },
   "lazernaRizkaPage": {
-    "srcImg": "/assets/lazerna-rizka.jpeg",
+    "srcImg": "/assets/lazerna-rizka.webp",
     "title": "LASERSCHNEIDEN MIT CNC",
     "descriptionTop": "Die von uns verwendete Laserschneidtechnologie garantiert perfekte Präzision und Sauberkeit der Verarbeitung. Wir arbeiten mit verschiedenen Materialien und gewährleisten ausgezeichnete Ergebnisse, selbst bei komplexen Aufgaben.",
     "descriptionBottom": "Ihre Teile verdienen die beste Qualität. Wir garantieren sie für Sie.",
@@ -273,28 +273,28 @@
       {
         "title": "Moderne Schneidtechnologien",
         "description": "Unsere Lasermaschinen gewährleisten eine makellose Präzision der Bearbeitung, die für komplexe geometrische Strukturen und hochpräzise Aufgaben erforderlich ist.",
-        "image": "/assets/lazerna-rizka2.jpeg"
+        "image": "/assets/lazerna-rizka2.webp"
       },
       {
         "title": "Kapazitäten für jede Aufgabe",
         "description": "Wir schneiden Metalle bis zu einer Dicke von 20 mm und bearbeiten große Rohlinge. Die Prozessautomatisierung ermöglicht es uns, selbst große Aufträge in kurzer Zeit abzuwickeln.",
-        "image": "/assets/lazerna-rizka3.jpeg"
+        "image": "/assets/lazerna-rizka3.webp"
       },
       {
         "title": "Umfassende Dienstleistungen",
         "description": "Sie erhalten Teile, die ohne zusätzliche Bearbeitung sofort weiterverwendet werden können. Wir bieten einen vollständigen Zyklus der Lasermetallbearbeitung.",
-        "image": "/assets/lazerna-rizka4.jpeg"
+        "image": "/assets/lazerna-rizka4.webp"
       },
       {
         "title": "Herstellung funktionaler Komponenten",
         "description": "Unsere Technologien ermöglichen die Herstellung von Teilen jeder Komplexität, unter Berücksichtigung der kleinsten technischen Anforderungen und Projektspezifikationen.",
-        "image": "/assets/lazerna-rizka5.jpeg"
+        "image": "/assets/lazerna-rizka5.webp"
       }
     ],
     "callToAction": "Bestellen Sie Laserschneiden bei uns und erleben Sie unseren Professionalismus in Aktion!"
   },
   "shlifovkaMetaluPage": {
-    "srcImg": "/assets/shlifovka-metalu.jpeg",
+    "srcImg": "/assets/shlifovka-metalu.webp",
     "title": "Metallschleifen",
     "descriptionTop": "Wir bieten hochpräzises Schleifen von Oberflächen und erreichen dabei perfekte Glätte. Unsere Spezialisten und moderne Ausrüstung gewährleisten Qualität selbst bei den schwierigsten Aufgaben.",
     "descriptionBottom": "Möchten Sie perfekt bearbeitete Teile? Wir wissen, wie das geht.",
@@ -302,7 +302,7 @@
       {
         "title": "Perfekte Sauberkeit und Präzision",
         "description": "Wir bieten hochwertiges Schleifen, um Teile mit perfekt glatten Oberflächen und hoher Präzision gemäß Ihren technischen Anforderungen herzustellen.",
-        "image": "/assets/shlifovka-metalu2.jpeg"
+        "image": "/assets/shlifovka-metalu2.webp"
       },
       {
         "title": "Große Auswahl an Ausrüstung. Unser Bestand umfasst:",
@@ -311,23 +311,23 @@
           { "description": "Spitzenlose Schleifmaschinen" },
           { "description": "Ausrüstung für Innen- und Gewindeschleifen" }
         ],
-        "image": "/assets/shlifovka-metalu3.jpeg"
+        "image": "/assets/shlifovka-metalu3.webp"
       },
       {
         "title": "Komplette Bearbeitung",
         "description": "Wir übernehmen den gesamten Bearbeitungszyklus, damit Sie Produkte erhalten, die all Ihren Erwartungen und Standards entsprechen.",
-        "image": "/assets/shlifovka-metalu4.jpeg"
+        "image": "/assets/shlifovka-metalu4.webp"
       },
       {
         "title": "Spezialisierte Lösungen",
         "description": "Wir bearbeiten nicht standardisierte Oberflächen und komplexe Elemente und stellen sicher, dass sie den höchsten Anforderungen entsprechen.",
-        "image": "/assets/shlifovka-metalu5.jpeg"
+        "image": "/assets/shlifovka-metalu5.webp"
       }
     ],
     "callToAction": "Vertrauen Sie uns Ihre Aufträge an und erleben Sie makellose Qualität!"
   },
   "piskostruminniRoboty": {
-    "srcImg": "/assets/piskostruminni-roboty.jpeg",
+    "srcImg": "/assets/piskostruminni-roboty.webp",
     "title": "SANDBLÄSTEN",
     "descriptionTop": "Effektive Reinigung von Oberflächen von Verunreinigungen und Korrosion ist unsere Spezialität. Moderne Ausrüstung und fortschrittliche Technologien ermöglichen es uns, die besten Ergebnisse für verschiedene Materialarten zu erzielen.",
     "descriptionBottom": "Wählen Sie Qualität und Professionalität für das Sandstrahlen. Wir sind bereit für Ihre Aufgaben.",
@@ -335,7 +335,7 @@
       {
         "title": "Effektive Reinigung für perfekte Ergebnisse",
         "description": "Wir bieten eine breite Palette von Sandstrahl-Dienstleistungen an, die Verunreinigungen, Korrosion und alte Beschichtungen von jedem Material entfernen.",
-        "image": "/assets/piskostruminni-roboty2.jpeg"
+        "image": "/assets/piskostruminni-roboty2.webp"
       },
       {
         "title": "Technologisches Arsenal. Unsere Möglichkeiten umfassen:",
@@ -350,17 +350,17 @@
             "description": "Laserreinigung"
           }
         ],
-        "image": "/assets/piskostruminni-roboty3.jpeg"
+        "image": "/assets/piskostruminni-roboty3.webp"
       },
       {
         "title": "Umfassender Ansatz",
         "description": "Wir bieten einen vollständigen Verarbeitungszyklus, sodass Sie ein fertiges Produkt erhalten, das Ihren Erwartungen voll entspricht.",
-        "image": "/assets/piskostruminni-roboty4.jpeg"
+        "image": "/assets/piskostruminni-roboty4.webp"
       },
       {
         "title": "Einzigartige Fähigkeiten",
         "description": "Wir bieten einen vollständigen Reinigungsservicezyklus, sodass Sie fertige Teile erhalten, ohne andere Auftragnehmer zu kontaktieren.",
-        "image": "/assets/piskostruminni-roboty5.jpeg"
+        "image": "/assets/piskostruminni-roboty5.webp"
       }
     ],
     "callToAction": "Bestellen Sie die Bearbeitung bei uns und überzeugen Sie sich davon, dass Ihre Produkte makellos aussehen werden!"
@@ -370,15 +370,15 @@
     "listOrderBenefits": [
       {
         "title": "Bereit für große Mengen – wir gewährleisten einen reibungslosen Betrieb auch bei Großaufträgen.",
-        "icon": "/assets/cylinder.png"
+        "icon": "/assets/cylinder.webp"
       },
       {
         "title": "Mehr als 300 CNC-Maschinen – moderne Ausrüstung garantiert Präzision, Qualität und Geschwindigkeit.",
-        "icon": "/assets/gears.png"
+        "icon": "/assets/gears.webp"
       },
       {
         "title": "Flexible Lieferzeiten – wir arbeiten schnell und immer pünktlich!",
-        "icon": "/assets/clock-time.png"
+        "icon": "/assets/clock-time.webp"
       }
     ]
   },
@@ -459,7 +459,7 @@
     }
   ],
   "zaliznychniZapchastynyPage": {
-    "srcImg": "/assets/zaliznychni-zapchastyny.jpeg",
+    "srcImg": "/assets/zaliznychni-zapchastyny.webp",
     "title": "Herstellung von Komponenten für Eisenbahninfrastruktur",
     "descriptionTop": "QPart spezialisiert sich auf die Herstellung von hochwertigen Komponenten für die Eisenbahninfrastruktur. Wir gewährleisten die Produktion von verschiedenen Komponenten, die allen modernen Sicherheits- und Betriebsstandards entsprechen.",
     "descriptionBottom": "Unsere Lösungen eignen sich sowohl für die Modernisierung bestehender Systeme als auch für den Bau neuer Eisenbahnanlagen.",
@@ -517,7 +517,7 @@
     "answer": "Wir fertigen sie nach Ihren Anforderungen, unter Berücksichtigung aller Vorgaben!"
   },
   "zapchastynyDlyaSilhosptekhnikyPage": {
-    "srcImg": "/assets/zapchastyny-dlya-silhosptekhniky.jpeg",
+    "srcImg": "/assets/zapchastyny-dlya-silhosptekhniky.webp",
     "title": "Herstellung von Ersatzteilen für landwirtschaftliche Maschinen",
     "descriptionTop": "Unser Unternehmen ist auf die Herstellung hochwertiger Ersatzteile für landwirtschaftliche Maschinen spezialisiert, wobei die Bedürfnisse der Landwirte und die Besonderheiten moderner Landtechnik berücksichtigt werden.",
     "descriptionBottom": "Wir bieten ein breites Sortiment an Teilen, die für verschiedene Maschinentypen geeignet sind und einen störungsfreien Betrieb auch unter schwierigsten Bedingungen gewährleisten. Statten Sie Ihre Maschinen mit hochwertigen Ersatzteilen aus.",

@@ -1,10 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import {
-  withStaticProps,
-  withStaticPaths,
-  PageProps,
-  ServicesComponentProps,
-} from '../../../context/withStaticPathsAndProps';
+import { withStaticProps, withStaticPaths, PageProps, ServicesComponentProps } from '../../../context/withStaticPathsAndProps';
 import { useTheme } from '@mui/material';
 import { darkTheme, lightTheme } from '@/theme';
 import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
@@ -38,7 +33,7 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
         description={translationsPage.descriptionTop}
         keywords={translationsPage.title}
         canonical={fullUrl}
-        imgOg="/assets/piskostruminni-roboty.jpeg"
+        imgOg="/assets/piskostruminni-roboty.webp"
         lang={lang}
         localeOg={translations.locale}
       />

@@ -38,7 +38,7 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
         description={translationsPage.descriptionTop}
         keywords={translationsPage.title}
         canonical={fullUrl}
-        imgOg="/assets/zapchastyny-dlya-silhosptekhniky.jpeg"
+        imgOg="/assets/zapchastyny-dlya-silhosptekhniky.webp"
         lang={lang}
         localeOg={translations.locale}
       />
@@ -49,7 +49,7 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
         lang={lang}
         btnText={translations.btnSend}
         heading={translationsPage.servicesTitle}
-        imgSrc="/assets/zapchastyny-dlya-silhosptekhniky2.jpeg"
+        imgSrc="/assets/zapchastyny-dlya-silhosptekhniky2.webp"
         list={listServices}
       />
 

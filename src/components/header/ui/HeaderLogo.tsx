@@ -9,7 +9,7 @@ const HeaderLogo = () => {
   return (
     <Link href={`/${currentLang}`}>
       <Image
-        src="/logo.png"
+        src="/logo.webp"
         alt="Логотип сайта"
         width={120}
         height={40}

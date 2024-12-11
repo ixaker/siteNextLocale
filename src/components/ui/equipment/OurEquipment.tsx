@@ -10,8 +10,8 @@ const OurEquipment: React.FC<ServicesComponentProps> = (componentProps) => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
+    // autoplay: true,
+    // autoplaySpeed: 3000,
     arrows: false,
     responsive: [
       {
@@ -38,12 +38,19 @@ const OurEquipment: React.FC<ServicesComponentProps> = (componentProps) => {
         {ourEquipment.map((item, index) => (
           <div
             key={index}
-            className="group relative flex flex-col items-center bg-white rounded-t-lg shadow-lg p-5 transition-transform duration-300 hover:scale-105"
+            className="group relative flex flex-col items-center justify-center bg-white rounded-t-lg shadow-lg  transition-transform duration-300 hover:scale-105"
           >
-            <div className="w-full h-[400px] overflow-hidden rounded-t-lg mb-4">
-              <Image src={item.image} alt={item.title} layout="fill" objectFit="cover" className="rounded-t-lg bg-[#a5928e52]" />
+            <div className="rounded-t-lg h-[300px] flex flex-col items-center justify-center">
+              <Image
+                src={item.image}
+                alt={item.title}
+                width={300}
+                height={300}
+                objectFit="cover"
+                className="rounded-t-lg bg-[white] w-[auto] h-[250px] mb-[50px]"
+              />
             </div>
-            <div className="absolute bottom-0 left-0 w-full h-[12%] group-hover:h-[50%] bg-black bg-opacity-75 transition-all duration-300 rounded-t-lg px-4 py-4 flex flex-col items-center ">
+            <div className="absolute bottom-0 left-0 w-full h-[17%] group-hover:h-[70%] bg-black bg-opacity-75 transition-all duration-300 rounded-t-lg px-4 py-4 flex flex-col items-center ">
               <Paragraph style="text-white font-semibold text-md" text={item.title} alignment="center" />
               <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-4">
                 {item.description.map((desc, descIndex) => (

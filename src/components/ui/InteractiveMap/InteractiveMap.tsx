@@ -44,7 +44,7 @@ const InteractiveMap: React.FC<Props> = ({ companyLocation, ourLocation, buildRo
     <>
       <Image
         className=" w-full h-full absolute"
-        src={`/assets/LaptopContacts.png?v=${new Date().getTime()}`}
+        src={`/assets/LaptopContacts.webp?v=${new Date().getTime()}`}
         alt="Laptop"
         width={100}
         height={100}
