@@ -13,13 +13,6 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
   const translationsPage = translations.lazernaRizkaPage;
   const cardList = translationsPage.infoCard;
   const theme = useTheme();
-
-  const componentProps: ServicesComponentProps = { translations, lang, supportedLanguages, translationsPage };
-
-  const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
-  const bgColor = currentTheme.palette.background.default;
-  const secondaryColor = currentTheme.palette.secondary.main;
-
   const [fullUrl, setFullUrl] = useState('');
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -27,18 +20,15 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
     }
   }, [fullUrl]);
 
+  const componentProps: ServicesComponentProps = { translations, lang, supportedLanguages, translationsPage, fullUrl };
+
+  const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
+  const bgColor = currentTheme.palette.background.default;
+  const secondaryColor = currentTheme.palette.secondary.main;
+
   return (
     <div style={{ backgroundColor: bgColor, color: secondaryColor }}>
-      <DynamicHead
-        supportedLanguages={supportedLanguages}
-        title={translationsPage.title}
-        description={translationsPage.descriptionTop}
-        keywords={translationsPage.title}
-        canonical={fullUrl}
-        imgOg="/assets/lazerna-rizka.webp"
-        lang={lang}
-        localeOg={translations.locale}
-      />
+      <DynamicHead {...componentProps} />
       <InformationBlock {...componentProps} />
 
       <div className="sm:px-4 mt-6">

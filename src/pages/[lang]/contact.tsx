@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { withStaticProps, withStaticPaths, PageProps } from '../../context/withStaticPathsAndProps';
+import { withStaticProps, withStaticPaths, PageProps, ContactComponentsProps } from '../../context/withStaticPathsAndProps';
 import DynamicHead from '@/components/shared/DynamicHead';
 import { useEffect, useState } from 'react';
 import { useTheme } from '@mui/material';
@@ -21,6 +21,7 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
 
   const [fullUrl, setFullUrl] = useState('');
   const theme = useTheme();
+  const componentProps: ContactComponentsProps = { translations, lang, supportedLanguages, translationsPage, fullUrl };
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const secondaryColor = currentTheme.palette.secondary.main;
@@ -42,16 +43,7 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
 
   return (
     <>
-      <DynamicHead
-        supportedLanguages={supportedLanguages}
-        title={translationsPage.meta.title}
-        description={translationsPage.meta.description}
-        keywords={translationsPage.meta.keywords}
-        canonical={fullUrl}
-        imgOg={translationsPage.meta.imgOg}
-        lang={lang}
-        localeOg={translations.locale}
-      />
+      <DynamicHead {...componentProps} />
       <BackCover>
         <div
           className="min-w-screen min-h-[calc(100vh-140px)] flex flex-col justify-center pb-[20px] relative z-10"
@@ -65,11 +57,7 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
             <div className="mt-[20px] flex justify-center items-center ">
               <ul className="flex flex-col gap-10 w-auto">
                 <li className="flex gap-[30px] items-center">
-                  <a
-                    target="_blank"
-                    href="https://maps.app.goo.gl/jPbgbWosaTq8GeNe7"
-                    aria-label={translationsPage.address}
-                  >
+                  <a target="_blank" href="https://maps.app.goo.gl/jPbgbWosaTq8GeNe7" aria-label={translationsPage.address}>
                     <CustomButton
                       ariaLabel={translationsPage.address}
                       style={{ backgroundColor: primaryColor, boxShadow: `0 10px 30px ${secondaryColor}` }}
@@ -80,9 +68,7 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
                   </a>
                   <div className="flex flex-col">
                     <span className="text-[18px] font-bold md:text-[25px] ">{translationsPage.address}</span>
-                    <span className="text-[12px] font-extralight md:text-[15px]  ">
-                      {translationsPage.descriptionAddress}
-                    </span>
+                    <span className="text-[12px] font-extralight md:text-[15px]  ">{translationsPage.descriptionAddress}</span>
                   </div>
                 </li>
                 <li className="flex gap-[30px] items-center">
@@ -92,17 +78,12 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
                       style={{ backgroundColor: primaryColor, boxShadow: `0 10px 30px ${secondaryColor}` }}
                       variant="communication-button"
                     >
-                      <EmailIcon
-                        style={{ color: secondaryColor }}
-                        className="md:size-[35px] lg:size-[40px]"
-                      />
+                      <EmailIcon style={{ color: secondaryColor }} className="md:size-[35px] lg:size-[40px]" />
                     </CustomButton>
                   </a>
                   <div className="flex flex-col">
                     <span className="text-[18px] font-bold md:text-[25px] ">{translationsPage.email}</span>
-                    <span className="text-[12px] font-extralight md:text-[15px]  ">
-                      {translationsPage.descriptionEmail}
-                    </span>
+                    <span className="text-[12px] font-extralight md:text-[15px]  ">{translationsPage.descriptionEmail}</span>
                   </div>
                 </li>
                 <li className="flex gap-[30px] items-center">
@@ -112,17 +93,12 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
                       style={{ backgroundColor: primaryColor, boxShadow: `0 10px 30px ${secondaryColor}` }}
                       variant="communication-button"
                     >
-                      <PhoneIcon
-                        style={{ color: secondaryColor }}
-                        className="md:size-[35px] lg:size-[40px]"
-                      />
+                      <PhoneIcon style={{ color: secondaryColor }} className="md:size-[35px] lg:size-[40px]" />
                     </CustomButton>
                   </a>
                   <div className="flex flex-col">
                     <span className="text-[18px] font-bold md:text-[25px] ">{translationsPage.phone}</span>
-                    <span className="text-[12px] font-extralight md:text-[15px]  ">
-                      {translationsPage.descriptionPhone}
-                    </span>
+                    <span className="text-[12px] font-extralight md:text-[15px]  ">{translationsPage.descriptionPhone}</span>
                   </div>
                 </li>
               </ul>

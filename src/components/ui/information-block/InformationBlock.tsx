@@ -28,7 +28,7 @@ const InformationBlock: React.FC<ServicesComponentProps | ProductComponentProps>
             </div>
             <div className="w-full gap-4 sm:max-w-[60%] flex flex-col justify-around mr-4 mb-5 mt-5">
               <Heading style={` uppercase`} level="h2" text={translatiomsPage.title} alignment="left" />
-              <Paragraph text={translatiomsPage.descriptionTop} alignment="left" />
+              <Paragraph text={translatiomsPage.description} alignment="left" />
               <Paragraph text={translatiomsPage.descriptionBottom} alignment="left" />
               <div className="flex justify-start">
                 <ButtonSubmitDrawing lang={componentProps.lang} translations={componentProps.translations} />

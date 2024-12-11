@@ -13,7 +13,7 @@ export type NavigationMenu = {
 
 export type ServicesPage = {
   title: string;
-  descriptionTop: string;
+  description: string;
   descriptionBottom: string;
   infoCard: { title: string; description?: string; list?: { description: string }[]; image: string }[];
   callToAction: string;
@@ -23,10 +23,9 @@ export type ServicesPage = {
   ourEquipmentTitle: string;
   ourEquipment: { title: string; name: string; description: string[]; image: string }[];
 };
-
 export type ProductPage = {
   title: string;
-  descriptionTop: string;
+  description: string;
   descriptionBottom: string;
   servicesTitle: string;
   listServices: { description: string }[];
@@ -37,34 +36,41 @@ export type ProductPage = {
   srcImg: string;
 };
 
+export type HomePage = {
+  // meta: Meta;
+  srcImg: string;
+  title: string;
+  topTitle: string;
+  bottomTitle: string;
+  description: string;
+  h2: string;
+  h3: string;
+  descriptionCompany: string;
+};
+
+export type ContactPage = {
+  srcImg: string;
+  title: string;
+  address: string;
+  descriptionAddress: string;
+  email: string;
+  descriptionEmail: string;
+  phone: string;
+  descriptionPhone: string;
+  ourLocation: string;
+  buildRoute: string;
+  description: string;
+};
+
 export type CardData = { title: string; img: string; href: string };
 
 export type ListAdvantages = { description: string; icon: string };
 
 export type Translations = {
   locale: string;
-  homePage: {
-    meta: Meta;
-    topTitle: string;
-    bottomTitle: string;
-    description: string;
-    h2: string;
-    h3: string;
-    descriptionCompany: string;
-  };
+  homePage: HomePage;
   cardData: CardData[];
-  contactPage: {
-    meta: Meta;
-    title: string;
-    address: string;
-    descriptionAddress: string;
-    email: string;
-    descriptionEmail: string;
-    phone: string;
-    descriptionPhone: string;
-    ourLocation: string;
-    buildRoute: string;
-  };
+  contactPage: ContactPage;
   menu: [NavigationMenu];
   lazernaRizkaPage: ServicesPage;
 

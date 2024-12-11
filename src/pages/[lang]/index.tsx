@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { withStaticProps, withStaticPaths, PageProps } from '../../context/withStaticPathsAndProps';
+import { withStaticProps, withStaticPaths, PageProps, HomeComponentProps } from '../../context/withStaticPathsAndProps';
 import DynamicHead from '@/components/shared/DynamicHead';
 import { useEffect, useState } from 'react';
 import Card from '@/components/ui/card/Card';
@@ -17,6 +17,11 @@ import NavigationMap from '@/components/ui/navigation-map/NavigationMap';
 const Home: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) => {
   const [fullUrl, setFullUrl] = useState('');
   const theme = useTheme();
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setFullUrl(window.location.href);
+    }
+  }, [fullUrl]);
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
@@ -25,24 +30,11 @@ const Home: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
   const cardData = translations?.cardData || langUk.cardData;
   const translationsMenuService = translations.menu[0]?.subMenu;
 
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setFullUrl(window.location.href);
-    }
-  }, []);
+  const componentProps: HomeComponentProps = { translations, lang, supportedLanguages, translationsPage, fullUrl };
 
   return (
     <div style={{ backgroundColor: bgColor }}>
-      <DynamicHead
-        supportedLanguages={supportedLanguages}
-        title={translationsPage.meta.title}
-        description={translationsPage.meta.description}
-        keywords={translationsPage.meta.keywords}
-        canonical={fullUrl}
-        imgOg={translationsPage.meta.imgOg}
-        lang={lang}
-        localeOg={translations.locale}
-      />
+      <DynamicHead {...componentProps} />
       <BackCover>
         <div className="flex min-h-[inherit] pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6 relative z-10">
           <NavigationMap lang={lang} translationsMenuService={translationsMenuService || []} />

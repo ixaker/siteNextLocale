@@ -1,12 +1,8 @@
 {
   "locale": "de_DE",
   "homePage": {
-    "meta": {
-      "title": "Firma «QPART»",
-      "description": "Wir bieten Dienstleistungen in der Metallbearbeitung und der Herstellung von Teilen und Ersatzteilen jeglicher Komplexität an. Wir arbeiten nach den Zeichnungen des Kunden oder entwickeln bei Bedarf Konstruktions- und technische Dokumentationen von Grund auf neu. Fertige Produkte werden in die gesamte Ukraine sowie ins Ausland geliefert. Wir haben Erfahrung in der Zusammenarbeit mit ausländischen Unternehmen. ☎ +38 098 995 07 60.",
-      "keywords": "Metallbearbeitung, QPART, Herstellung von Teilen, CNC-Dreharbeiten, CNC-Fräsarbeiten, Wärmebehandlung, Metallguss",
-      "imgOg": "/logo.png"
-    },
+    "srcImg": "logo.webp",
+    "title": "QPART – wir bieten Dienstleistungen für die Metallbearbeitung und Herstellung von Teilen und Ersatzteilen beliebiger Komplexität. Kontaktieren Sie uns: +380989950760, info@qpart.com.ua",
     "topTitle": "WIR STELLEN PRODUKTE HER",
     "bottomTitle": "JEDER KOMPLEXITÄT",
     "description": "DREH- UND FRÄSARBEITEN AN CNC-MASCHINEN",
@@ -16,7 +12,7 @@
   "tokarniRobotyChpkPage": {
     "srcImg": "/assets/tokarni-roboty-chpk.webp",
     "title": "CNC-DREHEN",
-    "descriptionTop": "Wir tun, was andere für unmöglich halten. Eine große Flotte von CNC-Maschinen, moderne Technologien und ein Team von Profis ermöglichen es uns, Teile jeder Komplexität und Menge zu fertigen.",
+    "description": "Wir tun, was andere für unmöglich halten. Eine große Flotte von CNC-Maschinen, moderne Technologien und ein Team von Profis ermöglichen es uns, Teile jeder Komplexität und Menge zu fertigen.",
     "descriptionBottom": "Suchen Sie einen Partner, der große Serien, komplexe Formen und enge Fristen bewältigen kann? Sie haben ihn gefunden.",
     "infoCard": [
       {
@@ -84,7 +80,7 @@
   "zvaryuvannyaMetaluPage": {
     "srcImg": "/assets/zvaryuvannya-metalu.webp",
     "title": "Metallschweißen",
-    "descriptionTop": "Schweißarbeiten jeder Komplexität werden dank unserer fortschrittlichen Technik und innovativen Ansätze Realität. Wir gewährleisten die Präzision, Festigkeit und Zuverlässigkeit jeder Naht, unabhängig vom Umfang und Typ des Metalls.",
+    "description": "Schweißarbeiten jeder Komplexität werden dank unserer fortschrittlichen Technik und innovativen Ansätze Realität. Wir gewährleisten die Präzision, Festigkeit und Zuverlässigkeit jeder Naht, unabhängig vom Umfang und Typ des Metalls.",
     "descriptionBottom": "Benötigen Sie qualitativ hochwertiges Schweißen? Wir sind bereit, Ihnen bei der Umsetzung auch der komplexesten Ideen zu helfen.",
     "infoCard": [
       {
@@ -118,7 +114,7 @@
   "porizkaNaVerstati": {
     "srcImg": "/assets/porizka-na-verstati.webp",
     "title": "BANDSÄGENSCHNEIDEN",
-    "descriptionTop": "Wir bieten professionelle Metallbearbeitung mit CNC-Ausrüstung, die hohe Geschwindigkeit und perfekte Ergebnisse garantiert. Unsere Lösungen sind ideal für die Verarbeitung großer Materialmengen und gewährleisten die Präzision jedes Schnitts.",
+    "description": "Wir bieten professionelle Metallbearbeitung mit CNC-Ausrüstung, die hohe Geschwindigkeit und perfekte Ergebnisse garantiert. Unsere Lösungen sind ideal für die Verarbeitung großer Materialmengen und gewährleisten die Präzision jedes Schnitts.",
     "descriptionBottom": "Suchen Sie einen Partner für zuverlässiges Metallschneiden? Wir sind immer bereit zur Zusammenarbeit.",
     "infoCard": [
       {
@@ -147,7 +143,7 @@
   "lyttyaMetaluPage": {
     "srcImg": "/assets/lyttya-metalu.webp",
     "title": "Metallgießen",
-    "descriptionTop": "Moderne Gießtechnologien helfen uns, komplexe und zuverlässige Teile aus verschiedenen Materialien herzustellen. Wir gewährleisten Qualität in jeder Produktionsphase und garantieren die Einhaltung der höchsten Standards.",
+    "description": "Moderne Gießtechnologien helfen uns, komplexe und zuverlässige Teile aus verschiedenen Materialien herzustellen. Wir gewährleisten Qualität in jeder Produktionsphase und garantieren die Einhaltung der höchsten Standards.",
     "descriptionBottom": "Suchen Sie Spezialisten für komplexe Gussprodukte? Wir setzen Ihre Idee in die Realität um.",
     "infoCard": [
       {
@@ -181,7 +177,7 @@
   "frezerniRoboty": {
     "srcImg": "/assets/frezerni-roboty.webp",
     "title": "CNC-FRÄSBEARBEITUNG",
-    "descriptionTop": "Unsere CNC-Zentren führen Fräsarbeiten mit hoher Präzision aus, selbst bei den komplexesten Teilen. Fachkompetenz und moderne Ausstattung ermöglichen es uns, große Chargen und nicht standardisierte Formen zu bearbeiten.",
+    "description": "Unsere CNC-Zentren führen Fräsarbeiten mit hoher Präzision aus, selbst bei den komplexesten Teilen. Fachkompetenz und moderne Ausstattung ermöglichen es uns, große Chargen und nicht standardisierte Formen zu bearbeiten.",
     "descriptionBottom": "Suchen Sie einen Partner, dem Sie komplexe Aufgaben anvertrauen können? Wir sind bereit, für Ihren Erfolg zu arbeiten.",
     "infoCard": [
       {
@@ -235,7 +231,7 @@
   "termichnaObrobkaPage": {
     "srcImg": "/assets/termichna-obrobka.webp",
     "title": "WÄRMEBEHANDLUNG",
-    "descriptionTop": "Wir gewährleisten eine hochwertige Wärmebehandlung von Metallen dank modernster Ausrüstung und einem erfahrenen Team. Ihre Produkte erhalten die erforderliche Festigkeit, Langlebigkeit und Normenkonformität.",
+    "description": "Wir gewährleisten eine hochwertige Wärmebehandlung von Metallen dank modernster Ausrüstung und einem erfahrenen Team. Ihre Produkte erhalten die erforderliche Festigkeit, Langlebigkeit und Normenkonformität.",
     "descriptionBottom": "Suchen Sie einen zuverlässigen Partner für die Wärmebehandlung? Wir bieten Lösungen, die funktionieren.",
     "infoCard": [
       {
@@ -264,7 +260,7 @@
   "lazernaRizkaPage": {
     "srcImg": "/assets/lazerna-rizka.webp",
     "title": "LASERSCHNEIDEN MIT CNC",
-    "descriptionTop": "Die von uns verwendete Laserschneidtechnologie garantiert perfekte Präzision und Sauberkeit der Verarbeitung. Wir arbeiten mit verschiedenen Materialien und gewährleisten ausgezeichnete Ergebnisse, selbst bei komplexen Aufgaben.",
+    "description": "Die von uns verwendete Laserschneidtechnologie garantiert perfekte Präzision und Sauberkeit der Verarbeitung. Wir arbeiten mit verschiedenen Materialien und gewährleisten ausgezeichnete Ergebnisse, selbst bei komplexen Aufgaben.",
     "descriptionBottom": "Ihre Teile verdienen die beste Qualität. Wir garantieren sie für Sie.",
     "infoCard": [
       {
@@ -293,7 +289,7 @@
   "shlifovkaMetaluPage": {
     "srcImg": "/assets/shlifovka-metalu.webp",
     "title": "Metallschleifen",
-    "descriptionTop": "Wir bieten hochpräzises Schleifen von Oberflächen und erreichen dabei perfekte Glätte. Unsere Spezialisten und moderne Ausrüstung gewährleisten Qualität selbst bei den schwierigsten Aufgaben.",
+    "description": "Wir bieten hochpräzises Schleifen von Oberflächen und erreichen dabei perfekte Glätte. Unsere Spezialisten und moderne Ausrüstung gewährleisten Qualität selbst bei den schwierigsten Aufgaben.",
     "descriptionBottom": "Möchten Sie perfekt bearbeitete Teile? Wir wissen, wie das geht.",
     "infoCard": [
       {
@@ -326,7 +322,7 @@
   "piskostruminniRoboty": {
     "srcImg": "/assets/piskostruminni-roboty.webp",
     "title": "SANDBLÄSTEN",
-    "descriptionTop": "Effektive Reinigung von Oberflächen von Verunreinigungen und Korrosion ist unsere Spezialität. Moderne Ausrüstung und fortschrittliche Technologien ermöglichen es uns, die besten Ergebnisse für verschiedene Materialarten zu erzielen.",
+    "description": "Effektive Reinigung von Oberflächen von Verunreinigungen und Korrosion ist unsere Spezialität. Moderne Ausrüstung und fortschrittliche Technologien ermöglichen es uns, die besten Ergebnisse für verschiedene Materialarten zu erzielen.",
     "descriptionBottom": "Wählen Sie Qualität und Professionalität für das Sandstrahlen. Wir sind bereit für Ihre Aufgaben.",
     "infoCard": [
       {
@@ -458,7 +454,7 @@
   "zaliznychniZapchastynyPage": {
     "srcImg": "/assets/zaliznychni-zapchastyny.webp",
     "title": "Herstellung von Komponenten für Eisenbahninfrastruktur",
-    "descriptionTop": "QPart spezialisiert sich auf die Herstellung von hochwertigen Komponenten für die Eisenbahninfrastruktur. Wir gewährleisten die Produktion von verschiedenen Komponenten, die allen modernen Sicherheits- und Betriebsstandards entsprechen.",
+    "description": "QPart spezialisiert sich auf die Herstellung von hochwertigen Komponenten für die Eisenbahninfrastruktur. Wir gewährleisten die Produktion von verschiedenen Komponenten, die allen modernen Sicherheits- und Betriebsstandards entsprechen.",
     "descriptionBottom": "Unsere Lösungen eignen sich sowohl für die Modernisierung bestehender Systeme als auch für den Bau neuer Eisenbahnanlagen.",
     "servicesTitle": "Unsere Vorteile",
     "listServices": [
@@ -516,7 +512,7 @@
   "zapchastynyDlyaSilhosptekhnikyPage": {
     "srcImg": "/assets/zapchastyny-dlya-silhosptekhniky.webp",
     "title": "Herstellung von Ersatzteilen für landwirtschaftliche Maschinen",
-    "descriptionTop": "Unser Unternehmen ist auf die Herstellung hochwertiger Ersatzteile für landwirtschaftliche Maschinen spezialisiert, wobei die Bedürfnisse der Landwirte und die Besonderheiten moderner Landtechnik berücksichtigt werden.",
+    "description": "Unser Unternehmen ist auf die Herstellung hochwertiger Ersatzteile für landwirtschaftliche Maschinen spezialisiert, wobei die Bedürfnisse der Landwirte und die Besonderheiten moderner Landtechnik berücksichtigt werden.",
     "descriptionBottom": "Wir bieten ein breites Sortiment an Teilen, die für verschiedene Maschinentypen geeignet sind und einen störungsfreien Betrieb auch unter schwierigsten Bedingungen gewährleisten. Statten Sie Ihre Maschinen mit hochwertigen Ersatzteilen aus.",
     "servicesTitle": "Unsere Vorteile:",
     "listServices": [

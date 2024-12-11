@@ -1,7 +1,7 @@
 import { GetStaticPropsContext, GetStaticPropsResult, GetStaticPaths } from 'next';
 import path from 'path';
 import fs from 'fs';
-import { ProductPage, ServicesPage, Translations } from '../../locales/types';
+import { ContactPage, HomePage, ProductPage, ServicesPage, Translations } from '../../locales/types';
 
 export const getDefaultLanguage = (langFromUrl?: string): string => {
   const defaultLanguage = 'uk';
@@ -63,6 +63,7 @@ export type ServicesComponentProps = {
   lang: string;
   supportedLanguages: string[];
   translationsPage: ServicesPage;
+  fullUrl: string;
 };
 
 export type ProductComponentProps = {
@@ -70,6 +71,23 @@ export type ProductComponentProps = {
   lang: string;
   supportedLanguages: string[];
   translationsPage: ProductPage;
+  fullUrl: string;
+};
+
+export type HomeComponentProps = {
+  translations: Translations;
+  lang: string;
+  supportedLanguages: string[];
+  translationsPage: HomePage;
+  fullUrl: string;
+};
+
+export type ContactComponentsProps = {
+  translations: Translations;
+  lang: string;
+  supportedLanguages: string[];
+  translationsPage: ContactPage;
+  fullUrl: string;
 };
 // Функция для создания путей
 export const withStaticPaths: GetStaticPaths = async () => {

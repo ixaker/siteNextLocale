@@ -14,7 +14,14 @@ import InformationBlock from '@/components/ui/information-block/InformationBlock
 const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) => {
   const translationsPage = translations.zapchastynyDlyaSilhosptekhnikyPage;
   const theme = useTheme();
-  const componentProps: ProductComponentProps = { translations, lang, supportedLanguages, translationsPage };
+  const [fullUrl, setFullUrl] = useState('');
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setFullUrl(window.location.href);
+    }
+  }, [fullUrl]);
+
+  const componentProps: ProductComponentProps = { translations, lang, supportedLanguages, translationsPage, fullUrl };
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const bgColor = currentTheme.palette.background.default;
   const secondaryColor = currentTheme.palette.secondary.main;
@@ -23,25 +30,9 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
   const orderBenefits = translations.orderBenefits.listOrderBenefits;
   const listPeculiarities = translationsPage.listPeculiarities;
 
-  const [fullUrl, setFullUrl] = useState('');
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setFullUrl(window.location.href);
-    }
-  }, [fullUrl]);
-
   return (
     <section style={{ backgroundColor: bgColor, color: secondaryColor }}>
-      <DynamicHead
-        supportedLanguages={supportedLanguages}
-        title={translationsPage.title}
-        description={translationsPage.descriptionTop}
-        keywords={translationsPage.title}
-        canonical={fullUrl}
-        imgOg="/assets/zapchastyny-dlya-silhosptekhniky.webp"
-        lang={lang}
-        localeOg={translations.locale}
-      />
+      <DynamicHead {...componentProps} />
       <InformationBlock {...componentProps} />
 
       <ServiceBlock
