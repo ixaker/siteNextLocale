@@ -1,7 +1,7 @@
 {
   "locale": "de_DE",
   "homePage": {
-    "srcImg": "logo.webp",
+    "srcImg": "/logo.webp",
     "title": "QPART – wir bieten Dienstleistungen für die Metallbearbeitung und Herstellung von Teilen und Ersatzteilen beliebiger Komplexität. Kontaktieren Sie uns: +380989950760, info@qpart.com.ua",
     "topTitle": "WIR STELLEN PRODUKTE HER",
     "bottomTitle": "JEDER KOMPLEXITÄT",
@@ -236,7 +236,7 @@
     "infoCard": [
       {
         "title": "Stärkung und Langlebigkeit der Teile",
-        "description": "Wir sind auf die Wärmebehandlung von Metallen spezialisiert, die optimale mechanische Eigenschaften für Ihre Teile gewährleistet. Unsere Technologien sorgen für die erforderliche Festigkeit und Langlebigkeit.",
+        "description": "Wir sind auf die thermische Bearbeitung von Metall spezialisiert, um eine optimale mechanische Festigkeit Ihrer Teile zu gewährleisten. Unsere Technologien sorgen für das nötige Maß an Leistung und Zuverlässigkeit.",
         "image": "/assets/termichna-obrobka2.webp"
       },
       {

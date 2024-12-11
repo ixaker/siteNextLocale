@@ -1,7 +1,7 @@
 {
   "locale": "en_US",
   "homePage": {
-    "srcImg": "logo.webp",
+    "srcImg": "/logo.webp",
     "title": "QPART – we provide services for metalworking and production of parts and spare parts of any complexity. Contact us: +380989950760, info@qpart.com.ua",
     "topTitle": "WE MANUFACTURE PRODUCTS",
     "bottomTitle": "OF ANY COMPLEXITY",
@@ -236,7 +236,7 @@
     "infoCard": [
       {
         "title": "Strengthening and Durability of Parts",
-        "description": "We specialize in metal heat treatment that provides optimal mechanical properties for your parts. Our technologies ensure the required strength and durability.",
+        "description": "We specialize in thermal processing of metal to ensure optimal mechanical performance for your parts. Our technologies provide the necessary level of strength and reliability.",
         "image": "/assets/termichna-obrobka2.webp"
       },
       {

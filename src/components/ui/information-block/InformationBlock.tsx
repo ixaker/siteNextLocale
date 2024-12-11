@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Heading from '../typography/Heading';
 import Paragraph from '../typography/Paragraph';
 import NavigationMap from '../navigation-map/NavigationMap';
 import ButtonSubmitDrawing from '../button/ButtonSubmitDrawing';
@@ -27,7 +26,7 @@ const InformationBlock: React.FC<ServicesComponentProps | ProductComponentProps>
               />
             </div>
             <div className="w-full gap-4 sm:max-w-[60%] flex flex-col justify-around mr-4 mb-5 mt-5">
-              <Heading style={` uppercase`} level="h2" text={translatiomsPage.title} alignment="left" />
+              <h1 className="uppercase md:text-xl lg:ttext-2xl xl:text-4xl font-semibold">{translatiomsPage.title}</h1>
               <Paragraph text={translatiomsPage.description} alignment="left" />
               <Paragraph text={translatiomsPage.descriptionBottom} alignment="left" />
               <div className="flex justify-start">
