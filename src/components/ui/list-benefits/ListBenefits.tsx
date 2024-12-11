@@ -11,9 +11,7 @@ interface ListBenefitsProps {
 const ListBenefits: React.FC<ListBenefitsProps> = ({ heading, orderBenefits }) => {
   return (
     <section>
-      {heading && heading.trim() !== '' && (
-        <Heading level="h2" text={`${heading} :`} alignment="center" style="mt-[20px]" />
-      )}
+      {heading && heading.trim() !== '' && <Heading level="h2" text={`${heading} :`} alignment="center" style="mt-[20px]" />}
       <div className="py-[30px]">
         <div className="md:hidden">
           <Carousel slides={orderBenefits} />
@@ -22,14 +20,8 @@ const ListBenefits: React.FC<ListBenefitsProps> = ({ heading, orderBenefits }) =
           <ul className="flex gap-1">
             {orderBenefits.map((item, index) => (
               <li className="flex items-center gap-3" key={index}>
-                <Image
-                  alt="icon"
-                  src={item.icon}
-                  width={100}
-                  height={100}
-                  className="size-[50px] lg:size-[60px] xl:size-[100px]"
-                />
-                <Paragraph text={item.title} />
+                <Image alt="icon" src={item.icon} width={100} height={100} className="size-[50px] lg:size-[60px] xl:size-[100px]" loading="lazy" />
+                <Paragraph text={item.title} style={`transition-opacity duration-700 delay-[200ms]`} />
               </li>
             ))}
           </ul>

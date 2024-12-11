@@ -43,25 +43,40 @@
     "ourEquipmentTitle": "OUR EQUIPMENT",
     "ourEquipment": [
       {
-        "title": "HURCO BMC 4020HT",
-        "description": ["X-axis: 1020 mm", "Y-axis: 510 mm", "Z-axis: 610 mm", "Table length: 1220 mm", "Table width: 510 mm"],
-        "image": "/assets/hurco-bmc-4020ht.webp"
-      },
-      {
-        "title": "KRYLE VMC 700",
-        "description": ["X-axis: 700 mm", "Y-axis: 450 mm", "Z-axis: 450 mm", "Table length: 1000 mm", "Table width: 480 mm"],
-        "image": "/assets/kryle-vmv-700.webp"
-      },
-      {
-        "title": "Fadal 904-1 VMC 3016 CNC Vertical",
+        "title": "CNC Turning and Milling Center",
+        "name": "Boehringer VDF 250C-U",
         "description": [
-          "Table size: 39″ x 16″",
-          "Table load capacity: 2736 lbs",
-          "X-axis travel: 30 inches",
-          "Y-axis travel: 16 inches",
-          "Z-axis travel: 20 inches"
+          "Processing length: 100 mm",
+          "Processing diameter in chuck: 400 mm",
+          "X-axis travel: 225 mm",
+          "Z-axis travel: 600 mm",
+          "Spindle bore diameter: 78 mm."
         ],
-        "image": "/assets/fadal-904-1-vmc-3016-cnc.webp"
+        "image": "/assets/vdf-250c-u.webp"
+      },
+      {
+        "title": "CNC Lathe Machine",
+        "name": "GILDEMEISTER NEF CT40",
+        "description": [
+          "Processing length: 600 mm",
+          "Processing diameter in chuck: up to 190 mm",
+          "Processing diameter in collet chuck: up to 65 mm",
+          "X-axis travel: 225 mm",
+          "Z-axis travel: 600 mm"
+        ],
+        "image": "/assets/nef-ct40.webp"
+      },
+      {
+        "title": "Universal CNC Lathe Machine",
+        "name": "HITACHI SEIKI HITEC-TURN 20",
+        "description": [
+          "Processing length: 380 mm",
+          "Processing diameter in chuck: up to 210 mm",
+          "X-axis travel: 215 mm",
+          "Z-axis travel: 401 mm",
+          "Distance between centers: 630 mm."
+        ],
+        "image": "/assets/hitec-turn-20.webp"
       }
     ],
     "callToAction": "We are ready to become your reliable partner in turning works!"
@@ -197,40 +212,22 @@
     "ourEquipmentTitle": "OUR EQUIPMENT",
     "ourEquipment": [
       {
-        "title": "Boehringer VDF 250C-U",
-        "description": [
-          "Control system: B32T",
-          "Turning diameter (mm): 400",
-          "Turning length (mm): 1000",
-          "Spindle bore diameter (mm): 78",
-          "Rapid traverse in X/Z axes (m/min): 10",
-          "Tool positions in the turret (pcs): 12"
-        ],
-        "image": "/assets/vdf-250c-u.webp"
+        "title": "Three-Axis Machining Center",
+        "name": "HURCO BMC 4020HT",
+        "description": ["X-axis: 1020 mm", "Y-axis: 510 mm", "Z-axis: 610 mm", "Table length: 1220 mm", "Table width: 510 mm"],
+        "image": "/assets/hurco-bmc-4020ht.webp"
       },
       {
-        "title": "GILDEMEISTER NEF CT40",
-        "description": [
-          "Processing length: 600 mm",
-          "Processing diameter in chuck: up to 190 mm",
-          "Processing diameter in collet chuck: up to 65 mm",
-          "Travel along X axis: 225 mm",
-          "Travel along Z axis: 600 mm",
-          "Spindle bore: 65 mm"
-        ],
-        "image": "/assets/nef-ct40.webp"
+        "title": "Milling Machining Center",
+        "name": "KRYLE VMC 700",
+        "description": ["X-axis: 700 mm", "Y-axis: 450 mm", "Z-axis: 450 mm", "Table length: 1000 mm", "Table width: 480 mm"],
+        "image": "/assets/kryle-vmv-700.webp"
       },
       {
-        "title": "HITACHI SEIKI HITEC-TURN 20",
-        "description": [
-          "Max length: 380 mm",
-          "Max diameter: 210 mm",
-          "Max diameter above the bed: 380 mm",
-          "Diameter above the support: 210 mm",
-          "Distance between centers: 630 mm",
-          "Spindle: A2-6"
-        ],
-        "image": "/assets/hitec-turn-20.webp"
+        "title": "CNC Machining Center",
+        "name": "Fadal 904-1 VMC 3016 CNC Vertical",
+        "description": ["X-axis: 762 mm", "Y-axis: 406 mm", "Z-axis: 508 mm", "Table length: 991 mm", "Table width: 406 mm"],
+        "image": "/assets/fadal-904-1-vmc-3016-cnc.webp"
       }
     ],
     "callToAction": "Start working with us today and experience the benefits of working with professionals!"

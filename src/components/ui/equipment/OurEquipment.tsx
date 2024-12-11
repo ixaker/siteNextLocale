@@ -47,11 +47,12 @@ const OurEquipment: React.FC<ServicesComponentProps> = (componentProps) => {
                 width={300}
                 height={300}
                 objectFit="cover"
-                className="rounded-t-lg bg-[white] w-[auto] h-[250px] mb-[50px]"
+                className="rounded-t-lg bg-[white] w-[auto] h-[250px] mb-[70px]"
               />
             </div>
-            <div className="absolute bottom-0 left-0 w-full h-[17%] group-hover:h-[70%] bg-black bg-opacity-75 transition-all duration-300 rounded-t-lg px-4 py-4 flex flex-col items-center ">
+            <div className="absolute bottom-0 left-0 w-full h-[25%] group-hover:h-[80%] bg-black bg-opacity-75 transition-all duration-300 rounded-t-lg px-4 py-4 flex flex-col items-center ">
               <Paragraph style="text-white font-semibold text-md" text={item.title} alignment="center" />
+              <Paragraph style="text-white font-semibold text-md" text={item.name} alignment="center" />
               <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-4">
                 {item.description.map((desc, descIndex) => (
                   <span key={descIndex} className="block text-sm leading-5 text-center mb-2">

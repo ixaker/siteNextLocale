@@ -21,7 +21,7 @@ export type ServicesPage = {
   callToActionBottom: string;
   srcImg: string;
   ourEquipmentTitle: string;
-  ourEquipment: { title: string; description: string[]; image: string }[];
+  ourEquipment: { title: string; name: string; description: string[]; image: string }[];
 };
 
 export type ProductPage = {
