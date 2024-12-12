@@ -34,7 +34,7 @@ const Page: React.FC<PageProps> = ({ ...restProps }) => {
   return (
     <>
       <DynamicHead {...componentProps} />
-      <BackCover>
+      <BackCover version={componentProps.version}>
         <div
           className="min-w-screen min-h-[calc(100vh-140px)] flex flex-col justify-center pb-[20px] relative z-10"
           style={{ color: secondaryColor }}

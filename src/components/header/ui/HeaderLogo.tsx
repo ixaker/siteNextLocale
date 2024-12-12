@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-const HeaderLogo = () => {
+import { PageProps } from '@/context/withStaticPathsAndProps';
+const HeaderLogo: React.FC<PageProps> = (restProps) => {
   const router = useRouter();
   const { asPath } = router;
   const currentLang = asPath.split('/')[1];
@@ -9,7 +10,7 @@ const HeaderLogo = () => {
   return (
     <Link href={`/${currentLang}`}>
       <Image
-        src="/logo.webp"
+        src={`/logo.webp${restProps.version}`}
         alt="Логотип сайта"
         width={120}
         height={40}
