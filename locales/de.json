@@ -387,7 +387,7 @@
     "ourLocation": "Wir sind hier!",
     "buildRoute": "Route planen",
     "listContacts": [
-      { "title": "Adresse", "description": "Yakhnenkivska Straße 2, Dnipro, Dnipropetrowsk Region, Postleitzahl: 49025", "id": "address" },
+      { "title": "Adresse", "description": "Yakhnenkivska Straße 2, Dnipro, Oblast Dnipropetrowsk, 49025, Ukraine", "id": "address" },
       { "title": "E-Mail", "description": "info@qpart.com.ua", "id": "email" },
       { "title": "Telefon", "description": "+380989950760", "id": "phone" }
     ]

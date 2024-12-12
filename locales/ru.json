@@ -388,7 +388,7 @@
     "ourLocation": "Мы здесь!",
     "buildRoute": "Проложить маршрут",
     "listContacts": [
-      { "title": "Адрес", "description": "улица Яхненковская 2, Днепр, Днепропетровская область, индекс: 49025", "id": "address" },
+      { "title": "Адрес", "description": "улица Яхненковская, 2, г. Днепр, Днепропетровская область, 49025, Украина", "id": "address" },
       { "title": "Почта", "description": "info@qpart.com.ua", "id": "email" },
       { "title": "Телефон", "description": "+380989950760", "id": "phone" }
     ]
