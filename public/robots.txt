@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://site.qpart.com.ua/sitemap.xml
+Sitemap: https://cnc.qpart.com.ua/sitemap.xml

@@ -42,9 +42,9 @@ const DynamicHead: React.FC<ServicesComponentProps | ProductComponentProps | Hom
           ...componentProps.supportedLanguages.map((lang) => ({
             rel: 'alternate',
             hrefLang: lang,
-            href: `https://site.qpart.com.ua/${lang}/`,
+            href: `https://cnc.qpart.com.ua/${lang}/`,
           })),
-          { rel: 'alternate', hrefLang: 'x-default', href: 'https://site.qpart.com.ua' },
+          { rel: 'alternate', hrefLang: 'x-default', href: 'https://cnc.qpart.com.ua' },
           { rel: 'manifest', href: `/manifest_${componentProps.lang}.json` },
         ]}
       />
