@@ -11,8 +11,6 @@ const InformationBlock: React.FC<ServicesComponentProps | ProductComponentProps>
   const translationsMenuService = componentProps.translations.menu[0]?.subMenu;
   const translatiomsPage = componentProps.translationsPage;
 
-  console.log('componentProps', componentProps);
-
   return (
     <BackCover version={componentProps.version} bgImg={translatiomsPage.srcImg}>
       <div className="flex min-h-[inherit] pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6 relative z-[10]">
