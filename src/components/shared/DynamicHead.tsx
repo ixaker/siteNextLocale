@@ -36,6 +36,7 @@ const DynamicHead: React.FC<ServicesComponentProps | ProductComponentProps | Hom
         additionalMetaTags={[
           { name: 'keywords', content: pageData.title },
           { name: 'robots', content: 'index, follow' },
+          { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
         ]}
         additionalLinkTags={[
           { rel: 'canonical', href: componentProps.fullUrl },

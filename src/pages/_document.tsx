@@ -24,7 +24,6 @@ class MyDocument extends Document<{ lang: string }> {
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
           <meta property="og:type" content="website" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
         <body>
           <Main />

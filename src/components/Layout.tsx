@@ -11,15 +11,11 @@ const Layout: React.FC<PageProps> = ({ children, ...restProps }) => {
     <>
       <Header {...restProps} />
       <main>
-        <div className=" text-white">{children}</div>
+        <div className="">{children}</div>
         <div>
           <CommunicationButton
-            email={
-              <EmailIcon className="hover:!text-activeColor  transition-all duration-300 ease-in-out size-8 md:size-10 lg:size-12" />
-            }
-            phone={
-              <PhoneIcon className="hover:!text-activeColor  transition-all duration-300 ease-in-out size-8 md:size-10 lg:size-12" />
-            }
+            email={<EmailIcon className="hover:!text-activeColor  transition-all duration-300 ease-in-out size-8 md:size-10 lg:size-12" />}
+            phone={<PhoneIcon className="hover:!text-activeColor  transition-all duration-300 ease-in-out size-8 md:size-10 lg:size-12" />}
           />
         </div>
       </main>

@@ -16,9 +16,7 @@ const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
   const theme = useTheme();
   const [fullUrl, setFullUrl] = useState('');
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setFullUrl(window.location.href);
-    }
+    setFullUrl(window.location.href);
   }, [fullUrl]);
 
   const componentProps: ProductComponentProps = { translations, lang, supportedLanguages, translationsPage, fullUrl };

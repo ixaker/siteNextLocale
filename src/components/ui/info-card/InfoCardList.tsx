@@ -5,7 +5,7 @@ const InfoCardList: React.FC<ServicesComponentProps> = (componentProps) => {
   const cardList = componentProps.translationsPage.infoCard;
 
   return (
-    <div className="sm:px-4 mt-6">
+    <section className="sm:px-4 mt-6">
       {cardList.map((item, index) => (
         <div key={index}>
           <InfoCard
@@ -18,7 +18,7 @@ const InfoCardList: React.FC<ServicesComponentProps> = (componentProps) => {
           />
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 
