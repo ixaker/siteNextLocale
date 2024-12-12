@@ -381,21 +381,17 @@
     }
   ],
   "contactPage": {
-    "meta": {
-      "title": "QPART Contacts",
-      "description": "Sale of spare parts for imported agricultural machinery with delivery across Ukraine | High quality Affordable price Manufacturer's warranty Assistance in selection ☎ +38 098 995 07 60.",
-      "keywords": "metalworking",
-      "imgOg": "/logo.png"
-    },
+    "srcImg": "logo.webp",
     "title": "Contacts",
+    "description": "Contact us: Yakhnenkivska Street, 2, Dnipro, Dnipropetrovsk Region, 49025. Email: info@qpart.com.ua, Phone: +380989950760.",
     "address": "Address",
-    "descriptionAddress": "Yakhnenskivska Street 2, Dnipro, Dnipropetrovsk Region, ZIP code: 49025",
-    "email": "Email",
-    "descriptionEmail": "info@qpart.com.ua",
-    "phone": "Phone",
-    "descriptionPhone": "+380989950760",
     "ourLocation": "We are here!",
-    "buildRoute": "Build a route"
+    "buildRoute": "Build a route",
+    "listContacts": [
+      { "title": "Address", "description": "Yakhnenkivska Street 2, Dnipro, Dnipropetrovsk Region, postal code: 49025", "id": "address" },
+      { "title": "Email", "description": "info@qpart.com.ua", "id": "email" },
+      { "title": "Phone", "description": "+380989950760", "id": "phone" }
+    ]
   },
   "menu": [
     {

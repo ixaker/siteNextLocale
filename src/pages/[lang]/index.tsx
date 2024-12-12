@@ -1,28 +1,20 @@
-import { GetStaticPaths, GetStaticProps } from 'next';
-import { withStaticProps, withStaticPaths, PageProps, HomeComponentProps } from '../../context/withStaticPathsAndProps';
-import DynamicHead from '@/components/shared/DynamicHead';
-import Card from '@/components/ui/card/Card';
+import { withStaticProps, withStaticPaths } from '../../context/withStaticPathsAndProps';
+import * as Common from '@/context/commonImports';
 import Image from 'next/image';
-import Paragraph from '@/components/ui/typography/Paragraph';
-import Heading from '@/components/ui/typography/Heading';
-import CalculationSection from '@/components/ui/calculation-section/CalculationSection';
-import ButtonSubmitDrawing from '@/components/ui/button/ButtonSubmitDrawing';
-import BackCover from '@/components/ui/back-cover/BackCover';
-import NavigationMap from '@/components/ui/navigation-map/NavigationMap';
 
-const Home: React.FC<PageProps> = ({ ...restProps }) => {
+const Home: React.FC<Common.PageProps> = ({ ...restProps }) => {
   const translationsPage = restProps.translations.homePage;
   const cardData = restProps.translations.cardData;
   const translationsMenuService = restProps.translations.menu[0]?.subMenu;
 
-  const componentProps: HomeComponentProps = { ...restProps, translationsPage };
+  const componentProps: Common.HomeComponentProps = { ...restProps, translationsPage };
 
   return (
     <div>
-      <DynamicHead {...componentProps} />
-      <BackCover version={componentProps.version}>
+      <Common.DynamicHead {...componentProps} />
+      <Common.BackCover version={componentProps.version}>
         <div className="flex min-h-[inherit] pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6 relative z-10">
-          <NavigationMap lang={restProps.lang} translationsMenuService={translationsMenuService || []} />
+          <Common.NavigationMap lang={restProps.lang} translationsMenuService={translationsMenuService || []} />
           <div className="px-4 text-white w-full flex items-start justify-center">
             <div className="flex flex-col justify-center items-center lg:items-start">
               <div>
@@ -32,28 +24,27 @@ const Home: React.FC<PageProps> = ({ ...restProps }) => {
                   {translationsPage.bottomTitle}
                 </h1>
               </div>
-              <Paragraph text={translationsPage.description} style="text-center sm:text-start pt-5" />
-              <ButtonSubmitDrawing lang={restProps.lang} translations={restProps.translations} className="mt-10" />
+              <Common.Paragraph text={translationsPage.description} style="text-center sm:text-start pt-5" />
+              <Common.ButtonSubmitDrawing lang={restProps.lang} translations={restProps.translations} className="mt-10" />
             </div>
           </div>
         </div>
-      </BackCover>
+      </Common.BackCover>
       <section className="pl-4 pr-4 pt-[30px] md:pt-[70px]">
         <ul className="flex flex-wrap justify-center gap-[10px] lg: xl:justify-between">
           {cardData.map((item, index) => (
             <li key={index}>
-              <Card href={`/${restProps.lang}/${item.href}`} srcImg={item.img} title={item.title} version={componentProps.version} />
+              <Common.Card href={`/${restProps.lang}/${item.href}`} srcImg={item.img} title={item.title} version={componentProps.version} />
             </li>
           ))}
         </ul>
         <div className="mt-[50px] pb-[80px]">
           <div className="mt-[20px] flex flex-col gap-5 lg:flex-row xl:justify-between md:mt-[50px]">
             <div className="flex flex-col justify-center gap-5 lg:w-[80%] xl:w-[70%] 2xl:w-[50%]">
-              <Heading level="h2" text={translationsPage.h2} alignment="center" />
-              <Paragraph text={translationsPage.descriptionCompany} alignment="center" />
+              <Common.Heading level="h2" text={translationsPage.h2} alignment="center" />
+              <Common.Paragraph text={translationsPage.descriptionCompany} alignment="center" />
             </div>
             <div>
-              {/* ?v=${new Date().getTime()} */}
               <Image
                 className="w-full rounded-2xl shadow-2xl"
                 src={`/assets/work.webp${componentProps.version}`}
@@ -66,13 +57,13 @@ const Home: React.FC<PageProps> = ({ ...restProps }) => {
         </div>
       </section>
       <section className="pb-[50px]">
-        <CalculationSection {...componentProps} />
+        <Common.CalculationSection {...componentProps} />
       </section>
     </div>
   );
 };
 
-export const getStaticPaths: GetStaticPaths = withStaticPaths;
-export const getStaticProps: GetStaticProps = withStaticProps;
+export const getStaticPaths: Common.GetStaticPaths = withStaticPaths;
+export const getStaticProps: Common.GetStaticProps = withStaticProps;
 
 export default Home;

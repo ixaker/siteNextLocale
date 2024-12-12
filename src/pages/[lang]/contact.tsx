@@ -1,113 +1,79 @@
-import { GetStaticPaths, GetStaticProps } from 'next';
-import { withStaticProps, withStaticPaths, PageProps, ContactComponentsProps } from '../../context/withStaticPathsAndProps';
-import DynamicHead from '@/components/shared/DynamicHead';
-import { useTheme } from '@mui/material';
-import { darkTheme, lightTheme } from '@/theme';
-import RoomIcon from '@mui/icons-material/Room';
-import CustomButton from '@/components/ui/button/CustomButton';
-import EmailIcon from '@mui/icons-material/Email';
-import PhoneIcon from '@mui/icons-material/Phone';
+import * as Common from '@/context/commonImports';
+import { withStaticPaths, withStaticProps } from '@/context/withStaticPathsAndProps';
+import { Email, Phone, Room } from '@mui/icons-material';
 import dynamic from 'next/dynamic';
-import Heading from '@/components/ui/typography/Heading';
-import BackCover from '@/components/ui/back-cover/BackCover';
 
 const DynamicInteractiveMap = dynamic(() => import('@/components/ui/InteractiveMap/InteractiveMap'), {
   ssr: false, // Отключаем SSR для этого компонента
 });
 
-const Page: React.FC<PageProps> = ({ ...restProps }) => {
+const Page: React.FC<Common.PageProps> = ({ ...restProps }) => {
   const translationsPage = restProps.translations.contactPage;
-  const theme = useTheme();
-  const componentProps: ContactComponentsProps = { ...restProps, translationsPage };
-
-  const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
+  const theme = Common.useTheme();
+  const componentProps: Common.ContactComponentsProps = { ...restProps, translationsPage };
+  const listContacts = translationsPage.listContacts;
+  const currentTheme = theme.palette.mode === 'dark' ? Common.darkTheme : Common.lightTheme;
   const secondaryColor = currentTheme.palette.secondary.main;
   const primaryColor = currentTheme.palette.primary.main;
   const bgColor = currentTheme.palette.background.default;
-  function hexToRgba(hex: string, alpha: number): string {
-    const [r, g, b] = hex.match(/\w\w/g)?.map((c) => parseInt(c, 16)) ?? [0, 0, 0];
-    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
-  }
 
-  const bgColorWithTransparency: string = hexToRgba(bgColor, 0.9);
+  const requiredItem = (id: string, title: string, description: string) => {
+    let href = `tel:${description}`;
+    let Icon: React.ElementType = Phone;
+
+    if (id === 'address') {
+      href = 'https://maps.app.goo.gl/jPbgbWosaTq8GeNe7';
+      Icon = Room;
+    } else if (id === 'email') {
+      href = `mailto:${description}`;
+      Icon = Email;
+    }
+
+    return (
+      <div className="flex gap-[30px] items-center">
+        <a target="_blank" href={href} aria-label={title}>
+          <Common.CustomButton
+            ariaLabel={title}
+            style={{ backgroundColor: primaryColor, boxShadow: `0 10px 30px ${secondaryColor}` }}
+            variant="communication-button"
+          >
+            <Icon className="md:size-[35px] lg:size-[40px] " style={{ color: secondaryColor }} />
+          </Common.CustomButton>
+        </a>
+        <div className="flex flex-col">
+          <span className="text-[18px] font-bold md:text-[25px] ">{title}</span>
+          <span className="text-[12px] font-extralight md:text-[15px]  ">{description}</span>
+        </div>
+      </div>
+    );
+  };
 
   return (
     <>
-      <DynamicHead {...componentProps} />
-      <BackCover version={componentProps.version}>
+      <Common.DynamicHead {...componentProps} />
+      <Common.BackCover version={componentProps.version}>
         <div
           className="min-w-screen min-h-[calc(100vh-140px)] flex flex-col justify-center pb-[20px] relative z-10"
           style={{ color: secondaryColor }}
         >
-          <div
-            className="min-w-screen px-4 py-8 mt-[130px] md:mt-[150px] lg:mt-[170px] xl:mt-[200px]"
-            style={{ backgroundColor: bgColorWithTransparency }}
-          >
-            <Heading level="h1" text={translationsPage.title} alignment="center" />
+          <div className="min-w-screen px-4 py-8 mt-[130px] md:mt-[150px] lg:mt-[170px] xl:mt-[200px]" style={{ backgroundColor: `${bgColor}e6` }}>
+            <Common.Heading level="h1" text={translationsPage.title} alignment="center" />
             <div className="mt-[20px] flex justify-center items-center ">
               <ul className="flex flex-col gap-10 w-auto">
-                <li className="flex gap-[30px] items-center">
-                  <a target="_blank" href="https://maps.app.goo.gl/jPbgbWosaTq8GeNe7" aria-label={translationsPage.address}>
-                    <CustomButton
-                      ariaLabel={translationsPage.address}
-                      style={{ backgroundColor: primaryColor, boxShadow: `0 10px 30px ${secondaryColor}` }}
-                      variant="communication-button"
-                    >
-                      <RoomIcon style={{ color: secondaryColor }} className="md:size-[35px] lg:size-[40px]" />
-                    </CustomButton>
-                  </a>
-                  <div className="flex flex-col">
-                    <span className="text-[18px] font-bold md:text-[25px] ">{translationsPage.address}</span>
-                    <span className="text-[12px] font-extralight md:text-[15px]  ">{translationsPage.descriptionAddress}</span>
-                  </div>
-                </li>
-                <li className="flex gap-[30px] items-center">
-                  <a target="_blank" href="mailto:info@qpart.com.ua" aria-label={translationsPage.email}>
-                    <CustomButton
-                      ariaLabel={translationsPage.email}
-                      style={{ backgroundColor: primaryColor, boxShadow: `0 10px 30px ${secondaryColor}` }}
-                      variant="communication-button"
-                    >
-                      <EmailIcon style={{ color: secondaryColor }} className="md:size-[35px] lg:size-[40px]" />
-                    </CustomButton>
-                  </a>
-                  <div className="flex flex-col">
-                    <span className="text-[18px] font-bold md:text-[25px] ">{translationsPage.email}</span>
-                    <span className="text-[12px] font-extralight md:text-[15px]  ">{translationsPage.descriptionEmail}</span>
-                  </div>
-                </li>
-                <li className="flex gap-[30px] items-center">
-                  <a target="_blank" href="tel:+380989950760" aria-label={translationsPage.phone}>
-                    <CustomButton
-                      ariaLabel={translationsPage.phone}
-                      style={{ backgroundColor: primaryColor, boxShadow: `0 10px 30px ${secondaryColor}` }}
-                      variant="communication-button"
-                    >
-                      <PhoneIcon style={{ color: secondaryColor }} className="md:size-[35px] lg:size-[40px]" />
-                    </CustomButton>
-                  </a>
-                  <div className="flex flex-col">
-                    <span className="text-[18px] font-bold md:text-[25px] ">{translationsPage.phone}</span>
-                    <span className="text-[12px] font-extralight md:text-[15px]  ">{translationsPage.descriptionPhone}</span>
-                  </div>
-                </li>
+                {listContacts.map((item, index) => (
+                  <li key={index}>{requiredItem(item.id, item.title, item.description)}</li>
+                ))}
               </ul>
-              <div className="hidden relative w-full h-[268px] md:block max-w-[451px]">
-                <DynamicInteractiveMap
-                  buildRoute={translationsPage.buildRoute}
-                  ourLocation={translationsPage.ourLocation}
-                  companyLocation={{ lat: 48.499937, lng: 35.038598 }}
-                />
-              </div>
+              <DynamicInteractiveMap {...componentProps} />
             </div>
           </div>
         </div>
-      </BackCover>
+      </Common.BackCover>
     </>
   );
 };
 
-export const getStaticPaths: GetStaticPaths = withStaticPaths;
-export const getStaticProps: GetStaticProps = withStaticProps;
+export const getStaticPaths: Common.GetStaticPaths = withStaticPaths;
+export const getStaticProps: Common.GetStaticProps = withStaticProps;
 
 export default Page;

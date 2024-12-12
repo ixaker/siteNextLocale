@@ -3,15 +3,16 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import Image from 'next/image';
+import { ContactComponentsProps } from '@/context/withStaticPathsAndProps';
 
-type Props = {
-  companyLocation: { lat: number; lng: number };
-  ourLocation: string;
-  buildRoute: string;
-};
+// type Props = {
+//   ourLocation: string;
+//   buildRoute: string;
+// };
 
-const InteractiveMap: React.FC<Props> = ({ companyLocation, ourLocation, buildRoute }) => {
-  const { lat, lng } = companyLocation;
+const InteractiveMap: React.FC<ContactComponentsProps> = ({ translationsPage }) => {
+  const lat = 48.499937;
+  const lng = 35.038598;
 
   // Кастомная иконка для маркера
   const customIcon = L.icon({
@@ -41,7 +42,7 @@ const InteractiveMap: React.FC<Props> = ({ companyLocation, ourLocation, buildRo
   };
 
   return (
-    <>
+    <div className="hidden relative w-full h-[268px] md:block max-w-[451px]">
       <Image
         className=" w-full h-full absolute"
         src={`/assets/LaptopContacts.webp?v=${new Date().getTime()}`}
@@ -70,15 +71,15 @@ const InteractiveMap: React.FC<Props> = ({ companyLocation, ourLocation, buildRo
         <Marker position={[lat, lng]} icon={customIcon}>
           <Popup>
             <div>
-              <p>{ourLocation}</p>
+              <p>{translationsPage.ourLocation}</p>
               <button onClick={handleRouteClick} style={{ cursor: 'pointer', padding: '5px 10px' }}>
-                {buildRoute}
+                {translationsPage.buildRoute}
               </button>
             </div>
           </Popup>
         </Marker>
       </MapContainer>
-    </>
+    </div>
   );
 };
 

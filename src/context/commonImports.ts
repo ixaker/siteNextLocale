@@ -13,3 +13,9 @@ export { default as InfoCardList } from '@/components/ui/info-card/InfoCardList'
 export { default as ServiceBlock } from '@/components/ui/service-block/ServiceBlock';
 export { default as ListBenefits } from '@/components/ui/list-benefits/ListBenefits';
 export { default as FeatureBlock } from '@/components/ui/feature-block/FeatureBlock';
+export { default as NavigationMap } from '@/components/ui/navigation-map/NavigationMap';
+export { default as ButtonSubmitDrawing } from '@/components/ui/button/ButtonSubmitDrawing';
+export { default as Card } from '@/components/ui/card/Card';
+export { default as Heading } from '@/components/ui/typography/Heading';
+export { default as BackCover } from '@/components/ui/back-cover/BackCover';
+export { default as CustomButton } from '@/components/ui/button/CustomButton';

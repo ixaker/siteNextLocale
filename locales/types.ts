@@ -1,16 +1,8 @@
-export type Meta = {
-  title: string;
-  description: string;
-  keywords: string;
-  imgOg: string;
-};
-
 export type NavigationMenu = {
   title: string;
   href?: string;
   subMenu?: [NavigationMenu];
 };
-
 export type ServicesPage = {
   title: string;
   description: string;
@@ -62,6 +54,7 @@ export type ContactPage = {
   ourLocation: string;
   buildRoute: string;
   description: string;
+  listContacts: { title: string; description: string; id: string }[];
 };
 
 export type CardData = { title: string; img: string; href: string };
@@ -75,27 +68,16 @@ export type Translations = {
   contactPage: ContactPage;
   menu: [NavigationMenu];
   lazernaRizkaPage: ServicesPage;
-
   tokarniRobotyChpkPage: ServicesPage;
-
   shlifovkaMetaluPage: ServicesPage;
-
   termichnaObrobkaPage: ServicesPage;
-
   frezerniRoboty: ServicesPage;
-
   porizkaNaVerstati: ServicesPage;
-
   lyttyaMetaluPage: ServicesPage;
-
   zvaryuvannyaMetaluPage: ServicesPage;
-
   piskostruminniRoboty: ServicesPage;
-
   zaliznychniZapchastynyPage: ProductPage;
-
   zapchastynyDlyaSilhosptekhnikyPage: ProductPage;
-
   modalInfo: {
     title: string;
     descriptionBtn: string;
@@ -109,11 +91,9 @@ export type Translations = {
     errorMessage: string;
     unknownError: string;
   };
-
   welcome: string;
   comingSoon: string;
   inDevelopment: string;
-
   footer: {
     join: string;
   };
