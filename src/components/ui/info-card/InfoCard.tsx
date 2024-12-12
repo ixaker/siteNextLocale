@@ -10,9 +10,10 @@ interface InfoCardProps {
   direction: 'row' | 'row-reverse';
   aligntText: 'start' | 'end';
   list?: { description: string }[];
+  version: string;
 }
 
-const InfoCard: React.FC<InfoCardProps> = ({ srcImg, descriptionCard, title, direction, aligntText, list }) => {
+const InfoCard: React.FC<InfoCardProps> = ({ srcImg, descriptionCard, title, direction, aligntText, list, version }) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -52,7 +53,7 @@ const InfoCard: React.FC<InfoCardProps> = ({ srcImg, descriptionCard, title, dir
         {/* Image */}
         <div className="sm:max-w-[400px] max-h-[200px] sm:max-h-[400px] h-full w-full relative">
           <Image
-            src={srcImg}
+            src={`${srcImg}${version}`}
             alt={srcImg}
             width={100}
             height={100}

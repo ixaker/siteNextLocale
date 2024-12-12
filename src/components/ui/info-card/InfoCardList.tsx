@@ -9,6 +9,7 @@ const InfoCardList: React.FC<ServicesComponentProps> = (componentProps) => {
       {cardList.map((item, index) => (
         <div key={index}>
           <InfoCard
+            version={componentProps.version}
             aligntText={index % 2 === 0 ? 'end' : 'start'}
             direction={index % 2 === 0 ? 'row-reverse' : 'row'}
             srcImg={item.image}

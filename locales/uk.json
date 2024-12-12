@@ -366,24 +366,6 @@
     ],
     "callToAction": "Замовте обробку у нас і переконайтесь, що ваша продукція виглядатиме бездоганно!"
   },
-  "orderBenefits": {
-    "srcImg": "",
-    "orderBenefitsTitle": "Переваги замовити саме в нас",
-    "listOrderBenefits": [
-      {
-        "title": "Готові до великих обсягів – забезпечимо безперебійну роботу навіть для масштабних замовлень.",
-        "icon": "/assets/cylinder.webp"
-      },
-      {
-        "title": "Більше 300 станків з ЧПК – сучасне обладнання гарантує точність, якість і швидкість виконання.",
-        "icon": "/assets/gears.webp"
-      },
-      {
-        "title": "Лояльні терміни – працюємо швидко та завжди вчасно!",
-        "icon": "/assets/clock-time.webp"
-      }
-    ]
-  },
 
   "cardData": [
     {
@@ -453,6 +435,7 @@
     "description": "Компанія QPart спеціалізується на виготовленні високоякісних деталей для залізничної інфраструктури. Ми забезпечуємо виробництво різноманітних компонентів, які відповідають усім сучасним стандартам безпеки та експлуатаційної надійності.",
     "descriptionBottom": "Наші рішення підходять як для модернізації існуючих систем, так і для будівництва нових залізничних об’єктів.",
     "servicesTitle": "Наші переваги",
+    "imageForServiceBlock": "/assets/zaliznychni-zapchastyny2.webp",
     "listServices": [
       {
         "description": "Сучасне обладнання. Використання верстатів з ЧПК гарантує високу точність виготовлення."
@@ -467,39 +450,54 @@
         "description": "Швидкі строки. Забезпечуємо оперативне виготовлення без шкоди для якості."
       }
     ],
+    "orderBenefitsTitle": "Переваги замовити саме в нас",
+    "listOrderBenefits": [
+      {
+        "title": "Готові до великих обсягів – забезпечимо безперебійну роботу навіть для масштабних замовлень.",
+        "icon": "/assets/cylinder.webp"
+      },
+      {
+        "title": "Більше 300 станків з ЧПК – сучасне обладнання гарантує точність, якість і швидкість виконання.",
+        "icon": "/assets/gears.webp"
+      },
+      {
+        "title": "Лояльні терміни – працюємо швидко та завжди вчасно!",
+        "icon": "/assets/clock-time.webp"
+      }
+    ],
     "peculiaritiesTitle": "Які деталі ми виготовляємо?",
     "listPeculiarities": [
       {
         "description": "Колісні пари, гальмівні диски, осі;",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Рама візка, деталі кріплення, ресори.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": " Кріплення рейок;",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Стяжні болти, анкерні системи, опорні частини.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Сигнальні стовпи, платформи, монтажні вузли;",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": " Металеві конструкції для мостів, тунелів, платформ.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Спеціалізовані вироби за кресленнями клієнта;",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Деталі нестандартної конфігурації для унікальних потреб.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       }
     ],
     "question": "Потрібні залізничні запчастини? ",
@@ -512,6 +510,7 @@
     "description": "Наша компанія спеціалізується на створенні якісних запчастин для сільськогосподарської техніки, враховуючи потреби аграріїв та особливості сучасного фермерського обладнання.",
     "descriptionBottom": "Ми пропонуємо широкий асортимент деталей, які підходять для різних видів техніки та забезпечують її безперебійну роботу навіть у найважчих умовах.Забезпечте свою техніку якісними запчастинами",
     "servicesTitle": "Наші переваги:",
+    "imageForServiceBlock": "/assets/zapchastyny-dlya-silhosptekhniky2.webp",
     "listServices": [
       {
         "description": "Сучасне обладнання. Використання верстатів з ЧПК гарантує високу точність виготовлення."
@@ -526,19 +525,34 @@
         "description": "Швидкі строки. Забезпечуємо оперативне виготовлення без шкоди для якості."
       }
     ],
+    "orderBenefitsTitle": "Переваги замовити саме в нас",
+    "listOrderBenefits": [
+      {
+        "title": "Готові до великих обсягів – забезпечимо безперебійну роботу навіть для масштабних замовлень.",
+        "icon": "/assets/cylinder.webp"
+      },
+      {
+        "title": "Більше 300 станків з ЧПК – сучасне обладнання гарантує точність, якість і швидкість виконання.",
+        "icon": "/assets/gears.webp"
+      },
+      {
+        "title": "Лояльні терміни – працюємо швидко та завжди вчасно!",
+        "icon": "/assets/clock-time.webp"
+      }
+    ],
     "peculiaritiesTitle": "Які деталі ми виготовляємо?",
     "listPeculiarities": [
       {
         "description": "Комплектуючі для кормозбиральної техніки: ножі, подрібнювачі, вали, що забезпечують безперебійну роботу техніки для тваринництва.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Деталі для навантажувачів та маніпуляторів: гідравлічні циліндри, кріплення, які необхідні для надійного функціонування допоміжного обладнання.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Спеціалізовані деталі під замовлення: виготовляємо індивідуальні запчастини відповідно до специфічних запитів клієнтів.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       }
     ],
     "question": "Шукаєте запчастини для сільгосптехніки?",

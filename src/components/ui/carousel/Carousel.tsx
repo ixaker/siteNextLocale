@@ -10,9 +10,10 @@ interface Slide {
 
 interface CarouselProps {
   slides: Slide[];
+  version: string;
 }
 
-const Carousel: React.FC<CarouselProps> = ({ slides }) => {
+const Carousel: React.FC<CarouselProps> = ({ slides, version }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -29,7 +30,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
       {slides.map((slide, index) => (
         <div key={index} className="py-5 px-4 flex items-center justify-center">
           <div className="flex gap-5 items-center justify-center h-full">
-            <Image src={slide.icon} alt={slide.title} className="size-20 mb-4" width={100} height={100} />
+            <Image src={`${slide.icon}${version}`} alt={slide.title} className="size-20 mb-4" width={100} height={100} />
             <Paragraph text={slide.title} alignment="center" />
           </div>
         </div>

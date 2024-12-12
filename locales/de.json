@@ -358,24 +358,6 @@
     ],
     "callToAction": "Bestellen Sie die Bearbeitung bei uns und überzeugen Sie sich davon, dass Ihre Produkte makellos aussehen werden!"
   },
-  "orderBenefits": {
-    "orderBenefitsTitle": "Vorteile einer Bestellung bei uns",
-    "listOrderBenefits": [
-      {
-        "title": "Bereit für große Mengen – wir gewährleisten einen reibungslosen Betrieb auch bei Großaufträgen.",
-        "icon": "/assets/cylinder.webp"
-      },
-      {
-        "title": "Mehr als 300 CNC-Maschinen – moderne Ausrüstung garantiert Präzision, Qualität und Geschwindigkeit.",
-        "icon": "/assets/gears.webp"
-      },
-      {
-        "title": "Flexible Lieferzeiten – wir arbeiten schnell und immer pünktlich!",
-        "icon": "/assets/clock-time.webp"
-      }
-    ]
-  },
-
   "cardData": [
     {
       "title": "CNC-DREHARBEITEN",
@@ -457,6 +439,7 @@
     "description": "QPart spezialisiert sich auf die Herstellung von hochwertigen Komponenten für die Eisenbahninfrastruktur. Wir gewährleisten die Produktion von verschiedenen Komponenten, die allen modernen Sicherheits- und Betriebsstandards entsprechen.",
     "descriptionBottom": "Unsere Lösungen eignen sich sowohl für die Modernisierung bestehender Systeme als auch für den Bau neuer Eisenbahnanlagen.",
     "servicesTitle": "Unsere Vorteile",
+    "imageForServiceBlock": "/assets/zaliznychni-zapchastyny2.webp",
     "listServices": [
       {
         "description": "Moderne Ausstattung. Der Einsatz von CNC-Maschinen garantiert hohe Fertigungspräzision."
@@ -471,39 +454,54 @@
         "description": "Schnelle Lieferzeiten. Wir gewährleisten eine zügige Produktion ohne Qualitätseinbußen."
       }
     ],
+    "orderBenefitsTitle": "Vorteile einer Bestellung bei uns",
+    "listOrderBenefits": [
+      {
+        "title": "Bereit für große Mengen – wir gewährleisten einen reibungslosen Betrieb auch bei Großaufträgen.",
+        "icon": "/assets/cylinder.webp"
+      },
+      {
+        "title": "Mehr als 300 CNC-Maschinen – moderne Ausrüstung garantiert Präzision, Qualität und Geschwindigkeit.",
+        "icon": "/assets/gears.webp"
+      },
+      {
+        "title": "Flexible Lieferzeiten – wir arbeiten schnell und immer pünktlich!",
+        "icon": "/assets/clock-time.webp"
+      }
+    ],
     "peculiaritiesTitle": "Welche Komponenten stellen wir her?",
     "listPeculiarities": [
       {
         "description": "Radsätze, Bremsscheiben, Achsen;",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Drehgestellrahmen, Befestigungsteile, Federn.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Schienenbefestigungen;",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Zugschrauben, Ankersysteme, Stützenteile.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Signalpfosten, Plattformen, Montageeinheiten;",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Metallkonstruktionen für Brücken, Tunnel, Plattformen.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Spezialprodukte nach Kundenzeichnungen;",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Teile mit Sonderkonfiguration für spezifische Anforderungen.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       }
     ],
     "question": "Brauchen Sie Eisenbahnteile?",
@@ -515,6 +513,7 @@
     "description": "Unser Unternehmen ist auf die Herstellung hochwertiger Ersatzteile für landwirtschaftliche Maschinen spezialisiert, wobei die Bedürfnisse der Landwirte und die Besonderheiten moderner Landtechnik berücksichtigt werden.",
     "descriptionBottom": "Wir bieten ein breites Sortiment an Teilen, die für verschiedene Maschinentypen geeignet sind und einen störungsfreien Betrieb auch unter schwierigsten Bedingungen gewährleisten. Statten Sie Ihre Maschinen mit hochwertigen Ersatzteilen aus.",
     "servicesTitle": "Unsere Vorteile:",
+    "imageForServiceBlock": "/assets/zapchastyny-dlya-silhosptekhniky2.webp",
     "listServices": [
       {
         "description": "Moderne Ausrüstung. Der Einsatz von CNC-Maschinen garantiert eine hohe Fertigungspräzision."
@@ -529,19 +528,34 @@
         "description": "Schnelle Lieferzeiten. Wir sorgen für eine zügige Produktion ohne Qualitätseinbußen."
       }
     ],
+    "orderBenefitsTitle": "Vorteile einer Bestellung bei uns",
+    "listOrderBenefits": [
+      {
+        "title": "Bereit für große Mengen – wir gewährleisten einen reibungslosen Betrieb auch bei Großaufträgen.",
+        "icon": "/assets/cylinder.webp"
+      },
+      {
+        "title": "Mehr als 300 CNC-Maschinen – moderne Ausrüstung garantiert Präzision, Qualität und Geschwindigkeit.",
+        "icon": "/assets/gears.webp"
+      },
+      {
+        "title": "Flexible Lieferzeiten – wir arbeiten schnell und immer pünktlich!",
+        "icon": "/assets/clock-time.webp"
+      }
+    ],
     "peculiaritiesTitle": "Welche Teile produzieren wir?",
     "listPeculiarities": [
       {
         "description": "Komponenten für Futtererntemaschinen: Messer, Schredder, Wellen, die einen störungsfreien Betrieb der Tierhaltungsmaschinen gewährleisten.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Teile für Lader und Manipulatoren: Hydraulikzylinder, Halterungen, die für den zuverlässigen Betrieb von Zusatzgeräten erforderlich sind.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Spezielle Ersatzteile auf Bestellung: Wir fertigen maßgeschneiderte Ersatzteile nach den spezifischen Anforderungen der Kunden.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       }
     ],
     "question": "Suchen Sie Ersatzteile für landwirtschaftliche Maschinen?",

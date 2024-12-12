@@ -1,14 +1,9 @@
 import * as Common from '@/context/commonImports';
 import { withStaticProps, withStaticPaths } from '../../../context/withStaticPathsAndProps';
 
-const Page: React.FC<Common.PageProps> = ({ translations, lang, supportedLanguages }) => {
-  const translationsPage = translations.lazernaRizkaPage;
-  const [fullUrl, setFullUrl] = Common.useState('');
-  Common.useEffect(() => {
-    setFullUrl(window.location.href);
-  }, [fullUrl]);
-
-  const componentProps: Common.ServicesComponentProps = { translations, lang, supportedLanguages, translationsPage, fullUrl };
+const Page: React.FC<Common.PageProps> = ({ ...restProps }) => {
+  const translationsPage = restProps.translations.lazernaRizkaPage;
+  const componentProps: Common.ServicesComponentProps = { ...restProps, translationsPage };
 
   return (
     <>
@@ -16,7 +11,7 @@ const Page: React.FC<Common.PageProps> = ({ translations, lang, supportedLanguag
       <Common.InformationBlock {...componentProps} />
       <Common.InfoCardList {...componentProps} />
       <Common.Paragraph style="mt-10 px-4" alignment="center" text={translationsPage.callToAction} />
-      <Common.CalculationSection translations={translations} lang={lang} />
+      <Common.CalculationSection {...componentProps} />
     </>
   );
 };

@@ -34,10 +34,12 @@ export type ProductPage = {
   question: string;
   answer: string;
   srcImg: string;
+  imageForServiceBlock: string;
+  orderBenefitsTitle: string;
+  listOrderBenefits: { title: string; icon: string }[];
 };
 
 export type HomePage = {
-  // meta: Meta;
   srcImg: string;
   title: string;
   topTitle: string;
@@ -89,10 +91,6 @@ export type Translations = {
   zvaryuvannyaMetaluPage: ServicesPage;
 
   piskostruminniRoboty: ServicesPage;
-  orderBenefits: {
-    orderBenefitsTitle: string;
-    listOrderBenefits: { title: string; icon: string }[];
-  };
 
   zaliznychniZapchastynyPage: ProductPage;
 

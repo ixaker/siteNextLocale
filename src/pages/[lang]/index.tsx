@@ -1,11 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { withStaticProps, withStaticPaths, PageProps, HomeComponentProps } from '../../context/withStaticPathsAndProps';
 import DynamicHead from '@/components/shared/DynamicHead';
-import { useEffect, useState } from 'react';
 import Card from '@/components/ui/card/Card';
-import langUk from '../../../locales/uk.json';
-import { darkTheme, lightTheme } from '@/theme';
-import { useTheme } from '@mui/material';
 import Image from 'next/image';
 import Paragraph from '@/components/ui/typography/Paragraph';
 import Heading from '@/components/ui/typography/Heading';
@@ -14,30 +10,19 @@ import ButtonSubmitDrawing from '@/components/ui/button/ButtonSubmitDrawing';
 import BackCover from '@/components/ui/back-cover/BackCover';
 import NavigationMap from '@/components/ui/navigation-map/NavigationMap';
 
-const Home: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) => {
-  const [fullUrl, setFullUrl] = useState('');
-  const theme = useTheme();
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setFullUrl(window.location.href);
-    }
-  }, [fullUrl]);
+const Home: React.FC<PageProps> = ({ ...restProps }) => {
+  const translationsPage = restProps.translations.homePage;
+  const cardData = restProps.translations.cardData;
+  const translationsMenuService = restProps.translations.menu[0]?.subMenu;
 
-  const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
-  const bgColor = currentTheme.palette.background.default;
-  const secondaryColor = currentTheme.palette.secondary.main;
-  const translationsPage = translations.homePage;
-  const cardData = translations?.cardData || langUk.cardData;
-  const translationsMenuService = translations.menu[0]?.subMenu;
-
-  const componentProps: HomeComponentProps = { translations, lang, supportedLanguages, translationsPage, fullUrl };
+  const componentProps: HomeComponentProps = { ...restProps, translationsPage };
 
   return (
-    <div style={{ backgroundColor: bgColor }}>
+    <div>
       <DynamicHead {...componentProps} />
-      <BackCover>
+      <BackCover version={componentProps.version}>
         <div className="flex min-h-[inherit] pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6 relative z-10">
-          <NavigationMap lang={lang} translationsMenuService={translationsMenuService || []} />
+          <NavigationMap lang={restProps.lang} translationsMenuService={translationsMenuService || []} />
           <div className="px-4 text-white w-full flex items-start justify-center">
             <div className="flex flex-col justify-center items-center lg:items-start">
               <div>
@@ -48,16 +33,16 @@ const Home: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
                 </h1>
               </div>
               <Paragraph text={translationsPage.description} style="text-center sm:text-start pt-5" />
-              <ButtonSubmitDrawing lang={lang} translations={translations} className="mt-10" />
+              <ButtonSubmitDrawing lang={restProps.lang} translations={restProps.translations} className="mt-10" />
             </div>
           </div>
         </div>
       </BackCover>
-      <section style={{ color: secondaryColor }} className="pl-4 pr-4 pt-[30px] md:pt-[70px]">
+      <section className="pl-4 pr-4 pt-[30px] md:pt-[70px]">
         <ul className="flex flex-wrap justify-center gap-[10px] lg: xl:justify-between">
           {cardData.map((item, index) => (
             <li key={index}>
-              <Card href={`/${lang}/${item.href}`} srcImg={item.img} title={item.title} />
+              <Card href={`/${restProps.lang}/${item.href}`} srcImg={item.img} title={item.title} version={componentProps.version} />
             </li>
           ))}
         </ul>
@@ -69,13 +54,19 @@ const Home: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) =
             </div>
             <div>
               {/* ?v=${new Date().getTime()} */}
-              <Image className="w-full rounded-2xl shadow-2xl" src={`/assets/work.webp`} alt="Laptop" width={100} height={100} />
+              <Image
+                className="w-full rounded-2xl shadow-2xl"
+                src={`/assets/work.webp${componentProps.version}`}
+                alt="Laptop"
+                width={100}
+                height={100}
+              />
             </div>
           </div>
         </div>
       </section>
       <section className="pb-[50px]">
-        <CalculationSection lang={lang} translations={translations} />
+        <CalculationSection {...componentProps} />
       </section>
     </div>
   );

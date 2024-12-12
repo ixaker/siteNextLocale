@@ -58,7 +58,7 @@ try {
 
     // Настройка отправителя и получателя
     $mail->setFrom($config['smtp_user'], 'Site'); // Замените 'Your Name' на ваше имя
-    $mail->addAddress('xaker.dnepr@gmail.com'); // Получатель
+    $mail->addAddress('info@qpart.com.ua'); // Получатель
 
     // Тема и сообщение
     $mail->Subject = 'Заявка c сайта QPART';

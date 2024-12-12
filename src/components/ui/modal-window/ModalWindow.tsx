@@ -77,11 +77,7 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ open, translations, setOpen }
   }
   return (
     <>
-      <CustomizationAlert
-        message={translations?.messageInformation}
-        openAlert={openAlert}
-        setOpenAlert={setOpenAlert}
-      />
+      <CustomizationAlert message={translations?.messageInformation} openAlert={openAlert} setOpenAlert={setOpenAlert} />
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -133,19 +129,11 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ open, translations, setOpen }
             {fileList.length > 0 && (
               <ul className="mt-2">
                 {fileList.map((file, index) => (
-                  <ListFiles
-                    fileName={file.name}
-                    fileSize={file.size}
-                    index={index}
-                    setFileList={setFileList}
-                    key={index}
-                  />
+                  <ListFiles fileName={file.name} fileSize={file.size} index={index} setFileList={setFileList} key={index} />
                 ))}
                 {resultSize > 20.0 ? (
                   <Typography variant="body2" sx={{ color: 'red', marginTop: '20px' }}>
-                    {fileList.length > 1
-                      ? translationsPage.filesSizeIsLarger
-                      : translationsPage.fileSizeIsLarger}
+                    {fileList.length > 1 ? translationsPage.filesSizeIsLarger : translationsPage.fileSizeIsLarger}
                   </Typography>
                 ) : (
                   ''
@@ -169,16 +157,7 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ open, translations, setOpen }
             <Box sx={{ marginTop: '20px', textAlign: 'center' }}>
               {resultSize < 20.0 && numberPhone.length > 9 && fileList.length > 0 ? (
                 <Button
-                  onClick={() =>
-                    handleFileSubmit(
-                      fileList,
-                      setStatusMessage,
-                      setFileList,
-                      numberPhone,
-                      setOpen,
-                      setOpenAlert
-                    )
-                  }
+                  onClick={() => handleFileSubmit(fileList, setStatusMessage, setFileList, numberPhone, setOpen, setOpenAlert)}
                   sx={{
                     color: '#fff',
                     fontWeight: '500',

@@ -1,7 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { withStaticProps, withStaticPaths, PageProps, ContactComponentsProps } from '../../context/withStaticPathsAndProps';
 import DynamicHead from '@/components/shared/DynamicHead';
-import { useEffect, useState } from 'react';
 import { useTheme } from '@mui/material';
 import { darkTheme, lightTheme } from '@/theme';
 import RoomIcon from '@mui/icons-material/Room';
@@ -16,24 +15,15 @@ const DynamicInteractiveMap = dynamic(() => import('@/components/ui/InteractiveM
   ssr: false, // Отключаем SSR для этого компонента
 });
 
-const Page: React.FC<PageProps> = ({ translations, lang, supportedLanguages }) => {
-  const translationsPage = translations.contactPage;
-
-  const [fullUrl, setFullUrl] = useState('');
+const Page: React.FC<PageProps> = ({ ...restProps }) => {
+  const translationsPage = restProps.translations.contactPage;
   const theme = useTheme();
-  const componentProps: ContactComponentsProps = { translations, lang, supportedLanguages, translationsPage, fullUrl };
+  const componentProps: ContactComponentsProps = { ...restProps, translationsPage };
 
   const currentTheme = theme.palette.mode === 'dark' ? darkTheme : lightTheme;
   const secondaryColor = currentTheme.palette.secondary.main;
   const primaryColor = currentTheme.palette.primary.main;
   const bgColor = currentTheme.palette.background.default;
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setFullUrl(window.location.href);
-    }
-  }, []);
-
   function hexToRgba(hex: string, alpha: number): string {
     const [r, g, b] = hex.match(/\w\w/g)?.map((c) => parseInt(c, 16)) ?? [0, 0, 0];
     return `rgba(${r}, ${g}, ${b}, ${alpha})`;

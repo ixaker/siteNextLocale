@@ -2,21 +2,15 @@ import Image from 'next/image';
 import Heading from '../typography/Heading';
 import Paragraph from '../typography/Paragraph';
 import ButtonSubmitDrawing from '../button/ButtonSubmitDrawing';
-import { PageProps } from '@/context/withStaticPathsAndProps';
+import { ProductComponentProps } from '@/context/withStaticPathsAndProps';
 import { useEffect, useRef, useState } from 'react';
 
-interface ServiceBlock {
-  heading: string;
-  list: { description: string }[];
-  btnText: string;
-  imgSrc: string;
-  translations: PageProps['translations'];
-  lang: PageProps['lang'];
-}
-
-const ServiceBlock: React.FC<ServiceBlock> = ({ heading, list, imgSrc, translations, lang }) => {
+const ServiceBlock: React.FC<ProductComponentProps> = (componentProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+
+  const translationsPage = componentProps.translationsPage;
+  const list = translationsPage.listServices;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -45,7 +39,7 @@ const ServiceBlock: React.FC<ServiceBlock> = ({ heading, list, imgSrc, translati
 
   return (
     <div className="px-4 py-5" ref={ref}>
-      <Heading level="h2" text={heading} alignment="center" />
+      <Heading level="h2" text={translationsPage.servicesTitle} alignment="center" />
       <div className="flex flex-col items-center gap-[20px] pt-5 md:flex-row lg:justify-around lg:gap-[0px]">
         <ul className={`flex flex-col gap-3 md:flex md:justify-between md:flex-col lg:max-w-[40%] `}>
           {list.map((item, index) => (
@@ -59,14 +53,18 @@ const ServiceBlock: React.FC<ServiceBlock> = ({ heading, list, imgSrc, translati
         </ul>
         <div className="relative xl:w-fit xl:max-h-[500px]">
           <Image
-            alt={imgSrc}
-            src={imgSrc}
+            alt={translationsPage.imageForServiceBlock}
+            src={`${translationsPage.imageForServiceBlock}${componentProps.version}`}
             width={100}
             height={100}
             className="w-screen h-[250px] object-cover shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)] rounded-[10px] md:max-w-[400px] md:w-[450px] md:h-[300px]"
             loading="lazy"
           />
-          <ButtonSubmitDrawing lang={lang} translations={translations} className="mt-5 w-full text-nowrap absolute bottom-0" />
+          <ButtonSubmitDrawing
+            lang={componentProps.lang}
+            translations={componentProps.translations}
+            className="mt-5 w-full text-nowrap absolute bottom-0"
+          />
         </div>
       </div>
     </div>

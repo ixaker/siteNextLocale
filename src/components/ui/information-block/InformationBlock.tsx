@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import Paragraph from '../typography/Paragraph';
 import NavigationMap from '../navigation-map/NavigationMap';
@@ -9,8 +11,10 @@ const InformationBlock: React.FC<ServicesComponentProps | ProductComponentProps>
   const translationsMenuService = componentProps.translations.menu[0]?.subMenu;
   const translatiomsPage = componentProps.translationsPage;
 
+  console.log('componentProps', componentProps);
+
   return (
-    <BackCover bgImg={translatiomsPage.srcImg}>
+    <BackCover version={componentProps.version} bgImg={translatiomsPage.srcImg}>
       <div className="flex min-h-[inherit] pt-[130px] md:pt-[150px] lg:pt-[170px] xl:pt-[200px] pb-6 relative z-[10]">
         <NavigationMap lang={componentProps.lang} translationsMenuService={translationsMenuService || []} />
         <div className="px-4 text-white flex items-start justify-center w-full">
@@ -20,7 +24,7 @@ const InformationBlock: React.FC<ServicesComponentProps | ProductComponentProps>
               <Image
                 width={100}
                 height={100}
-                src={`${translatiomsPage.srcImg}`}
+                src={`${translatiomsPage.srcImg}${componentProps.version}`}
                 alt={translatiomsPage.srcImg}
                 className=" w-full h-full object-cover rounded-l-[10px]"
               />

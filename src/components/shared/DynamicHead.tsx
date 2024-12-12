@@ -1,19 +1,24 @@
 import { NextSeo } from 'next-seo';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { ContactComponentsProps, HomeComponentProps, ProductComponentProps, ServicesComponentProps } from '@/context/withStaticPathsAndProps';
 
 const DynamicHead: React.FC<ServicesComponentProps | ProductComponentProps | HomeComponentProps | ContactComponentsProps> = (componentProps) => {
   const pageData = componentProps.translationsPage;
+
+  const [fullUrl, setFullUrl] = useState('');
+  useEffect(() => {
+    setFullUrl(window.location.href);
+  }, [fullUrl]);
 
   return (
     <>
       <NextSeo
         title={pageData.title}
         description={pageData.description}
-        canonical={componentProps.fullUrl}
+        canonical={fullUrl}
         openGraph={{
           type: 'website',
-          url: componentProps.fullUrl,
+          url: fullUrl,
           title: pageData.title,
           description: pageData.description,
           images: [
@@ -39,7 +44,7 @@ const DynamicHead: React.FC<ServicesComponentProps | ProductComponentProps | Hom
           { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
         ]}
         additionalLinkTags={[
-          { rel: 'canonical', href: componentProps.fullUrl },
+          { rel: 'canonical', href: fullUrl },
           ...componentProps.supportedLanguages.map((lang) => ({
             rel: 'alternate',
             hrefLang: lang,

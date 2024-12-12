@@ -10,3 +10,6 @@ export { default as Paragraph } from '@/components/ui/typography/Paragraph';
 export { default as OurEquipment } from '@/components/ui/equipment/OurEquipment';
 export { useEffect, useState } from 'react';
 export { default as InfoCardList } from '@/components/ui/info-card/InfoCardList';
+export { default as ServiceBlock } from '@/components/ui/service-block/ServiceBlock';
+export { default as ListBenefits } from '@/components/ui/list-benefits/ListBenefits';
+export { default as FeatureBlock } from '@/components/ui/feature-block/FeatureBlock';

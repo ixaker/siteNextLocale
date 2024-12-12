@@ -46,6 +46,7 @@ export const withStaticProps = async <P>(context: GetStaticPropsContext): Promis
       lang,
       supportedLanguages: SUPPORTED_LANGUAGES,
       defaultLanguage: getDefaultLanguage(),
+      version: `?v=${new Date().getTime()}`,
     } as P,
   };
 };
@@ -56,6 +57,7 @@ export type PageProps = {
   supportedLanguages: string[];
   defaultLanguage: string;
   children?: React.ReactNode;
+  version: string;
 };
 
 export type ServicesComponentProps = {
@@ -63,15 +65,14 @@ export type ServicesComponentProps = {
   lang: string;
   supportedLanguages: string[];
   translationsPage: ServicesPage;
-  fullUrl: string;
+  version: string;
 };
-
 export type ProductComponentProps = {
   translations: Translations;
   lang: string;
   supportedLanguages: string[];
   translationsPage: ProductPage;
-  fullUrl: string;
+  version: string;
 };
 
 export type HomeComponentProps = {
@@ -79,7 +80,7 @@ export type HomeComponentProps = {
   lang: string;
   supportedLanguages: string[];
   translationsPage: HomePage;
-  fullUrl: string;
+  version: string;
 };
 
 export type ContactComponentsProps = {
@@ -87,7 +88,7 @@ export type ContactComponentsProps = {
   lang: string;
   supportedLanguages: string[];
   translationsPage: ContactPage;
-  fullUrl: string;
+  version: string;
 };
 // Функция для создания путей
 export const withStaticPaths: GetStaticPaths = async () => {

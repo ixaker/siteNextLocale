@@ -358,23 +358,6 @@
     ],
     "callToAction": "Закажите обработку у нас и убедитесь, что ваша продукция будет выглядеть безупречно!"
   },
-  "orderBenefits": {
-    "orderBenefitsTitle": "Преимущества заказа именно у нас",
-    "listOrderBenefits": [
-      {
-        "title": "Готовы к большим объемам – обеспечим бесперебойную работу даже для масштабных заказов.",
-        "icon": "/assets/cylinder.webp"
-      },
-      {
-        "title": "Более 300 станков с ЧПУ – современное оборудование гарантирует точность, качество и скорость выполнения.",
-        "icon": "/assets/gears.webp"
-      },
-      {
-        "title": "Лояльные сроки – работаем быстро и всегда вовремя!",
-        "icon": "/assets/clock-time.webp"
-      }
-    ]
-  },
 
   "cardData": [
     {
@@ -451,6 +434,7 @@
     "description": "Компания QPart специализируется на производстве высококачественных деталей для железнодорожной инфраструктуры. Мы обеспечиваем производство различных компонентов, которые соответствуют всем современным стандартам безопасности и эксплуатационной надежности.",
     "descriptionBottom": "Наши решения подходят как для модернизации существующих систем, так и для строительства новых железнодорожных объектов.",
     "servicesTitle": "Наши преимущества",
+    "imageForServiceBlock": "/assets/zaliznychni-zapchastyny2.webp",
     "listServices": [
       {
         "description": "Современное оборудование. Использование станков с ЧПУ гарантирует высокую точность изготовления."
@@ -465,39 +449,54 @@
         "description": "Быстрые сроки. Обеспечиваем оперативное изготовление без ущерба для качества."
       }
     ],
+    "orderBenefitsTitle": "Преимущества заказа именно у нас",
+    "listOrderBenefits": [
+      {
+        "title": "Готовы к большим объемам – обеспечим бесперебойную работу даже для масштабных заказов.",
+        "icon": "/assets/cylinder.webp"
+      },
+      {
+        "title": "Более 300 станков с ЧПУ – современное оборудование гарантирует точность, качество и скорость выполнения.",
+        "icon": "/assets/gears.webp"
+      },
+      {
+        "title": "Лояльные сроки – работаем быстро и всегда вовремя!",
+        "icon": "/assets/clock-time.webp"
+      }
+    ],
     "peculiaritiesTitle": "Какие детали мы изготавливаем?",
     "listPeculiarities": [
       {
         "description": "Колёсные пары, тормозные диски, оси;",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Рама тележки, крепёжные детали, рессоры.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Крепления рельсов;",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Стяжные болты, анкерные системы, опорные части.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Сигнальные столбы, платформы, монтажные узлы;",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Металлоконструкции для мостов, тоннелей, платформ.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Специализированные изделия по чертежам заказчика;",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Детали нестандартной конфигурации для уникальных потребностей.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       }
     ],
     "question": "Нужны железнодорожные запчасти?",
@@ -510,6 +509,7 @@
     "description": "Наша компания специализируется на создании качественных запчастей для сельскохозяйственной техники, учитывая потребности аграриев и особенности современного фермерского оборудования.",
     "descriptionBottom": "Мы предлагаем широкий ассортимент деталей, подходящих для различных видов техники, обеспечивающих её бесперебойную работу даже в самых сложных условиях. Оснастите свою технику качественными запчастями.",
     "servicesTitle": "Наши преимущества:",
+    "imageForServiceBlock": "/assets/zapchastyny-dlya-silhosptekhniky2.webp",
     "listServices": [
       {
         "description": "Современное оборудование. Использование станков с ЧПУ гарантирует высокую точность изготовления."
@@ -522,19 +522,34 @@
       },
       { "description": "Быстрые сроки. Обеспечиваем оперативное изготовление без ущерба для качества." }
     ],
+    "orderBenefitsTitle": "Преимущества заказа именно у нас",
+    "listOrderBenefits": [
+      {
+        "title": "Готовы к большим объемам – обеспечим бесперебойную работу даже для масштабных заказов.",
+        "icon": "/assets/cylinder.webp"
+      },
+      {
+        "title": "Более 300 станков с ЧПУ – современное оборудование гарантирует точность, качество и скорость выполнения.",
+        "icon": "/assets/gears.webp"
+      },
+      {
+        "title": "Лояльные сроки – работаем быстро и всегда вовремя!",
+        "icon": "/assets/clock-time.webp"
+      }
+    ],
     "peculiaritiesTitle": "Какие детали мы производим?",
     "listPeculiarities": [
       {
         "description": "Комплектующие для кормозаготовительной техники: ножи, измельчители, валы, обеспечивающие бесперебойную работу техники для животноводства.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Детали для погрузчиков и манипуляторов: гидравлические цилиндры, крепления, необходимые для надёжной работы вспомогательного оборудования.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Специализированные детали на заказ: изготавливаем индивидуальные запчасти в соответствии с конкретными запросами клиентов.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       }
     ],
     "question": "Ищете запчасти для сельхозтехники?",

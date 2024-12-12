@@ -1,15 +1,13 @@
-import { PageProps } from '@/context/withStaticPathsAndProps';
+import { HomeComponentProps, ProductComponentProps, ServicesComponentProps } from '@/context/withStaticPathsAndProps';
 import ButtonSubmitDrawing from '../button/ButtonSubmitDrawing';
 
-interface CalculationSection {
-  translations: PageProps['translations'];
-  lang: PageProps['lang'];
-}
-
-const CalculationSection: React.FC<CalculationSection> = ({ translations, lang }) => {
+const CalculationSection: React.FC<ServicesComponentProps | ProductComponentProps | HomeComponentProps> = (componentProps) => {
   return (
-    <div className="bg-bgImgHomeBottom min-h-[200px] bg-cover bg-center flex items-center justify-center mt-5">
-      <ButtonSubmitDrawing translations={translations} lang={lang} />
+    <div
+      className={`min-h-[200px] bg-cover bg-center flex items-center justify-center mt-5`}
+      style={{ backgroundImage: `url('/assets/bgImgCalculationSection.webp${componentProps.version}')` }}
+    >
+      <ButtonSubmitDrawing translations={componentProps.translations} lang={componentProps.lang} />
     </div>
   );
 };

@@ -5,15 +5,16 @@ interface CardProps {
   title: string;
   srcImg: string;
   href: string;
+  version: string;
 }
 
-const Card: React.FC<CardProps> = ({ title, srcImg, href }) => {
+const Card: React.FC<CardProps> = ({ title, srcImg, href, version }) => {
   return (
     <Link href={href} className="group relative block rounded-t-lg shadow-md overflow-hidden cursor-pointer">
       <div>
         <Image
           className="rounded-t-lg object-cover h-[250px] w-[250px] xl:w-[300px] transition-transform duration-500 group-hover:scale-105"
-          src={`${srcImg}`}
+          src={`${srcImg}${version}`}
           alt=""
           width={100}
           height={100}

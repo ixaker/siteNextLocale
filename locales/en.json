@@ -358,24 +358,6 @@
     ],
     "callToAction": "Order processing from us and see that your products will look flawless!"
   },
-  "orderBenefits": {
-    "orderBenefitsTitle": "Advantages of Ordering with Us",
-    "listOrderBenefits": [
-      {
-        "title": "Ready for large volumes – ensuring uninterrupted operations even for large-scale orders.",
-        "icon": "/assets/cylinder.webp"
-      },
-      {
-        "title": "More than 300 CNC machines – modern equipment guarantees precision, quality, and speed of execution.",
-        "icon": "/assets/gears.webp"
-      },
-      {
-        "title": "Flexible deadlines – we work quickly and always on time!",
-        "icon": "/assets/clock-time.webp"
-      }
-    ]
-  },
-
   "cardData": [
     {
       "title": "CNC TURNING WORK",
@@ -461,6 +443,7 @@
     "description": "QPart specializes in the production of high-quality components for railway infrastructure. We ensure the manufacturing of various components that meet all modern safety and operational reliability standards.",
     "descriptionBottom": "Our solutions are suitable for both the modernization of existing systems and the construction of new railway facilities.",
     "servicesTitle": "Our Advantages",
+    "imageForServiceBlock": "/assets/zaliznychni-zapchastyny2.webp",
     "listServices": [
       {
         "description": "Modern equipment. The use of CNC machines guarantees high manufacturing precision."
@@ -475,39 +458,54 @@
         "description": "Quick timelines. We ensure prompt production without compromising quality."
       }
     ],
+    "orderBenefitsTitle": "Benefits of Ordering from Us",
+    "listOrderBenefits": [
+      {
+        "title": "Ready for large volumes – we ensure uninterrupted operations even for large-scale orders.",
+        "icon": "/assets/cylinder.webp"
+      },
+      {
+        "title": "Over 300 CNC machines – modern equipment guarantees precision, quality, and speed.",
+        "icon": "/assets/gears.webp"
+      },
+      {
+        "title": "Flexible deadlines – we work fast and always on time!",
+        "icon": "/assets/clock-time.webp"
+      }
+    ],
     "peculiaritiesTitle": "What Components Do We Produce?",
     "listPeculiarities": [
       {
         "description": "Wheelsets, brake discs, axles;",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Bogie frame, fastening components, springs.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Rail fastenings;",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Tension bolts, anchor systems, support parts.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Signal posts, platforms, mounting units;",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Metal structures for bridges, tunnels, platforms.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Specialized products according to customer drawings;",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Custom-configured components for unique needs.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       }
     ],
     "question": "Need railway parts?",
@@ -520,6 +518,7 @@
     "description": "Our company specializes in creating high-quality spare parts for agricultural machinery, considering the needs of farmers and the features of modern farming equipment.",
     "descriptionBottom": "We offer a wide range of parts suitable for various types of machinery, ensuring its uninterrupted operation even under the toughest conditions. Equip your machinery with high-quality spare parts.",
     "servicesTitle": "Our Advantages:",
+    "imageForServiceBlock": "/assets/zapchastyny-dlya-silhosptekhniky2.webp",
     "listServices": [
       { "description": "Modern equipment. The use of CNC machines guarantees high manufacturing precision." },
       { "description": "Quality control. All parts undergo testing to meet international standards." },
@@ -528,19 +527,34 @@
       },
       { "description": "Fast turnaround times. We ensure quick production without compromising quality." }
     ],
+    "orderBenefitsTitle": "Benefits of Ordering from Us",
+    "listOrderBenefits": [
+      {
+        "title": "Ready for large volumes – we ensure uninterrupted operations even for large-scale orders.",
+        "icon": "/assets/cylinder.webp"
+      },
+      {
+        "title": "Over 300 CNC machines – modern equipment guarantees precision, quality, and speed.",
+        "icon": "/assets/gears.webp"
+      },
+      {
+        "title": "Flexible deadlines – we work fast and always on time!",
+        "icon": "/assets/clock-time.webp"
+      }
+    ],
     "peculiaritiesTitle": "What parts do we produce?",
     "listPeculiarities": [
       {
         "description": "Components for forage harvesting equipment: knives, shredders, shafts that ensure uninterrupted operation of livestock machinery.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Parts for loaders and manipulators: hydraulic cylinders, mounts necessary for reliable functioning of auxiliary equipment.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       },
       {
         "description": "Custom parts: we manufacture bespoke spare parts according to specific customer requests.",
-        "icon": "/icons/listPeculiarities.png"
+        "icon": "/icons/listPeculiarities.webp"
       }
     ],
     "question": "Looking for spare parts for agricultural machinery?",

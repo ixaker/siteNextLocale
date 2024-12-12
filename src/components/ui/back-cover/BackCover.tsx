@@ -4,9 +4,10 @@ import { useMediaQuery } from 'react-responsive';
 interface BackCoverProps {
   children: React.ReactNode;
   bgImg?: string;
+  version: string;
 }
 
-const BackCover: React.FC<BackCoverProps> = ({ children, bgImg }) => {
+const BackCover: React.FC<BackCoverProps> = ({ children, bgImg, version }) => {
   const isSmallScreen = useMediaQuery({ query: '(max-width: 640px)' });
   const [backgroundImage, setBackgroundImage] = useState('/bgImg.webp');
 
@@ -17,7 +18,7 @@ const BackCover: React.FC<BackCoverProps> = ({ children, bgImg }) => {
   return (
     <div
       style={{
-        backgroundImage: `url(${backgroundImage})`,
+        backgroundImage: `url(${backgroundImage}${version})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
       }}
