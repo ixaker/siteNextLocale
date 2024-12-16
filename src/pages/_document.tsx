@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
 import { getDefaultLanguage } from '@/context/withStaticPathsAndProps';
+import Script from 'next/script';
 
 class MyDocument extends Document<{ lang: string }> {
   static async getInitialProps(ctx: DocumentContext) {
@@ -24,6 +25,22 @@ class MyDocument extends Document<{ lang: string }> {
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
           <meta property="og:type" content="website" />
+
+          <Script src="https://connect.facebook.net/en_US/fbevents.js" strategy="afterInteractive" />
+          <Script id="fbq-init" strategy="afterInteractive">
+            {`
+                    !function(f,b,e,v,n,t,s)
+                    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                    n.queue=[];t=b.createElement(e);t.async=!0;
+                    t.src=v;s=b.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t,s)}(window, document,'script',
+                    'https://connect.facebook.net/en_US/fbevents.js');
+                    fbq('init', '8670227466421134');
+                    fbq('track', 'PageView');
+                `}
+          </Script>
         </Head>
         <body>
           <Main />
