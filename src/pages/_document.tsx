@@ -25,7 +25,7 @@ class MyDocument extends Document<{ lang: string }> {
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
           <meta property="og:type" content="website" />
-
+          {/* Facebook Pixel */}
           <Script src="https://connect.facebook.net/en_US/fbevents.js" strategy="afterInteractive" />
           <Script id="fbq-init" strategy="afterInteractive">
             {`
@@ -40,6 +40,16 @@ class MyDocument extends Document<{ lang: string }> {
                     fbq('init', '8670227466421134');
                     fbq('track', 'PageView');
                 `}
+          </Script>
+          {/* Google Analytics (gtag.js) */}
+          <Script async src="https://www.googletagmanager.com/gtag/js?id=G-2RGZ7ETLKW" strategy="afterInteractive" />
+          <Script id="gtag-init" strategy="afterInteractive">
+            {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2RGZ7ETLKW');
+      `}
           </Script>
         </Head>
         <body>
