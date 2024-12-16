@@ -398,6 +398,7 @@
       "title": "Services",
       "subMenu": [
         { "title": "CNC TURNING", "href": "services/tokarni-roboty-chpk" },
+        { "title": "MILLING", "href": "services/frezerni-roboty" },
         {
           "title": "METAL WELDING",
           "href": "services/zvaryuvannya-metalu"
@@ -410,7 +411,6 @@
           "title": "METAL CASTING",
           "href": "services/lyttya-metalu"
         },
-        { "title": "MILLING", "href": "services/frezerni-roboty" },
         { "title": "HEAT TREATMENT", "href": "services/termichna-obrobka" },
         { "title": "LASER CUTTING", "href": "services/lazerna-rizka" },
         { "title": "METAL GRINDING", "href": "services/shlifovka-metalu" },

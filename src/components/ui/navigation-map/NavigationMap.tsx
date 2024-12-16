@@ -17,22 +17,20 @@ const NavigationMap: React.FC<NavigationMapProps> = ({ lang, translationsMenuSer
         const isActive = router.asPath === `/${lang}/${item.href}/`;
 
         return (
-          <li
+          <Link
+            href={`/${lang}/${item.href}`}
             key={index}
-            className={`ease-in-out w-fit pl-2 pr-6 py-2 rounded-r-[20px] ${
-              isActive ? 'bg-activeColor' : '!bg-[rgba(26,25,25,0.56)]'
-            }`}
+            className={`ease-in-out group w-fit pl-2 pr-6 py-2 rounded-r-[20px] ${isActive ? 'bg-activeColor' : 'bg-[rgba(255,255,255,0.12)] backdrop-blur-2xl'}`}
           >
-            <Link
-              className={`text-white font-bold transition-all duration-300 ease-in-out text-[12px] text-nowrap flex items-center transform hover:translate-x-2 ${
-                isActive ? 'text-highlightColor' : 'hover:text-activeColor'
+            <span
+              className={`text-white font-bold transition-all duration-300 ease-in-out text-[12px] text-nowrap flex items-center transform group-hover:translate-x-2 group-hover:text-[white] ${
+                isActive ? 'text-highlightColor' : 'group-hover:text-activeColor'
               }`}
-              href={`/${lang}/${item.href}`}
             >
-              <ArrowForwardIosIcon />
+              <ArrowForwardIosIcon className="text-[white] group-hover:text-[#c43c1e] transition-all duration-300 ease-in-out" />
               {item.title}
-            </Link>
-          </li>
+            </span>
+          </Link>
         );
       })}
     </ul>

@@ -398,13 +398,13 @@
       "title": "Услуги",
       "subMenu": [
         { "title": "ТОКАРНЫЕ РАБОТЫ С ЧПУ", "href": "services/tokarni-roboty-chpk" },
+        { "title": "ФРЕЗЕРНЫЕ РАБОТЫ С ЧПУ", "href": "services/frezerni-roboty" },
         { "title": "СВАРКА МЕТАЛЛА", "href": "services/zvaryuvannya-metalu" },
         {
           "title": "РЕЗКА НА ЛЕНТОПИЛЬНОМ СТАНКЕ",
           "href": "services/porizka-na-verstati"
         },
         { "title": "ЛИТЬЕ МЕТАЛЛА", "href": "services/lyttya-metalu" },
-        { "title": "ФРЕЗЕРНЫЕ РАБОТЫ С ЧПУ", "href": "services/frezerni-roboty" },
         { "title": "ТЕРМИЧЕСКАЯ ОБРАБОТКА", "href": "services/termichna-obrobka" },
         { "title": "ЛАЗЕРНАЯ РЕЗКА С ЧПУ", "href": "services/lazerna-rizka" },
         { "title": "ШЛИФОВКА МЕТАЛЛА", "href": "services/shlifovka-metalu" },

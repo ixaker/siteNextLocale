@@ -397,6 +397,7 @@
       "title": "Dienstleistungen",
       "subMenu": [
         { "title": "CNC-DREHARBEITEN", "href": "services/tokarni-roboty-chpk" },
+        { "title": "FRÄSARBEITEN", "href": "services/frezerni-roboty" },
         {
           "title": "METALLSCHWEISSEN",
           "href": "services/zvaryuvannya-metalu"
@@ -409,7 +410,6 @@
           "title": "METALLGUSS",
           "href": "services/lyttya-metalu"
         },
-        { "title": "FRÄSARBEITEN", "href": "services/frezerni-roboty" },
         { "title": "WÄRMEBEHANDLUNG", "href": "services/termichna-obrobka" },
         { "title": "LASERSCHNEIDEN", "href": "services/lazerna-rizka" },
         { "title": "METALLSCHLEIFEN", "href": "services/shlifovka-metalu" },

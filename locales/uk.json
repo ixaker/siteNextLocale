@@ -406,10 +406,10 @@
       "title": "Послуги",
       "subMenu": [
         { "title": "ТОКАРНІ РОБОТИ З ЧПК", "href": "services/tokarni-roboty-chpk" },
+        { "title": "ФРЕЗЕРНІ РОБОТИ З ЧПК", "href": "services/frezerni-roboty" },
         { "title": "ЗВАРЮВАННЯ МЕТАЛУ", "href": "services/zvaryuvannya-metalu" },
         { "title": "СТРІЧКОПИЛЬНА ПОРІЗКА", "href": "services/porizka-na-verstati" },
         { "title": "ЛИТТЯ МЕТАЛУ", "href": "services/lyttya-metalu" },
-        { "title": "ФРЕЗЕРНІ РОБОТИ З ЧПК", "href": "services/frezerni-roboty" },
         { "title": "ТЕРМІЧНА ОБРОБКА", "href": "services/termichna-obrobka" },
         { "title": "ЛАЗЕРНА РІЗКА З ЧПК", "href": "services/lazerna-rizka" },
         { "title": "ШЛІФУВАННЯ МЕТАЛУ", "href": "services/shlifovka-metalu" },
