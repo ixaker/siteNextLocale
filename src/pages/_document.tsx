@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
 import { getDefaultLanguage } from '@/context/withStaticPathsAndProps';
-import Script from 'next/script';
+// import Script from 'next/script';
 
 class MyDocument extends Document<{ lang: string }> {
   static async getInitialProps(ctx: DocumentContext) {
@@ -26,7 +26,7 @@ class MyDocument extends Document<{ lang: string }> {
           <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
           <meta property="og:type" content="website" />
           {/* Facebook Pixel */}
-          <Script src="https://connect.facebook.net/en_US/fbevents.js" strategy="afterInteractive" />
+          {/* <Script src="https://connect.facebook.net/en_US/fbevents.js" strategy="afterInteractive" />
           <Script id="fbq-init" strategy="afterInteractive">
             {`
                     !function(f,b,e,v,n,t,s)
@@ -40,9 +40,9 @@ class MyDocument extends Document<{ lang: string }> {
                     fbq('init', '8670227466421134');
                     fbq('track', 'PageView');
                 `}
-          </Script>
+          </Script> */}
           {/* Google Analytics (gtag.js) */}
-          <Script async src="https://www.googletagmanager.com/gtag/js?id=G-2RGZ7ETLKW" strategy="afterInteractive" />
+          {/* <Script async src="https://www.googletagmanager.com/gtag/js?id=G-2RGZ7ETLKW" strategy="afterInteractive" />
           <Script id="gtag-init" strategy="afterInteractive">
             {`
         window.dataLayer = window.dataLayer || [];
@@ -50,7 +50,7 @@ class MyDocument extends Document<{ lang: string }> {
         gtag('js', new Date());
         gtag('config', 'G-2RGZ7ETLKW');
       `}
-          </Script>
+          </Script> */}
         </Head>
         <body>
           <Main />

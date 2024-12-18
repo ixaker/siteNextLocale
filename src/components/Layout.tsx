@@ -19,7 +19,7 @@ const Layout: React.FC<PageProps> = ({ children, ...restProps }) => {
             phone={<PhoneIcon className="hover:!text-activeColor  transition-all duration-300 ease-in-out size-8 md:size-10 lg:size-12" />}
           />
         </div>
-        <UserAgreementSnackbar {...restProps} />
+        <UserAgreementSnackbar translations={restProps.translations} lang={restProps.lang} />
       </main>
       <Footer {...restProps} />
     </>

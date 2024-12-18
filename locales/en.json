@@ -581,6 +581,69 @@
       "button": "Accept and continue"
     }
   },
+  "userAgreement": {
+    "userAgreementSnackbar": {
+      "description": "We use cookies for analytics and improving website performance. By continuing to use the site, you agree to the use of cookies. For details, please refer to our",
+      "link": "Privacy Policy",
+      "button": "Accept and continue"
+    },
+    "userAgreementPage": {
+      "title": "Privacy Policy and Cookie Usage",
+      "description": {
+        "introductionStrong": "We use cookies and similar technologies to analyze user behavior on our website.",
+        "includes": "This includes the use of tools such as",
+        "toolsStrong": "Google Analytics and Facebook Pixel,",
+        "includesContinuation": "which help us collect information about how you interact with our site, including pages visited and actions taken, such as button clicks.",
+        "useInformation": "This information is used exclusively for",
+        "useInformationStrong": "analyzing and improving the quality of our service."
+      },
+      "whatWeCollect": {
+        "title": "What do we collect?",
+        "descriptionList": [
+          {
+            "title": "Visit data:",
+            "description": "Information about which pages you visited, how much time you spent on the site, and from which countries and devices you accessed the site."
+          },
+          {
+            "title": "Site actions:",
+            "description": "Tracking clicks on buttons, interactions with forms, and other site elements. This helps us improve the user experience."
+          },
+          {
+            "title": "Session information:",
+            "description": "Using analytics tools such as Google Analytics, we collect anonymous data about your activities on the site, such as traffic sources, time on site, and other metrics."
+          }
+        ]
+      },
+      "howWeuseData": {
+        "title": "How do we use this data?",
+        "whatIsTheDataFor": " The data is collected and processed exclusively for",
+        "whatIsTheDataForStrong": "analyzing site performance, improving content, and enhancing user experience.",
+        "dataTransfer": "We do not share this data with third parties except for analytics purposes using tools such as",
+        "toolsStrong": "Google Analytics and Facebook Pixel."
+      },
+      "consentToUse": {
+        "title": "Consent to use cookies",
+        "description": " By using our site, you agree to the collection of data through cookies for the purposes mentioned above. If you do not want us to use these technologies, you can set your browser to block cookies or notify you about them."
+      },
+      "howToDisable": {
+        "title": "How to disable data collection?",
+        "description": " You can disable tracking via",
+        "toolsStrong": "Google Analytics and Facebook Pixel",
+        "descriptionContinuation": "in your browser settings or use cookie management tools such as",
+        "toolsSelected": "Google Analytics Opt-out Browser Add-on. ",
+        "descriptionEnd": "By disabling these tools, you will limit the collection of data about your site behavior."
+      },
+      "additionalInformation": {
+        "title": "Additional information:",
+        "legalRequirements": "We collect and process data in accordance with data protection laws, including",
+        "gdpr": "GDPR",
+        "legalRequirementsContinuation": "for citizens of the European Union and the",
+        "legalRequirementsStrong": "Law on Personal Data Protection of Ukraine.",
+        "additionalQuestions": "If you have any questions about the use of your data, please contact us via email, and we will respond as soon as possible."
+      }
+    }
+  },
+
   "btnSend": "Send drawings for calculation",
   "messageInformation": "Message sent"
 }

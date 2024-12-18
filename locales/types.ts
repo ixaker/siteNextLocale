@@ -105,6 +105,45 @@ export type Translations = {
     };
     userAgreementPage: {
       title: string;
+      description: {
+        introductionStrong: string;
+        includes: string;
+        toolsStrong: string;
+        includesContinuation: string;
+        useInformation: string;
+        useInformationStrong: string;
+      };
+      whatWeCollect: {
+        title: string;
+        descriptionList: { title: string; description: string }[];
+      };
+      howWeuseData: {
+        title: string;
+        whatIsTheDataFor: string;
+        whatIsTheDataForStrong: string;
+        dataTransfer: string;
+        toolsStrong: string;
+      };
+      consentToUse: {
+        title: string;
+        description: string;
+      };
+      howToDisable: {
+        title: string;
+        description: string;
+        toolsStrong: string;
+        descriptionContinuation: string;
+        toolsSelected: string;
+        descriptionEnd: string;
+      };
+      additionalInformation: {
+        title: string;
+        legalRequirements: string;
+        gdpr: string;
+        legalRequirementsContinuation: string;
+        legalRequirementsStrong: string;
+        additionalQuestions: string;
+      };
     };
   };
   btnSend: string;

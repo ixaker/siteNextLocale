@@ -581,6 +581,69 @@
       "button": "Akzeptieren und fortfahren"
     }
   },
+  "userAgreement": {
+    "userAgreementSnackbar": {
+      "description": "Wir verwenden Cookies für Analysen und zur Verbesserung der Website-Leistung. Durch die weitere Nutzung der Website stimmen Sie der Verwendung von Cookies zu. Weitere Details finden Sie in unserer",
+      "link": "Datenschutzrichtlinie",
+      "button": "Akzeptieren und fortfahren"
+    },
+    "userAgreementPage": {
+      "title": "Datenschutzrichtlinie und Verwendung von Cookies",
+      "description": {
+        "introductionStrong": "Wir verwenden Cookies und ähnliche Technologien, um das Nutzerverhalten auf unserer Website zu analysieren.",
+        "includes": "Dazu gehören Tools wie",
+        "toolsStrong": "Google Analytics und Facebook Pixel,",
+        "includesContinuation": "die uns helfen, Informationen darüber zu sammeln, wie Sie mit unserer Website interagieren, einschließlich besuchter Seiten und Aktionen wie Klicks auf Schaltflächen.",
+        "useInformation": "Diese Informationen werden ausschließlich für",
+        "useInformationStrong": "die Analyse und Verbesserung unserer Dienstleistungen verwendet."
+      },
+      "whatWeCollect": {
+        "title": "Was sammeln wir?",
+        "descriptionList": [
+          {
+            "title": "Besuchsdaten:",
+            "description": "Informationen darüber, welche Seiten Sie besucht haben, wie viel Zeit Sie auf der Website verbracht haben und aus welchen Ländern und Geräten Sie auf die Website zugegriffen haben."
+          },
+          {
+            "title": "Aktionen auf der Website:",
+            "description": "Verfolgung von Klicks auf Schaltflächen, Interaktionen mit Formularen und anderen Website-Elementen. Dies hilft uns, die Benutzererfahrung zu verbessern."
+          },
+          {
+            "title": "Sitzungsinformationen:",
+            "description": "Mit Analysen-Tools wie Google Analytics sammeln wir anonyme Daten über Ihre Aktivitäten auf der Website, wie z. B. Traffic-Quellen, Zeit auf der Website und andere Metriken."
+          }
+        ]
+      },
+      "howWeuseData": {
+        "title": "Wie verwenden wir diese Daten?",
+        "whatIsTheDataFor": " Die Daten werden ausschließlich für",
+        "whatIsTheDataForStrong": "die Analyse der Website-Leistung, die Verbesserung von Inhalten und die Optimierung der Benutzererfahrung gesammelt und verarbeitet.",
+        "dataTransfer": "Wir geben diese Daten nicht an Dritte weiter, außer für Analysezwecke mit Tools wie",
+        "toolsStrong": "Google Analytics und Facebook Pixel."
+      },
+      "consentToUse": {
+        "title": "Einwilligung zur Verwendung von Cookies",
+        "description": " Durch die Nutzung unserer Website stimmen Sie der Erfassung von Daten mittels Cookies für die oben genannten Zwecke zu. Wenn Sie nicht möchten, dass wir diese Technologien verwenden, können Sie Ihren Browser so einstellen, dass er Cookies blockiert oder Sie darüber informiert."
+      },
+      "howToDisable": {
+        "title": "Wie deaktiviert man die Datenerfassung?",
+        "description": " Sie können das Tracking über",
+        "toolsStrong": "Google Analytics und Facebook Pixel",
+        "descriptionContinuation": "in Ihren Browser-Einstellungen deaktivieren oder Tools zur Cookie-Verwaltung verwenden, wie z. B.",
+        "toolsSelected": "Google Analytics Opt-out Browser Add-on. ",
+        "descriptionEnd": "Durch das Deaktivieren dieser Tools wird die Datensammlung über Ihr Verhalten auf der Website eingeschränkt."
+      },
+      "additionalInformation": {
+        "title": "Zusätzliche Informationen:",
+        "legalRequirements": "Wir erheben und verarbeiten Daten gemäß den Datenschutzgesetzen, einschließlich der",
+        "gdpr": "DSGVO",
+        "legalRequirementsContinuation": "für Bürger der Europäischen Union und dem",
+        "legalRequirementsStrong": "Gesetz zum Schutz personenbezogener Daten der Ukraine.",
+        "additionalQuestions": "Wenn Sie Fragen zur Verwendung Ihrer Daten haben, kontaktieren Sie uns bitte per E-Mail, und wir werden so schnell wie möglich antworten."
+      }
+    }
+  },
+
   "btnSend": "Zeichnung zur Kalkulation senden",
   "messageInformation": "Nachricht gesendet"
 }
