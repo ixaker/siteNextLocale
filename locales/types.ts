@@ -97,6 +97,16 @@ export type Translations = {
   footer: {
     join: string;
   };
+  userAgreement: {
+    userAgreementSnackbar: {
+      description: string;
+      link: string;
+      button: string;
+    };
+    userAgreementPage: {
+      title: string;
+    };
+  };
   btnSend: string;
   messageInformation: string;
 };

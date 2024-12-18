@@ -18,7 +18,6 @@ const InformationBlock: React.FC<ServicesComponentProps | ProductComponentProps>
         <div className="px-4 text-white flex items-start justify-center w-full">
           <div className="flex gap-3   max-w-[1050px]  justify-between bg-inherit sm:bg-[#000000af]  rounded-[10px]">
             <div className="hidden sm:block max-w-[320px] w-full">
-              {/* ?v=${new Date().getTime()} */}
               <Image
                 width={100}
                 height={100}

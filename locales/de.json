@@ -574,6 +574,13 @@
   "footer": {
     "join": "Treten Sie bei"
   },
+  "userAgreement": {
+    "userAgreementSnackbar": {
+      "description": "Wir verwenden Cookies für Analysen und zur Verbesserung der Website. Indem Sie die Website weiterhin nutzen, stimmen Sie der Verwendung von Cookies zu. Weitere Informationen finden Sie in unserer",
+      "link": "Datenschutzrichtlinie",
+      "button": "Akzeptieren und fortfahren"
+    }
+  },
   "btnSend": "Zeichnung zur Kalkulation senden",
   "messageInformation": "Nachricht gesendet"
 }

@@ -574,6 +574,13 @@
   "footer": {
     "join": "Join"
   },
+  "userAgreement": {
+    "userAgreementSnackbar": {
+      "description": "We use cookies for analytics and to improve the functionality of the site. By continuing to use the site, you agree to the use of cookies. For details, see our",
+      "link": "Privacy Policy",
+      "button": "Accept and continue"
+    }
+  },
   "btnSend": "Send drawings for calculation",
   "messageInformation": "Message sent"
 }
