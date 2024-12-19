@@ -576,13 +576,6 @@
   },
   "userAgreement": {
     "userAgreementSnackbar": {
-      "description": "Wir verwenden Cookies für Analysen und zur Verbesserung der Website. Indem Sie die Website weiterhin nutzen, stimmen Sie der Verwendung von Cookies zu. Weitere Informationen finden Sie in unserer",
-      "link": "Datenschutzrichtlinie",
-      "button": "Akzeptieren und fortfahren"
-    }
-  },
-  "userAgreement": {
-    "userAgreementSnackbar": {
       "description": "Wir verwenden Cookies für Analysen und zur Verbesserung der Website-Leistung. Durch die weitere Nutzung der Website stimmen Sie der Verwendung von Cookies zu. Weitere Details finden Sie in unserer",
       "link": "Datenschutzrichtlinie",
       "button": "Akzeptieren und fortfahren"

@@ -1,0 +1,646 @@
+{
+  "locale": "fr_FR",
+  "homePage": {
+    "title": "QPART – nous offrons des services d'usinage et de fabrication de pièces et de composants de toute complexité. Contactez-nous : +380989950760, info@qpart.com.ua",
+    "srcImg": "/logo.webp",
+    "topTitle": "NOUS FABRIQUONS DES PRODUITS",
+    "bottomTitle": "DE TOUTE COMPLEXITÉ",
+    "description": "TRAVAUX DE TOURNAGE ET DE FRAISAGE SUR MACHINES CNC",
+    "h2": "Entreprise « QPART »",
+    "descriptionCompany": "Nous offrons des services d'usinage et de fabrication de pièces et de composants de toute complexité. Nous réalisons des travaux selon les dessins du client ou, si nécessaire, nous développons la documentation de conception et technique à partir de zéro. Les produits finis sont expédiés dans toute l'Ukraine et à l'étranger. Nous avons de l'expérience dans la collaboration avec des entreprises étrangères."
+  },
+  "tokarniRobotyChpkPage": {
+    "srcImg": "/assets/tokarni-roboty-chpk.webp",
+    "title": "TOURNAGE CNC",
+    "description": "Nous faisons ce que d'autres appellent impossible. Une grande flotte de machines CNC, des technologies modernes et une équipe de professionnels nous permettent de fabriquer des pièces de toute complexité et volume.",
+    "descriptionBottom": "Vous cherchez un partenaire capable de gérer de grandes séries, des formes complexes et des délais serrés ? Vous l'avez trouvé.",
+    "infoCard": [
+      {
+        "title": "Nous Gérons Tout Volume de Travaux de Tournage",
+        "description": "Nous comprenons que votre entreprise ne peut pas attendre. Grâce à des capacités modernes et une logistique établie, votre commande sera réalisée dans les plus brefs délais. Oubliez les longs délais de production — nous travaillons rapidement et efficacement.",
+        "image": "/assets/tokarni-roboty-chpk2.webp"
+      },
+      {
+        "title": "Exécution Rapide des Commandes",
+        "description": "Notre flotte comprend plus de 300 machines CNC modernes qui fonctionnent en continu. Nous traitons de grandes séries de pièces sans problème. Vous voulez commander de grands volumes de produits ? Pas de problème. Si vos fournisseurs ne peuvent pas gérer la charge, nous sommes prêts à prendre votre commande et à la livrer à temps.",
+        "image": "/assets/tokarni-roboty-chpk3.webp"
+      },
+      {
+        "title": "Précision et Fabrication de Toute Complexité",
+        "description": "Nos machines nous permettent de produire de grandes pièces avec un diamètre allant jusqu'à 4000 mm et une longueur allant jusqu'à 8000 mm. Besoin de petites pièces complexes à partir de 10 mm ? Nous les fabriquerons avec une précision maximale. Là où d'autres échouent, nous offrons des solutions et demandons : 'Quand commençons-nous ?'",
+        "image": "/assets/tokarni-roboty-chpk4.webp"
+      },
+      {
+        "title": "Approche Globale",
+        "description": "De l'usinage à la finition finale — nous sommes prêts à soutenir votre projet à chaque étape. Nos clients reçoivent une solution complète : du tournage CNC à la préparation des pièces pour utilisation.",
+        "image": "/assets/tokarni-roboty-chpk5.webp"
+      }
+    ],
+    "ourEquipmentTitle": "NOTRE ÉQUIPEMENT",
+    "ourEquipment": [
+      {
+        "title": "Centre de Tournage et Fraisage CNC",
+        "name": "Boehringer VDF 250C-U",
+        "description": [
+          "Longueur de traitement : 100 mm",
+          "Diamètre de traitement dans le mandrin : 400 mm",
+          "Course de l'axe X : 225 mm",
+          "Course de l'axe Z : 600 mm",
+          "Diamètre de l'alésage de la broche : 78 mm."
+        ],
+        "image": "/assets/vdf-250c-u.webp"
+      },
+      {
+        "title": "Tour CNC",
+        "name": "GILDEMEISTER NEF CT40",
+        "description": [
+          "Longueur de traitement : 600 mm",
+          "Diamètre de traitement dans le mandrin : jusqu'à 190 mm",
+          "Diamètre de traitement dans le mandrin à collet : jusqu'à 65 mm",
+          "Course de l'axe X : 225 mm",
+          "Course de l'axe Z : 600 mm"
+        ],
+        "image": "/assets/nef-ct40.webp"
+      },
+      {
+        "title": "Tour CNC Universel",
+        "name": "HITACHI SEIKI HITEC-TURN 20",
+        "description": [
+          "Longueur de traitement : 380 mm",
+          "Diamètre de traitement dans le mandrin : jusqu'à 210 mm",
+          "Course de l'axe X : 215 mm",
+          "Course de l'axe Z : 401 mm",
+          "Distance entre les centres : 630 mm."
+        ],
+        "image": "/assets/hitec-turn-20.webp"
+      }
+    ],
+    "callToAction": "Nous sommes prêts à devenir votre partenaire fiable pour les travaux de tournage !"
+  },
+  "zvaryuvannyaMetaluPage": {
+    "srcImg": "/assets/zvaryuvannya-metalu.webp",
+    "title": "Soudage de Métal",
+    "description": "Les travaux de soudage de toute complexité deviennent une réalité grâce à notre équipement avancé et nos approches innovantes. Nous garantissons la précision, la solidité et la fiabilité de chaque soudure, quelle que soit l'échelle et le type de métal.",
+    "descriptionBottom": "Besoin d'un soudage de qualité ? Nous sommes prêts à vous aider à réaliser même les idées les plus complexes.",
+    "infoCard": [
+      {
+        "title": "Solutions Innovantes pour Structures Complexes",
+        "description": "Nous fournissons des services de soudage complets, garantissant une haute qualité et le respect des normes modernes. Grâce à un équipement avancé et des spécialistes expérimentés, vous pouvez être sûr de la durabilité et de l'exécution impeccable de toute structure métallique.",
+        "image": "/assets/zvaryuvannya-metalu2.webp"
+      },
+      {
+        "title": "Large Gamme de Technologies. Nos capacités de soudage incluent :",
+        "list": [
+          { "description": "Soudage semi-automatique" },
+          { "description": "Soudage TIG" },
+          { "description": "Soudage laser" },
+          { "description": "Soudage à l'arc et par contact" }
+        ],
+        "image": "/assets/zvaryuvannya-metalu3.webp"
+      },
+      {
+        "title": "Support à Chaque Étape",
+        "description": "Nous nous occupons du cycle complet de traitement des métaux : de la préparation à la production finale. Notre objectif est de vous fournir une pièce finie sans avoir besoin de faire appel à d'autres sous-traitants.",
+        "image": "/assets/zvaryuvannya-metalu4.webp"
+      },
+      {
+        "title": "Solutions Spécialisées",
+        "description": "Nous offrons des services de soudage pour la création de constructions sur mesure nécessitant des technologies et une expertise uniques.",
+        "image": "/assets/zvaryuvannya-metalu5.webp"
+      }
+    ],
+    "callToAction": "Confiez-nous vos tâches, et nous vous montrerons ce qu'est le véritable professionnalisme en soudage !"
+  },
+  "porizkaNaVerstati": {
+    "srcImg": "/assets/porizka-na-verstati.webp",
+    "title": "COUPE À LA SCIE À RUBAN",
+    "description": "Nous offrons une coupe professionnelle des métaux à l'aide d'équipements CNC, garantissant une grande vitesse et des résultats impeccables. Nos solutions sont parfaites pour traiter de grands volumes de matériaux, garantissant la précision de chaque coupe.",
+    "descriptionBottom": "Vous cherchez un partenaire pour une coupe de métal fiable ? Nous sommes toujours prêts à collaborer.",
+    "infoCard": [
+      {
+        "title": "Précision et Vitesse de Coupe des Métaux",
+        "description": "Nous nous spécialisons dans la coupe à la scie à ruban de pièces de différentes formes et tailles. Notre équipement nous permet de travailler avec une large gamme de matériaux et garantit une grande fiabilité de chaque coupe.",
+        "image": "/assets/porizka-na-verstati2.webp"
+      },
+      {
+        "title": "Approche Professionnelle pour Toute Commande",
+        "description": "Notre flotte d'équipements comprend plus de 10 scies à ruban CNC capables de traiter des pièces de diamètres allant de 10 à 550 mm. Les scies à ruban verticales permettent la coupe de longues feuilles ou de structures spécialisées.",
+        "image": "/assets/porizka-na-verstati3.webp"
+      },
+      {
+        "title": "Traitement Complet",
+        "description": "Nous offrons non seulement la coupe des métaux, mais aussi un cycle complet de services, y compris la préparation des pièces pour un traitement ultérieur. Vous n'aurez pas besoin de passer du temps à coordonner avec d'autres sous-traitants — nous nous occupons de tout en un seul endroit.",
+        "image": "/assets/porizka-na-verstati4.webp"
+      },
+      {
+        "title": "Solutions pour Tâches Uniques",
+        "description": "Notre équipe assure une coupe précise des métaux pour des projets aux exigences non standard, obtenant des résultats parfaits.",
+        "image": "/assets/porizka-na-verstati5.webp"
+      }
+    ],
+    "callToAction": "Commandez la coupe des métaux chez nous et découvrez notre rapidité et notre qualité !"
+  },
+  "lyttyaMetaluPage": {
+    "srcImg": "/assets/lyttya-metalu.webp",
+    "title": "Fonderie de Métal",
+    "description": "Les technologies de fonderie modernes nous aident à fabriquer des pièces complexes et fiables à partir de divers matériaux. Nous garantissons la qualité à chaque étape de la production, assurant le respect des normes les plus élevées.",
+    "descriptionBottom": "Vous cherchez des spécialistes pour des pièces moulées complexes ? Nous transformerons votre idée en réalité.",
+    "infoCard": [
+      {
+        "title": "Perfection et Longue Durée de Vie des Produits Moulés",
+        "description": "Nous offrons une gamme complète de services de fonderie de métaux, y compris la production de pièces complexes pour diverses industries. Grâce à nos solutions innovantes, vous recevez des produits d'une précision impeccable, d'une fiabilité exceptionnelle et d'une longue durée de vie.",
+        "image": "/assets/lyttya-metalu2.webp"
+      },
+      {
+        "title": "Technologies de Fonderie Innovantes. Nos capacités incluent :",
+        "list": [
+          { "description": "Fonderie sur lignes automatiques" },
+          { "description": "Centrifugation" },
+          { "description": "Fonderie sous pression" },
+          { "description": "Coulée de HTS et de métaux non ferreux sous basse pression" }
+        ],
+        "image": "/assets/lyttya-metalu3.webp"
+      },
+      {
+        "title": "Cycle de Production Complet",
+        "description": "Nous fournissons toutes les étapes, du développement du processus technologique à la livraison des produits finis. Cela garantit que vous recevez des produits conformes aux normes de qualité les plus élevées.",
+        "image": "/assets/lyttya-metalu4.webp"
+      },
+      {
+        "title": "Large Sélection de Matériaux",
+        "description": "Nous travaillons avec divers types de métaux, y compris les aciers à haute teneur en alliage et les alliages non ferreux, pour garantir un résultat parfait pour tout projet.",
+        "image": "/assets/lyttya-metalu5.webp"
+      }
+    ],
+    "callToAction": "Soumettez une demande aujourd'hui et recevez des produits qui répondent à vos attentes et même les dépassent !"
+  },
+  "frezerniRoboty": {
+    "srcImg": "/assets/frezerni-roboty.webp",
+    "title": "USINAGE CNC PAR FRAISAGE",
+    "description": "Nos centres CNC peuvent effectuer des opérations de fraisage avec une grande précision, même pour les pièces les plus complexes. L'expertise professionnelle et l'équipement moderne nous permettent de gérer de grandes séries et des formes non standard.",
+    "descriptionBottom": "Vous cherchez un partenaire en qui vous pouvez avoir confiance pour des tâches complexes ? Nous sommes prêts à travailler pour votre succès.",
+    "infoCard": [
+      {
+        "title": "Solutions Fiables pour Tâches Complexes",
+        "description": "Nos capacités de fraisage permettent la production de pièces avec la plus haute précision et complexité. Nous utilisons un équipement moderne qui garantit une fiabilité impeccable des produits finis.",
+        "image": "/assets/frezerni-roboty2.webp"
+      },
+      {
+        "title": "Capacité pour Grandes et Petites Pièces. Dans notre flotte d'équipements :",
+        "list": [
+          { "description": "Machines de fraisage CNC verticales" },
+          { "description": "Machines horizontales avec capacités de changement rapide de table" },
+          { "description": "Centres portiques 5 axes pour le traitement de pièces jusqu'à 2000×4000 mm." }
+        ],
+        "image": "/assets/frezerni-roboty3.webp"
+      },
+      {
+        "title": "Traitement Complet",
+        "description": "Nous offrons une gamme complète de services de fraisage pour garantir que votre projet est exécuté parfaitement — du dessin à la pièce finie. Grâce à nos capacités, nous travaillons efficacement sans compromettre la qualité.",
+        "image": "/assets/frezerni-roboty4.webp"
+      },
+      {
+        "title": "Capacités Supplémentaires",
+        "description": "Nos technologies sont adaptées à la création de structures 3D complexes pour des projets innovants et à la fabrication de pièces simples et standard pour une large gamme de tâches. Nous traitons toutes les demandes, quelle que soit leur complexité.",
+        "image": "/assets/frezerni-roboty5.webp"
+      }
+    ],
+    "ourEquipmentTitle": "NOTRE ÉQUIPEMENT",
+    "ourEquipment": [
+      {
+        "title": "Centre d'Usinage Trois Axes",
+        "name": "HURCO BMC 4020HT",
+        "description": ["Axe X : 1020 mm", "Axe Y : 510 mm", "Axe Z : 610 mm", "Longueur de la table : 1220 mm", "Largeur de la table : 510 mm"],
+        "image": "/assets/hurco-bmc-4020ht.webp"
+      },
+      {
+        "title": "Centre d'Usinage Fraisage",
+        "name": "KRYLE VMC 700",
+        "description": ["Axe X : 700 mm", "Axe Y : 450 mm", "Axe Z : 450 mm", "Longueur de la table : 1000 mm", "Largeur de la table : 480 mm"],
+        "image": "/assets/kryle-vmv-700.webp"
+      },
+      {
+        "title": "Centre d'Usinage CNC",
+        "name": "Fadal 904-1 VMC 3016 CNC Vertical",
+        "description": ["Axe X : 762 mm", "Axe Y : 406 mm", "Axe Z : 508 mm", "Longueur de la table : 991 mm", "Largeur de la table : 406 mm"],
+        "image": "/assets/fadal-904-1-vmc-3016-cnc.webp"
+      }
+    ],
+    "callToAction": "Commencez à travailler avec nous dès aujourd'hui et découvrez les avantages de travailler avec des professionnels !"
+  },
+  "termichnaObrobkaPage": {
+    "srcImg": "/assets/termichna-obrobka.webp",
+    "title": "TRAITEMENT THERMIQUE",
+    "description": "Nous garantissons un traitement thermique de haute qualité des métaux grâce à un équipement de pointe et une équipe expérimentée. Vos produits acquerront la résistance, la durabilité et la conformité aux normes requises.",
+    "descriptionBottom": "Vous cherchez un partenaire fiable pour le traitement thermique ? Nous offrons des solutions qui fonctionnent.",
+    "infoCard": [
+      {
+        "title": "Renforcement et Durabilité des Pièces",
+        "description": "Nous nous spécialisons dans le traitement thermique des métaux pour assurer des performances mécaniques optimales pour vos pièces. Nos technologies fournissent le niveau de résistance et de fiabilité nécessaire.",
+        "image": "/assets/termichna-obrobka2.webp"
+      },
+      {
+        "title": "Capacités Uniques. Nous utilisons :",
+        "list": [
+          { "description": "Fours électriques" },
+          { "description": "Fours à gaz" },
+          { "description": "Installations de chauffage par induction" }
+        ],
+        "image": "/assets/termichna-obrobka3.webp"
+      },
+      {
+        "title": "Service Complet",
+        "description": "Du traitement initial à la finition finale — nous accompagnons chaque étape pour garantir que vous recevez une pièce finie de la plus haute qualité.",
+        "image": "/assets/termichna-obrobka4.webp"
+      },
+      {
+        "title": "Technologies Spécialisées",
+        "description": "Nous appliquons des méthodes de traitement avancées pour créer des pièces qui répondent aux exigences et normes les plus strictes.",
+        "image": "/assets/termichna-obrobka5.webp"
+      }
+    ],
+    "callToAction": "Soumettez votre demande maintenant, et vos produits deviendront une référence de fiabilité !"
+  },
+  "lazernaRizkaPage": {
+    "srcImg": "/assets/lazerna-rizka.webp",
+    "title": "COUPE LASER AVEC CNC",
+    "description": "La technologie de coupe laser que nous utilisons garantit une précision parfaite et une propreté de traitement. Nous travaillons avec divers matériaux, assurant d'excellents résultats même pour des tâches complexes.",
+    "descriptionBottom": "Vos pièces méritent la meilleure qualité. Nous vous la garantirons.",
+    "infoCard": [
+      {
+        "title": "Technologies de Coupe Modernes",
+        "description": "Nos machines laser assurent une précision de traitement impeccable, essentielle pour les structures géométriques complexes et les tâches de haute précision.",
+        "image": "/assets/lazerna-rizka2.webp"
+      },
+      {
+        "title": "Capacités pour Toute Tâche",
+        "description": "Nous coupons des métaux jusqu'à 20 mm d'épaisseur et traitons de grandes ébauches. L'automatisation des processus nous permet de réaliser même de grandes commandes en peu de temps.",
+        "image": "/assets/lazerna-rizka3.webp"
+      },
+      {
+        "title": "Services Complets",
+        "description": "Vous recevez des pièces prêtes à l'emploi, sans besoin d'opérations supplémentaires. Nous offrons un cycle complet de traitement laser des métaux.",
+        "image": "/assets/lazerna-rizka4.webp"
+      },
+      {
+        "title": "Création de Composants Fonctionnels",
+        "description": "Nos technologies nous permettent de fabriquer des pièces de toute complexité, en tenant compte des moindres exigences techniques et des spécificités du projet.",
+        "image": "/assets/lazerna-rizka5.webp"
+      }
+    ],
+    "callToAction": "Commandez la coupe laser chez nous et découvrez notre professionnalisme en action !"
+  },
+  "shlifovkaMetaluPage": {
+    "srcImg": "/assets/shlifovka-metalu.webp",
+    "title": "Rectification de Métal",
+    "description": "Nous offrons un meulage de surface de haute précision, obtenant une parfaite douceur. Nos spécialistes et notre équipement moderne garantissent la qualité même pour les tâches les plus difficiles.",
+    "descriptionBottom": "Vous voulez des pièces parfaitement traitées ? Nous savons comment faire.",
+    "infoCard": [
+      {
+        "title": "Propreté et Précision Parfaites",
+        "description": "Nous fournissons un meulage de haute qualité pour créer des pièces avec des surfaces parfaitement lisses et une grande précision, conformément à vos exigences techniques.",
+        "image": "/assets/shlifovka-metalu2.webp"
+      },
+      {
+        "title": "Large Sélection d'Équipements. Notre inventaire comprend :",
+        "list": [
+          { "description": "Rectifieuses cylindriques et de surface CNC" },
+          { "description": "Machines de rectification sans centre" },
+          { "description": "Équipements pour rectification interne et de filets" }
+        ],
+        "image": "/assets/shlifovka-metalu3.webp"
+      },
+      {
+        "title": "Traitement Complet",
+        "description": "Nous nous occupons de tout le cycle de traitement, garantissant que vous recevez des produits qui répondent à toutes vos attentes et normes.",
+        "image": "/assets/shlifovka-metalu4.webp"
+      },
+      {
+        "title": "Solutions Spécialisées",
+        "description": "Nous traitons des surfaces non standard et des éléments complexes, garantissant qu'ils répondent aux exigences les plus élevées.",
+        "image": "/assets/shlifovka-metalu5.webp"
+      }
+    ],
+    "callToAction": "Confiez-nous vos commandes et découvrez une qualité impeccable !"
+  },
+  "piskostruminniRoboty": {
+    "srcImg": "/assets/piskostruminni-roboty.webp",
+    "title": "SABLAGE",
+    "description": "Le nettoyage efficace des surfaces des contaminants et de la corrosion est notre spécialité. Un équipement moderne et des technologies avancées nous permettent d'obtenir les meilleurs résultats pour divers types de matériaux.",
+    "descriptionBottom": "Choisissez la qualité et le professionnalisme pour le sablage. Nous sommes prêts pour vos tâches.",
+    "infoCard": [
+      {
+        "title": "Nettoyage Efficace pour des Résultats Parfaits",
+        "description": "Nous offrons une large gamme de services de sablage qui éliminent les contaminants, la corrosion et les anciens revêtements de tout matériau.",
+        "image": "/assets/piskostruminni-roboty2.webp"
+      },
+      {
+        "title": "Arsenal Technologique. Nos capacités incluent :",
+        "list": [
+          {
+            "description": "Sablage"
+          },
+          {
+            "description": "Grenaillage"
+          },
+          {
+            "description": "Nettoyage laser"
+          }
+        ],
+        "image": "/assets/piskostruminni-roboty3.webp"
+      },
+      {
+        "title": "Approche Globale",
+        "description": "Nous fournissons un cycle complet de traitement afin que vous receviez un produit fini qui répond pleinement à vos attentes.",
+        "image": "/assets/piskostruminni-roboty4.webp"
+      },
+      {
+        "title": "Capacités Uniques",
+        "description": "Nous offrons un cycle complet de services de nettoyage, afin que vous receviez des pièces finies sans avoir besoin de contacter d'autres sous-traitants.",
+        "image": "/assets/piskostruminni-roboty5.webp"
+      }
+    ],
+    "callToAction": "Commandez le traitement chez nous et voyez que vos produits auront un aspect impeccable !"
+  },
+  "cardData": [
+    {
+      "title": "TRAVAUX DE TOURNAGE CNC",
+      "img": "/assets/tokarni-roboty-chpk.webp",
+      "href": "services/tokarni-roboty-chpk/"
+    },
+    {
+      "title": "TRAVAUX DE FRAISAGE CNC",
+      "img": "/assets/frezerni-roboty4.webp",
+      "href": "services/frezerni-roboty/"
+    },
+    {
+      "title": "TRAITEMENT THERMIQUE",
+      "img": "/assets/termichna-obrobka.webp",
+      "href": "services/termichna-obrobka/"
+    },
+    {
+      "title": "FONDERIE DE MÉTAL",
+      "img": "/assets/metal-casting.webp",
+      "href": "services/lyttya-metalu/"
+    }
+  ],
+  "contactPage": {
+    "srcImg": "logo.webp",
+    "title": "Contacts",
+    "description": "Contactez-nous : rue Yakhnenkivska, 2, Dnipro, région de Dnipropetrovsk, 49025. Email : info@qpart.com.ua, Téléphone : +380989950760.",
+    "address": "Adresse",
+    "ourLocation": "Nous sommes ici !",
+    "buildRoute": "Construire un itinéraire",
+    "listContacts": [
+      { "title": "Adresse", "description": "2 rue Yakhnenkivska, Dnipro, région de Dnipropetrovsk, 49025, Ukraine", "id": "address" },
+      { "title": "Email", "description": "info@qpart.com.ua", "id": "email" },
+      { "title": "Téléphone", "description": "+380989950760", "id": "phone" }
+    ]
+  },
+  "menu": [
+    {
+      "title": "Services",
+      "subMenu": [
+        { "title": "TOURNAGE CNC", "href": "services/tokarni-roboty-chpk" },
+        { "title": "FRAISAGE", "href": "services/frezerni-roboty" },
+        {
+          "title": "SOUDAGE DE MÉTAL",
+          "href": "services/zvaryuvannya-metalu"
+        },
+        {
+          "title": "COUPE À LA SCIE À RUBAN",
+          "href": "services/porizka-na-verstati"
+        },
+        {
+          "title": "FONDERIE DE MÉTAL",
+          "href": "services/lyttya-metalu"
+        },
+        { "title": "TRAITEMENT THERMIQUE", "href": "services/termichna-obrobka" },
+        { "title": "COUPE LASER", "href": "services/lazerna-rizka" },
+        { "title": "RECTIFICATION DE MÉTAL", "href": "services/shlifovka-metalu" },
+        { "title": "TRAITEMENT PAR SABLAGE", "href": "services/piskostruminni-roboty" }
+      ]
+    },
+    {
+      "title": "Produit",
+      "subMenu": [
+        { "title": "PIÈCES DE RECHANGE POUR CHEMIN DE FER", "href": "production/zaliznychni-zapchastyny" },
+        {
+          "title": "PIÈCES DE RECHANGE POUR ÉQUIPEMENT AGRICOLE",
+          "href": "production/zapchastyny-dlya-silhosptekhniky"
+        }
+      ]
+    },
+    {
+      "title": "Contacts",
+      "href": "contact"
+    }
+  ],
+
+  "zaliznychniZapchastynyPage": {
+    "srcImg": "/assets/zaliznychni-zapchastyny.webp",
+    "title": "Fabrication de Composants pour Infrastructure Ferroviaire",
+    "description": "QPart se spécialise dans la production de composants de haute qualité pour l'infrastructure ferroviaire. Nous assurons la fabrication de divers composants qui répondent à toutes les normes modernes de sécurité et de fiabilité opérationnelle.",
+    "descriptionBottom": "Nos solutions conviennent à la fois à la modernisation des systèmes existants et à la construction de nouvelles installations ferroviaires.",
+    "servicesTitle": "Nos Avantages",
+    "imageForServiceBlock": "/assets/zaliznychni-zapchastyny2.webp",
+    "listServices": [
+      {
+        "description": "Équipement moderne. L'utilisation de machines CNC garantit une grande précision de fabrication."
+      },
+      {
+        "description": "Contrôle de qualité. Tous les composants sont vérifiés pour se conformer aux normes internationales."
+      },
+      {
+        "description": "Flexibilité dans l'exécution des commandes. Nous travaillons avec de grandes séries et des articles individuels."
+      },
+      {
+        "description": "Délais rapides. Nous assurons une production rapide sans compromettre la qualité."
+      }
+    ],
+    "orderBenefitsTitle": "Avantages de Commander chez Nous",
+    "listOrderBenefits": [
+      {
+        "title": "Prêts pour de grands volumes – nous assurons des opérations ininterrompues même pour les commandes de grande envergure.",
+        "icon": "/assets/cylinder.webp"
+      },
+      {
+        "title": "Plus de 300 machines CNC – un équipement moderne garantit précision, qualité et rapidité.",
+        "icon": "/assets/gears.webp"
+      },
+      {
+        "title": "Délais flexibles – nous travaillons rapidement et toujours à temps !",
+        "icon": "/assets/clock-time.webp"
+      }
+    ],
+    "peculiaritiesTitle": "Quels Composants Produisons-nous ?",
+    "listPeculiarities": [
+      {
+        "description": "Essieux, disques de frein, axes ;",
+        "icon": "/icons/listPeculiarities.webp"
+      },
+      {
+        "description": "Châssis de bogie, composants de fixation, ressorts.",
+        "icon": "/icons/listPeculiarities.webp"
+      },
+      {
+        "description": "Fixations de rails ;",
+        "icon": "/icons/listPeculiarities.webp"
+      },
+      {
+        "description": "Boulons de tension, systèmes d'ancrage, pièces de support.",
+        "icon": "/icons/listPeculiarities.webp"
+      },
+      {
+        "description": "Poteaux de signalisation, plateformes, unités de montage ;",
+        "icon": "/icons/listPeculiarities.webp"
+      },
+      {
+        "description": "Structures métalliques pour ponts, tunnels, plateformes.",
+        "icon": "/icons/listPeculiarities.webp"
+      },
+      {
+        "description": "Produits spécialisés selon les dessins du client ;",
+        "icon": "/icons/listPeculiarities.webp"
+      },
+      {
+        "description": "Composants configurés sur mesure pour des besoins uniques.",
+        "icon": "/icons/listPeculiarities.webp"
+      }
+    ],
+    "question": "Besoin de pièces ferroviaires ?",
+    "answer": "Nous les produirons sur commande, en tenant compte de toutes les exigences !"
+  },
+
+  "zapchastynyDlyaSilhosptekhnikyPage": {
+    "srcImg": "/assets/zapchastyny-dlya-silhosptekhniky.webp",
+    "title": "Production de Pièces de Rechange pour Machines Agricoles",
+    "description": "Notre entreprise se spécialise dans la création de pièces de rechange de haute qualité pour les machines agricoles, en tenant compte des besoins des agriculteurs et des caractéristiques des équipements agricoles modernes.",
+    "descriptionBottom": "Nous offrons une large gamme de pièces adaptées à divers types de machines, garantissant leur fonctionnement ininterrompu même dans les conditions les plus difficiles. Équipez vos machines de pièces de rechange de haute qualité.",
+    "servicesTitle": "Nos Avantages :",
+    "imageForServiceBlock": "/assets/zapchastyny-dlya-silhosptekhniky2.webp",
+    "listServices": [
+      { "description": "Équipement moderne. L'utilisation de machines CNC garantit une grande précision de fabrication." },
+      { "description": "Contrôle de qualité. Toutes les pièces sont testées pour répondre aux normes internationales." },
+      {
+        "description": "Flexibilité dans l'exécution des commandes. Nous traitons de grandes séries et des articles individuels."
+      },
+      { "description": "Délais rapides. Nous assurons une production rapide sans compromettre la qualité." }
+    ],
+    "orderBenefitsTitle": "Avantages de Commander chez Nous",
+    "listOrderBenefits": [
+      {
+        "title": "Prêts pour de grands volumes – nous assurons des opérations ininterrompues même pour les commandes de grande envergure.",
+        "icon": "/assets/cylinder.webp"
+      },
+      {
+        "title": "Plus de 300 machines CNC – un équipement moderne garantit précision, qualité et rapidité.",
+        "icon": "/assets/gears.webp"
+      },
+      {
+        "title": "Délais flexibles – nous travaillons rapidement et toujours à temps !",
+        "icon": "/assets/clock-time.webp"
+      }
+    ],
+    "peculiaritiesTitle": "Quelles pièces produisons-nous ?",
+    "listPeculiarities": [
+      {
+        "description": "Composants pour équipements de récolte de fourrage : couteaux, broyeurs, arbres qui assurent le fonctionnement ininterrompu des machines d'élevage.",
+        "icon": "/icons/listPeculiarities.webp"
+      },
+      {
+        "description": "Pièces pour chargeurs et manipulateurs : vérins hydrauliques, supports nécessaires au fonctionnement fiable des équipements auxiliaires.",
+        "icon": "/icons/listPeculiarities.webp"
+      },
+      {
+        "description": "Pièces sur mesure : nous fabriquons des pièces de rechange sur mesure selon les demandes spécifiques des clients.",
+        "icon": "/icons/listPeculiarities.webp"
+      }
+    ],
+    "question": "Vous cherchez des pièces de rechange pour machines agricoles ?",
+    "answer": "Commandez chez nous, et nous les fabriquerons spécifiquement pour votre équipement !"
+  },
+
+  "modalInfo": {
+    "title": "Laissez votre dessin et votre numéro de téléphone, et nous vous contacterons rapidement pour discuter des détails.",
+    "dropFile": "Faites glisser ou sélectionnez un fichier",
+    "descriptionBtn": "Sélectionner un fichier",
+    "limitation": "Limite de taille de fichier : jusqu'à 20 Mo*",
+    "filesSizeIsLarger": "La taille totale des fichiers dépasse la limite maximale de 20 Mo.",
+    "fileSizeIsLarger": "La taille du fichier dépasse la limite maximale de 20 Mo.",
+    "successfulSending": "Envoyé avec succès",
+    "errorMessage": "Une erreur s'est produite",
+    "unknownError": "Une erreur inconnue s'est produite",
+    "inputTitle": "Numéro de téléphone portable",
+    "submitBtn": "Envoyer"
+  },
+
+  "footer": {
+    "join": "Rejoindre"
+  },
+  "userAgreement": {
+    "userAgreementSnackbar": {
+      "description": "Nous utilisons des cookies pour l'analyse et l'amélioration des performances du site. En continuant à utiliser le site, vous acceptez l'utilisation des cookies. Pour plus de détails, veuillez consulter notre",
+      "link": "Politique de confidentialité",
+      "button": "Accepter et continuer"
+    },
+    "userAgreementPage": {
+      "title": "Politique de confidentialité et utilisation des cookies",
+      "description": {
+        "introductionStrong": "Nous utilisons des cookies et des technologies similaires pour analyser le comportement des utilisateurs sur notre site web.",
+        "includes": "Cela inclut l'utilisation d'outils tels que",
+        "toolsStrong": "Google Analytics et Facebook Pixel,",
+        "includesContinuation": "qui nous aident à collecter des informations sur la façon dont vous interagissez avec notre site, y compris les pages visitées et les actions effectuées, telles que les clics sur les boutons.",
+        "useInformation": "Ces informations sont utilisées exclusivement pour",
+        "useInformationStrong": "analyser et améliorer la qualité de notre service."
+      },
+      "whatWeCollect": {
+        "title": "Que collectons-nous ?",
+        "descriptionList": [
+          {
+            "title": "Données de visite :",
+            "description": "Informations sur les pages que vous avez visitées, le temps que vous avez passé sur le site et les pays et appareils à partir desquels vous avez accédé au site."
+          },
+          {
+            "title": "Actions sur le site :",
+            "description": "Suivi des clics sur les boutons, des interactions avec les formulaires et d'autres éléments du site. Cela nous aide à améliorer l'expérience utilisateur."
+          },
+          {
+            "title": "Informations sur la session :",
+            "description": "En utilisant des outils d'analyse tels que Google Analytics, nous collectons des données anonymes sur vos activités sur le site, telles que les sources de trafic, le temps passé sur le site et d'autres métriques."
+          }
+        ]
+      },
+      "howWeuseData": {
+        "title": "Comment utilisons-nous ces données ?",
+        "whatIsTheDataFor": "Les données sont collectées et traitées exclusivement pour",
+        "whatIsTheDataForStrong": "analyser les performances du site, améliorer le contenu et améliorer l'expérience utilisateur.",
+        "dataTransfer": "Nous ne partageons pas ces données avec des tiers, sauf à des fins d'analyse en utilisant des outils tels que",
+        "toolsStrong": "Google Analytics et Facebook Pixel."
+      },
+      "consentToUse": {
+        "title": "Consentement à l'utilisation des cookies",
+        "description": "En utilisant notre site, vous acceptez la collecte de données via des cookies aux fins mentionnées ci-dessus. Si vous ne souhaitez pas que nous utilisions ces technologies, vous pouvez configurer votre navigateur pour bloquer les cookies ou vous en informer."
+      },
+      "howToDisable": {
+        "title": "Comment désactiver la collecte de données ?",
+        "description": "Vous pouvez désactiver le suivi via",
+        "toolsStrong": "Google Analytics et Facebook Pixel",
+        "descriptionContinuation": "dans les paramètres de votre navigateur ou utiliser des outils de gestion des cookies tels que",
+        "toolsSelected": "Google Analytics Opt-out Browser Add-on.",
+        "descriptionEnd": "En désactivant ces outils, vous limiterez la collecte de données sur votre comportement sur le site."
+      },
+      "additionalInformation": {
+        "title": "Informations supplémentaires :",
+        "legalRequirements": "Nous collectons et traitons les données conformément aux lois sur la protection des données, y compris",
+        "gdpr": "le RGPD",
+        "legalRequirementsContinuation": "pour les citoyens de l'Union européenne et la",
+        "legalRequirementsStrong": "Loi sur la protection des données personnelles de l'Ukraine.",
+        "additionalQuestions": "Si vous avez des questions sur l'utilisation de vos données, veuillez nous contacter par email, et nous vous répondrons dès que possible."
+      }
+    }
+  },
+
+  "btnSend": "Envoyer des dessins pour calcul",
+  "messageInformation": "Message envoyé"
+}

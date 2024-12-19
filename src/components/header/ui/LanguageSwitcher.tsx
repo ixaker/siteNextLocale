@@ -1,16 +1,27 @@
 import CustomButton from '@/components/ui/button/CustomButton';
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 interface LanguageSwitcherProps {
-  supportedLanguages: string[]; // Список поддерживаемых языков
   currentLang: string; // Текущий язык
 }
 
-const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ supportedLanguages = [], currentLang }) => {
+const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ currentLang }) => {
   const router = useRouter();
   const { asPath } = router;
+  const [displayLanguages, setDisplayLanguages] = useState<string[]>([]);
 
-  supportedLanguages = supportedLanguages.filter((val) => val !== 'ru');
+  useEffect(() => {
+    const defaultLanguages = ['de', 'en', 'uk'];
+    const browserLang = navigator.language.split('-')[0];
+
+    const languages = [...defaultLanguages];
+    if (!defaultLanguages.includes(browserLang) && browserLang !== 'ru') {
+      languages.push(browserLang);
+    }
+
+    setDisplayLanguages(languages);
+  }, []);
 
   const switchLanguage = (newLang: string) => {
     const newPath = asPath.replace(/^\/[a-z]{2}/, `/${newLang}`);
@@ -21,7 +32,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ supportedLanguages 
 
   return (
     <div className="flex gap-3">
-      {supportedLanguages.map((lang) => (
+      {displayLanguages.map((lang) => (
         <CustomButton
           key={lang}
           ariaLabel={`Switch to ${lang}`}
@@ -29,7 +40,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ supportedLanguages 
           className={`${currentLang === lang ? 'text-activeColor text-[white]' : ''}`}
           onClick={() => switchLanguage(lang)}
         >
-          {lang.toUpperCase()}
+          {lang?.toUpperCase()}
         </CustomButton>
       ))}
     </div>
