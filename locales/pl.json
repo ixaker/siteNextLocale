@@ -1,0 +1,632 @@
+{
+  "locale": "pl_PL",
+  "homePage": {
+    "title": "QPART – oferujemy usługi obróbki metali i produkcji części oraz części zamiennych o dowolnej złożoności. Skontaktuj się z nami: +380989950760, info@qpart.com.ua",
+    "srcImg": "/logo.webp",
+    "topTitle": "PRODUKUJEMY WYROBY",
+    "bottomTitle": "O DOWOLNEJ ZŁOŻONOŚCI",
+    "description": "PRACE TOKARSKIE I FREZARSKIE NA MASZYNACH CNC",
+    "h2": "Firma «QPART»",
+    "descriptionCompany": "Oferujemy usługi obróbki metali i produkcji części oraz części zamiennych o dowolnej złożoności. Wykonujemy prace według rysunków klienta lub, w razie potrzeby, opracowujemy dokumentację projektową i techniczną od podstaw. Gotowe produkty wysyłamy na terenie całej Ukrainy oraz za granicę. Mamy doświadczenie w pracy z zagranicznymi firmami."
+  },
+  "tokarniRobotyChpkPage": {
+    "srcImg": "/assets/tokarni-roboty-chpk.webp",
+    "title": "TOKARSTWO CNC",
+    "description": "Robimy to, co inni uważają za niemożliwe. Duża flota maszyn CNC, nowoczesne technologie i zespół profesjonalistów pozwalają nam produkować części o dowolnej złożoności i objętości.",
+    "descriptionBottom": "Szukasz partnera, który poradzi sobie z dużymi partiami, skomplikowanymi kształtami i napiętymi terminami? Znalazłeś go.",
+    "infoCard": [
+      {
+        "title": "Wykonujemy dowolne ilości prac tokarskich",
+        "description": "Rozumiemy, że Twój biznes nie może czekać. Dzięki nowoczesnym możliwościom i ustalonej logistyce Twoje zamówienie zostanie zrealizowane w najkrótszym możliwym czasie. Zapomnij o długich czasach produkcji — pracujemy szybko i wydajnie.",
+        "image": "/assets/tokarni-roboty-chpk2.webp"
+      },
+      {
+        "title": "Szybka realizacja zamówień",
+        "description": "Nasza flota obejmuje ponad 300 nowoczesnych maszyn CNC, które pracują bez przerwy. Przetwarzamy duże partie części bez problemów. Chcesz zamówić duże ilości produktów? Żaden problem. Jeśli Twoi dostawcy nie radzą sobie z obciążeniem, jesteśmy gotowi przyjąć Twoje zamówienie i dostarczyć je na czas.",
+        "image": "/assets/tokarni-roboty-chpk3.webp"
+      },
+      {
+        "title": "Precyzja i produkcja części o dowolnej złożoności",
+        "description": "Nasze maszyny pozwalają na produkcję dużych części o średnicy do 4000 mm i długości do 8000 mm. Potrzebujesz małych, skomplikowanych części od 10 mm? Wykonamy je z maksymalną precyzją. Tam, gdzie inni zawodzą, oferujemy rozwiązania i pytamy: 'Kiedy zaczynamy?'",
+        "image": "/assets/tokarni-roboty-chpk4.webp"
+      },
+      {
+        "title": "Kompleksowe podejście",
+        "description": "Od obróbki po finalne wykończenie — jesteśmy gotowi wspierać Twój projekt na każdym etapie. Nasi klienci otrzymują kompleksowe rozwiązanie: od toczenia CNC po przygotowanie części do użycia.",
+        "image": "/assets/tokarni-roboty-chpk5.webp"
+      }
+    ],
+    "ourEquipmentTitle": "NASZE WYPOSAŻENIE",
+    "ourEquipment": [
+      {
+        "title": "Centrum tokarsko-frezarskie CNC",
+        "name": "Boehringer VDF 250C-U",
+        "description": [
+          "Długość obróbki: 100 mm",
+          "Średnica obróbki w uchwycie: 400 mm",
+          "Przesuw osi X: 225 mm",
+          "Przesuw osi Z: 600 mm",
+          "Średnica otworu wrzeciona: 78 mm."
+        ],
+        "image": "/assets/vdf-250c-u.webp"
+      },
+      {
+        "title": "Tokarka CNC",
+        "name": "GILDEMEISTER NEF CT40",
+        "description": [
+          "Długość obróbki: 600 mm",
+          "Średnica obróbki w uchwycie: do 190 mm",
+          "Średnica obróbki w uchwycie zaciskowym: do 65 mm",
+          "Przesuw osi X: 225 mm",
+          "Przesuw osi Z: 600 mm"
+        ],
+        "image": "/assets/nef-ct40.webp"
+      },
+      {
+        "title": "Uniwersalna tokarka CNC",
+        "name": "HITACHI SEIKI HITEC-TURN 20",
+        "description": [
+          "Długość obróbki: 380 mm",
+          "Średnica obróbki w uchwycie: do 210 mm",
+          "Przesuw osi X: 215 mm",
+          "Przesuw osi Z: 401 mm",
+          "Odległość między centrami: 630 mm."
+        ],
+        "image": "/assets/hitec-turn-20.webp"
+      }
+    ],
+    "callToAction": "Jesteśmy gotowi zostać Twoim niezawodnym partnerem w pracach tokarskich!"
+  },
+  "zvaryuvannyaMetaluPage": {
+    "srcImg": "/assets/zvaryuvannya-metalu.webp",
+    "title": "Spawanie metali",
+    "description": "Prace spawalnicze o dowolnej złożoności stają się rzeczywistością dzięki naszemu zaawansowanemu sprzętowi i innowacyjnym podejściom. Zapewniamy precyzję, wytrzymałość i niezawodność każdego spawu, niezależnie od skali i rodzaju metalu.",
+    "descriptionBottom": "Potrzebujesz wysokiej jakości spawania? Jesteśmy gotowi pomóc Ci zrealizować nawet najbardziej skomplikowane pomysły.",
+    "infoCard": [
+      {
+        "title": "Innowacyjne rozwiązania dla skomplikowanych konstrukcji",
+        "description": "Oferujemy kompleksowe usługi spawalnicze, gwarantując wysoką jakość i zgodność z nowoczesnymi standardami. Dzięki zaawansowanemu sprzętowi i doświadczonym specjalistom możesz być pewien trwałości i bezbłędnego wykonania każdej konstrukcji metalowej.",
+        "image": "/assets/zvaryuvannya-metalu2.webp"
+      },
+      {
+        "title": "Szeroki zakres technologii. Nasze możliwości spawalnicze obejmują:",
+        "list": [
+          { "description": "Spawanie półautomatyczne" },
+          { "description": "Spawanie TIG" },
+          { "description": "Spawanie laserowe" },
+          { "description": "Spawanie łukowe i oporowe" }
+        ],
+        "image": "/assets/zvaryuvannya-metalu3.webp"
+      },
+      {
+        "title": "Wsparcie na każdym etapie",
+        "description": "Zajmujemy się pełnym cyklem obróbki metali: od przygotowania do produkcji końcowej. Naszym celem jest dostarczenie Ci gotowej części bez konieczności angażowania innych wykonawców.",
+        "image": "/assets/zvaryuvannya-metalu4.webp"
+      },
+      {
+        "title": "Specjalistyczne rozwiązania",
+        "description": "Oferujemy spawanie do tworzenia niestandardowych konstrukcji, które wymagają unikalnych technologii i wiedzy.",
+        "image": "/assets/zvaryuvannya-metalu5.webp"
+      }
+    ],
+    "callToAction": "Powierz nam swoje zadania, a pokażemy Ci, jak wygląda prawdziwy profesjonalizm w spawaniu!"
+  },
+  "porizkaNaVerstati": {
+    "srcImg": "/assets/porizka-na-verstati.webp",
+    "title": "CIĘCIE PIŁĄ TAŚMOWĄ",
+    "description": "Oferujemy profesjonalne cięcie metali za pomocą sprzętu CNC, zapewniając wysoką prędkość pracy i doskonałe rezultaty. Nasze rozwiązania są idealne do obróbki dużych ilości materiału, gwarantując precyzję każdego cięcia.",
+    "descriptionBottom": "Szukasz partnera do niezawodnego cięcia metali? Jesteśmy zawsze gotowi do współpracy.",
+    "infoCard": [
+      {
+        "title": "Precyzja i szybkość cięcia metali",
+        "description": "Specjalizujemy się w cięciu piłą taśmową przedmiotów o różnych kształtach i rozmiarach. Nasze wyposażenie pozwala na pracę z szeroką gamą materiałów i zapewnia wysoką niezawodność każdego cięcia.",
+        "image": "/assets/porizka-na-verstati2.webp"
+      },
+      {
+        "title": "Profesjonalne podejście do każdego zamówienia",
+        "description": "Nasza flota sprzętu obejmuje ponad 10 pił taśmowych CNC, które mogą obrabiać przedmioty o średnicach od 10 do 550 mm. Pionowe piły taśmowe umożliwiają cięcie długich arkuszy lub specjalistycznych konstrukcji.",
+        "image": "/assets/porizka-na-verstati3.webp"
+      },
+      {
+        "title": "Kompletna obróbka",
+        "description": "Oferujemy nie tylko cięcie metali, ale pełny cykl usług, w tym przygotowanie części do dalszej obróbki. Nie musisz tracić czasu na koordynację z innymi wykonawcami — zajmiemy się wszystkim w jednym miejscu.",
+        "image": "/assets/porizka-na-verstati4.webp"
+      },
+      {
+        "title": "Rozwiązania dla unikalnych zadań",
+        "description": "Nasz zespół zapewnia precyzyjne cięcie metali dla projektów o niestandardowych wymaganiach, osiągając doskonałe rezultaty.",
+        "image": "/assets/porizka-na-verstati5.webp"
+      }
+    ],
+    "callToAction": "Zamów cięcie metali u nas i przekonaj się o naszej szybkości i jakości!"
+  },
+  "lyttyaMetaluPage": {
+    "srcImg": "/assets/lyttya-metalu.webp",
+    "title": "Odlewanie metali",
+    "description": "Nowoczesne technologie odlewania pomagają nam produkować skomplikowane i niezawodne części z różnych materiałów. Zapewniamy jakość na każdym etapie produkcji, gwarantując zgodność z najwyższymi standardami.",
+    "descriptionBottom": "Szukasz specjalistów do skomplikowanych odlewów? Zrealizujemy Twoją ideę.",
+    "infoCard": [
+      {
+        "title": "Perfekcja i długa żywotność odlewów",
+        "description": "Oferujemy pełen zakres usług odlewania metali, w tym produkcję skomplikowanych części dla różnych branż. Dzięki naszym innowacyjnym rozwiązaniom otrzymujesz produkty o doskonałej precyzji, wyjątkowej niezawodności i długiej żywotności.",
+        "image": "/assets/lyttya-metalu2.webp"
+      },
+      {
+        "title": "Innowacyjne technologie odlewania. Nasze możliwości obejmują:",
+        "list": [
+          { "description": "Odlewanie na liniach automatycznych" },
+          { "description": "Odlewanie odśrodkowe" },
+          { "description": "Odlewanie ciśnieniowe" },
+          { "description": "Odlewanie niskociśnieniowe stali wysokotemperaturowych i metali nieżelaznych" }
+        ],
+        "image": "/assets/lyttya-metalu3.webp"
+      },
+      {
+        "title": "Pełny cykl produkcji",
+        "description": "Zapewniamy wszystkie etapy, od opracowania procesu technologicznego po dostawę gotowych produktów. Dzięki temu otrzymujesz produkty spełniające najwyższe standardy jakości.",
+        "image": "/assets/lyttya-metalu4.webp"
+      },
+      {
+        "title": "Szeroki wybór materiałów",
+        "description": "Pracujemy z różnymi rodzajami metali, w tym stalami wysokostopowymi i stopami nieżelaznymi, aby zapewnić idealny wynik dla każdego projektu.",
+        "image": "/assets/lyttya-metalu5.webp"
+      }
+    ],
+    "callToAction": "Złóż zamówienie już dziś i otrzymaj produkty, które spełnią Twoje oczekiwania, a nawet je przewyższą!"
+  },
+  "frezerniRoboty": {
+    "srcImg": "/assets/frezerni-roboty.webp",
+    "title": "OBRÓBKA FREZARSKA CNC",
+    "description": "Nasze centra CNC mogą wykonywać prace frezarskie z wysoką precyzją, nawet dla najbardziej skomplikowanych części. Profesjonalne podejście i nowoczesne wyposażenie pozwalają nam obsługiwać duże partie i niestandardowe kształty.",
+    "descriptionBottom": "Szukasz partnera, któremu możesz powierzyć skomplikowane zadania? Jesteśmy gotowi pracować na Twój sukces.",
+    "infoCard": [
+      {
+        "title": "Niezawodne rozwiązania dla skomplikowanych zadań",
+        "description": "Nasze możliwości frezarskie pozwalają na produkcję części o najwyższej precyzji i złożoności. Używamy nowoczesnego sprzętu, który zapewnia niezawodność gotowych produktów.",
+        "image": "/assets/frezerni-roboty2.webp"
+      },
+      {
+        "title": "Możliwości dla dużych i małych części. W naszym parku maszynowym:",
+        "list": [
+          { "description": "Pionowe frezarki CNC" },
+          { "description": "Maszyny poziome z możliwością szybkiej zmiany stołu" },
+          { "description": "Portalowe centra 5-osiowe do obróbki części o wymiarach do 2000×4000 mm." }
+        ],
+        "image": "/assets/frezerni-roboty3.webp"
+      },
+      {
+        "title": "Pełny cykl obróbki",
+        "description": "Oferujemy pełen zakres usług frezarskich, aby zapewnić perfekcyjne wykonanie Twojego projektu — od rysunku do gotowej części. Dzięki naszym możliwościom pracujemy wydajnie, nie rezygnując z jakości.",
+        "image": "/assets/frezerni-roboty4.webp"
+      },
+      {
+        "title": "Dodatkowe możliwości",
+        "description": "Nasze technologie są odpowiednie zarówno do tworzenia skomplikowanych struktur 3D dla innowacyjnych projektów, jak i do produkcji prostych i standardowych części dla szerokiego zakresu zadań. Obsługujemy każde zapytanie, niezależnie od jego złożoności.",
+        "image": "/assets/frezerni-roboty5.webp"
+      }
+    ],
+    "ourEquipmentTitle": "NASZE WYPOSAŻENIE",
+    "ourEquipment": [
+      {
+        "title": "Centrum obróbcze trzyosiowe",
+        "name": "HURCO BMC 4020HT",
+        "description": ["Oś X: 1020 mm", "Oś Y: 510 mm", "Oś Z: 610 mm", "Długość stołu: 1220 mm", "Szerokość stołu: 510 mm"],
+        "image": "/assets/hurco-bmc-4020ht.webp"
+      },
+      {
+        "title": "Centrum obróbcze frezarskie",
+        "name": "KRYLE VMC 700",
+        "description": ["Oś X: 700 mm", "Oś Y: 450 mm", "Oś Z: 450 mm", "Długość stołu: 1000 mm", "Szerokość stołu: 480 mm"],
+        "image": "/assets/kryle-vmv-700.webp"
+      },
+      {
+        "title": "Centrum obróbcze CNC",
+        "name": "Fadal 904-1 VMC 3016 CNC Vertical",
+        "description": ["Oś X: 762 mm", "Oś Y: 406 mm", "Oś Z: 508 mm", "Długość stołu: 991 mm", "Szerokość stołu: 406 mm"],
+        "image": "/assets/fadal-904-1-vmc-3016-cnc.webp"
+      }
+    ],
+    "callToAction": "Rozpocznij współpracę z nami już dziś i przekonaj się o korzyściach płynących z pracy z profesjonalistami!"
+  },
+  "termichnaObrobkaPage": {
+    "srcImg": "/assets/termichna-obrobka.webp",
+    "title": "OBRÓBKA CIEPLNA",
+    "description": "Zapewniamy wysoką jakość obróbki cieplnej metali dzięki nowoczesnemu sprzętowi i doświadczonemu zespołowi. Twoje produkty zyskają niezbędną wytrzymałość, trwałość i zgodność ze standardami.",
+    "descriptionBottom": "Szukasz niezawodnego partnera do obróbki cieplnej? Oferujemy rozwiązania, które działają.",
+    "infoCard": [
+      {
+        "title": "Wzmacnianie i trwałość części",
+        "description": "Specjalizujemy się w obróbce cieplnej metali, która zapewnia optymalne właściwości mechaniczne Twoich części. Nasze technologie gwarantują wymagany poziom jakości i niezawodności.",
+        "image": "/assets/termichna-obrobka2.webp"
+      },
+      {
+        "title": "Unikalne możliwości. Używamy:",
+        "list": [
+          { "description": "Piece elektryczne" },
+          { "description": "Piece gazowe" },
+          { "description": "Urządzenia do hartowania indukcyjnego" }
+        ],
+        "image": "/assets/termichna-obrobka3.webp"
+      },
+      {
+        "title": "Kompleksowa obsługa",
+        "description": "Od wstępnej obróbki po finalne wykończenie — wspieramy każdy etap, abyś otrzymał gotową część najwyższej jakości.",
+        "image": "/assets/termichna-obrobka4.webp"
+      },
+      {
+        "title": "Specjalistyczne technologie",
+        "description": "Stosujemy zaawansowane metody obróbki do tworzenia części spełniających najbardziej rygorystyczne wymagania i standardy.",
+        "image": "/assets/termichna-obrobka5.webp"
+      }
+    ],
+    "callToAction": "Złóż zamówienie teraz, a Twoje produkty staną się wzorem niezawodności!"
+  },
+  "lazernaRizkaPage": {
+    "srcImg": "/assets/lazerna-rizka.webp",
+    "title": "CIĘCIE LASEROWE CNC",
+    "description": "Technologia cięcia laserowego, którą stosujemy, gwarantuje idealną precyzję i czystość obróbki. Pracujemy z różnymi materiałami, zapewniając doskonałe rezultaty nawet dla skomplikowanych zadań.",
+    "descriptionBottom": "Twoje części zasługują na najwyższą jakość. Zapewnimy ją dla Ciebie.",
+    "infoCard": [
+      {
+        "title": "Nowoczesne technologie cięcia",
+        "description": "Nasze maszyny laserowe gwarantują doskonałą precyzję obróbki, niezbędną do realizacji skomplikowanych konstrukcji geometrycznych i zadań wymagających wysokiej dokładności.",
+        "image": "/assets/lazerna-rizka2.webp"
+      },
+      {
+        "title": "Możliwości dla każdego zadania",
+        "description": "Tniemy metale o grubości do 20 mm i obrabiamy duże przedmioty. Automatyzacja procesu pozwala nam realizować nawet duże zamówienia w krótkim czasie.",
+        "image": "/assets/lazerna-rizka3.webp"
+      },
+      {
+        "title": "Kompleksowe usługi",
+        "description": "Otrzymujesz części gotowe do dalszego użytku, bez konieczności dodatkowych operacji. Oferujemy pełny cykl obróbki laserowej metali.",
+        "image": "/assets/lazerna-rizka4.webp"
+      },
+      {
+        "title": "Tworzenie funkcjonalnych komponentów",
+        "description": "Nasze technologie pozwalają na produkcję części o dowolnej złożoności, uwzględniając najdrobniejsze wymagania techniczne i specyfikę projektu.",
+        "image": "/assets/lazerna-rizka5.webp"
+      }
+    ],
+    "callToAction": "Zamów cięcie laserowe u nas i przekonaj się o naszym profesjonalizmie w działaniu!"
+  },
+  "shlifovkaMetaluPage": {
+    "srcImg": "/assets/shlifovka-metalu.webp",
+    "title": "Szlifowanie metali",
+    "description": "Oferujemy precyzyjne szlifowanie powierzchni, osiągając idealną gładkość. Nasi specjaliści i nowoczesne wyposażenie zapewniają jakość nawet dla najbardziej skomplikowanych zadań.",
+    "descriptionBottom": "Chcesz idealnie obrobione części? Wiemy, jak to zrobić.",
+    "infoCard": [
+      {
+        "title": "Idealna czystość i precyzja",
+        "description": "Zapewniamy wysokiej jakości szlifowanie, aby tworzyć części o idealnie gładkiej powierzchni i wysokiej precyzji, zgodnie z Twoimi wymaganiami technicznymi.",
+        "image": "/assets/shlifovka-metalu2.webp"
+      },
+      {
+        "title": "Bogaty wybór wyposażenia. Nasz park obejmuje:",
+        "list": [
+          { "description": "Szlifierki okrągłe i płaskie CNC" },
+          { "description": "Szlifierki bezkłowe" },
+          { "description": "Sprzęt do szlifowania wewnętrznego i gwintów" }
+        ],
+        "image": "/assets/shlifovka-metalu3.webp"
+      },
+      {
+        "title": "Kompletna obróbka",
+        "description": "Zajmujemy się całym cyklem obróbki, abyś otrzymał produkty, które spełniają wszystkie Twoje oczekiwania i standardy.",
+        "image": "/assets/shlifovka-metalu4.webp"
+      },
+      {
+        "title": "Specjalistyczne rozwiązania",
+        "description": "Obrabiamy niestandardowe powierzchnie i skomplikowane elementy, zapewniając ich zgodność z najwyższymi wymaganiami.",
+        "image": "/assets/shlifovka-metalu5.webp"
+      }
+    ],
+    "callToAction": "Powierz nam swoje zamówienia i przekonaj się o doskonałej jakości!"
+  },
+  "piskostruminniRoboty": {
+    "srcImg": "/assets/piskostruminni-roboty.webp",
+    "title": "OBRÓBKA STRUMIENIOWO-ŚCIERNA",
+    "description": "Skuteczne oczyszczanie powierzchni z zanieczyszczeń i korozji to nasza specjalność. Nowoczesne wyposażenie i zaawansowane technologie pozwalają nam osiągać najlepsze rezultaty dla różnych typów materiałów.",
+    "descriptionBottom": "Wybierz jakość i profesjonalizm dla obróbki strumieniowo-ściernej. Jesteśmy gotowi na Twoje zadania.",
+    "infoCard": [
+      {
+        "title": "Skuteczne oczyszczanie dla idealnych rezultatów",
+        "description": "Oferujemy szeroki zakres usług obróbki strumieniowo-ściernej, które zapewniają usunięcie zanieczyszczeń, korozji i starych powłok z dowolnych materiałów.",
+        "image": "/assets/piskostruminni-roboty2.webp"
+      },
+      {
+        "title": "Technologiczny arsenał. Nasze możliwości obejmują:",
+        "list": [
+          { "description": "Oczyszczanie strumieniowo-ścierne" },
+          { "description": "Obróbka strumieniowo-ścierna" },
+          { "description": "Oczyszczanie laserowe" }
+        ],
+        "image": "/assets/piskostruminni-roboty3.webp"
+      },
+      {
+        "title": "Kompleksowe podejście",
+        "description": "Oferujemy kompleksowy cykl obróbki, abyś otrzymał rezultat, który w pełni odpowiada Twoim wymaganiom.",
+        "image": "/assets/piskostruminni-roboty4.webp"
+      },
+      {
+        "title": "Unikalne możliwości",
+        "description": "Oferujemy pełny cykl usług oczyszczania, co pozwala Ci otrzymać gotowe części bez konieczności angażowania innych wykonawców.",
+        "image": "/assets/piskostruminni-roboty5.webp"
+      }
+    ],
+    "callToAction": "Zamów obróbkę u nas i przekonaj się, że Twoje produkty będą wyglądać doskonale!"
+  },
+
+  "cardData": [
+    {
+      "title": "TOKARSTWO CNC",
+      "img": "/assets/tokarni-roboty-chpk.webp",
+      "href": "services/tokarni-roboty-chpk/"
+    },
+    {
+      "title": "OBRÓBKA FREZARSKA CNC",
+      "img": "/assets/frezerni-roboty4.webp",
+      "href": "services/frezerni-roboty/"
+    },
+    {
+      "title": "OBRÓBKA CIEPLNA",
+      "img": "/assets/termichna-obrobka.webp",
+      "href": "services/termichna-obrobka/"
+    },
+    {
+      "title": "ODLEWANIE METALI",
+      "img": "/assets/metal-casting.webp",
+      "href": "services/lyttya-metalu/"
+    }
+  ],
+  "contactPage": {
+    "srcImg": "logo.webp",
+    "title": "Kontakty",
+    "description": "Skontaktuj się z nami: ulica Yakhnenkivska 2, Dnipro, obwód dniepropietrowski, Ukraina 49025. E-mail: info@qpart.com.ua, Telefon: +380989950760.",
+    "ourLocation": "Jesteśmy tutaj!",
+    "buildRoute": "Wyznacz trasę",
+    "listContacts": [
+      { "title": "Adres", "description": "ulica Yakhnenkivska 2, Dnipro, obwód dniepropietrowski, 49025, Ukraina", "id": "address" },
+      { "title": "E-mail", "description": "info@qpart.com.ua", "id": "email" },
+      { "title": "Telefon", "description": "+380989950760", "id": "phone" }
+    ]
+  },
+  "menu": [
+    {
+      "title": "Usługi",
+      "subMenu": [
+        { "title": "TOKARSTWO CNC", "href": "services/tokarni-roboty-chpk" },
+        { "title": "OBRÓBKA FREZARSKA CNC", "href": "services/frezerni-roboty" },
+        { "title": "SPAWANIE METALI", "href": "services/zvaryuvannya-metalu" },
+        { "title": "CIĘCIE PIŁĄ TAŚMOWĄ", "href": "services/porizka-na-verstati" },
+        { "title": "ODLEWANIE METALI", "href": "services/lyttya-metalu" },
+        { "title": "OBRÓBKA CIEPLNA", "href": "services/termichna-obrobka" },
+        { "title": "CIĘCIE LASEROWE CNC", "href": "services/lazerna-rizka" },
+        { "title": "SZLIFOWANIE METALI", "href": "services/shlifovka-metalu" },
+        { "title": "OBRÓBKA STRUMIENIOWO-ŚCIERNA", "href": "services/piskostruminni-roboty" }
+      ]
+    },
+    {
+      "title": "Produkty",
+      "subMenu": [
+        { "title": "CZĘŚCI KOLEJOWE", "href": "production/zaliznychni-zapchastyny" },
+        { "title": "CZĘŚCI DO MASZYN ROLNICZYCH", "href": "production/zapchastyny-dlya-silhosptekhniky" }
+      ]
+    },
+    {
+      "title": "Kontakty",
+      "href": "contact"
+    }
+  ],
+  "zaliznychniZapchastynyPage": {
+    "srcImg": "/assets/zaliznychni-zapchastyny.webp",
+    "title": "Produkcja części dla infrastruktury kolejowej",
+    "description": "Firma QPart specjalizuje się w produkcji wysokiej jakości części dla infrastruktury kolejowej. Zapewniamy produkcję różnych komponentów, które spełniają wszystkie nowoczesne standardy bezpieczeństwa i niezawodności eksploatacyjnej.",
+    "descriptionBottom": "Nasze rozwiązania są odpowiednie zarówno do modernizacji istniejących systemów, jak i do budowy nowych obiektów kolejowych.",
+    "servicesTitle": "Nasze zalety",
+    "imageForServiceBlock": "/assets/zaliznychni-zapchastyny2.webp",
+    "listServices": [
+      {
+        "description": "Nowoczesne wyposażenie. Użycie maszyn CNC gwarantuje wysoką precyzję produkcji."
+      },
+      {
+        "description": "Kontrola jakości. Wszystkie części przechodzą kontrolę zgodności z międzynarodowymi standardami."
+      },
+      {
+        "description": "Elastyczność w realizacji zamówień. Pracujemy zarówno z dużymi partiami, jak i z pojedynczymi produktami."
+      },
+      {
+        "description": "Szybkie terminy. Zapewniamy szybką produkcję bez utraty jakości."
+      }
+    ],
+    "orderBenefitsTitle": "Zalety zamówienia u nas",
+    "listOrderBenefits": [
+      {
+        "title": "Gotowi na duże ilości – zapewniamy nieprzerwaną pracę nawet przy dużych zamówieniach.",
+        "icon": "/assets/cylinder.webp"
+      },
+      {
+        "title": "Ponad 300 maszyn CNC – nowoczesne wyposażenie gwarantuje precyzję, jakość i szybkość realizacji.",
+        "icon": "/assets/gears.webp"
+      },
+      {
+        "title": "Elastyczne terminy – pracujemy szybko i zawsze na czas!",
+        "icon": "/assets/clock-time.webp"
+      }
+    ],
+    "peculiaritiesTitle": "Jakie części produkujemy?",
+    "listPeculiarities": [
+      {
+        "description": "Koła, tarcze hamulcowe, osie;",
+        "icon": "/icons/listPeculiarities.webp"
+      },
+      {
+        "description": "Rama wózka, elementy mocujące, sprężyny.",
+        "icon": "/icons/listPeculiarities.webp"
+      },
+      {
+        "description": "Mocowania szyn;",
+        "icon": "/icons/listPeculiarities.webp"
+      },
+      {
+        "description": "Śruby napinające, systemy kotwiące, elementy nośne.",
+        "icon": "/icons/listPeculiarities.webp"
+      },
+      {
+        "description": "Słupy sygnalizacyjne, platformy, zespoły montażowe;",
+        "icon": "/icons/listPeculiarities.webp"
+      },
+      {
+        "description": "Konstrukcje metalowe dla mostów, tuneli, platform.",
+        "icon": "/icons/listPeculiarities.webp"
+      },
+      {
+        "description": "Specjalistyczne produkty według rysunków klienta;",
+        "icon": "/icons/listPeculiarities.webp"
+      },
+      {
+        "description": "Części o niestandardowej konfiguracji dla unikalnych potrzeb.",
+        "icon": "/icons/listPeculiarities.webp"
+      }
+    ],
+    "question": "Potrzebujesz części kolejowych?",
+    "answer": "Wyprodukujemy je na zamówienie, uwzględniając wszystkie wymagania!"
+  },
+
+  "zapchastynyDlyaSilhosptekhnikyPage": {
+    "srcImg": "/assets/zapchastyny-dlya-silhosptekhniky.webp",
+    "title": "Produkcja części zamiennych do maszyn rolniczych",
+    "description": "Nasza firma specjalizuje się w produkcji wysokiej jakości części zamiennych do maszyn rolniczych, uwzględniając potrzeby rolników i specyfikę nowoczesnego sprzętu rolniczego.",
+    "descriptionBottom": "Oferujemy szeroki asortyment części, które są odpowiednie dla różnych typów maszyn i zapewniają ich niezawodną pracę nawet w najtrudniejszych warunkach. Zapewnij swojej maszynie wysokiej jakości części zamienne.",
+    "servicesTitle": "Nasze zalety:",
+    "imageForServiceBlock": "/assets/zapchastyny-dlya-silhosptekhniky2.webp",
+    "listServices": [
+      {
+        "description": "Nowoczesne wyposażenie. Użycie maszyn CNC gwarantuje wysoką precyzję produkcji."
+      },
+      {
+        "description": "Kontrola jakości. Wszystkie części przechodzą kontrolę zgodności z międzynarodowymi standardami."
+      },
+      {
+        "description": "Elastyczność w realizacji zamówień. Pracujemy zarówno z dużymi partiami, jak i z pojedynczymi produktami."
+      },
+      {
+        "description": "Szybkie terminy. Zapewniamy szybką produkcję bez utraty jakości."
+      }
+    ],
+    "orderBenefitsTitle": "Zalety zamówienia u nas",
+    "listOrderBenefits": [
+      {
+        "title": "Gotowi na duże ilości – zapewniamy nieprzerwaną pracę nawet przy dużych zamówieniach.",
+        "icon": "/assets/cylinder.webp"
+      },
+      {
+        "title": "Ponad 300 maszyn CNC – nowoczesne wyposażenie gwarantuje precyzję, jakość i szybkość realizacji.",
+        "icon": "/assets/gears.webp"
+      },
+      {
+        "title": "Elastyczne terminy – pracujemy szybko i zawsze na czas!",
+        "icon": "/assets/clock-time.webp"
+      }
+    ],
+    "peculiaritiesTitle": "Jakie części produkujemy?",
+    "listPeculiarities": [
+      {
+        "description": "Części do maszyn do zbioru pasz: noże, rozdrabniacze, wały, które zapewniają niezawodną pracę maszyn do hodowli zwierząt.",
+        "icon": "/icons/listPeculiarities.webp"
+      },
+      {
+        "description": "Części do ładowarek i manipulatorów: cylindry hydrauliczne, elementy mocujące, które są niezbędne do niezawodnego funkcjonowania sprzętu pomocniczego.",
+        "icon": "/icons/listPeculiarities.webp"
+      },
+      {
+        "description": "Specjalistyczne części na zamówienie: produkujemy indywidualne części zamienne zgodnie z specyficznymi wymaganiami klientów.",
+        "icon": "/icons/listPeculiarities.webp"
+      }
+    ],
+    "question": "Szukasz części zamiennych do maszyn rolniczych?",
+    "answer": "Zamów u nas, a wyprodukujemy je specjalnie dla Twojej maszyny!"
+  },
+
+  "modalInfo": {
+    "title": "Prześlij swój rysunek i numer telefonu, a skontaktujemy się z Tobą w celu omówienia szczegółów",
+    "dropFile": "Przeciągnij lub wybierz plik",
+    "descriptionBtn": "Wybierz plik",
+    "limitation": "Ograniczenie rozmiaru pliku: do 20 Mb*",
+    "filesSizeIsLarger": "Rozmiar plików przekracza maksymalny limit 20 MB",
+    "fileSizeIsLarger": "Rozmiar pliku przekracza maksymalny limit 20 MB.",
+    "successfulSending": "Wysłano",
+    "errorMessage": "Wystąpił błąd",
+    "unknownError": "Wystąpił nieznany błąd",
+    "inputTitle": "Numer telefonu komórkowego",
+    "submitBtn": "Wyślij"
+  },
+
+  "footer": {
+    "join": "Dołącz"
+  },
+  "userAgreement": {
+    "userAgreementSnackbar": {
+      "description": "Używamy plików cookie do analizy i poprawy działania strony. Kontynuując korzystanie z witryny, zgadzasz się na używanie plików cookie. Szczegóły znajdziesz w naszej",
+      "link": "Polityce prywatności",
+      "button": "Akceptuj i kontynuuj"
+    },
+    "userAgreementPage": {
+      "title": "Polityka prywatności i używania plików cookie",
+      "description": {
+        "introductionStrong": "Używamy plików cookie i podobnych technologii do analizy zachowań użytkowników na naszej stronie.",
+        "includes": "Obejmuje to używanie narzędzi takich jak",
+        "toolsStrong": "Google Analytics i Facebook Pixel,",
+        "includesContinuation": "które pomagają nam zbierać informacje o tym, jak wchodzisz w interakcję z naszą stroną, w tym odwiedzane strony i działania, takie jak kliknięcia przycisków.",
+        "useInformation": "Te informacje są używane wyłącznie do",
+        "useInformationStrong": "analizy i poprawy jakości naszych usług."
+      },
+      "whatWeCollect": {
+        "title": "Co dokładnie zbieramy?",
+        "descriptionList": [
+          {
+            "title": "Dane o odwiedzinach:",
+            "description": "informacje o tym, które strony odwiedziłeś, ile czasu spędziłeś na stronie, z jakich krajów i urządzeń korzystasz."
+          },
+          {
+            "title": "Działania na stronie:",
+            "description": "śledzenie kliknięć przycisków, interakcje z formularzami i innymi elementami strony. To pozwala nam poprawić doświadczenie użytkownika."
+          },
+          {
+            "title": "Informacje o Twojej sesji:",
+            "description": "za pomocą narzędzi analitycznych, takich jak Google Analytics, zbieramy anonimowe dane o Twoich działaniach na stronie, takie jak źródło ruchu, czas na stronie i inne metryki."
+          }
+        ]
+      },
+      "howWeuseData": {
+        "title": "Jak używamy tych danych?",
+        "whatIsTheDataFor": "Dane są zbierane i przetwarzane wyłącznie w celu",
+        "whatIsTheDataForStrong": "analizy wydajności strony, poprawy treści i doświadczenia użytkownika.",
+        "dataTransfer": "Nie przekazujemy tych danych osobom trzecim, z wyjątkiem analizy za pomocą narzędzi takich jak",
+        "toolsStrong": "Google Analytics i Facebook Pixel."
+      },
+      "consentToUse": {
+        "title": "Zgoda na używanie plików cookie",
+        "description": "Korzystając z naszej strony, zgadzasz się na zbieranie danych za pomocą plików cookie w wyżej wymienionych celach. Jeśli nie chcesz, abyśmy używali tych technologii, możesz skonfigurować przeglądarkę tak, aby blokowała pliki cookie lub informowała Cię o nich."
+      },
+      "howToDisable": {
+        "title": "Jak wyłączyć zbieranie danych?",
+        "description": "Możesz wyłączyć śledzenie za pomocą",
+        "toolsStrong": "Google Analytics i Facebook Pixel",
+        "descriptionContinuation": "w ustawieniach przeglądarki lub skorzystać z narzędzi do zarządzania plikami cookie, takich jak",
+        "toolsSelected": "Google Analytics Opt-out Browser Add-on.",
+        "descriptionEnd": "Wyłączając te narzędzia, ograniczysz zbieranie danych o Twoim zachowaniu na stronie."
+      },
+      "additionalInformation": {
+        "title": "Dodatkowe informacje:",
+        "legalRequirements": "Zbieramy i przetwarzamy dane zgodnie z wymogami prawnymi dotyczącymi ochrony danych osobowych, w tym",
+        "gdpr": "GDPR",
+        "legalRequirementsContinuation": "dla obywateli Unii Europejskiej oraz",
+        "legalRequirementsStrong": "Ustawą o ochronie danych osobowych Ukrainy.",
+        "additionalQuestions": "Jeśli masz pytania dotyczące używania Twoich danych, skontaktuj się z nami na e-mail, a odpowiemy najszybciej jak to możliwe."
+      }
+    }
+  },
+  "btnSend": "Wyślij rysunek do wyceny",
+  "messageInformation": "Wiadomość wysłana"
+}
