@@ -15,16 +15,19 @@ const DynamicHead: React.FC<ServicesComponentProps | ProductComponentProps | Hom
     const checkConsent = () => {
       const consent = localStorage.getItem('userAgreementAccepted') === 'true';
       setHasConsent(consent);
+      return consent;
     };
 
-    checkConsent();
+    const intervalId = setInterval(() => {
+      if (checkConsent()) {
+        clearInterval(intervalId);
+      }
+    }, 5000);
 
-    const handleStorageChange = () => {
-      checkConsent();
+    return () => {
+      clearInterval(intervalId);
     };
-
-    window.addEventListener('storage', handleStorageChange);
-  }, [hasConsent, fullUrl]);
+  }, [fullUrl]);
 
   return (
     <>
