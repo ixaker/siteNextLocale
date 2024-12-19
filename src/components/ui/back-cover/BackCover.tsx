@@ -18,6 +18,7 @@ const BackCover: React.FC<BackCoverProps> = ({ children, bgImg, version }) => {
   return (
     <div
       style={{
+        backgroundColor: '#2d2d2d',
         backgroundImage: `url(${backgroundImage}${version})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

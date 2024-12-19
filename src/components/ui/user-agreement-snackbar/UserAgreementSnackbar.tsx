@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { Translations } from '../../../../locales/types';
 import langUk from '../../../../locales/uk.json';
-import * as Common from '@/context/commonImports';
 
 interface UserAgreementSnackbarProps {
   translations: Translations;
@@ -14,11 +13,6 @@ const UserAgreementSnackbar: React.FC<UserAgreementSnackbarProps> = ({ translati
   const translationPage = translations?.userAgreement.userAgreementSnackbar || langUk.userAgreement.userAgreementSnackbar;
   const [pageLoaded, setPageLoaded] = useState(false);
   const [accepted, setAccepted] = useState(false);
-
-  const theme = Common.useTheme();
-  const currentTheme = theme.palette.mode === 'dark' ? Common.darkTheme : Common.lightTheme;
-  const bgColor = currentTheme.palette.background.default;
-  const secondaryColor = currentTheme.palette.secondary.main;
 
   useEffect(() => {
     setAccepted(localStorage.getItem('userAgreementAccepted') === 'true');
@@ -37,13 +31,13 @@ const UserAgreementSnackbar: React.FC<UserAgreementSnackbarProps> = ({ translati
 
   return (
     <div
-      style={{ background: bgColor, boxShadow: `0 10px 30px ${secondaryColor}` }}
+      style={{ background: '#f1f1f1', boxShadow: `rgb(45, 45, 45) 0px 10px 30px`, color: '#000' }}
       className={`fixed bottom-3 left-1/2 transform -translate-x-1/2 z-[99] p-4 rounded-lg transition-transform duration-500 w-[90%] max-w-[600px] ${
         pageLoaded ? 'translate-y-0' : 'translate-y-[150%]'
       } md:max-w-[600px]`}
     >
       <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
-        <CookieIcon style={{ fontSize: '55px' }} />
+        <CookieIcon style={{ fontSize: '70px', color: '#b36602' }} />
         <div className="w-full">
           <p className="text-sm md:text-base">
             {translationPage.description}{' '}
