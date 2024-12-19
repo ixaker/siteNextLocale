@@ -43,7 +43,7 @@ const UserAgreementSnackbar: React.FC<UserAgreementSnackbarProps> = ({ translati
       } md:max-w-[600px]`}
     >
       <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
-        <CookieIcon fontSize="large" />
+        <CookieIcon style={{ fontSize: '55px' }} />
         <div className="w-full">
           <p className="text-sm md:text-base">
             {translationPage.description}{' '}
