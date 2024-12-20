@@ -2,6 +2,7 @@ import React from 'react';
 import CustomButton from './CustomButton';
 import { useTheme } from '@mui/material';
 import { darkTheme, lightTheme } from '@/theme';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 interface PropsCommunicationButton {
   email: React.ReactNode;
@@ -32,6 +33,7 @@ const CommunicationButton: React.FC<PropsCommunicationButton> = ({ email, phone 
             color: secondaryColor,
           }}
           variant="communication-button"
+          className="!px-[10px] !py-[10px]"
         >
           {email}
         </CustomButton>
@@ -45,8 +47,23 @@ const CommunicationButton: React.FC<PropsCommunicationButton> = ({ email, phone 
             color: secondaryColor,
           }}
           variant="communication-button"
+          className="!px-[10px] !py-[10px]"
         >
           {phone}
+        </CustomButton>
+      </a>
+      <a target="_blank" aria-label="Chat on WhatsApp" href="https://wa.me/+380676430303">
+        <CustomButton
+          onClick={() => sendingAnalytics('WhatsApp')}
+          ariaLabel="WhatsApp"
+          style={{
+            background: primaryColor,
+            color: secondaryColor,
+          }}
+          variant="communication-button"
+          className="!px-[10px] !py-[10px]"
+        >
+          <WhatsAppIcon className="!text-[#1f854a]  transition-all duration-300 ease-in-out font-bold size-[35px] md:size-10 lg:size-12" />
         </CustomButton>
       </a>
     </div>

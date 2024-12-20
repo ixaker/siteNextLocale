@@ -15,8 +15,8 @@ const Layout: React.FC<PageProps> = ({ children, ...restProps }) => {
         <div className="">{children}</div>
         <div>
           <CommunicationButton
-            email={<EmailIcon className="hover:!text-activeColor  transition-all duration-300 ease-in-out size-8 md:size-10 lg:size-12" />}
-            phone={<PhoneIcon className="hover:!text-activeColor  transition-all duration-300 ease-in-out size-8 md:size-10 lg:size-12" />}
+            email={<EmailIcon className="hover:!text-activeColor  transition-all duration-300 ease-in-out size-[35px] md:size-10 lg:size-12" />}
+            phone={<PhoneIcon className="hover:!text-activeColor  transition-all duration-300 ease-in-out size-[35px] md:size-10 lg:size-12" />}
           />
         </div>
         <UserAgreementSnackbar translations={restProps.translations} lang={restProps.lang} />
