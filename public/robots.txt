@@ -1,6 +1,6 @@
 # *
 User-agent: *
-Disallow: /
+Disallow: /[lang]/user-agreement
 
 # Sitemaps
 Sitemap: https://cnc.qpart.com.ua/sitemap.xml
