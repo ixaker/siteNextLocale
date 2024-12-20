@@ -46,7 +46,7 @@ export const withStaticProps = async <P>(context: GetStaticPropsContext): Promis
       lang,
       supportedLanguages: SUPPORTED_LANGUAGES,
       defaultLanguage: getDefaultLanguage(),
-      version: `?v=${new Date().getTime()}`,
+      version: `?v=${new Date().getTime()}`.slice(0, 9),
     } as P,
   };
 };
