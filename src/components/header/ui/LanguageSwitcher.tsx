@@ -29,6 +29,9 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ currentLang, suppor
 
     router.push(newPath);
     localStorage.setItem('lang', newLang);
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', `Переключил язык на:${newLang}`, { event_category: 'Button', event_label: 'Language Switcher' });
+    }
   };
 
   return (

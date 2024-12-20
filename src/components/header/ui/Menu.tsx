@@ -24,13 +24,17 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
     setCurrentSubMenu(menuTitle);
   };
 
-  const handleMenuClose = () => {
+  const handleMenuCloseAndTrack = (label: string) => {
     if (hoverTimeoutRef.current) {
       clearTimeout(hoverTimeoutRef.current);
     }
 
     setAnchorEl(null);
     setCurrentSubMenu(null);
+
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', `Переход на страницу: ${label}`, { event_category: 'Button', event_label: label });
+    }
   };
 
   const handleMouseEnter = (event: React.MouseEvent<HTMLElement>, menuTitle: string) => {
@@ -63,11 +67,7 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
         >
           {item.subMenu ? (
             <>
-              <CustomButton
-                ariaLabel={item.title}
-                variant="menu-btn"
-                onClick={(event) => handleMenuOpen(event, item.title)}
-              >
+              <CustomButton ariaLabel={item.title} variant="menu-btn" onClick={(event) => handleMenuOpen(event, item.title)}>
                 {item.title}
                 <KeyboardArrowDownIcon
                   style={{
@@ -125,7 +125,7 @@ const MenuComponent: React.FC<PageProps> = ({ translations, lang }) => {
                         display: 'block',
                         color: secondaryColor,
                       }}
-                      onClick={handleMenuClose}
+                      onClick={() => handleMenuCloseAndTrack(subItem.title)}
                     >
                       {subItem.title}
                     </Link>

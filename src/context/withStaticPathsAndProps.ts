@@ -90,6 +90,12 @@ export type ContactComponentsProps = {
   translationsPage: ContactPage;
   version: string;
 };
+
+declare global {
+  interface Window {
+    gtag: (...args: unknown[]) => void;
+  }
+}
 // Функция для создания путей
 export const withStaticPaths: GetStaticPaths = async () => {
   const paths = SUPPORTED_LANGUAGES.map((lang) => ({

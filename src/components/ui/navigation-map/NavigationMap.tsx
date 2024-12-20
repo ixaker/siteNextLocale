@@ -11,6 +11,12 @@ interface NavigationMapProps {
 const NavigationMap: React.FC<NavigationMapProps> = ({ lang, translationsMenuService = [] }) => {
   const router = useRouter();
 
+  const trackEvent = (label: string) => {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', `Переход на страницу: ${label}`, { event_category: 'Button', event_label: label });
+    }
+  };
+
   return (
     <ul className="hidden lg:flex flex-col justify-around">
       {translationsMenuService.map((item, index) => {
@@ -18,6 +24,7 @@ const NavigationMap: React.FC<NavigationMapProps> = ({ lang, translationsMenuSer
 
         return (
           <Link
+            onClick={() => trackEvent(item.title)}
             href={`/${lang}/${item.href}`}
             key={index}
             className={`ease-in-out group w-fit pl-2 pr-6 py-2 rounded-r-[20px] ${isActive ? 'bg-activeColor' : 'bg-[rgba(255,255,255,0.12)] backdrop-blur-2xl'}`}

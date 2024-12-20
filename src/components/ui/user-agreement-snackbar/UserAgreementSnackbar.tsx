@@ -27,6 +27,12 @@ const UserAgreementSnackbar: React.FC<UserAgreementSnackbarProps> = ({ translati
   const handleAccept = () => {
     setPageLoaded(false);
     localStorage.setItem('userAgreementAccepted', 'true');
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'accept_user_agreement', {
+        event_category: 'User Agreement',
+        event_label: 'User accepted the agreement',
+      });
+    }
   };
 
   return (

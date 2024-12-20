@@ -14,7 +14,12 @@ interface ButtonSubmitDrawingProps {
 const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations, className }) => {
   const [open, setOpen] = React.useState(false);
 
-  const handleOpen = () => setOpen(true);
+  const handleOpen = () => {
+    setOpen(true);
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'Клік на кнопку: "Отправить креслення на прорахунок"', { event_category: 'Button', event_label: translations?.btnSend });
+    }
+  };
 
   return (
     <div>
