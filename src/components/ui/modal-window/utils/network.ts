@@ -12,9 +12,14 @@ export const handleFileSubmit = async (
 
   fileList.forEach((file, index) => {
     formData.append(`attachment[${index}]`, file);
+    window.gtag('event', `Прикреплен файл:${file.name}, размер фалйла:${file.size}`, { event_category: 'Button' });
   });
 
   setStatusMessage('loading');
+
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', `conversion`, { send_to: 'AW-16815849182/UepdCK6LzfUZEN79tdI-', value: 1.0, currency: 'UAH' });
+  }
 
   try {
     const response = await fetch('/mail.php', {

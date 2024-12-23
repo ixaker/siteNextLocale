@@ -92,6 +92,7 @@ const DynamicHead: React.FC<ServicesComponentProps | ProductComponentProps | Hom
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-2RGZ7ETLKW');
+        gtag('config', 'AW-16815849182');
       `}
           </Script>
         </>

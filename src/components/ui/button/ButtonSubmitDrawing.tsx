@@ -17,7 +17,7 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
   const handleOpen = () => {
     setOpen(true);
     if (typeof window.gtag === 'function') {
-      window.gtag('event', 'Клік на кнопку: "Отправить креслення на прорахунок"', { event_category: 'Button', event_label: translations?.btnSend });
+      window.gtag('event', 'Клік на кнопку: Форма відправки креслення"', { event_category: 'Button', event_label: translations?.btnSend });
     }
   };
 
