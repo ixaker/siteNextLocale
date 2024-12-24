@@ -23,7 +23,7 @@ const ButtonSubmitDrawing: React.FC<ButtonSubmitDrawingProps> = ({ translations,
 
   return (
     <div>
-      <CustomButton className={className} variant="send-btn" onClick={handleOpen}>
+      <CustomButton className={`${className} vibrate`} variant="send-btn" onClick={handleOpen}>
         {translations?.btnSend}
       </CustomButton>
       <ModalWindow open={open} setOpen={setOpen} translations={translations} />
