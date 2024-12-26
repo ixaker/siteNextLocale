@@ -508,6 +508,17 @@
         "icon": "/icons/listPeculiarities.webp"
       }
     ],
+    "cardList": [
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" }
+    ],
     "question": "Besoin de pièces ferroviaires ?",
     "answer": "Nous les produirons sur commande, en tenant compte de toutes les exigences !"
   },

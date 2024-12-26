@@ -29,6 +29,7 @@ export type ProductPage = {
   imageForServiceBlock: string;
   orderBenefitsTitle: string;
   listOrderBenefits: { title: string; icon: string }[];
+  cardList?: CardData[];
 };
 
 export type HomePage = {
@@ -57,7 +58,7 @@ export type ContactPage = {
   listContacts: { title: string; description: string; id: string }[];
 };
 
-export type CardData = { title: string; img: string; href: string };
+export type CardData = { title: string; img: string; href?: string };
 
 export type ListAdvantages = { description: string; icon: string };
 

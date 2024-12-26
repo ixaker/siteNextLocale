@@ -9,9 +9,9 @@ const DynamicInteractiveMap = dynamic(() => import('@/components/ui/InteractiveM
 
 const Page: React.FC<Common.PageProps> = ({ ...restProps }) => {
   const translationsPage = restProps.translations.contactPage;
-  const theme = Common.useTheme();
   const componentProps: Common.ContactComponentsProps = { ...restProps, translationsPage };
   const listContacts = translationsPage.listContacts;
+  const theme = Common.useTheme();
   const currentTheme = theme.palette.mode === 'dark' ? Common.darkTheme : Common.lightTheme;
   const secondaryColor = currentTheme.palette.secondary.main;
   const primaryColor = currentTheme.palette.primary.main;

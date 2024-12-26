@@ -499,6 +499,17 @@
         "icon": "/icons/listPeculiarities.webp"
       }
     ],
+    "cardList": [
+      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Antriebsstift des Zylinders", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
+      { "title": "Antriebsstift des Zylinders", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
+      { "title": "Antriebsstift des Zylinders", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
+      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" }
+    ],
     "question": "Brauchen Sie Eisenbahnteile?",
     "answer": "Wir fertigen sie nach Ihren Anforderungen, unter Berücksichtigung aller Vorgaben!"
   },

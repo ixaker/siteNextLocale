@@ -4,11 +4,11 @@ import Image from 'next/image';
 interface CardProps {
   title: string;
   srcImg: string;
-  href: string;
   version: string;
+  href?: string;
 }
 
-const Card: React.FC<CardProps> = ({ title, srcImg, href, version }) => {
+const Card: React.FC<CardProps> = ({ title, srcImg, version, href = '' }) => {
   return (
     <Link href={href} className="group relative block rounded-t-lg shadow-md overflow-hidden cursor-pointer">
       <div>

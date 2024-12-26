@@ -504,6 +504,17 @@
         "icon": "/icons/listPeculiarities.webp"
       }
     ],
+    "cardList": [
+      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Drive-Pin-of-the-Cylinder", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
+      { "title": "Drive-Pin-of-the-Cylinder", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
+      { "title": "Drive-Pin-of-the-Cylinder", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
+      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" }
+    ],
     "question": "Need railway parts?",
     "answer": "We will produce them to your order, taking all requirements into account!"
   },

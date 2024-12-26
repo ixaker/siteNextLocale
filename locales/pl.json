@@ -489,6 +489,17 @@
         "icon": "/icons/listPeculiarities.webp"
       }
     ],
+    "cardList": [
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" }
+    ],
     "question": "Potrzebujesz części kolejowych?",
     "answer": "Wyprodukujemy je na zamówienie, uwzględniając wszystkie wymagania!"
   },

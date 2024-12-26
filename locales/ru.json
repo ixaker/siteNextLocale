@@ -494,6 +494,17 @@
         "icon": "/icons/listPeculiarities.webp"
       }
     ],
+    "cardList": [
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" }
+    ],
     "question": "Нужны железнодорожные запчасти?",
     "answer": "Мы изготовим их по вашему заказу с учетом всех требований!"
   },

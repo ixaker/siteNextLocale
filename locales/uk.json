@@ -499,6 +499,17 @@
         "icon": "/icons/listPeculiarities.webp"
       }
     ],
+    "cardList": [
+      { "title": "Кільце лабіринтне", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Кільце лабіринтне", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Кільце лабіринтне", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Штифт приводу циліндра", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
+      { "title": "Штифт приводу циліндра", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
+      { "title": "Штифт приводу циліндра", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
+      { "title": "Кільце лабіринтне", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Кільце лабіринтне", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Кільце лабіринтне", "href": "", "img": "/assets/kiltse-labiryntne.webp" }
+    ],
     "question": "Потрібні залізничні запчастини? ",
     "answer": "Ми виготовимо їх під ваше замовлення з урахуванням усіх вимог!"
   },

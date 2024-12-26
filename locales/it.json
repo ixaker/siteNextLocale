@@ -508,6 +508,17 @@
         "icon": "/icons/listPeculiarities.webp"
       }
     ],
+    "cardList": [
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" },
+      { "title": "title", "href": "", "image": "" }
+    ],
     "question": "Hai bisogno di parti ferroviarie?",
     "answer": "Le produrremo su ordinazione, tenendo conto di tutti i requisiti!"
   },
