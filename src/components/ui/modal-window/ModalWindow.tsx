@@ -147,7 +147,7 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ open, translations, setOpen }
               onChange={(e) => setNumberPhone(e.target.value)}
               onBlur={(e) => {
                 if (window.gtag) {
-                  window.gtag('event', 'phone_number_entered', { phone_number: e.target.value });
+                  window.gtag('event', `Вказаний номер для замовлення:${numberPhone}`, { phone_number: e.target.value });
                 }
               }}
               style={{
