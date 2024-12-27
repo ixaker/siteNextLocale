@@ -495,15 +495,18 @@
       }
     ],
     "cardList": [
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" }
+      { "title": "Лабиринтное кольцо", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Втулочный узел", "href": "", "img": "/assets/buksovyy-uzel.webp" },
+      { "title": "Крышка втулки", "href": "", "img": "/assets/kryshka-buksy.webp" },
+      { "title": "Штифт привода цилиндра", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
+      { "title": "Железнодорожная ось", "href": "", "img": "/assets/zaliznychna-vis.webp" },
+      { "title": "Шпонка", "href": "", "img": "/assets/shponka.webp" },
+      { "title": "Болт клапана", "href": "", "img": "/assets/bolt-klapana.webp" },
+      { "title": "Болт-подшипник для боковых стенок", "href": "", "img": "/assets/bolt-pidshypnyk-dlya-bokovykh-stinok.webp" },
+      { "title": "Втулка", "href": "", "img": "/assets/buksa.webp" },
+      { "title": "Диск муфты", "href": "", "img": "/assets/dysk-mufty.webp" },
+      { "title": "Тарельчатая шайба", "href": "", "img": "/assets/shaiba-tarelchataia.webp" },
+      { "title": "Колесная пара", "href": "", "img": "/assets/kolisna-para.webp" }
     ],
     "question": "Нужны железнодорожные запчасти?",
     "answer": "Мы изготовим их по вашему заказу с учетом всех требований!"

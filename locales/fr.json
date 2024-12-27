@@ -509,15 +509,18 @@
       }
     ],
     "cardList": [
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" }
+      { "title": "Anneau Labyrinthe", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Noeud de Bague", "href": "", "img": "/assets/buksovyy-uzel.webp" },
+      { "title": "Couvercle de Bague", "href": "", "img": "/assets/kryshka-buksy.webp" },
+      { "title": "Goupille d'entraînement du cylindre", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
+      { "title": "Axe Ferroviaire", "href": "", "img": "/assets/zaliznychna-vis.webp" },
+      { "title": "Clé", "href": "", "img": "/assets/shponka.webp" },
+      { "title": "Boulon de Soupape", "href": "", "img": "/assets/bolt-klapana.webp" },
+      { "title": "Boulon-Cartouche pour Parois Latérales", "href": "", "img": "/assets/bolt-pidshypnyk-dlya-bokovykh-stinok.webp" },
+      { "title": "Douille", "href": "", "img": "/assets/buksa.webp" },
+      { "title": "Disque d'Embrayage", "href": "", "img": "/assets/dysk-mufty.webp" },
+      { "title": "Rondelle à disque", "href": "", "img": "/assets/shaiba-tarelchataia.webp" },
+      { "title": "Paire de Roues", "href": "", "img": "/assets/kolisna-para.webp" }
     ],
     "question": "Besoin de pièces ferroviaires ?",
     "answer": "Nous les produirons sur commande, en tenant compte de toutes les exigences !"

@@ -509,15 +509,18 @@
       }
     ],
     "cardList": [
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" }
+      { "title": "Anello Labirinto", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Nodo del Cuscinetto", "href": "", "img": "/assets/buksovyy-uzel.webp" },
+      { "title": "Coperchio del Cuscinetto", "href": "", "img": "/assets/kryshka-buksy.webp" },
+      { "title": "Perno di Azionamento del Cilindro", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
+      { "title": "Asse Ferroviario", "href": "", "img": "/assets/zaliznychna-vis.webp" },
+      { "title": "Chiave", "href": "", "img": "/assets/shponka.webp" },
+      { "title": "Bullone della Valvola", "href": "", "img": "/assets/bolt-klapana.webp" },
+      { "title": "Bullone-Cuscinetto per Pareti Laterali", "href": "", "img": "/assets/bolt-pidshypnyk-dlya-bokovykh-stinok.webp" },
+      { "title": "Bussole", "href": "", "img": "/assets/buksa.webp" },
+      { "title": "Disco della Frizione", "href": "", "img": "/assets/dysk-mufty.webp" },
+      { "title": "Rondella a Disco", "href": "", "img": "/assets/shaiba-tarelchataia.webp" },
+      { "title": "Coppia di Ruote", "href": "", "img": "/assets/kolisna-para.webp" }
     ],
     "question": "Hai bisogno di parti ferroviarie?",
     "answer": "Le produrremo su ordinazione, tenendo conto di tutti i requisiti!"

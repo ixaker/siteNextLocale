@@ -509,15 +509,18 @@
       }
     ],
     "cardList": [
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" }
+      { "title": "Anillo de laberinto", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Nodo de cojinete", "href": "", "img": "/assets/buksovyy-uzel.webp" },
+      { "title": "Cubierta de cojinete", "href": "", "img": "/assets/kryshka-buksy.webp" },
+      { "title": "Pin de transmisión del cilindro", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
+      { "title": "Eje ferroviario", "href": "", "img": "/assets/zaliznychna-vis.webp" },
+      { "title": "Cuña", "href": "", "img": "/assets/shponka.webp" },
+      { "title": "Perno de válvula", "href": "", "img": "/assets/bolt-klapana.webp" },
+      { "title": "Perno-cojinete para paredes laterales", "href": "", "img": "/assets/bolt-pidshypnyk-dlya-bokovykh-stinok.webp" },
+      { "title": "Buje", "href": "", "img": "/assets/buksa.webp" },
+      { "title": "Disco de embrague", "href": "", "img": "/assets/dysk-mufty.webp" },
+      { "title": "Arandela de disco", "href": "", "img": "/assets/shaiba-tarelchataia.webp" },
+      { "title": "Conjunto de ruedas", "href": "", "img": "/assets/kolisna-para.webp" }
     ],
     "question": "¿Necesita piezas ferroviarias?",
     "answer": "¡Las produciremos a su pedido, teniendo en cuenta todos los requisitos!"

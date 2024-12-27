@@ -23,7 +23,7 @@ const CardList: React.FC<ProductComponentProps> = (componentProps) => {
               key={index}
             >
               <div>
-                <div className="flex items-center min-h-[300px] group-hover:scale-105 transition-all duration-1000 ease-in-out ">
+                <div className="flex items-center min-h-[250px] group-hover:scale-105 transition-all duration-1000 ease-in-out ">
                   <Image width={300} height={300} src={`${card.img}${componentProps.version}`} alt={`Photo ${card.img}`} className="w-full" />
                 </div>
                 <Common.Paragraph

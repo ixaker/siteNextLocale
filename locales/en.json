@@ -505,15 +505,18 @@
       }
     ],
     "cardList": [
-      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
-      { "title": "Axle Box Assembly", "href": "", "img": "/assets/buksovyy-uzel.webp" },
-      { "title": "Axle Box Cover", "href": "", "img": "/assets/kryshka-buksy.webp" },
-      { "title": "Drive-Pin-of-the-Cylinder", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
-      { "title": "Drive-Pin-of-the-Cylinder", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
-      { "title": "Drive-Pin-of-the-Cylinder", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
-      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
-      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
-      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" }
+      { "title": "Labyrinth Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Bearing Node", "href": "", "img": "/assets/buksovyy-uzel.webp" },
+      { "title": "Bearing Cover", "href": "", "img": "/assets/kryshka-buksy.webp" },
+      { "title": "Cylinder Drive Pin", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
+      { "title": "Railway Axle", "href": "", "img": "/assets/zaliznychna-vis.webp" },
+      { "title": "Key", "href": "", "img": "/assets/shponka.webp" },
+      { "title": "Valve Bolt", "href": "", "img": "/assets/bolt-klapana.webp" },
+      { "title": "Bolt-Bearing for Side Walls", "href": "", "img": "/assets/bolt-pidshypnyk-dlya-bokovykh-stinok.webp" },
+      { "title": "Bushing", "href": "", "img": "/assets/buksa.webp" },
+      { "title": "Clutch Disc", "href": "", "img": "/assets/dysk-mufty.webp" },
+      { "title": "Disc Washer", "href": "", "img": "/assets/shaiba-tarelchataia.webp" },
+      { "title": "Wheelset", "href": "", "img": "/assets/kolisna-para.webp" }
     ],
     "question": "Need railway parts?",
     "answer": "We will produce them to your order, taking all requirements into account!"

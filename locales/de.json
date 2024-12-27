@@ -500,15 +500,18 @@
       }
     ],
     "cardList": [
-      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
-      { "title": "Achslagerbaugruppe", "href": "", "img": "/assets/buksovyy-uzel.webp" },
-      { "title": "Achslagerdeckel", "href": "", "img": "/assets/kryshka-buksy.webp" },
-      { "title": "Antriebsstift des Zylinders", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
-      { "title": "Antriebsstift des Zylinders", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
-      { "title": "Antriebsstift des Zylinders", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
-      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
-      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
-      { "title": "Labyrinth-Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" }
+      { "title": "Labyrinthring", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Buchsenknoten", "href": "", "img": "/assets/buksovyy-uzel.webp" },
+      { "title": "Buchsenabdeckung", "href": "", "img": "/assets/kryshka-buksy.webp" },
+      { "title": "Zylinderantriebsstift", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
+      { "title": "Eisenbahnachse", "href": "", "img": "/assets/zaliznychna-vis.webp" },
+      { "title": "Keil", "href": "", "img": "/assets/shponka.webp" },
+      { "title": "Ventilbolzen", "href": "", "img": "/assets/bolt-klapana.webp" },
+      { "title": "Bolzen-Lager für Seitenwände", "href": "", "img": "/assets/bolt-pidshypnyk-dlya-bokovykh-stinok.webp" },
+      { "title": "Buchse", "href": "", "img": "/assets/buksa.webp" },
+      { "title": "Kupplungsscheibe", "href": "", "img": "/assets/dysk-mufty.webp" },
+      { "title": "Tellernuss", "href": "", "img": "/assets/shaiba-tarelchataia.webp" },
+      { "title": "Radsatz", "href": "", "img": "/assets/kolisna-para.webp" }
     ],
     "question": "Brauchen Sie Eisenbahnteile?",
     "answer": "Wir fertigen sie nach Ihren Anforderungen, unter Berücksichtigung aller Vorgaben!"

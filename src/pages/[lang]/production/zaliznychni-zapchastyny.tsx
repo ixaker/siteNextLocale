@@ -11,9 +11,9 @@ const Page: React.FC<Common.PageProps> = (restProps) => {
       <Common.DynamicHead {...componentProps} />
       <Common.InformationBlock {...componentProps} />
       <Common.ServiceBlock {...componentProps} />
+      <CardList {...componentProps} />
       <Common.ListBenefits {...componentProps} />
       {/* <Common.FeatureBlock {...componentProps} /> */}
-      <CardList {...componentProps} />
       <Common.Paragraph style="px-4 pt-[30px]" text={translationsPage.question} alignment="center" />
       <Common.Paragraph style="px-4 pt-[30px]" text={translationsPage.answer} alignment="center" />
       <Common.CalculationSection {...componentProps} />
