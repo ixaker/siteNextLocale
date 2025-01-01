@@ -504,6 +504,7 @@
         "icon": "/icons/listPeculiarities.webp"
       }
     ],
+    "cardListTitle": "Production of parts for railway infrastructure",
     "cardList": [
       { "title": "Labyrinth Ring", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
       { "title": "Bearing Node", "href": "", "img": "/assets/buksovyy-uzel.webp" },
@@ -516,7 +517,8 @@
       { "title": "Bushing", "href": "", "img": "/assets/buksa.webp" },
       { "title": "Clutch Disc", "href": "", "img": "/assets/dysk-mufty.webp" },
       { "title": "Disc Washer", "href": "", "img": "/assets/shaiba-tarelchataia.webp" },
-      { "title": "Wheelset", "href": "", "img": "/assets/kolisna-para.webp" }
+      { "title": "Wheelset", "href": "", "img": "/assets/kolisna-para.webp" },
+      { "title": "Mounting cover", "href": "", "img": "/assets/kryshka-krepitelnaya.webp" }
     ],
     "question": "Need railway parts?",
     "answer": "We will produce them to your order, taking all requirements into account!"

@@ -494,6 +494,7 @@
         "icon": "/icons/listPeculiarities.webp"
       }
     ],
+    "cardListTitle": "Производство деталей для железнодорожной инфраструктуры",
     "cardList": [
       { "title": "Лабиринтное кольцо", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
       { "title": "Втулочный узел", "href": "", "img": "/assets/buksovyy-uzel.webp" },
@@ -506,7 +507,8 @@
       { "title": "Втулка", "href": "", "img": "/assets/buksa.webp" },
       { "title": "Диск муфты", "href": "", "img": "/assets/dysk-mufty.webp" },
       { "title": "Тарельчатая шайба", "href": "", "img": "/assets/shaiba-tarelchataia.webp" },
-      { "title": "Колесная пара", "href": "", "img": "/assets/kolisna-para.webp" }
+      { "title": "Колесная пара", "href": "", "img": "/assets/kolisna-para.webp" },
+      { "title": "Крепительная крышка", "href": "", "img": "/assets/kryshka-krepitelnaya.webp" }
     ],
     "question": "Нужны железнодорожные запчасти?",
     "answer": "Мы изготовим их по вашему заказу с учетом всех требований!"

@@ -508,6 +508,7 @@
         "icon": "/icons/listPeculiarities.webp"
       }
     ],
+    "cardListTitle": "Produzione di parti per infrastrutture ferroviarie",
     "cardList": [
       { "title": "Anello Labirinto", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
       { "title": "Nodo del Cuscinetto", "href": "", "img": "/assets/buksovyy-uzel.webp" },
@@ -520,7 +521,8 @@
       { "title": "Bussole", "href": "", "img": "/assets/buksa.webp" },
       { "title": "Disco della Frizione", "href": "", "img": "/assets/dysk-mufty.webp" },
       { "title": "Rondella a Disco", "href": "", "img": "/assets/shaiba-tarelchataia.webp" },
-      { "title": "Coppia di Ruote", "href": "", "img": "/assets/kolisna-para.webp" }
+      { "title": "Coppia di Ruote", "href": "", "img": "/assets/kolisna-para.webp" },
+      { "title": "Coperchio di fissaggio", "href": "", "img": "/assets/kryshka-krepitelnaya.webp" }
     ],
     "question": "Hai bisogno di parti ferroviarie?",
     "answer": "Le produrremo su ordinazione, tenendo conto di tutti i requisiti!"

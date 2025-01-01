@@ -29,6 +29,7 @@ export type ProductPage = {
   imageForServiceBlock: string;
   orderBenefitsTitle: string;
   listOrderBenefits: { title: string; icon: string }[];
+  cardListTitle?: string;
   cardList?: CardData[];
 };
 

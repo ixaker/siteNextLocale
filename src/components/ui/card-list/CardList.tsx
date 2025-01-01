@@ -10,7 +10,7 @@ const CardList: React.FC<ProductComponentProps> = (componentProps) => {
 
   return (
     <div className="max-w-[1550px] w-full my-0 mx-auto px-4">
-      <Common.Heading text="Виробництво деталей для залізничної інфраструктури" level="h2" alignment="center" />
+      <Common.Heading text={componentProps.translations.zaliznychniZapchastynyPage.cardListTitle || ''} level="h2" alignment="center" />
       <div className="flex justify-center">
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4 2xl:grid-cols-5 gap-10 mt-10">
           {cardData.map((card, index) => (

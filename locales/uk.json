@@ -499,6 +499,7 @@
         "icon": "/icons/listPeculiarities.webp"
       }
     ],
+    "cardListTitle": "Виробництво деталей для залізничної інфраструктури",
     "cardList": [
       { "title": "Кільце лабіринтне", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
       { "title": "Буксовий вузол", "href": "", "img": "/assets/buksovyy-uzel.webp" },
@@ -511,7 +512,8 @@
       { "title": "Букса", "href": "", "img": "/assets/buksa.webp" },
       { "title": "Диск муфти", "href": "", "img": "/assets/dysk-mufty.webp" },
       { "title": "Шайба тарілчаста", "href": "", "img": "/assets/shaiba-tarelchataia.webp" },
-      { "title": "Колісна пара", "href": "", "img": "/assets/kolisna-para.webp" }
+      { "title": "Колісна пара", "href": "", "img": "/assets/kolisna-para.webp" },
+      { "title": "Кріпильна кришка", "href": "", "img": "/assets/kryshka-krepitelnaya.webp" }
     ],
     "question": "Потрібні залізничні запчастини? ",
     "answer": "Ми виготовимо їх під ваше замовлення з урахуванням усіх вимог!"

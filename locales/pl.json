@@ -489,16 +489,21 @@
         "icon": "/icons/listPeculiarities.webp"
       }
     ],
+    "cardListTitle": "Produkcja części do infrastruktury kolejowej",
     "cardList": [
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" },
-      { "title": "title", "href": "", "image": "" }
+      { "title": "Pierścień labiryntowy", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
+      { "title": "Węzeł osiowy", "href": "", "img": "/assets/buksovyy-uzel.webp" },
+      { "title": "Pokrywa łożyska", "href": "", "img": "/assets/kryshka-buksy.webp" },
+      { "title": "Sworzeń napędu cylindra", "href": "", "img": "/assets/Shtyft-pryvodu-tsylindra.webp" },
+      { "title": "Oś kolejowa", "href": "", "img": "/assets/zaliznychna-vis.webp" },
+      { "title": "Klin", "href": "", "img": "/assets/shponka.webp" },
+      { "title": "Śruba zaworu", "href": "", "img": "/assets/bolt-klapana.webp" },
+      { "title": "Śruba-łożysko do bocznych ścianek", "href": "", "img": "/assets/bolt-pidshypnyk-dlya-bokovykh-stinok.webp" },
+      { "title": "Łożysko", "href": "", "img": "/assets/buksa.webp" },
+      { "title": "Tarcza sprzęgła", "href": "", "img": "/assets/dysk-mufty.webp" },
+      { "title": "Podkładka sprężynowa", "href": "", "img": "/assets/shaiba-tarelchataia.webp" },
+      { "title": "Zespół kołowy", "href": "", "img": "/assets/kolisna-para.webp" },
+      { "title": "Osłona mocująca", "href": "", "img": "/assets/kryshka-krepitelnaya.webp" }
     ],
     "question": "Potrzebujesz części kolejowych?",
     "answer": "Wyprodukujemy je na zamówienie, uwzględniając wszystkie wymagania!"

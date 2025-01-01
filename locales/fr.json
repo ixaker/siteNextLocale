@@ -508,6 +508,7 @@
         "icon": "/icons/listPeculiarities.webp"
       }
     ],
+    "cardListTitle": "Production de pièces pour l'infrastructure ferroviaire",
     "cardList": [
       { "title": "Anneau Labyrinthe", "href": "", "img": "/assets/kiltse-labiryntne.webp" },
       { "title": "Noeud de Bague", "href": "", "img": "/assets/buksovyy-uzel.webp" },
@@ -520,7 +521,8 @@
       { "title": "Douille", "href": "", "img": "/assets/buksa.webp" },
       { "title": "Disque d'Embrayage", "href": "", "img": "/assets/dysk-mufty.webp" },
       { "title": "Rondelle à disque", "href": "", "img": "/assets/shaiba-tarelchataia.webp" },
-      { "title": "Paire de Roues", "href": "", "img": "/assets/kolisna-para.webp" }
+      { "title": "Paire de Roues", "href": "", "img": "/assets/kolisna-para.webp" },
+      { "title": "Couvercle de fixation", "href": "", "img": "/assets/kryshka-krepitelnaya.webp" }
     ],
     "question": "Besoin de pièces ferroviaires ?",
     "answer": "Nous les produirons sur commande, en tenant compte de toutes les exigences !"
